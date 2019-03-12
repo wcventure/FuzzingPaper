@@ -1,8 +1,13 @@
 # Recent Papers Related To Fuzzing
 
-# Contents
+# Reading Notes
 
-- [Interesting Fuzzing](#interesting-fuzzing)
+- 1
+- 2
+
+# All Papers
+
+- [**Interesting Fuzzing**](#interesting-fuzzing)
   - [DifFuzz: Differential Fuzzing for Side-Channel Analysis (ICSE 2019)](#diffuzz-differential-fuzzing-for-side-channel-analysis-icse-2019)
   - [REST-ler: Stateful REST API Fuzzing  (ICSE 2019)](#rest-ler-stateful-rest-api-fuzzing--icse-2019)
   - [Life after Speech Recognition: Fuzzing Semantic Misinterpretation for Voice Assistant Applications (NDSS 2019)](#life-after-speech-recognition-fuzzing-semantic-misinterpretation-for-voice-assistant-applications-ndss-2019)
@@ -12,53 +17,53 @@
   - [MoonShine: Optimizing OS Fuzzer Seed Selection with Trace Distillation (USENUX Security2018)](#moonshine-optimizing-os-fuzzer-seed-selection-with-trace-distillation-usenux-security2018)
   - [Singularity: Pattern Fuzzing for Worst Case Complexity (FSE 2018)](#singularity-pattern-fuzzing-for-worst-case-complexity-fse-2018)
 
-- [Evaluate Fuzzing](#evaluate-fuzzing)
+- [**Evaluate Fuzzing**](#evaluate-fuzzing)
   - [Evaluating Fuzz Testing (CCS 2018)](#evaluating-fuzz-testing-ccs-2018)
 
-- [Kernel Fuzzing](#kernel-fuzzing)
+- [**Kernel Fuzzing**](#kernel-fuzzing)
   - [PeriScope: An Effective Probing and Fuzzing Framework for the Hardware-OS Boundary (NDSS2019)](#periscope-an-effective-probing-and-fuzzing-framework-for-the-hardware-os-boundary-ndss2019)
   - [Fuzzing File Systems via Two-Dimensional Input Space Exploration (S&P 2019)](#fuzzing-file-systems-via-two-dimensional-input-space-exploration-sp-2019)
   - [Razzer: Finding Kernel Race Bugs through Fuzzing (S&P 2019)](#razzer-finding-kernel-race-bugs-through-fuzzing-sp-2019)
   - [kAFL: Hardware-Assisted Feedback Fuzzing for OS Kernels (Usenix Security2017)](#kafl-hardware-assisted-feedback-fuzzing-for-os-kernels-usenix-security2017)
 
-- [Hybrid Fuzzing:](#hybrid-fuzzing)
+- [**Hybrid Fuzzing**](#hybrid-fuzzing)
   - [Send Hardest Problems My Way: Probabilistic Path Prioritization for Hybrid Fuzzing  (NDSS2019)](#send-hardest-problems-my-way-probabilistic-path-prioritization-for-hybrid-fuzzing--ndss2019)
   - [QSYM: A Practical Concolic Execution Engine Tailored for Hybrid Fuzzing (USENUX Security2018)](#qsym-a-practical-concolic-execution-engine-tailored-for-hybrid-fuzzing-usenux-security2018)
   - [Angora: Efficient Fuzzing by Principled Search (S&P 2018)](#angora-efficient-fuzzing-by-principled-search-sp-2018)
   - [Driller: Argumenting Fuzzing Through Selective Symbolic Execution(NDSS 2016)](#driller-argumenting-fuzzing-through-selective-symbolic-executionndss-2016)
 
-- [Addressing Magic bytes \ checksum:](#addressing-magic-bytes-\-checksum)
+- [**Addressing Magic bytes \ checksum**](#addressing-magic-bytes-\-checksum)
   - [REDQUEEN: Fuzzing with Input-to-State Correspondence  (NDSS2019)](#redqueen-fuzzing-with-input-to-state-correspondence--ndss2019)
   - [T-Fuzz: fuzzing by program transformation (S&P 2018)](#t-fuzz-fuzzing-by-program-transformation-sp-2018)
   - [FairFuzz: A Targeted Mutation Strategy for Increasing Greybox Fuzz Testing Coverage (ASE 2018)](#fairfuzz-a-targeted-mutation-strategy-for-increasing-greybox-fuzz-testing-coverage-ase-2018)
   - [VUzzer: Application-aware Evolutionary Fuzzing (NDSS 2017)](#vuzzer-application-aware-evolutionary-fuzzing-ndss-2017)
   
-- [Inputs-aware Fuzzing](#inputs-aware-fuzzing)
+- [**Inputs-aware Fuzzing**](#inputs-aware-fuzzing)
   - [SLF: Fuzzing without Valid Seed Inputs (ICSE2019)](#slf-fuzzing-without-valid-seed-inputs-icse2019)
   - [Superion: Grammar-Aware Greybox Fuzzing (ICSE 2019)](#superion-grammar-aware-greybox-fuzzing-icse-2019)
   - [ProFuzzer: On-the-fly Input Type Probing for Better Zero-day Vulnerability Discovery (S&P 2019)](#profuzzer-on-the-fly-input-type-probing-for-better-zero-day-vulnerability-discovery-sp-2019)
 
-- [Directed Fuzzing](#directed-fuzzing)
+- [**Directed Fuzzing**](#directed-fuzzing)
   - [Directed Greybox Fuzzing (CCS 2017)](#directed-greybox-fuzzing-ccs-2017)
   - [Hawkeye: Towards a Desired Directed Grey-box Fuzzer (CCS 2018)](#hawkeye-towards-a-desired-directed-grey-box-fuzzer-ccs-2018)
 
-- [Addressing Collision:](#addressing-collision)
+- [**Addressing Collision**](#addressing-collision)
   - [CollAFL: Path Sensitive Fuzzing (S&P 2018)](#collafl-path-sensitive-fuzzing-sp-2018)
 
-- [Fuzzing Overhead & Performance：](#fuzzing-overhead--performance)
+- [**Fuzzing Overhead & Performance**](#fuzzing-overhead--performance)
   - [Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing (S&P 2019)](#full-speed-fuzzing-reducing-fuzzing-overhead-through-coverage-guided-tracing-sp-2019)
   - [Designing New Operating Primitives to Improve Fuzzing Performance (CCS 2017)](#designing-new-operating-primitives-to-improve-fuzzing-performance-ccs-2017)
 
-- [Enhancing Memory Error:](#enhancing-memory-error)
+- [**Enhancing Memory Error**](#enhancing-memory-error)
   - [Enhancing Memory Error Detection for Large-Scale Applications and Fuzz Testing (NDSS 2018)](#enhancing-memory-error-detection-for-large-scale-applications-and-fuzz-testing-ndss-2018)
 
-- [Power Schedule](#power-schedule)
+- [**Power Schedule**](#power-schedule)
   - [Coverage-based Greybox Fuzzing as Markov Chain (CCS 2016)](#coverage-based-greybox-fuzzing-as-markov-chain-ccs-2016)
 
-- [Learning-based Fuzzing:](#learning-based-fuzzing)
+- [**Learning-based Fuzzing**](#learning-based-fuzzing)
   - [NEUZZ: Efficient Fuzzing with Neural Program Smoothing (S&P 2019)](#neuzz-efficient-fuzzing-with-neural-program-smoothing-sp-2019)
 
-- [Fuzzing Machine Learning Model](#fuzzing-machine-learning-model)
+- [**Fuzzing Machine Learning Model**](#fuzzing-machine-learning-model)
   - [TensorFuzz: Debugging Neural Networks with Coverage-Guided Fuzzing (2018)](#tensorfuzz-debugging-neural-networks-with-coverage-guided-fuzzing-2018)
   - [Coverage-Guided Fuzzing for Deep Neural Networks (2018)](#coverage-guided-fuzzing-for-deep-neural-networks-2018)
 

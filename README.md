@@ -38,6 +38,7 @@
   - [SLF: Fuzzing without Valid Seed Inputs (ICSE2019)](#slf-fuzzing-without-valid-seed-inputs-icse2019)
   - [Superion: Grammar-Aware Greybox Fuzzing (ICSE 2019)](#superion-grammar-aware-greybox-fuzzing-icse-2019)
   - [ProFuzzer: On-the-fly Input Type Probing for Better Zero-day Vulnerability Discovery (S&P 2019)](#profuzzer-on-the-fly-input-type-probing-for-better-zero-day-vulnerability-discovery-sp-2019)
+  - [CodeAlchemist: Semantics-Aware Code Generation to Find Vulnerabilities in JavaScript Engines (NDSS 2019)](#codealchemist-semantics-aware-code-generation-to-find-vulnerabilities-in-javascript-engines-ndss-2019)
 
 - [**Directed Fuzzing**](#directed-fuzzing)
   - [Directed Greybox Fuzzing (CCS 2017)](#directed-greybox-fuzzing-ccs-2017)
@@ -73,6 +74,7 @@
 - [Enhancing Memory Error Detection](http://note.youdao.com/noteshare?id=6228fef31b29b4ffbbbe1c1d80ef3fa0&sub=CB0D15A0D6394FA188C06B2BCB6367A3)
 - [NEZHA (Differential testing)](http://note.youdao.com/noteshare?id=7e602068c641217947c97b287291c9c7&sub=32BD04EB8C00424E87FA7B948D38EC96)
 - [REDQUEEN](http://note.youdao.com/noteshare?id=6a4b00d912eab145d1c1f32f11bde3e0&sub=7DADC02169A14B33979BCCB2556E4526)
+- [AddressSanitizer: A Fast Address Sanity Checker](http://note.youdao.com/noteshare?id=aecd3639e21a682555fd6b002a176937&sub=AF24A1A1E1534A49B00F7E504A4B111C)
 
 
 # Interesting Fuzzing
@@ -199,7 +201,7 @@ We present PeriScope, a Linux kernel based probing framework that enables fine-g
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/USENUX18_Kafl.pdf)
 
-* <img src="image/ppt_24px.png">[Slide](./Paper/USENUX18_Kafl_Slides.pdf)
+* <img src="image/ppt_24px.png">[Slides](./Paper/USENUX18_Kafl_Slides.pdf)
 
 * <img src="image/github_24px.png">[CodePaper](https://github.com/RUB-SysSec/kAFL)
 
@@ -327,6 +329,15 @@ In this paper, we present an application-aware evolutionary fuzzing strategy tha
 **Abstract:** Existing mutation based fuzzers tend to randomly mutate the input of a program without understanding its underlying syntax and semantics. In this paper, we propose a novel on-the-fly probing technique (called ProFuzzer) that automatically recovers and understands input fields of critical importance to vulnerability discovery during a fuzzing process and intelligently adapts the mutation strategy to enhance the chance of hitting zero-day targets. Since such probing is transparently piggybacked to the regular fuzzing, no prior knowledge of the input specification is needed. During fuzzing, individual bytes are first mutated and their fuzzing results are automatically analyzed to link those related together and identify the type for the field connecting them; these bytes are further mutated together following type-specific strategies, which substantially prunes the search space. We define the probe types generally across all applications, thereby making our technique application agnostic. Our experiments on standard benchmarks and real-world applications show that ProFuzzer substantially outperforms AFL and its optimized version AFLFast, as well as other state-of-art fuzzers including VUzzer, Driller and QSYM. Within two months, it exposed 42 zero-days in 10 intensively tested programs, generating 30 CVEs.
 
 
+### CodeAlchemist: Semantics-Aware Code Generation to Find Vulnerabilities in JavaScript Engines (NDSS 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/NDSS2019_CodeAlchemist.pdf)
+
+* <img src="image/ppt_24px.png">[Slides](./Paper/NDSS2019_CodeAlchemist_slidesz.pdf)
+
+**Abstract:** JavaScript engines are an attractive target for attackers due to their popularity and flexibility in building exploits. Current state-of-the-art fuzzers for finding JavaScript engine vulnerabilities focus mainly on generating syntactically correct test cases based on either a predefined context-free grammar or a trained probabilistic language model. Unfortunately, syntactically correct JavaScript sentences are often semantically invalid at runtime. Furthermore, statically analyzing the semantics of JavaScript code is challenging due to its dynamic nature: JavaScript code is generated at runtime, and JavaScript expressions are dynamically-typed. To address this challenge, we propose a novel test case generation algorithm that we call semantics-aware assembly, and implement it in a fuzz testing tool termed CodeAlchemist. Our tool can generate arbitrary JavaScript code snippets that are both semantically and syntactically correct, and it effectively yields test cases that can crash JavaScript engines. We found numerous vulnerabilities of the latest JavaScript engines with CodeAlchemist and reported them to the vendors.
+
+
 
 # Directed Fuzzing
 
@@ -334,7 +345,7 @@ In this paper, we present an application-aware evolutionary fuzzing strategy tha
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/CCS17_aflgo.pdf)
   
-* <img src="image/github_note_24px.png">[Code](https://github.com/aflgo/aflgo)
+* <img src="image/github_24px.png">[Code](https://github.com/aflgo/aflgo)
   
 **Abstract:** Existing Greybox Fuzzers (GF) cannot be effectively directed, for instance, towards problematic changes or patches, towards critical system calls or dangerous locations, or towards functions in the stack-trace of a reported vulnerability that we wish to reproduce. In this paper, we introduce Directed Greybox Fuzzing (DGF) which generates inputs with the objective of reaching a given set of target program locations efficiently. We develop and evaluate a simulated annealing-based power schedule that gradually assigns more energy to seeds that are closer to the target locations while reducing energy for seeds that are further away. Experiments with our implementation AFLGo demonstrate that DGF outperforms both directed symbolic-execution-based whitebox fuzzing and undirected greybox fuzzing. We show applications of DGF to patch testing and crash reproduction, and discuss the integration of AFLGo into Google's continuous fuzzing platform OSS-Fuzz. Due to its directedness, AFLGo could find 39 bugs in several well-fuzzed, security-critical projects like LibXML2. 17 CVEs were assigned.
 
@@ -389,7 +400,7 @@ In this paper, we tackle another way to improve the performance of fuzzing, whic
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/NDSS18_Enhancing_Paper.pdf)
 
-* <img src="image/ppt_24px.png">[Slide](./Paper/NDSS18_Enhancing_Slides.pdf)
+* <img src="image/ppt_24px.png">[Slides](./Paper/NDSS18_Enhancing_Slides.pdf)
 
 **Abstract:** Memory errors are one of the most common vulnerabilities for the popularity of memory unsafe languages including C and C++. Once exploited, it can easily lead to system crash (i.e., denial-of-service attacks) or allow adversaries to fully compromise the victim system. This paper proposes MEDS, a practical memory error detector. MEDS significantly enhances its detection capability by approximating two ideal properties, called an infinite gap and an infinite heap. The approximated infinite gap of MEDS setups large inaccessible memory region between objects (i.e., 4 MB), and the approximated infinite heap allows MEDS to fully utilize virtual address space (i.e., 45-bits memory space). The key idea of MEDS in achieving these properties is a novel user-space memory allocation mechanism, MEDSALLOC. MEDSALLOC leverages a page aliasing mechanism, which allows MEDS to maximize the virtual memory space utilization but minimize the physical memory uses. To highlight the detection capability and practical impacts of MEDS, we evaluated and then compared to Google’s state-of-the-art detection tool, AddressSanitizer. MEDS showed three times better detection rates on four real-world vulnerabilities in Chrome and Firefox. More importantly, when used for a fuzz testing, MEDS was able to identify 68.3% more memory errors than AddressSanitizer for the same amount of a testing time, highlighting its practical aspects in the software testing area. In terms of performance overhead, MEDS slowed down 108% and 86% compared to native execution and AddressSanitizer, respectively, on real-world applications including Chrome, Firefox, Apache, Nginx, and OpenSSL.
 

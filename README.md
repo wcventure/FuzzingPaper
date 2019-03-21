@@ -2,16 +2,10 @@
 
 # All Papers
 
-- [**Interesting Fuzzing**](#interesting-fuzzing)
+- [**Differential Fuzzing**](#differential-fuzzing)
   - [DifFuzz: Differential Fuzzing for Side-Channel Analysis (ICSE 2019)](#diffuzz-differential-fuzzing-for-side-channel-analysis-icse-2019)
-  - [REST-ler: Stateful REST API Fuzzing  (ICSE 2019)](#rest-ler-stateful-rest-api-fuzzing--icse-2019)
-  - [Life after Speech Recognition: Fuzzing Semantic Misinterpretation for Voice Assistant Applications (NDSS 2019)](#life-after-speech-recognition-fuzzing-semantic-misinterpretation-for-voice-assistant-applications-ndss-2019)
-  - [ContractFuzzer: Fuzzing Smart Contracts for Vulnerability Detection (ASE 2018)](#contractfuzzer-fuzzing-smart-contracts-for-vulnerability-detection-ase-2018)
-  - [IoTFuzzer: Discovering Memory Corruptions in IoT Through App-based Fuzzing (NDSS 2018)](#iotfuzzer-discovering-memory-corruptions-in-iot-through-app-based-fuzzing-ndss-2018)
-  - [What You Corrupt Is Not What You Crash: Challenges in Fuzzing Embedded Devices (NDSS 2018)](#what-you-corrupt-is-not-what-you-crash-challenges-in-fuzzing-embedded-devices-ndss-2018)
-  - [MoonShine: Optimizing OS Fuzzer Seed Selection with Trace Distillation (USENUX Security2018)](#moonshine-optimizing-os-fuzzer-seed-selection-with-trace-distillation-usenux-security2018)
-  - [Singularity: Pattern Fuzzing for Worst Case Complexity (FSE 2018)](#singularity-pattern-fuzzing-for-worst-case-complexity-fse-2018)
   - [NEZHA: Efficient Domain-Independent Differential Testing (S&P 2017)](#nezha-efficient-domain-independent-differential-testing-sp-2017)
+  - [Coverage-Directed Differential Testing of JVM Implementations (PLDI 2016)](#coverage-directed-differential-testing-of-jvm-implementations-pldi-2016)
 
 - [**Evaluate Fuzzing**](#evaluate-fuzzing)
   - [Evaluating Fuzz Testing (CCS 2018)](#evaluating-fuzz-testing-ccs-2018)
@@ -64,20 +58,17 @@
   - [TensorFuzz: Debugging Neural Networks with Coverage-Guided Fuzzing (2018)](#tensorfuzz-debugging-neural-networks-with-coverage-guided-fuzzing-2018)
   - [Coverage-Guided Fuzzing for Deep Neural Networks (2018)](#coverage-guided-fuzzing-for-deep-neural-networks-2018)
 
+- [**Interesting Fuzzing**](#interesting-fuzzing)
+  - [REST-ler: Stateful REST API Fuzzing  (ICSE 2019)](#rest-ler-stateful-rest-api-fuzzing--icse-2019)
+  - [Life after Speech Recognition: Fuzzing Semantic Misinterpretation for Voice Assistant Applications (NDSS 2019)](#life-after-speech-recognition-fuzzing-semantic-misinterpretation-for-voice-assistant-applications-ndss-2019)
+  - [ContractFuzzer: Fuzzing Smart Contracts for Vulnerability Detection (ASE 2018)](#contractfuzzer-fuzzing-smart-contracts-for-vulnerability-detection-ase-2018)
+  - [IoTFuzzer: Discovering Memory Corruptions in IoT Through App-based Fuzzing (NDSS 2018)](#iotfuzzer-discovering-memory-corruptions-in-iot-through-app-based-fuzzing-ndss-2018)
+  - [What You Corrupt Is Not What You Crash: Challenges in Fuzzing Embedded Devices (NDSS 2018)](#what-you-corrupt-is-not-what-you-crash-challenges-in-fuzzing-embedded-devices-ndss-2018)
+  - [MoonShine: Optimizing OS Fuzzer Seed Selection with Trace Distillation (USENUX Security2018)](#moonshine-optimizing-os-fuzzer-seed-selection-with-trace-distillation-usenux-security2018)
+  - [Singularity: Pattern Fuzzing for Worst Case Complexity (FSE 2018)](#singularity-pattern-fuzzing-for-worst-case-complexity-fse-2018)
+  
 
-# Reading Notes
-
-- [DifFuzz (Side-channal analysis)](http://note.youdao.com/noteshare?id=06c39d23c76be5d0e6441a01c9eaff93&sub=B72A70BDD1DC47B39E56866B3903401B)
-- [ProFuzzer (Inference input structure)](http://note.youdao.com/noteshare?id=8e905e9d299cae5ceb3bbeac0591cfab&sub=9FCAB3A8AD4C48689095307EDD1A940A)
-- [FairFuzz (Target rare branches)](http://note.youdao.com/noteshare?id=5525c7a18e8681302229e9466290aac2&sub=C4769EA799584C5D89994FE397F76981)
-- [FairFuzz & ProFuzzer](http://note.youdao.com/noteshare?id=79c7f05ba2a64163e28a0267c7e1b181&sub=2E7496DA67634505B5F3A5F326CD6B27)
-- [Enhancing Memory Error Detection](http://note.youdao.com/noteshare?id=6228fef31b29b4ffbbbe1c1d80ef3fa0&sub=CB0D15A0D6394FA188C06B2BCB6367A3)
-- [NEZHA (Differential testing)](http://note.youdao.com/noteshare?id=7e602068c641217947c97b287291c9c7&sub=32BD04EB8C00424E87FA7B948D38EC96)
-- [REDQUEEN](http://note.youdao.com/noteshare?id=6a4b00d912eab145d1c1f32f11bde3e0&sub=7DADC02169A14B33979BCCB2556E4526)
-- [AddressSanitizer: A Fast Address Sanity Checker](http://note.youdao.com/noteshare?id=aecd3639e21a682555fd6b002a176937&sub=AF24A1A1E1534A49B00F7E504A4B111C)
-
-
-# Interesting Fuzzing
+# Differential Fuzzing
 
 ### DifFuzz: Differential Fuzzing for Side-Channel Analysis (ICSE 2019)
 
@@ -85,67 +76,6 @@
 * <img src="image/pdf_24px.png">[Paper](./Paper/ICSE19_DIFFUZZ.pdf)
 
 **Abstract:** Side-channel attacks allow an adversary to uncover secret program data by observing the behavior of a program with respect to a resource, such as execution time, consumed memory or response size. Side-channel vulnerabilities are difficult to reason about as they involve analyzing the correlations between resource usage over multiple program paths. We present DifFuzz, a fuzzing-based approach for detecting side-channel vulnerabilities related to time and space. DifFuzz automatically detects these vulnerabilities by analyzing two versions of the program and using resource-guided heuristics to find inputs that maximize the difference in resource consumption between secret-dependent paths. The methodology of DifFuzz is general and can be applied to programs written in any language. For this paper, we present an implementation that targets analysis of Java programs, and uses and extends the Kelinci and AFL fuzzers. We evaluate DifFuzz on a large number of Java programs and demonstrate that it can reveal unknown side-channel vulnerabilities in popular applications. We also show that DifFuzz compares favorably against Blazer and Themis, two state-of-the-art analysis tools for finding side-channels in Java programs.
-
-
-### REST-ler: Stateful REST API Fuzzing  (ICSE 2019)
-
-* <img src="image/pdf_24px.png">[Paper](./Paper/ICSE19_DIFFUZZ.pdf)
-
-**Abstract:** This paper introduces REST-ler, the first stateful REST API fuzzer. REST-ler analyzes the API specification of a cloud service and generates sequences of requests that automatically test the service through its API. REST-ler generates test sequences by (1) inferring producer-consumer dependencies among request types declared in the specification (eg inferring that “a request B should be executed after request A” because B takes as an input a resource-id x produced by A) and by (2) analyzing dynamic feedback from responses observed during prior test executions in order to generate new tests (eg learning that “a request C after a request sequence A;B is refused by the service” and therefore avoiding this combination in the future).
-We present experimental results showing that these two techniques are necessary to thoroughly exercise a service under test while pruning the large search space of possible request sequences. We used REST-ler to test GitLab, a large open-source self-hosted Git service, as well as several Microsoft Azure and Office365 cloud services. REST-ler found 28 bugs in Gitlab and several bugs in each of the Azure and Office365 cloud services tested so far. These bugs have been confirmed by the service owners, and are either in the process of being fixed or have already been fixed.
-
-
-### Life after Speech Recognition: Fuzzing Semantic Misinterpretation for Voice Assistant Applications (NDSS 2019)
-
-* <img src="image/pdf_24px.png">[Paper](./Paper/NDSS19_Life.pdf)
-
-**Abstract:** Popular Voice Assistant (VA) services such as Amazon Alexa and Google Assistant are now rapidly appifying their platforms to allow more flexible and diverse voice-controlled service experience. However, the ubiquitous deployment of VA devices and the increasing number of third-party applications have raised security and privacy concerns. While previous works such as hidden voice attacks mostly examine the problems of VA services’ default Automatic Speech Recognition (ASR) component, our work analyzes and evaluates the security of the succeeding component after ASR, i.e., Natural Language Understanding (NLU), which performs semantic interpretation (i.e., text-to-intent) after ASR’s acoustic-to-text processing. In particular, we focus on NLU’s Intent Classifier which is used in customizing machine understanding for third-party VA Applications (or vApps). We find that the semantic inconsistency caused by the improper semantic interpretation of an Intent Classifier can create the opportunity of breaching the integrity of vApp processing when attackers delicately leverage some common spoken errors.
-In this paper, we design the first linguistic-model-guided fuzzing tool, named LipFuzzer, to assess the security of Intent Classifier and systematically discover potential misinterpretation-prone spoken errors based on vApps’ voice command templates. To guide the fuzzing, we construct adversarial linguistic models with the help of Statistical Relational Learning (SRL) and emerging Natural Language Processing (NLP) techniques. In evaluation, we have successfully verified the effectiveness and accuracy of LipFuzzer. We also use LipFuzzer to evaluate both Amazon Alexa and Google Assistant vApp platforms. We have identified that a large portion of real-world vApps are vulnerable based on our fuzzing result.
-
-
-### ContractFuzzer: Fuzzing Smart Contracts for Vulnerability Detection (ASE 2018)
-
-* <img src="image/youdao_note_24px.png">[Reading Note](https://securitygossip.com/blog/2019/01/21/contractfuzzer-fuzzing-smart-contracts-for-vulnerability-detection/)
-
-* <img src="image/pdf_24px.png">[Paper](./Paper/ASE18_ContractFuzzer.pdf)
-
-**Abstract:** Decentralized cryptocurrencies feature the use of blockchain to transfer values among peers on networks without central agency. Smart contracts are programs running on top of the blockchain consensus protocol to enable people make agreements while minimizing trusts. Millions of smart contracts have been deployed in various decentralized applications. The security vulnerabilities within those smart contracts pose significant threats to their applications. Indeed, many critical security vulnerabilities within smart contracts on Ethereum platform have caused huge financial losses to their users. In this work, we present ContractFuzzer, a novel fuzzer to test Ethereum smart contracts for security vulnerabilities. ContractFuzzer generates fuzzing inputs based on the ABI specifications of smart contracts, defines test oracles to detect security vulnerabilities, instruments the EVM to log smart contracts runtime behaviors, and analyzes these logs to report security vulnerabilities. Our fuzzing of 6991 smart contracts has flagged more than 459 vulnerabilities with high precision. In particular, our fuzzing tool successfully detects the vulnerability of the DAO contract that leads to USD 60 million loss and the vulnerabilities of Parity Wallet that have led to the loss of USD 30 million and the freezing of USD 150 million worth of Ether.
-
-
-### IoTFuzzer: Discovering Memory Corruptions in IoT Through App-based Fuzzing (NDSS 2018)
-
-* <img src="image/youdao_note_24px.png">[Reading Note](https://securitygossip.com/blog/2018/06/15/iotfuzzer-discovering-memory-corruptions-in-iot-through-app-based-fuzzing/)
-
-* <img src="image/pdf_24px.png">[Paper](./Paper/NDSS18_IoTfuzzer.pdf)
-
-* <img src="image/ppt_24px.png">[Slides](./Paper/NDSS18_IoTFuzzer_Slides.pdf)
-
-**Abstract:** With more IoT devices entering the consumer market, it becomes imperative to detect their security vulnerabilities before an attacker does. Existing binary analysis based approaches only work on firmware, which is less accessible except for those equipped with special tools for extracting the code from the device. To address this challenge in IoT security analysis, we present in this paper a novel automatic fuzzing framework, called IOTFUZZER, which aims at finding memory corruption vulnerabilities in IoT devices without access to their firmware images. The key idea is based upon the observation that most IoT devices are controlled through their official mobile apps, and such an app often contains rich information about the protocol it uses to communicate with its device. Therefore, by identifying and reusing program-specific logic (e.g., encryption) to mutate the test case (particularly message fields), we are able to effectively probe IoT targets without relying on any knowledge about its protocol specifications. In our research, we implemented IOTFUZZER and evaluated 17 real-world IoT devices running on different protocols, and our approach successfully identified 15 memory corruption vulnerabilities (including 8 previously unknown ones).
-
-
-### What You Corrupt Is Not What You Crash: Challenges in Fuzzing Embedded Devices (NDSS 2018)
-
-* <img src="image/pdf_24px.png">[Paper](./Paper/NDSS18_Muench_paper.pdf)
-
-* <img src="image/ppt_24px.png">[Slides](./Paper/NDSS18_Muench_Slides.pdf)
-
-**Abstract:** As networked embedded systems are becoming more ubiquitous, their security is becoming critical to our daily life. While manual or automated large scale analysis of those systems regularly uncover new vulnerabilities, the way those systems are analyzed follows often the same approaches used on desktop systems. More specifically, traditional testing approaches relies on observable crashes of a program, and binary instrumentation techniques are used to improve the detection of those faulty states. In this paper, we demonstrate that memory corruptions, a common class of security vulnerabilities, often result in different behavior on embedded devices than on desktop systems. In particular, on embedded devices, effects of memory corruption are often less visible. This reduces significantly the effectiveness of traditional dynamic testing techniques in general, and fuzzing in particular. Additionally, we analyze those differences in several categories of embedded devices and show the resulting impact on firmware analysis. We further describe and evaluate relatively simple heuristics which can be applied at run time (on an execution trace or in an emulator), during the analysis of an embedded device to detect previously undetected memory corruptions.
-
-
-### MoonShine: Optimizing OS Fuzzer Seed Selection with Trace Distillation (USENUX Security2018)
-
-* <img src="image/pdf_24px.png">[Paper](./Paper/USENUX18_MoonShine.pdf)
-
-**Abstract:** OS fuzzers primarily test the system call interface between the OS kernel and user-level applications for security vulnerabilities. The effectiveness of evolutionary OS fuzzers depends heavily on the quality and diversity of their seed system call sequences. However, generating good seeds for OS fuzzing is a hard problem as the behavior of each system call depends heavily on the OS kernel state created by the previously executed system calls. Therefore, popular evolutionary OS fuzzers often rely on hand-coded rules for generating valid seed sequences of system calls that can bootstrap the fuzzing process. Unfortunately, this approach severely restricts the diversity of the seed system call sequences and therefore limits the effectiveness of the fuzzers.
-In this paper, we develop MoonShine, a novel strategy for distilling seeds for OS fuzzers from system call traces of real-world programs while still maintaining the dependencies across the system calls. MoonShine leverages light-weight static analysis for efficiently detecting dependencies across different system calls.
-We designed and implemented MoonShine as an extension to Syzkaller, a state-of-the-art evolutionary fuzzer for the Linux kernel. Starting from traces containing 2.8 million system calls gathered from 3,220 real-world programs, MoonShine distilled down to just over 14,000 calls while preserving 86% of the original code coverage. Using these distilled seed system call sequences, MoonShine was able to improve Syzkaller's achieved code coverage for the Linux kernel by 13% on average. MoonShine also found 14 new vulnerabilities in the Linux kernel that were not found by Syzkaller.
-
-
-### Singularity: Pattern Fuzzing for Worst Case Complexity (FSE 2018)
-
-* <img src="image/pdf_24px.png">[Paper](./Paper/FSE18_PatternFuzzing.pdf)
-
-**Abstract:** We describe a new blackbox complexity testing technique for determining the worst-case asymptotic complexity of a given application. The key idea is to look for an input pattern —rather than a concrete input— that maximizes the asymptotic resource usage of the program. Because input patterns can be described concisely as programs in a restricted language, our method transforms the complexity testing problem to optimal program synthesis. In particular, we express these input patterns using a new model of computation called Recurrent Computation Graph (RCG) and solve the optimal synthesis problem by developing a genetic programming algorithm that operates on RCGs. We have implemented the proposed ideas in a tool called Singularity and evaluate it on a diverse set of benchmarks. Our evaluation shows that Singularity can effectively discover the worst-case complexity of various algorithms and that it is more scalable compared to existing state-of-the-art techniques. Furthermore, our experiments also corroborate that Singularity can discover previously unknown performance bugs and availability vulnerabilities in real-world applications such as Google Guava and JGraphT.
 
 
 ### NEZHA: Efficient Domain-Independent Differential Testing (S&P 2017)
@@ -157,6 +87,17 @@ We designed and implemented MoonShine as an extension to Syzkaller, a state-of-t
 * <img src="image/github_24px.png">[Code](https://github.com/nezha-dt/nezha)
 
 Differential testing uses similar programs as cross-referencing oracles to find semantic bugs that do not exhibit explicit erroneous behaviors like crashes or assertion failures. Unfortunately, existing differential testing tools are domain-specific and inefficient, requiring large numbers of test inputs to find a single bug. In this paper, we address these issues by designing and implementing NEZHA, an efficient input-format-agnostic differential testing framework. The key insight behind NEZHA's design is that current tools generate inputs by simply borrowing techniques designed for finding crash or memory corruption bugs in individual programs (e.g., maximizing code coverage). By contrast, NEZHA exploits the behavioral asymmetries between multiple test programs to focus on inputs that are more likely to trigger semantic bugs. We introduce the notion of δ-diversity, which summarizes the observed asymmetries between the behaviors of multiple test applications. Based on δ-diversity, we design two efficient domain-independent input generation mechanisms for differential testing, one gray-box and one black-box. We demonstrate that both of these input generation schemes are significantly more efficient than existing tools at finding semantic bugs in real-world, complex software.
+
+
+### Coverage-Directed Differential Testing of JVM Implementations (PLDI 2016)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/PLDI16_JVM.pdf)
+
+* <img src="image/ppt_24px.png">[Slides](./Paper/PLDI16_JVM.pptx)
+  
+Java virtual machine (JVM) is a core technology, whose reliability is critical. Testing JVM implementations requires painstaking effort in designing test classfiles (*.class) along with their test oracles. An alternative is to employ binary fuzzing to differentially test JVMs by blindly mutating seeding classfiles and executing the resulting mutants on different JVMs for revealing inconsistent behaviors. However, this blind approach is not cost effective in practice because (1) most of the mutants are invalid and redundant, and (2) the discovered JVM discrepancies, if any, mostly only concern compatibility issues, rather than actual defects.
+This paper tackles this challenge by introducing classfuzz, a coverage-directed fuzzing approach that focuses on representative classfiles for differential JVM testing. Our core insight is to (1) mutate seeding classfiles using a set of predefined mutation operators and employ Markov Chain Monte Carlo (MCMC) sampling to guide mutator selection, and (2) execute the mutants on a reference JVM implementation and use coverage uniqueness as a discipline for accepting representative ones. The accepted classfiles are used as inputs to differentially test JVMs and find defects.
+We have implemented classfuzz and conducted an extensive evaluation of it against existing fuzz testing algorithms. Our evaluation results show that classfuzz can enhance the ratio of discrepancy-triggering classfiles from 1.7% to 11.9%. We have also reported 62 defect-indicative discrepancies, along with the test classfiles, to JVM developers. A number of our reported issues have already been confirmed as JVM defects, and some even match recent clarifications and changes to the JVM specification, Java SE 8 Edition.
 
 
 
@@ -445,3 +386,80 @@ We implemented the exponential schedule by extending AFL. In 24 hours, AFLFAST e
 * <img src="image/pdf_24px.png">[Paper](./Paper/18_Deep-neural-networks.pdf)
 
 **Abstract:** In company with the data explosion over the past decade, deep neural network (DNN) based software has experienced unprecedented leap and is becoming the key driving force of many novel industrial applications, including many safety-critical scenarios such as autonomous driving. Despite great success achieved in various human intelligence tasks, similar to traditional software, DNNs could also exhibit incorrect behaviors caused by hidden defects causing severe accidents and losses. In this paper, we propose DeepHunter, an automated fuzz testing framework for hunting potential defects of general-purpose DNNs. DeepHunter performs metamorphic mutation to generate new semantically preserved tests, and leverages multiple plugable coverage criteria as feedback to guide the test generation from different perspectives. To be scalable towards practical-sized DNNs, DeepHunter maintains multiple tests in a batch, and prioritizes the tests selection based on active feedback. The effectiveness of DeepHunter is extensively investigated on 3 popular datasets (MNIST, CIFAR-10, ImageNet) and 7 DNNs with diverse complexities, under large set of 6 coverage criteria as feedback. The large-scale experiments demonstrate that DeepHunter can (1) significantly boost the coverage with guidance; (2) generate useful tests to detect erroneous behaviors and facilitate the DNN model quality evaluation; (3) accurately capture potential defects during DNN quantization for platform migration.
+
+
+
+# Interesting Fuzzing
+
+### REST-ler: Stateful REST API Fuzzing  (ICSE 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/ICSE19_DIFFUZZ.pdf)
+
+**Abstract:** This paper introduces REST-ler, the first stateful REST API fuzzer. REST-ler analyzes the API specification of a cloud service and generates sequences of requests that automatically test the service through its API. REST-ler generates test sequences by (1) inferring producer-consumer dependencies among request types declared in the specification (eg inferring that “a request B should be executed after request A” because B takes as an input a resource-id x produced by A) and by (2) analyzing dynamic feedback from responses observed during prior test executions in order to generate new tests (eg learning that “a request C after a request sequence A;B is refused by the service” and therefore avoiding this combination in the future).
+We present experimental results showing that these two techniques are necessary to thoroughly exercise a service under test while pruning the large search space of possible request sequences. We used REST-ler to test GitLab, a large open-source self-hosted Git service, as well as several Microsoft Azure and Office365 cloud services. REST-ler found 28 bugs in Gitlab and several bugs in each of the Azure and Office365 cloud services tested so far. These bugs have been confirmed by the service owners, and are either in the process of being fixed or have already been fixed.
+
+
+### Life after Speech Recognition: Fuzzing Semantic Misinterpretation for Voice Assistant Applications (NDSS 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/NDSS19_Life.pdf)
+
+**Abstract:** Popular Voice Assistant (VA) services such as Amazon Alexa and Google Assistant are now rapidly appifying their platforms to allow more flexible and diverse voice-controlled service experience. However, the ubiquitous deployment of VA devices and the increasing number of third-party applications have raised security and privacy concerns. While previous works such as hidden voice attacks mostly examine the problems of VA services’ default Automatic Speech Recognition (ASR) component, our work analyzes and evaluates the security of the succeeding component after ASR, i.e., Natural Language Understanding (NLU), which performs semantic interpretation (i.e., text-to-intent) after ASR’s acoustic-to-text processing. In particular, we focus on NLU’s Intent Classifier which is used in customizing machine understanding for third-party VA Applications (or vApps). We find that the semantic inconsistency caused by the improper semantic interpretation of an Intent Classifier can create the opportunity of breaching the integrity of vApp processing when attackers delicately leverage some common spoken errors.
+In this paper, we design the first linguistic-model-guided fuzzing tool, named LipFuzzer, to assess the security of Intent Classifier and systematically discover potential misinterpretation-prone spoken errors based on vApps’ voice command templates. To guide the fuzzing, we construct adversarial linguistic models with the help of Statistical Relational Learning (SRL) and emerging Natural Language Processing (NLP) techniques. In evaluation, we have successfully verified the effectiveness and accuracy of LipFuzzer. We also use LipFuzzer to evaluate both Amazon Alexa and Google Assistant vApp platforms. We have identified that a large portion of real-world vApps are vulnerable based on our fuzzing result.
+
+
+### ContractFuzzer: Fuzzing Smart Contracts for Vulnerability Detection (ASE 2018)
+
+* <img src="image/youdao_note_24px.png">[Reading Note](https://securitygossip.com/blog/2019/01/21/contractfuzzer-fuzzing-smart-contracts-for-vulnerability-detection/)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/ASE18_ContractFuzzer.pdf)
+
+**Abstract:** Decentralized cryptocurrencies feature the use of blockchain to transfer values among peers on networks without central agency. Smart contracts are programs running on top of the blockchain consensus protocol to enable people make agreements while minimizing trusts. Millions of smart contracts have been deployed in various decentralized applications. The security vulnerabilities within those smart contracts pose significant threats to their applications. Indeed, many critical security vulnerabilities within smart contracts on Ethereum platform have caused huge financial losses to their users. In this work, we present ContractFuzzer, a novel fuzzer to test Ethereum smart contracts for security vulnerabilities. ContractFuzzer generates fuzzing inputs based on the ABI specifications of smart contracts, defines test oracles to detect security vulnerabilities, instruments the EVM to log smart contracts runtime behaviors, and analyzes these logs to report security vulnerabilities. Our fuzzing of 6991 smart contracts has flagged more than 459 vulnerabilities with high precision. In particular, our fuzzing tool successfully detects the vulnerability of the DAO contract that leads to USD 60 million loss and the vulnerabilities of Parity Wallet that have led to the loss of USD 30 million and the freezing of USD 150 million worth of Ether.
+
+
+### IoTFuzzer: Discovering Memory Corruptions in IoT Through App-based Fuzzing (NDSS 2018)
+
+* <img src="image/youdao_note_24px.png">[Reading Note](https://securitygossip.com/blog/2018/06/15/iotfuzzer-discovering-memory-corruptions-in-iot-through-app-based-fuzzing/)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/NDSS18_IoTfuzzer.pdf)
+
+* <img src="image/ppt_24px.png">[Slides](./Paper/NDSS18_IoTFuzzer_Slides.pdf)
+
+**Abstract:** With more IoT devices entering the consumer market, it becomes imperative to detect their security vulnerabilities before an attacker does. Existing binary analysis based approaches only work on firmware, which is less accessible except for those equipped with special tools for extracting the code from the device. To address this challenge in IoT security analysis, we present in this paper a novel automatic fuzzing framework, called IOTFUZZER, which aims at finding memory corruption vulnerabilities in IoT devices without access to their firmware images. The key idea is based upon the observation that most IoT devices are controlled through their official mobile apps, and such an app often contains rich information about the protocol it uses to communicate with its device. Therefore, by identifying and reusing program-specific logic (e.g., encryption) to mutate the test case (particularly message fields), we are able to effectively probe IoT targets without relying on any knowledge about its protocol specifications. In our research, we implemented IOTFUZZER and evaluated 17 real-world IoT devices running on different protocols, and our approach successfully identified 15 memory corruption vulnerabilities (including 8 previously unknown ones).
+
+
+### What You Corrupt Is Not What You Crash: Challenges in Fuzzing Embedded Devices (NDSS 2018)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/NDSS18_Muench_paper.pdf)
+
+* <img src="image/ppt_24px.png">[Slides](./Paper/NDSS18_Muench_Slides.pdf)
+
+**Abstract:** As networked embedded systems are becoming more ubiquitous, their security is becoming critical to our daily life. While manual or automated large scale analysis of those systems regularly uncover new vulnerabilities, the way those systems are analyzed follows often the same approaches used on desktop systems. More specifically, traditional testing approaches relies on observable crashes of a program, and binary instrumentation techniques are used to improve the detection of those faulty states. In this paper, we demonstrate that memory corruptions, a common class of security vulnerabilities, often result in different behavior on embedded devices than on desktop systems. In particular, on embedded devices, effects of memory corruption are often less visible. This reduces significantly the effectiveness of traditional dynamic testing techniques in general, and fuzzing in particular. Additionally, we analyze those differences in several categories of embedded devices and show the resulting impact on firmware analysis. We further describe and evaluate relatively simple heuristics which can be applied at run time (on an execution trace or in an emulator), during the analysis of an embedded device to detect previously undetected memory corruptions.
+
+
+### MoonShine: Optimizing OS Fuzzer Seed Selection with Trace Distillation (USENUX Security2018)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/USENUX18_MoonShine.pdf)
+
+**Abstract:** OS fuzzers primarily test the system call interface between the OS kernel and user-level applications for security vulnerabilities. The effectiveness of evolutionary OS fuzzers depends heavily on the quality and diversity of their seed system call sequences. However, generating good seeds for OS fuzzing is a hard problem as the behavior of each system call depends heavily on the OS kernel state created by the previously executed system calls. Therefore, popular evolutionary OS fuzzers often rely on hand-coded rules for generating valid seed sequences of system calls that can bootstrap the fuzzing process. Unfortunately, this approach severely restricts the diversity of the seed system call sequences and therefore limits the effectiveness of the fuzzers.
+In this paper, we develop MoonShine, a novel strategy for distilling seeds for OS fuzzers from system call traces of real-world programs while still maintaining the dependencies across the system calls. MoonShine leverages light-weight static analysis for efficiently detecting dependencies across different system calls.
+We designed and implemented MoonShine as an extension to Syzkaller, a state-of-the-art evolutionary fuzzer for the Linux kernel. Starting from traces containing 2.8 million system calls gathered from 3,220 real-world programs, MoonShine distilled down to just over 14,000 calls while preserving 86% of the original code coverage. Using these distilled seed system call sequences, MoonShine was able to improve Syzkaller's achieved code coverage for the Linux kernel by 13% on average. MoonShine also found 14 new vulnerabilities in the Linux kernel that were not found by Syzkaller.
+
+
+### Singularity: Pattern Fuzzing for Worst Case Complexity (FSE 2018)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/FSE18_PatternFuzzing.pdf)
+
+**Abstract:** We describe a new blackbox complexity testing technique for determining the worst-case asymptotic complexity of a given application. The key idea is to look for an input pattern —rather than a concrete input— that maximizes the asymptotic resource usage of the program. Because input patterns can be described concisely as programs in a restricted language, our method transforms the complexity testing problem to optimal program synthesis. In particular, we express these input patterns using a new model of computation called Recurrent Computation Graph (RCG) and solve the optimal synthesis problem by developing a genetic programming algorithm that operates on RCGs. We have implemented the proposed ideas in a tool called Singularity and evaluate it on a diverse set of benchmarks. Our evaluation shows that Singularity can effectively discover the worst-case complexity of various algorithms and that it is more scalable compared to existing state-of-the-art techniques. Furthermore, our experiments also corroborate that Singularity can discover previously unknown performance bugs and availability vulnerabilities in real-world applications such as Google Guava and JGraphT.
+
+
+
+# Reading Notes
+
+- [DifFuzz (Side-channal analysis)](http://note.youdao.com/noteshare?id=06c39d23c76be5d0e6441a01c9eaff93&sub=B72A70BDD1DC47B39E56866B3903401B)
+- [ProFuzzer (Inference input structure)](http://note.youdao.com/noteshare?id=8e905e9d299cae5ceb3bbeac0591cfab&sub=9FCAB3A8AD4C48689095307EDD1A940A)
+- [FairFuzz (Target rare branches)](http://note.youdao.com/noteshare?id=5525c7a18e8681302229e9466290aac2&sub=C4769EA799584C5D89994FE397F76981)
+- [FairFuzz & ProFuzzer](http://note.youdao.com/noteshare?id=79c7f05ba2a64163e28a0267c7e1b181&sub=2E7496DA67634505B5F3A5F326CD6B27)
+- [NEZHA (Differential testing)](http://note.youdao.com/noteshare?id=7e602068c641217947c97b287291c9c7&sub=32BD04EB8C00424E87FA7B948D38EC96)
+- [REDQUEEN](http://note.youdao.com/noteshare?id=6a4b00d912eab145d1c1f32f11bde3e0&sub=7DADC02169A14B33979BCCB2556E4526)
+- [AddressSanitizer: A Fast Address Sanity Checker](http://note.youdao.com/noteshare?id=aecd3639e21a682555fd6b002a176937&sub=AF24A1A1E1534A49B00F7E504A4B111C)
+- [Enhancing Memory Error Detection](http://note.youdao.com/noteshare?id=6228fef31b29b4ffbbbe1c1d80ef3fa0&sub=CB0D15A0D6394FA188C06B2BCB6367A3)

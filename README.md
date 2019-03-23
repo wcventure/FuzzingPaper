@@ -47,6 +47,7 @@
 
 - [**Enhancing Memory Error**](#enhancing-memory-error)
   - [Enhancing Memory Error Detection for Large-Scale Applications and Fuzz Testing (NDSS 2018)](#enhancing-memory-error-detection-for-large-scale-applications-and-fuzz-testing-ndss-2018)
+  - [AddressSanitizer: A Fast Address Sanity Checker  (USENUX Security2012)](#addressSanitizer-a-fast-address-sanity-checker-usenux-security2012)
 
 - [**Power Schedule**](#power-schedule)
   - [Coverage-based Greybox Fuzzing as Markov Chain (CCS 2016)](#coverage-based-greybox-fuzzing-as-markov-chain-ccs-2016)
@@ -83,6 +84,8 @@
 * <img src="image/youdao_note_24px.png">[Reading Note](http://note.youdao.com/noteshare?id=7e602068c641217947c97b287291c9c7&sub=32BD04EB8C00424E87FA7B948D38EC96)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/SP17_NEZHA.pdf)
+
+* <img src="image/ppt_24px.png">[Slides](./Paper/SP17_NEZHA_Slides.pdf)
 
 * <img src="image/github_24px.png">[Code](https://github.com/nezha-dt/nezha)
 
@@ -344,6 +347,17 @@ In this paper, we tackle another way to improve the performance of fuzzing, whic
 * <img src="image/ppt_24px.png">[Slides](./Paper/NDSS18_Enhancing_Slides.pdf)
 
 **Abstract:** Memory errors are one of the most common vulnerabilities for the popularity of memory unsafe languages including C and C++. Once exploited, it can easily lead to system crash (i.e., denial-of-service attacks) or allow adversaries to fully compromise the victim system. This paper proposes MEDS, a practical memory error detector. MEDS significantly enhances its detection capability by approximating two ideal properties, called an infinite gap and an infinite heap. The approximated infinite gap of MEDS setups large inaccessible memory region between objects (i.e., 4 MB), and the approximated infinite heap allows MEDS to fully utilize virtual address space (i.e., 45-bits memory space). The key idea of MEDS in achieving these properties is a novel user-space memory allocation mechanism, MEDSALLOC. MEDSALLOC leverages a page aliasing mechanism, which allows MEDS to maximize the virtual memory space utilization but minimize the physical memory uses. To highlight the detection capability and practical impacts of MEDS, we evaluated and then compared to Google’s state-of-the-art detection tool, AddressSanitizer. MEDS showed three times better detection rates on four real-world vulnerabilities in Chrome and Firefox. More importantly, when used for a fuzz testing, MEDS was able to identify 68.3% more memory errors than AddressSanitizer for the same amount of a testing time, highlighting its practical aspects in the software testing area. In terms of performance overhead, MEDS slowed down 108% and 86% compared to native execution and AddressSanitizer, respectively, on real-world applications including Chrome, Firefox, Apache, Nginx, and OpenSSL.
+
+
+### AddressSanitizer: A Fast Address Sanity Checker  (USENUX Security2012)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf)
+
+* <img src="image/ppt_24px.png">[Slides](https://www.usenix.org/sites/default/files/conference/protected-files/serebryany_atc12_slides.pdf)
+
+Memory access bugs, including buffer overflows and uses of freed heap memory, remain a serious problem for programming languages like C and C++. Many memory error detectors exist, but most of them are either slow or detect a limited set of bugs, or both.
+This paper presents AddressSanitizer, a new memory error detector. Our tool finds out-of-bounds accesses to heap, stack, and global objects, as well as use-after-free bugs. It employs a specialized memory allocator and code instrumentation that is simple enough to be implemented in any compiler, binary translation system, or even in hardware.
+AddressSanitizer achieves efficiency without sacrificing comprehensiveness. Its average slowdown is just 73% yet it accurately detects bugs at the point of occurrence. It has found over 300 previously unknown bugs in the Chromium browser and many bugs in other software.
 
 
 

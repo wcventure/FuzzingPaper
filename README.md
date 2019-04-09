@@ -15,6 +15,7 @@
   - [Fuzzing File Systems via Two-Dimensional Input Space Exploration (S&P 2019)](#fuzzing-file-systems-via-two-dimensional-input-space-exploration-sp-2019)
   - [Razzer: Finding Kernel Race Bugs through Fuzzing (S&P 2019)](#razzer-finding-kernel-race-bugs-through-fuzzing-sp-2019)
   - [kAFL: Hardware-Assisted Feedback Fuzzing for OS Kernels (Usenix Security2017)](#kafl-hardware-assisted-feedback-fuzzing-for-os-kernels-usenix-security2017)
+  - [DIFUZE: Interface aware fuzzing for kernel drivers (CCS 2017)](#difuze-interface-aware-fuzzing-for-kernel-drivers-ccs-2017)
 
 - [**Hybrid Fuzzing**](#hybrid-fuzzing)
   - [Send Hardest Problems My Way: Probabilistic Path Prioritization for Hybrid Fuzzing  (NDSS2019)](#send-hardest-problems-my-way-probabilistic-path-prioritization-for-hybrid-fuzzing--ndss2019)
@@ -33,6 +34,7 @@
   - [Superion: Grammar-Aware Greybox Fuzzing (ICSE 2019)](#superion-grammar-aware-greybox-fuzzing-icse-2019)
   - [ProFuzzer: On-the-fly Input Type Probing for Better Zero-day Vulnerability Discovery (S&P 2019)](#profuzzer-on-the-fly-input-type-probing-for-better-zero-day-vulnerability-discovery-sp-2019)
   - [CodeAlchemist: Semantics-Aware Code Generation to Find Vulnerabilities in JavaScript Engines (NDSS 2019)](#codealchemist-semantics-aware-code-generation-to-find-vulnerabilities-in-javascript-engines-ndss-2019)
+  - [TIFF: Using Input Type Inference To Improve Fuzzing (ACSAC 2018)](#tiff-using-input-type-inference-to-improve-fuzzing-acsac-2018)
 
 - [**Directed Fuzzing**](#directed-fuzzing)
   - [Directed Greybox Fuzzing (CCS 2017)](#directed-greybox-fuzzing-ccs-2017)
@@ -129,12 +131,16 @@ We present PeriScope, a Linux kernel based probing framework that enables fine-g
 
 ### Fuzzing File Systems via Two-Dimensional Input Space Exploration (S&P 2019)
 
+* <img src="image/wechat_24px.png">[Reading Note From BAIZE](https://mp.weixin.qq.com/s/d2VEQTLtHV5Z-li6M3KBFA)
+
 * <img src="image/pdf_24px.png">[Paper](./Paper/SP19_Fuzzing_File.pdf)
 
 **Abstract:** File systems, a basic building block of an OS, are too big and too complex to be bug free. Nevertheless, file systems rely on regular stress-testing tools and formal checkers to find bugs, which are limited due to the ever-increasing complexity of both file systems and OSes. Thus, fuzzing, proven to be an effective and a practical approach, becomes a preferable choice, as it does not need much knowledge about a target. However, three main challenges exist in fuzzing file systems: mutating a large image blob that degrades overall performance, generating image-dependent file operations, and reproducing found bugs, which is difficult for existing OS fuzzers. Hence, we present JANUS, the first feedback-driven fuzzer that explores the two-dimensional input space of a file system, i.e., mutating metadata on a large image, while emitting image-directed file operations. In addition, JANUS relies on a library OS rather than on traditional VMs for fuzzing, which enables JANUS to load a fresh copy of the OS, thereby leading to better reproducibility of bugs. We evaluate JANUS on eight file systems and found 90 bugs in the upstream Linux kernel, 62 of which have been acknowledged. Forty-three bugs have been fixed with 32 CVEs assigned. In addition, JANUS achieves higher code coverage on all the file systems after fuzzing 12 hours, when compared with the state-of-the-art fuzzer Syzkaller for fuzzing file systems. JANUS visits 4.19x and 2.01x more code paths in Btrfs and ext4, respectively. Moreover, JANUS is able to reproduce 88-100% of the crashes, while Syzkaller fails on all of them.
 
 
 ### Razzer: Finding Kernel Race Bugs through Fuzzing (S&P 2019)
+
+* <img src="image/wechat_24px.png">[Reading Note From BAIZE](https://mp.weixin.qq.com/s/nq1A12Dra2vUiQWbtLXctg)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/SP19_Razzer.pdf)
 
@@ -143,15 +149,28 @@ We present PeriScope, a Linux kernel based probing framework that enables fine-g
 
 ### kAFL: Hardware-Assisted Feedback Fuzzing for OS Kernels (Usenix Security2017)
 
+* <img src="image/wechat_24px.png">[Reading Note From BAIZE](https://mp.weixin.qq.com/s/46J-kU37SerZd2H3L2GiTw)
+
 * <img src="image/pdf_24px.png">[Paper](./Paper/USENUX18_Kafl.pdf)
 
 * <img src="image/ppt_24px.png">[Slides](./Paper/USENUX18_Kafl_Slides.pdf)
 
-* <img src="image/github_24px.png">[CodePaper](https://github.com/RUB-SysSec/kAFL)
+* <img src="image/github_24px.png">[Code](https://github.com/RUB-SysSec/kAFL)
 
 **Abstract:** Many kinds of memory safety vulnerabilities have been endangering software systems for decades. Amongst other approaches, fuzzing is a promising technique to unveil various software faults. Recently, feedback-guided fuzzing demonstrated its power, producing a steady stream of security-critical software bugs. Most fuzzing efforts—especially feedback fuzzing—are limited to user space components of an operating system (OS), although bugs in kernel components are more severe, because they allow an attacker to gain access to a system with full privileges. Unfortunately, kernel components are difficult to fuzz as feedback mechanisms (i.e., guided code coverage) cannot be easily applied. Additionally, non-determinism due to interrupts, kernel threads, statefulness, and similar mechanisms poses problems. Furthermore, if a process fuzzes its own kernel, a kernel crash highly impacts the performance of the fuzzer as the OS needs to reboot.
 
 In this paper, we approach the problem of coverage-guided kernel fuzzing in an OS-independent and hardware-assisted way: We utilize a hypervisor and Intel’s Processor Trace (PT) technology. This allows us to remain independent of the target OS as we just require a small user space component that interacts with the targeted OS. As a result, our approach introduces almost no performance overhead, even in cases where the OS crashes, and performs up to 17,000 executions per second on an off-the-shelf laptop. We developed a framework called kernel-AFL (kAFL) to assess the security of Linux, macOS, and Windows kernel components. Among many crashes, we uncovered several flaws in the ext4 driver for Linux, the HFS and APFS file system of macOS, and the NTFS driver of Windows.
+
+
+### DIFUZE: Interface aware fuzzing for kernel drivers (CCS 2017)
+
+* <img src="image/wechat_24px.png">[Reading Note From BAIZE](https://mp.weixin.qq.com/s/5-2PDBlRSW_kTJb1SW1spQ)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/CCS17_DIFUZE.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/ucsb-seclab/difuze)
+
+**Abstract:** Device drivers are an essential part in modern Unix-like systems to handle operations on physical devices, from hard disks and printers to digital cameras and Bluetooth speakers. The surge of new hardware, particularly on mobile devices, introduces an explosive growth of device drivers in system kernels. Many such drivers are provided by third-party developers, which are susceptible to security vulnerabilities and lack proper vetting. Unfortunately, the complex input data structures for device drivers render traditional analysis tools, such as fuzz testing, less effective, and so far, research on kernel driver security is comparatively sparse. In this paper, we present DIFUZE, an interface-aware fuzzing tool to automatically generate valid inputs and trigger the execution of the kernel drivers. We leverage static analysis to compose correctly-structured input in the userspace to explore kernel drivers. DIFUZE is fully automatic, ranging from identifying driver handlers, to mapping to device file names, to constructing complex argument instances. We evaluate our approach on seven modern Android smartphones. The results showthat DIFUZE can effectively identify kernel driver bugs, and reports 32 previously unknown vulnerabilities, including flaws that lead to arbitrary code execution.
 
 
 
@@ -280,6 +299,14 @@ In this paper, we present an application-aware evolutionary fuzzing strategy tha
 * <img src="image/ppt_24px.png">[Slides](./Paper/NDSS2019_CodeAlchemist_slidesz.pdf)
 
 **Abstract:** JavaScript engines are an attractive target for attackers due to their popularity and flexibility in building exploits. Current state-of-the-art fuzzers for finding JavaScript engine vulnerabilities focus mainly on generating syntactically correct test cases based on either a predefined context-free grammar or a trained probabilistic language model. Unfortunately, syntactically correct JavaScript sentences are often semantically invalid at runtime. Furthermore, statically analyzing the semantics of JavaScript code is challenging due to its dynamic nature: JavaScript code is generated at runtime, and JavaScript expressions are dynamically-typed. To address this challenge, we propose a novel test case generation algorithm that we call semantics-aware assembly, and implement it in a fuzz testing tool termed CodeAlchemist. Our tool can generate arbitrary JavaScript code snippets that are both semantically and syntactically correct, and it effectively yields test cases that can crash JavaScript engines. We found numerous vulnerabilities of the latest JavaScript engines with CodeAlchemist and reported them to the vendors.
+
+### TIFF: Using Input Type Inference To Improve Fuzzing (ACSAC 2018)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/ACSAC18_TIFF.pdf)
+
+**Abstract:** Developers commonly use fuzzing techniques to hunt down all manner of memory corruption vulnerabilities during the testing phase. Irrespective of the fuzzer, input mutation plays a central role in providing adequate code coverage, as well as in triggering bugs. However, each class of memory corruption bugs requires a different trigger condition. While the goal of a fuzzer is to find bugs, most existing fuzzers merely approximate this goal by targeting their mutation strategies toward maximizing code coverage. 
+
+In this work, we present a new mutation strategy that maximizes the likelihood of triggering memory-corruption bugs by generating fewer, but better inputs. In particular, our strategy achieves bug- directed mutation by inferring the type of the input bytes. To do so, it tags each offset of the input with a basic type (e.g., 32-bit integer, string, array etc.), while deriving mutation rules for specific classes of bugs, We infer types by means of in-memory data-structure identification and dynamic taint analysis, and implement our novel mutation strategy in a fully functional fuzzer which we call TIFF (Type Inference-based Fuzzing Framework). Our evaluation on real-world applications shows that type-based fuzzing triggers bugs much earlier than existing solutions, while maintaining high code coverage. For example, on several real-world applications and libraries (e.g., poppler, mpg123 etc.), we find real bugs (with known CVEs) in almost half of the time and upto an order of magnitude fewer inputs than state-of-the-art fuzzers.
 
 
 
@@ -451,6 +478,8 @@ In this paper, we design the first linguistic-model-guided fuzzing tool, named L
 
 
 ### MoonShine: Optimizing OS Fuzzer Seed Selection with Trace Distillation (USENUX Security2018)
+
+* <img src="image/wechat_24px.png">[Reading Note](https://mp.weixin.qq.com/s/L2XgaQB7BZzcptvOrhMvXg)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/USENUX18_MoonShine.pdf)
 

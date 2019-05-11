@@ -18,19 +18,21 @@
   - [DIFUZE: Interface aware fuzzing for kernel drivers (CCS 2017)](#difuze-interface-aware-fuzzing-for-kernel-drivers-ccs-2017)
 
 - [**Hybrid Fuzzing**](#hybrid-fuzzing)
-  - [Send Hardest Problems My Way: Probabilistic Path Prioritization for Hybrid Fuzzing  (NDSS2019)](#send-hardest-problems-my-way-probabilistic-path-prioritization-for-hybrid-fuzzing--ndss2019)
+  - [SAVIOR: Towards Bug-Driven Hybrid Testing (S&P 2020)](#savior-towards-bug-driven-hybrid-testing-sp-2020)
+  - [Send Hardest Problems My Way: Probabilistic Path Prioritization for Hybrid Fuzzing (NDSS 2019)](#send-hardest-problems-my-way-probabilistic-path-prioritization-for-hybrid-fuzzing--ndss-2019)
   - [QSYM: A Practical Concolic Execution Engine Tailored for Hybrid Fuzzing (USENUX Security2018)](#qsym-a-practical-concolic-execution-engine-tailored-for-hybrid-fuzzing-usenux-security2018)
   - [Angora: Efficient Fuzzing by Principled Search (S&P 2018)](#angora-efficient-fuzzing-by-principled-search-sp-2018)
-  - [Driller: Argumenting Fuzzing Through Selective Symbolic Execution(NDSS 2016)](#driller-argumenting-fuzzing-through-selective-symbolic-executionndss-2016)
+  - [Driller: Argumenting Fuzzing Through Selective Symbolic Execution (NDSS 2016)](#driller-argumenting-fuzzing-through-selective-symbolic-execution-ndss-2016)
 
 - [**Addressing Magic bytes \ checksum**](#addressing-magic-bytes-\-checksum)
-  - [REDQUEEN: Fuzzing with Input-to-State Correspondence  (NDSS2019)](#redqueen-fuzzing-with-input-to-state-correspondence--ndss2019)
+  - [REDQUEEN: Fuzzing with Input-to-State Correspondence  (NDSS2019)](#redqueen-fuzzing-with-input-to-state-correspondence-ndss2019)
   - [T-Fuzz: fuzzing by program transformation (S&P 2018)](#t-fuzz-fuzzing-by-program-transformation-sp-2018)
   - [FairFuzz: A Targeted Mutation Strategy for Increasing Greybox Fuzz Testing Coverage (ASE 2018)](#fairfuzz-a-targeted-mutation-strategy-for-increasing-greybox-fuzz-testing-coverage-ase-2018)
   - [VUzzer: Application-aware Evolutionary Fuzzing (NDSS 2017)](#vuzzer-application-aware-evolutionary-fuzzing-ndss-2017)
   
 - [**Inputs-aware Fuzzing**](#inputs-aware-fuzzing)
-  - [SLF: Fuzzing without Valid Seed Inputs (ICSE2019)](#slf-fuzzing-without-valid-seed-inputs-icse2019)
+  - [Parser-Directed Fuzzing (PLDI 2019)](#parser-directed-fuzzing-pldi-2019)
+  - [SLF: Fuzzing without Valid Seed Inputs (ICSE 2019)](#slf-fuzzing-without-valid-seed-inputs-icse-2019)
   - [Superion: Grammar-Aware Greybox Fuzzing (ICSE 2019)](#superion-grammar-aware-greybox-fuzzing-icse-2019)
   - [ProFuzzer: On-the-fly Input Type Probing for Better Zero-day Vulnerability Discovery (S&P 2019)](#profuzzer-on-the-fly-input-type-probing-for-better-zero-day-vulnerability-discovery-sp-2019)
   - [CodeAlchemist: Semantics-Aware Code Generation to Find Vulnerabilities in JavaScript Engines (NDSS 2019)](#codealchemist-semantics-aware-code-generation-to-find-vulnerabilities-in-javascript-engines-ndss-2019)
@@ -176,7 +178,14 @@ In this paper, we approach the problem of coverage-guided kernel fuzzing in an O
 
 # Hybrid Fuzzing:
 
-### Send Hardest Problems My Way: Probabilistic Path Prioritization for Hybrid Fuzzing  (NDSS2019)
+### SAVIOR: Towards Bug-Driven Hybrid Testing (S&P 2020)
+
+Hybrid testing combines fuzz testing and concolic execution. It leverages fuzz testing to test easy-to-reach code regions and uses concolic execution to explore code blocks guarded by complex branch conditions. As a result, hybrid testing is able to reach deeper into program state space than fuzz testing or concolic execution alone. Recently, hybrid testing has seen significant advancement. However, its code coveragecentric design is inefficient in vulnerability detection. First, it blindly selects seeds for concolic execution and aims to explore new code continuously. However, as statistics shows, a large portion of the explored code is often invulnerable. Therefore, giving equal attention to every part of the code during hybrid testing is a non-optimal strategy. It also slows down the detection of real vulnerabilities by over 43%. Second, classic hybrid testing quickly moves on after reaching a chunk of code, rather than examining the hidden defects inside. It may frequently miss subtle yet exploitable vulnerabilities despite that it has already explored the vulnerable code paths.
+
+We propose SAVIOR, a new hybrid testing framework pioneering a bug-driven principle. Unlike the existing hybrid testing tools, SAVIOR prioritizes the concolic execution of the seeds that are likely to uncover more vulnerabilities. Moreover, SAVIOR verifies all vulnerable program locations along the executing program path. By modeling faulty situations using SMT constraints, SAVIOR reasons the feasibility of vulnerabilities and generates concrete test cases as proofs. Our evaluation shows that the bugdriven approach outperforms the mainstream automated testing techniques, including the state-of-the-art hybrid testing driven by code coverage. On average, SAVIOR detects vulnerabilities 43.4% faster than DRILLER and 44.3% faster than QSYM, leading to the discovery of 88 and 76 more security violations, respectively. According to the experimental result on 11 well-fuzzed benchmark programs, SAVIOR triggers 481 unique security violations within the first 24 hours.
+
+
+### Send Hardest Problems My Way: Probabilistic Path Prioritization for Hybrid Fuzzing (NDSS 2019)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/NDSS19_Probabilistic.pdf)
 
@@ -208,7 +217,7 @@ Our evaluation shows that QSYM does not just outperform state-of-the-art fuzzers
 **Abstract:** Abstract-Fuzzing is a popular technique for finding software bugs. However, the performance of the state-of-the-art fuzzers leaves a lot to be desired. Fuzzers based on symbolic execution produce quality inputs but run slow, while fuzzers based on random mutation run fast but have difficulty producing quality inputs. We propose Angora, a new mutation-based fuzzer that outperforms the state-of-the-art fuzzers by a wide margin. The main goal of Angora is to increase branch coverage by solving path constraints without symbolic execution. To solve path constraints efficiently, we introduce several key techniques: scalable byte-level taint tracking, context-sensitive branch count, search based on gradient descent, and input length exploration. On the LAVA-M data set, Angora found almost all the injected bugs, found more bugs than any other fuzzer that we compared with, and found eight times as many bugs as the second-best fuzzer in the program who. Angora also found 103 bugs that the LAVA authors injected but could not trigger. We also tested Angora on eight popular, mature open source programs. Angora found 6, 52, 29, 40 and 48 new bugs in file, jhead, nm, objdump and size, respectively. We measured the coverage of Angora and evaluated how its key techniques contribute to its impressive performance.
 
 
-### Driller: Argumenting Fuzzing Through Selective Symbolic Execution(NDSS 2016)
+### Driller: Argumenting Fuzzing Through Selective Symbolic Execution (NDSS 2016)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/NDSS16_Driller.pdf)
 
@@ -220,7 +229,7 @@ Our evaluation shows that QSYM does not just outperform state-of-the-art fuzzers
 
 # Addressing Magic bytes \ checksum: 
 
-### REDQUEEN: Fuzzing with Input-to-State Correspondence  (NDSS2019)
+### REDQUEEN: Fuzzing with Input-to-State Correspondence (NDSS2019)
 
 * <img src="image/youdao_note_24px.png">[Reading Note](http://note.youdao.com/noteshare?id=6a4b00d912eab145d1c1f32f11bde3e0&sub=7DADC02169A14B33979BCCB2556E4526)
 
@@ -268,11 +277,20 @@ In this paper, we present an application-aware evolutionary fuzzing strategy tha
 
 # Inputs-aware Fuzzing
 
-### SLF: Fuzzing without Valid Seed Inputs (ICSE2019)
+### Parser-Directed Fuzzing (PLDI 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/PLDI19_Parser.pdf)
+
+**Abstract:** To be effective, software test generation needs to well cover the space of possible inputs. Traditional fuzzing generates large numbers of random inputs, which however are unlikely to contain keywords and other specific inputs of non-trivial input languages. Constraint-based test generation solves conditions of paths leading to uncovered code, but fails on programs with complex input conditions because of path explosion.
+In this paper, we present a test generation technique specifically directed at input parsers. We systematically produce inputs for the parser and track comparisons made; after every rejection, we satisfy the comparisons leading to rejection. This approach effectively covers the input space: Evaluated on five subjects, from CSV files to JavaScript, our pFuzzer prototype covers more tokens than both random-based and constraint-based approaches, while requiring no symbolic analysis and far fewer tests than random fuzzers.
+
+
+### SLF: Fuzzing without Valid Seed Inputs (ICSE 2019)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/ICSE19_SLF.pdf)
 
 **Abstract:** Fuzzing is an important technique to detect software bugs and vulnerabilities. It works by mutating a small set of seed inputs to generate a large number of new inputs. Fuzzers’ performance often substantially degrades when valid seed inputs are not available. Although existing techniques such as symbolic execution can generate seed inputs from scratch, they have various limitations hindering their applications in real-world complex software without source code. In this paper, we propose a novel fuzzing technique that features the capability of generating valid seed inputs. It piggy-backs on AFL to identify input validity checks and the input fields that have impact on such checks. It further classifies these checks according to their relations to the input. Such classes include arithmetic relation, object offset, data structure length and so on. A multi-goal search algorithm is developed to apply class specific mutations in order to satisfy inter-dependent checks all together. We evaluate our technique on 20 popular benchmark programs collected from other fuzzing projects and the Google fuzzer test suite, and compare it with existing fuzzers AFL and AFLFast, symbolic execution engines KLEE and S2E, and a hybrid tool Driller that combines fuzzing with symbolic execution. The results show that our technique is highly effective and efficient, out-performing the other tools.
+
 
 ### Superion: Grammar-Aware Greybox Fuzzing (ICSE 2019)
 

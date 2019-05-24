@@ -602,16 +602,3 @@ We designed and implemented MoonShine as an extension to Syzkaller, a state-of-t
 * <img src="image/pdf_24px.png">[Paper](./Paper/FSE18_PatternFuzzing.pdf)
 
 **Abstract:** We describe a new blackbox complexity testing technique for determining the worst-case asymptotic complexity of a given application. The key idea is to look for an input pattern —rather than a concrete input— that maximizes the asymptotic resource usage of the program. Because input patterns can be described concisely as programs in a restricted language, our method transforms the complexity testing problem to optimal program synthesis. In particular, we express these input patterns using a new model of computation called Recurrent Computation Graph (RCG) and solve the optimal synthesis problem by developing a genetic programming algorithm that operates on RCGs. We have implemented the proposed ideas in a tool called Singularity and evaluate it on a diverse set of benchmarks. Our evaluation shows that Singularity can effectively discover the worst-case complexity of various algorithms and that it is more scalable compared to existing state-of-the-art techniques. Furthermore, our experiments also corroborate that Singularity can discover previously unknown performance bugs and availability vulnerabilities in real-world applications such as Google Guava and JGraphT.
-
-
-
-# Reading Notes
-
-- [DifFuzz (Side-channal analysis)](http://note.youdao.com/noteshare?id=06c39d23c76be5d0e6441a01c9eaff93&sub=B72A70BDD1DC47B39E56866B3903401B)
-- [ProFuzzer (Inference input structure)](http://note.youdao.com/noteshare?id=8e905e9d299cae5ceb3bbeac0591cfab&sub=9FCAB3A8AD4C48689095307EDD1A940A)
-- [FairFuzz (Target rare branches)](http://note.youdao.com/noteshare?id=5525c7a18e8681302229e9466290aac2&sub=C4769EA799584C5D89994FE397F76981)
-- [FairFuzz & ProFuzzer](http://note.youdao.com/noteshare?id=79c7f05ba2a64163e28a0267c7e1b181&sub=2E7496DA67634505B5F3A5F326CD6B27)
-- [NEZHA (Differential testing)](http://note.youdao.com/noteshare?id=7e602068c641217947c97b287291c9c7&sub=32BD04EB8C00424E87FA7B948D38EC96)
-- [REDQUEEN](http://note.youdao.com/noteshare?id=6a4b00d912eab145d1c1f32f11bde3e0&sub=7DADC02169A14B33979BCCB2556E4526)
-- [AddressSanitizer: A Fast Address Sanity Checker](http://note.youdao.com/noteshare?id=aecd3639e21a682555fd6b002a176937&sub=AF24A1A1E1534A49B00F7E504A4B111C)
-- [Enhancing Memory Error Detection](http://note.youdao.com/noteshare?id=6228fef31b29b4ffbbbe1c1d80ef3fa0&sub=CB0D15A0D6394FA188C06B2BCB6367A3)

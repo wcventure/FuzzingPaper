@@ -73,3 +73,6 @@
 
 - ACSAC 2018
     - TIFF: Using Input Type Inference To Improve Fuzzing
+
+- ICST 2019
+    - MEMFUZZ: Using Memory Accesses to Guide Fuzzing

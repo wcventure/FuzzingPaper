@@ -70,8 +70,15 @@
     - [SLF: Fuzzing without Valid Seed Inputs](#slf-fuzzing-without-valid-seed-inputs-icse-2019)
     - [Superion: Grammar-Aware Greybox Fuzzing](#superion-grammar-aware-greybox-fuzzing-icse-2019)
 
+- FSE 2019
+    - [Cerebro: Context-aware Adaptive Fuzzing for Effective Vulnerability Detection](#cerebro-context-aware-adaptive-fuzzing-for-effective-vulnerability-detection-fse-2019)
+    - [Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing](#just-fuzz-it-solving-floating-point-constraints-using-coverage-guided-fuzzing-fse-2019)
+
 - FSE 2018
     - [Singularity: Pattern Fuzzing for Worst Case Complexity](#singularity-pattern-fuzzing-for-worst-case-complexity-fse-2018)
+
+- FSE 2017
+    - [Steelix: Program-State Based Binary Fuzzing (FSE 2017)](#Steelix-Program-State-Based-Binary-Fuzzing-FSE-2017)
 
 - ASE 2018
     - [ContractFuzzer: Fuzzing Smart Contracts for Vulnerability Detection](#contractfuzzer-fuzzing-smart-contracts-for-vulnerability-detection-ase-2018)
@@ -127,6 +134,7 @@
   - [VUzzer: Application-aware Evolutionary Fuzzing (NDSS 2017)](#vuzzer-application-aware-evolutionary-fuzzing-ndss-2017)
   
 - [**Inputs-aware Fuzzing**](#inputs-aware-fuzzing)
+  - [Cerebro: Context-aware Adaptive Fuzzing for Effective Vulnerability Detection (FSE 2019)](#cerebro-context-aware-adaptive-fuzzing-for-effective-vulnerability-detection-fse-2019)
   - [Parser-Directed Fuzzing (PLDI 2019)](#parser-directed-fuzzing-pldi-2019)
   - [GRIMOIRE: Synthesizing Structure while Fuzzing (USENIX Security2019)](#grimoire-synthesizing-structure-while-fuzzing-usenix-security2019)
   - [SLF: Fuzzing without Valid Seed Inputs (ICSE 2019)](#slf-fuzzing-without-valid-seed-inputs-icse-2019)
@@ -165,6 +173,7 @@
   - [Coverage-Guided Fuzzing for Deep Neural Networks (2018)](#coverage-guided-fuzzing-for-deep-neural-networks-2018)
 
 - [**Interesting Fuzzing**](#interesting-fuzzing)
+    - [Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing (FSE 2019)](#just-fuzz-it-solving-floating-point-constraints-using-coverage-guided-fuzzing-fse-2019)
   - [REST-ler: Stateful REST API Fuzzing (ICSE 2019)](#rest-ler-stateful-rest-api-fuzzing-icse-2019)
   - [Ptrix: Efficient Hardware-Assisted Fuzzing for COTS Binary (ASIACCS 2019)](#ptrix-efficient-hardware-assisted-fuzzing-for-cots-binary-asiaccs-2019)
   - [RVFuzzer: Finding Input Validation Bugs in Robotic Vehicles through Control-Guided Random Testing (USENIX Security2019)](#rvfuzzer-finding-input-validation-bugs-in-robotic-vehicles-through-control-guided-random-testing-usenix-security2019)
@@ -175,6 +184,7 @@
   - [What You Corrupt Is Not What You Crash: Challenges in Fuzzing Embedded Devices (NDSS 2018)](#what-you-corrupt-is-not-what-you-crash-challenges-in-fuzzing-embedded-devices-ndss-2018)
   - [MoonShine: Optimizing OS Fuzzer Seed Selection with Trace Distillation (USENIX Security2018)](#moonshine-optimizing-os-fuzzer-seed-selection-with-trace-distillation-usenix-security2018)
   - [Singularity: Pattern Fuzzing for Worst Case Complexity (FSE 2018)](#singularity-pattern-fuzzing-for-worst-case-complexity-fse-2018)
+  - [Steelix: Program-State Based Binary Fuzzing (FSE 2017)](#Steelix-Program-State-Based-Binary-Fuzzing-FSE-2017)
   
 
 # Differential Fuzzing
@@ -410,6 +420,15 @@ In this paper, we present an application-aware evolutionary fuzzing strategy tha
 
 # Inputs-aware Fuzzing
 
+
+### Cerebro: Context-aware Adaptive Fuzzing for Effective Vulnerability Detection (FSE 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/.pdf)
+
+**Abstract:**
+
+
+
 ### Parser-Directed Fuzzing (PLDI 2019)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/PLDI19_Parser.pdf)
@@ -609,6 +628,15 @@ We implemented the exponential schedule by extending AFL. In 24 hours, AFLFAST e
 
 # Interesting Fuzzing
 
+
+### Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing (FSE 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/.pdf)
+
+**Abstract:** 
+
+
+
 ### REST-ler: Stateful REST API Fuzzing (ICSE 2019)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/ICSE19_DIFFUZZ.pdf)
@@ -692,3 +720,10 @@ We designed and implemented MoonShine as an extension to Syzkaller, a state-of-t
 * <img src="image/pdf_24px.png">[Paper](./Paper/FSE18_PatternFuzzing.pdf)
 
 **Abstract:** We describe a new blackbox complexity testing technique for determining the worst-case asymptotic complexity of a given application. The key idea is to look for an input pattern —rather than a concrete input— that maximizes the asymptotic resource usage of the program. Because input patterns can be described concisely as programs in a restricted language, our method transforms the complexity testing problem to optimal program synthesis. In particular, we express these input patterns using a new model of computation called Recurrent Computation Graph (RCG) and solve the optimal synthesis problem by developing a genetic programming algorithm that operates on RCGs. We have implemented the proposed ideas in a tool called Singularity and evaluate it on a diverse set of benchmarks. Our evaluation shows that Singularity can effectively discover the worst-case complexity of various algorithms and that it is more scalable compared to existing state-of-the-art techniques. Furthermore, our experiments also corroborate that Singularity can discover previously unknown performance bugs and availability vulnerabilities in real-world applications such as Google Guava and JGraphT.
+
+
+### Steelix: Program-State Based Binary Fuzzing (FSE 2017)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/FSE17_Steelix.pdf)
+
+**Abstract:** Coverage-based fuzzing is one of the most effective techniques to find vulnerabilities, bugs or crashes. However, existing techniques suffer from the difficulty in exercising the paths that are protected by magic bytes comparisons (e.g., string equality comparisons). Several approaches have been proposed to use heavy-weight program analysis to break through magic bytes comparisons, and hence are less scalable. In this paper, we propose a program-state based binary fuzzing approach, named Steelix, which improves the penetration power of a fuzzer at the cost of an acceptable slow down of the execution speed. In particular, we use light-weight static analysis and binary instrumentation to provide not only coverage information but also comparison progress information to a fuzzer. Such program state information informs a fuzzer about where the magic bytes are located in the test input and how to perform mutations to match the magic bytes efficiently. We have implemented Steelix and evaluated it on three datasets: LAVA-M dataset, DARPA CGC sample binaries and five real-life programs. The results show that Steelix has better code coverage and bug detection capability than the state-of-the-art fuzzers. Moreover, we found one CVE and nine new bugs.

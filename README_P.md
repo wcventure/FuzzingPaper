@@ -20,6 +20,9 @@
 - S&P 2017
     - [NEZHA: Efficient Domain-Independent Differential Testing](#nezha-efficient-domain-independent-differential-testing-sp-2017)
 
+- USENIX Security2020
+    - [GREYONE Data Flow Sensitive Fuzzing](#greyone-data-flow-sensitive-fuzzing-usenix-security2020)
+
 - USENIX Security2019
     - [MOPT: Optimize Mutation Scheduling for Fuzzers](#mopt-optimize-mutation-scheduling-for-fuzzers-usenix-security2019)
     - [Antifuzz: impeding fuzzing audits of binary executables](#antifuzz-impeding-fuzzing-audits-of-binary-executables-usenix-security2019)
@@ -44,9 +47,13 @@
     - [Directed Greybox Fuzzing](#directed-greybox-fuzzing-ccs-2017)
     - [Designing New Operating Primitives to Improve Fuzzing Performance](#designing-new-operating-primitives-to-improve-fuzzing-performance-ccs-2017)
     - [DIFUZE: Interface aware fuzzing for kernel drivers](#difuze-interface-aware-fuzzing-for-kernel-drivers-ccs-2017)
+    - [SemFuzz: Semantics-based Automatic Generation of Proof-of-Concept Exploits]()
+    - [SlowFuzz: Automated Domain-Independent Detection of Algorithmic Complexity Vulnerabilities]()
+    - [IMF: Inferred Model-based Fuzzer]()
 
 - CCS 2016
     - [Coverage-based Greybox Fuzzing as Markov Chain](#coverage-based-greybox-fuzzing-as-markov-chain-ccs-2016)
+    - [Systematic Fuzzing and Testing of TLS Libraries]()
 
 - NDSS 2019
     - [REDQUEEN: Fuzzing with Input-to-State Correspondence](#redqueen-fuzzing-with-input-to-state-correspondence-ndss2019)
@@ -83,6 +90,16 @@
 - ASE 2018
     - [ContractFuzzer: Fuzzing Smart Contracts for Vulnerability Detection](#contractfuzzer-fuzzing-smart-contracts-for-vulnerability-detection-ase-2018)
     - [FairFuzz: A Targeted Mutation Strategy for Increasing Greybox Fuzz Testing Coverage](#fairfuzz-a-targeted-mutation-strategy-for-increasing-greybox-fuzz-testing-coverage-ase-2018)
+
+- ISSTA 2019
+    - [Semantic Fuzzing with Zest]()
+    - [DeepHunter: A Coverage-Guided Fuzz Testing Framework for Deep Neural Networks]()
+    - [Deferred Concretization in Symbolic Execution via Fuzzing]()
+
+-ISSTA 2018
+    - [Badger: Complexity Analysis with Fuzzing and Symbolic Execution]()
+    - [Compiler Fuzzing through Deep Learning]()
+    - [PerfFuzz: Automatically Generating Pathological Inputs]()
 
 - PLDI 2019
     - [Parser-Directed Fuzzing](#parser-directed-fuzzing-pldi-2019)
@@ -172,8 +189,11 @@
   - [TensorFuzz: Debugging Neural Networks with Coverage-Guided Fuzzing (2018)](#tensorfuzz-debugging-neural-networks-with-coverage-guided-fuzzing-2018)
   - [Coverage-Guided Fuzzing for Deep Neural Networks (2018)](#coverage-guided-fuzzing-for-deep-neural-networks-2018)
 
+- [**Data Flow Sensitive Fuzzing**](#data-flow-sensitive-fuzzing)
+  - [GREYONE Data Flow Sensitive Fuzzing (USENIX Security2020)](#greyone-data-flow-sensitive-fuzzing-usenix-security2020)
+
 - [**Interesting Fuzzing**](#interesting-fuzzing)
-    - [Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing (FSE 2019)](#just-fuzz-it-solving-floating-point-constraints-using-coverage-guided-fuzzing-fse-2019)
+  - [Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing (FSE 2019)](#just-fuzz-it-solving-floating-point-constraints-using-coverage-guided-fuzzing-fse-2019)
   - [REST-ler: Stateful REST API Fuzzing (ICSE 2019)](#rest-ler-stateful-rest-api-fuzzing-icse-2019)
   - [Ptrix: Efficient Hardware-Assisted Fuzzing for COTS Binary (ASIACCS 2019)](#ptrix-efficient-hardware-assisted-fuzzing-for-cots-binary-asiaccs-2019)
   - [RVFuzzer: Finding Input Validation Bugs in Robotic Vehicles through Control-Guided Random Testing (USENIX Security2019)](#rvfuzzer-finding-input-validation-bugs-in-robotic-vehicles-through-control-guided-random-testing-usenix-security2019)
@@ -626,8 +646,20 @@ We implemented the exponential schedule by extending AFL. In 24 hours, AFLFAST e
 
 
 
-# Interesting Fuzzing
+# Data Flow Sensitive Fuzzing
 
+
+### GREYONE Data Flow Sensitive Fuzzing (USENIX Security2020)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/USENIX20_GREYONE.pdf)
+
+**Abstract:** Data flow analysis (e.g., dynamic taint analysis) has proven to be useful for guiding fuzzers to explore hard-to-reach code and find vulnerabilities. However, traditional taint analysis is labor-intensive, inaccurate and slow, affecting the fuzzing efficiency. Apart from taint, few data flow features are utilized. In this paper, we proposed a data flow sensitive fuzzing solution GREYONE. We first utilize the classic feature taint to guide fuzzing. A lightweight and sound fuzzing-driven taint inference (FTI) is adopted to infer taint of variables, by monitoring their value changes while mutating input bytes during fuzzing. With the taint, we propose a novel input prioritization model to determine which branch to explore, which bytes to mutate and how to mutate. Further, we use another data flow feature constraint conformance, i.e., the distance of tainted variables to values expected in untouched branches, to tune the evolution direction of fuzzing.
+
+We implemented a prototype of GREYONE and evaluated it on the LAVA data set and 19 real-world programs. The results showed that it outperforms various state-of-the-art fuzzers in terms of both code coverage and vulnerability discovery. In the LAVA data set, GREYONE found all listed bugs and 336 more unlisted. In real-world programs, GREYONE on average found 2.12X unique program paths and 3.09X unique bugs than state-of-the-art evolutionary fuzzers, including AFL, VUzzer, CollAFL, Angora and Honggfuzz, Moreover, GREYONE on average found 1.2X unique program paths and 1.52X unique bugs than a state-of-the-art symbolic execution assisted fuzzer QSYM. In total, it found 105 new security bugs, of which 41 are confirmed by CVE.
+
+
+
+# Interesting Fuzzing
 
 ### Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing (FSE 2019)
 

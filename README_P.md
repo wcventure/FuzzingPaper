@@ -478,9 +478,9 @@ In this paper, we present an application-aware evolutionary fuzzing strategy tha
 
 ### Cerebro: Context-aware Adaptive Fuzzing for Effective Vulnerability Detection (FSE 2019)
 
-* <img src="image/pdf_24px.png">[Paper](./Paper/.pdf)
+* <img src="image/pdf_24px.png">[Paper](./Paper/FSE19_Cerebro.pdf)
 
-**Abstract:**
+**Abstract:** Existing greybox fuzzers mainly utilize program coverage as the goal to guide the fuzzing process. To maximize their outputs, coverage-based greybox fuzzers need to evaluate the quality of seeds properly, which involves making two decisions: 1) which is the most promising seed to fuzz next (seed prioritization), and 2) how many efforts should be made to the current seed (power scheduling). In this paper, we present our fuzzer, Cerebro, to address the above challenges. For the seed prioritization problem, we propose an online multi-objective based algorithm to balance various metrics such as code complexity, coverage, execution time, etc. To address the power scheduling problem, we introduce the concept of input potential to measure the complexity of uncovered code and propose a cost-effective algorithm to update it dynamically. Unlike previous approaches where the fuzzer evaluates an input solely based on the execution traces that it has covered, Cerebro is able to foresee the benefits of fuzzing the input by adaptively evaluating its input potential. We perform a thorough evaluation for Cerebro on 6 different real-world programs. The experiments show that Cerebro can find more vulnerabilities and achieve better coverage than state-of-the-art fuzzers such as AFL and AFLFast. Additionally, we found 15 previously unknown bugs in mjs (a light-weight Javascript engine for embedded systems), Intel XED (Intel X86 Encoder Decoder) during the experiments and 1 new CVE in Radare2 (a popular reverse engineering framework). Furthermore, all the new bugs are confirmed by the developers and fixed.
 
 
 

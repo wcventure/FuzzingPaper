@@ -2,28 +2,28 @@
 
 # All Papers (Classification according to Conference)
 
-- S&P 2020
+- **S&P 2020**
     - [SAVIOR: Towards Bug-Driven Hybrid Testing](#savior-towards-bug-driven-hybrid-testing-sp-2020)
 
-- S&P 2019
+- **S&P 2019**
     - [NEUZZ: Efficient Fuzzing with Neural Program Smoothing](#neuzz-efficient-fuzzing-with-neural-program-smoothing-sp-2019)
     - [Fuzzing File Systems via Two-Dimensional Input Space Exploration](#fuzzing-file-systems-via-two-dimensional-input-space-exploration-sp-2019)
     - [ProFuzzer: On-the-fly Input Type Probing for Better Zero-day Vulnerability Discovery](#profuzzer-on-the-fly-input-type-probing-for-better-zero-day-vulnerability-discovery-sp-2019)
     - [Razzer: Finding Kernel Race Bugs through Fuzzing](#razzer-finding-kernel-race-bugs-through-fuzzing-sp-2019)
     - [Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing](#full-speed-fuzzing-reducing-fuzzing-overhead-through-coverage-guided-tracing-sp-2019)
 
-- S&P 2018
+- **S&P 2018**
     - [T-Fuzz: fuzzing by program transformation](#t-fuzz-fuzzing-by-program-transformation-sp-2018)
     - [Angora: Efficient Fuzzing by Principled Search](#angora-efficient-fuzzing-by-principled-search-sp-2018)
     - [CollAFL: Path Sensitive Fuzzing](#collafl-path-sensitive-fuzzing-sp-2018)
 
-- S&P 2017
+- **S&P 2017**
     - [NEZHA: Efficient Domain-Independent Differential Testing](#nezha-efficient-domain-independent-differential-testing-sp-2017)
 
-- USENIX Security2020
+- **USENIX Security2020**
     - [GREYONE Data Flow Sensitive Fuzzing](#greyone-data-flow-sensitive-fuzzing-usenix-security2020)
 
-- USENIX Security2019
+- **USENIX Security2019**
     - [MOPT: Optimize Mutation Scheduling for Fuzzers](#mopt-optimize-mutation-scheduling-for-fuzzers-usenix-security2019)
     - [Antifuzz: impeding fuzzing audits of binary executables](#antifuzz-impeding-fuzzing-audits-of-binary-executables-usenix-security2019)
     - [FUZZIFICATION: Anti-Fuzzing Technique](#fuzzification-anti-fuzzing-technique-usenix-security2019)
@@ -32,18 +32,21 @@
     - [RVFuzzer: Finding Input Validation Bugs in Robotic Vehicles through Control-Guided Random Testing](#rvfuzzer-finding-input-validation-bugs-in-robotic-vehicles-through-control-guided-random-testing-usenix-security2019)
     - [FIRM-AFL: High-Throughput Greybox Fuzzing of IoT Firmware via Augmented Process Emulation](#firm-afl-high-throughput-greybox-fuzzing-of-iot-firmware-via-augmented-process-emulation-usenix-security2019)
 
-- USENIX Security2018
+- **USENIX Security2018**
     - [MoonShine: Optimizing OS Fuzzer Seed Selection with Trace Distillation](#moonshine-optimizing-os-fuzzer-seed-selection-with-trace-distillation-usenix-security2018)
     - [QSYM : A Practical Concolic Execution Engine Tailored for Hybrid Fuzzing](#qsym-a-practical-concolic-execution-engine-tailored-for-hybrid-fuzzing-usenix-security2018)
 
-- USENIX Security2017
+- **USENIX Security2017**
     - [kAFL: Hardware-Assisted Feedback Fuzzing for OS Kernels](#kafl-hardware-assisted-feedback-fuzzing-for-os-kernels-usenix-security2017)
 
-- CCS 2018
+- **USENIX Security2015**
+    - [Protocol State Fuzzing of TLS Implementations](#protocol-state-fuzzing-of-tls-implementations-usenix-security2015)
+
+- **CCS 2018**
     - [Evaluating fuzz testing](#evaluate-fuzzing)
     - [Hawkeye Towards a Desired Directed Grey-box Fuzzer](#hawkeye-towards-a-desired-directed-grey-box-fuzzer-ccs-2018)
 
-- CCS 2017
+- **CCS 2017**
     - [Directed Greybox Fuzzing](#directed-greybox-fuzzing-ccs-2017)
     - [Designing New Operating Primitives to Improve Fuzzing Performance](#designing-new-operating-primitives-to-improve-fuzzing-performance-ccs-2017)
     - [DIFUZE: Interface aware fuzzing for kernel drivers](#difuze-interface-aware-fuzzing-for-kernel-drivers-ccs-2017)
@@ -51,66 +54,66 @@
     - [SlowFuzz: Automated Domain-Independent Detection of Algorithmic Complexity Vulnerabilities](#slowfuzz-automated-domain-independent-detection-of-algorithmic-complexity-vulnerabilities-ccs-2017)
     - [IMF: Inferred Model-based Fuzzer](#imf-inferred-model-based-fuzzer-ccs-2017)
 
-- CCS 2016
+- **CCS 2016**
     - [Coverage-based Greybox Fuzzing as Markov Chain](#coverage-based-greybox-fuzzing-as-markov-chain-ccs-2016)
     - [Systematic Fuzzing and Testing of TLS Libraries](#systematic-fuzzing-and-testing-of-tls-libraries-ccs-2016)
 
-- NDSS 2019
+- **NDSS 2019**
     - [REDQUEEN: Fuzzing with Input-to-State Correspondence](#redqueen-fuzzing-with-input-to-state-correspondence-ndss2019)
     - [PeriScope: An Effective Probing and Fuzzing Framework for the Hardware-OS Boundary](#periscope-an-effective-probing-and-fuzzing-framework-for-the-hardware-os-boundary-ndss2019)
     - [Life after Speech Recognition: Fuzzing Semantic Misinterpretation for Voice Assistant Applications](#life-after-speech-recognition-fuzzing-semantic-misinterpretation-for-voice-assistant-applications-ndss-2019)
     - [Send Hardest Problems My Way: Probabilistic Path Prioritization for Hybrid Fuzzing](#send-hardest-problems-my-way-probabilistic-path-prioritization-for-hybrid-fuzzing-ndss-2019)
     - [CodeAlchemist: Semantics-Aware Code Generation to Find Vulnerabilities in JavaScript Engines](#codealchemist-semantics-aware-code-generation-to-find-vulnerabilities-in-javascript-engines-ndss-2019)
 
-- NDSS 2018
+- **NDSS 2018**
     - [IoTFuzzer: Discovering Memory Corruptions in IoT Through App-based Fuzzing](#iotfuzzer-discovering-memory-corruptions-in-iot-through-app-based-fuzzing-ndss-2018)
     - [What You Corrupt Is Not What You Crash: Challenges in Fuzzing Embedded Devices](#what-you-corrupt-is-not-what-you-crash-challenges-in-fuzzing-embedded-devices-ndss-2018)
     - [Enhancing Memory Error Detection for Large-Scale Applications and Fuzz Testing](#enhancing-memory-error-detection-for-large-scale-applications-and-fuzz-testing-ndss-2018)
 
-- NDSS 2017
+- **NDSS 2017**
     - [VUzzer: Application-aware Evolutionary Fuzzing](#vuzzer-application-aware-evolutionary-fuzzing-ndss-2017)
     - [Driller: Argumenting Fuzzing Through Selective Symbolic Execution](#driller-argumenting-fuzzing-through-selective-symbolic-execution-ndss-2016)
 
-- ICSE 2019
+- **ICSE 2019**
     - [DifFuzz: Differential Fuzzing for Side-Channel Analysis](#diffuzz-differential-fuzzing-for-side-channel-analysis-icse-2019)
     - [REST-ler: Stateful REST API Fuzzing](#rest-ler-stateful-rest-api-fuzzing-icse-2019)
     - [SLF: Fuzzing without Valid Seed Inputs](#slf-fuzzing-without-valid-seed-inputs-icse-2019)
     - [Superion: Grammar-Aware Greybox Fuzzing](#superion-grammar-aware-greybox-fuzzing-icse-2019)
 
-- FSE 2019
+- **FSE 2019**
     - [Cerebro: Context-aware Adaptive Fuzzing for Effective Vulnerability Detection](#cerebro-context-aware-adaptive-fuzzing-for-effective-vulnerability-detection-fse-2019)
     - [Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing](#just-fuzz-it-solving-floating-point-constraints-using-coverage-guided-fuzzing-fse-2019)
 
-- FSE 2018
+- **FSE 2018**
     - [Singularity: Pattern Fuzzing for Worst Case Complexity](#singularity-pattern-fuzzing-for-worst-case-complexity-fse-2018)
 
-- FSE 2017
+- **FSE 2017**
     - [Steelix: Program-State Based Binary Fuzzing (FSE 2017)](#Steelix-Program-State-Based-Binary-Fuzzing-FSE-2017)
 
-- ASE 2018
+- **ASE 2018**
     - [ContractFuzzer: Fuzzing Smart Contracts for Vulnerability Detection](#contractfuzzer-fuzzing-smart-contracts-for-vulnerability-detection-ase-2018)
     - [FairFuzz: A Targeted Mutation Strategy for Increasing Greybox Fuzz Testing Coverage](#fairfuzz-a-targeted-mutation-strategy-for-increasing-greybox-fuzz-testing-coverage-ase-2018)
 
-- ISSTA 2019
+- **ISSTA 2019**
     - [Semantic Fuzzing with Zest](#semantic-fuzzing-with-zest-issta-2019)
     - [DeepHunter: A Coverage-Guided Fuzz Testing Framework for Deep Neural Networks](#deephunter-A-coverage-guided-fuzz-testing-framework-for-deep-neural-networks-issta-2019)
     - [Deferred Concretization in Symbolic Execution via Fuzzing](deferred-concretization-in-symbolic-execution-via-fuzzing-issta-2019)
 
-- ISSTA 2018
+- **ISSTA 2018**
     - [Badger: Complexity Analysis with Fuzzing and Symbolic Execution](#badger-complexity-analysis-with-fuzzing-and-symbolic-execution-issta-2018)
     - [Compiler Fuzzing through Deep Learning](#compiler-fuzzing-through-deep-learning-issta-2018)
     - [PerfFuzz: Automatically Generating Pathological Inputs](#perffuzz-automatically-generating-pathological-inputs-issta-2018)
 
-- PLDI 2019
+- **PLDI 2019**
     - [Parser-Directed Fuzzing](#parser-directed-fuzzing-pldi-2019)
 
-- PLDI 2016
+- **PLDI 2016**
     - [Coverage-Directed Differential Testing of JVM Implementations](#coverage-directed-differential-testing-of-jvm-implementations-pldi-2016)
 
-- ACSAC 2018
+- **ACSAC 2018**
     - [TIFF: Using Input Type Inference To Improve Fuzzing](#tiff-using-input-type-inference-to-improve-fuzzing-acsac-2018)
 
-- ASIACCS 2019
+- **ASIACCS 2019**
     - [Ptrix: Efficient Hardware-Assisted Fuzzing for COTS Binary](#ptrix-efficient-hardware-assisted-fuzzing-for-cots-binary-asiaccs-2019)
     - [A Feature-Oriented Corpus for understanding, Evaluating and Improving Fuzz Testing](#a-feature-oriented-corpus-for-understanding-evaluating-and-improving-fuzz-testing-asiaccs-2019)
 
@@ -219,6 +222,7 @@
   - [What You Corrupt Is Not What You Crash: Challenges in Fuzzing Embedded Devices (NDSS 2018)](#what-you-corrupt-is-not-what-you-crash-challenges-in-fuzzing-embedded-devices-ndss-2018)
   - [MoonShine: Optimizing OS Fuzzer Seed Selection with Trace Distillation (USENIX Security2018)](#moonshine-optimizing-os-fuzzer-seed-selection-with-trace-distillation-usenix-security2018)
   - [Systematic Fuzzing and Testing of TLS Libraries](#systematic-fuzzing-and-testing-of-tls-libraries-ccs-2016)
+  - [Protocol State Fuzzing of TLS Implementations (USENIX Security2015)](#protocol-state-fuzzing-of-tls-implementations-usenix-security2015)
 
 
 
@@ -366,6 +370,8 @@ In this paper, we approach the problem of coverage-guided kernel fuzzing in an O
 # Hybrid Fuzzing:
 
 ### SAVIOR: Towards Bug-Driven Hybrid Testing (S&P 2020)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/SP20_SAVIOR.pdf)
 
 Hybrid testing combines fuzz testing and concolic execution. It leverages fuzz testing to test easy-to-reach code regions and uses concolic execution to explore code blocks guarded by complex branch conditions. As a result, hybrid testing is able to reach deeper into program state space than fuzz testing or concolic execution alone. Recently, hybrid testing has seen significant advancement. However, its code coveragecentric design is inefficient in vulnerability detection. First, it blindly selects seeds for concolic execution and aims to explore new code continuously. However, as statistics shows, a large portion of the explored code is often invulnerable. Therefore, giving equal attention to every part of the code during hybrid testing is a non-optimal strategy. It also slows down the detection of real vulnerabilities by over 43%. Second, classic hybrid testing quickly moves on after reaching a chunk of code, rather than examining the hidden defects inside. It may frequently miss subtle yet exploitable vulnerabilities despite that it has already explored the vulnerable code paths.
 
@@ -859,3 +865,15 @@ We designed and implemented MoonShine as an extension to Syzkaller, a state-of-t
 **Abstract:** We present TLS-Attacker, an open source framework for evaluating the security of TLS libraries. TLS-Attacker allows security engineers to create custom TLS message flows and arbitrarily modify message contents using a simple interface in order to test the behavior of their libraries. Based on TLS-Attacker, we present a two-stage fuzzing approach to evaluate TLS server behavior. Our approach automatically searches for cryptographic failures and boundary violation vulnerabilities. It allowed us to find unusual padding oracle vulnerabilities and overflows/overreads in widely used TLS libraries, including OpenSSL, Botan, and MatrixSSL.
 
 Our findings motivate developers to create comprehensive test suites, including positive as well as negative tests, for the evaluation of TLS libraries. We use TLS-Attacker to create such a test suite framework which finds further problems in Botan.
+
+### Protocol State Fuzzing of TLS Implementations (USENIX Security2015)
+
+* <img src="image/youdao_note_24px.png">[Reading Note](http://note.youdao.com/noteshare?id=eb0ec80133498dd0b2e073a5174c5f0d&sub=F972E69029854C398925A5F8D5E91484)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/USENIX15_Protocol_Slides.pdf)
+
+* <img src="image/ppt_24px.png">[Slides](./Paper/USENIX15_Protocol.pdf)
+
+**Abstract:** We describe a largely automated and systematic analysis of TLS implementations by what we call ‘protocol state fuzzing’: we use state machine learning to infer state machines from protocol implementations, using only blackbox testing, and then inspect the inferred state machines to look for spurious behaviour which might be an indication of flaws in the program logic. For detecting the presence of spurious behaviour the approach is almost fully automatic: we automatically obtain state machines and any spurious behaviour is then trivial to see. Detecting whether the spurious behaviour introduces exploitable security weaknesses does require manual investigation. Still, we take the point of view that any spurious functionality in a security protocol implementation is dangerous and should be removed.
+
+We analysed both server- and client-side implementations with a test harness that supports several key exchange algorithms and the option of client certificate authentication. We show that this approach can catch an interesting class of implementation flaws that is apparently common in security protocol implementations: in three of the TLS implementations analysed new security flaws were found (in GnuTLS, the Java Secure Socket Extension, and OpenSSL). This shows that protocol state fuzzing is a useful technique to systematically analyse security protocol implementations. As our analysis of different TLS implementations resulted in different and unique state machines for each one, the technique can also be used for fingerprinting TLS implementations.

@@ -50,7 +50,7 @@
     - [Directed Greybox Fuzzing](#directed-greybox-fuzzing-ccs-2017)
     - [Designing New Operating Primitives to Improve Fuzzing Performance](#designing-new-operating-primitives-to-improve-fuzzing-performance-ccs-2017)
     - [DIFUZE: Interface aware fuzzing for kernel drivers](#difuze-interface-aware-fuzzing-for-kernel-drivers-ccs-2017)
-    - [SemFuzz: Semantics-based Automatic Generation of Proof-of-Concept Exploits](#semFuzz-semantics-based-automatic-generation-of-proof-of-concept-exploits-ccs-2017)
+    - [SemFuzz: Semantics-based Automatic Generation of Proof-of-Concept Exploits](#semfuzz-semantics-based-automatic-generation-of-proof-of-concept-exploits-ccs-2017)
     - [SlowFuzz: Automated Domain-Independent Detection of Algorithmic Complexity Vulnerabilities](#slowfuzz-automated-domain-independent-detection-of-algorithmic-complexity-vulnerabilities-ccs-2017)
     - [IMF: Inferred Model-based Fuzzer](#imf-inferred-model-based-fuzzer-ccs-2017)
 
@@ -88,7 +88,7 @@
     - [Singularity: Pattern Fuzzing for Worst Case Complexity](#singularity-pattern-fuzzing-for-worst-case-complexity-fse-2018)
 
 - **FSE 2017**
-    - [Steelix: Program-State Based Binary Fuzzing (FSE 2017)](#Steelix-Program-State-Based-Binary-Fuzzing-FSE-2017)
+    - [Steelix: Program-State Based Binary Fuzzing](#steelix-program-state-based-binary-fuzzing-fse-2017)
 
 - **ASE 2018**
     - [ContractFuzzer: Fuzzing Smart Contracts for Vulnerability Detection](#contractfuzzer-fuzzing-smart-contracts-for-vulnerability-detection-ase-2018)
@@ -165,7 +165,7 @@
   - [ProFuzzer: On-the-fly Input Type Probing for Better Zero-day Vulnerability Discovery (S&P 2019)](#profuzzer-on-the-fly-input-type-probing-for-better-zero-day-vulnerability-discovery-sp-2019)
   - [CodeAlchemist: Semantics-Aware Code Generation to Find Vulnerabilities in JavaScript Engines (NDSS 2019)](#codealchemist-semantics-aware-code-generation-to-find-vulnerabilities-in-javascript-engines-ndss-2019)
   - [TIFF: Using Input Type Inference To Improve Fuzzing (ACSAC 2018)](#tiff-using-input-type-inference-to-improve-fuzzing-acsac-2018)
-  - [SemFuzz: Semantics-based Automatic Generation of Proof-of-Concept Exploits (CCS 2017)](#semFuzz-semantics-based-automatic-generation-of-proof-of-concept-exploits-ccs-2017)
+  - [SemFuzz: Semantics-based Automatic Generation of Proof-of-Concept Exploits (CCS 2017)](#semfuzz-semantics-based-automatic-generation-of-proof-of-concept-exploits-ccs-2017)
 
 - [**Ensemble Fuzzing**](#ensemble-fuzzing)
     - [EnFuzz: Ensemble Fuzzing with Seed Synchronization among Diverse Fuzzers (USENIX Security2019) ](#enfuzz-ensemble-fuzzing-with-seed-synchronization-among-diverse-fuzzers-usenix-security2019)
@@ -208,7 +208,7 @@
   - [GREYONE Data Flow Sensitive Fuzzing (USENIX Security2020)](#greyone-data-flow-sensitive-fuzzing-usenix-security2020)
 
 - [**Binary Fuzzing**](#binary-fuzzing)
-  - [Steelix: Program-State Based Binary Fuzzing (FSE 2017)](#Steelix-Program-State-Based-Binary-Fuzzing-FSE-2017)
+  - [Steelix: Program-State Based Binary Fuzzing (FSE 2017)](#steelix-program-state-based-binary-fuzzing-fse-2017)
 
 - [**Interesting Fuzzing**](#interesting-fuzzing)
   - [Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing (FSE 2019)](#just-fuzz-it-solving-floating-point-constraints-using-coverage-guided-fuzzing-fse-2019)
@@ -782,7 +782,7 @@ We implemented a prototype of GREYONE and evaluated it on the LAVA data set and 
 
 ### REST-ler: Stateful REST API Fuzzing (ICSE 2019)
 
-* <img src="image/pdf_24px.png">[Paper](./Paper/ICSE19_DIFFUZZ.pdf)
+* <img src="image/pdf_24px.png">[Paper](./Paper/ICSE19_RESTler.pdf)
 
 **Abstract:** This paper introduces REST-ler, the first stateful REST API fuzzer. REST-ler analyzes the API specification of a cloud service and generates sequences of requests that automatically test the service through its API. REST-ler generates test sequences by (1) inferring producer-consumer dependencies among request types declared in the specification (eg inferring that “a request B should be executed after request A” because B takes as an input a resource-id x produced by A) and by (2) analyzing dynamic feedback from responses observed during prior test executions in order to generate new tests (eg learning that “a request C after a request sequence A;B is refused by the service” and therefore avoiding this combination in the future).
 We present experimental results showing that these two techniques are necessary to thoroughly exercise a service under test while pruning the large search space of possible request sequences. We used REST-ler to test GitLab, a large open-source self-hosted Git service, as well as several Microsoft Azure and Office365 cloud services. REST-ler found 28 bugs in Gitlab and several bugs in each of the Azure and Office365 cloud services tested so far. These bugs have been confirmed by the service owners, and are either in the process of being fixed or have already been fixed.
@@ -799,7 +799,7 @@ We present experimental results showing that these two techniques are necessary 
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/.pdf)
 
-**Abstract:**
+**Abstract:** Robotic vehicles (RVs) are being adopted in a variety of application domains. Despite their increasing deployment, many security issues with RVs have emerged, limiting their wider deployment. In this paper, we address a new type of vulnerability in RV control programs, called input validation bugs, which involve missing or incorrect validation checks on control parameter inputs. Such bugs can be exploited to cause physical disruptions to RVs which may result in mission failures and vehicle damages or crashes. Furthermore, attacks exploiting such bugs have a very small footprint: just one innocent-looking ground control command, requiring no code injection, control flow hijacking or sensor spoofing. To prevent such attacks, we propose RVFuzzer, a vetting system for finding input validation bugs in RV control programs through control-guided input mutation. The key insight behind RVFuzzer is that the RV control model, which is the generic theoretical model for a broad range of RVs, provides helpful semantic guidance to improve bug-discovery accuracy and efficiency. Specifically, RVFuzzer involves a control instability detector that detects control program misbehavior, by observing (simulated) physical operations of the RV based on the control model. In addition, RVFuzzer steers the input generation for finding input validation bugs more efficiently, by leveraging results from the control instability detector as feedback. In our evaluation of RVFuzzer on two popular RV control programs, a total of 89 input validation bugs are found, with 87 of them being zero-day bugs.
 
 
 

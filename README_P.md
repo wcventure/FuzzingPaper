@@ -5,8 +5,9 @@
 - **S&P 2020**
     - [SAVIOR: Towards Bug-Driven Hybrid Testing](#savior-towards-bug-driven-hybrid-testing-sp-2020)
 
-- **USENIX Security2020**
-    - [GREYONE Data Flow Sensitive Fuzzing](#greyone-data-flow-sensitive-fuzzing-usenix-security2020)
+- **USENIX Security 2020**
+    - [GREYONE: Data Flow Sensitive Fuzzing](#greyone-data-flow-sensitive-fuzzing-usenix-security2020)
+    - [FuzzGuard: Filtering out Unreachable Inputs in Directed Grey-box Fuzzing through Deep Learning](#fuzzguard-filtering-out-unreachable-inputs-in-directed-grey-box-fuzzing-through-deep-learning-usenix-security2020)
 
 - **S&P 2019**
     - [NEUZZ: Efficient Fuzzing with Neural Program Smoothing](#neuzz-efficient-fuzzing-with-neural-program-smoothing-sp-2019)
@@ -15,7 +16,7 @@
     - [Razzer: Finding Kernel Race Bugs through Fuzzing](#razzer-finding-kernel-race-bugs-through-fuzzing-sp-2019)
     - [Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing](#full-speed-fuzzing-reducing-fuzzing-overhead-through-coverage-guided-tracing-sp-2019)
 
-- **USENIX Security2019**
+- **USENIX Security 2019**
     - [MOPT: Optimize Mutation Scheduling for Fuzzers](#mopt-optimize-mutation-scheduling-for-fuzzers-usenix-security2019)
     - [Antifuzz: impeding fuzzing audits of binary executables](#antifuzz-impeding-fuzzing-audits-of-binary-executables-usenix-security2019)
     - [FUZZIFICATION: Anti-Fuzzing Technique](#fuzzification-anti-fuzzing-technique-usenix-security2019)
@@ -44,7 +45,7 @@
 - **ISSTA 2019**
     - [Semantic Fuzzing with Zest](#semantic-fuzzing-with-zest-issta-2019)
     - [DeepHunter: A Coverage-Guided Fuzz Testing Framework for Deep Neural Networks](#deephunter-a-coverage-guided-fuzz-testing-framework-for-deep-neural-networks-issta-2019)
-    - [Deferred Concretization in Symbolic Execution via Fuzzing](deferred-concretization-in-symbolic-execution-via-fuzzing-issta-2019)
+    - [Deferred Concretization in Symbolic Execution via Fuzzing](#deferred-concretization-in-symbolic-execution-via-fuzzing-issta-2019)
 
 - **PLDI 2019**
     - [Parser-Directed Fuzzing](#parser-directed-fuzzing-pldi-2019)
@@ -58,7 +59,7 @@
     - [Angora: Efficient Fuzzing by Principled Search](#angora-efficient-fuzzing-by-principled-search-sp-2018)
     - [CollAFL: Path Sensitive Fuzzing](#collafl-path-sensitive-fuzzing-sp-2018)
 
-- **USENIX Security2018**
+- **USENIX Security 2018**
     - [MoonShine: Optimizing OS Fuzzer Seed Selection with Trace Distillation](#moonshine-optimizing-os-fuzzer-seed-selection-with-trace-distillation-usenix-security2018)
     - [QSYM : A Practical Concolic Execution Engine Tailored for Hybrid Fuzzing](#qsym-a-practical-concolic-execution-engine-tailored-for-hybrid-fuzzing-usenix-security2018)
 
@@ -70,6 +71,7 @@
     - [IoTFuzzer: Discovering Memory Corruptions in IoT Through App-based Fuzzing](#iotfuzzer-discovering-memory-corruptions-in-iot-through-app-based-fuzzing-ndss-2018)
     - [What You Corrupt Is Not What You Crash: Challenges in Fuzzing Embedded Devices](#what-you-corrupt-is-not-what-you-crash-challenges-in-fuzzing-embedded-devices-ndss-2018)
     - [Enhancing Memory Error Detection for Large-Scale Applications and Fuzz Testing](#enhancing-memory-error-detection-for-large-scale-applications-and-fuzz-testing-ndss-2018)
+    - [INSTRIM Lightweight Instrumentation for Coverage-guided Fuzzing](#instrim-lightweight-instrumentation-for-coverage-guided-fuzzing-ndss-2018-workshop)
 
 - **FSE 2018**
     - [Singularity: Pattern Fuzzing for Worst Case Complexity](#singularity-pattern-fuzzing-for-worst-case-complexity-fse-2018)
@@ -89,7 +91,7 @@
 - **S&P 2017**
     - [NEZHA: Efficient Domain-Independent Differential Testing](#nezha-efficient-domain-independent-differential-testing-sp-2017)
 
-- **USENIX Security2017**
+- **USENIX Security 2017**
     - [kAFL: Hardware-Assisted Feedback Fuzzing for OS Kernels](#kafl-hardware-assisted-feedback-fuzzing-for-os-kernels-usenix-security2017)
 
 - **CCS 2017**
@@ -117,9 +119,8 @@
 - **PLDI 2016**
     - [Coverage-Directed Differential Testing of JVM Implementations](#coverage-directed-differential-testing-of-jvm-implementations-pldi-2016)
 
-- **USENIX Security2015**
+- **USENIX Security 2015**
     - [Protocol State Fuzzing of TLS Implementations](#protocol-state-fuzzing-of-tls-implementations-usenix-security2015)
-
 
 
 # All Papers (Classification according to Subject)
@@ -183,6 +184,7 @@
 
 - [**Fuzzing Overhead & Performance**](#fuzzing-overhead--performance)
   - [Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing (S&P 2019)](#full-speed-fuzzing-reducing-fuzzing-overhead-through-coverage-guided-tracing-sp-2019)
+  - [INSTRIM Lightweight Instrumentation for Coverage-guided Fuzzing (NDSS 2018 Workshop)](#instrim-lightweight-instrumentation-for-coverage-guided-fuzzing-ndss-2018-workshop)
   - [Designing New Operating Primitives to Improve Fuzzing Performance (CCS 2017)](#designing-new-operating-primitives-to-improve-fuzzing-performance-ccs-2017)
 
 - [**Performance Fuzzing**](#performance-fuzzing)
@@ -200,6 +202,7 @@
   - [Coverage-based Greybox Fuzzing as Markov Chain (CCS 2016)](#coverage-based-greybox-fuzzing-as-markov-chain-ccs-2016)
 
 - [**Learning-based Fuzzing**](#learning-based-fuzzing)
+  - [FuzzGuard: Filtering out Unreachable Inputs in Directed Grey-box Fuzzing through Deep Learning (USENIX Security2020)](#fuzzguard-filtering-out-unreachable-inputs-in-directed-grey-box-fuzzing-through-deep-learning-usenix-security2020)
   - [NEUZZ: Efficient Fuzzing with Neural Program Smoothing (S&P 2019)](#neuzz-efficient-fuzzing-with-neural-program-smoothing-sp-2019)
   - [Compiler Fuzzing through Deep Learning (ISSTA 2018)](#compiler-fuzzing-through-deep-learning-issta-2018)
   - [Learn&Fuzz: Machine Learning for Input Fuzzing (ASE 2017)](#learnfuzz-machine-learning-for-input-fuzzing-ase-2017)
@@ -384,6 +387,9 @@ We propose SAVIOR, a new hybrid testing framework pioneering a bug-driven princi
 
 
 ### Deferred Concretization in Symbolic Execution via Fuzzing (ISSTA 2019)
+
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/ISSTA19_Deferred.pdf)
 
 **Abstract:** Concretization is an effective weapon in the armory of symbolic execution engines. However, concretization can lead to loss in coverage, path divergence, and generation of test-cases on which the intended bugs are not reproduced. In this paper, we propose an algorithm, Deferred Concretization, that uses a new category for values within symbolic execution (referred to as the symcrete values) to pend concretization till they are actually needed. Our tool, COLOSSUS, built around these ideas, was able to gain an average coverage improvement of 66.94% and reduce divergence by more than 55% relative to the state-of-the-art symbolic execution engine, KLEE. Moreover, we found that KLEE loses about 38.60% of the states in the symbolic execution tree that COLOSSUS is able to recover, showing that COLOSSUS is capable of covering a much larger coverage space. 
 
@@ -613,6 +619,15 @@ In this paper, inspired by the idea of ensemble learning, we first propose an en
 **Abstract:** Coverage-guided fuzzing is one of the most successful approaches for discovering software bugs and security vulnerabilities. Of its three main components: (1) test case generation, (2) code coverage tracing, and (3) crash triage, code coverage tracing is a dominant source of overhead. Coverage-guided fuzzers trace every test case's code coverage through either static or dynamic binary instrumentation, or more recently, using hardware support. Unfortunately, tracing all test cases incurs significant performance penalties--even when the overwhelming majority of test cases and their coverage information are discarded because they do not increase code coverage. To eliminate needless tracing by coverage-guided fuzzers, we introduce the notion of coverage-guided tracing. Coverage-guided tracing leverages two observations: (1) only a fraction of generated test cases increase coverage, and thus require tracing; and (2) coverage-increasing test cases become less frequent over time. Coverage-guided tracing encodes the current frontier of coverage in the target binary so that it self-reports when a test case produces new coverage--without tracing. This acts as a filter for tracing; restricting the expense of tracing to only coverage-increasing test cases. Thus, coverage-guided tracing trades increased time handling coverage-increasing test cases for decreased time handling non-coverage-increasing test cases. To show the potential of coverage-guided tracing, we create an implementation based on the static binary instrumentor Dyninst called UnTracer. We evaluate UnTracer using eight real-world binaries commonly used by the fuzzing community. Experiments show that after only an hour of fuzzing, UnTracer's average overhead is below 1%, and after 24-hours of fuzzing, UnTracer approaches 0% overhead, while tracing every test case with popular white- and black-box-binary tracers AFL-Clang, AFL-QEMU, and AFL-Dyninst incurs overheads of 36%, 612%, and 518%, respectively. We further integrate UnTracer with the state-of-the-art hybrid fuzzer QSYM and show that in 24-hours of fuzzing, QSYM-UnTracer executes 79% and 616% more test cases than QSYM-Clang and QSYM-QEMU, respectively.
 
 
+### INSTRIM Lightweight Instrumentation for Coverage-guided Fuzzing (NDSS 2018 workshop)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/NDSS18_INSTRIM.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/csienslab/instrim)
+
+**Abstract:** Empowered by instrumentation, coverage-guided fuzzing monitors the program execution path taken by an input, and prioritizes inputs based on their contribution to code coverage. Although instrumenting every basic block ensures full visibility, it slows down the fuzzer and thus the speed of vulnerability discovery. This paper shows that thanks to common program structures (e.g., directed acyclic subgraphs and simple loops) and compiler optimization (e.g., knowledge of incoming edges), it is possible to accurately reconstruct coverage information by instrumenting only a small fraction of basic blocks. Specifically, we formulate the problem as a path differentiation problem on the control flow graph, and propose an efficient algorithm to select basic blocks that need to be instrumented so that different execution paths remain differentiable. We extend AFL to support such CFG-aware instrumentation. Our experiment results confirm that, compared with full instrumentation, our CFG-aware instrumentation only needs to instrument about 20% of basic blocks while offering 1.04–1.78x speedup during fuzzing. Finally, we highlight several technical challenges and promising research directions to further improve instrumentation for fuzzing.
+
+
 ### Designing New Operating Primitives to Improve Fuzzing Performance (CCS 2017)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/CCS17_Designing.pdf)
@@ -711,6 +726,15 @@ We implemented the exponential schedule by extending AFL. In 24 hours, AFLFAST e
 
 # Learning-based Fuzzing:
 
+### FuzzGuard: Filtering out Unreachable Inputs in Directed Grey-box Fuzzing through Deep Learning (USENIX Security2020)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/USENIX20_FuzzGuard.pdf)
+
+**Abstract:** Recently, directed grey-box fuzzing (DGF) becomes much more popular in the field of software testing. Different from coverage-based fuzzing whose goal is to increase code coverage for triggering more bugs, DGF is designed to test only the potential buggy code whose location is known (e.g., testing the high-risk code such as string operations). For the efficiency, all the inputs generated by an ideal DGF should reach the buggy code, hoping to trigger the bug. Any unreachable input will waste the time spent on execution. Unfortunately, in a real situation, large numbers of the generated inputs miss the target, greatly impacting the efficiency of testing, especially when the buggy code is hard to reach. 
+
+In this paper, we propose a deep-learning-based approach to predict the reachability of inputs and filter out those unreachable ones, which works together with DGF fuzzers instead of replacing them. In the process of combining deep learning with fuzzing, we design a suite of new techniques (e.g., step-forwarding approach, representative data selection) to solve the problems of unbalanced labeled data and low efficiency. We implemented a prototype called FuzzGuard and evaluated it using 45 real vulnerabilities. The results show that FuzzGuard boosts the fuzzing efficiency of the state-of-the-art DGF (e.g., AFLGo) up to 17 times. We also found 19 undisclosed bugs, and 4 zero-day bugs (we have got CVE numbers). Finally, we design an approach to understand the extracted features of the deep neural network model, and find them correlate with the constraints in target programs, which indeed impacts the execution on the code level.
+
+
 ### NEUZZ: Efficient Fuzzing with Neural Program Smoothing (S&P 2019)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/SP19_NEUZZ.pdf)
@@ -763,7 +787,7 @@ We introduce DeepSmith, a novel machine learning approach to accelerating compil
 # Data Flow Sensitive Fuzzing
 
 
-### GREYONE Data Flow Sensitive Fuzzing (USENIX Security2020)
+### GREYONE: Data Flow Sensitive Fuzzing (USENIX Security2020)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/USENIX20_GREYONE.pdf)
 
@@ -786,10 +810,9 @@ We implemented a prototype of GREYONE and evaluated it on the LAVA data set and 
 
 ### Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing (FSE 2019)
 
-* <img src="image/pdf_24px.png">[Paper](./Paper/.pdf)
+* <img src="image/pdf_24px.png">[Paper](./Paper/FSE19_JFI.pdf)
 
-**Abstract:** 
-
+**Abstract:** We investigate the use of coverage-guided fuzzing as a means of proving satisfiability of SMT formulas over finite variable domains, with specific application to floating-point constraints.We showhow an SMT formula can be encoded as a program containing a location that is reachable if and only if the program’s input corresponds to a satisfying assignment to the formula. A coverage-guided fuzzer can then be used to search for an input that reaches the location, yielding a satisfying assignment. We have implemented this idea in a tool, Just Fuzz-it Solver (JFS), and we present a large experimental evaluation showing that JFS is both competitive with and complementary to state-of-the-art SMT solvers with respect to solving floating-point constraints, and that the coverage-guided approach of JFS provides significant benefit over naive fuzzing in the floating-point domain. Applied in a portfolio manner, the JFS approach thus has the potential to complement traditional SMT solvers for program analysis tasks that involve reasoning about floating-point constraints.
 
 
 ### REST-ler: Stateful REST API Fuzzing (ICSE 2019)
@@ -809,7 +832,7 @@ We present experimental results showing that these two techniques are necessary 
 
 ### RVFuzzer: Finding Input Validation Bugs in Robotic Vehicles through Control-Guided Random Testing (USENIX Security2019)
 
-* <img src="image/pdf_24px.png">[Paper](./Paper/.pdf)
+* <img src="image/pdf_24px.png">[Paper](./Paper/USENIX19_RVFUZZER.pdf)
 
 **Abstract:** Robotic vehicles (RVs) are being adopted in a variety of application domains. Despite their increasing deployment, many security issues with RVs have emerged, limiting their wider deployment. In this paper, we address a new type of vulnerability in RV control programs, called input validation bugs, which involve missing or incorrect validation checks on control parameter inputs. Such bugs can be exploited to cause physical disruptions to RVs which may result in mission failures and vehicle damages or crashes. Furthermore, attacks exploiting such bugs have a very small footprint: just one innocent-looking ground control command, requiring no code injection, control flow hijacking or sensor spoofing. To prevent such attacks, we propose RVFuzzer, a vetting system for finding input validation bugs in RV control programs through control-guided input mutation. The key insight behind RVFuzzer is that the RV control model, which is the generic theoretical model for a broad range of RVs, provides helpful semantic guidance to improve bug-discovery accuracy and efficiency. Specifically, RVFuzzer involves a control instability detector that detects control program misbehavior, by observing (simulated) physical operations of the RV based on the control model. In addition, RVFuzzer steers the input generation for finding input validation bugs more efficiently, by leveraging results from the control instability detector as feedback. In our evaluation of RVFuzzer on two popular RV control programs, a total of 89 input validation bugs are found, with 87 of them being zero-day bugs.
 

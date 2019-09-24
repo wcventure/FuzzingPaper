@@ -9,6 +9,10 @@
     - [GREYONE: Data Flow Sensitive Fuzzing](#greyone-data-flow-sensitive-fuzzing-usenix-security2020)
     - [FuzzGuard: Filtering out Unreachable Inputs in Directed Grey-box Fuzzing through Deep Learning](#fuzzguard-filtering-out-unreachable-inputs-in-directed-grey-box-fuzzing-through-deep-learning-usenix-security2020)
 
+- **OOPSLA2020**
+    - [FuzzFactory: Domain-Specific Fuzzing with Waypoints](#)
+    - [Compiler Fuzzing: How Much Does It Matter](#)
+
 - **S&P 2019**
     - [NEUZZ: Efficient Fuzzing with Neural Program Smoothing](#neuzz-efficient-fuzzing-with-neural-program-smoothing-sp-2019)
     - [Fuzzing File Systems via Two-Dimensional Input Space Exploration](#fuzzing-file-systems-via-two-dimensional-input-space-exploration-sp-2019)
@@ -219,6 +223,8 @@
   - [Steelix: Program-State Based Binary Fuzzing (FSE 2017)](#steelix-program-state-based-binary-fuzzing-fse-2017)
 
 - [**Interesting Fuzzing**](#interesting-fuzzing)
+  - [FuzzFactory: Domain-Specific Fuzzing with Waypoints](#)
+  - [Compiler Fuzzing: How Much Does It Matter](#)
   - [Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing (FSE 2019)](#just-fuzz-it-solving-floating-point-constraints-using-coverage-guided-fuzzing-fse-2019)
   - [REST-ler: Stateful REST API Fuzzing (ICSE 2019)](#rest-ler-stateful-rest-api-fuzzing-icse-2019)
   - [Ptrix: Efficient Hardware-Assisted Fuzzing for COTS Binary (ASIACCS 2019)](#ptrix-efficient-hardware-assisted-fuzzing-for-cots-binary-asiaccs-2019)
@@ -786,7 +792,6 @@ We introduce DeepSmith, a novel machine learning approach to accelerating compil
 
 # Data Flow Sensitive Fuzzing
 
-
 ### GREYONE: Data Flow Sensitive Fuzzing (USENIX Security2020)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/USENIX20_GREYONE.pdf)
@@ -807,6 +812,24 @@ We implemented a prototype of GREYONE and evaluated it on the LAVA data set and 
 
 
 # Interesting Fuzzing
+
+### FuzzFactory: Domain-Specific Fuzzing with Waypoints (OOPSLA2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/OOPSLA2019_FuzzFactory.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/rohanpadhye/FuzzFactory)
+
+**Abstract:** Coverage-guided fuzz testing has gained prominence as a highly effective method of finding security vulnerabilities such as buffer overflows in programs that parse binary data. Recently, researchers have introduced various specializations to the coverage-guided fuzzing algorithm for different domain-specific testing goals, such as finding performance bottlenecks, generating valid inputs, handling magic-byte comparisons, etc. Each such solution can require non-trivial implementation effort and produces a distinct variant of a fuzzing tool. We observe that many of these domain-specific solutions follow a common solution pattern.
+
+In this paper, we present FuzzFactory, a framework for developing domain-specific fuzzing applications without requiring changes to mutation and search heuristics. FuzzFactory allows users to specify the collection of dynamic domain-specific feedback during test execution, as well as how such feedback should be aggregated. FuzzFactory uses this information to selectively save intermediate inputs, called waypoints, to augment coverage-guided fuzzing. Such waypoints always make progress towards domain-specific multi-dimensional objectives. We instantiate six domain-specific fuzzing applications using FuzzFactory: three re-implementations of prior work and three novel solutions, and evaluate their effectiveness on benchmarks from Google’s fuzzer test suite. We also show how multiple domains can be composed to perform better than the sum of their parts. For example, we combine domain-specific feedback about strict equality comparisons and dynamic memory allocations, to enable the automatic generation of LZ4 bombs and PNG bombs.
+
+
+### Compiler Fuzzing: How Much Does It Matter (OOPSLA2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/OOPSLA2019_Compiler.pdf)
+
+**Abstract:** Despite much recent interest in randomised testing (fuzzing) of compilers, the practical impact of fuzzer-found compiler bugs on real-world applications has barely been assessed. We present the first quantitative and qualitative study of the tangible impact of miscompilation bugs in a mature compiler. We follow a rigorous methodology where the bug impact over the compiled application is evaluated based on (1) whether the bug appears to trigger during compilation; (2) the extent to which generated assembly code changes syntactically due to triggering of the bug; and (3) whether such changes cause regression test suite failures, or whether we can manually find application inputs that trigger execution divergence due to such changes. The study is conducted with respect to the compilation of more than 10 million lines of C/C++ code from 309 Debian packages, using 12% of the historical and now fixed miscompilation bugs found by four state-of-the-art fuzzers in the Clang/LLVM compiler, as well as 18 bugs found by human users compiling real code or as a by-product of formal verification efforts. The results show that almost half of the fuzzer-found bugs propagate to the generated binaries for at least one package, in which case only a very small part of the binary is typically affected, yet causing two failures when running the test suites of all the impacted packages. User-reported and formal verification bugs do not exhibit a higher impact, with a lower rate of triggered bugs and one test failure. The manual analysis of a selection of the syntactic changes caused by some of our bugs (fuzzer-found and non fuzzer-found) in package assembly code, shows that either these changes have no semantic impact or that they would require very specific runtime circumstances to trigger execution divergence.
+
 
 ### Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing (FSE 2019)
 

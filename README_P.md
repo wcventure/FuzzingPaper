@@ -10,8 +10,8 @@
     - [FuzzGuard: Filtering out Unreachable Inputs in Directed Grey-box Fuzzing through Deep Learning](#fuzzguard-filtering-out-unreachable-inputs-in-directed-grey-box-fuzzing-through-deep-learning-usenix-security2020)
 
 - **OOPSLA2020**
-    - [FuzzFactory: Domain-Specific Fuzzing with Waypoints](#)
-    - [Compiler Fuzzing: How Much Does It Matter](#)
+    - [FuzzFactory: Domain-Specific Fuzzing with Waypoints](#fuzzfactory-domain-specific-fuzzing-with-waypoints-oopsla2019)
+    - [Compiler Fuzzing: How Much Does It Matter](#compiler-fuzzing-how-much-does-it-matter-oopsla2019)
 
 - **S&P 2019**
     - [NEUZZ: Efficient Fuzzing with Neural Program Smoothing](#neuzz-efficient-fuzzing-with-neural-program-smoothing-sp-2019)
@@ -35,6 +35,7 @@
     - [Life after Speech Recognition: Fuzzing Semantic Misinterpretation for Voice Assistant Applications](#life-after-speech-recognition-fuzzing-semantic-misinterpretation-for-voice-assistant-applications-ndss-2019)
     - [Send Hardest Problems My Way: Probabilistic Path Prioritization for Hybrid Fuzzing](#send-hardest-problems-my-way-probabilistic-path-prioritization-for-hybrid-fuzzing-ndss-2019)
     - [CodeAlchemist: Semantics-Aware Code Generation to Find Vulnerabilities in JavaScript Engines](#codealchemist-semantics-aware-code-generation-to-find-vulnerabilities-in-javascript-engines-ndss-2019)
+    - [NAUTILUS: Fishing for Deep Bugs with Grammars](#nautilus-fishing-for-deep-bugs-with-grammars-ndss-2019)
 
 - **ICSE 2019**
     - [DifFuzz: Differential Fuzzing for Side-Channel Analysis](#diffuzz-differential-fuzzing-for-side-channel-analysis-icse-2019)
@@ -173,6 +174,7 @@
   - [Superion: Grammar-Aware Greybox Fuzzing (ICSE 2019)](#superion-grammar-aware-greybox-fuzzing-icse-2019)
   - [ProFuzzer: On-the-fly Input Type Probing for Better Zero-day Vulnerability Discovery (S&P 2019)](#profuzzer-on-the-fly-input-type-probing-for-better-zero-day-vulnerability-discovery-sp-2019)
   - [CodeAlchemist: Semantics-Aware Code Generation to Find Vulnerabilities in JavaScript Engines (NDSS 2019)](#codealchemist-semantics-aware-code-generation-to-find-vulnerabilities-in-javascript-engines-ndss-2019)
+  - [NAUTILUS: Fishing for Deep Bugs with Grammars (NDSS 2019)](#nautilus-fishing-for-deep-bugs-with-grammars-ndss-2019)
   - [TIFF: Using Input Type Inference To Improve Fuzzing (ACSAC 2018)](#tiff-using-input-type-inference-to-improve-fuzzing-acsac-2018)
   - [SemFuzz: Semantics-based Automatic Generation of Proof-of-Concept Exploits (CCS 2017)](#semfuzz-semantics-based-automatic-generation-of-proof-of-concept-exploits-ccs-2017)
 
@@ -223,8 +225,8 @@
   - [Steelix: Program-State Based Binary Fuzzing (FSE 2017)](#steelix-program-state-based-binary-fuzzing-fse-2017)
 
 - [**Interesting Fuzzing**](#interesting-fuzzing)
-  - [FuzzFactory: Domain-Specific Fuzzing with Waypoints](#)
-  - [Compiler Fuzzing: How Much Does It Matter](#)
+  - [FuzzFactory: Domain-Specific Fuzzing with Waypoints](#fuzzfactory-domain-specific-fuzzing-with-waypoints-oopsla2019)
+  - [Compiler Fuzzing: How Much Does It Matter](#compiler-fuzzing-how-much-does-it-matter-oopsla2019)
   - [Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing (FSE 2019)](#just-fuzz-it-solving-floating-point-constraints-using-coverage-guided-fuzzing-fse-2019)
   - [REST-ler: Stateful REST API Fuzzing (ICSE 2019)](#rest-ler-stateful-rest-api-fuzzing-icse-2019)
   - [Ptrix: Efficient Hardware-Assisted Fuzzing for COTS Binary (ASIACCS 2019)](#ptrix-efficient-hardware-assisted-fuzzing-for-cots-binary-asiaccs-2019)
@@ -555,6 +557,30 @@ In this paper, we pre­sent the de­sign and im­ple­men­ta­ti­on of GRI­MO
 * <img src="image/ppt_24px.png">[Slides](./Paper/NDSS19_CodeAlchemist_slidesz.pdf)
 
 **Abstract:** JavaScript engines are an attractive target for attackers due to their popularity and flexibility in building exploits. Current state-of-the-art fuzzers for finding JavaScript engine vulnerabilities focus mainly on generating syntactically correct test cases based on either a predefined context-free grammar or a trained probabilistic language model. Unfortunately, syntactically correct JavaScript sentences are often semantically invalid at runtime. Furthermore, statically analyzing the semantics of JavaScript code is challenging due to its dynamic nature: JavaScript code is generated at runtime, and JavaScript expressions are dynamically-typed. To address this challenge, we propose a novel test case generation algorithm that we call semantics-aware assembly, and implement it in a fuzz testing tool termed CodeAlchemist. Our tool can generate arbitrary JavaScript code snippets that are both semantically and syntactically correct, and it effectively yields test cases that can crash JavaScript engines. We found numerous vulnerabilities of the latest JavaScript engines with CodeAlchemist and reported them to the vendors.
+
+
+### NAUTILUS: Fishing for Deep Bugs with Grammars (NDSS 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/NDSS19_Nautilus.pdf)
+
+* <img src="image/ppt_24px.png">[Slides](https://www.ndss-symposium.org/wp-content/uploads/ndss2019_04A-3_Aschermann_slides.pdf)
+
+**Abstract:** Fuzzing is a well-known method for efficiently identifying bugs in programs.Unfortunately, when fuzzing targets that require highly-structured inputs such as interpreters, many fuzzing methods struggle to pass the syntax checks.
+More specifically, interpreters often process inputs in multiple stages: first syntactic, then semantic correctness is checked. Only if these checks are passed, the interpreted code gets executed.
+This prevents fuzzers from executing ``deeper'' --- and hence potentially more interesting --- code.
+Typically two valid inputs that lead to the execution of different features in the target application require too many mutations for simple mutation-based fuzzers to discover: making small changes like bit flips usually only leads to the execution of error paths in the parsing engine.
+So-called grammar fuzzers are able to pass the syntax checks by using Context-Free Grammars.
+Using feedback can significantly increase the efficiency of fuzzing engines.
+Hence, it is commonly used in state-of-the-art mutational fuzzers that do not use grammars.
+Yet, grammar fuzzers do not make use of code coverage, i.e., they do not know whether any input triggers new functionality or not.
+
+In this paper, we propose NAUTILUS, a method to efficiently fuzz programs that require highly-structured inputs by combining the use of grammars with the use of code coverage feedback.
+This allows us to recombine aspects of interesting inputs that were learned individually, and to dramatically increase the probability that any generated input will be accepted by the parser.
+We implemented a proof-of-concept fuzzer that we tested on multiple targets, including ChakraCore (the JavaScript engine of Microsoft Edge), PHP, mruby, and Lua.
+NAUTILUS identified multiple bugs in all of the targets: Seven in mruby, three in PHP, two in ChakraCore, and one in Lua.
+Reporting these bugs was awarded with a sum of 2600 USD and 6 CVEs were assigned.
+Our experiments show that combining context-free grammars and feedback-driven fuzzing significantly outperforms state-of-the-art approaches like American Fuzzy Lop (AFL) by an order of magnitude and grammar fuzzers by more than a factor of two when measuring code coverage.
+
 
 ### TIFF: Using Input Type Inference To Improve Fuzzing (ACSAC 2018)
 

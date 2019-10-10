@@ -9,9 +9,15 @@
     - [GREYONE: Data Flow Sensitive Fuzzing](#greyone-data-flow-sensitive-fuzzing-usenix-security2020)
     - [FuzzGuard: Filtering out Unreachable Inputs in Directed Grey-box Fuzzing through Deep Learning](#fuzzguard-filtering-out-unreachable-inputs-in-directed-grey-box-fuzzing-through-deep-learning-usenix-security2020)
 
-- **OOPSLA2020**
+- **OOPSLA 2020**
     - [FuzzFactory: Domain-Specific Fuzzing with Waypoints](#fuzzfactory-domain-specific-fuzzing-with-waypoints-oopsla2019)
     - [Compiler Fuzzing: How Much Does It Matter](#compiler-fuzzing-how-much-does-it-matter-oopsla2019)
+
+- **CCS 2019**
+    - Intriguer: Field-Level Constraint Solving for Hybrid Fuzzing 
+    - [Learning to Fuzz from Symbolic Execution with Application to Smart Contracts](#learning-to-fuzz-from-symbolic-execution-with-application-to-smart-contracts-ccs-2019)
+    - [Matryoshka: fuzzing deeply nested branches](#matryoshka-fuzzing-deeply-nested-branches-ccs-2019)
+    - Different is Good: Detecting the Use of Uninitialized Variables through Differential Replay
 
 - **S&P 2019**
     - [NEUZZ: Efficient Fuzzing with Neural Program Smoothing](#neuzz-efficient-fuzzing-with-neural-program-smoothing-sp-2019)
@@ -42,6 +48,7 @@
 
 - **ICSE 2019**
     - [DifFuzz: Differential Fuzzing for Side-Channel Analysis](#diffuzz-differential-fuzzing-for-side-channel-analysis-icse-2019)
+    - [Deep Differential Testing of JVM Implementations](#deep-differential-testing-of-jvm-implementations-icse-2019)
     - [REST-ler: Stateful REST API Fuzzing](#rest-ler-stateful-rest-api-fuzzing-icse-2019)
     - [SLF: Fuzzing without Valid Seed Inputs](#slf-fuzzing-without-valid-seed-inputs-icse-2019)
     - [Superion: Grammar-Aware Greybox Fuzzing](#superion-grammar-aware-greybox-fuzzing-icse-2019)
@@ -135,6 +142,8 @@
 
 - [**Differential Fuzzing**](#differential-fuzzing)
   - [DifFuzz: Differential Fuzzing for Side-Channel Analysis (ICSE 2019)](#diffuzz-differential-fuzzing-for-side-channel-analysis-icse-2019)
+  - [Deep Differential Testing of JVM Implementations (ICSE 2019)](#deep-differential-testing-of-jvm-implementations-icse-2019)
+  - Different is Good: Detecting the Use of Uninitialized Variables through Differential Replay (CCS 2019)
   - [NEZHA: Efficient Domain-Independent Differential Testing (S&P 2017)](#nezha-efficient-domain-independent-differential-testing-sp-2017)
   - [Coverage-Directed Differential Testing of JVM Implementations (PLDI 2016)](#coverage-directed-differential-testing-of-jvm-implementations-pldi-2016)
 
@@ -162,7 +171,8 @@
   - [Angora: Efficient Fuzzing by Principled Search (S&P 2018)](#angora-efficient-fuzzing-by-principled-search-sp-2018)
   - [Driller: Argumenting Fuzzing Through Selective Symbolic Execution (NDSS 2016)](#driller-argumenting-fuzzing-through-selective-symbolic-execution-ndss-2016)
 
-- [**Addressing Magic bytes \ checksum**](#addressing-magic-bytes-\-checksum)
+- [**Deeply nested branches \ Addressing Magic bytes \ checksum**](#deeply-nested-branches--addressing-magic-bytes--checksum)
+  - [Matryoshka: fuzzing deeply nested branches (CCS 2019)](#matryoshka-fuzzing-deeply-nested-branches-ccs-2019)
   - [REDQUEEN: Fuzzing with Input-to-State Correspondence  (NDSS2019)](#redqueen-fuzzing-with-input-to-state-correspondence-ndss2019)
   - [T-Fuzz: fuzzing by program transformation (S&P 2018)](#t-fuzz-fuzzing-by-program-transformation-sp-2018)
   - [FairFuzz: A Targeted Mutation Strategy for Increasing Greybox Fuzz Testing Coverage (ASE 2018)](#fairfuzz-a-targeted-mutation-strategy-for-increasing-greybox-fuzz-testing-coverage-ase-2018)
@@ -228,16 +238,23 @@
 - [**Binary Fuzzing**](#binary-fuzzing)
   - [Steelix: Program-State Based Binary Fuzzing (FSE 2017)](#steelix-program-state-based-binary-fuzzing-fse-2017)
 
+- [**SmartContracts**](#smart-contracts)
+  - [Learning to Fuzz from Symbolic Execution with Application to Smart Contracts (CCS 2019)](#learning-to-fuzz-from-symbolic-execution-with-application-to-smart-contracts-ccs-2019)
+  - [ContractFuzzer: Fuzzing Smart Contracts for Vulnerability Detection (ASE 2018)](#contractfuzzer-fuzzing-smart-contracts-for-vulnerability-detection-ase-2018)
+
+
+- [**Constraint Solving**]()
+  - Intriguer: Field-Level Constraint Solving for Hybrid Fuzzing (CCS 2019)
+  - [Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing (FSE 2019)](#just-fuzz-it-solving-floating-point-constraints-using-coverage-guided-fuzzing-fse-2019)
+
 - [**Interesting Fuzzing**](#interesting-fuzzing)
   - [FuzzFactory: Domain-Specific Fuzzing with Waypoints](#fuzzfactory-domain-specific-fuzzing-with-waypoints-oopsla2019)
   - [Compiler Fuzzing: How Much Does It Matter](#compiler-fuzzing-how-much-does-it-matter-oopsla2019)
-  - [Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing (FSE 2019)](#just-fuzz-it-solving-floating-point-constraints-using-coverage-guided-fuzzing-fse-2019)
   - [REST-ler: Stateful REST API Fuzzing (ICSE 2019)](#rest-ler-stateful-rest-api-fuzzing-icse-2019)
   - [Ptrix: Efficient Hardware-Assisted Fuzzing for COTS Binary (ASIACCS 2019)](#ptrix-efficient-hardware-assisted-fuzzing-for-cots-binary-asiaccs-2019)
   - [RVFuzzer: Finding Input Validation Bugs in Robotic Vehicles through Control-Guided Random Testing (USENIX Security2019)](#rvfuzzer-finding-input-validation-bugs-in-robotic-vehicles-through-control-guided-random-testing-usenix-security2019)
   - [FIRM-AFL: High-Throughput Greybox Fuzzing of IoT Firmware via Augmented Process Emulation (USENIX Security2019)](#firm-afl-high-throughput-greybox-fuzzing-of-iot-firmware-via-augmented-process-emulation-usenix-security2019)
   - [Life after Speech Recognition: Fuzzing Semantic Misinterpretation for Voice Assistant Applications (NDSS 2019)](#life-after-speech-recognition-fuzzing-semantic-misinterpretation-for-voice-assistant-applications-ndss-2019)
-  - [ContractFuzzer: Fuzzing Smart Contracts for Vulnerability Detection (ASE 2018)](#contractfuzzer-fuzzing-smart-contracts-for-vulnerability-detection-ase-2018)
   - [IoTFuzzer: Discovering Memory Corruptions in IoT Through App-based Fuzzing (NDSS 2018)](#iotfuzzer-discovering-memory-corruptions-in-iot-through-app-based-fuzzing-ndss-2018)
   - [What You Corrupt Is Not What You Crash: Challenges in Fuzzing Embedded Devices (NDSS 2018)](#what-you-corrupt-is-not-what-you-crash-challenges-in-fuzzing-embedded-devices-ndss-2018)
   - [MoonShine: Optimizing OS Fuzzer Seed Selection with Trace Distillation (USENIX Security2018)](#moonshine-optimizing-os-fuzzer-seed-selection-with-trace-distillation-usenix-security2018)
@@ -250,10 +267,22 @@
 
 ### DifFuzz: Differential Fuzzing for Side-Channel Analysis (ICSE 2019)
 
-* <img src="image/youdao_note_24px.png">[Reading Note](http://note.youdao.com/noteshare?id=8e905e9d299cae5ceb3bbeac0591cfab&sub=9FCAB3A8AD4C48689095307EDD1A940A)
+* <img src="image/youdao_note_24px.png">[Reading Note](http://note.youdao.com/noteshare?id=06c39d23c76be5d0e6441a01c9eaff93&sub=B72A70BDD1DC47B39E56866B3903401B)
 * <img src="image/pdf_24px.png">[Paper](./Paper/ICSE19_DIFFUZZ.pdf)
 
 **Abstract:** Side-channel attacks allow an adversary to uncover secret program data by observing the behavior of a program with respect to a resource, such as execution time, consumed memory or response size. Side-channel vulnerabilities are difficult to reason about as they involve analyzing the correlations between resource usage over multiple program paths. We present DifFuzz, a fuzzing-based approach for detecting side-channel vulnerabilities related to time and space. DifFuzz automatically detects these vulnerabilities by analyzing two versions of the program and using resource-guided heuristics to find inputs that maximize the difference in resource consumption between secret-dependent paths. The methodology of DifFuzz is general and can be applied to programs written in any language. For this paper, we present an implementation that targets analysis of Java programs, and uses and extends the Kelinci and AFL fuzzers. We evaluate DifFuzz on a large number of Java programs and demonstrate that it can reveal unknown side-channel vulnerabilities in popular applications. We also show that DifFuzz compares favorably against Blazer and Themis, two state-of-the-art analysis tools for finding side-channels in Java programs.
+
+
+### Deep Differential Testing of JVM Implementations (ICSE 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/ICSE19_Deep.pdf)
+
+**Abstract:** The Java Virtual Machine (JVM) is the cornerstone of the widely-used Java platform. Thus, it is critical to ensure the reliability and robustness of popular JVM implementations. However, little research exists on validating production JVMs. One notable effort is classfuzz, which mutates Java bytecode syntactically to stress-test different JVMs. It is shown that classfuzz mainly produces illegal bytecode files and uncovers defects in JVMs' startup processes. It remains a challenge to effectively test JVMs' bytecode verifiers and execution engines to expose deeper bugs.
+
+This paper tackles this challenge by introducing classming, a novel, effective approach to performing deep, differential JVM testing. The key of classming is a technique, live bytecode mutation, to generate, from a seed bytecode file f, likely valid, executable (live) bytecode files: (1) capture the seed f's live bytecode, the sequence of its executed bytecode instructions; (2) repeatedly manipulate the control- and data-flow in f's live bytecode to generate semantically different mutants; and (3) selectively accept the generated mutants to steer the mutation process toward live, diverse mutants. The generated mutants are then employed to differentially test JVMs.
+
+We have evaluated classming on mainstream JVM implementations, including OpenJDK's HotSpot and IBM's J9, by mutating the DaCapo benchmarks. Our results show that classming is very effective in uncovering deep JVM differences. More than 1,800 of the generated classes exposed JVM differences, and more than 30 triggered JVM crashes. We analyzed and reported the JVM runtime differences and crashes, of which 14 have already been confirmed/fixed, including a highly critical security vulnerability in J9 that allowed untrusted code to disable the security manager and elevate its privileges (CVE-2017-1376).
+
 
 
 ### NEZHA: Efficient Domain-Independent Differential Testing (S&P 2017)
@@ -448,7 +477,14 @@ Our evaluation shows that QSYM does not just outperform state-of-the-art fuzzers
 
 
 
-# Addressing Magic bytes \ checksum: 
+# Deeply nested branches \ Addressing Magic bytes \ checksum: 
+
+### Matryoshka: fuzzing deeply nested branches (CCS 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/CCS19_Matryoshka.pdf)
+
+**Abstract:** Greybox fuzzing has made impressive progress in recent years, evolving from heuristics-based random mutation to approaches for solving individual path constraints. However, they have difficulty solving path constraints that involve deeply nested conditional statements, which are common in image and video decoders, network packet analyzers, and checksum tools. We propose an approach for addressing this problem. First, we identify all the control flow-dependent conditional statements of the target conditional statement. Next, we select the data flow-dependent conditional statements. Finally, we use three strategies to find an input that satisfies all conditional statements simultaneously. We implemented this approach in a tool called Matryoshka and compared its effectiveness on 13 open source programs against other state-of-the-art fuzzers. Matryoshka found significantly more unique crashes than AFL, QSYM, and Angora. We manually classified those crashes into 41 unique new bugs, and obtained 12 CVEs. Our evaluation also uncovered the key technique contributing to Matryoshka's impressive performance: it collects only the nesting constraints that may cause the target conditional statements unreachable, which greatly simplifies the constraints that it has to solve.
+
 
 ### REDQUEEN: Fuzzing with Input-to-State Correspondence (NDSS2019)
 
@@ -847,6 +883,44 @@ We implemented a prototype of GREYONE and evaluated it on the LAVA data set and 
 
 
 
+
+# Smart Contracts
+
+
+### Learning to Fuzz from Symbolic Execution with Application to Smart Contracts (CCS 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/CCS19_SmartContract.pdf)
+
+**Abstract:** Fuzzing and symbolic execution are two complementary techniques for discovering software vulnerabilities. Fuzzing is fast and scalable, but can be ineffective when it fails to randomly select the right inputs. Symbolic execution is thorough but slow and often does not scale to deep program paths with complex path conditions.
+
+In this work, we propose to learn an effective and fast fuzzer from symbolic execution, by phrasing the learning task in the framework of imitation learning. During learning, a symbolic execution expert generates a large number of quality inputs improving coverage on thousands of programs. Then, a fuzzing policy, represented with a suitable architecture of neural networks, is trained on the generated dataset. The learned policy can then be used to fuzz new programs.
+
+We instantiate our approach to the problem of fuzzing smart contracts, a domain where contracts often implement similar functionality (facilitating learning) and security is of utmost importance. We present an end-to-end system, ILF (for Imitation Learning based Fuzzer), and an extensive evaluation over >18K contracts. Our results show that ILF is effective: (i) it is fast, generating 148 transactions per second, (ii) it outperforms existing fuzzers (e.g., achieving 33% more coverage), and (iii) it detects more vulnerabilities than existing fuzzing and symbolic execution tools for Ethereum.
+
+
+### ContractFuzzer: Fuzzing Smart Contracts for Vulnerability Detection (ASE 2018)
+
+* <img src="image/youdao_note_24px.png">[Reading Note](https://securitygossip.com/blog/2019/01/21/contractfuzzer-fuzzing-smart-contracts-for-vulnerability-detection/)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/ASE18_ContractFuzzer.pdf)
+
+**Abstract:** Decentralized cryptocurrencies feature the use of blockchain to transfer values among peers on networks without central agency. Smart contracts are programs running on top of the blockchain consensus protocol to enable people make agreements while minimizing trusts. Millions of smart contracts have been deployed in various decentralized applications. The security vulnerabilities within those smart contracts pose significant threats to their applications. Indeed, many critical security vulnerabilities within smart contracts on Ethereum platform have caused huge financial losses to their users. In this work, we present ContractFuzzer, a novel fuzzer to test Ethereum smart contracts for security vulnerabilities. ContractFuzzer generates fuzzing inputs based on the ABI specifications of smart contracts, defines test oracles to detect security vulnerabilities, instruments the EVM to log smart contracts runtime behaviors, and analyzes these logs to report security vulnerabilities. Our fuzzing of 6991 smart contracts has flagged more than 459 vulnerabilities with high precision. In particular, our fuzzing tool successfully detects the vulnerability of the DAO contract that leads to USD 60 million loss and the vulnerabilities of Parity Wallet that have led to the loss of USD 30 million and the freezing of USD 150 million worth of Ether.
+
+
+
+
+
+# Constraint Solving
+
+### Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing (FSE 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/FSE19_JFI.pdf)
+
+**Abstract:** We investigate the use of coverage-guided fuzzing as a means of proving satisfiability of SMT formulas over finite variable domains, with specific application to floating-point constraints.We showhow an SMT formula can be encoded as a program containing a location that is reachable if and only if the program’s input corresponds to a satisfying assignment to the formula. A coverage-guided fuzzer can then be used to search for an input that reaches the location, yielding a satisfying assignment. We have implemented this idea in a tool, Just Fuzz-it Solver (JFS), and we present a large experimental evaluation showing that JFS is both competitive with and complementary to state-of-the-art SMT solvers with respect to solving floating-point constraints, and that the coverage-guided approach of JFS provides significant benefit over naive fuzzing in the floating-point domain. Applied in a portfolio manner, the JFS approach thus has the potential to complement traditional SMT solvers for program analysis tasks that involve reasoning about floating-point constraints.
+
+
+
+
 # Interesting Fuzzing
 
 ### FuzzFactory: Domain-Specific Fuzzing with Waypoints (OOPSLA2019)
@@ -865,13 +939,6 @@ In this paper, we present FuzzFactory, a framework for developing domain-specifi
 * <img src="image/pdf_24px.png">[Paper](./Paper/OOPSLA2019_Compiler.pdf)
 
 **Abstract:** Despite much recent interest in randomised testing (fuzzing) of compilers, the practical impact of fuzzer-found compiler bugs on real-world applications has barely been assessed. We present the first quantitative and qualitative study of the tangible impact of miscompilation bugs in a mature compiler. We follow a rigorous methodology where the bug impact over the compiled application is evaluated based on (1) whether the bug appears to trigger during compilation; (2) the extent to which generated assembly code changes syntactically due to triggering of the bug; and (3) whether such changes cause regression test suite failures, or whether we can manually find application inputs that trigger execution divergence due to such changes. The study is conducted with respect to the compilation of more than 10 million lines of C/C++ code from 309 Debian packages, using 12% of the historical and now fixed miscompilation bugs found by four state-of-the-art fuzzers in the Clang/LLVM compiler, as well as 18 bugs found by human users compiling real code or as a by-product of formal verification efforts. The results show that almost half of the fuzzer-found bugs propagate to the generated binaries for at least one package, in which case only a very small part of the binary is typically affected, yet causing two failures when running the test suites of all the impacted packages. User-reported and formal verification bugs do not exhibit a higher impact, with a lower rate of triggered bugs and one test failure. The manual analysis of a selection of the syntactic changes caused by some of our bugs (fuzzer-found and non fuzzer-found) in package assembly code, shows that either these changes have no semantic impact or that they would require very specific runtime circumstances to trigger execution divergence.
-
-
-### Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing (FSE 2019)
-
-* <img src="image/pdf_24px.png">[Paper](./Paper/FSE19_JFI.pdf)
-
-**Abstract:** We investigate the use of coverage-guided fuzzing as a means of proving satisfiability of SMT formulas over finite variable domains, with specific application to floating-point constraints.We showhow an SMT formula can be encoded as a program containing a location that is reachable if and only if the program’s input corresponds to a satisfying assignment to the formula. A coverage-guided fuzzer can then be used to search for an input that reaches the location, yielding a satisfying assignment. We have implemented this idea in a tool, Just Fuzz-it Solver (JFS), and we present a large experimental evaluation showing that JFS is both competitive with and complementary to state-of-the-art SMT solvers with respect to solving floating-point constraints, and that the coverage-guided approach of JFS provides significant benefit over naive fuzzing in the floating-point domain. Applied in a portfolio manner, the JFS approach thus has the potential to complement traditional SMT solvers for program analysis tasks that involve reasoning about floating-point constraints.
 
 
 ### REST-ler: Stateful REST API Fuzzing (ICSE 2019)
@@ -910,15 +977,6 @@ We present experimental results showing that these two techniques are necessary 
 
 **Abstract:** Popular Voice Assistant (VA) services such as Amazon Alexa and Google Assistant are now rapidly appifying their platforms to allow more flexible and diverse voice-controlled service experience. However, the ubiquitous deployment of VA devices and the increasing number of third-party applications have raised security and privacy concerns. While previous works such as hidden voice attacks mostly examine the problems of VA services’ default Automatic Speech Recognition (ASR) component, our work analyzes and evaluates the security of the succeeding component after ASR, i.e., Natural Language Understanding (NLU), which performs semantic interpretation (i.e., text-to-intent) after ASR’s acoustic-to-text processing. In particular, we focus on NLU’s Intent Classifier which is used in customizing machine understanding for third-party VA Applications (or vApps). We find that the semantic inconsistency caused by the improper semantic interpretation of an Intent Classifier can create the opportunity of breaching the integrity of vApp processing when attackers delicately leverage some common spoken errors.
 In this paper, we design the first linguistic-model-guided fuzzing tool, named LipFuzzer, to assess the security of Intent Classifier and systematically discover potential misinterpretation-prone spoken errors based on vApps’ voice command templates. To guide the fuzzing, we construct adversarial linguistic models with the help of Statistical Relational Learning (SRL) and emerging Natural Language Processing (NLP) techniques. In evaluation, we have successfully verified the effectiveness and accuracy of LipFuzzer. We also use LipFuzzer to evaluate both Amazon Alexa and Google Assistant vApp platforms. We have identified that a large portion of real-world vApps are vulnerable based on our fuzzing result.
-
-
-### ContractFuzzer: Fuzzing Smart Contracts for Vulnerability Detection (ASE 2018)
-
-* <img src="image/youdao_note_24px.png">[Reading Note](https://securitygossip.com/blog/2019/01/21/contractfuzzer-fuzzing-smart-contracts-for-vulnerability-detection/)
-
-* <img src="image/pdf_24px.png">[Paper](./Paper/ASE18_ContractFuzzer.pdf)
-
-**Abstract:** Decentralized cryptocurrencies feature the use of blockchain to transfer values among peers on networks without central agency. Smart contracts are programs running on top of the blockchain consensus protocol to enable people make agreements while minimizing trusts. Millions of smart contracts have been deployed in various decentralized applications. The security vulnerabilities within those smart contracts pose significant threats to their applications. Indeed, many critical security vulnerabilities within smart contracts on Ethereum platform have caused huge financial losses to their users. In this work, we present ContractFuzzer, a novel fuzzer to test Ethereum smart contracts for security vulnerabilities. ContractFuzzer generates fuzzing inputs based on the ABI specifications of smart contracts, defines test oracles to detect security vulnerabilities, instruments the EVM to log smart contracts runtime behaviors, and analyzes these logs to report security vulnerabilities. Our fuzzing of 6991 smart contracts has flagged more than 459 vulnerabilities with high precision. In particular, our fuzzing tool successfully detects the vulnerability of the DAO contract that leads to USD 60 million loss and the vulnerabilities of Parity Wallet that have led to the loss of USD 30 million and the freezing of USD 150 million worth of Ether.
 
 
 ### IoTFuzzer: Discovering Memory Corruptions in IoT Through App-based Fuzzing (NDSS 2018)

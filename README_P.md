@@ -74,6 +74,9 @@
     - [Angora: Efficient Fuzzing by Principled Search](#angora-efficient-fuzzing-by-principled-search-sp-2018)
     - [CollAFL: Path Sensitive Fuzzing](#collafl-path-sensitive-fuzzing-sp-2018)
 
+- **Other 2019**
+    - [ConFuzz—A Concurrency Fuzzer](#confuzza-concurrency-fuzzer) 
+
 - **USENIX Security 2018**
     - [MoonShine: Optimizing OS Fuzzer Seed Selection with Trace Distillation](#moonshine-optimizing-os-fuzzer-seed-selection-with-trace-distillation-usenix-security2018)
     - [QSYM : A Practical Concolic Execution Engine Tailored for Hybrid Fuzzing](#qsym-a-practical-concolic-execution-engine-tailored-for-hybrid-fuzzing-usenix-security2018)
@@ -146,6 +149,9 @@
   - Different is Good: Detecting the Use of Uninitialized Variables through Differential Replay (CCS 2019)
   - [NEZHA: Efficient Domain-Independent Differential Testing (S&P 2017)](#nezha-efficient-domain-independent-differential-testing-sp-2017)
   - [Coverage-Directed Differential Testing of JVM Implementations (PLDI 2016)](#coverage-directed-differential-testing-of-jvm-implementations-pldi-2016)
+
+- [Concurrency Fuzzing](#concurrency-fuzzing)
+  - [ConFuzz—A Concurrency Fuzzer](#confuzza-concurrency-fuzzer)
 
 - [**Evaluate Fuzzing**](#evaluate-fuzzing)
   - [Evaluating Fuzz Testing (CCS 2018)](#evaluating-fuzz-testing-ccs-2018)
@@ -308,6 +314,14 @@ Java virtual machine (JVM) is a core technology, whose reliability is critical. 
 This paper tackles this challenge by introducing classfuzz, a coverage-directed fuzzing approach that focuses on representative classfiles for differential JVM testing. Our core insight is to (1) mutate seeding classfiles using a set of predefined mutation operators and employ Markov Chain Monte Carlo (MCMC) sampling to guide mutator selection, and (2) execute the mutants on a reference JVM implementation and use coverage uniqueness as a discipline for accepting representative ones. The accepted classfiles are used as inputs to differentially test JVMs and find defects.
 We have implemented classfuzz and conducted an extensive evaluation of it against existing fuzz testing algorithms. Our evaluation results show that classfuzz can enhance the ratio of discrepancy-triggering classfiles from 1.7% to 11.9%. We have also reported 62 defect-indicative discrepancies, along with the test classfiles, to JVM developers. A number of our reported issues have already been confirmed as JVM defects, and some even match recent clarifications and changes to the JVM specification, Java SE 8 Edition.
 
+
+# Concurrency Fuzzing
+
+### ConFuzz—A Concurrency Fuzzer
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/AISC19_ConFuzz.pdf)
+
+**Abstract:** Concurrency bugs are as equally vulnerable as the bugs found in the single-threaded programs and these bugs can be exploited using concurrency attacks. Unfortunately, there is not much literature available in detecting various kinds of concurrency issues in a multi-threaded program due to its complexity and uncertainty. In this paper, we aim at detecting concurrency bugs by using directed evolutionary fuzzing with the help of static analysis of the source code. Concurrency bug detection involves two main entities: an input and a particular thread execution order. The evolutionary part of fuzzing will prefer inputs that involve memory access patterns across threads (data flow interleaving) and thread ordering that disturb the data dependence more and direct them to trigger concurrency bugs. This paper suggests the idea of a concurrency fuzzer, which is first of its kind. We use a combination of LLVM, Thread Sanitizer and fuzzing techniques to detect various concurrency issues in an application. The source code of the application is statically analyzed for various paths, from the different thread related function calls to the main function. Every basic block in these paths are assigned a unique ID and a weight based on the distance of the basic block from the thread function calls. These basic blocks are instrumented to print their ID and weight upon execution. The knowledge about the basic blocks in the sliced paths are used to generate new sets of inputs from the old ones, thus covering even more basic blocks in the path and thereby increasing the chances of hitting a concurrency warning. We use Thread Sanitizer present in the LLVM compiler infrastructure to detect the concurrency bug warnings while executing each input. The inputs are directed to discover even new address locations with possible concurrency issues. The system was tested on three simple multi-threaded applications pigz, pbzip2, and pixz. The results show a quicker detection of unique addresses in the application with possible concurrency issues.
 
 
 # Evaluate Fuzzing

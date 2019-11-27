@@ -14,10 +14,10 @@
     - [Compiler Fuzzing: How Much Does It Matter](#compiler-fuzzing-how-much-does-it-matter-oopsla2019)
 
 - **CCS 2019**
-    - Intriguer: Field-Level Constraint Solving for Hybrid Fuzzing 
+    - [Intriguer: Field-Level Constraint Solving for Hybrid Fuzzing](#intriguer-field-level-constraint-solving-for-hybrid-fuzzing-ccs-2019)
     - [Learning to Fuzz from Symbolic Execution with Application to Smart Contracts](#learning-to-fuzz-from-symbolic-execution-with-application-to-smart-contracts-ccs-2019)
     - [Matryoshka: fuzzing deeply nested branches](#matryoshka-fuzzing-deeply-nested-branches-ccs-2019)
-    - Different is Good: Detecting the Use of Uninitialized Variables through Differential Replay
+    - [Different is Good: Detecting the Use of Uninitialized Variables through Differential Replay](#different-is-good-detecting-the-use-of-uninitialized-variables-through-differential-replay-ccs-2019)
 
 - **S&P 2019**
     - [NEUZZ: Efficient Fuzzing with Neural Program Smoothing](#neuzz-efficient-fuzzing-with-neural-program-smoothing-sp-2019)
@@ -146,7 +146,7 @@
 - [**Differential Fuzzing**](#differential-fuzzing)
   - [DifFuzz: Differential Fuzzing for Side-Channel Analysis (ICSE 2019)](#diffuzz-differential-fuzzing-for-side-channel-analysis-icse-2019)
   - [Deep Differential Testing of JVM Implementations (ICSE 2019)](#deep-differential-testing-of-jvm-implementations-icse-2019)
-  - Different is Good: Detecting the Use of Uninitialized Variables through Differential Replay (CCS 2019)
+  - [Different is Good: Detecting the Use of Uninitialized Variables through Differential Replay (CCS 2019)](#different-is-good-detecting-the-use-of-uninitialized-variables-through-differential-replay-ccs-2019)
   - [NEZHA: Efficient Domain-Independent Differential Testing (S&P 2017)](#nezha-efficient-domain-independent-differential-testing-sp-2017)
   - [Coverage-Directed Differential Testing of JVM Implementations (PLDI 2016)](#coverage-directed-differential-testing-of-jvm-implementations-pldi-2016)
 
@@ -250,7 +250,7 @@
 
 
 - [**Constraint Solving**]()
-  - Intriguer: Field-Level Constraint Solving for Hybrid Fuzzing (CCS 2019)
+  - [Intriguer: Field-Level Constraint Solving for Hybrid Fuzzing (CCS 2019)](#intriguer-field-level-constraint-solving-for-hybrid-fuzzing-ccs-2019)
   - [Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing (FSE 2019)](#just-fuzz-it-solving-floating-point-constraints-using-coverage-guided-fuzzing-fse-2019)
 
 - [**Interesting Fuzzing**](#interesting-fuzzing)
@@ -291,6 +291,16 @@ We have evaluated classming on mainstream JVM implementations, including OpenJDK
 
 
 
+### Different is Good: Detecting the Use of Uninitialized Variables through Differential Replay (CCS 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/CCS19_Different.pdf)
+
+**Abstract:** The use of uninitialized variables is a common issue. It could cause kernel information leak, which defeats the widely deployed security defense, i.e., kernel address space layout randomization (KASLR). Though a recent system called Bochspwn Reloaded reported multiple memory leaks in Windows kernels, how to effectively detect this issue is still largely behind.
+
+In this paper, we propose a new technique, i.e., differential replay, that could effectively detect the use of uninitialized variables. Specifically, it records and replays a program's execution in multiple instances. One instance is with the vanilla memory, the other one changes (or poisons) values of variables allocated from the stack and the heap. Then it compares program states to find references to uninitialized variables. The idea is that if a variable is properly initialized, it will overwrite the poisoned value and program states in two running instances should be the same. After detecting the differences, our system leverages the symbolic taint analysis to further identify the location where the variable was allocated. This helps us to identify the root cause and facilitate the development of real exploits. We have implemented a prototype called TimePlayer. After applying it to both Windows 7 and Windows 10 kernels (x86/x64), it successfully identified 34 new issues and another 85 ones that had been patched (some of them were publicly unknown.) Among 34 new issues, 17 of them have been confirmed as zero-day vulnerabilities by Microsoft.
+
+
+
 ### NEZHA: Efficient Domain-Independent Differential Testing (S&P 2017)
 
 * <img src="image/youdao_note_24px.png">[Reading Note](http://note.youdao.com/noteshare?id=7e602068c641217947c97b287291c9c7&sub=32BD04EB8C00424E87FA7B948D38EC96)
@@ -301,7 +311,7 @@ We have evaluated classming on mainstream JVM implementations, including OpenJDK
 
 * <img src="image/github_24px.png">[Code](https://github.com/nezha-dt/nezha)
 
-Differential testing uses similar programs as cross-referencing oracles to find semantic bugs that do not exhibit explicit erroneous behaviors like crashes or assertion failures. Unfortunately, existing differential testing tools are domain-specific and inefficient, requiring large numbers of test inputs to find a single bug. In this paper, we address these issues by designing and implementing NEZHA, an efficient input-format-agnostic differential testing framework. The key insight behind NEZHA's design is that current tools generate inputs by simply borrowing techniques designed for finding crash or memory corruption bugs in individual programs (e.g., maximizing code coverage). By contrast, NEZHA exploits the behavioral asymmetries between multiple test programs to focus on inputs that are more likely to trigger semantic bugs. We introduce the notion of δ-diversity, which summarizes the observed asymmetries between the behaviors of multiple test applications. Based on δ-diversity, we design two efficient domain-independent input generation mechanisms for differential testing, one gray-box and one black-box. We demonstrate that both of these input generation schemes are significantly more efficient than existing tools at finding semantic bugs in real-world, complex software.
+**Abstract:** Differential testing uses similar programs as cross-referencing oracles to find semantic bugs that do not exhibit explicit erroneous behaviors like crashes or assertion failures. Unfortunately, existing differential testing tools are domain-specific and inefficient, requiring large numbers of test inputs to find a single bug. In this paper, we address these issues by designing and implementing NEZHA, an efficient input-format-agnostic differential testing framework. The key insight behind NEZHA's design is that current tools generate inputs by simply borrowing techniques designed for finding crash or memory corruption bugs in individual programs (e.g., maximizing code coverage). By contrast, NEZHA exploits the behavioral asymmetries between multiple test programs to focus on inputs that are more likely to trigger semantic bugs. We introduce the notion of δ-diversity, which summarizes the observed asymmetries between the behaviors of multiple test applications. Based on δ-diversity, we design two efficient domain-independent input generation mechanisms for differential testing, one gray-box and one black-box. We demonstrate that both of these input generation schemes are significantly more efficient than existing tools at finding semantic bugs in real-world, complex software.
 
 
 ### Coverage-Directed Differential Testing of JVM Implementations (PLDI 2016)
@@ -494,6 +504,8 @@ Our evaluation shows that QSYM does not just outperform state-of-the-art fuzzers
 # Deeply nested branches \ Addressing Magic bytes \ checksum: 
 
 ### Matryoshka: fuzzing deeply nested branches (CCS 2019)
+
+* <img src="image/wechat_24px.png">[Reading Note From BAIZE](https://mp.weixin.qq.com/s/gYqamT3WXiyj79mjBQYRiA)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/CCS19_Matryoshka.pdf)
 
@@ -907,6 +919,8 @@ We implemented a prototype of GREYONE and evaluated it on the LAVA data set and 
 
 ### Learning to Fuzz from Symbolic Execution with Application to Smart Contracts (CCS 2019)
 
+* <img src="image/wechat_24px.png">[Reading Note From BAIZE](https://mp.weixin.qq.com/s/gYqamT3WXiyj79mjBQYRiA)
+
 * <img src="image/pdf_24px.png">[Paper](./Paper/CCS19_SmartContract.pdf)
 
 **Abstract:** Fuzzing and symbolic execution are two complementary techniques for discovering software vulnerabilities. Fuzzing is fast and scalable, but can be ineffective when it fails to randomly select the right inputs. Symbolic execution is thorough but slow and often does not scale to deep program paths with complex path conditions.
@@ -926,9 +940,16 @@ We instantiate our approach to the problem of fuzzing smart contracts, a domain 
 
 
 
-
-
 # Constraint Solving
+
+### Intriguer: Field-Level Constraint Solving for Hybrid Fuzzing (CCS 2019)
+
+* <img src="image/wechat_24px.png">[Reading Note From BAIZE](https://mp.weixin.qq.com/s/gYqamT3WXiyj79mjBQYRiA)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/CCS19_Intriguer.pdf)
+
+**Abstract:** Hybrid fuzzing, which combines fuzzing and concolic execution, is promising in light of the recent performance improvements in concolic engines. We have observed that there is room for further improvement: symbolic emulation is still slow, unnecessary constraints dominate solving time, resources are overly allocated, and hard-to-trigger bugs are missed. To address these problems, we present a new hybrid fuzzer named Intriguer. The key idea of Intriguer is field-level constraint solving, which optimizes symbolic execution with field-level knowledge. Intriguer performs instruction-level taint analysis and records execution traces without data transfer instructions like mov. Intriguer then reduces the execution traces for tainted instructions that accessed a wide range of input bytes, and infers input fields to build field transition trees. With these optimizations, Intriguer can efficiently perform symbolic emulation for more relevant instructions and invoke a solver for complicated constraints only. Our evaluation results indicate that Intriguer outperforms the state-of-the-art fuzzers: Intriguer found all the bugs in the LAVA-M(5h) benchmark dataset for ground truth performance, and also discovered 43 new security bugs in seven real-world programs. We reported the bugs and received 23 new CVEs.
+
 
 ### Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing (FSE 2019)
 

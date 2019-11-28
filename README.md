@@ -75,7 +75,7 @@
     - [CollAFL: Path Sensitive Fuzzing](#collafl-path-sensitive-fuzzing-sp-2018)
 
 - **Other 2019**
-    - [ConFuzz—A Concurrency Fuzzer](#confuzza-concurrency-fuzzer) 
+    - [ConFuz: A Concurrency Fuzzer](#confuzza-concurrency-fuzzer) 
 
 - **USENIX Security 2018**
     - [MoonShine: Optimizing OS Fuzzer Seed Selection with Trace Distillation](#moonshine-optimizing-os-fuzzer-seed-selection-with-trace-distillation-usenix-security2018)
@@ -108,6 +108,7 @@
 
 - **S&P 2017**
     - [NEZHA: Efficient Domain-Independent Differential Testing](#nezha-efficient-domain-independent-differential-testing-sp-2017)
+    - [Skyfire: Data-Driven Seed Generation for Fuzzing](#)
 
 - **USENIX Security 2017**
     - [kAFL: Hardware-Assisted Feedback Fuzzing for OS Kernels](#kafl-hardware-assisted-feedback-fuzzing-for-os-kernels-usenix-security2017)
@@ -150,7 +151,7 @@
   - [NEZHA: Efficient Domain-Independent Differential Testing (S&P 2017)](#nezha-efficient-domain-independent-differential-testing-sp-2017)
   - [Coverage-Directed Differential Testing of JVM Implementations (PLDI 2016)](#coverage-directed-differential-testing-of-jvm-implementations-pldi-2016)
 
-- [Concurrency Fuzzing](#concurrency-fuzzing)
+- [**Concurrency Fuzzing**](#concurrency-fuzzing)
   - [ConFuzz—A Concurrency Fuzzer](#confuzza-concurrency-fuzzer)
 
 - [**Evaluate Fuzzing**](#evaluate-fuzzing)
@@ -196,6 +197,7 @@
   - [NAUTILUS: Fishing for Deep Bugs with Grammars (NDSS 2019)](#nautilus-fishing-for-deep-bugs-with-grammars-ndss-2019)
   - [TIFF: Using Input Type Inference To Improve Fuzzing (ACSAC 2018)](#tiff-using-input-type-inference-to-improve-fuzzing-acsac-2018)
   - [SemFuzz: Semantics-based Automatic Generation of Proof-of-Concept Exploits (CCS 2017)](#semfuzz-semantics-based-automatic-generation-of-proof-of-concept-exploits-ccs-2017)
+  - [Skyfire: Data-Driven Seed Generation for Fuzzing](#)
 
 - [**Ensemble Fuzzing**](#ensemble-fuzzing)
     - [EnFuzz: Ensemble Fuzzing with Seed Synchronization among Diverse Fuzzers (USENIX Security2019) ](#enfuzz-ensemble-fuzzing-with-seed-synchronization-among-diverse-fuzzers-usenix-security2019)
@@ -249,7 +251,7 @@
   - [ContractFuzzer: Fuzzing Smart Contracts for Vulnerability Detection (ASE 2018)](#contractfuzzer-fuzzing-smart-contracts-for-vulnerability-detection-ase-2018)
 
 
-- [**Constraint Solving**]()
+- [**Constraint Solving**](#constraint-solving)
   - [Intriguer: Field-Level Constraint Solving for Hybrid Fuzzing (CCS 2019)](#intriguer-field-level-constraint-solving-for-hybrid-fuzzing-ccs-2019)
   - [Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing (FSE 2019)](#just-fuzz-it-solving-floating-point-constraints-using-coverage-guided-fuzzing-fse-2019)
 
@@ -327,7 +329,7 @@ We have implemented classfuzz and conducted an extensive evaluation of it agains
 
 # Concurrency Fuzzing
 
-### ConFuzz—A Concurrency Fuzzer
+### ConFuzz: A Concurrency Fuzzer
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/AISC19_ConFuzz.pdf)
 
@@ -662,6 +664,13 @@ In this work, we present a new mutation strategy that maximizes the likelihood o
 * <img src="image/pdf_24px.png">[Paper](./Paper/CCS17_SemFuzz.pdf)
 
 **Abstract:** Patches and related information about software vulnerabilities are often made available to the public, aiming to facilitate timely fixes. Unfortunately, the slow paces of system updates (30 days on average) often present to the attackers enough time to recover hidden bugs for attacking the unpatched systems. Making things worse is the potential to automatically generate exploits on input-validation flaws through reverse-engineering patches, even though such vulnerabilities are relatively rare (e.g., 5% among all Linux kernel vulnerabilities in last few years). Less understood, however, are the implications of other bug-related information (e.g., bug descriptions in CVE), particularly whether utilization of such information can facilitate exploit generation, even on other vulnerability types that have never been automatically attacked. In this paper, we seek to use such information to generate proof-of-concept (PoC) exploits for the vulnerability types never automatically attacked. Unlike an input validation flaw that is often patched by adding missing sanitization checks, fixing other vulnerability types is more complicated, usually involving replacement of the whole chunk of code. Without understanding of the code changed, automatic exploit becomes less likely. To address this challenge, we present SemFuzz, a novel technique leveraging vulnerability-related text (e.g., CVE reports and Linux git logs) to guide automatic generation of PoC exploits. Such an end-to-end approach is made possible by natural-language processing (NLP) based information extraction and a semantics-based fuzzing process guided by such information. Running over 112 Linux kernel flaws reported in the past five years, SemFuzz successfully triggered 18 of them, and further discovered one zero-day and one undisclosed vulnerabilities. These flaws include use-after-free, memory corruption, information leak, etc., indicating that more complicated flaws can also be automatically attacked. This finding calls into question the way vulnerability-related information is shared today.
+
+
+### Skyfire: Data-Driven Seed Generation for Fuzzing]
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/SP17_Skyfire.pdf)
+
+**Abstract:** Programs that take highly-structured files as inputs normally process inputs in stages: syntax parsing, semantic checking, and application execution. Deep bugs are often hidden in the application execution stage, and it is non-trivial to automatically generate test inputs to trigger them. Mutation-based fuzzing generates test inputs by modifying well-formed seed inputs randomly or heuristically. Most inputs are rejected at the early syntax parsing stage. Differently, generation-based fuzzing generates inputs from a specification (e.g., grammar). They can quickly carry the fuzzing beyond the syntax parsing stage. However, most inputs fail to pass the semantic checking (e.g., violating semantic rules), which restricts their capability of discovering deep bugs. In this paper, we propose a novel data-driven seed generation approach, named Skyfire, which leverages the knowledge in the vast amount of existing samples to generate well-distributed seed inputs for fuzzing programs that process highly-structured inputs. Skyfire takes as inputs a corpus and a grammar, and consists of two steps. The first step of Skyfire learns a probabilistic context-sensitive grammar (PCSG) to specify both syntax features and semantic rules, and then the second step leverages the learned PCSG to generate seed inputs. We fed the collected samples and the inputs generated by Skyfire as seeds of AFL to fuzz several open-source XSLT and XML engines (i.e., Sablotron, libxslt, and libxml2). The results have demonstrated that Skyfire can generate well-distributed inputs and thus significantly improve the code coverage (i.e., 20% for line coverage and 15% for function coverage on average) and the bug-finding capability of fuzzers. We also used the inputs generated by Skyfire to fuzz the closed-source JavaScript and rendering engine of Internet Explorer 11. Altogether, we discovered 19 new memory corruption bugs (among which there are 16 new vulnerabilities and received 33.5k USD bug bounty rewards) and 32 denial-of-service bugs.
 
 
 

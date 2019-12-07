@@ -277,6 +277,7 @@
 
 * <img src="image/youdao_note_24px.png">[Reading Note](http://note.youdao.com/noteshare?id=06c39d23c76be5d0e6441a01c9eaff93&sub=B72A70BDD1DC47B39E56866B3903401B)
 * <img src="image/pdf_24px.png">[Paper](./Paper/ICSE19_DIFFUZZ.pdf)
+* <img src="image/ppt_24px.png">[Slides](./Paper/ICSE19_DIFFUZZ_Slides.pdf)
 
 **Abstract:** Side-channel attacks allow an adversary to uncover secret program data by observing the behavior of a program with respect to a resource, such as execution time, consumed memory or response size. Side-channel vulnerabilities are difficult to reason about as they involve analyzing the correlations between resource usage over multiple program paths. We present DifFuzz, a fuzzing-based approach for detecting side-channel vulnerabilities related to time and space. DifFuzz automatically detects these vulnerabilities by analyzing two versions of the program and using resource-guided heuristics to find inputs that maximize the difference in resource consumption between secret-dependent paths. The methodology of DifFuzz is general and can be applied to programs written in any language. For this paper, we present an implementation that targets analysis of Java programs, and uses and extends the Kelinci and AFL fuzzers. We evaluate DifFuzz on a large number of Java programs and demonstrate that it can reveal unknown side-channel vulnerabilities in popular applications. We also show that DifFuzz compares favorably against Blazer and Themis, two state-of-the-art analysis tools for finding side-channels in Java programs.
 

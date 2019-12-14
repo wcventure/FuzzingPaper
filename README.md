@@ -56,6 +56,7 @@
 - **FSE 2019**
     - [Cerebro: Context-aware Adaptive Fuzzing for Effective Vulnerability Detection](#cerebro-context-aware-adaptive-fuzzing-for-effective-vulnerability-detection-fse-2019)
     - [Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing](#just-fuzz-it-solving-floating-point-constraints-using-coverage-guided-fuzzing-fse-2019)
+	- [FUDGE: Fuzz Driver Generation at Scale](#fudge-fuzz-driver-generation-at-scale-fse-2019)
 
 - **ISSTA 2019**
     - [Semantic Fuzzing with Zest](#semantic-fuzzing-with-zest-issta-2019)
@@ -256,8 +257,9 @@
   - [Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing (FSE 2019)](#just-fuzz-it-solving-floating-point-constraints-using-coverage-guided-fuzzing-fse-2019)
 
 - [**Interesting Fuzzing**](#interesting-fuzzing)
-  - [FuzzFactory: Domain-Specific Fuzzing with Waypoints](#fuzzfactory-domain-specific-fuzzing-with-waypoints-oopsla2019)
-  - [Compiler Fuzzing: How Much Does It Matter](#compiler-fuzzing-how-much-does-it-matter-oopsla2019)
+  - [FuzzFactory: Domain-Specific Fuzzing with Waypoints (OOPSLA 2019)](#fuzzfactory-domain-specific-fuzzing-with-waypoints-oopsla2019)
+  - [Compiler Fuzzing: How Much Does It Matter (OOPSLA 2019)](#compiler-fuzzing-how-much-does-it-matter-oopsla2019)
+  - [FUDGE: Fuzz Driver Generation at Scale (FSE 2019)](#fudge-fuzz-driver-generation-at-scale-fse-2019)
   - [REST-ler: Stateful REST API Fuzzing (ICSE 2019)](#rest-ler-stateful-rest-api-fuzzing-icse-2019)
   - [Ptrix: Efficient Hardware-Assisted Fuzzing for COTS Binary (ASIACCS 2019)](#ptrix-efficient-hardware-assisted-fuzzing-for-cots-binary-asiaccs-2019)
   - [RVFuzzer: Finding Input Validation Bugs in Robotic Vehicles through Control-Guided Random Testing (USENIX Security2019)](#rvfuzzer-finding-input-validation-bugs-in-robotic-vehicles-through-control-guided-random-testing-usenix-security2019)
@@ -988,6 +990,13 @@ In this paper, we present FuzzFactory, a framework for developing domain-specifi
 * <img src="image/pdf_24px.png">[Paper](./Paper/OOPSLA2019_Compiler.pdf)
 
 **Abstract:** Despite much recent interest in randomised testing (fuzzing) of compilers, the practical impact of fuzzer-found compiler bugs on real-world applications has barely been assessed. We present the first quantitative and qualitative study of the tangible impact of miscompilation bugs in a mature compiler. We follow a rigorous methodology where the bug impact over the compiled application is evaluated based on (1) whether the bug appears to trigger during compilation; (2) the extent to which generated assembly code changes syntactically due to triggering of the bug; and (3) whether such changes cause regression test suite failures, or whether we can manually find application inputs that trigger execution divergence due to such changes. The study is conducted with respect to the compilation of more than 10 million lines of C/C++ code from 309 Debian packages, using 12% of the historical and now fixed miscompilation bugs found by four state-of-the-art fuzzers in the Clang/LLVM compiler, as well as 18 bugs found by human users compiling real code or as a by-product of formal verification efforts. The results show that almost half of the fuzzer-found bugs propagate to the generated binaries for at least one package, in which case only a very small part of the binary is typically affected, yet causing two failures when running the test suites of all the impacted packages. User-reported and formal verification bugs do not exhibit a higher impact, with a lower rate of triggered bugs and one test failure. The manual analysis of a selection of the syntactic changes caused by some of our bugs (fuzzer-found and non fuzzer-found) in package assembly code, shows that either these changes have no semantic impact or that they would require very specific runtime circumstances to trigger execution divergence.
+
+
+### FUDGE: Fuzz Driver Generation at Scale (FSE 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/FSE19_FUDGE.pdf)
+
+**Abstract:** At Google we have found tens of thousands of security and robustness bugs by fuzzing C and C++ libraries. To fuzz a library, a fuzzer requires a fuzz driver—which exercises some library code—to which it can pass inputs. Unfortunately, writing fuzz drivers remains a primarily manual exercise, a major hindrance to the widespread adoption of fuzzing. In this paper, we address this major hindrance by introducing the Fudge system for automated fuzz driver generation. Fudge automatically generates fuzz driver candidates for libraries based on existing client code. We have used Fudge to generate thousands of new drivers for a wide variety of libraries. Each generated driver includes a synthesized C/C++ program and a corresponding build script, and is automatically analyzed for quality. Developers have integrated over 200 of these generated drivers into continuous fuzzing services and have committed to address reported security bugs. Further, several of these fuzz drivers have been upstreamed to open source projects and integrated into the OSS-Fuzz fuzzing infrastructure. Running these fuzz drivers has resulted in over 150 bug fixes, including the elimination of numerous exploitable security vulnerabilities.
 
 
 ### REST-ler: Stateful REST API Fuzzing (ICSE 2019)

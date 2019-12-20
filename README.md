@@ -9,6 +9,10 @@
     - [GREYONE: Data Flow Sensitive Fuzzing](#greyone-data-flow-sensitive-fuzzing-usenix-security2020)
     - [FuzzGuard: Filtering out Unreachable Inputs in Directed Grey-box Fuzzing through Deep Learning](#fuzzguard-filtering-out-unreachable-inputs-in-directed-grey-box-fuzzing-through-deep-learning-usenix-security2020)
 
+- **ICSE 2020**
+    - [Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities](#typestate-guided-fuzzer-for-discovering-use-after-free-vulnerabilities-icse-2020)
+    - [MemLock: Memory Usage Guided Fuzzing](#memlock-memory-usage-guided-fuzzing-icse2020)
+
 - **OOPSLA 2019**
     - [FuzzFactory: Domain-Specific Fuzzing with Waypoints](#fuzzfactory-domain-specific-fuzzing-with-waypoints-oopsla2019)
     - [Compiler Fuzzing: How Much Does It Matter](#compiler-fuzzing-how-much-does-it-matter-oopsla2019)
@@ -160,8 +164,8 @@
   - [A Feature-Oriented Corpus for understanding, Evaluating and Improving Fuzz Testing (ASIACCS 2019)](#a-feature-oriented-corpus-for-understanding-evaluating-and-improving-fuzz-testing-asiaccs-2019)
 
 - [**Anti Fuzzing**](#anti-fuzzing)
-    - [Antifuzz: impeding fuzzing audits of binary executables (USENIX Security2019)](#antifuzz-impeding-fuzzing-audits-of-binary-executables-usenix-security2019)
-    - [FUZZIFICATION: Anti-Fuzzing Technique (USENIX Security2019)](#fuzzification-anti-fuzzing-technique-usenix-security2019)
+  - [Antifuzz: impeding fuzzing audits of binary executables (USENIX Security2019)](#antifuzz-impeding-fuzzing-audits-of-binary-executables-usenix-security2019)
+  - [FUZZIFICATION: Anti-Fuzzing Technique (USENIX Security2019)](#fuzzification-anti-fuzzing-technique-usenix-security2019)
 
 - [**Kernel Fuzzing**](#kernel-fuzzing)
   - [PeriScope: An Effective Probing and Fuzzing Framework for the Hardware-OS Boundary (NDSS2019)](#periscope-an-effective-probing-and-fuzzing-framework-for-the-hardware-os-boundary-ndss2019)
@@ -204,6 +208,7 @@
     - [EnFuzz: Ensemble Fuzzing with Seed Synchronization among Diverse Fuzzers (USENIX Security2019) ](#enfuzz-ensemble-fuzzing-with-seed-synchronization-among-diverse-fuzzers-usenix-security2019)
 
 - [**Directed Fuzzing**](#directed-fuzzing)
+  - [Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities](#typestate-guided-fuzzer-for-discovering-use-after-free-vulnerabilities-icse-2020)
   - [Directed Greybox Fuzzing (CCS 2017)](#directed-greybox-fuzzing-ccs-2017)
   - [Hawkeye: Towards a Desired Directed Grey-box Fuzzer (CCS 2018)](#hawkeye-towards-a-desired-directed-grey-box-fuzzer-ccs-2018)
 
@@ -211,6 +216,7 @@
   - [CollAFL: Path Sensitive Fuzzing (S&P 2018)](#collafl-path-sensitive-fuzzing-sp-2018)
 
 - [**Fuzzing Overhead & Performance**](#fuzzing-overhead--performance)
+  - [MemLock: Memory Usage Guided Fuzzing](#memlock-memory-usage-guided-fuzzing-icse2020)
   - [Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing (S&P 2019)](#full-speed-fuzzing-reducing-fuzzing-overhead-through-coverage-guided-tracing-sp-2019)
   - [INSTRIM Lightweight Instrumentation for Coverage-guided Fuzzing (NDSS 2018 Workshop)](#instrim-lightweight-instrumentation-for-coverage-guided-fuzzing-ndss-2018-workshop)
   - [Designing New Operating Primitives to Improve Fuzzing Performance (CCS 2017)](#designing-new-operating-primitives-to-improve-fuzzing-performance-ccs-2017)
@@ -689,6 +695,25 @@ In this paper, inspired by the idea of ensemble learning, we first propose an en
 
 # Directed Fuzzing
 
+### Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities (ICSE 2020)
+
+**Abstract:** Existing coverage-based fuzzers usually use the individual control flow graph (CFG) edge coverage 
+to guide the fuzzing process, which has shown great potential in finding vulnerabilities.
+However, CFG edge coverage is not effective in discovering vulnerabilities such as use-after-free (UaF). 
+This is because, to trigger UaF vulnerabilities, one needs not only to cover individual edges,
+but also to traverse some long sequence of edges in a particular order, which is challenging for existing fuzzers.
+To this end, we first propose to model UaF vulnerabilities as typestate properties,
+then develop a typestate-guided fuzzer, named UAFL, for discovering 
+vulnerabilities violating typestate properties.
+%Our approach works in two phases.
+Given a typestate property, we first perform a static typestate analysis to find operation sequences potentially violating the property.
+Then, the fuzzing process is guided by the operation sequences in order to progressively generate test cases triggering property violations.
+In addition, we also adopt the information flow analysis to improve the efficiency of the fuzzing process.
+We performed a thorough evaluation of UAFL on 14 widely-used real-world programs.
+The experiment results show that UAFL substantially outperforms the state-of-the-art fuzzers, including AFL, AFLFast, FairFuzz, MOpt, Angora and QSYM, in terms of the time taken to discover vulnerabilities.
+We discovered 10 previously unknown vulnerabilities, and received 5 new CVEs.
+
+
 ### Directed Greybox Fuzzing (CCS 2017)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/CCS17_aflgo.pdf)
@@ -754,6 +779,20 @@ In this paper, we tackle another way to improve the performance of fuzzing, whic
 
 
 # Performance Fuzzing
+
+### MemLock: Memory Usage Guided Fuzzing (ICSE2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://wcventure.github.io/pdf/ICSE2020_MemLock.pdf)
+
+**Abstract:** Uncontrolled memory consumption is a kind of critical software security weaknesses.
+It can also become a security-critical vulnerability when attackers can control the input to consume a large amount of memory to launch a Denial-of-Service attack. 
+However, detecting such vulnerability is challenging due to the fact that it requires long executions with well-crafted inputs to trigger excessive memory consumption, while the state-of-the-art testing techniques have mostly focused on code coverage.
+To tackle this challenge, we propose a feedback-directed fuzzing technique, named MemLock, to automatically generate those memory-consuming inputs to trigger memory consumption bugs.
+The fuzzing process is guided with memory consumption information so that the approach is general and does not require any domain knowledge.
+We perform a thorough evaluation for MemLock on 14 widely-used real-world programs.
+Our experiment results show that MemLock substantially outperforms the state-of-the-art fuzzing techniques, including AFL, AFLfast, PerfFuzz, FairFuzz and QSYM, in discovering memory consumption bugs.
+During the experiments, we discovered several previously unknown excessive memory consumption vulnerabilities and received 15 new CVEs.
+
 
 ### Singularity: Pattern Fuzzing for Worst Case Complexity (FSE 2018)
 

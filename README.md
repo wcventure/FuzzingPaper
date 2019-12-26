@@ -2,6 +2,15 @@
 
 # All Papers (Classification according to Conference)
 
+- **Survey/Review**
+    - [Survey of Directed Fuzzy Technology](#survey-of-directed-fuzzy-technology)
+    - [A Review of Machine Learning Applications in Fuzzing](#a-review-of-machine-learning-applications-in-fuzzing)
+    - [A systematic review of fuzzing based on machine learning techniques](#a-systematic-review-of-fuzzing-based-on-machine-learning-techniques)
+    - [The Art, Science, and Engineering of Fuzzing: A Survey](#the-art-science-and-engineering-of-fuzzing-a-survey)
+    - [Fuzzing: Art, Science, and Engineering](#fuzzing-art-science-and-engineering)
+    - [Fuzzing: a survey](#fuzzing-a-survey)
+    - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
+
 - **S&P 2020**
     - [SAVIOR: Towards Bug-Driven Hybrid Testing](#savior-towards-bug-driven-hybrid-testing-sp-2020)
 
@@ -16,6 +25,13 @@
 - **OOPSLA 2019**
     - [FuzzFactory: Domain-Specific Fuzzing with Waypoints](#fuzzfactory-domain-specific-fuzzing-with-waypoints-oopsla2019)
     - [Compiler Fuzzing: How Much Does It Matter](#compiler-fuzzing-how-much-does-it-matter-oopsla2019)
+
+- **TSE 2019**  
+    - [The Art, Science, and Engineering of Fuzzing: A Survey](#the-art-science-and-engineering-of-fuzzing-a-survey)
+    - [Smart Greybox Fuzzing](#smart-greybox-fuzzing-tse-2019)
+- **Access 2019**
+    - [NeuFuzz: Efficient Fuzzing With Deep Neural Network (Access 2019)](#neufuzz-efficient-fuzzing-with-deep-neural-network-access-2019)
+    - [LearnAFL: Greybox Fuzzing With Knowledge Enhancement (Access 2019)](#learnafl-greybox-fuzzing-with-knowledge-enhancement-access-2019)
 
 - **CCS 2019**
     - [Intriguer: Field-Level Constraint Solving for Hybrid Fuzzing](#intriguer-field-level-constraint-solving-for-hybrid-fuzzing-ccs-2019)
@@ -149,6 +165,15 @@
 
 # All Papers (Classification according to Subject)
 
+- **Survey/Review**
+  - [Survey of Directed Fuzzy Technology](#survey-of-directed-fuzzy-technology)
+  - [A Review of Machine Learning Applications in Fuzzing](#a-review-of-machine-learning-applications-in-fuzzing)
+  - [A systematic review of fuzzing based on machine learning techniques](#a-systematic-review-of-fuzzing-based-on-machine-learning-techniques)
+  - [The Art, Science, and Engineering of Fuzzing: A Survey](#the-art-science-and-engineering-of-fuzzing-a-survey)
+  - [Fuzzing: Art, Science, and Engineering](#fuzzing-art-science-and-engineering)
+  - [Fuzzing: a survey](#fuzzing-a-survey)
+  - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
+
 - [**Differential Fuzzing**](#differential-fuzzing)
   - [DifFuzz: Differential Fuzzing for Side-Channel Analysis (ICSE 2019)](#diffuzz-differential-fuzzing-for-side-channel-analysis-icse-2019)
   - [Deep Differential Testing of JVM Implementations (ICSE 2019)](#deep-differential-testing-of-jvm-implementations-icse-2019)
@@ -237,9 +262,14 @@
 
 - [**Learning-based Fuzzing**](#learning-based-fuzzing)
   - [FuzzGuard: Filtering out Unreachable Inputs in Directed Grey-box Fuzzing through Deep Learning (USENIX Security2020)](#fuzzguard-filtering-out-unreachable-inputs-in-directed-grey-box-fuzzing-through-deep-learning-usenix-security2020)
+  - [NeuFuzz: Efficient Fuzzing With Deep Neural Network (Access 2019)](#neufuzz-efficient-fuzzing-with-deep-neural-network-access-2019)
+  - [LearnAFL: Greybox Fuzzing With Knowledge Enhancement (Access 2019)](#learnafl-greybox-fuzzing-with-knowledge-enhancement-access-2019)
   - [Learning-Guided Network Fuzzing for Testing Cyber-Physical System Defences (ASE 2019)](#learning-guided-network-fuzzing-for-testing-cyber-physical-system-defences-ase-2019)
   - [NEUZZ: Efficient Fuzzing with Neural Program Smoothing (S&P 2019)](#neuzz-efficient-fuzzing-with-neural-program-smoothing-sp-2019)
   - [Compiler Fuzzing through Deep Learning (ISSTA 2018)](#compiler-fuzzing-through-deep-learning-issta-2018)
+  - [Deep Reinforcement Fuzzing (SPW 2018)](#deep-reinforcement-fuzzing-spw-2018)
+  - [ExploitMeter: Combining Fuzzing with Machine Learning for Automated
+Evaluation of Software Exploitability (PAC 2017)]()
   - [Learn&Fuzz: Machine Learning for Input Fuzzing (ASE 2017)](#learnfuzz-machine-learning-for-input-fuzzing-ase-2017)
 
 - [**Fuzzing Machine Learning Model**](#fuzzing-machine-learning-model)
@@ -279,6 +309,58 @@
 
 
 
+# Survey/Review
+
+### Survey of Directed Fuzzy Technology
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/ICSESS19_Survey.pdf)
+
+**Abstract:** The fuzzy testing technology can effectively detect vulnerabilities. Based on Directed Symbolic Execution (DSE) fuzzing and Directed Grey Box Fuzzing (DGF), which can reach the specified target locations and scan the vulnerability quickly and efficiently. This paper introduces the theoretical knowledge of directed fuzzy testing technology, and several state-of-the-art fuzzy testing tools to elaborate the principle, advantages, disadvantages and the prospect of directed fuzzy technology.
+
+
+### A Review of Machine Learning Applications in Fuzzing
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/Arxiv19_Machine.pdf)
+
+**Abstract:** Fuzzing has played an important role in improving software development and testing over the course of several decades. Recent research in fuzzing has focused on applications of machine learning (ML), offering useful tools to overcome challenges in the fuzzing process. This review surveys the current research in applying ML to fuzzing. Specifically, this review discusses successful applications of ML to fuzzing, briefly explores challenges encountered, and motivates future research to address fuzzing bottlenecks.
+
+
+### A systematic review of fuzzing based on machine learning techniques
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/Arxiv19_Machine2.pdf)
+
+**Abstract:** Security vulnerabilities play a vital role in network security system. Fuzzing technology is widely used as a vulnerability discovery technology to reduce damage in advance. However, traditional fuzzing techniques have many challenges, such as how to mutate input seed files, how to increase code coverage, and how to effectively bypass verification. Machine learning technology has been introduced as a new method into fuzzing test to alleviate these challenges. This paper reviews the research progress of using machine learning technology for fuzzing test in recent years, analyzes how machine learning improve the fuzz process and results, and sheds light on future work in fuzzing. Firstly, this paper discusses the reasons why machine learning techniques can be used for fuzzing scenarios and identifies six different stages in which machine learning have been used. Then this paper systematically study the machine learning based fuzzing models from selection of machine learning algorithm, pre-processing methods, datasets, evaluation metrics, and hyperparameters setting. Next, this paper assesses the performance of the machine learning models based on the frequently used evaluation metrics. The results of the evaluation prove that machine learning technology has an acceptable capability of categorize predictive for fuzzing. Finally, the comparison on capability of discovering vulnerabilities between traditional fuzzing tools and machine learning based fuzzing tools is analyzed. The results depict that the introduction of machine learning technology can improve the performance of fuzzing. However, there are still some limitations, such as unbalanced training samples and difficult to extract the characteristics related to vulnerabilities.
+
+
+### The Art, Science, and Engineering of Fuzzing: A Survey
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/TSE19_Survey.pdf)
+
+**Abstract:** Among the many software testing techniques available today, fuzzing has remained highly popular due to its conceptual simplicity, its low barrier to deployment, and its vast amount of empirical evidence in discovering real-world software vulnerabilities. At a high level, fuzzing refers to a process of repeatedly running a program with generated inputs that may be syntactically or semantically malformed. While researchers and practitioners alike have invested a large and diverse effort towards improving fuzzing in recent years, this surge of work has also made it difficult to gain a comprehensive and coherent view of fuzzing. To help preserve and bring coherence to the vast literature of fuzzing, this paper presents a unified, general-purpose model of fuzzing together with a taxonomy of the current fuzzing literature. We methodically explore the design decisions at every stage of our model fuzzer by surveying the related literature and innovations in the art, science, and engineering that make modern-day fuzzers effective.
+
+
+### Fuzzing: Art, Science, and Engineering
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/Arxiv18_Fuzzing.pdf)
+
+**Abstract:** Among the many software vulnerability discovery techniques available today, fuzzing has remained highly popular due to its conceptual simplicity, its low barrier to deployment, and its vast amount of empirical evidence in discovering real-world software vulnerabilities. At a high level, fuzzing refers to a process of repeatedly running a program with generated inputs that may be syntactically or semantically malformed. While researchers and practitioners alike have invested a large and diverse effort towards improving fuzzing in recent years, this surge of work has also made it difficult to gain a comprehensive and coherent view of fuzzing. To help preserve and bring coherence to the vast literature of fuzzing, this paper presents a unified, general-purpose model of fuzzing together with a taxonomy of the current fuzzing literature. We methodically explore the design decisions at every stage of our model fuzzer by surveying the related literature and innovations in the art, science, and engineering that make modern-day fuzzers effective.
+
+
+### Fuzzing: a survey
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/Cybersecurity18_Fuzzing.pdf)
+
+**Abstract:** Security vulnerability is one of the root causes of cyber-security threats. To discover vulnerabilities and fix them in advance, researchers have proposed several techniques, among which fuzzing is the most widely used one. In recent years, fuzzing solutions, like AFL, have made great improvements in vulnerability discovery. This paper presents a summary of the recent advances, analyzes how they improve the fuzzing process, and sheds light on future work in fuzzing. Firstly, we discuss the reason why fuzzing is popular, by comparing different commonly used vulnerability discovery techniques. Then we present an overview of fuzzing solutions, and discuss in detail one of the most popular type of fuzzing, i.e., coverage-based fuzzing. Then we present other techniques that could make fuzzing process smarter and more efficient. Finally, we show some applications of fuzzing, and discuss new trends of fuzzing and potential future directions.
+
+
+### Fuzzing: State of the art
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/TRel18_Fuzzing.pdf)
+
+**Abstract:** As one of the most popular software testing techniques, fuzzing can find a variety of weaknesses in a program, such as software bugs and vulnerabilities, by generating numerous test inputs. Due to its effectiveness, fuzzing is regarded as a valuable bug hunting method. In this paper, we present an overview of fuzzing that concentrates on its general process, as well as classifications, followed by detailed discussion of the key obstacles and some state-of-the-art technologies which aim to overcome or mitigate these obstacles. We further investigate and classify several widely used fuzzing tools. Our primary goal is to equip the stakeholder with a better understanding of fuzzing and the potential solutions for improving fuzzing methods in the spectrum of software testing and security. To inspire future research, we also predict some future directions with regard to fuzzing.
+
+
+
 # Differential Fuzzing
 
 ### DifFuzz: Differential Fuzzing for Side-Channel Analysis (ICSE 2019)
@@ -301,7 +383,6 @@ This paper tackles this challenge by introducing classming, a novel, effective a
 We have evaluated classming on mainstream JVM implementations, including OpenJDK's HotSpot and IBM's J9, by mutating the DaCapo benchmarks. Our results show that classming is very effective in uncovering deep JVM differences. More than 1,800 of the generated classes exposed JVM differences, and more than 30 triggered JVM crashes. We analyzed and reported the JVM runtime differences and crashes, of which 14 have already been confirmed/fixed, including a highly critical security vulnerability in J9 that allowed untrusted code to disable the security manager and elevate its privileges (CVE-2017-1376).
 
 
-
 ### Different is Good: Detecting the Use of Uninitialized Variables through Differential Replay (CCS 2019)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/CCS19_Different.pdf)
@@ -309,7 +390,6 @@ We have evaluated classming on mainstream JVM implementations, including OpenJDK
 **Abstract:** The use of uninitialized variables is a common issue. It could cause kernel information leak, which defeats the widely deployed security defense, i.e., kernel address space layout randomization (KASLR). Though a recent system called Bochspwn Reloaded reported multiple memory leaks in Windows kernels, how to effectively detect this issue is still largely behind.
 
 In this paper, we propose a new technique, i.e., differential replay, that could effectively detect the use of uninitialized variables. Specifically, it records and replays a program's execution in multiple instances. One instance is with the vanilla memory, the other one changes (or poisons) values of variables allocated from the stack and the heap. Then it compares program states to find references to uninitialized variables. The idea is that if a variable is properly initialized, it will overwrite the poisoned value and program states in two running instances should be the same. After detecting the differences, our system leverages the symbolic taint analysis to further identify the location where the variable was allocated. This helps us to identify the root cause and facilitate the development of real exploits. We have implemented a prototype called TimePlayer. After applying it to both Windows 7 and Windows 10 kernels (x86/x64), it successfully identified 34 new issues and another 85 ones that had been patched (some of them were publicly unknown.) Among 34 new issues, 17 of them have been confirmed as zero-day vulnerabilities by Microsoft.
-
 
 
 ### NEZHA: Efficient Domain-Independent Differential Testing (S&P 2017)
@@ -570,6 +650,13 @@ In this paper, we present an application-aware evolutionary fuzzing strategy tha
 
 
 # Inputs-aware Fuzzing
+
+### Smart Greybox Fuzzing (TSE 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/TSE19_Smart.pdf)
+
+**Abstract:** Coverage-based greybox fuzzing (CGF) is one of the most successful approaches for automated vulnerability detection. Given a seed file (as a sequence of bits), a CGF randomly flips, deletes or copies some bits to generate new files. CGF iteratively constructs (and fuzzes) a seed corpus by retaining those generated files which enhance coverage. However, random bitflips are unlikely to produce valid files (or valid chunks in files), for applications processing complex file formats. In this work, we introduce smart greybox fuzzing (SGF) which leverages a high-level structural representation of the seed file to generate new files. We define innovative mutation operators that work on the virtual file structure rather than on the bit level which allows SGF to explore completely new input domains while maintaining file validity. We introduce a novel validity-based power schedule that enables SGF to spend more time generating files that are more likely to pass the parsing stage of the program, which can expose vulnerabilities much deeper in the processing logic. Our evaluation demonstrates the effectiveness of SGF. On several libraries that parse complex chunk-based files, our tool AFLSMART achieves substantially more branch coverage (up to 87% improvement), and exposes more vulnerabilities than baseline AFL. Our tool AFLSMART has discovered 42 zero-day vulnerabilities in widely-used, well-tested tools and libraries; so far 17 CVEs were assigned.
+
 
 ### Semantic Fuzzing with Zest (ISSTA 2019)
 
@@ -887,6 +974,21 @@ We implemented the exponential schedule by extending AFL. In 24 hours, AFLFAST e
 
 In this paper, we propose a deep-learning-based approach to predict the reachability of inputs and filter out those unreachable ones, which works together with DGF fuzzers instead of replacing them. In the process of combining deep learning with fuzzing, we design a suite of new techniques (e.g., step-forwarding approach, representative data selection) to solve the problems of unbalanced labeled data and low efficiency. We implemented a prototype called FuzzGuard and evaluated it using 45 real vulnerabilities. The results show that FuzzGuard boosts the fuzzing efficiency of the state-of-the-art DGF (e.g., AFLGo) up to 17 times. We also found 19 undisclosed bugs, and 4 zero-day bugs (we have got CVE numbers). Finally, we design an approach to understand the extracted features of the deep neural network model, and find them correlate with the constraints in target programs, which indeed impacts the execution on the code level.
 
+
+### LearnAFL: Greybox Fuzzing With Knowledge Enhancement (Access 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/Access19_LearnAFL.pdf)
+
+**Abstract:** Mutation-based greybox fuzzing is a highly effective and widely used technique to find bugs in software. Provided initial seeds, fuzzers continuously generate test cases to test the software by mutating a seed input. However, the majority of them are “invalid” because the mutation may destroy the format of the seeds. In this paper, we present a knowledge-learn evolutionary fuzzer based on AFL, which is called LearnAFL. LearnAFL does not require any prior knowledge of the application or input format. Based on our format generation theory, LearnAFL can learn partial format knowledge of some paths by analyzing the test cases that exercise the paths. Then LearnAFL uses these format information to mutate the seeds, which is efficient to explore deeper paths and reduce the test cases exercising high-frequency paths than AFL. We compared LearnAFL with AFL and some other state-of-the-art fuzzers on ten real-world programs. The result showed that LearnAFL could reach branch coverage 120% and 110% of that of AFL and FairFuzz, respectively. LearnAFL also found 8 unknown vulnerabilities in GNU Binutils, Libpng and Gif2png, all of which have been reported to the vendors. Besides, we compared the format information learned from the initial seed of an ELF file with a format standard of ELF files. The result showed that LearnAFL learns about 64% part of the file format without any prior knowledge.
+
+
+### NeuFuzz: Efficient Fuzzing With Deep Neural Network (Access 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/Access19_NeuFuzz .pdf)
+
+**Abstract:** Coverage-guided gray box fuzzing is one of the most popular and effective techniques for discovering vulnerabilities due to its nature of high speed and scalability. However, the existing techniques generally focus on code coverage but not on vulnerable code. These techniques aim to cover as many paths as possible rather than to explore paths that are more likely to be vulnerable. When selecting the seeds to test, the existing fuzzers usually treat all seed inputs equally, ignoring the fact that paths exercised by different seed inputs are not equally vulnerable. This results in wasting time testing uninteresting paths rather than vulnerable paths, thus reducing the efficiency of vulnerability detection. In this paper, we present a solution, NeuFuzz, using the deep neural network to guide intelligent seed selection during gray box fuzzing to alleviate the aforementioned limitation. In particular, the deep neural network is used to learn the hidden vulnerability pattern from a large number of vulnerable and clean program paths to train a prediction model to classify whether paths are vulnerable. The fuzzer then prioritizes seed inputs that are capable of covering the likely to be vulnerable paths and assigns more mutation energy (i.e., the number of inputs to be generated) to these seeds. We implemented a prototype of NeuFuzz based on an existing fuzzer PTfuzz and evaluated it on two different test suites: LAVA-M and nine real-world applications. The experimental results showed that NeuFuzz can find more vulnerabilities than the existing fuzzers in less time. We have found 28 new security bugs in these applications, 21 of which have been assigned as CVE IDs.
+
+
 ### Learning-Guided Network Fuzzing for Testing Cyber-Physical System Defences (ASE 2019)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/ASE19_Learning.pdf)
@@ -909,11 +1011,24 @@ In this paper, we propose a deep-learning-based approach to predict the reachabi
 We introduce DeepSmith, a novel machine learning approach to accelerating compiler validation through the inference of generative models for compiler inputs. Our approach infers a learned model of the structure of real world code based on a large corpus of open source code. Then, it uses the model to automatically generate tens of thousands of realistic programs. Finally, we apply established differential testing methodologies on them to expose bugs in compilers. We apply our approach to the OpenCL programming language, automatically exposing bugs with little effort on our side. In 1,000 hours of automated testing of commercial and open source compilers, we discover bugs in all of them, submitting 67 bug reports. Our test cases are on average two orders of magnitude smaller than the state-of-the-art, require 3.03× less time to generate and evaluate, and expose bugs which the state-of-the-art cannot. Our random program generator, comprising only 500 lines of code, took 12 hours to train for OpenCL versus the state-of-the-art taking 9 man months to port from a generator for C and 50,000 lines of code. With 18 lines of code we extended our program generator to a second language, uncovering crashes in Solidity compilers in 12 hours of automated testing.
 
 
+### Deep Reinforcement Fuzzing (SPW 2018)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/SPW18_Deep.pdf)
+
+**Abstract:** Fuzzing is the process of finding security vulnerabilities in input-processing code by repeatedly testing the code with modified inputs. In this paper, we formalize fuzzing as a reinforcement learning problem using the concept of Markov decision processes. This in turn allows us to apply state-of-the-art deep Q -learning algorithms that optimize rewards, which we define from runtime properties of the program under test. By observing the rewards caused by mutating with a specific set of actions performed on an initial program input, the fuzzing agent learns a policy that can next generate new higher-reward inputs. We have implemented this new approach, and preliminary empirical evidence shows that reinforcement fuzzing can outperform baseline random fuzzing.
+
+
 ### Learn&Fuzz: Machine Learning for Input Fuzzing (ASE 2017)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/ASE17_LearnFuzz.pdf)
 
 **Abstract:** Fuzzing consists of repeatedly testing an application with modified, or fuzzed, inputs with the goal of finding security vulnerabilities in input-parsing code. In this paper, we show how to automate the generation of an input grammar suitable for input fuzzing using sample inputs and neural-network-based statistical machine-learning techniques. We present a detailed case study with a complex input format, namely PDF, and a large complex security-critical parser for this format, namely, the PDF parser embedded in Microsoft's new Edge browser. We discuss and measure the tension between conflicting learning and fuzzing goals: learning wants to capture the structure of well-formed inputs, while fuzzing wants to break that structure in order to cover unexpected code paths and find bugs. We also present a new algorithm for this learn&fuzz challenge which uses a learnt input probability distribution to intelligently guide where to fuzz inputs.
+
+### ExploitMeter: Combining Fuzzing with Machine Learning for Automated Evaluation of Software Exploitability (PAC 2017)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/PAC17_ExploitMeter.pdf)
+
+**Abstract:** Exploitable software vulnerabilities pose severe threats to its information security and privacy. Although a great amount of efforts have been dedicated to improving software security, research on quantifying software exploitability is still in its infancy. In this work, we propose ExploitMeter, a fuzzing-based framework of quantifying software exploitability that facilitates decision-making for software assurance and cyber insurance. Designed to be dynamic, efficient and rigorous, ExploitMeter integrates machine learning-based prediction and dynamic fuzzing tests in a Bayesian manner. Using 100 Linux applications, we conduct extensive experiments to evaluate the performance of ExploitMeter in a dynamic environment.
 
 
 

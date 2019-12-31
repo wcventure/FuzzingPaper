@@ -30,8 +30,8 @@
     - [The Art, Science, and Engineering of Fuzzing: A Survey](#the-art-science-and-engineering-of-fuzzing-a-survey)
     - [Smart Greybox Fuzzing](#smart-greybox-fuzzing-tse-2019)
 - **Access 2019**
-    - [NeuFuzz: Efficient Fuzzing With Deep Neural Network (Access 2019)](#neufuzz-efficient-fuzzing-with-deep-neural-network-access-2019)
-    - [LearnAFL: Greybox Fuzzing With Knowledge Enhancement (Access 2019)](#learnafl-greybox-fuzzing-with-knowledge-enhancement-access-2019)
+    - [NeuFuzz: Efficient Fuzzing With Deep Neural Network](#neufuzz-efficient-fuzzing-with-deep-neural-network-access-2019)
+    - [LearnAFL: Greybox Fuzzing With Knowledge Enhancement](#learnafl-greybox-fuzzing-with-knowledge-enhancement-access-2019)
 
 - **CCS 2019**
     - [Intriguer: Field-Level Constraint Solving for Hybrid Fuzzing](#intriguer-field-level-constraint-solving-for-hybrid-fuzzing-ccs-2019)

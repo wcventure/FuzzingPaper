@@ -11,16 +11,16 @@
     - [Fuzzing: a survey](#fuzzing-a-survey)
     - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
 
+- **ICSE 2020**
+- [Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities](#typestate-guided-fuzzer-for-discovering-use-after-free-vulnerabilities-icse-2020)
+- [MemLock: Memory Usage Guided Fuzzing](#memlock-memory-usage-guided-fuzzing-icse2020)
+
 - **S&P 2020**
     - [SAVIOR: Towards Bug-Driven Hybrid Testing](#savior-towards-bug-driven-hybrid-testing-sp-2020)
 
 - **USENIX Security 2020**
     - [GREYONE: Data Flow Sensitive Fuzzing](#greyone-data-flow-sensitive-fuzzing-usenix-security2020)
     - [FuzzGuard: Filtering out Unreachable Inputs in Directed Grey-box Fuzzing through Deep Learning](#fuzzguard-filtering-out-unreachable-inputs-in-directed-grey-box-fuzzing-through-deep-learning-usenix-security2020)
-
-- **ICSE 2020**
-    - [Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities](#typestate-guided-fuzzer-for-discovering-use-after-free-vulnerabilities-icse-2020)
-    - [MemLock: Memory Usage Guided Fuzzing](#memlock-memory-usage-guided-fuzzing-icse2020)
 
 - **OOPSLA 2019**
     - [FuzzFactory: Domain-Specific Fuzzing with Waypoints](#fuzzfactory-domain-specific-fuzzing-with-waypoints-oopsla2019)
@@ -783,6 +783,8 @@ In this paper, inspired by the idea of ensemble learning, we first propose an en
 # Directed Fuzzing
 
 ### Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities (ICSE 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.scedt.tees.ac.uk/s.qin/papers/icse2020-uafl.pdf)
 
 **Abstract:** Existing coverage-based fuzzers usually use the individual control flow graph (CFG) edge coverage 
 to guide the fuzzing process, which has shown great potential in finding vulnerabilities.

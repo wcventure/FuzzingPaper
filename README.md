@@ -12,8 +12,13 @@
     - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
 
 - **ICSE 2020**
-- [Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities](#typestate-guided-fuzzer-for-discovering-use-after-free-vulnerabilities-icse-2020)
-- [MemLock: Memory Usage Guided Fuzzing](#memlock-memory-usage-guided-fuzzing-icse2020)
+    - [Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities](#typestate-guided-fuzzer-for-discovering-use-after-free-vulnerabilities-icse-2020)
+    - [MemLock: Memory Usage Guided Fuzzing](#memlock-memory-usage-guided-fuzzing-icse2020)
+    - [Ankou: Guiding Grey-box Fuzzing towards Combinatorial Difference](#ankou-guiding-grey-box-fuzzing-towards-combinatorial-difference-icse-2020)
+    - [JVM Fuzzing for JIT-Induced Side-Channel Detection](#jvm-fuzzing-for-jit-induced-side-channel-detection-icse-2020)
+    - [Targeted Greybox Fuzzing with Static Lookahead Analysis](#targeted-greybox-fuzzing-with-static-lookahead-analysis-icse-2020)
+    - [Fuzz Testing based Data Augmentation to Improve Robustness of Deep Neural Networks](#fuzz-testing-based-data-augmentation-to-improve-robustness-of-deep-neural-networks-icse-2020)
+    - [sFuzz: An Efficient Adaptive Fuzzer for Solidity Smart Contracts](#sfuzz-an-efficient-adaptive-fuzzer-for-solidity-smart-contracts-icse-2020)
 
 - **S&P 2020**
     - [SAVIOR: Towards Bug-Driven Hybrid Testing](#savior-towards-bug-driven-hybrid-testing-sp-2020)
@@ -165,7 +170,7 @@
 
 # All Papers (Classification according to Subject)
 
-- **Survey/Review**
+- [**Survey/Review**](#surveyreview)
   - [Survey of Directed Fuzzy Technology](#survey-of-directed-fuzzy-technology)
   - [A Review of Machine Learning Applications in Fuzzing](#a-review-of-machine-learning-applications-in-fuzzing)
   - [A systematic review of fuzzing based on machine learning techniques](#a-systematic-review-of-fuzzing-based-on-machine-learning-techniques)
@@ -227,13 +232,14 @@
   - [NAUTILUS: Fishing for Deep Bugs with Grammars (NDSS 2019)](#nautilus-fishing-for-deep-bugs-with-grammars-ndss-2019)
   - [TIFF: Using Input Type Inference To Improve Fuzzing (ACSAC 2018)](#tiff-using-input-type-inference-to-improve-fuzzing-acsac-2018)
   - [SemFuzz: Semantics-based Automatic Generation of Proof-of-Concept Exploits (CCS 2017)](#semfuzz-semantics-based-automatic-generation-of-proof-of-concept-exploits-ccs-2017)
-  - [Skyfire: Data-Driven Seed Generation for Fuzzing](#)
+  - [Skyfire: Data-Driven Seed Generation for Fuzzing (S&P 2017)](#skyfire-data-driven-seed-generation-for-fuzzing-sp-2017)
 
 - [**Ensemble Fuzzing**](#ensemble-fuzzing)
     - [EnFuzz: Ensemble Fuzzing with Seed Synchronization among Diverse Fuzzers (USENIX Security2019) ](#enfuzz-ensemble-fuzzing-with-seed-synchronization-among-diverse-fuzzers-usenix-security2019)
 
 - [**Directed Fuzzing**](#directed-fuzzing)
-  - [Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities](#typestate-guided-fuzzer-for-discovering-use-after-free-vulnerabilities-icse-2020)
+  - [Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities (ICSE 2019)](#typestate-guided-fuzzer-for-discovering-use-after-free-vulnerabilities-icse-2020)
+  - [Ankou: Guiding Grey-box Fuzzing towards Combinatorial Difference (ICSE 2019)](#ankou-guiding-grey-box-fuzzing-towards-combinatorial-difference-icse-2020)
   - [Directed Greybox Fuzzing (CCS 2017)](#directed-greybox-fuzzing-ccs-2017)
   - [Hawkeye: Towards a Desired Directed Grey-box Fuzzer (CCS 2018)](#hawkeye-towards-a-desired-directed-grey-box-fuzzer-ccs-2018)
 
@@ -273,6 +279,7 @@ Evaluation of Software Exploitability (PAC 2017)]()
   - [Learn&Fuzz: Machine Learning for Input Fuzzing (ASE 2017)](#learnfuzz-machine-learning-for-input-fuzzing-ase-2017)
 
 - [**Fuzzing Machine Learning Model**](#fuzzing-machine-learning-model)
+  - [Fuzz Testing based Data Augmentation to Improve Robustness of Deep Neural Networks (ICSE 2020)](#fuzz-testing-based-data-augmentation-to-improve-robustness-of-deep-neural-networks-icse-2020)
   - [DeepHunter: A Coverage-Guided Fuzz Testing Framework for Deep Neural Networks (ISSTA 2019)](#deephunter-a-coverage-guided-fuzz-testing-framework-for-deep-neural-networks-issta-2019)
   - [TensorFuzz: Debugging Neural Networks with Coverage-Guided Fuzzing (2018)](#tensorfuzz-debugging-neural-networks-with-coverage-guided-fuzzing-2018)
   - [Coverage-Guided Fuzzing for Deep Neural Networks (2018)](#coverage-guided-fuzzing-for-deep-neural-networks-2018)
@@ -284,6 +291,8 @@ Evaluation of Software Exploitability (PAC 2017)]()
   - [Steelix: Program-State Based Binary Fuzzing (FSE 2017)](#steelix-program-state-based-binary-fuzzing-fse-2017)
 
 - [**SmartContracts**](#smart-contracts)
+- - [sFuzz: An Efficient Adaptive Fuzzer for Solidity Smart Contracts (ICSE 2020)](#sfuzz-an-efficient-adaptive-fuzzer-for-solidity-smart-contracts-icse-2020)
+  - [Targeted Greybox Fuzzing with Static Lookahead Analysis (ICSE 2020)](#targeted-greybox-fuzzing-with-static-lookahead-analysis-icse-2020)
   - [Learning to Fuzz from Symbolic Execution with Application to Smart Contracts (CCS 2019)](#learning-to-fuzz-from-symbolic-execution-with-application-to-smart-contracts-ccs-2019)
   - [ContractFuzzer: Fuzzing Smart Contracts for Vulnerability Detection (ASE 2018)](#contractfuzzer-fuzzing-smart-contracts-for-vulnerability-detection-ase-2018)
 
@@ -293,6 +302,7 @@ Evaluation of Software Exploitability (PAC 2017)]()
   - [Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing (FSE 2019)](#just-fuzz-it-solving-floating-point-constraints-using-coverage-guided-fuzzing-fse-2019)
 
 - [**Interesting Fuzzing**](#interesting-fuzzing)
+  - [JVM Fuzzing for JIT-Induced Side-Channel Detection (ICSE 2020)](#jvm-fuzzing-for-jit-induced-side-channel-detection-icse-2020)
   - [FuzzFactory: Domain-Specific Fuzzing with Waypoints (OOPSLA 2019)](#fuzzfactory-domain-specific-fuzzing-with-waypoints-oopsla2019)
   - [Compiler Fuzzing: How Much Does It Matter (OOPSLA 2019)](#compiler-fuzzing-how-much-does-it-matter-oopsla2019)
   - [FUDGE: Fuzz Driver Generation at Scale (FSE 2019)](#fudge-fuzz-driver-generation-at-scale-fse-2019)
@@ -762,7 +772,7 @@ In this work, we present a new mutation strategy that maximizes the likelihood o
 **Abstract:** Patches and related information about software vulnerabilities are often made available to the public, aiming to facilitate timely fixes. Unfortunately, the slow paces of system updates (30 days on average) often present to the attackers enough time to recover hidden bugs for attacking the unpatched systems. Making things worse is the potential to automatically generate exploits on input-validation flaws through reverse-engineering patches, even though such vulnerabilities are relatively rare (e.g., 5% among all Linux kernel vulnerabilities in last few years). Less understood, however, are the implications of other bug-related information (e.g., bug descriptions in CVE), particularly whether utilization of such information can facilitate exploit generation, even on other vulnerability types that have never been automatically attacked. In this paper, we seek to use such information to generate proof-of-concept (PoC) exploits for the vulnerability types never automatically attacked. Unlike an input validation flaw that is often patched by adding missing sanitization checks, fixing other vulnerability types is more complicated, usually involving replacement of the whole chunk of code. Without understanding of the code changed, automatic exploit becomes less likely. To address this challenge, we present SemFuzz, a novel technique leveraging vulnerability-related text (e.g., CVE reports and Linux git logs) to guide automatic generation of PoC exploits. Such an end-to-end approach is made possible by natural-language processing (NLP) based information extraction and a semantics-based fuzzing process guided by such information. Running over 112 Linux kernel flaws reported in the past five years, SemFuzz successfully triggered 18 of them, and further discovered one zero-day and one undisclosed vulnerabilities. These flaws include use-after-free, memory corruption, information leak, etc., indicating that more complicated flaws can also be automatically attacked. This finding calls into question the way vulnerability-related information is shared today.
 
 
-### Skyfire: Data-Driven Seed Generation for Fuzzing]
+### Skyfire: Data-Driven Seed Generation for Fuzzing (S&P 2017)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/SP17_Skyfire.pdf)
 
@@ -801,6 +811,11 @@ In addition, we also adopt the information flow analysis to improve the efficien
 We performed a thorough evaluation of UAFL on 14 widely-used real-world programs.
 The experiment results show that UAFL substantially outperforms the state-of-the-art fuzzers, including AFL, AFLFast, FairFuzz, MOpt, Angora and QSYM, in terms of the time taken to discover vulnerabilities.
 We discovered 10 previously unknown vulnerabilities, and received 5 new CVEs.
+
+
+### Ankou: Guiding Grey-box Fuzzing towards Combinatorial Difference (ICSE 2020)
+
+**Abstract:** Grey-box fuzzing is an evolutionary process, which maintains and evolves a population of test cases with the help of a fitness function. Fitness functions used by current grey-box fuzzers are not informative in that they cannot distinguish different program executions as long as those executions achieve the same coverage. The problem is that the current fitness functions only consider a union of data, but not the combination of them. As such, fuzzers often get stuck in a local optimum during their search. In this paper, we introduce Ankou, the first grey-box fuzzer that recognizes different \emph{combinations} of execution information, and present several scalability challenges encountered while designing and implementing Ankou. Our experimental results show that Ankou is $1.94\times$ and $8.0\times$ more effective in finding bugs than AFL and Angora, respectively.
 
 
 ### Directed Greybox Fuzzing (CCS 2017)
@@ -1036,6 +1051,10 @@ We introduce DeepSmith, a novel machine learning approach to accelerating compil
 
 # Fuzzing Machine Learning Model
 
+### Fuzz Testing based Data Augmentation to Improve Robustness of Deep Neural Networks (ICSE 2020)
+
+**Abstract:** Deep neural networks (DNN) have been shown to be notoriously brittle to small perturbations in their input data. This problem is analogous to the over-fitting problem in test-based program synthesis and automatic program repair, which is a consequence of the incomplete specification, the limited tests or training examples, that the program synthesis or repair algorithm has to learn from. Recently, test generation techniques have been successfully employed to augment existing specifications of intended program behavior, to improve the generalizability of program synthesis and repair. Inspired by these approaches, in this paper, we propose a technique that re-purposes software testing methods, specifically mutation-based fuzzing, to augment the training data of DNNs, with the objective of enhancing their robustness. Our technique casts the DNN data augmentation problem as an optimization problem. It uses genetic search to generate the most suitable variant of an input data to use for training the DNN, while simultaneously identifying opportunities to accelerate training by skipping augmentation in many instances. We instantiate this technique in two tools, SENSEI and SENSEI-SA, and evaluate them on 15 DNN models spanning 5 popular image data-sets. Our evaluation shows that SENSEI can improve the robust accuracy of the DNN, compared to the state of the art, on each of the 15 models, by upto 11.9% and 5.5% on average. Further, SENSEI-SA can reduce the average DNN training time by 25%, while still improving robust accuracy.
+
 ### DeepHunter: A Coverage-Guided Fuzz Testing Framework for Deep Neural Networks (ISSTA 2019)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/ISSTA19_DeepHunter.pdf)
@@ -1084,6 +1103,17 @@ We implemented a prototype of GREYONE and evaluated it on the LAVA data set and 
 
 # Smart Contracts
 
+### sFuzz: An Efficient Adaptive Fuzzer for Solidity Smart Contracts (ICSE 2020)
+
+**Abstract:** Smart contracts are Turing-complete programs that execute on the infrastructure of the blockchain, which often manage valuable digital assets. Solidity is one of the most popular programming languages for writing smart contracts on the Ethereum platform.Like traditional programs, smart contracts may contain vulnerabilities. Unlike traditional programs, smart contracts cannot be easily patched once they are deployed. It is thus important that smart contracts are tested thoroughly before deployment. In this work, we present an adaptive fuzzer for smart contracts on the Ethereum platform called sFuzz. Compared to existing Solidity fuzzers, sFuzz combines the strategy in the AFL fuzzer and an efficient lightweight multi-objective adaptive strategy targeting those hard-to-cover branches. sFuzz has been applied to more than 4 thousand smart contracts and the experimental results show that (1) sFuzz is efficient, e.g., two order of magnitudes faster than state-of-the-art tools; (2) sFuzz is effective in achieving high code coverage and discovering vulnerabilities; and (3) the different fuzzing strategies in sFuzz complement each other.
+
+
+### Targeted Greybox Fuzzing with Static Lookahead Analysis (ICSE 2020)
+
+**Abstract:** Automatic test generation typically aims to generate inputs that explore new paths in the program under test in order to find bugs. Existing work has, therefore, focused on guiding the exploration toward program parts that are more likely to contain bugs by using an offline static analysis.
+
+In this paper, we introduce a novel technique for targeted greybox fuzzing using an online static analysis that guides the fuzzer toward a set of target locations, for instance, located in recently modified parts of the program. This is achieved by first semantically analyzing each program path that is explored by an input in the fuzzer’s test suite. The results of this analysis are then used to control the fuzzer’s specialized power schedule, which determines how often to fuzz inputs from the test suite. We implemented our technique by extending a state-of-the-art, industrial fuzzer for Ethereum smart contracts and evaluate its effectiveness on 27 real-world benchmarks. Using an online analysis is particularly suitable for the domain of smart contracts since it does not require any code instrumentation—adding instrumentation to contracts changes their semantics. Our experiments show that targeted fuzzing significantly outperforms standard greybox fuzzing for reaching 83% of the challenging target locations (up to 14x of median speed-up).
+
 
 ### Learning to Fuzz from Symbolic Execution with Application to Smart Contracts (CCS 2019)
 
@@ -1129,6 +1159,11 @@ We instantiate our approach to the problem of fuzzing smart contracts, a domain 
 
 
 # Interesting Fuzzing
+
+### JVM Fuzzing for JIT-Induced Side-Channel Detection (ICSE 2020)
+
+**Abstract:** Timing side channels arise in software when a program’s execution time can be correlated with security-sensitive program input. Recent results on software side-channel detection focus on analysis of program’s source code. However, runtime behavior, in particular optimizations introduced during just-in-time (JIT) compilation, can impact or even introduce timing side channels in programs. In this paper, we present a technique for automatically detecting such JIT-induced timing side channels in Java programs. We first introduce patterns to detect partitions of secret input potentially separable by side channels. Then we present an automated approach for exploring behaviors of the Java Virtual Machine (JVM) to identify states where timing channels separating these partitions arise. We evaluate our technique on three datasets used in recent work on side-channel detection. We find that many code variants labeled ``safe'' with respect to side-channel vulnerabilities are in fact vulnerable to JIT-induced timing side channels. Our results directly contradict the conclusions of four separate state-of-the-art program analysis tools for side-channel detection and demonstrate that JIT-induced side channels are prevalent and can be detected automatically
+
 
 ### FuzzFactory: Domain-Specific Fuzzing with Waypoints (OOPSLA2019)
 

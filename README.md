@@ -117,6 +117,9 @@
     - [Enhancing Memory Error Detection for Large-Scale Applications and Fuzz Testing](#enhancing-memory-error-detection-for-large-scale-applications-and-fuzz-testing-ndss-2018)
     - [INSTRIM Lightweight Instrumentation for Coverage-guided Fuzzing](#instrim-lightweight-instrumentation-for-coverage-guided-fuzzing-ndss-2018-workshop)
 
+- **ICSE 2018**
+    - [SAFL: increasing and accelerating testing coverage with symbolic execution and guided fuzzing](#safl-increasing-and-accelerating-testing-coverage-with-symbolic-execution-and-guided-fuzzing-icse-2018)
+
 - **FSE 2018**
     - [Singularity: Pattern Fuzzing for Worst Case Complexity](#singularity-pattern-fuzzing-for-worst-case-complexity-fse-2018)
 
@@ -211,6 +214,7 @@
   - [Send Hardest Problems My Way: Probabilistic Path Prioritization for Hybrid Fuzzing (NDSS 2019)](#send-hardest-problems-my-way-probabilistic-path-prioritization-for-hybrid-fuzzing--ndss-2019)
   - [QSYM: A Practical Concolic Execution Engine Tailored for Hybrid Fuzzing (USENIX Security2018)](#qsym-a-practical-concolic-execution-engine-tailored-for-hybrid-fuzzing-usenix-security2018)
   - [Angora: Efficient Fuzzing by Principled Search (S&P 2018)](#angora-efficient-fuzzing-by-principled-search-sp-2018)
+  - [SAFL: increasing and accelerating testing coverage with symbolic execution and guided fuzzing (ICSE 2018)](#safl-increasing-and-accelerating-testing-coverage-with-symbolic-execution-and-guided-fuzzing-icse-2018)
   - [Driller: Argumenting Fuzzing Through Selective Symbolic Execution (NDSS 2016)](#driller-argumenting-fuzzing-through-selective-symbolic-execution-ndss-2016)
 
 - [**Deeply nested branches \ Addressing Magic bytes \ checksum**](#deeply-nested-branches--addressing-magic-bytes--checksum)
@@ -590,6 +594,13 @@ Our evaluation shows that QSYM does not just outperform state-of-the-art fuzzers
 * <img src="image/github_24px.png">[Code](https://github.com/AngoraFuzzer/Angora)
 
 **Abstract:** Abstract-Fuzzing is a popular technique for finding software bugs. However, the performance of the state-of-the-art fuzzers leaves a lot to be desired. Fuzzers based on symbolic execution produce quality inputs but run slow, while fuzzers based on random mutation run fast but have difficulty producing quality inputs. We propose Angora, a new mutation-based fuzzer that outperforms the state-of-the-art fuzzers by a wide margin. The main goal of Angora is to increase branch coverage by solving path constraints without symbolic execution. To solve path constraints efficiently, we introduce several key techniques: scalable byte-level taint tracking, context-sensitive branch count, search based on gradient descent, and input length exploration. On the LAVA-M data set, Angora found almost all the injected bugs, found more bugs than any other fuzzer that we compared with, and found eight times as many bugs as the second-best fuzzer in the program who. Angora also found 103 bugs that the LAVA authors injected but could not trigger. We also tested Angora on eight popular, mature open source programs. Angora found 6, 52, 29, 40 and 48 new bugs in file, jhead, nm, objdump and size, respectively. We measured the coverage of Angora and evaluated how its key techniques contribute to its impressive performance.
+
+
+### SAFL: increasing and accelerating testing coverage with symbolic execution and guided fuzzing (ICSE 2018)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/ICSE18_SAFL.pdf)
+
+**Abstract:** Mutation-based fuzzing is a widely used software testing technique for bug and vulnerability detection, and the testing performance is greatly affected by the quality of initial seeds and the effectiveness of mutation strategy. In this paper, we present SAFL¹, an efficient fuzzing testing tool augmented with qualified seed generation and efficient coverage-directed mutation. First, symbolic execution is used in a lightweight approach to generate qualified initial seeds. Valuable explore directions are learned from the seeds, thus the later fuzzing process can reach deep paths in program state space earlier and easier. Moreover, we implement a fair and fast coverage-directed mutation algorithm. It helps the fuzzing process to exercise rare and deep paths with higher probability. We implement SAFL based on KLEE and AFL and conduct thoroughly repeated evaluations on real-world program benchmarks against state-of-the-art versions of AFL. After 24 hours, compared to AFL and AFLFast, it discovers 214% and 133% more unique crashes, covers 109% and 63% more paths and achieves 279% and 180% more covered branches. Video link: https://youtu.be/LkiFLNMBhVE
 
 
 ### Driller: Argumenting Fuzzing Through Selective Symbolic Execution (NDSS 2016)

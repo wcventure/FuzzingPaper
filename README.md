@@ -122,6 +122,7 @@
 
 - **FSE 2018**
     - [Singularity: Pattern Fuzzing for Worst Case Complexity](#singularity-pattern-fuzzing-for-worst-case-complexity-fse-2018)
+    - [FOT: A Versatile, Configurable, Extensible Fuzzing Framework](#fot-a-versatile-configurable-extensible-fuzzing-framework-fse-2018)
 
 - **ASE 2018**
     - [ContractFuzzer: Fuzzing Smart Contracts for Vulnerability Detection](#contractfuzzer-fuzzing-smart-contracts-for-vulnerability-detection-ase-2018)
@@ -318,7 +319,8 @@ Evaluation of Software Exploitability (PAC 2017)]()
   - [IoTFuzzer: Discovering Memory Corruptions in IoT Through App-based Fuzzing (NDSS 2018)](#iotfuzzer-discovering-memory-corruptions-in-iot-through-app-based-fuzzing-ndss-2018)
   - [What You Corrupt Is Not What You Crash: Challenges in Fuzzing Embedded Devices (NDSS 2018)](#what-you-corrupt-is-not-what-you-crash-challenges-in-fuzzing-embedded-devices-ndss-2018)
   - [MoonShine: Optimizing OS Fuzzer Seed Selection with Trace Distillation (USENIX Security2018)](#moonshine-optimizing-os-fuzzer-seed-selection-with-trace-distillation-usenix-security2018)
-  - [Systematic Fuzzing and Testing of TLS Libraries](#systematic-fuzzing-and-testing-of-tls-libraries-ccs-2016)
+  - [FOT: A Versatile, Configurable, Extensible Fuzzing Framework (FSE 2018)](#fot-a-versatile-configurable-extensible-fuzzing-framework-fse-2018)
+  - [Systematic Fuzzing and Testing of TLS Libraries (CCS 2016)](#systematic-fuzzing-and-testing-of-tls-libraries-ccs-2016)
   - [Protocol State Fuzzing of TLS Implementations (USENIX Security2015)](#protocol-state-fuzzing-of-tls-implementations-usenix-security2015)
 
 
@@ -826,6 +828,10 @@ We discovered 10 previously unknown vulnerabilities, and received 5 new CVEs.
 
 ### Ankou: Guiding Grey-box Fuzzing towards Combinatorial Difference (ICSE 2020)
 
+* <img src="image/pdf_24px.png">[Paper](./Paper/ICSE20_Ankou.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/SoftSec-KAIST/Ankou)
+
 **Abstract:** Grey-box fuzzing is an evolutionary process, which maintains and evolves a population of test cases with the help of a fitness function. Fitness functions used by current grey-box fuzzers are not informative in that they cannot distinguish different program executions as long as those executions achieve the same coverage. The problem is that the current fitness functions only consider a union of data, but not the combination of them. As such, fuzzers often get stuck in a local optimum during their search. In this paper, we introduce Ankou, the first grey-box fuzzer that recognizes different \emph{combinations} of execution information, and present several scalability challenges encountered while designing and implementing Ankou. Our experimental results show that Ankou is $1.94\times$ and $8.0\times$ more effective in finding bugs than AFL and Angora, respectively.
 
 
@@ -841,6 +847,8 @@ We discovered 10 previously unknown vulnerabilities, and received 5 new CVEs.
 ### Hawkeye: Towards a Desired Directed Grey-box Fuzzer (CCS 2018)
 
 * <img src="image/youdao_note_24px.png">[Reading Note](https://note.youdao.com/ynoteshare1/index.html?id=6e9c7bba068ab022571e660ddd49c8fc&type=note#/)
+
+* <img src="image/ppt_24px.png">[Slides](https://hongxuchen.github.io/pdf/hawkeye-slides.pdf)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/CCS18_hawkeye.pdf)
 
@@ -1173,12 +1181,14 @@ We instantiate our approach to the problem of fuzzing smart contracts, a domain 
 
 ### JVM Fuzzing for JIT-Induced Side-Channel Detection (ICSE 2020)
 
+* <img src="image/pdf_24px.png">[Paper](./Paper/ICSE20_JVM.pdf)
+  
 **Abstract:** Timing side channels arise in software when a program’s execution time can be correlated with security-sensitive program input. Recent results on software side-channel detection focus on analysis of program’s source code. However, runtime behavior, in particular optimizations introduced during just-in-time (JIT) compilation, can impact or even introduce timing side channels in programs. In this paper, we present a technique for automatically detecting such JIT-induced timing side channels in Java programs. We first introduce patterns to detect partitions of secret input potentially separable by side channels. Then we present an automated approach for exploring behaviors of the Java Virtual Machine (JVM) to identify states where timing channels separating these partitions arise. We evaluate our technique on three datasets used in recent work on side-channel detection. We find that many code variants labeled ``safe'' with respect to side-channel vulnerabilities are in fact vulnerable to JIT-induced timing side channels. Our results directly contradict the conclusions of four separate state-of-the-art program analysis tools for side-channel detection and demonstrate that JIT-induced side channels are prevalent and can be detected automatically
 
 
 ### FuzzFactory: Domain-Specific Fuzzing with Waypoints (OOPSLA2019)
 
-* <img src="image/pdf_24px.png">[Paper](./Paper/OOPSLA2019_FuzzFactory.pdf)
+* <img src="image/pdf_24px.png">[Paper](./Paper/OOPSLA19_FuzzFactory.pdf)
 
 * <img src="image/github_24px.png">[Code](https://github.com/rohanpadhye/FuzzFactory)
 
@@ -1189,7 +1199,7 @@ In this paper, we present FuzzFactory, a framework for developing domain-specifi
 
 ### Compiler Fuzzing: How Much Does It Matter (OOPSLA2019)
 
-* <img src="image/pdf_24px.png">[Paper](./Paper/OOPSLA2019_Compiler.pdf)
+* <img src="image/pdf_24px.png">[Paper](./Paper/OOPSLA19_Compiler.pdf)
 
 **Abstract:** Despite much recent interest in randomised testing (fuzzing) of compilers, the practical impact of fuzzer-found compiler bugs on real-world applications has barely been assessed. We present the first quantitative and qualitative study of the tangible impact of miscompilation bugs in a mature compiler. We follow a rigorous methodology where the bug impact over the compiled application is evaluated based on (1) whether the bug appears to trigger during compilation; (2) the extent to which generated assembly code changes syntactically due to triggering of the bug; and (3) whether such changes cause regression test suite failures, or whether we can manually find application inputs that trigger execution divergence due to such changes. The study is conducted with respect to the compilation of more than 10 million lines of C/C++ code from 309 Debian packages, using 12% of the historical and now fixed miscompilation bugs found by four state-of-the-art fuzzers in the Clang/LLVM compiler, as well as 18 bugs found by human users compiling real code or as a by-product of formal verification efforts. The results show that almost half of the fuzzer-found bugs propagate to the generated binaries for at least one package, in which case only a very small part of the binary is typically affected, yet causing two failures when running the test suites of all the impacted packages. User-reported and formal verification bugs do not exhibit a higher impact, with a lower rate of triggered bugs and one test failure. The manual analysis of a selection of the syntactic changes caused by some of our bugs (fuzzer-found and non fuzzer-found) in package assembly code, shows that either these changes have no semantic impact or that they would require very specific runtime circumstances to trigger execution divergence.
 
@@ -1270,6 +1280,15 @@ In this paper, we develop MoonShine, a novel strategy for distilling seeds for O
 We designed and implemented MoonShine as an extension to Syzkaller, a state-of-the-art evolutionary fuzzer for the Linux kernel. Starting from traces containing 2.8 million system calls gathered from 3,220 real-world programs, MoonShine distilled down to just over 14,000 calls while preserving 86% of the original code coverage. Using these distilled seed system call sequences, MoonShine was able to improve Syzkaller's achieved code coverage for the Linux kernel by 13% on average. MoonShine also found 14 new vulnerabilities in the Linux kernel that were not found by Syzkaller.
 
 
+### FOT: A Versatile, Configurable, Extensible Fuzzing Framework (FSE 2018)
+
+* <img src="image/pdf_24px.png">[Paper](https://hongxuchen.github.io/pdf/fot.pdf)
+
+* <img src="image/ppt_24px.png">[Slides](https://hongxuchen.github.io/ppt/fot.pptx)
+
+**Abstract:** Greybox fuzzing is one of the most effective approaches for detecting software vulnerabilities. Various new techniques have been continuously emerging to enhance the effectiveness and/or efficiency by incorporating novel ideas into different components of a greybox fuzzer. However, there lacks a modularized fuzzing framework that can easily plugin new techniques and hence facilitate the reuse, integration and comparison of different techniques. To address this problem, we propose a fuzzing framework, namely Fuzzing Orchestration Toolkit (FOT). FOT is designed to be versatile, configurable and extensible. With FOT and its extensions, we have found 111 new bugs from 11 projects. Among these bugs, 18 CVEs have been assigned. Video link: https://youtu.be/O6Qu7BJ8RP0
+
+
 ### Systematic Fuzzing and Testing of TLS Libraries (CCS 2016)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/CCS16_SystematicFuzzing.pdf)
@@ -1277,6 +1296,7 @@ We designed and implemented MoonShine as an extension to Syzkaller, a state-of-t
 **Abstract:** We present TLS-Attacker, an open source framework for evaluating the security of TLS libraries. TLS-Attacker allows security engineers to create custom TLS message flows and arbitrarily modify message contents using a simple interface in order to test the behavior of their libraries. Based on TLS-Attacker, we present a two-stage fuzzing approach to evaluate TLS server behavior. Our approach automatically searches for cryptographic failures and boundary violation vulnerabilities. It allowed us to find unusual padding oracle vulnerabilities and overflows/overreads in widely used TLS libraries, including OpenSSL, Botan, and MatrixSSL.
 
 Our findings motivate developers to create comprehensive test suites, including positive as well as negative tests, for the evaluation of TLS libraries. We use TLS-Attacker to create such a test suite framework which finds further problems in Botan.
+
 
 ### Protocol State Fuzzing of TLS Implementations (USENIX Security2015)
 

@@ -21,6 +21,12 @@
     - [Fuzz Testing based Data Augmentation to Improve Robustness of Deep Neural Networks](#fuzz-testing-based-data-augmentation-to-improve-robustness-of-deep-neural-networks-icse-2020)
     - [sFuzz: An Efficient Adaptive Fuzzer for Solidity Smart Contracts](#sfuzz-an-efficient-adaptive-fuzzer-for-solidity-smart-contracts-icse-2020)
 
+- **NDSS 2020**
+    - [HYPER-CUBE: High-Dimensional Hypervisor Fuzzing](#hyper-cube-high-dimensional-hypervisor-fuzzing-ndss-2020)
+    - [HotFuzz: Discovering Algorithmic Denial-of-Service Vulnerabilities Through Guided Micro-Fuzzing](#hotfuzz-discovering-algorithmic-denial-of-service-vulnerabilities-through-guided-micro-fuzzing-ndss-2020)
+    - [HFL: Hybrid Fuzzing on the Linux Kernel](#hfl-hybrid-fuzzing-on-the-linux-kernel-ndss-2020)
+    - [Not All Coverage Measurements Are Equal: Fuzzing by Coverage Accounting for Input Prioritization](#not-all-coverage-measurements-are-equal-fuzzing-by-coverage-accounting-for-input-prioritization-ndss-2020)
+  
 - **S&P 2020**
     - [SAVIOR: Towards Bug-Driven Hybrid Testing](#savior-towards-bug-driven-hybrid-testing-sp-2020)
 
@@ -28,9 +34,10 @@
     - [GREYONE: Data Flow Sensitive Fuzzing](#greyone-data-flow-sensitive-fuzzing-usenix-security2020)
     - [FuzzGuard: Filtering out Unreachable Inputs in Directed Grey-box Fuzzing through Deep Learning](#fuzzguard-filtering-out-unreachable-inputs-in-directed-grey-box-fuzzing-through-deep-learning-usenix-security2020)
 
-- **NDSS 2020**
-    - [HYPER-CUBE: High-Dimensional Hypervisor Fuzzing](#hyper-cube-high-dimensional-hypervisor-fuzzing-ndss-2020)
-
+- **SANER 2020**
+  - [ETHPLOIT: From Fuzzing to Efficient Exploit Generation against Smart Contracts](#ethploit-from-fuzzing-to-efficient-exploit-generation-against-smart-contracts-saner2020)
+  - [Sequence directed hybrid fuzzing]
+  
 - **ICST 2020**
     - [ct-fuzz: Fuzzing for Timing Leaks](#ct-fuzz-fuzzing-for-timing-leaks-icst-2020)
     - [AFLNET: A Greybox Fuzzer for Network Protocols](#aflnet-a-greybox-fuzzer-for-network-protocols-icst-2020)
@@ -227,6 +234,7 @@
   - [FUZZIFICATION: Anti-Fuzzing Technique (USENIX Security2019)](#fuzzification-anti-fuzzing-technique-usenix-security2019)
 
 - [**Kernel Fuzzing**](#kernel-fuzzing)
+  - [HFL: Hybrid Fuzzing on the Linux Kernel (NDSS 2020)](#hfl-hybrid-fuzzing-on-the-linux-kernel-ndss-2020)
   - [PeriScope: An Effective Probing and Fuzzing Framework for the Hardware-OS Boundary (NDSS2019)](#periscope-an-effective-probing-and-fuzzing-framework-for-the-hardware-os-boundary-ndss2019)
   - [Fuzzing File Systems via Two-Dimensional Input Space Exploration (S&P 2019)](#fuzzing-file-systems-via-two-dimensional-input-space-exploration-sp-2019)
   - [Razzer: Finding Kernel Race Bugs through Fuzzing (S&P 2019)](#razzer-finding-kernel-race-bugs-through-fuzzing-sp-2019)
@@ -235,6 +243,8 @@
   - [IMF: Inferred Model-based Fuzzer (CCS 2017)](#imf-inferred-model-based-fuzzer-ccs-2017)
 
 - [**Hybrid Fuzzing**](#hybrid-fuzzing)
+  - [Sequence directed hybrid fuzzing (SANER 2020)]
+  - [HFL: Hybrid Fuzzing on the Linux Kernel (NDSS 2020)](#hfl-hybrid-fuzzing-on-the-linux-kernel-ndss-2020)
   - [SAVIOR: Towards Bug-Driven Hybrid Testing (S&P 2020)](#savior-towards-bug-driven-hybrid-testing-sp-2020)
   - [Deferred Concretization in Symbolic Execution via Fuzzing (ISSTA 2019)](#deferred-concretization-in-symbolic-execution-via-fuzzing-issta-2019)
   - [Send Hardest Problems My Way: Probabilistic Path Prioritization for Hybrid Fuzzing (NDSS 2019)](#send-hardest-problems-my-way-probabilistic-path-prioritization-for-hybrid-fuzzing--ndss-2019)
@@ -243,7 +253,8 @@
   - [SAFL: increasing and accelerating testing coverage with symbolic execution and guided fuzzing (ICSE 2018)](#safl-increasing-and-accelerating-testing-coverage-with-symbolic-execution-and-guided-fuzzing-icse-2018)
   - [Driller: Argumenting Fuzzing Through Selective Symbolic Execution (NDSS 2016)](#driller-argumenting-fuzzing-through-selective-symbolic-execution-ndss-2016)
 
-- [**Deeply nested branches \ Addressing Magic bytes \ checksum**](#deeply-nested-branches--addressing-magic-bytes--checksum)
+- [**Coverage \ Deeply nested branches \ Addressing Magic bytes \ checksum**](#deeply-nested-branches--addressing-magic-bytes--checksum)
+  - [Not All Coverage Measurements Are Equal: Fuzzing by Coverage Accounting for Input Prioritization (NDSS 2020)](#not-all-coverage-measurements-are-equal-fuzzing-by-coverage-accounting-for-input-prioritization-ndss-2020)
   - [Matryoshka: fuzzing deeply nested branches (CCS 2019)](#matryoshka-fuzzing-deeply-nested-branches-ccs-2019)
   - [REDQUEEN: Fuzzing with Input-to-State Correspondence  (NDSS2019)](#redqueen-fuzzing-with-input-to-state-correspondence-ndss2019)
   - [T-Fuzz: fuzzing by program transformation (S&P 2018)](#t-fuzz-fuzzing-by-program-transformation-sp-2018)
@@ -276,13 +287,14 @@
 - [**Addressing Collision**](#addressing-collision)
   - [CollAFL: Path Sensitive Fuzzing (S&P 2018)](#collafl-path-sensitive-fuzzing-sp-2018)
 
-- [**Fuzzing Overhead & Performance**](#fuzzing-overhead--performance)
-  - [MemLock: Memory Usage Guided Fuzzing](#memlock-memory-usage-guided-fuzzing-icse2020)
+- [**Overhead & Performance of Fuzzing**](#fuzzing-overhead--performance)
   - [Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing (S&P 2019)](#full-speed-fuzzing-reducing-fuzzing-overhead-through-coverage-guided-tracing-sp-2019)
   - [INSTRIM Lightweight Instrumentation for Coverage-guided Fuzzing (NDSS 2018 Workshop)](#instrim-lightweight-instrumentation-for-coverage-guided-fuzzing-ndss-2018-workshop)
   - [Designing New Operating Primitives to Improve Fuzzing Performance (CCS 2017)](#designing-new-operating-primitives-to-improve-fuzzing-performance-ccs-2017)
 
 - [**Performance Fuzzing**](#performance-fuzzing)
+  - [HotFuzz: Discovering Algorithmic Denial-of-Service Vulnerabilities Through Guided Micro-Fuzzing (NDSS 2020)](#hotfuzz-discovering-algorithmic-denial-of-service-vulnerabilities-through-guided-micro-fuzzing-ndss-2020)
+  - [MemLock: Memory Usage Guided Fuzzing (ICSE 2020)](#memlock-memory-usage-guided-fuzzing-icse2020)
   - [Singularity: Pattern Fuzzing for Worst Case Complexity (FSE 2018)](#singularity-pattern-fuzzing-for-worst-case-complexity-fse-2018)
   - [PerfFuzz: Automatically Generating Pathological Inputs (ISSTA 2018)](#perffuzz-automatically-generating-pathological-inputs-issta-2018)
   - [Badger: Complexity Analysis with Fuzzing and Symbolic Execution (ISSTA 2018)](#badger-complexity-analysis-with-fuzzing-and-symbolic-execution-issta-2018)
@@ -323,6 +335,7 @@ Evaluation of Software Exploitability (PAC 2017)]()
 - [**SmartContracts**](#smart-contracts)
 - - [sFuzz: An Efficient Adaptive Fuzzer for Solidity Smart Contracts (ICSE 2020)](#sfuzz-an-efficient-adaptive-fuzzer-for-solidity-smart-contracts-icse-2020)
   - [Targeted Greybox Fuzzing with Static Lookahead Analysis (ICSE 2020)](#targeted-greybox-fuzzing-with-static-lookahead-analysis-icse-2020)
+  - [ETHPLOIT: From Fuzzing to Efficient Exploit Generation against Smart Contracts (SANER2020)](#ethploit-from-fuzzing-to-efficient-exploit-generation-against-smart-contracts-saner2020)
   - [Learning to Fuzz from Symbolic Execution with Application to Smart Contracts (CCS 2019)](#learning-to-fuzz-from-symbolic-execution-with-application-to-smart-contracts-ccs-2019)
   - [ContractFuzzer: Fuzzing Smart Contracts for Vulnerability Detection (ASE 2018)](#contractfuzzer-fuzzing-smart-contracts-for-vulnerability-detection-ase-2018)
 
@@ -331,7 +344,7 @@ Evaluation of Software Exploitability (PAC 2017)]()
   - [Intriguer: Field-Level Constraint Solving for Hybrid Fuzzing (CCS 2019)](#intriguer-field-level-constraint-solving-for-hybrid-fuzzing-ccs-2019)
   - [Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing (FSE 2019)](#just-fuzz-it-solving-floating-point-constraints-using-coverage-guided-fuzzing-fse-2019)
 
-- [Side-Channel Detection](#side-channel-detection)
+- [**Side-Channel Detection**](#side-channel-detection)
   - [JVM Fuzzing for JIT-Induced Side-Channel Detection (ICSE 2020)](#jvm-fuzzing-for-jit-induced-side-channel-detection-icse-2020)
   - [DifFuzz: Differential Fuzzing for Side-Channel Analysis (ICSE 2019)](#diffuzz-differential-fuzzing-for-side-channel-analysis-icse-2019)
   - [ct-fuzz: Fuzzing for Timing Leaks (ICST 2020)](#ct-fuzz-fuzzing-for-timing-leaks-icst-2020)
@@ -659,11 +672,20 @@ In this paper, we approach the problem of coverage-guided kernel fuzzing in an O
 
 # Hybrid Fuzzing:
 
+### HFL: Hybrid Fuzzing on the Linux Kernel (NDSS 2020)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/NDSS20_HFL.pdf)
+
+**Abstract:** Hybrid fuzzing, combining symbolic execution and fuzzing, is a promising approach for vulnerability discovery because each approach can complement the other. However, we observe that applying hybrid fuzzing to kernel testing is challenging because the following unique characteristics of the kernel make a naive adoption of hybrid fuzzing inefficient: 1) having many implicit control transfers determined by syscall arguments, 2) controlling and matching internal system state via system calls, and 3) inferring nested argument type for invoking system calls. Failure to handling such challenges will render both fuzzing and symbolic execution inefficient, and thereby, will result in an inefficient hybrid fuzzing. Although these challenges are essential to both fuzzing and symbolic execution, however, to the best of our knowledge, existing kernel testing approaches either naively use each technique separately without handling such challenges or imprecisely handle a part of challenges only by static analysis.
+
+To this end, this paper proposes HFL, which not only combines fuzzing with symbolic execution for hybrid fuzzing but also addresses kernel-specific fuzzing challenges via three distinct features: 1) converting implicit control transfers to explicit transfers, 2) inferring system call sequence to build a consistent system state, and 3) identifying nested arguments types of system calls. As a result, HFL found 24 previously unknown vulnerabilities in recent Linux kernels. Additionally, HFL achieves 14% higher code coverage than Syzkaller, and over S2E/TriforceAFL, achieving even eight times better coverage, using the same amount of resource (CPU, time, etc.). Regarding vulnerability discovery performance, HFL found 13 known vulnerabilities more than three times faster than Syzkaller.
+
+
 ### SAVIOR: Towards Bug-Driven Hybrid Testing (S&P 2020)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/SP20_SAVIOR.pdf)
 
-Hybrid testing combines fuzz testing and concolic execution. It leverages fuzz testing to test easy-to-reach code regions and uses concolic execution to explore code blocks guarded by complex branch conditions. As a result, hybrid testing is able to reach deeper into program state space than fuzz testing or concolic execution alone. Recently, hybrid testing has seen significant advancement. However, its code coveragecentric design is inefficient in vulnerability detection. First, it blindly selects seeds for concolic execution and aims to explore new code continuously. However, as statistics shows, a large portion of the explored code is often invulnerable. Therefore, giving equal attention to every part of the code during hybrid testing is a non-optimal strategy. It also slows down the detection of real vulnerabilities by over 43%. Second, classic hybrid testing quickly moves on after reaching a chunk of code, rather than examining the hidden defects inside. It may frequently miss subtle yet exploitable vulnerabilities despite that it has already explored the vulnerable code paths.
+**Abstract:** Hybrid testing combines fuzz testing and concolic execution. It leverages fuzz testing to test easy-to-reach code regions and uses concolic execution to explore code blocks guarded by complex branch conditions. As a result, hybrid testing is able to reach deeper into program state space than fuzz testing or concolic execution alone. Recently, hybrid testing has seen significant advancement. However, its code coveragecentric design is inefficient in vulnerability detection. First, it blindly selects seeds for concolic execution and aims to explore new code continuously. However, as statistics shows, a large portion of the explored code is often invulnerable. Therefore, giving equal attention to every part of the code during hybrid testing is a non-optimal strategy. It also slows down the detection of real vulnerabilities by over 43%. Second, classic hybrid testing quickly moves on after reaching a chunk of code, rather than examining the hidden defects inside. It may frequently miss subtle yet exploitable vulnerabilities despite that it has already explored the vulnerable code paths.
 
 We propose SAVIOR, a new hybrid testing framework pioneering a bug-driven principle. Unlike the existing hybrid testing tools, SAVIOR prioritizes the concolic execution of the seeds that are likely to uncover more vulnerabilities. Moreover, SAVIOR verifies all vulnerable program locations along the executing program path. By modeling faulty situations using SMT constraints, SAVIOR reasons the feasibility of vulnerabilities and generates concrete test cases as proofs. Our evaluation shows that the bugdriven approach outperforms the mainstream automated testing techniques, including the state-of-the-art hybrid testing driven by code coverage. On average, SAVIOR detects vulnerabilities 43.4% faster than DRILLER and 44.3% faster than QSYM, leading to the discovery of 88 and 76 more security violations, respectively. According to the experimental result on 11 well-fuzzed benchmark programs, SAVIOR triggers 481 unique security violations within the first 24 hours.
 
@@ -725,7 +747,15 @@ Our evaluation shows that QSYM does not just outperform state-of-the-art fuzzers
 
 
 
-# Deeply nested branches \ Addressing Magic bytes \ checksum: 
+# Coverage \ Deeply nested branches \ Addressing Magic bytes \ checksum: 
+
+### Not All Coverage Measurements Are Equal: Fuzzing by Coverage Accounting for Input Prioritization (NDSS 2020)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/NDSS20_Prioritization.pdf)
+ 
+**Abstract:** Coverage-based fuzzing has been actively studied and widely adopted for finding vulnerabilities in real-world software applications. With code coverage, such as statement coverage and transition coverage, as the guidance of input mutation, coverage-based fuzzing can generate inputs that cover more code and thus find more vulnerabilities without prerequisite information such as input format. Current coverage-based fuzzing tools treat covered code equally. All inputs that contribute to new statements or transitions are kept for future mutation no matter what the statements or transitions are and how much they impact security. Although this design is reasonable from the perspective of software testing, which aims to full code coverage, it is inefficient for vulnerability discovery since that 1) current techniques are still inadequate to reach full coverage within a reasonable amount of time, and that 2) we always want to discover vulnerabilities early so that it can be patched promptly. Even worse, due to the non-discriminative code coverage treatment, current fuzzing tools suffer from recent anti-fuzzing techniques and become much less effective in finding real-world vulnerabilities.
+
+To resolve the issue, we propose coverage accounting, an innovative approach that evaluates code coverage by security impacts. Based on the proposed metrics, we design a new scheme to prioritize fuzzing inputs and develop TortoiseFuzz, a greybox fuzzer for memory corruption vulnerabilities. We evaluated TortoiseFuzz on 30 real-world applications and compared it with 5 state-of-the-art greybox and hybrid fuzzers (AFL, AFLFast, FairFuzz, QSYM, and Angora). TortoiseFuzz outperformed all greybox fuzzers and most hybrid fuzzers. It also had comparative results for other hybrid fuzzers yet consumed much fewer resources. Additionally, TortoiseFuzz found 18 new real-world vulnerabilities and has got 8 new CVEs so far. We will open source TortoiseFuzz to foster future research.
 
 ### Matryoshka: fuzzing deeply nested branches (CCS 2019)
 
@@ -980,7 +1010,7 @@ We discovered 10 previously unknown vulnerabilities, and received 5 new CVEs.
 
 
 
-# Fuzzing Overhead & Performance：
+# Overhead & Performance of Fuzzing：
 
 ### Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing (S&P 2019)
 
@@ -1005,6 +1035,13 @@ In this paper, we tackle another way to improve the performance of fuzzing, whic
 
 
 # Performance Fuzzing
+
+### HotFuzz: Discovering Algorithmic Denial-of-Service Vulnerabilities Through Guided Micro-Fuzzing (NDSS 2020)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/NDSS20_HotFuzz.pdf)
+
+**Abstract:** Contemporary fuzz testing techniques focus on identifying memory corruption vulnerabilities that allow adversaries to achieve either remote code execution or information disclosure. Meanwhile, Algorithmic Complexity (AC)vulnerabilities, which are a common attack vector for denial-of-service attacks, remain an understudied threat. In this paper, we present HotFuzz, a framework for automatically discovering AC vulnerabilities in Java libraries. HotFuzz uses micro-fuzzing, a genetic algorithm that evolves arbitrary Java objects in order to trigger the worst-case performance for a method under test. We define Small Recursive Instantiation (SRI) as a technique to derive seed inputs represented as Java objects to micro-fuzzing. After micro-fuzzing, HotFuzz synthesizes test cases that triggered AC vulnerabilities into Java programs and monitors their execution in order to reproduce vulnerabilities outside the fuzzing framework. HotFuzz outputs those programs that exhibit high CPU utilization as witnesses for AC vulnerabilities in a Java library. We evaluate HotFuzz over the Java Runtime Environment (JRE), the 100 most popular Java libraries on Maven, and challenges contained in the DARPA Space and Time Analysis for Cybersecurity (STAC) program. We evaluate SRI's effectiveness by comparing the performance of micro-fuzzing with SRI, measured by the number of AC vulnerabilities detected, to simply using empty values as seed inputs. In this evaluation, we verified known AC vulnerabilities, discovered previously unknown AC vulnerabilities that we responsibly reported to vendors, and received confirmation from both IBM and Oracle. Our results demonstrate that micro-fuzzing finds AC vulnerabilities in real-world software, and that micro-fuzzing with SRI-derived seed inputs outperforms using empty values.
+
 
 ### MemLock: Memory Usage Guided Fuzzing (ICSE2020)
 
@@ -1224,7 +1261,6 @@ We implemented a prototype of GREYONE and evaluated it on the LAVA data set and 
 
 
 
-
 # Smart Contracts
 
 ### sFuzz: An Efficient Adaptive Fuzzer for Solidity Smart Contracts (ICSE 2020)
@@ -1241,6 +1277,13 @@ We implemented a prototype of GREYONE and evaluated it on the LAVA data set and 
 **Abstract:** Automatic test generation typically aims to generate inputs that explore new paths in the program under test in order to find bugs. Existing work has, therefore, focused on guiding the exploration toward program parts that are more likely to contain bugs by using an offline static analysis.
 
 In this paper, we introduce a novel technique for targeted greybox fuzzing using an online static analysis that guides the fuzzer toward a set of target locations, for instance, located in recently modified parts of the program. This is achieved by first semantically analyzing each program path that is explored by an input in the fuzzer’s test suite. The results of this analysis are then used to control the fuzzer’s specialized power schedule, which determines how often to fuzz inputs from the test suite. We implemented our technique by extending a state-of-the-art, industrial fuzzer for Ethereum smart contracts and evaluate its effectiveness on 27 real-world benchmarks. Using an online analysis is particularly suitable for the domain of smart contracts since it does not require any code instrumentation—adding instrumentation to contracts changes their semantics. Our experiments show that targeted fuzzing significantly outperforms standard greybox fuzzing for reaching 83% of the challenging target locations (up to 14x of median speed-up).
+
+
+### ETHPLOIT: From Fuzzing to Efficient Exploit Generation against Smart Contracts (SANER2020)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/SANER20_ETHPLOIT.pdf)
+
+**Abstract:** Smart contracts, programs running on blockchain systems, leverage diverse decentralized applications (DApps). Unfortunately, well-known smart contract platforms, Ethereum for example, face serious security problems. Exploits to contracts may cause enormous financial losses, which emphasize the importance of smart contract testing. However, current exploit generation tools have difficulty to solve hard constraints in execution paths and cannot simulate the blockchain behaviors very well. These problems cause a loss of …
 
 
 ### Learning to Fuzz from Symbolic Execution with Application to Smart Contracts (CCS 2019)

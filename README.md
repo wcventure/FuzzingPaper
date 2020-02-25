@@ -28,9 +28,12 @@
     - [GREYONE: Data Flow Sensitive Fuzzing](#greyone-data-flow-sensitive-fuzzing-usenix-security2020)
     - [FuzzGuard: Filtering out Unreachable Inputs in Directed Grey-box Fuzzing through Deep Learning](#fuzzguard-filtering-out-unreachable-inputs-in-directed-grey-box-fuzzing-through-deep-learning-usenix-security2020)
 
+- **NDSS 2020**
+    - [HYPER-CUBE: High-Dimensional Hypervisor Fuzzing](#hyper-cube-high-dimensional-hypervisor-fuzzing-ndss-2020)
+
 - **ICST 2020**
-  - [ct-fuzz: Fuzzing for Timing Leaks](#ct-fuzz-fuzzing-for-timing-leaks-icst-2020)
-  - [AFLNET: A Greybox Fuzzer for Network Protocols](#aflnet-a-greybox-fuzzer-for-network-protocols-icst-2020)
+    - [ct-fuzz: Fuzzing for Timing Leaks](#ct-fuzz-fuzzing-for-timing-leaks-icst-2020)
+    - [AFLNET: A Greybox Fuzzer for Network Protocols](#aflnet-a-greybox-fuzzer-for-network-protocols-icst-2020)
 
 - **OOPSLA 2019**
     - [FuzzFactory: Domain-Specific Fuzzing with Waypoints](#fuzzfactory-domain-specific-fuzzing-with-waypoints-oopsla-2019)
@@ -104,6 +107,7 @@
     - [ConFuz: A Concurrency Fuzzer](#confuzza-concurrency-fuzzer)
     - [INSTRCR: Lightweight instrumentation optimization based on coverage-guided fuzz testing](#instrcr-lightweight-instrumentation-optimization-based-on-coverage-guided-fuzz-testing-ccet-2019)
     - [HFuzz: Towards automatic fuzzing testing of NB-IoT core network protocols implementations](#hfuzz-towards-automatic-fuzzing-testing-of-nb-iot-core-network-protocols-implementations-fgcs-2019)
+    - [Study and Comparison of General Purpose Fuzzers](#study-and-comparison-of-general-purpose-fuzzers)
 
 - **S&P 2018**
     - [T-Fuzz: fuzzing by program transformation](#t-fuzz-fuzzing-by-program-transformation-sp-2018)
@@ -202,8 +206,10 @@
   - [ConFuzz—A Concurrency Fuzzer](#confuzza-concurrency-fuzzer)
 
 - [**Evaluate Fuzzing**](#evaluate-fuzzing)
-  - [Evaluating Fuzz Testing (CCS 2018)](#evaluating-fuzz-testing-ccs-2018)
   - [A Feature-Oriented Corpus for understanding, Evaluating and Improving Fuzz Testing (ASIACCS 2019)](#a-feature-oriented-corpus-for-understanding-evaluating-and-improving-fuzz-testing-asiaccs-2019)
+  - [Study and Comparison of General Purpose Fuzzers](#study-and-comparison-of-general-purpose-fuzzers)
+  - [Evaluating Fuzz Testing (CCS 2018)](#evaluating-fuzz-testing-ccs-2018)
+
 
 - [**Instrumentation**](#instrumentation)
   - [INSTRCR: Lightweight instrumentation optimization based on coverage-guided fuzz testing (CCET 2019)](#instrcr-lightweight-instrumentation-optimization-based-on-coverage-guided-fuzz-testing)
@@ -331,6 +337,7 @@ Evaluation of Software Exploitability (PAC 2017)]()
   - [ct-fuzz: Fuzzing for Timing Leaks (ICST 2020)](#ct-fuzz-fuzzing-for-timing-leaks-icst-2020)
 
 - [**Interesting Fuzzing**](#interesting-fuzzing)
+  - [HYPER-CUBE: High-Dimensional Hypervisor Fuzzing (NDSS 2020)](#hyper-cube-high-dimensional-hypervisor-fuzzing-ndss-2020)
   - [FuzzFactory: Domain-Specific Fuzzing with Waypoints (OOPSLA 2019)](#fuzzfactory-domain-specific-fuzzing-with-waypoints-oopsla-2019)
   - [Compiler Fuzzing: How Much Does It Matter (OOPSLA 2019)](#compiler-fuzzing-how-much-does-it-matter-oopsla2019)
   - [FUDGE: Fuzz Driver Generation at Scale (FSE 2019)](#fudge-fuzz-driver-generation-at-scale-fse-2019)
@@ -471,6 +478,20 @@ We have implemented classfuzz and conducted an extensive evaluation of it agains
 
 # Evaluate Fuzzing
 
+### A Feature-Oriented Corpus for understanding, Evaluating and Improving Fuzz Testing (ASIACCS 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/ASIACCS19_Feature-Oriented.pdf)
+ 
+**Abstract:** Fuzzing is a promising technique for detecting security vulnerabilities. Newly developed fuzzers are typically evaluated in terms of the number of bugs found on vulnerable programs/binaries. However,existing corpora usually do not capture the features that prevent fuzzers from finding bugs, leading to ambiguous conclusions on the pros and cons of the fuzzers evaluated. A typical example is that Driller detects more bugs than AFL, but its evaluation cannot establish if the advancement of Driller stems from the concolic execution or not, since, for example, its ability in resolving a dataset`s magic values is unclear. In this paper, we propose to address the above problem by generating corpora based on search-hampering features. As a proof-of-concept, we have designed FEData, a prototype corpus that currently focuses on four search-hampering features to generate vulnerable programs for fuzz testing. Unlike existing corpora that can only answer "how", FEData can also further answer "why" by exposing (or understanding) the reasons for the identified weaknesses in a fuzzer. The "why" information serves as the key to the improvement of fuzzers.
+
+
+### Study and Comparison of General Purpose Fuzzers
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/J19_Study.pdf)
+ 
+**Abstract:** Fuzz testing is a widely used technique for the detection of vulnerabilities whose popularity has led to the development of various tools that do fuzz testing. General-purpose fuzzers work in all domains while some other fuzzers are targeted towards some specic domain. Evaluation of these tools is not an easy task since different fuzzing tools excel in dierent domains. In this paper, we evaluate 3 such general-purpose fuzzing tools namely libFuzzer, American Fuzzy Lop(AFL) and honggfuzz on 2 metrics, i.e. their bug finding capability and their code coverage. We use the google fuzzer-test-suite which has 24 applications spanning several domains. libFuzzer performs best out of the three in finding memory leaks and out-of-memory related bugs but for other kinds of bugs, all three perform at par. honggfuzz seems to be the best in terms of coverage, though libFuzzer is not far behind, which we believe is because of our runs being of short duration.
+
+
 ### Evaluating Fuzz Testing (CCS 2018)
 
 * <img src="image/youdao_note_24px.png">[Reading Note](http://note.youdao.com/noteshare?id=dce0794335cedbca49b3de99b38952b5&sub=5E92CEBD198B436D9133230B459EB03D)
@@ -478,13 +499,6 @@ We have implemented classfuzz and conducted an extensive evaluation of it agains
 * <img src="image/pdf_24px.png">[Paper](./Paper/CCS18_Evaluating.pdf)
  
 **Abstract:** Fuzz testing has enjoyed great success at discovering security critical bugs in real software. Recently, researchers have devoted significant effort to devising new fuzzing techniques, strategies, and algorithms. Such new ideas are primarily evaluated experimentally so an important question is: What experimental setup is needed to produce trustworthy results? We surveyed the recent research literature and assessed the experimental evaluations carried out by 32 fuzzing papers. We found problems in every evaluation we considered. We then performed our own extensive experimental evaluation using an existing fuzzer. Our results showed that the general problems we found in existing experimental evaluations can indeed translate to actual wrong or misleading assessments. We conclude with some guidelines that we hope will help improve experimental evaluations of fuzz testing algorithms, making reported results more robust.
-
-
-### A Feature-Oriented Corpus for understanding, Evaluating and Improving Fuzz Testing (ASIACCS 2019)
-
-* <img src="image/pdf_24px.png">[Paper](./Paper/ASIACCS19_Feature-Oriented.pdf)
- 
-**Abstract:** Fuzzing is a promising technique for detecting security vulnerabilities. Newly developed fuzzers are typically evaluated in terms of the number of bugs found on vulnerable programs/binaries. However,existing corpora usually do not capture the features that prevent fuzzers from finding bugs, leading to ambiguous conclusions on the pros and cons of the fuzzers evaluated. A typical example is that Driller detects more bugs than AFL, but its evaluation cannot establish if the advancement of Driller stems from the concolic execution or not, since, for example, its ability in resolving a dataset`s magic values is unclear. In this paper, we propose to address the above problem by generating corpora based on search-hampering features. As a proof-of-concept, we have designed FEData, a prototype corpus that currently focuses on four search-hampering features to generate vulnerable programs for fuzz testing. Unlike existing corpora that can only answer "how", FEData can also further answer "why" by exposing (or understanding) the reasons for the identified weaknesses in a fuzzer. The "why" information serves as the key to the improvement of fuzzers.
 
 
 
@@ -1288,6 +1302,16 @@ We instantiate our approach to the problem of fuzzing smart contracts, a domain 
 
 
 # Interesting Fuzzing
+
+### HYPER-CUBE: High-Dimensional Hypervisor Fuzzing (NDSS 2020)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/NDSS20_HYPER-CUBE.pdf)
+
+**Abstract:** Applying modern fuzzers to novel targets is often a very lucrative venture. Hypervisors are part of a very critical code base: compromising them could allow an attacker to compromise the whole cloud infrastructure of any cloud provider. In this paper, we build a novel fuzzer that aims explicitly at testing modern hypervisors.
+Our high throughput fuzzer design for long running interactive targets allows us to fuzz a large number of hypervisors, both open source, and proprietary. In contrast to one-dimensional fuzzers such as AFL, HYPER-CUBE can interact with any number of interfaces in any order.
+
+Our evaluation shows that we can find more bugs (over 2x) and coverage (as much as 2x) than state of the art hypervisor fuzzers. Additionally, in most cases, we were able to do so using multiple orders of magnitude less time than comparable fuzzers. HYPER-CUBE was also able to rediscover a set of well-known vulnerabilities for hypervisors, such as VENOM, in less than five minutes. In total, HYPER-CUBE found 54 novel bugs, and so far we obtained 37 CVEs. Our evaluation results demonstrates that next generation coverage-guided fuzzers should incorporate a higher-throughput design for long running targets such as hypervisors.
+
 
 ### FuzzFactory: Domain-Specific Fuzzing with Waypoints (OOPSLA 2019)
 

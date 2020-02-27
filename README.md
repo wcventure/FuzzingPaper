@@ -1,6 +1,6 @@
 # Recent Papers Related To Fuzzing
 
-# All Papers (Classification according to Conference)
+# All Papers (Classification according to Publication)
 
 - **Survey/Review**
     - [Fuzzing: Hack, Art, and Science](#fuzzing-hack-art-and-science-cacm-2020)
@@ -38,6 +38,9 @@
 - **SANER 2020**
   - [ETHPLOIT: From Fuzzing to Efficient Exploit Generation against Smart Contracts](#ethploit-from-fuzzing-to-efficient-exploit-generation-against-smart-contracts-saner2020)
   - [Sequence directed hybrid fuzzing]
+  
+- **Others 2020**
+  - [MEUZZ: Smart Seed Scheduling for Hybrid Fuzzing](#meuzz-smart-seed-scheduling-for-hybrid-fuzzing)
   
 - **ICST 2020**
     - [ct-fuzz: Fuzzing for Timing Leaks](#ct-fuzz-fuzzing-for-timing-leaks-icst-2020)
@@ -264,7 +267,7 @@
   - [FairFuzz: A Targeted Mutation Strategy for Increasing Greybox Fuzz Testing Coverage (ASE 2018)](#fairfuzz-a-targeted-mutation-strategy-for-increasing-greybox-fuzz-testing-coverage-ase-2018)
   - [VUzzer: Application-aware Evolutionary Fuzzing (NDSS 2017)](#vuzzer-application-aware-evolutionary-fuzzing-ndss-2017)
   
-- [**Inputs-aware Fuzzing**](#inputs-aware-fuzzing)
+- [**Grammars \ Inputs-aware Fuzzing**](#inputs-aware-fuzzing)
   - [Semantic Fuzzing with Zest (ISSTA 2019)](#semantic-fuzzing-with-zest-issta-2019)
   - [Cerebro: Context-aware Adaptive Fuzzing for Effective Vulnerability Detection (FSE 2019)](#cerebro-context-aware-adaptive-fuzzing-for-effective-vulnerability-detection-fse-2019)
   - [Parser-Directed Fuzzing (PLDI 2019)](#parser-directed-fuzzing-pldi-2019)
@@ -308,6 +311,7 @@
   - [AddressSanitizer: A Fast Address Sanity Checker  (USENIX Security2012)](#addressSanitizer-a-fast-address-sanity-checker-usenix-security2012)
 
 - [**Schedule (Power & Mutation)**](#schedule-power--mutation)
+  - [MEUZZ: Smart Seed Scheduling for Hybrid Fuzzing](#meuzz-smart-seed-scheduling-for-hybrid-fuzzing)
   - [MOPT: Optimize Mutation Scheduling for Fuzzers (USENIX Security2019)](#mopt-optimize-mutation-scheduling-for-fuzzers-usenix-security2019)
   - [Coverage-based Greybox Fuzzing as Markov Chain (CCS 2016)](#coverage-based-greybox-fuzzing-as-markov-chain-ccs-2016)
 
@@ -837,7 +841,7 @@ In this paper, we present an application-aware evolutionary fuzzing strategy tha
 
 
 
-# Inputs-aware Fuzzing
+# Grammars \ Inputs-aware Fuzzing
 
 ### Smart Greybox Fuzzing (TSE 2019)
 
@@ -912,6 +916,8 @@ In this paper, we pre­sent the de­sign and im­ple­men­ta­ti­on of GRI­MO
 
 
 ### NAUTILUS: Fishing for Deep Bugs with Grammars (NDSS 2019)
+
+* <img src="image/wechat_24px.png">[Reading Note From BAIZE](https://mp.weixin.qq.com/s/8TaYwNTeNsAMFr0UNNNMHg)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/NDSS19_Nautilus.pdf)
 
@@ -1144,6 +1150,15 @@ AddressSanitizer achieves efficiency without sacrificing comprehensiveness. Its 
 
 
 # Schedule (Power & Mutation)
+
+### MEUZZ: Smart Seed Scheduling for Hybrid Fuzzing
+
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2002.08568.pdf)
+
+**Abstract:** Seed scheduling is a prominent factor in determining the yields of hybrid fuzzing. Existing hybrid fuzzers schedule seeds based on fixed heuristics that aim to predict input utilities. However, such heuristics are not generalizable as there exists no one-size-fits-all rule applicable to different programs. They may work well on the programs from which they were derived, but not others.
+To overcome this problem, we design a Machine learning-Enhanced hybrid fUZZing system (MEUZZ), which employs supervised machine learning for adaptive and generalizable seed scheduling. MEUZZ determines which new seeds are expected to produce better fuzzing yields based on the knowledge learned from past seed scheduling decisions made on the same or similar programs. MEUZZ's learning is based on a series of features extracted via code reachability and dynamic analysis, which incurs negligible runtime overhead (in microseconds). Moreover, MEUZZ automatically infers the data labels by evaluating the fuzzing performance of each selected seed. As a result, MEUZZ is generally applicable to, and performs well on, various kinds of programs.
+Our evaluation shows MEUZZ significantly outperforms the state-of-the-art grey-box and hybrid fuzzers, achieving 27.1% more code coverage than QSYM. The learned models are reusable and transferable, which boosts fuzzing performance by 7.1% on average and improves 68% of the 56 cross-program fuzzing campaigns. MEUZZ discovered 47 deeply hidden and previously unknown bugs--with 21 confirmed and fixed by the developers--when fuzzing 8 well-tested programs with the same configurations as used in previous work.
+
 
 ### MOPT: Optimize Mutation Scheduling for Fuzzers (USENIX Security2019)
 

@@ -311,12 +311,12 @@
   - [AddressSanitizer: A Fast Address Sanity Checker  (USENIX Security2012)](#addressSanitizer-a-fast-address-sanity-checker-usenix-security2012)
 
 - [**Schedule (Power & Mutation)**](#schedule-power--mutation)
-  - [MEUZZ: Smart Seed Scheduling for Hybrid Fuzzing](#meuzz-smart-seed-scheduling-for-hybrid-fuzzing)
   - [MOPT: Optimize Mutation Scheduling for Fuzzers (USENIX Security2019)](#mopt-optimize-mutation-scheduling-for-fuzzers-usenix-security2019)
   - [Coverage-based Greybox Fuzzing as Markov Chain (CCS 2016)](#coverage-based-greybox-fuzzing-as-markov-chain-ccs-2016)
 
 - [**Learning-based Fuzzing**](#learning-based-fuzzing)
   - [FuzzGuard: Filtering out Unreachable Inputs in Directed Grey-box Fuzzing through Deep Learning (USENIX Security2020)](#fuzzguard-filtering-out-unreachable-inputs-in-directed-grey-box-fuzzing-through-deep-learning-usenix-security2020)
+  - [MEUZZ: Smart Seed Scheduling for Hybrid Fuzzing](#meuzz-smart-seed-scheduling-for-hybrid-fuzzing)
   - [NeuFuzz: Efficient Fuzzing With Deep Neural Network (Access 2019)](#neufuzz-efficient-fuzzing-with-deep-neural-network-access-2019)
   - [LearnAFL: Greybox Fuzzing With Knowledge Enhancement (Access 2019)](#learnafl-greybox-fuzzing-with-knowledge-enhancement-access-2019)
   - [Learning-Guided Network Fuzzing for Testing Cyber-Physical System Defences (ASE 2019)](#learning-guided-network-fuzzing-for-testing-cyber-physical-system-defences-ase-2019)
@@ -479,6 +479,8 @@ We have evaluated classming on mainstream JVM implementations, including OpenJDK
 ### Different is Good: Detecting the Use of Uninitialized Variables through Differential Replay (CCS 2019)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/CCS19_Different.pdf)
+
+* <img src="image/youdao_note_24px.png">[Reading Note](http://note.youdao.com/noteshare?id=5bfff2d122f4ef63d8d42a4a4efed410)
 
 **Abstract:** The use of uninitialized variables is a common issue. It could cause kernel information leak, which defeats the widely deployed security defense, i.e., kernel address space layout randomization (KASLR). Though a recent system called Bochspwn Reloaded reported multiple memory leaks in Windows kernels, how to effectively detect this issue is still largely behind.
 

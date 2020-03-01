@@ -31,6 +31,7 @@
 - **S&P 2020**
     - [SAVIOR: Towards Bug-Driven Hybrid Testing](#savior-towards-bug-driven-hybrid-testing-sp-2020)
     - [RetroWrite: Statically Instrumenting COTS Binaries for Fuzzing and Sanitization](#retrowrite-statically-instrumenting-cots-binaries-for-fuzzing-and-sanitization-sp-2020)
+    - [IJON: Exploring Deep State Spaces via Fuzzing (S&P 2020)](#ijon-exploring-deep-state-spaces-via-fuzzing-sp-2020)
 
 - **USENIX Security 2020**
     - [GREYONE: Data Flow Sensitive Fuzzing](#greyone-data-flow-sensitive-fuzzing-usenix-security2020)
@@ -40,12 +41,13 @@
   - [ETHPLOIT: From Fuzzing to Efficient Exploit Generation against Smart Contracts](#ethploit-from-fuzzing-to-efficient-exploit-generation-against-smart-contracts-saner2020)
   - [Sequence directed hybrid fuzzing]
   
-- **Others 2020**
-  - [MEUZZ: Smart Seed Scheduling for Hybrid Fuzzing](#meuzz-smart-seed-scheduling-for-hybrid-fuzzing)
-  
 - **ICST 2020**
     - [ct-fuzz: Fuzzing for Timing Leaks](#ct-fuzz-fuzzing-for-timing-leaks-icst-2020)
     - [AFLNET: A Greybox Fuzzer for Network Protocols](#aflnet-a-greybox-fuzzer-for-network-protocols-icst-2020)
+
+- **Others 2020**
+  - [MEUZZ: Smart Seed Scheduling for Hybrid Fuzzing](#meuzz-smart-seed-scheduling-for-hybrid-fuzzing)
+  - [Binary-level Directed Fuzzing for Use-After-Free Vulnerabilities](#binary-level-directed-fuzzing-for-use-after-free-vulnerabilities)
 
 - **OOPSLA 2019**
     - [FuzzFactory: Domain-Specific Fuzzing with Waypoints](#fuzzfactory-domain-specific-fuzzing-with-waypoints-oopsla-2019)
@@ -289,8 +291,12 @@
 - [**Ensemble Fuzzing**](#ensemble-fuzzing)
     - [EnFuzz: Ensemble Fuzzing with Seed Synchronization among Diverse Fuzzers (USENIX Security2019) ](#enfuzz-ensemble-fuzzing-with-seed-synchronization-among-diverse-fuzzers-usenix-security2019)
 
-- [**Directed Fuzzing**](#directed-fuzzing)
+- [**State Guided Fuzzing**](#state-guided-fuzzing)
   - [Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities (ICSE 2019)](#typestate-guided-fuzzer-for-discovering-use-after-free-vulnerabilities-icse-2020)
+  - [IJON: Exploring Deep State Spaces via Fuzzing (S&P 2020)](#ijon-exploring-deep-state-spaces-via-fuzzing-sp-2020)
+
+- [**Directed Fuzzing**](#directed-fuzzing)
+  - [Binary-level Directed Fuzzing for Use-After-Free Vulnerabilities](#binary-level-directed-fuzzing-for-use-after-free-vulnerabilities)
   - [Ankou: Guiding Grey-box Fuzzing towards Combinatorial Difference (ICSE 2019)](#ankou-guiding-grey-box-fuzzing-towards-combinatorial-difference-icse-2020)
   - [Directed Greybox Fuzzing (CCS 2017)](#directed-greybox-fuzzing-ccs-2017)
   - [Hawkeye: Towards a Desired Directed Grey-box Fuzzer (CCS 2018)](#hawkeye-towards-a-desired-directed-grey-box-fuzzer-ccs-2018)
@@ -338,6 +344,7 @@ Evaluation of Software Exploitability (PAC 2017)]()
 
 - [**Binary Fuzzing**](#binary-fuzzing)
   - [RetroWrite: Statically Instrumenting COTS Binaries for Fuzzing and Sanitization (S&P 2020)](#retrowrite-statically-instrumenting-cots-binaries-for-fuzzing-and-sanitization-sp-2020)
+  - [Binary-level Directed Fuzzing for Use-After-Free Vulnerabilities]
   - [Ptrix: Efficient Hardware-Assisted Fuzzing for COTS Binary (ASIACCS 2019)](#ptrix-efficient-hardware-assisted-fuzzing-for-cots-binary-asiaccs-2019)
   - [Steelix: Program-State Based Binary Fuzzing (FSE 2017)](#steelix-program-state-based-binary-fuzzing-fse-2017)
 
@@ -1008,7 +1015,8 @@ In this work, we present a new mutation strategy that maximizes the likelihood o
 In this paper, inspired by the idea of ensemble learning, we first propose an ensemble fuzzing approach EnFuzz, that integrates multiple fuzzing strategies to obtain better performance and generalization ability than that of any constituent fuzzer alone. First, we define the diversity of the base fuzzers and choose those most recent and well-designed fuzzers as base fuzzers. Then, EnFuzz ensembles those base fuzzers with seed synchronization and result integration mechanisms. For evaluation, we implement EnFuzz , a prototype basing on four strong open-source fuzzers (AFL, AFLFast, AFLGo, FairFuzz), and test them on Google's fuzzing test suite, which consists of widely used real-world applications. The 24-hour experiment indicates that, with the same resources usage, these four base fuzzers perform variously on different applications, while EnFuzz shows better generalization ability and always outperforms others in terms of path coverage, branch coverage and crash discovery. Even compared with the best cases of AFL, AFLFast, AFLGo and FairFuzz, EnFuzz discovers 26.8%, 117%, 38.8% and 39.5% more unique crashes, executes 9.16%, 39.2%, 19.9% and 20.0% more paths and covers 5.96%, 12.0%, 21.4% and 11.1% more branches respectively.
 
 
-# Directed Fuzzing
+
+# State Guided Fuzzing
 
 ### Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities (ICSE 2020)
 
@@ -1029,6 +1037,27 @@ In addition, we also adopt the information flow analysis to improve the efficien
 We performed a thorough evaluation of UAFL on 14 widely-used real-world programs.
 The experiment results show that UAFL substantially outperforms the state-of-the-art fuzzers, including AFL, AFLFast, FairFuzz, MOpt, Angora and QSYM, in terms of the time taken to discover vulnerabilities.
 We discovered 10 previously unknown vulnerabilities, and received 5 new CVEs.
+
+
+### IJON: Exploring Deep State Spaces via Fuzzing (S&P 2020)
+
+* <img src="image/wechat_24px.png">[Reading Note](https://zhuanlan.zhihu.com/p/109971382)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/SP20_IJON.pdf)
+
+**Abstract:** Although current fuzz testing (fuzzing) methods are highly effective, there are still many situations such as complex state machines where fully automated approaches fail. State-of-the-art fuzzing methods offer very limited ability for a human to interact and aid the fuzzer in such cases. More specifically, most current approaches are limited to adding a dictionary or new seed inputs to guide the fuzzer. When dealing with complex programs, these mechanisms are unable to uncover new parts of the codebase.
+
+In this paper, we propose IJON, an annotation mechanism that a human analyst can use to guide the fuzzer. In contrast to the two aforementioned techniques, this approach allows a more systematic exploration of the program’s behavior based on the data representing the internal state of the program. As a consequence, using only a small (usually one line) annotation, a user can help the fuzzer to solve previously unsolvable challenges. We extended various AFL-based fuzzers with the ability to annotate the source code of the target application with guidance hints. Our evaluation demonstrates that such simple annotations are able to solve problems that—to the best of our knowledge—no other current fuzzer or symbolic execution based tool can overcome. For example, with our extension, a fuzzer is able to play and solve games such as Super Mario Bros. or resolve more complex patterns such as hash map lookups. To further demonstrate the capabilities of our annotations, we use AFL combined with IJON to uncover both novel security issues and issues that previously required a custom and comprehensive grammar to be uncovered. Lastly, we show that using IJON and AFL, one can solve many challenges from the CGC data set that resisted all fully automated and human-guided attempts so far.
+
+
+
+# Directed Fuzzing
+
+### Binary-level Directed Fuzzing for Use-After-Free Vulnerabilities
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/Arxiv20_BinaryUAF.pdf)
+
+**Abstract:** Directed fuzzing focuses on automatically testing specific parts of the code by taking advantage of additional information such as (partial) bug stack trace, patches or risky operations. Key applications include bug reproduction, patch testing and static analysis report verification. Although directed fuzzing has received a lot of attention recently, hard-to-detect vulnerabilities such as Use-Afer-Free (UAF) are still not well addressed, more especially at the binary level. We propose UAFuzz, the first (binary-level) directed greybox fuzzer dedicated to UAF bugs. The technique features a fuzzing engine tailored to UAF specifics, a lightweight code instrumentation and an efficient bug triage step. Experimental evaluation for bug reproduction on real cases demonstrates that UAFuzz significantly outperforms state-of-the-art directed fuzzers in terms of fault detection rate, time to exposure and bug triaging. UAFuzz has also been proven effective in patch testing, leading to the discovery of 20 new bugs in Perl, GPAC and GNU Patch (including a buggy patch) - all of them have been acknowledged and 14 have been fixed. Last but not least, we provide to the community the first fuzzing benchmark dedicated to UAF, built on both real codes and real bugs.
 
 
 ### Ankou: Guiding Grey-box Fuzzing towards Combinatorial Difference (ICSE 2020)

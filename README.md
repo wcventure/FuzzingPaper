@@ -118,6 +118,10 @@
     - [Ptrix: Efficient Hardware-Assisted Fuzzing for COTS Binary](#ptrix-efficient-hardware-assisted-fuzzing-for-cots-binary-asiaccs-2019)
     - [A Feature-Oriented Corpus for understanding, Evaluating and Improving Fuzz Testing](#a-feature-oriented-corpus-for-understanding-evaluating-and-improving-fuzz-testing-asiaccs-2019)
 
+- **ICST 2019**
+    - [MemFuzz: Using Memory Accesses to Guide Fuzzing](#memfuzz-using-memory-accesses-to-guide-fuzzing-icst-2019)
+    - [SeqFuzzer: An Industrial Protocol Fuzzing Framework in Deep Learning Perspective](#seqfuzzer-an-industrial-protocol-fuzzing-framework-in-deep-learning-perspective-icst-2019)
+
 - **Other 2019**
     - [ConFuz: A Concurrency Fuzzer](#confuzza-concurrency-fuzzer)
     - [INSTRCR: Lightweight instrumentation optimization based on coverage-guided fuzz testing](#instrcr-lightweight-instrumentation-optimization-based-on-coverage-guided-fuzz-testing-ccet-2019)
@@ -289,11 +293,12 @@
   - [Skyfire: Data-Driven Seed Generation for Fuzzing (S&P 2017)](#skyfire-data-driven-seed-generation-for-fuzzing-sp-2017)
 
 - [**Ensemble Fuzzing**](#ensemble-fuzzing)
-    - [EnFuzz: Ensemble Fuzzing with Seed Synchronization among Diverse Fuzzers (USENIX Security2019) ](#enfuzz-ensemble-fuzzing-with-seed-synchronization-among-diverse-fuzzers-usenix-security2019)
+  - [EnFuzz: Ensemble Fuzzing with Seed Synchronization among Diverse Fuzzers (USENIX Security2019) ](#enfuzz-ensemble-fuzzing-with-seed-synchronization-among-diverse-fuzzers-usenix-security2019)
 
 - [**State Guided Fuzzing**](#state-guided-fuzzing)
   - [Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities (ICSE 2019)](#typestate-guided-fuzzer-for-discovering-use-after-free-vulnerabilities-icse-2020)
   - [IJON: Exploring Deep State Spaces via Fuzzing (S&P 2020)](#ijon-exploring-deep-state-spaces-via-fuzzing-sp-2020)
+  - [MemFuzz: Using Memory Accesses to Guide Fuzzing (ICST 2019)](#memfuzz-using-memory-accesses-to-guide-fuzzing-icst-2019)
 
 - [**Directed Fuzzing**](#directed-fuzzing)
   - [Binary-level Directed Fuzzing for Use-After-Free Vulnerabilities](#binary-level-directed-fuzzing-for-use-after-free-vulnerabilities)
@@ -303,7 +308,6 @@
 
 - [**Addressing Collision**](#addressing-collision)
   - [CollAFL: Path Sensitive Fuzzing (S&P 2018)](#collafl-path-sensitive-fuzzing-sp-2018)  
-
 - [**Performance Fuzzing**](#performance-fuzzing)
   - [HotFuzz: Discovering Algorithmic Denial-of-Service Vulnerabilities Through Guided Micro-Fuzzing (NDSS 2020)](#hotfuzz-discovering-algorithmic-denial-of-service-vulnerabilities-through-guided-micro-fuzzing-ndss-2020)
   - [MemLock: Memory Usage Guided Fuzzing (ICSE 2020)](#memlock-memory-usage-guided-fuzzing-icse2020)
@@ -327,6 +331,7 @@
   - [LearnAFL: Greybox Fuzzing With Knowledge Enhancement (Access 2019)](#learnafl-greybox-fuzzing-with-knowledge-enhancement-access-2019)
   - [Learning-Guided Network Fuzzing for Testing Cyber-Physical System Defences (ASE 2019)](#learning-guided-network-fuzzing-for-testing-cyber-physical-system-defences-ase-2019)
   - [NEUZZ: Efficient Fuzzing with Neural Program Smoothing (S&P 2019)](#neuzz-efficient-fuzzing-with-neural-program-smoothing-sp-2019)
+  - [SeqFuzzer: An Industrial Protocol Fuzzing Framework in Deep Learning Perspective (ICST 2019)](#seqfuzzer-an-industrial-protocol-fuzzing-framework-in-deep-learning-perspective-icst-2019)
   - [Compiler Fuzzing through Deep Learning (ISSTA 2018)](#compiler-fuzzing-through-deep-learning-issta-2018)
   - [Deep Reinforcement Fuzzing (SPW 2018)](#deep-reinforcement-fuzzing-spw-2018)
   - [ExploitMeter: Combining Fuzzing with Machine Learning for Automated
@@ -1050,6 +1055,13 @@ We discovered 10 previously unknown vulnerabilities, and received 5 new CVEs.
 In this paper, we propose IJON, an annotation mechanism that a human analyst can use to guide the fuzzer. In contrast to the two aforementioned techniques, this approach allows a more systematic exploration of the program’s behavior based on the data representing the internal state of the program. As a consequence, using only a small (usually one line) annotation, a user can help the fuzzer to solve previously unsolvable challenges. We extended various AFL-based fuzzers with the ability to annotate the source code of the target application with guidance hints. Our evaluation demonstrates that such simple annotations are able to solve problems that—to the best of our knowledge—no other current fuzzer or symbolic execution based tool can overcome. For example, with our extension, a fuzzer is able to play and solve games such as Super Mario Bros. or resolve more complex patterns such as hash map lookups. To further demonstrate the capabilities of our annotations, we use AFL combined with IJON to uncover both novel security issues and issues that previously required a custom and comprehensive grammar to be uncovered. Lastly, we show that using IJON and AFL, one can solve many challenges from the CGC data set that resisted all fully automated and human-guided attempts so far.
 
 
+### MemFuzz: Using Memory Accesses to Guide Fuzzing (ICST 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/ICST19_MemFuzz.pdf)
+
+**Abstract:** Fuzzing is a form of random testing that is widely used for finding bugs and vulnerabilities. State of the art approaches commonly leverage information about the control flow of prior executions of the program under test to decide which inputs to mutate further. By relying solely on control flow information to characterize executions, such approaches may miss relevant differences. We propose augmenting evolutionary fuzzing by additionally leveraging information about memory accesses performed by the target program. The resulting approach can leverage more sophisticated information about the execution of the target program, enhancing the effectiveness of the evolutionary fuzzing. We implement our approach as a modification of the widely used AFL fuzzer and evaluate our implementation on three widely used target applications. We find distinct crashes from those detected by AFL for all three targets in our evaluation.
+
+
 
 # Directed Fuzzing
 
@@ -1256,6 +1268,13 @@ In this paper, we propose a deep-learning-based approach to predict the reachabi
 * <img src="image/pdf_24px.png">[Paper](./Paper/SP19_NEUZZ.pdf)
 
 **Abstract:** Fuzzing has become the de facto standard technique for finding software vulnerabilities. However, even state-of-the-art fuzzers are not very efficient at finding hard-to-trigger software bugs. Most popular fuzzers use evolutionary guidance to generate inputs that can trigger different bugs. Such evolutionary algorithms, while fast and simple to implement, often get stuck in fruitless sequences of random mutations. Gradient-guided optimization presents a promising alternative to evolutionary guidance. Gradient-guided techniques have been shown to significantly outperform evolutionary algorithms at solving high-dimensional structured optimization problems in domains like machine learning by efficiently utilizing gradients or higher-order derivatives of the underlying function. However, gradient-guided approaches are not directly applicable to fuzzing as real-world program behaviors contain many discontinuities, plateaus, and ridges where the gradient-based methods often get stuck. We observe that this problem can be addressed by creating a smooth surrogate function approximating the target program's discrete branching behavior. In this paper, we propose a novel program smoothing technique using surrogate neural network models that can incrementally learn smooth approximations of a complex, real-world program's branching behaviors. We further demonstrate that such neural network models can be used together with gradient-guided input generation schemes to significantly increase the efficiency of the fuzzing process. Our extensive evaluations demonstrate that NEUZZ significantly outperforms 10 state-of-the-art graybox fuzzers on 10 popular real-world programs both at finding new bugs and achieving higher edge coverage. NEUZZ found 31 previously unknown bugs (including two CVEs) that other fuzzers failed to find in 10 real-world programs and achieved 3X more edge coverage than all of the tested graybox fuzzers over 24 hour runs. Furthermore, NEUZZ also outperformed existing fuzzers on both LAVA-M and DARPA CGC bug datasets.
+
+
+### SeqFuzzer: An Industrial Protocol Fuzzing Framework in Deep Learning Perspective (ICST 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/ICST19_SeqFuzzer.pdf)
+
+**Abstract:** Industrial networks are the cornerstone of modern industrial control systems. Performing security checks of industrial communication processes help detect unknown risks and vulnerabilities. Fuzz testing is a widely used method for performing security checks that takes advantage of automation. However, there is a big challenge to carry out security checks on the industrial networks due to the increasing variety and complexity of industrial communication protocols. In this case, existing approaches usually take a long time to model the protocol for generating test cases, which is labor-intensive and timeconsuming. This becomes even worse when the target protocol is stateful. To help in addressing this problem, we employed a deep learning model to learn the structures of protocol frames and deal with the temporal features of stateful protocols. We propose a fuzzing framework named SeqFuzzer which automatically learns the protocol frame structures from communication traffic and generates fake but plausible messages as test cases. For proving the usability of our approach, we applied SeqFuzzer to widelyused Ethernet for Control Automation Technology (EtherCAT) devices and successfully detected several security vulnerabilities
 
 
 ### Compiler Fuzzing through Deep Learning (ISSTA 2018)

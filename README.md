@@ -318,7 +318,7 @@
 
 - [**Enhancing Memory Error Detection**](#enhancing-memory-error)
   - [Enhancing Memory Error Detection for Large-Scale Applications and Fuzz Testing (NDSS 2018)](#enhancing-memory-error-detection-for-large-scale-applications-and-fuzz-testing-ndss-2018)
-  - [AddressSanitizer: A Fast Address Sanity Checker  (USENIX Security2012)](#addressSanitizer-a-fast-address-sanity-checker-usenix-security2012)
+  - [AddressSanitizer: A Fast Address Sanity Checker  (USENIX Security2012)](#addresssanitizer-a-fast-address-sanity-checker-usenix-security2012)
 
 - [**Schedule (Power & Mutation)**](#schedule-power--mutation)
   - [MOPT: Optimize Mutation Scheduling for Fuzzers (USENIX Security2019)](#mopt-optimize-mutation-scheduling-for-fuzzers-usenix-security2019)
@@ -588,7 +588,7 @@ The ideal solution for binary security analysis would be a static rewriter that 
 
 ### Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing (S&P 2019)
 
-* <img src="image/youdao_note_24px.png">[Reading Note](https://mp.weixin.qq.com/s/Cf_0F2bPmK8Gmp5JWnPOiA)
+* <img src="image/wechat_24px.png">[Reading Note](https://mp.weixin.qq.com/s/Cf_0F2bPmK8Gmp5JWnPOiA)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/SP19_Full-speed.pdf)
 
@@ -691,7 +691,7 @@ We present PeriScope, a Linux kernel based probing framework that enables fine-g
 
 ### Fuzzing File Systems via Two-Dimensional Input Space Exploration (S&P 2019)
 
-* <img src="image/wechat_24px.png">[Reading Note From BAIZE](https://mp.weixin.qq.com/s/d2VEQTLtHV5Z-li6M3KBFA)
+* <img src="image/youdao_note_24px.png">[Reading Note From BAIZE](http://note.youdao.com/noteshare?id=25d83408e46b014dd32df2cd5da72e41)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/SP19_Fuzzing_File.pdf)
 
@@ -1189,6 +1189,8 @@ Unfortunately, existing detection mechanisms for algorithmic complexity vulnerab
 
 
 ### AddressSanitizer: A Fast Address Sanity Checker  (USENIX Security2012)
+
+* <img src="image/youdao_note_24px.png">[Reading Note](http://note.youdao.com/noteshare?id=aecd3639e21a682555fd6b002a176937)
 
 * <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf)
 

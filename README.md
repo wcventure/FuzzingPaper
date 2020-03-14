@@ -308,7 +308,7 @@ remark: This web is only used for collecting and grouping the related paper. If 
 - [**Ensemble Fuzzing**](#ensemble-fuzzing)
   - [EnFuzz: Ensemble Fuzzing with Seed Synchronization among Diverse Fuzzers (USENIX Security2019)](#enfuzz-ensemble-fuzzing-with-seed-synchronization-among-diverse-fuzzers-usenix-security2019)
 
-- [**Sanitizer-guided Fuzzing**]
+- [**Sanitizer-guided Fuzzing**](#sanitizer-guided-fuzzing)
   - [ParmeSan: Sanitizer-guided Greybox Fuzzing (USENIX Security2020)](#parmesan-sanitizer-guided-greybox-fuzzing-usenix-security2020)
   - [SAVIOR: Towards Bug-Driven Hybrid Testing (S&P 2020)](#savior-towards-bug-driven-hybrid-testing-sp-2020)
 

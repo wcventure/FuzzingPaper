@@ -1,5 +1,5 @@
 # Recent Papers Related To Fuzzing
-remark: This web is only use collecting and group the related paper. If there are any paper need to be updated, you can contribute PR.
+remark: This web is only used for collecting and grouping the related paper. If there are any paper need to be updated, you can contribute PR.
 
 # All Papers (Classification according to Publication)
 
@@ -172,7 +172,7 @@ remark: This web is only use collecting and group the related paper. If there ar
 
 - **S&P 2017**
     - [NEZHA: Efficient Domain-Independent Differential Testing](#nezha-efficient-domain-independent-differential-testing-sp-2017)
-    - [Skyfire: Data-Driven Seed Generation for Fuzzing](#)
+    - [Skyfire: Data-Driven Seed Generation for Fuzzing](#skyfire-data-driven-seed-generation-for-fuzzing-sp-2017)
 
 - **USENIX Security 2017**
     - [kAFL: Hardware-Assisted Feedback Fuzzing for OS Kernels](#kafl-hardware-assisted-feedback-fuzzing-for-os-kernels-usenix-security2017)
@@ -195,6 +195,7 @@ remark: This web is only use collecting and group the related paper. If there ar
 
 - **ASE 2017**
     - [Learn&Fuzz: Machine Learning for Input Fuzzing](#learnfuzz-machine-learning-for-input-fuzzing-ase-2017)
+    - [In-memory fuzzing for binary code similarity analysis]()
   
 - **CCS 2016**
     - [Coverage-based Greybox Fuzzing as Markov Chain](#coverage-based-greybox-fuzzing-as-markov-chain-ccs-2016)
@@ -202,6 +203,9 @@ remark: This web is only use collecting and group the related paper. If there ar
 
 - **PLDI 2016**
     - [Coverage-Directed Differential Testing of JVM Implementations](#coverage-directed-differential-testing-of-jvm-implementations-pldi-2016)
+
+- **S&P 2015**
+    - [Program-Adaptive Mutational Fuzzing](#program-adaptive-mutational-fuzzing-sp-2015)
 
 - **USENIX Security 2015**
     - [Protocol State Fuzzing of TLS Implementations](#protocol-state-fuzzing-of-tls-implementations-usenix-security2015)
@@ -337,6 +341,7 @@ remark: This web is only use collecting and group the related paper. If there ar
 - [**Schedule (Power & Mutation)**](#schedule-power--mutation)
   - [MOPT: Optimize Mutation Scheduling for Fuzzers (USENIX Security2019)](#mopt-optimize-mutation-scheduling-for-fuzzers-usenix-security2019)
   - [Coverage-based Greybox Fuzzing as Markov Chain (CCS 2016)](#coverage-based-greybox-fuzzing-as-markov-chain-ccs-2016)
+  - [Program-Adaptive Mutational Fuzzing (S&P 2015)](#program-adaptive-mutational-fuzzing-sp-2015)
 
 - [**Learning-based Fuzzing**](#learning-based-fuzzing)
   - [FuzzGuard: Filtering out Unreachable Inputs in Directed Grey-box Fuzzing through Deep Learning (USENIX Security2020)](#fuzzguard-filtering-out-unreachable-inputs-in-directed-grey-box-fuzzing-through-deep-learning-usenix-security2020)
@@ -393,6 +398,7 @@ Evaluation of Software Exploitability (PAC 2017)]()
   - [What You Corrupt Is Not What You Crash: Challenges in Fuzzing Embedded Devices (NDSS 2018)](#what-you-corrupt-is-not-what-you-crash-challenges-in-fuzzing-embedded-devices-ndss-2018)
   - [FOT: A Versatile, Configurable, Extensible Fuzzing Framework (FSE 2018)](#fot-a-versatile-configurable-extensible-fuzzing-framework-fse-2018)
   - [Designing New Operating Primitives to Improve Fuzzing Performance (CCS 2017)](#designing-new-operating-primitives-to-improve-fuzzing-performance-ccs-2017)
+  - [In-memory fuzzing for binary code similarity analysis (ASE 2017)]()
   - [Systematic Fuzzing and Testing of TLS Libraries (CCS 2016)](#systematic-fuzzing-and-testing-of-tls-libraries-ccs-2016)
 
 
@@ -1305,6 +1311,13 @@ Our evaluation shows MEUZZ significantly outperforms the state-of-the-art grey-b
 We implemented the exponential schedule by extending AFL. In 24 hours, AFLFAST exposes 3 previously unreported CVEs that are not exposed by AFL and exposes 6 previously unreported CVEs 7x faster than AFL. AFLFAST produces at least an order of magnitude more unique crashes than AFL.
 
 
+### Program-Adaptive Mutational Fuzzing (S&P 2015)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/SP15_Adaptive .pdf)
+
+**Abstract:** We present the design of an algorithm to maximize the number of bugs found for black-box mutational fuzzing given a program and a seed input. The major intuition is to leverage white-box symbolic analysis on an execution trace for a given program-seed pair to detect dependencies among the bit positions of an input, and then use this dependency relation to compute a probabilistically optimal mutation ratio for this program-seed pair. Our result is promising: we found an average of 38.6% more bugs than three previous fuzzers over 8 applications using the same amount of fuzzing time.
+
+
 
 # Learning-based Fuzzing:
 
@@ -1605,6 +1618,15 @@ In this paper, we design the first linguistic-model-guided fuzzing tool, named L
 In this paper, we tackle another way to improve the performance of fuzzing, which is to shorten the execution time of each iteration. We observe that AFL, a state-of-the-art fuzzer, slows down by 24x because of file system contention and the scalability of fork() system call when it runs on 120 cores in parallel. Other fuzzers are expected to suffer from the same scalability bottlenecks in that they follow a similar design pattern. To improve the fuzzing performance, we design and implement three new operating primitives specialized for fuzzing that solve these performance bottlenecks and achieve scalable performance on multi-core machines. Our experiment shows that the proposed primitives speed up AFL and LibFuzzer by 6.1 to 28.9x and 1.1 to 735.7x, respectively, on the overall number of executions per second when targeting Google's fuzzer test suite with 120 cores. In addition, the primitives improve AFL's throughput up to 7.7x with 30 cores, which is a more common setting in data centers. Our fuzzer-agnostic primitives can be easily applied to any fuzzer with fundamental performance improvement and directly benefit large-scale fuzzing and cloud-based fuzzing services.
 
 
+### In-memory fuzzing for binary code similarity analysis (ASE 2017)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/ASE17_Similarity.pdf)
+
+**Abstract:** Detecting similar functions in binary executables serves as a foundation for much binary code analysis and reuse tasks. By far, recognizing similar components in binary code remains a challenge. Existing research employs either static or dynamic approaches to capture program syntax or semantics level features for comparison. However, there exist multiple design limitations in previous work, which result in relatively high cost, low accuracy, and scalability, and thus severely impede their practical use.
+
+In this paper, we present a novel method that leverages in-memory fuzzing for binary code similarity analysis. Our prototype tool IMF-SIM applies in-memory fuzzing to launch analysis towards every function and collect traces of different kinds of program behaviors. The similarity score of two behavior traces is computed according to their longest common subsequence. To compare two functions, a feature vector is generated, whose elements are the similarity scores of the behavior trace-level comparisons. We train a machine learning model through labeled feature vectors; later, for a given feature vector by comparing two functions, the trained model gives a final score, representing the similarity score of the two functions. We evaluate IMF-SIM against binaries compiled by different compilers, optimizations, and commonly-used obfuscation methods, in total over one thousand binary executables. Our evaluation shows that IMFSIM notably outperforms existing tools with higher accuracy and broader application scopes.
+
+
 ### Systematic Fuzzing and Testing of TLS Libraries (CCS 2016)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/CCS16_SystematicFuzzing.pdf)
@@ -1612,3 +1634,9 @@ In this paper, we tackle another way to improve the performance of fuzzing, whic
 **Abstract:** We present TLS-Attacker, an open source framework for evaluating the security of TLS libraries. TLS-Attacker allows security engineers to create custom TLS message flows and arbitrarily modify message contents using a simple interface in order to test the behavior of their libraries. Based on TLS-Attacker, we present a two-stage fuzzing approach to evaluate TLS server behavior. Our approach automatically searches for cryptographic failures and boundary violation vulnerabilities. It allowed us to find unusual padding oracle vulnerabilities and overflows/overreads in widely used TLS libraries, including OpenSSL, Botan, and MatrixSSL.
 
 Our findings motivate developers to create comprehensive test suites, including positive as well as negative tests, for the evaluation of TLS libraries. We use TLS-Attacker to create such a test suite framework which finds further problems in Botan.
+
+
+##### Page Traffic Analysis
+
+<a href='https://clustrmaps.com/site/1b59l'  title='Visit tracker'>Track the Visitor statistics</a>.
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=400&t=tt&d=lv-pnJIiq6psRp_b6rbzbHVqY98ziz-RPU0MjN2FBhg&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>

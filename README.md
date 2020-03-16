@@ -59,6 +59,7 @@ remark: This web is only used for collecting and grouping the related paper. If 
 - **TSE 2019**  
     - [The Art, Science, and Engineering of Fuzzing: A Survey](#the-art-science-and-engineering-of-fuzzing-a-survey)
     - [Smart Greybox Fuzzing](#smart-greybox-fuzzing-tse-2019)
+
 - **Access 2019**
     - [NeuFuzz: Efficient Fuzzing With Deep Neural Network](#neufuzz-efficient-fuzzing-with-deep-neural-network-access-2019)
     - [LearnAFL: Greybox Fuzzing With Knowledge Enhancement](#learnafl-greybox-fuzzing-with-knowledge-enhancement-access-2019)
@@ -68,6 +69,7 @@ remark: This web is only used for collecting and grouping the related paper. If 
     - [Learning to Fuzz from Symbolic Execution with Application to Smart Contracts](#learning-to-fuzz-from-symbolic-execution-with-application-to-smart-contracts-ccs-2019)
     - [Matryoshka: fuzzing deeply nested branches](#matryoshka-fuzzing-deeply-nested-branches-ccs-2019)
     - [Different is Good: Detecting the Use of Uninitialized Variables through Differential Replay](#different-is-good-detecting-the-use-of-uninitialized-variables-through-differential-replay-ccs-2019)
+    - [Gollum: Modular and Greybox Exploit Generation for Heap Overflows in Interpreters](#gollum-modular-and-greybox-exploit-generation-for-heap-overflows-in-interpreters-ccs-2019)
 
 - **S&P 2019**
     - [NEUZZ: Efficient Fuzzing with Neural Program Smoothing](#neuzz-efficient-fuzzing-with-neural-program-smoothing-sp-2019)
@@ -130,6 +132,8 @@ remark: This web is only used for collecting and grouping the related paper. If 
     - [INSTRCR: Lightweight instrumentation optimization based on coverage-guided fuzz testing](#instrcr-lightweight-instrumentation-optimization-based-on-coverage-guided-fuzz-testing-ccet-2019)
     - [HFuzz: Towards automatic fuzzing testing of NB-IoT core network protocols implementations](#hfuzz-towards-automatic-fuzzing-testing-of-nb-iot-core-network-protocols-implementations-fgcs-2019)
     - [Study and Comparison of General Purpose Fuzzers](#study-and-comparison-of-general-purpose-fuzzers)
+    - [From proof-of-concept to exploitable](#from-proof-of-concept-to-exploitable-cybersecurity-2019)
+    - [Sequence coverage directed greybox fuzzing]
 
 - **S&P 2018**
     - [T-Fuzz: fuzzing by program transformation](#t-fuzz-fuzzing-by-program-transformation-sp-2018)
@@ -143,6 +147,7 @@ remark: This web is only used for collecting and grouping the related paper. If 
 - **CCS 2018**
     - [Evaluating fuzz testing](#evaluate-fuzzing)
     - [Hawkeye Towards a Desired Directed Grey-box Fuzzer](#hawkeye-towards-a-desired-directed-grey-box-fuzzer-ccs-2018)
+    - [Revery: From Proof-of-Concept to Exploitable](#revery-from-proof-of-concept-to-exploitable-ccs-2018)
 
 - **NDSS 2018**
     - [IoTFuzzer: Discovering Memory Corruptions in IoT Through App-based Fuzzing](#iotfuzzer-discovering-memory-corruptions-in-iot-through-app-based-fuzzing-ndss-2018)
@@ -157,7 +162,7 @@ remark: This web is only used for collecting and grouping the related paper. If 
     - [Singularity: Pattern Fuzzing for Worst Case Complexity](#singularity-pattern-fuzzing-for-worst-case-complexity-fse-2018)
     - [PAFL: Extend FuzzingOptimizations of Single Mode to Industrial Parallel Mode](#pafl-extend-fuzzingoptimizations-of-single-mode-to-industrial-parallel-mode-esecfse-2018)
     - [FOT: A Versatile, Configurable, Extensible Fuzzing Framework](#fot-a-versatile-configurable-extensible-fuzzing-framework-fse-2018)
-    - [DLFuzz: Differential Fuzzing Testing of Deep Learning Systems]
+    - [DLFuzz: Differential Fuzzing Testing of Deep Learning Systems](#dlfuzz-differential-fuzzing-testing-of-deep-learning-systems-fse-2018)
 
 - **ASE 2018**
     - [ContractFuzzer: Fuzzing Smart Contracts for Vulnerability Detection](#contractfuzzer-fuzzing-smart-contracts-for-vulnerability-detection-ase-2018)
@@ -237,7 +242,7 @@ remark: This web is only used for collecting and grouping the related paper. If 
   - [Hunting for bugs in code coverage tools via randomized differential testing (ICSE 2019)](#hunting-for-bugs-in-code-coverage-tools-via-randomized-differential-testing-icse-2019)
   - [Different is Good: Detecting the Use of Uninitialized Variables through Differential Replay (CCS 2019)](#different-is-good-detecting-the-use-of-uninitialized-variables-through-differential-replay-ccs-2019)
   - [Differential Program Analysis with Fuzzing and Symbolic Execution (ASE 2018)](#differential-program-analysis-with-fuzzing-and-symbolic-execution-ase-2018)
-  - [DLFuzz: Differential Fuzzing Testing of Deep Learning Systems (FSE 2018)]
+  - [DLFuzz: Differential Fuzzing Testing of Deep Learning Systems (FSE 2018)](#dlfuzz-differential-fuzzing-testing-of-deep-learning-systems-fse-2018)
   - [NEZHA: Efficient Domain-Independent Differential Testing (S&P 2017)](#nezha-efficient-domain-independent-differential-testing-sp-2017)
   - [Coverage-Directed Differential Testing of JVM Implementations (PLDI 2016)](#coverage-directed-differential-testing-of-jvm-implementations-pldi-2016)
 
@@ -307,8 +312,15 @@ remark: This web is only used for collecting and grouping the related paper. If 
   - [CodeAlchemist: Semantics-Aware Code Generation to Find Vulnerabilities in JavaScript Engines (NDSS 2019)](#codealchemist-semantics-aware-code-generation-to-find-vulnerabilities-in-javascript-engines-ndss-2019)
   - [NAUTILUS: Fishing for Deep Bugs with Grammars (NDSS 2019)](#nautilus-fishing-for-deep-bugs-with-grammars-ndss-2019)
   - [TIFF: Using Input Type Inference To Improve Fuzzing (ACSAC 2018)](#tiff-using-input-type-inference-to-improve-fuzzing-acsac-2018)
-  - [SemFuzz: Semantics-based Automatic Generation of Proof-of-Concept Exploits (CCS 2017)](#semfuzz-semantics-based-automatic-generation-of-proof-of-concept-exploits-ccs-2017)
   - [Skyfire: Data-Driven Seed Generation for Fuzzing (S&P 2017)](#skyfire-data-driven-seed-generation-for-fuzzing-sp-2017)
+
+- [**Exploit Generation**](#exploit-generation)
+  - [ETHPLOIT: From Fuzzing to Efficient Exploit Generation against Smart Contracts (SANER2020)](#ethploit-from-fuzzing-to-efficient-exploit-generation-against-smart-contracts-saner2020)
+  - [Gollum: Modular and Greybox Exploit Generation for Heap Overflows in Interpreters (CCS 2019)](#ethploit-from-fuzzing-to-efficient-exploit-generation-against-smart-contracts-saner2020)
+  - [From proof-of-concept to exploitable (Cybersecurity 2019)](#from-proof-of-concept-to-exploitable-cybersecurity-2019)
+  - [Revery: From Proof-of-Concept to Exploitable (CCS 2018)](#revery-from-proof-of-concept-to-exploitable-ccs-2018)
+  - [SemFuzz: Semantics-based Automatic Generation of Proof-of-Concept Exploits (CCS 2017)](#semfuzz-semantics-based-automatic-generation-of-proof-of-concept-exploits-ccs-2017)
+  - [ExploitMeter: Combining Fuzzing with Machine Learning for Automated Evaluation of Software Exploitability (PAC 2017)](#exploitmeter-combining-fuzzing-with-machine-learning-for-automated-evaluation-of-software-exploitability-pac-2017)
 
 - [**Parallel / Ensemble Fuzzing**](#parallel--ensemble-fuzzing)
   - [EnFuzz: Ensemble Fuzzing with Seed Synchronization among Diverse Fuzzers (USENIX Security2019)](#enfuzz-ensemble-fuzzing-with-seed-synchronization-among-diverse-fuzzers-usenix-security2019)
@@ -326,6 +338,7 @@ remark: This web is only used for collecting and grouping the related paper. If 
 - [**Directed Fuzzing**](#directed-fuzzing)
   - [Binary-level Directed Fuzzing for Use-After-Free Vulnerabilities](#binary-level-directed-fuzzing-for-use-after-free-vulnerabilities)
   - [Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities (ICSE 2020)](#typestate-guided-fuzzer-for-discovering-use-after-free-vulnerabilities-icse-2020)
+  - [Sequence coverage directed greybox fuzzing (ICPC 2019)]
   - [Ankou: Guiding Grey-box Fuzzing towards Combinatorial Difference (ICSE 2019)](#ankou-guiding-grey-box-fuzzing-towards-combinatorial-difference-icse-2020)
   - [Directed Greybox Fuzzing (CCS 2017)](#directed-greybox-fuzzing-ccs-2017)
   - [Hawkeye: Towards a Desired Directed Grey-box Fuzzer (CCS 2018)](#hawkeye-towards-a-desired-directed-grey-box-fuzzer-ccs-2018)
@@ -359,14 +372,13 @@ remark: This web is only used for collecting and grouping the related paper. If 
   - [SeqFuzzer: An Industrial Protocol Fuzzing Framework in Deep Learning Perspective (ICST 2019)](#seqfuzzer-an-industrial-protocol-fuzzing-framework-in-deep-learning-perspective-icst-2019)
   - [Compiler Fuzzing through Deep Learning (ISSTA 2018)](#compiler-fuzzing-through-deep-learning-issta-2018)
   - [Deep Reinforcement Fuzzing (SPW 2018)](#deep-reinforcement-fuzzing-spw-2018)
-  - [ExploitMeter: Combining Fuzzing with Machine Learning for Automated
-Evaluation of Software Exploitability (PAC 2017)]()
+  - [ExploitMeter: Combining Fuzzing with Machine Learning for Automated Evaluation of Software Exploitability (PAC 2017)](#exploitmeter-combining-fuzzing-with-machine-learning-for-automated-evaluation-of-software-exploitability-pac-2017)
   - [Learn&Fuzz: Machine Learning for Input Fuzzing (ASE 2017)](#learnfuzz-machine-learning-for-input-fuzzing-ase-2017)
 
 - [**Fuzzing Machine Learning Model**](#fuzzing-machine-learning-model)
   - [Fuzz Testing based Data Augmentation to Improve Robustness of Deep Neural Networks (ICSE 2020)](#fuzz-testing-based-data-augmentation-to-improve-robustness-of-deep-neural-networks-icse-2020)
   - [DeepHunter: A Coverage-Guided Fuzz Testing Framework for Deep Neural Networks (ISSTA 2019)](#deephunter-a-coverage-guided-fuzz-testing-framework-for-deep-neural-networks-issta-2019)
-  - [DLFuzz: Differential Fuzzing Testing of Deep Learning Systems (FSE 2018)]
+  - [DLFuzz: Differential Fuzzing Testing of Deep Learning Systems (FSE 2018)](#dlfuzz-differential-fuzzing-testing-of-deep-learning-systems-fse-2018)
   - [TensorFuzz: Debugging Neural Networks with Coverage-Guided Fuzzing (2018)](#tensorfuzz-debugging-neural-networks-with-coverage-guided-fuzzing-2018)
   - [Coverage-Guided Fuzzing for Deep Neural Networks (2018)](#coverage-guided-fuzzing-for-deep-neural-networks-2018)
 
@@ -1098,18 +1110,71 @@ Our experiments show that combining context-free grammars and feedback-driven fu
 In this work, we present a new mutation strategy that maximizes the likelihood of triggering memory-corruption bugs by generating fewer, but better inputs. In particular, our strategy achieves bug- directed mutation by inferring the type of the input bytes. To do so, it tags each offset of the input with a basic type (e.g., 32-bit integer, string, array etc.), while deriving mutation rules for specific classes of bugs, We infer types by means of in-memory data-structure identification and dynamic taint analysis, and implement our novel mutation strategy in a fully functional fuzzer which we call TIFF (Type Inference-based Fuzzing Framework). Our evaluation on real-world applications shows that type-based fuzzing triggers bugs much earlier than existing solutions, while maintaining high code coverage. For example, on several real-world applications and libraries (e.g., poppler, mpg123 etc.), we find real bugs (with known CVEs) in almost half of the time and upto an order of magnitude fewer inputs than state-of-the-art fuzzers.
 
 
+### Skyfire: Data-Driven Seed Generation for Fuzzing (S&P 2017)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/SP17_Skyfire.pdf)
+
+**Abstract:** Programs that take highly-structured files as inputs normally process inputs in stages: syntax parsing, semantic checking, and application execution. Deep bugs are often hidden in the application execution stage, and it is non-trivial to automatically generate test inputs to trigger them. Mutation-based fuzzing generates test inputs by modifying well-formed seed inputs randomly or heuristically. Most inputs are rejected at the early syntax parsing stage. Differently, generation-based fuzzing generates inputs from a specification (e.g., grammar). They can quickly carry the fuzzing beyond the syntax parsing stage. However, most inputs fail to pass the semantic checking (e.g., violating semantic rules), which restricts their capability of discovering deep bugs. In this paper, we propose a novel data-driven seed generation approach, named Skyfire, which leverages the knowledge in the vast amount of existing samples to generate well-distributed seed inputs for fuzzing programs that process highly-structured inputs. Skyfire takes as inputs a corpus and a grammar, and consists of two steps. The first step of Skyfire learns a probabilistic context-sensitive grammar (PCSG) to specify both syntax features and semantic rules, and then the second step leverages the learned PCSG to generate seed inputs. We fed the collected samples and the inputs generated by Skyfire as seeds of AFL to fuzz several open-source XSLT and XML engines (i.e., Sablotron, libxslt, and libxml2). The results have demonstrated that Skyfire can generate well-distributed inputs and thus significantly improve the code coverage (i.e., 20% for line coverage and 15% for function coverage on average) and the bug-finding capability of fuzzers. We also used the inputs generated by Skyfire to fuzz the closed-source JavaScript and rendering engine of Internet Explorer 11. Altogether, we discovered 19 new memory corruption bugs (among which there are 16 new vulnerabilities and received 33.5k USD bug bounty rewards) and 32 denial-of-service bugs.
+
+
+
+# Exploit Generation
+
+### ETHPLOIT: From Fuzzing to Efficient Exploit Generation against Smart Contracts (SANER2020)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/SANER20_ETHPLOIT.pdf)
+
+* <img src="image/ppt_24px.png">[Slides](https://loccs.sjtu.edu.cn/~romangol/slides/saner20b.pdf)
+
+**Abstract:** Smart contracts, programs running on blockchain systems, leverage diverse decentralized applications (DApps). Unfortunately, well-known smart contract platforms, Ethereum for example, face serious security problems. Exploits to contracts may cause enormous financial losses, which emphasize the importance of smart contract testing. However, current exploit generation tools have difficulty to solve hard constraints in execution paths and cannot simulate the blockchain behaviors very well. These problems cause a loss of coverage and accuracy of exploit generation.
+
+To overcome the problems, we design and implement ETHPLOIT, a smart contract exploit generator based on fuzzing. ETHPLOIT adopts static taint analysis to generate exploit targeted transaction sequences, a dynamic seed strategy to pass hard constraints and an instrumented Ethereum Virtual Machine to simulate blockchain behaviors. We evaluate ETHPLOIT on 45,308 smart contracts and discovered 554 exploitable contracts. ETHPLOIT automatically generated 644 exploits without any false positive and 306 of them cannot be generated by previous exploit generation tools.
+
+
+### Gollum: Modular and Greybox Exploit Generation for Heap Overflows in Interpreters (CCS 2019)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.kroening.com/papers/ccs2019.pdf)
+
+**Abstract:** We present the first approach to automatic exploit generation for heap overflows in interpreters. It is also the first approach to exploit generation in any class of program that integrates a solution for automatic heap layout manipulation. At the core of the approach is a novel method for discovering exploit primitives---inputs to the target program that result in a sensitive operation, such as a function call or a memory write, utilizing attacker-injected data. To produce an exploit primitive from a heap overflow vulnerability, one has to discover a target data structure to corrupt, ensure an instance of that data structure is adjacent to the source of the overflow on the heap, and ensure that the post-overflow corrupted data is used in a manner desired by the attacker. Our system addresses all three tasks in an automatic, greybox, and modular manner. Our implementation is called GOLLUM, and we demonstrate its capabilities by producing exploits from 10 unique vulnerabilities in the PHP and Python interpreters, 5 of which do not have existing public exploits.
+
+
+### From proof-of-concept to exploitable (Cybersecurity 2019)
+
+* <img src="image/pdf_24px.png">[Paper](https://cybersecurity.springeropen.com/track/pdf/10.1186/s42400-019-0028-9)
+
+* <img src="image/ppt_24px.png">[Slides](./Paper/CCS18_Revery_Slides)
+
+* <img src="image/youtube.png">[Video](https://www.youtube.com/watch?v=QsG_nTBSN4c)
+
+**Abstract:** Exploitability assessment of vulnerabilities is important for both defenders and attackers. The ultimate way to assess the exploitability is crafting a working exploit. However, it usually takes tremendous hours and significant manual efforts. To address this issue, automated techniques can be adopted. Existing solutions usually explore in depth the crashing paths, i.e., paths taken by proof-of-concept (PoC) inputs triggering vulnerabilities, and assess exploitability by finding exploitable states along the paths. However, exploitable states do not always exist in crashing paths. Moreover, existing solutions heavily rely on symbolic execution and are not scalable in path exploration and exploit generation.
+
+In this paper, we propose a novel solution to generate exploit for userspace programs or facilitate the process of crafting a kernel UAF exploit. Technically, we utilize oriented fuzzing to explore diverging paths from vulnerability point. For userspace programs, we adopt a control-flow stitching solution to stitch crashing paths and diverging paths together to generate exploit. For kernel UAF, we leverage a lightweight symbolic execution to identify, analyze and evaluate the system calls valuable and useful for exploiting vulnerabilities.
+
+We have developed a prototype system and evaluated it on a set of 19 CTF (capture the flag) programs and 15 realworld Linux kernel UAF vulnerabilities. Experiment results showed it could generate exploit for most of the userspace test set, and it could also facilitate security mitigation bypassing and exploitability evaluation for kernel test set.
+
+
+### Revery: From Proof-of-Concept to Exploitable (CCS 2018)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/CCS18_Revery.pdf)
+
+* <img src="image/ppt_24px.png">[Slides](./Paper/CCS18_Revery_Slides)
+
+* <img src="image/youtube.png">[Video](https://www.youtube.com/watch?v=QsG_nTBSN4c)
+
+**Abstract:** Automatic exploit generation is an open challenge. Existing solutions usually explore in depth the crashing paths, i.e., paths taken by proof-of-concept (POC) inputs triggering vulnerabilities, and generate exploits when exploitable states are found along the paths. However, exploitable states do not always exist in crashing paths. Moreover, existing solutions heavily rely on symbolic execution and are not scalable in path exploration and exploit generation. In addition, few solutions could exploit heap-based vulnerabilities. In this paper, we propose a new solution revery to search for exploitable states in paths diverging from crashing paths, and generate control-flow hijacking exploits for heap-based vulnerabilities. It adopts three novel techniques:(1) a digraph to characterize a vulnerability's memory layout and its contributor instructions;(2) a fuzz solution to explore diverging paths, which have similar memory layouts as the crashing paths, in order to search more exploitable states and generate corresponding diverging inputs;(3) a stitch solution to stitch crashing paths and diverging paths together, and synthesize EXP inputs able to trigger both vulnerabilities and exploitable states. We have developed a prototype of revery based on the binary analysis engine angr, and evaluated it on a set of 19 real world CTF (capture the flag) challenges. Experiment results showed that it could generate exploits for 9 (47%) of them, and generate EXP inputs able to trigger exploitable states for another 5 (26%) of them.
+
+
 ### SemFuzz: Semantics-based Automatic Generation of Proof-of-Concept Exploits (CCS 2017)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/CCS17_SemFuzz.pdf)
 
 **Abstract:** Patches and related information about software vulnerabilities are often made available to the public, aiming to facilitate timely fixes. Unfortunately, the slow paces of system updates (30 days on average) often present to the attackers enough time to recover hidden bugs for attacking the unpatched systems. Making things worse is the potential to automatically generate exploits on input-validation flaws through reverse-engineering patches, even though such vulnerabilities are relatively rare (e.g., 5% among all Linux kernel vulnerabilities in last few years). Less understood, however, are the implications of other bug-related information (e.g., bug descriptions in CVE), particularly whether utilization of such information can facilitate exploit generation, even on other vulnerability types that have never been automatically attacked. In this paper, we seek to use such information to generate proof-of-concept (PoC) exploits for the vulnerability types never automatically attacked. Unlike an input validation flaw that is often patched by adding missing sanitization checks, fixing other vulnerability types is more complicated, usually involving replacement of the whole chunk of code. Without understanding of the code changed, automatic exploit becomes less likely. To address this challenge, we present SemFuzz, a novel technique leveraging vulnerability-related text (e.g., CVE reports and Linux git logs) to guide automatic generation of PoC exploits. Such an end-to-end approach is made possible by natural-language processing (NLP) based information extraction and a semantics-based fuzzing process guided by such information. Running over 112 Linux kernel flaws reported in the past five years, SemFuzz successfully triggered 18 of them, and further discovered one zero-day and one undisclosed vulnerabilities. These flaws include use-after-free, memory corruption, information leak, etc., indicating that more complicated flaws can also be automatically attacked. This finding calls into question the way vulnerability-related information is shared today.
 
+### ExploitMeter: Combining Fuzzing with Machine Learning for Automated Evaluation of Software Exploitability (PAC 2017)
 
-### Skyfire: Data-Driven Seed Generation for Fuzzing (S&P 2017)
+* <img src="image/pdf_24px.png">[Paper](./Paper/PAC17_ExploitMeter.pdf)
 
-* <img src="image/pdf_24px.png">[Paper](./Paper/SP17_Skyfire.pdf)
-
-**Abstract:** Programs that take highly-structured files as inputs normally process inputs in stages: syntax parsing, semantic checking, and application execution. Deep bugs are often hidden in the application execution stage, and it is non-trivial to automatically generate test inputs to trigger them. Mutation-based fuzzing generates test inputs by modifying well-formed seed inputs randomly or heuristically. Most inputs are rejected at the early syntax parsing stage. Differently, generation-based fuzzing generates inputs from a specification (e.g., grammar). They can quickly carry the fuzzing beyond the syntax parsing stage. However, most inputs fail to pass the semantic checking (e.g., violating semantic rules), which restricts their capability of discovering deep bugs. In this paper, we propose a novel data-driven seed generation approach, named Skyfire, which leverages the knowledge in the vast amount of existing samples to generate well-distributed seed inputs for fuzzing programs that process highly-structured inputs. Skyfire takes as inputs a corpus and a grammar, and consists of two steps. The first step of Skyfire learns a probabilistic context-sensitive grammar (PCSG) to specify both syntax features and semantic rules, and then the second step leverages the learned PCSG to generate seed inputs. We fed the collected samples and the inputs generated by Skyfire as seeds of AFL to fuzz several open-source XSLT and XML engines (i.e., Sablotron, libxslt, and libxml2). The results have demonstrated that Skyfire can generate well-distributed inputs and thus significantly improve the code coverage (i.e., 20% for line coverage and 15% for function coverage on average) and the bug-finding capability of fuzzers. We also used the inputs generated by Skyfire to fuzz the closed-source JavaScript and rendering engine of Internet Explorer 11. Altogether, we discovered 19 new memory corruption bugs (among which there are 16 new vulnerabilities and received 33.5k USD bug bounty rewards) and 32 denial-of-service bugs.
+**Abstract:** Exploitable software vulnerabilities pose severe threats to its information security and privacy. Although a great amount of efforts have been dedicated to improving software security, research on quantifying software exploitability is still in its infancy. In this work, we propose ExploitMeter, a fuzzing-based framework of quantifying software exploitability that facilitates decision-making for software assurance and cyber insurance. Designed to be dynamic, efficient and rigorous, ExploitMeter integrates machine learning-based prediction and dynamic fuzzing tests in a Bayesian manner. Using 100 Linux applications, we conduct extensive experiments to evaluate the performance of ExploitMeter in a dynamic environment.
 
 
 
@@ -1199,6 +1264,15 @@ In this paper, we propose IJON, an annotation mechanism that a human analyst can
 * <img src="image/pdf_24px.png">[Paper](./Paper/Arxiv20_BinaryUAF.pdf)
 
 **Abstract:** Directed fuzzing focuses on automatically testing specific parts of the code by taking advantage of additional information such as (partial) bug stack trace, patches or risky operations. Key applications include bug reproduction, patch testing and static analysis report verification. Although directed fuzzing has received a lot of attention recently, hard-to-detect vulnerabilities such as Use-Afer-Free (UAF) are still not well addressed, more especially at the binary level. We propose UAFuzz, the first (binary-level) directed greybox fuzzer dedicated to UAF bugs. The technique features a fuzzing engine tailored to UAF specifics, a lightweight code instrumentation and an efficient bug triage step. Experimental evaluation for bug reproduction on real cases demonstrates that UAFuzz significantly outperforms state-of-the-art directed fuzzers in terms of fault detection rate, time to exposure and bug triaging. UAFuzz has also been proven effective in patch testing, leading to the discovery of 20 new bugs in Perl, GPAC and GNU Patch (including a buggy patch) - all of them have been acknowledged and 14 have been fixed. Last but not least, we provide to the community the first fuzzing benchmark dedicated to UAF, built on both real codes and real bugs.
+
+
+### Sequence coverage directed greybox fuzzing (ICPC 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/ICPC19_Sequence.pdf)
+
+**Abstract:** Existing directed fuzzers are not efficient enough. Directed symbolic-execution-based whitebox fuzzers, e.g. BugRedux, spend lots of time on heavyweight program analysis and constraints solving at runtime. Directed greybox fuzzers, such as AFLGo, perform well at runtime, but considerable calculation during instrumentation phase hinders the overall performance.
+
+In this paper, we propose Sequence-coverage Directed Fuzzing (SCDF), a lightweight directed fuzzing technique which explores towards the user-specified program statements efficiently. Given a set of target statement sequences of a program, SCDF aims to generate inputs that can reach the statements in each sequence in order and trigger bugs in the program. Moreover, we present a novel energy schedule algorithm, which adjusts on demand a seed's energy according to its ability of covering the given statement sequences calculated on demand. We implement the technique in a tool LOLLY in order to achieve efficiency both at instrumentation time and at runtime. Experiments on several real-world software projects demonstrate that LOLLY outperforms two well-established tools on efficiency and effectiveness, i.e., AFLGo-a directed greybox fuzzer and BugRedux-a directed symbolic-execution-based whitebox fuzzer.
 
 
 ### Ankou: Guiding Grey-box Fuzzing towards Combinatorial Difference (ICSE 2020)
@@ -1438,13 +1512,6 @@ We introduce DeepSmith, a novel machine learning approach to accelerating compil
 
 **Abstract:** Fuzzing consists of repeatedly testing an application with modified, or fuzzed, inputs with the goal of finding security vulnerabilities in input-parsing code. In this paper, we show how to automate the generation of an input grammar suitable for input fuzzing using sample inputs and neural-network-based statistical machine-learning techniques. We present a detailed case study with a complex input format, namely PDF, and a large complex security-critical parser for this format, namely, the PDF parser embedded in Microsoft's new Edge browser. We discuss and measure the tension between conflicting learning and fuzzing goals: learning wants to capture the structure of well-formed inputs, while fuzzing wants to break that structure in order to cover unexpected code paths and find bugs. We also present a new algorithm for this learn&fuzz challenge which uses a learnt input probability distribution to intelligently guide where to fuzz inputs.
 
-### ExploitMeter: Combining Fuzzing with Machine Learning for Automated Evaluation of Software Exploitability (PAC 2017)
-
-* <img src="image/pdf_24px.png">[Paper](./Paper/PAC17_ExploitMeter.pdf)
-
-**Abstract:** Exploitable software vulnerabilities pose severe threats to its information security and privacy. Although a great amount of efforts have been dedicated to improving software security, research on quantifying software exploitability is still in its infancy. In this work, we propose ExploitMeter, a fuzzing-based framework of quantifying software exploitability that facilitates decision-making for software assurance and cyber insurance. Designed to be dynamic, efficient and rigorous, ExploitMeter integrates machine learning-based prediction and dynamic fuzzing tests in a Bayesian manner. Using 100 Linux applications, we conduct extensive experiments to evaluate the performance of ExploitMeter in a dynamic environment.
-
-
 
 # Fuzzing Machine Learning Model
 
@@ -1531,13 +1598,6 @@ We implemented a prototype of GREYONE and evaluated it on the LAVA data set and 
 **Abstract:** Automatic test generation typically aims to generate inputs that explore new paths in the program under test in order to find bugs. Existing work has, therefore, focused on guiding the exploration toward program parts that are more likely to contain bugs by using an offline static analysis.
 
 In this paper, we introduce a novel technique for targeted greybox fuzzing using an online static analysis that guides the fuzzer toward a set of target locations, for instance, located in recently modified parts of the program. This is achieved by first semantically analyzing each program path that is explored by an input in the fuzzer’s test suite. The results of this analysis are then used to control the fuzzer’s specialized power schedule, which determines how often to fuzz inputs from the test suite. We implemented our technique by extending a state-of-the-art, industrial fuzzer for Ethereum smart contracts and evaluate its effectiveness on 27 real-world benchmarks. Using an online analysis is particularly suitable for the domain of smart contracts since it does not require any code instrumentation—adding instrumentation to contracts changes their semantics. Our experiments show that targeted fuzzing significantly outperforms standard greybox fuzzing for reaching 83% of the challenging target locations (up to 14x of median speed-up).
-
-
-### ETHPLOIT: From Fuzzing to Efficient Exploit Generation against Smart Contracts (SANER2020)
-
-* <img src="image/pdf_24px.png">[Paper](./Paper/SANER20_ETHPLOIT.pdf)
-
-**Abstract:** Smart contracts, programs running on blockchain systems, leverage diverse decentralized applications (DApps). Unfortunately, well-known smart contract platforms, Ethereum for example, face serious security problems. Exploits to contracts may cause enormous financial losses, which emphasize the importance of smart contract testing. However, current exploit generation tools have difficulty to solve hard constraints in execution paths and cannot simulate the blockchain behaviors very well. These problems cause a loss of …
 
 
 ### Learning to Fuzz from Symbolic Execution with Application to Smart Contracts (CCS 2019)

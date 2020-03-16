@@ -481,6 +481,8 @@ remark: This web is only used for collecting and grouping the related paper. If 
 
 ### Fuzzing: State of the art
 
+* <img src="image/because.png">[Reading Note](https://github.com/bsauce/Some-Papers-About-Fuzzing/blob/master/xmind_picture/fuzz%E7%BB%BC%E8%BF%B0%E2%80%94Fuzzing%EF%BC%9AState%20of%20the%20Art.png)
+
 * <img src="image/pdf_24px.png">[Paper](./Paper/TRel18_Fuzzing.pdf)
 
 **Abstract:** As one of the most popular software testing techniques, fuzzing can find a variety of weaknesses in a program, such as software bugs and vulnerabilities, by generating numerous test inputs. Due to its effectiveness, fuzzing is regarded as a valuable bug hunting method. In this paper, we present an overview of fuzzing that concentrates on its general process, as well as classifications, followed by detailed discussion of the key obstacles and some state-of-the-art technologies which aim to overcome or mitigate these obstacles. We further investigate and classify several widely used fuzzing tools. Our primary goal is to equip the stakeholder with a better understanding of fuzzing and the potential solutions for improving fuzzing methods in the spectrum of software testing and security. To inspire future research, we also predict some future directions with regard to fuzzing.
@@ -603,6 +605,8 @@ We have implemented classfuzz and conducted an extensive evaluation of it agains
 ### Evaluating Fuzz Testing (CCS 2018)
 
 * <img src="image/youdao_note_24px.png">[Reading Note](http://note.youdao.com/noteshare?id=dce0794335cedbca49b3de99b38952b5&sub=5E92CEBD198B436D9133230B459EB03D)
+
+* <img src="image/because.png">[Reading Note](https://github.com/bsauce/Some-Papers-About-Fuzzing/blob/master/xmind_picture/Evaluating%20Fuzz%20Testing.png)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/CCS18_Evaluating.pdf)
  
@@ -758,6 +762,8 @@ We present PeriScope, a Linux kernel based probing framework that enables fine-g
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/SP19_Razzer.pdf)
 
+* <img src="image/because.png">[Reading Note](https://github.com/bsauce/Some-Papers-About-Fuzzing/blob/master/xmind_picture/Razzer%EF%BC%9AFinding%20Kernel%20Race%20Bugs%20through%20Fuzzing-SP-2019.png)
+
 * <img src="image/ppt_24px.png">[Slides](https://lifeasageek.github.io/papers/jeong-razzer-slides.pdf)
 
 * <img src="image/github_24px.png">[Code](https://github.com/compsec-snu/razzer)
@@ -771,6 +777,8 @@ We present PeriScope, a Linux kernel based probing framework that enables fine-g
 
 * <img src="image/blog_24px.jpg">[Reading Note](https://www.jianshu.com/p/7e90ad222acf)
 
+* <img src="image/because.png">[Reading Note](https://github.com/bsauce/Some-Papers-About-Fuzzing/blob/master/xmind_picture/MoonShine%EF%BC%9AOptimizing%20OS%20Fuzzer%20Seed%20Selection%20with%20Trace%20Distillation-USENUX2018.png)
+  
 * <img src="image/pdf_24px.png">[Paper](./Paper/USENIX18_MoonShine.pdf)
 
 **Abstract:** OS fuzzers primarily test the system call interface between the OS kernel and user-level applications for security vulnerabilities. The effectiveness of evolutionary OS fuzzers depends heavily on the quality and diversity of their seed system call sequences. However, generating good seeds for OS fuzzing is a hard problem as the behavior of each system call depends heavily on the OS kernel state created by the previously executed system calls. Therefore, popular evolutionary OS fuzzers often rely on hand-coded rules for generating valid seed sequences of system calls that can bootstrap the fuzzing process. Unfortunately, this approach severely restricts the diversity of the seed system call sequences and therefore limits the effectiveness of the fuzzers.
@@ -783,6 +791,8 @@ We designed and implemented MoonShine as an extension to Syzkaller, a state-of-t
 * <img src="image/wechat_24px.png">[Reading Note From BAIZE](https://mp.weixin.qq.com/s/46J-kU37SerZd2H3L2GiTw)
 
 * <img src="image/blog_24px.jpg">[Reading Note](https://www.anquanke.com/post/id/188783#h3-12)
+
+* <img src="image/because.png">[Reading Note](https://github.com/bsauce/Some-Papers-About-Fuzzing/blob/master/xmind_picture/kAFL-%20Hardware-Assisted%20Feedback%20Fuzzing%20for%20OS%20Kernels-USENIX-2017.png)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/USENIX18_Kafl.pdf)
 
@@ -800,6 +810,8 @@ In this paper, we approach the problem of coverage-guided kernel fuzzing in an O
 * <img src="image/wechat_24px.png">[Reading Note From BAIZE](https://mp.weixin.qq.com/s/5-2PDBlRSW_kTJb1SW1spQ)
 
 * <img src="image/blog_24px.jpg">[Reading Note](https://www.anquanke.com/post/id/188783#h3-11)
+
+* <img src="image/because.png">[Reading Note](https://github.com/bsauce/Some-Papers-About-Fuzzing/blob/master/xmind_picture/DIFUZE-%20Interface%20Aware%20Fuzzing%20for%20Kernel%20Drivers-CCS-2017.png)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/CCS17_DIFUZE.pdf)
 
@@ -888,6 +900,8 @@ Our evaluation shows that QSYM does not just outperform state-of-the-art fuzzers
 ### Angora: Efficient Fuzzing by Principled Search (S&P 2018)
 
 * <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2019/01/03/angora-efficient-fuzzing-by-principled-search/)
+
+* <img src="image/because.png">[Reading Note](https://github.com/bsauce/Some-Papers-About-Fuzzing/blob/master/xmind_picture/Angora%EF%BC%9AEfficient%20Fuzzing%20by%20principled%20Search.png)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/SP18_Angora.pdf)
 
@@ -987,6 +1001,8 @@ overcome common fuzzing roadblocks in a highly effective and efficient manner. O
 * <img src="image/youdao_note_24px.png">[Reading Note](http://note.youdao.com/noteshare?id=b0505524143c5f9439c6a5d9dcff9b1d&sub=D8A73723348B4976BA191B235EB13307)
 
 * <img src="image/blog_24px.jpg">[Reading Note](https://blog.csdn.net/qq_32505207/article/details/104690747)
+
+* <img src="image/because.png">[Reading Note](https://github.com/bsauce/Some-Papers-About-Fuzzing/blob/master/xmind_picture/VUzzer%20Application-aware%20Evolutionary%20Fuzzing-ndss2017.png)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/NDSS17_Vuzzer.pdf)
 
@@ -1287,6 +1303,8 @@ In this paper, we propose Sequence-coverage Directed Fuzzing (SCDF), a lightweig
 ### Directed Greybox Fuzzing (CCS 2017)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/CCS17_aflgo.pdf)
+
+* <img src="image/because.png">[Reading Note](https://github.com/bsauce/Some-Papers-About-Fuzzing/blob/master/xmind_picture/Directed%20Greybox%20Fuzzing.png)
   
 * <img src="image/github_24px.png">[Code](https://github.com/aflgo/aflgo)
   
@@ -1296,6 +1314,8 @@ In this paper, we propose Sequence-coverage Directed Fuzzing (SCDF), a lightweig
 ### Hawkeye: Towards a Desired Directed Grey-box Fuzzer (CCS 2018)
 
 * <img src="image/youdao_note_24px.png">[Reading Note](https://note.youdao.com/ynoteshare1/index.html?id=6e9c7bba068ab022571e660ddd49c8fc&type=note#/)
+
+* <img src="image/because.png">[Reading Note](https://github.com/bsauce/Some-Papers-About-Fuzzing/blob/master/xmind_picture/Hawkeye-Towards%20a%20Desired%20Directed%20Grey-box%20Fuzzer-CCS2018.png)
 
 * <img src="image/ppt_24px.png">[Slides](https://hongxuchen.github.io/pdf/hawkeye-slides.pdf)
 
@@ -1310,6 +1330,8 @@ In this paper, we propose Sequence-coverage Directed Fuzzing (SCDF), a lightweig
 ### CollAFL: Path Sensitive Fuzzing (S&P 2018)
 
 * <img src="image/youdao_note_24px.png">[Reading Note](http://note.youdao.com/noteshare?id=35d81c8856c520a17e27c66efd32a303&sub=229B45E6622E4995A3D7C63E529AE023)
+
+* <img src="image/because.png">[Reading Note](https://github.com/bsauce/Some-Papers-About-Fuzzing/blob/master/xmind_picture/CollAFL%EF%BC%9APath%20Sensitive%20Fuzzing-SP-2018.png)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/SP18_ColLAFL.pdf)
 
@@ -1397,6 +1419,8 @@ Unfortunately, existing detection mechanisms for algorithmic complexity vulnerab
 
 * <img src="image/youdao_note_24px.png">[Reading Note](http://note.youdao.com/noteshare?id=aecd3639e21a682555fd6b002a176937)
 
+* <img src="image/because.png">[Reading Note](https://github.com/bsauce/Some-Papers-About-Fuzzing/blob/master/xmind_picture/AddressSanitizer%EF%BC%9AA%20Fast%20Address%20Sanity%20Checker-USENIX-2012.png)
+
 * <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf)
 
 * <img src="image/ppt_24px.png">[Slides](https://www.usenix.org/sites/default/files/conference/protected-files/serebryany_atc12_slides.pdf)
@@ -1430,6 +1454,8 @@ Our evaluation shows MEUZZ significantly outperforms the state-of-the-art grey-b
 ### Coverage-based Greybox Fuzzing as Markov Chain (CCS 2016)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/CCS16_Markov_Chain.pdf)
+
+* <img src="image/because.png">[Reading Note](https://github.com/bsauce/Some-Papers-About-Fuzzing/blob/master/xmind_picture/AFLFast_Coverage-based%20Greybox%20Fuzzing%20as%20Markov%20Chain-CCS2016.png)
 
 * <img src="image/github_24px.png">[Code](https://github.com/mboehme/aflfast)
 
@@ -1575,6 +1601,8 @@ We implemented a prototype of GREYONE and evaluated it on the LAVA data set and 
 
 
 ### Steelix: Program-State Based Binary Fuzzing (FSE 2017)
+
+* <img src="image/because.png">[Reading Note](https://github.com/bsauce/Some-Papers-About-Fuzzing/blob/master/xmind_picture/Steelix%EF%BC%9AProgram-State%20Based%20Binary%20Fuzzing-FSE%202017.png)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/FSE17_Steelix.pdf)
 

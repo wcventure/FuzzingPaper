@@ -1816,4 +1816,4 @@ Our findings motivate developers to create comprehensive test suites, including 
 
 ##### Page Traffic Analysis
 
-<a href='https://clustrmaps.com/site/1b59l'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=400&t=tt&d=lv-pnJIiq6psRp_b6rbzbHVqY98ziz-RPU0MjN2FBhg'/></a>
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=_VeCo_FuoOtsn-TdhQzjjz4dxYv-HMUz1-0OKUiZdeM'></script>

@@ -33,7 +33,8 @@ remark: This web is only used for collecting and grouping the related paper. If 
     - [SAVIOR: Towards Bug-Driven Hybrid Testing](#savior-towards-bug-driven-hybrid-testing-sp-2020)
     - [RetroWrite: Statically Instrumenting COTS Binaries for Fuzzing and Sanitization](#retrowrite-statically-instrumenting-cots-binaries-for-fuzzing-and-sanitization-sp-2020)
     - [IJON: Exploring Deep State Spaces via Fuzzing (S&P 2020)](#ijon-exploring-deep-state-spaces-via-fuzzing-sp-2020)
-    - [PANGOLIN: Incremental Hybrid Fuzzing with Polyhedral Path Abstraction (S&P 2020)]()
+    - [PANGOLIN: Incremental Hybrid Fuzzing with Polyhedral Path Abstraction (S&P 2020)](#pangolin-incremental-hybrid-fuzzing-with-polyhedral-path-abstraction-sp-2020)
+    - [EcoFuzz: Adaptive Energy-Saving Greybox Fuzzing as a Variant of the Adversarial Multi-Armed Bandit](#ecofuzz-adaptive-energy-saving-greybox-fuzzing-as-a-variant-of-the-adversarial-multi-armed-bandit)
 
 - **USENIX Security 2020**
     - [GREYONE: Data Flow Sensitive Fuzzing](#greyone-data-flow-sensitive-fuzzing-usenix-security2020)
@@ -70,6 +71,7 @@ remark: This web is only used for collecting and grouping the related paper. If 
     - [Matryoshka: fuzzing deeply nested branches](#matryoshka-fuzzing-deeply-nested-branches-ccs-2019)
     - [Different is Good: Detecting the Use of Uninitialized Variables through Differential Replay](#different-is-good-detecting-the-use-of-uninitialized-variables-through-differential-replay-ccs-2019)
     - [Gollum: Modular and Greybox Exploit Generation for Heap Overflows in Interpreters](#gollum-modular-and-greybox-exploit-generation-for-heap-overflows-in-interpreters-ccs-2019)
+    - [Poster: Fuzzing IoT Firmware via Multi-stage Message Generation](#poster-fuzzing-iot-firmware-via-multi-stage-message-generation-ccs-2019)
 
 - **S&P 2019**
     - [NEUZZ: Efficient Fuzzing with Neural Program Smoothing](#neuzz-efficient-fuzzing-with-neural-program-smoothing-sp-2019)
@@ -255,6 +257,7 @@ remark: This web is only used for collecting and grouping the related paper. If 
   - [RetroWrite: Statically Instrumenting COTS Binaries for Fuzzing and Sanitization (S&P 2020)](#retrowrite-statically-instrumenting-cots-binaries-for-fuzzing-and-sanitization-sp-2020)
   - [INSTRCR: Lightweight instrumentation optimization based on coverage-guided fuzz testing (CCET 2019)](#instrcr-lightweight-instrumentation-optimization-based-on-coverage-guided-fuzz-testing-ccet-2019)
   - [Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing (S&P 2019)](#full-speed-fuzzing-reducing-fuzzing-overhead-through-coverage-guided-tracing-sp-2019)
+  - [Poster: Fuzzing IoT Firmware via Multi-stage Message Generation (CCS 2019)](#poster-fuzzing-iot-firmware-via-multi-stage-message-generation-ccs-2019)
   - [INSTRIM Lightweight Instrumentation for Coverage-guided Fuzzing (NDSS 2018 workshop)](#instrim-lightweight-instrumentation-for-coverage-guided-fuzzing-ndss-2018-workshop)
 
 - [**IoT or protocols fuzzing**](#iot-or-protocols-fuzzing)
@@ -358,6 +361,7 @@ remark: This web is only used for collecting and grouping the related paper. If 
   - [AddressSanitizer: A Fast Address Sanity Checker  (USENIX Security2012)](#addresssanitizer-a-fast-address-sanity-checker-usenix-security2012)
 
 - [**Schedule (Power & Mutation)**](#schedule-power--mutation)
+  - [EcoFuzz: Adaptive Energy-Saving Greybox Fuzzing as a Variant of the Adversarial Multi-Armed Bandit (USENIX Security2020)](#ecofuzz-adaptive-energy-saving-greybox-fuzzing-as-a-variant-of-the-adversarial-multi-armed-bandit)
   - [MOPT: Optimize Mutation Scheduling for Fuzzers (USENIX Security2019)](#mopt-optimize-mutation-scheduling-for-fuzzers-usenix-security2019)
   - [Coverage-based Greybox Fuzzing as Markov Chain (CCS 2016)](#coverage-based-greybox-fuzzing-as-markov-chain-ccs-2016)
   - [Program-Adaptive Mutational Fuzzing (S&P 2015)](#program-adaptive-mutational-fuzzing-sp-2015)
@@ -643,6 +647,13 @@ The ideal solution for binary security analysis would be a static rewriter that 
 * <img src="image/github_24px.png">[Code](https://github.com/FoRTE-Research/UnTracer-AFL)
   
 **Abstract:** Coverage-guided fuzzing is one of the most successful approaches for discovering software bugs and security vulnerabilities. Of its three main components: (1) test case generation, (2) code coverage tracing, and (3) crash triage, code coverage tracing is a dominant source of overhead. Coverage-guided fuzzers trace every test case's code coverage through either static or dynamic binary instrumentation, or more recently, using hardware support. Unfortunately, tracing all test cases incurs significant performance penalties--even when the overwhelming majority of test cases and their coverage information are discarded because they do not increase code coverage. To eliminate needless tracing by coverage-guided fuzzers, we introduce the notion of coverage-guided tracing. Coverage-guided tracing leverages two observations: (1) only a fraction of generated test cases increase coverage, and thus require tracing; and (2) coverage-increasing test cases become less frequent over time. Coverage-guided tracing encodes the current frontier of coverage in the target binary so that it self-reports when a test case produces new coverage--without tracing. This acts as a filter for tracing; restricting the expense of tracing to only coverage-increasing test cases. Thus, coverage-guided tracing trades increased time handling coverage-increasing test cases for decreased time handling non-coverage-increasing test cases. To show the potential of coverage-guided tracing, we create an implementation based on the static binary instrumentor Dyninst called UnTracer. We evaluate UnTracer using eight real-world binaries commonly used by the fuzzing community. Experiments show that after only an hour of fuzzing, UnTracer's average overhead is below 1%, and after 24-hours of fuzzing, UnTracer approaches 0% overhead, while tracing every test case with popular white- and black-box-binary tracers AFL-Clang, AFL-QEMU, and AFL-Dyninst incurs overheads of 36%, 612%, and 518%, respectively. We further integrate UnTracer with the state-of-the-art hybrid fuzzer QSYM and show that in 24-hours of fuzzing, QSYM-UnTracer executes 79% and 616% more test cases than QSYM-Clang and QSYM-QEMU, respectively.
+
+
+### Poster: Fuzzing IoT Firmware via Multi-stage Message Generation (CCS 2019)
+
+* <img src="image/pdf_24px.png">[Paper](https://wpengfei.github.io/iothunter-final.pdf)
+
+**Abstract:** In this work, we present IoTHunter, the first grey-box fuzzer for fuzzing stateful protocols in IoT firmware. IoTHunter addresses the state scheduling problem based on a multi-stage message generation mechanism on runtime monitoring of IoT firmware. We evaluate IoTHunter with a set of real-world programs, and the result shows that IoTHunter outperforms black-box fuzzer boofuzz, which has a 2.2x, 2.0x, and 2.5x increase for function coverage, block coverage, and edge coverage, respectively. IoTHunter also found five new vulnerabilities in the firmware of home router Mikrotik, which have been reported to the vendor.
 
 
 ### INSTRIM Lightweight Instrumentation for Coverage-guided Fuzzing (NDSS 2018 workshop)
@@ -1432,6 +1443,13 @@ AddressSanitizer achieves efficiency without sacrificing comprehensiveness. Its 
 
 
 # Schedule (Power & Mutation)
+
+### EcoFuzz: Adaptive Energy-Saving Greybox Fuzzing as a Variant of the Adversarial Multi-Armed Bandit
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/USENIX20_EcoFuzz.pdf)
+
+**Abstract:** Fuzzing is one of the most effective approaches for identifying security vulnerabilities. As a state-of-the-art coverage-based greybox fuzzer, AFL is a highly effective and widely used technique. However, AFL allocates excessive energy (i.e.,the number of test cases generated by the seed) to seeds that exercise the high-frequency paths and can not adaptively adjust the energy allocation, thus wasting a significant amount of energy. Moreover, the current Markov model for modeling coverage-based greybox fuzzing is not profound enough. This paper presents a variant of the Adversarial Multi-Armed Bandit model for modeling AFL’s power schedule process. We first explain the challenges in AFL’s scheduling algorithm by using the reward probability that generates a test case for discovering a new path. Moreover, we illustrated the three states of the seeds set and developed a unique adaptive scheduling algorithm as well as a probability-based search strategy. These approaches are implemented on top of AFL in an adaptive energy-saving greybox fuzzer called EcoFuzz. EcoFuzz is examined against other six AFL-type tools on 14 real-world subjects over 490 CPU days. According to the results, EcoFuzz could attain 214% of the path coverage of AFL with reducing 32% test cases generation of that of AFL. Besides, EcoFuzz identified 12 vulnerabilities in GNU Binutils and other software. We also extended EcoFuzz to test some IoT devices and found a new vulnerability in the SNMP component.
+
 
 ### MEUZZ: Smart Seed Scheduling for Hybrid Fuzzing
 

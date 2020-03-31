@@ -41,7 +41,7 @@ remark: This web is only used for collecting and grouping the related paper. If 
     - [GREYONE: Data Flow Sensitive Fuzzing](#greyone-data-flow-sensitive-fuzzing-usenix-security2020)
     - [FuzzGuard: Filtering out Unreachable Inputs in Directed Grey-box Fuzzing through Deep Learning](#fuzzguard-filtering-out-unreachable-inputs-in-directed-grey-box-fuzzing-through-deep-learning-usenix-security2020)
     - [ParmeSan: Sanitizer-guided Greybox Fuzzing](#parmesan-sanitizer-guided-greybox-fuzzing-usenix-security2020)
-    - [EcoFuzz: Adaptive Energy-Saving Greybox Fuzzing as a Variant of the Adversarial Multi-Armed Bandit](#ecofuzz-adaptive-energy-saving-greybox-fuzzing-as-a-variant-of-the-adversarial-multi-armed-bandit)
+    - [EcoFuzz: Adaptive Energy-Saving Greybox Fuzzing as a Variant of the Adversarial Multi-Armed Bandit](#ecofuzz-adaptive-energy-saving-greybox-fuzzing-as-a-variant-of-the-adversarial-multi-armed-bandit-usenix-security2020)
     - [FANS: Fuzzing Android Native System Services via Automated Interface Analysis](#fans-fuzzing-android-native-system-services-via-automated-interface-analysis-usenix-security2019)
 
 - **SANER 2020**
@@ -379,7 +379,7 @@ remark: This web is only used for collecting and grouping the related paper. If 
   - [AddressSanitizer: A Fast Address Sanity Checker  (USENIX Security2012)](#addresssanitizer-a-fast-address-sanity-checker-usenix-security2012)
 
 - [**Schedule (Power & Mutation)**](#schedule-power--mutation)
-  - [EcoFuzz: Adaptive Energy-Saving Greybox Fuzzing as a Variant of the Adversarial Multi-Armed Bandit (USENIX Security2020)](#ecofuzz-adaptive-energy-saving-greybox-fuzzing-as-a-variant-of-the-adversarial-multi-armed-bandit)
+  - [EcoFuzz: Adaptive Energy-Saving Greybox Fuzzing as a Variant of the Adversarial Multi-Armed Bandit (USENIX Security2020)](#ecofuzz-adaptive-energy-saving-greybox-fuzzing-as-a-variant-of-the-adversarial-multi-armed-bandit-usenix-security2020)
   - [MOPT: Optimize Mutation Scheduling for Fuzzers (USENIX Security2019)](#mopt-optimize-mutation-scheduling-for-fuzzers-usenix-security2019)
   - [Cerebro: Context-aware Adaptive Fuzzing for Effective Vulnerability Detection (FSE 2019)](#cerebro-context-aware-adaptive-fuzzing-for-effective-vulnerability-detection-fse-2019)
   - [Coverage-based Greybox Fuzzing as Markov Chain (CCS 2016)](#coverage-based-greybox-fuzzing-as-markov-chain-ccs-2016)

@@ -573,6 +573,8 @@ We have evaluated classming on mainstream JVM implementations, including OpenJDK
 
 ### Hunting for bugs in code coverage tools via randomized differential testing (ICSE 2019)
 
+* <img src="image/zhihu.png">[Reading Note](https://zhuanlan.zhihu.com/p/125157536)
+
 * <img src="image/pdf_24px.png">[Paper](./Paper/ICSE19_Difftest.pdf)
 
 **Abstract:** Reliable code coverage tools are critically important as it is heavily used to facilitate many quality assurance activities, such as software testing, fuzzing, and debugging. However, little attention has been devoted to assessing the reliability of code coverage tools. In this study, we propose a randomized differential testing approach to hunting for bugs in the most widely used C code coverage tools. Specifically, by generating random input programs, our approach seeks for inconsistencies in code coverage reports produced by different code coverage tools, and then identifies inconsistencies as potential code coverage bugs. To effectively report code coverage bugs, we addressed three specific challenges: (1) How to filter out duplicate test programs as many of them triggering the same bugs in code coverage tools; (2) how to automatically reduce large test programs to much smaller ones that have the same properties; and (3) how to determine which code coverage tools have bugs? The extensive evaluations validate the effectiveness of our approach, resulting in 42 and 28 confirmed/fixed bugs for gcov and llvm-cov, respectively. This case study indicates that code coverage tools are not as reliable as it might have been envisaged. It not only demonstrates the effectiveness of our approach, but also highlights the need to continue improving the reliability of code coverage tools. This work opens up a new direction in code coverage validation which calls for more attention in this area.
@@ -904,6 +906,8 @@ In this paper, we approach the problem of coverage-guided kernel fuzzing in an O
 # Hybrid Fuzzing:
 
 ### HFL: Hybrid Fuzzing on the Linux Kernel (NDSS 2020)
+
+* <img src="image/zhihu.png">[Reading Note](https://zhuanlan.zhihu.com/p/123373175)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/NDSS20_HFL.pdf)
 

@@ -46,7 +46,7 @@ remark: This web is only used for collecting and grouping the related paper. If 
 
 - **SANER 2020**
     - [ETHPLOIT: From Fuzzing to Efficient Exploit Generation against Smart Contracts](#ethploit-from-fuzzing-to-efficient-exploit-generation-against-smart-contracts-saner2020)
-    - [Sequence directed hybrid fuzzing]
+    - [Sequence directed hybrid fuzzing](#sequence-directed-hybrid-fuzzing-saner-2020)
   
 - **ICST 2020**
     - [ct-fuzz: Fuzzing for Timing Leaks](#ct-fuzz-fuzzing-for-timing-leaks-icst-2020)
@@ -298,7 +298,7 @@ remark: This web is only used for collecting and grouping the related paper. If 
   - [IMF: Inferred Model-based Fuzzer (CCS 2017)](#imf-inferred-model-based-fuzzer-ccs-2017)
 
 - [**Hybrid Fuzzing**](#hybrid-fuzzing)
-  - [Sequence directed hybrid fuzzing (SANER 2020)]
+  - [Sequence directed hybrid fuzzing (SANER 2020)](#sequence-directed-hybrid-fuzzing-saner-2020)
   - [HFL: Hybrid Fuzzing on the Linux Kernel (NDSS 2020)](#hfl-hybrid-fuzzing-on-the-linux-kernel-ndss-2020)
   - [PANGOLIN: Incremental Hybrid Fuzzing with Polyhedral Path Abstraction (S&P 2020)]()
   - [SAVIOR: Towards Bug-Driven Hybrid Testing (S&P 2020)](#savior-towards-bug-driven-hybrid-testing-sp-2020)
@@ -356,6 +356,7 @@ remark: This web is only used for collecting and grouping the related paper. If 
   - [MemFuzz: Using Memory Accesses to Guide Fuzzing (ICST 2019)](#memfuzz-using-memory-accesses-to-guide-fuzzing-icst-2019)
 
 - [**Directed Fuzzing**](#directed-fuzzing)
+  - [Sequence directed hybrid fuzzing](#sequence-directed-hybrid-fuzzing-saner-2020)
   - [Binary-level Directed Fuzzing for Use-After-Free Vulnerabilities (2020)](#binary-level-directed-fuzzing-for-use-after-free-vulnerabilities-2020)
   - [Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities (ICSE 2020)](#typestate-guided-fuzzer-for-discovering-use-after-free-vulnerabilities-icse-2020)
   - [Ankou: Guiding Grey-box Fuzzing towards Combinatorial Difference (ICSE 2020)](#ankou-guiding-grey-box-fuzzing-towards-combinatorial-difference-icse-2020)
@@ -904,6 +905,13 @@ In this paper, we approach the problem of coverage-guided kernel fuzzing in an O
 
 
 # Hybrid Fuzzing:
+
+### Sequence directed hybrid fuzzing (SANER 2020)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/SANER20_Sequence.pdf)
+
+**Abstract:** Existing directed grey-box fuzzers are effective compared with coverage-based fuzzers. However, they fail to achieve a balance between effectiveness and efficiency, and it is difficult to cover complex paths due to random mutation. To mitigate the issue, we propose a novel approach, sequence directed hybrid fuzzing (SDHF), which leverages a sequence-directed strategy and concolic execution technique to enhance the effectiveness of fuzzing. Given a set of target statement sequences of a program, SDHF aims to generate inputs that can reach the statements in each sequence in order and trigger potential bugs in the program. We implement the proposed approach in a tool called Berry and evaluate its capability on crash reproduction, true positive verification, and vulnerability detection. Experimental results demonstrate that Berry outperforms four state-of-the-art fuzzers, including directed fuzzers BugRedux, AFLGo and Lolly, and undirected hybrid fuzzer QSYM. Moreover, Berry found 7 new vulnerabilities in real-world programs such as UPX and GNU Libextractor, and 3 new CVEs were assigned.
+
 
 ### HFL: Hybrid Fuzzing on the Linux Kernel (NDSS 2020)
 

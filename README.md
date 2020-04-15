@@ -819,7 +819,9 @@ In this paper, we highlight the potential of applying fuzzing to find not just m
 
 ### Fuzzing File Systems via Two-Dimensional Input Space Exploration (S&P 2019)
 
-* <img src="image/youdao_note_24px.png">[Reading Note From BAIZE](http://note.youdao.com/noteshare?id=25d83408e46b014dd32df2cd5da72e41)
+* <img src="image/zhihu.png">[Reading Note](https://zhuanlan.zhihu.com/p/113426778)
+
+* <img src="image/wechat_24px.png">[Reading Note From BAIZE](https://mp.weixin.qq.com/s/d2VEQTLtHV5Z-li6M3KBFA)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/SP19_Fuzzing_File.pdf)
 
@@ -867,6 +869,8 @@ We designed and implemented MoonShine as an extension to Syzkaller, a state-of-t
 * <img src="image/blog_24px.jpg">[Reading Note](https://www.anquanke.com/post/id/188783#h3-12)
 
 * <img src="image/because.png">[Reading Note](https://github.com/bsauce/Some-Papers-About-Fuzzing/blob/master/xmind_picture/kAFL-%20Hardware-Assisted%20Feedback%20Fuzzing%20for%20OS%20Kernels-USENIX-2017.png)
+
+* <img src="image/youdao_note_24px.png">[Reading Note](https://github.com/ckxckx/aos_course/blob/f146e1f2091c0e8c4916da4b935423903aa4831f/review_kafl.md)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/USENIX18_Kafl.pdf)
 
@@ -1161,11 +1165,13 @@ In this paper, we pre­sent the de­sign and im­ple­men­ta­ti­on of GRI­MO
 
 ### ProFuzzer: On-the-fly Input Type Probing for Better Zero-day Vulnerability Discovery (S&P 2019)
 
-* <img src="image/youdao_note_24px.png">[Reading Note](http://note.youdao.com/noteshare?id=8e905e9d299cae5ceb3bbeac0591cfab&sub=9FCAB3A8AD4C48689095307EDD1A940A)
+* <img src="image/zhihu.png">[Reading Note](https://zhuanlan.zhihu.com/p/130901035)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/SP19_Profuzz.pdf)
 
-* <img src="image/github_24px.png">[Code](https://github.com/profuzzer)
+* <img src="image/ppt_24px.png">[Slides](https://www.inforsec.org/wp/wp-content/uploads/2020/01/%E6%B8%B8%E4%BC%9F-ProFuzzer-Wei-You.pdf)
+
+* <img src="image/github_24px.png">[POC](https://github.com/profuzzer)
 
 **Abstract:** Existing mutation based fuzzers tend to randomly mutate the input of a program without understanding its underlying syntax and semantics. In this paper, we propose a novel on-the-fly probing technique (called ProFuzzer) that automatically recovers and understands input fields of critical importance to vulnerability discovery during a fuzzing process and intelligently adapts the mutation strategy to enhance the chance of hitting zero-day targets. Since such probing is transparently piggybacked to the regular fuzzing, no prior knowledge of the input specification is needed. During fuzzing, individual bytes are first mutated and their fuzzing results are automatically analyzed to link those related together and identify the type for the field connecting them; these bytes are further mutated together following type-specific strategies, which substantially prunes the search space. We define the probe types generally across all applications, thereby making our technique application agnostic. Our experiments on standard benchmarks and real-world applications show that ProFuzzer substantially outperforms AFL and its optimized version AFLFast, as well as other state-of-art fuzzers including VUzzer, Driller and QSYM. Within two months, it exposed 42 zero-days in 10 intensively tested programs, generating 30 CVEs.
 
@@ -1401,9 +1407,7 @@ In this paper, we propose Sequence-coverage Directed Fuzzing (SCDF), a lightweig
 
 ### Hawkeye: Towards a Desired Directed Grey-box Fuzzer (CCS 2018)
 
-* <img src="image/youdao_note_24px.png">[Reading Note](https://note.youdao.com/ynoteshare1/index.html?id=6e9c7bba068ab022571e660ddd49c8fc&type=note#/)
-
-* <img src="image/because.png">[Reading Note](https://github.com/bsauce/Some-Papers-About-Fuzzing/blob/master/xmind_picture/Hawkeye-Towards%20a%20Desired%20Directed%20Grey-box%20Fuzzer-CCS2018.png)
+* <img src="image/zhihu.png">[Reading Note](https://zhuanlan.zhihu.com/p/130767857)
 
 * <img src="image/ppt_24px.png">[Slides](https://hongxuchen.github.io/pdf/hawkeye-slides.pdf)
 
@@ -1503,7 +1507,7 @@ Unfortunately, existing detection mechanisms for algorithmic complexity vulnerab
 
 ### Enhancing Memory Error Detection for Large-Scale Applications and Fuzz Testing (NDSS 2018)
 
-* <img src="image/youdao_note_24px.png">[Reading Note](http://note.youdao.com/noteshare?id=6228fef31b29b4ffbbbe1c1d80ef3fa0&sub=CB0D15A0D6394FA188C06B2BCB6367A3)
+* <img src="image/zhihu.png">[Reading Note](https://zhuanlan.zhihu.com/p/130804461)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/NDSS18_Enhancing_Paper.pdf)
 

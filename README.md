@@ -1,5 +1,5 @@
 # Recent Papers Related To Fuzzing
-remark: This web is only used for collecting and grouping the related paper. If there are any paper need to be updated, you can contribute PR.
+remark: This website is only used for collecting and grouping the related paper. If there are any paper need to be updated, you can contribute PR.
 
 # All Papers (Classification according to Publication)
 
@@ -590,9 +590,9 @@ We have evaluated classming on mainstream JVM implementations, including OpenJDK
 
 ### Different is Good: Detecting the Use of Uninitialized Variables through Differential Replay (CCS 2019)
 
+* <img src="image/zhihu.png">[Reading Note](https://zhuanlan.zhihu.com/p/131312498)
+ 
 * <img src="image/pdf_24px.png">[Paper](./Paper/CCS19_Different.pdf)
-
-* <img src="image/youdao_note_24px.png">[Reading Note](http://note.youdao.com/noteshare?id=5bfff2d122f4ef63d8d42a4a4efed410)
 
 **Abstract:** The use of uninitialized variables is a common issue. It could cause kernel information leak, which defeats the widely deployed security defense, i.e., kernel address space layout randomization (KASLR). Though a recent system called Bochspwn Reloaded reported multiple memory leaks in Windows kernels, how to effectively detect this issue is still largely behind.
 

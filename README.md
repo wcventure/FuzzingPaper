@@ -13,6 +13,9 @@ remark: This website is only used for collecting and grouping the related paper.
     - [Fuzzing: a survey](#fuzzing-a-survey)
     - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
 
+- **IPDI 2020**
+    - [Validating SMT Solvers via Semantic Fusion](#validating-smt-solvers-via-semantic-fusion-pldi-2020)
+
 - **ICSE 2020**
     - [Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities](#typestate-guided-fuzzer-for-discovering-use-after-free-vulnerabilities-icse-2020)
     - [MemLock: Memory Usage Guided Fuzzing](#memlock-memory-usage-guided-fuzzing-icse2020)
@@ -22,6 +25,7 @@ remark: This website is only used for collecting and grouping the related paper.
     - [Fuzz Testing based Data Augmentation to Improve Robustness of Deep Neural Networks](#fuzz-testing-based-data-augmentation-to-improve-robustness-of-deep-neural-networks-icse-2020)
     - [sFuzz: An Efficient Adaptive Fuzzer for Solidity Smart Contracts](#sfuzz-an-efficient-adaptive-fuzzer-for-solidity-smart-contracts-icse-2020)
     - [HyDiff: Hybrid Differential Software Analysis](#hydiff-hybrid-differential-software-analysis-icse-2020)
+    - [Automatically Testing String Solvers](#automatically-testing-string-solvers-icse-2020)
 
 - **NDSS 2020**
     - [HYPER-CUBE: High-Dimensional Hypervisor Fuzzing](#hyper-cube-high-dimensional-hypervisor-fuzzing-ndss-2020)
@@ -43,6 +47,7 @@ remark: This website is only used for collecting and grouping the related paper.
     - [ParmeSan: Sanitizer-guided Greybox Fuzzing](#parmesan-sanitizer-guided-greybox-fuzzing-usenix-security2020)
     - [EcoFuzz: Adaptive Energy-Saving Greybox Fuzzing as a Variant of the Adversarial Multi-Armed Bandit](#ecofuzz-adaptive-energy-saving-greybox-fuzzing-as-a-variant-of-the-adversarial-multi-armed-bandit-usenix-security2020)
     - [FANS: Fuzzing Android Native System Services via Automated Interface Analysis](#fans-fuzzing-android-native-system-services-via-automated-interface-analysis-usenix-security2020)
+    - [Fuzzing Error Handling Code using Context-Sensitive Software Fault Injection](#fuzzing-error-handling-code-using-context-sensitive-software-fault-injection-usenix-security2020)
 
 - **SANER 2020**
     - [ETHPLOIT: From Fuzzing to Efficient Exploit Generation against Smart Contracts](#ethploit-from-fuzzing-to-efficient-exploit-generation-against-smart-contracts-saner2020)
@@ -53,12 +58,15 @@ remark: This website is only used for collecting and grouping the related paper.
     - [AFLNET: A Greybox Fuzzer for Network Protocols](#aflnet-a-greybox-fuzzer-for-network-protocols-icst-2020)
 
 - **Others 2020**
+    - [ICS Protocol Fuzzing: Coverage Guided Packet Crack and Generation](#ics-protocol-fuzzing-coverage-guided-packet-crack-and-generation-dac-2020)
+    - [Coverage Guided Differential Adversarial Testing of Deep Learning Systems](#coverage-guided-differential-adversarial-testing-of-deep-learning-systems-tnse-2020)
     - [Fw‐fuzz: A code coverage‐guided fuzzing framework for network protocols on firmware](#fw%e2%80%90fuzz-a-code-coverage%e2%80%90guided-fuzzing-framework-for-network-protocols-on-firmware-2020)
     - [Greybox Fuzzing Based on Ant Colony Algorithm](#greybox-fuzzing-based-on-ant-colony-algorithm-aina-2020)    
     - [MEUZZ: Smart Seed Scheduling for Hybrid Fuzzing](#meuzz-smart-seed-scheduling-for-hybrid-fuzzing)
     - [Binary-level Directed Fuzzing for Use-After-Free Vulnerabilities](#binary-level-directed-fuzzing-for-use-after-free-vulnerabilities)
     - [Smart seed selection-based effective black box fuzzing for IIoT protocol](#smart-seed-selection-based-effective-black-box-fuzzing-for-iiot-protocol)
     - [RDFuzz: Accelerating Directed Fuzzing with Intertwined Schedule and Optimized Mutation](#rdfuzz-accelerating-directed-fuzzing-with-intertwined-schedule-and-optimized-mutation-2020)
+    - [Detecting Critical Bugs in SMT Solvers Using Blackbox Mutational Fuzzing](#detecting-critical-bugs-in-smt-solvers-using-blackbox-mutational-fuzzing-2020)
 
 - **OOPSLA 2019**
     - [FuzzFactory: Domain-Specific Fuzzing with Waypoints](#fuzzfactory-domain-specific-fuzzing-with-waypoints-oopsla-2019)
@@ -137,6 +145,8 @@ remark: This website is only used for collecting and grouping the related paper.
     - [SeqFuzzer: An Industrial Protocol Fuzzing Framework in Deep Learning Perspective](#seqfuzzer-an-industrial-protocol-fuzzing-framework-in-deep-learning-perspective-icst-2019)
 
 - **Other 2019**
+    - [DeepFuzzer: Accelerated Deep Greybox Fuzzing (TDSC 2019)](#deepfuzzer-accelerated-deep-greybox-fuzzing-tdsc-2019)
+    - [CAGFuzz: Coverage-Guided Adversarial Generative Fuzzing Testing of Deep Learning Systems](#cagfuzz-coverage-guided-adversarial-generative-fuzzing-testing-of-deep-learning-systems-2019)
     - [Suzzer: A Vulnerability-Guided Fuzzer Based on Deep Learning](#suzzer-a-vulnerability-guided-fuzzer-based-on-deep-learning-inscrypt-2019)
     - [ConFuz: A Concurrency Fuzzer](#confuzz-a-concurrency-fuzzer-2019)
     - [INSTRCR: Lightweight instrumentation optimization based on coverage-guided fuzz testing](#instrcr-lightweight-instrumentation-optimization-based-on-coverage-guided-fuzz-testing-ccet-2019)
@@ -188,6 +198,9 @@ remark: This website is only used for collecting and grouping the related paper.
     - [Compiler Fuzzing through Deep Learning](#compiler-fuzzing-through-deep-learning-issta-2018)
     - [PerfFuzz: Automatically Generating Pathological Inputs](#perffuzz-automatically-generating-pathological-inputs-issta-2018)
 
+- **CAV 2018**
+    - [StringFuzz: A fuzzer for string solvers](#stringfuzz-a-fuzzer-for-string-solvers-cav-2018)
+  
 - **ACSAC 2018**
     - [TIFF: Using Input Type Inference To Improve Fuzzing](#tiff-using-input-type-inference-to-improve-fuzzing-acsac-2018)
 
@@ -252,6 +265,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Razzer: Finding Kernel Race Bugs through Fuzzing (S&P 2019)](#razzer-finding-kernel-race-bugs-through-fuzzing-sp-2019)
 
 - [**Differential Fuzzing**](#differential-fuzzing)
+  - [Coverage Guided Differential Adversarial Testing of Deep Learning Systems (TNSE 2020)](#coverage-guided-differential-adversarial-testing-of-deep-learning-systems-tnse-2020)
   - [HyDiff: Hybrid Differential Software Analysis (ICSE 2020)](#hydiff-hybrid-differential-software-analysis-icse-2020)
   - [DifFuzz: Differential Fuzzing for Side-Channel Analysis (ICSE 2019)](#diffuzz-differential-fuzzing-for-side-channel-analysis-icse-2019)
   - [Deep Differential Testing of JVM Implementations (ICSE 2019)](#deep-differential-testing-of-jvm-implementations-icse-2019)
@@ -276,6 +290,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [INSTRIM Lightweight Instrumentation for Coverage-guided Fuzzing (NDSS 2018 workshop)](#instrim-lightweight-instrumentation-for-coverage-guided-fuzzing-ndss-2018-workshop)
 
 - [**IoT or protocols fuzzing**](#iot-or-protocols-fuzzing)
+  - [ICS Protocol Fuzzing: Coverage Guided Packet Crack and Generation (DAC 2020)](#ics-protocol-fuzzing-coverage-guided-packet-crack-and-generation-dac-2020)
   - [AFLNET: A Greybox Fuzzer for Network Protocols (ICST 2020)](#aflnet-a-greybox-fuzzer-for-network-protocols-icst-2020)
   - [Smart seed selection-based effective black box fuzzing for IIoT protocol (2020)](#smart-seed-selection-based-effective-black-box-fuzzing-for-iiot-protocol-2020)
   - [Fw‐fuzz: A code coverage‐guided fuzzing framework for network protocols on firmware (2020)](#fw%e2%80%90fuzz-a-code-coverage%e2%80%90guided-fuzzing-framework-for-network-protocols-on-firmware-2020)
@@ -283,6 +298,12 @@ remark: This website is only used for collecting and grouping the related paper.
   - [FIRM-AFL: High-Throughput Greybox Fuzzing of IoT Firmware via Augmented Process Emulation (USENIX Security2019)](#firm-afl-high-throughput-greybox-fuzzing-of-iot-firmware-via-augmented-process-emulation-usenix-security2019)
   - [IoTFuzzer: Discovering Memory Corruptions in IoT Through App-based Fuzzing (NDSS 2018)](#iotfuzzer-discovering-memory-corruptions-in-iot-through-app-based-fuzzing-ndss-2018)
   - [Protocol State Fuzzing of TLS Implementations (USENIX Security2015)](#protocol-state-fuzzing-of-tls-implementations-usenix-security2015)
+
+- [**SMT Fuzzing**](#smt-fuzzing)
+  - [Validating SMT Solvers via Semantic Fusion (PLDI 2020)](#validating-smt-solvers-via-semantic-fusion-pldi-2020)
+  - [Detecting Critical Bugs in SMT Solvers Using Blackbox Mutational Fuzzing (2020)](#detecting-critical-bugs-in-smt-solvers-using-blackbox-mutational-fuzzing-2020)
+  - [Automatically Testing String Solvers (ICSE 2020)](#automatically-testing-string-solvers-icse-2020)
+  - [StringFuzz: A fuzzer for string solvers (CAV 2018)](#stringfuzz-a-fuzzer-for-string-solvers-cav-2018)
 
 - [**Anti Fuzzing**](#anti-fuzzing)
   - [Antifuzz: impeding fuzzing audits of binary executables (USENIX Security2019)](#antifuzz-impeding-fuzzing-audits-of-binary-executables-usenix-security2019)
@@ -304,12 +325,13 @@ remark: This website is only used for collecting and grouping the related paper.
 - [**Hybrid Fuzzing**](#hybrid-fuzzing)
   - [Sequence directed hybrid fuzzing (SANER 2020)](#sequence-directed-hybrid-fuzzing-saner-2020)
   - [HFL: Hybrid Fuzzing on the Linux Kernel (NDSS 2020)](#hfl-hybrid-fuzzing-on-the-linux-kernel-ndss-2020)
-  - [PANGOLIN: Incremental Hybrid Fuzzing with Polyhedral Path Abstraction (S&P 2020)]()
+  - [PANGOLIN: Incremental Hybrid Fuzzing with Polyhedral Path Abstraction (S&P 2020)](#pangolin-incremental-hybrid-fuzzing-with-polyhedral-path-abstraction-sp-2020)
   - [SAVIOR: Towards Bug-Driven Hybrid Testing (S&P 2020)](#savior-towards-bug-driven-hybrid-testing-sp-2020)
   - [MEUZZ: Smart Seed Scheduling for Hybrid Fuzzing (2020)](#meuzz-smart-seed-scheduling-for-hybrid-fuzzing-2020)
   - [Deferred Concretization in Symbolic Execution via Fuzzing (ISSTA 2019)](#deferred-concretization-in-symbolic-execution-via-fuzzing-issta-2019)
   - [Send Hardest Problems My Way: Probabilistic Path Prioritization for Hybrid Fuzzing (NDSS 2019)](#send-hardest-problems-my-way-probabilistic-path-prioritization-for-hybrid-fuzzing--ndss-2019)
   - [Intriguer: Field-Level Constraint Solving for Hybrid Fuzzing (CCS 2019)](#intriguer-field-level-constraint-solving-for-hybrid-fuzzing-ccs-2019)
+  - [DeepFuzzer: Accelerated Deep Greybox Fuzzing (TDSC 2019)](#deepfuzzer-accelerated-deep-greybox-fuzzing-tdsc-2019)
   - [QSYM: A Practical Concolic Execution Engine Tailored for Hybrid Fuzzing (USENIX Security2018)](#qsym-a-practical-concolic-execution-engine-tailored-for-hybrid-fuzzing-usenix-security2018)
   - [Angora: Efficient Fuzzing by Principled Search (S&P 2018)](#angora-efficient-fuzzing-by-principled-search-sp-2018)
   - [SAFL: increasing and accelerating testing coverage with symbolic execution and guided fuzzing (ICSE 2018)](#safl-increasing-and-accelerating-testing-coverage-with-symbolic-execution-and-guided-fuzzing-icse-2018)
@@ -408,6 +430,8 @@ remark: This website is only used for collecting and grouping the related paper.
 
 - [**Fuzzing Machine Learning Model**](#fuzzing-machine-learning-model)
   - [Fuzz Testing based Data Augmentation to Improve Robustness of Deep Neural Networks (ICSE 2020)](#fuzz-testing-based-data-augmentation-to-improve-robustness-of-deep-neural-networks-icse-2020)
+  - [Coverage Guided Differential Adversarial Testing of Deep Learning Systems (TNSE 2020)](#coverage-guided-differential-adversarial-testing-of-deep-learning-systems-tnse-2020)
+  - [CAGFuzz: Coverage-Guided Adversarial Generative Fuzzing Testing of Deep Learning Systems 2019](#cagfuzz-coverage-guided-adversarial-generative-fuzzing-testing-of-deep-learning-systems-2019)
   - [DeepHunter: A Coverage-Guided Fuzz Testing Framework for Deep Neural Networks (ISSTA 2019)](#deephunter-a-coverage-guided-fuzz-testing-framework-for-deep-neural-networks-issta-2019)
   - [DLFuzz: Differential Fuzzing Testing of Deep Learning Systems (FSE 2018)](#dlfuzz-differential-fuzzing-testing-of-deep-learning-systems-fse-2018)
   - [TensorFuzz: Debugging Neural Networks with Coverage-Guided Fuzzing (2018)](#tensorfuzz-debugging-neural-networks-with-coverage-guided-fuzzing-2018)
@@ -441,6 +465,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [DifFuzz: Differential Fuzzing for Side-Channel Analysis (ICSE 2019)](#diffuzz-differential-fuzzing-for-side-channel-analysis-icse-2019)
 
 - [**Other Interesting Fuzzing**](#other-interesting-fuzzing)
+  - [Fuzzing Error Handling Code using Context-Sensitive Software Fault Injection (USENIX Security2020)](#fuzzing-error-handling-code-using-context-sensitive-software-fault-injection-usenix-security2020)
   - [FANS: Fuzzing Android Native System Services via Automated Interface Analysis (USENIX Security2020)](#fans-fuzzing-android-native-system-services-via-automated-interface-analysis-usenix-security2020)
   - [Fuzzing IPC with Knowledge Inference (SRDS 2019)](#fuzzing-ipc-with-knowledge-inference-srds-2019)
   - [HYPER-CUBE: High-Dimensional Hypervisor Fuzzing (NDSS 2020)](#hyper-cube-high-dimensional-hypervisor-fuzzing-ndss-2020)
@@ -559,7 +584,7 @@ We implemented our approach on top of the fuzzer AFL and the symbolic execution 
 
 ### DifFuzz: Differential Fuzzing for Side-Channel Analysis (ICSE 2019)
 
-* <img src="image/youdao_note_24px.png">[Reading Note](http://note.youdao.com/noteshare?id=06c39d23c76be5d0e6441a01c9eaff93&sub=B72A70BDD1DC47B39E56866B3903401B)
+* <img src="image/youdao_note_24px.png">[Reading Note](https://zhuanlan.zhihu.com/p/132466004)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/ICSE19_DIFFUZZ.pdf)
 
@@ -716,6 +741,15 @@ The ideal solution for binary security analysis would be a static rewriter that 
 
 # IoT or protocols fuzzing
 
+### ICS Protocol Fuzzing: Coverage Guided Packet Crack and Generation (DAC 2020)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/ICST20_AFLNet.pdf)
+
+**Abstract:** Industrial Control System (ICS) protocols play an essential role in building communications among system components. Recently, many severe vulnerabilities, such as Stuxnet and DragonFly, exposed in ICS protocols have affected a wide distribution of devices. Therefore, it is of vital importance to ensure their correctness. However, the vulnerability detection efficiency of traditional techniques such as fuzzing is challenged by the complexity and diversity of the protocols.
+
+In this paper, we propose to equip the traditional protocol fuzzing with coverage-guided packet crack and generation. We collect the coverage information during testing procedure, save those valuable packets that trigger new path coverage and crack them into pieces, based on which, we can construct higher quality new packets for further testing. For evaluation, we build Peach* on top of Peach, which is one of the most widely used protocol fuzzers, and conduct experiments on several ICS protocols such as Modbus and DNP3. Results show that, compared with the original Peach, Peach* achieves the same code coverage and bug detection numbers at the speed of 1.2X-25X. It also gains final increase with 8.35%-36.84% more paths within 24 hours, and has exposed 9 previously unknown vulnerabilities.
+
+
 ### AFLNET: A Greybox Fuzzer for Network Protocols (ICST 2020)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/ICST20_AFLNet.pdf)
@@ -777,6 +811,41 @@ The ideal solution for binary security analysis would be a static rewriter that 
 **Abstract:** We describe a largely automated and systematic analysis of TLS implementations by what we call ‘protocol state fuzzing’: we use state machine learning to infer state machines from protocol implementations, using only blackbox testing, and then inspect the inferred state machines to look for spurious behaviour which might be an indication of flaws in the program logic. For detecting the presence of spurious behaviour the approach is almost fully automatic: we automatically obtain state machines and any spurious behaviour is then trivial to see. Detecting whether the spurious behaviour introduces exploitable security weaknesses does require manual investigation. Still, we take the point of view that any spurious functionality in a security protocol implementation is dangerous and should be removed.
 
 We analysed both server- and client-side implementations with a test harness that supports several key exchange algorithms and the option of client certificate authentication. We show that this approach can catch an interesting class of implementation flaws that is apparently common in security protocol implementations: in three of the TLS implementations analysed new security flaws were found (in GnuTLS, the Java Secure Socket Extension, and OpenSSL). This shows that protocol state fuzzing is a useful technique to systematically analyse security protocol implementations. As our analysis of different TLS implementations resulted in different and unique state machines for each one, the technique can also be used for fingerprinting TLS implementations.
+
+
+
+# SMT Fuzzing
+
+### Validating SMT Solvers via Semantic Fusion (PLDI 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://wintered.github.io/papers/winterer-zhang-su-pldi20.pdf)
+
+**Abstract:** We introduce Semantic Fusion, a general, effective methodology for validating Satisfiability Modulo Theory (SMT) solvers. Our key idea is to fuse two existing equisatisfiable (i.e., both satisfiable or unsatisfiable) formulas into a new formula that combines the structures of its ancestors in a novel manner and preserves the satisfiability by construction. This fused formula is then used for validating SMT solvers. We realized Semantic Fusion as YinYang, a practical SMT solver testing tool. During four months of extensive testing, YinYang has found 45 confirmed, unique bugs in the default arithmetic and string solvers of Z3 and CVC4, the two state-of-the-art SMT solvers. Among these, 41 have already been fixed by the developers. The majority (29/45) of these bugs expose critical soundness issues. Our bug reports and testing effort have been well-appreciated by SMT solver developers.
+
+
+### Detecting Critical Bugs in SMT Solvers Using Blackbox Mutational Fuzzing (2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://mariachris.github.io/Pubs/CORR-2020-STORM.pdf)
+
+**Abstract:** Formal methods use SMT solvers extensively for deciding formula satisfiability, for instance, in software verification, systematic test generation, and program synthesis. However, due to their complex implementations, solvers may contain critical bugs that lead to unsound results. Given the wide applicability of solvers in software reliability, relying on such unsound results may have detrimental consequences. In this paper, we present STORM, a novel blackbox mutational fuzzing technique for detecting critical bugs in SMT solvers. We run our fuzzer on seven mature solvers and find 29 previously unknown critical bugs. STORM is already being used in testing new features of popular solvers before deployment.
+
+
+### Automatically Testing String Solvers (ICSE 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/397450/paper.pdf?sequence=1&isAllowed=y)
+  
+**Abstract:** SMT solvers are at the basis of many applications, such as program verification, program synthesis, and test case generation. For all these applications to provide reliable results, SMT solvers must answer queries correctly. However, since they are complex, highly-optimized software systems, ensuring their correctness is challenging. In particular, state-of-the-art testing techniques do not reliably detect when an SMT solver is unsound.
+
+In this paper, we present an automatic approach for generating test cases that reveal soundness errors in the implementations of string solvers, as well as potential completeness and performance issues. We synthesize input formulas that are satisfiable or unsatisfiable by construction and use this ground truth as test oracle. We automatically apply satisfiability-preserving transformations to generate increasingly-complex formulas, which allows us to detect many errors with simple inputs and, thus, facilitates debugging.
+
+The experimental evaluation shows that our technique effectively reveals bugs in the implementation of widely-used SMT solvers and applies also to other types of solvers, such as automata-based solvers. We focus on strings here, but our approach carries over to other theories and their combinations.
+
+
+### StringFuzz: A fuzzer for string solvers (CAV 2018)
+
+* <img src="image/pdf_24px.png">[Paper](https://uwspace.uwaterloo.ca/bitstream/handle/10012/13564/Blotsky_Dmitry.pdf?sequence=6&isAllowed=y)
+  
+**Abstract:** In this paper, we introduce StringFuzz: a modular SMT-LIB problem instance transformer and generator for string solvers. We supply a repository of instances generated by StringFuzz in SMT-LIB 2.0/2.5 format. We systematically compare Z3str3, CVC4, Z3str2, and Norn on groups of such instances, and identify those that are particularly challenging for some solvers. We briefly explain our observations and show how StringFuzz helped discover causes of performance degradations in Z3str3.
 
 
 
@@ -984,13 +1053,22 @@ We propose SAVIOR, a new hybrid testing framework pioneering a bug-driven princi
 **Abstract:** Hybrid fuzzing, which combines fuzzing and concolic execution, is promising in light of the recent performance improvements in concolic engines. We have observed that there is room for further improvement: symbolic emulation is still slow, unnecessary constraints dominate solving time, resources are overly allocated, and hard-to-trigger bugs are missed. To address these problems, we present a new hybrid fuzzer named Intriguer. The key idea of Intriguer is field-level constraint solving, which optimizes symbolic execution with field-level knowledge. Intriguer performs instruction-level taint analysis and records execution traces without data transfer instructions like mov. Intriguer then reduces the execution traces for tainted instructions that accessed a wide range of input bytes, and infers input fields to build field transition trees. With these optimizations, Intriguer can efficiently perform symbolic emulation for more relevant instructions and invoke a solver for complicated constraints only. Our evaluation results indicate that Intriguer outperforms the state-of-the-art fuzzers: Intriguer found all the bugs in the LAVA-M(5h) benchmark dataset for ground truth performance, and also discovered 43 new security bugs in seven real-world programs. We reported the bugs and received 23 new CVEs.
 
 
+### DeepFuzzer: Accelerated Deep Greybox Fuzzing (TDSC 2019)
+
+* <img src="image/pdf_24px.png">[Paper](http://wingtecher.com/themes/WingTecherResearch/assets/papers/TDSC19.pdf)
+
+**Abstract:** Fuzzing is one of the most effective vulnerability detection techniques, widely used in practice. However, the performance of fuzzers may be limited by their inability to pass complicated checks, inappropriate mutation frequency, arbitrary mutation strategy, or the variability of the environment.
+In this paper, we present DeepFuzzer, an enhanced greybox fuzzer with qualified seed generation, balanced seed selection, and hybrid seed mutation. First, we use symbolic execution in a lightweight approach to generate qualified initial seeds which then guide the fuzzer through complex checks. Second, we apply a statistical seed selection algorithm to balance the mutation frequency between different seeds. Further, we develop a hybrid mutation strategy. The random and restricted mutation strategies are combined to maintain a dynamic balance between global exploration and deep search.
+We evaluate DeepFuzzer on the widely used benchmark Google fuzzer-test-suite which consists of real-world programs. Compared with AFL, AFLFast, FairFuzz, QSYM, and MOPT in the 24-hour experiment, DeepFuzzer discovers 30%, 240%, 102%, 147%, and 257% more unique crashes, executes 40%, 36%, 36%, 98%, and 15% more paths, and covers 37%, 34%, 34%, 101%, and 11% more branches, respectively. Furthermore, we present the practice of fuzzing a message middleware from Huawei with DeepFuzzer, and 9 new vulnerabilities are reported.
+
+
 ### QSYM: A Practical Concolic Execution Engine Tailored for Hybrid Fuzzing (USENIX Security2018)
 
 * <img src="image/youdao_note_24px.png">[Reading Note](http://note.youdao.com/noteshare?id=f086faa409a5c6dfabb382e6747381c5&sub=AD1D3F4E3EBC4DCD85694DCAC43EA32B)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/USENIX18_QSYM.pdf)
 
-* <img src="image/github_24px.png">[Code]([./Paper/USENIX18_QSYM.pdf](https://github.com/sslab-gatech/qsym))
+* <img src="image/github_24px.png">[Code](https://github.com/sslab-gatech/qsym)
 
 
 **Abstract:** Recently, hybrid fuzzing has been proposed to address the limitations of fuzzing and concolic execution by combining both approaches. The hybrid approach has shown its effectiveness in various synthetic benchmarks such as DARPA Cyber Grand Challenge (CGC) binaries, but it still suffers from scaling to find bugs in complex, real-world software. We observed that the performance bottleneck of the existing concolic executor is the main limiting factor for its adoption beyond a small-scale study.
@@ -1692,6 +1770,21 @@ We introduce DeepSmith, a novel machine learning approach to accelerating compil
 
 **Abstract:** Deep neural networks (DNN) have been shown to be notoriously brittle to small perturbations in their input data. This problem is analogous to the over-fitting problem in test-based program synthesis and automatic program repair, which is a consequence of the incomplete specification, the limited tests or training examples, that the program synthesis or repair algorithm has to learn from. Recently, test generation techniques have been successfully employed to augment existing specifications of intended program behavior, to improve the generalizability of program synthesis and repair. Inspired by these approaches, in this paper, we propose a technique that re-purposes software testing methods, specifically mutation-based fuzzing, to augment the training data of DNNs, with the objective of enhancing their robustness. Our technique casts the DNN data augmentation problem as an optimization problem. It uses genetic search to generate the most suitable variant of an input data to use for training the DNN, while simultaneously identifying opportunities to accelerate training by skipping augmentation in many instances. We instantiate this technique in two tools, SENSEI and SENSEI-SA, and evaluate them on 15 DNN models spanning 5 popular image data-sets. Our evaluation shows that SENSEI can improve the robust accuracy of the DNN, compared to the state of the art, on each of the 15 models, by upto 11.9% and 5.5% on average. Further, SENSEI-SA can reduce the average DNN training time by 25%, while still improving robust accuracy.
 
+
+### Coverage Guided Differential Adversarial Testing of Deep Learning Systems (TNSE 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/1911.07931)
+
+**Abstract:** Deep learning is increasingly applied to safety-critical application domains such as autonomous cars and medical devices. It is of significant importance to ensure their reliability and robustness. In this paper, we propose DLFuzz, the coverage guided differential adversarial testing framework to guide deep learing systems exposing incorrect behaviors. DLFuzz keeps minutely mutating the input to maximize the neuron coverage and the prediction difference between the original input and the mutated input, without manual labeling effort or cross-referencing oracles from other systems with the same functionality. We also design multiple novel strategies for neuron selection to improve the neuron coverage. The incorrect behaviors obtained by DLFuzz are then exploited for retraining and improving the dependability of the models. We present empirical evaluations on two well-known datasets to demonstrate its effectiveness. Compared with DeepXplore, the state-of-the-art deep learning white-box testing framework, DLFuzz does not require extra efforts to find similar functional deep learning systems for cross-referencing check. But DLFuzz could generate 338.59% more adversarial inputs with 89.82% smaller perturbations, while maintaining the identities of the original inputs. DLFuzz also managed to averagely obtain 2.86% higher neuron coverage, and save 20.11% time consumption with respect to DeepXplore. We then evaluate the effectiveness of strategies for neuron selection, and demonstrated that all these strategies perform better than DeepXplore. Finally, DLFuzz proved to be able to improve the accuracy of deep learning systems by incorporating these adversarial inputs to retrain.
+
+
+### CAGFuzz: Coverage-Guided Adversarial Generative Fuzzing Testing of Deep Learning Systems (2019)
+
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/1911.07931)
+
+**Abstract:** Deep Learning systems (DL) based on Deep Neural Networks (DNNs) are more and more used in various aspects of our life, including unmanned vehicles, speech processing, and robotics. However, due to the limited dataset and the dependence on manual labeling data, DNNs often fail to detect their erroneous behaviors, which may lead to serious problems. Several approaches have been proposed to enhance the input examples for testing DL systems. However, they have the following limitations. First, they design and generate adversarial examples from the perspective of model, which may cause low generalization ability when they are applied to other models. Second, they only use surface feature constraints to judge the difference between the adversarial example generated and the original example. The deep feature constraints, which contain high-level semantic information, such as image object category and scene semantics are completely neglected. To address these two problems, in this paper, we propose CAGFuzz, a Coverage-guided Adversarial Generative Fuzzing testing approach, which generates adversarial examples for a targeted DNN to discover its potential defects. First, we train an adversarial case generator (AEG) from the perspective of general data set. Second, we extract the depth features of the original and adversarial examples, and constrain the adversarial examples by cosine similarity to ensure that the semantic information of adversarial examples remains unchanged. Finally, we retrain effective adversarial examples to improve neuron testing coverage rate. Based on several popular data sets, we design a set of dedicated experiments to evaluate CAGFuzz. The experimental results show that CAGFuzz can improve the neuron coverage rate, detect hidden errors, and also improve the accuracy of the target DNN.
+
+
 ### DeepHunter: A Coverage-Guided Fuzz Testing Framework for Deep Neural Networks (ISSTA 2019)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/ISSTA19_DeepHunter.pdf)
@@ -1823,6 +1916,15 @@ We instantiate our approach to the problem of fuzzing smart contracts, a domain 
 
 
 # Other Interesting Fuzzing
+
+### Fuzzing Error Handling Code using Context-Sensitive Software Fault Injection (USENIX Security2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/sec20fall_jiang_prepub.pdf)
+
+**Abstract:** Error handling code is often critical but difficult to test in reality. As a result, many hard-to-find bugs exist in error handling code and may cause serious security problems once triggered. Fuzzing has become a widely used technique for finding software bugs nowadays. Fuzzing approaches mutate and/or generate various inputs to cover infrequently-executed code. However, existing fuzzing approaches are very limited in testing error handling code, because some of this code can be only triggered by occasional errors (such as insufficient memory and network-connection failures), but not specific inputs. Therefore, existing fuzzing approaches in general cannot effectively test such error handling code.
+
+In this paper, we propose a new fuzzing framework named FIFUZZ, to effectively test error handling code and detect bugs. The core of FIFUZZ is a context-sensitive software fault injection (SFI) approach, which can effectively cover error handling code in different calling contexts to find deep bugs hidden in error handling code with complicated contexts. We have implemented FIFUZZ and evaluated it on 9 widely-used C programs. It reports 317 alerts which are caused by 50 unique bugs in terms of the root causes. 32 of these bugs have been confirmed by related developers. We also compare FIFUZZ to existing fuzzing tools (including AFL, AFLFast, AFLSmart and FairFuzz), and find that FIFUZZ finds many bugs missed by these tools. We believe that FIFUZZ can effectively augment existing fuzzing approaches to find many real bugs that have been otherwise missed.
+
 
 ### FANS: Fuzzing Android Native System Services via Automated Interface Analysis (USENIX Security2020)
 

@@ -743,7 +743,7 @@ The ideal solution for binary security analysis would be a static rewriter that 
 
 ### ICS Protocol Fuzzing: Coverage Guided Packet Crack and Generation (DAC 2020)
 
-* <img src="image/pdf_24px.png">[Paper](./Paper/ICST20_AFLNet.pdf)
+* <img src="image/pdf_24px.png">[Paper](./Paper/DAC20_ICSProtocolFuzzing.pdf)
 
 **Abstract:** Industrial Control System (ICS) protocols play an essential role in building communications among system components. Recently, many severe vulnerabilities, such as Stuxnet and DragonFly, exposed in ICS protocols have affected a wide distribution of devices. Therefore, it is of vital importance to ensure their correctness. However, the vulnerability detection efficiency of traditional techniques such as fuzzing is challenged by the complexity and diversity of the protocols.
 

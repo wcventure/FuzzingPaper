@@ -12,6 +12,7 @@ remark: This website is only used for collecting and grouping the related paper.
     - [Fuzzing: Art, Science, and Engineering](#fuzzing-art-science-and-engineering)
     - [Fuzzing: a survey](#fuzzing-a-survey)
     - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
+    - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 
 - **IPDI 2020**
     - [Validating SMT Solvers via Semantic Fusion](#validating-smt-solvers-via-semantic-fusion-pldi-2020)
@@ -58,7 +59,8 @@ remark: This website is only used for collecting and grouping the related paper.
     - [AFLNET: A Greybox Fuzzer for Network Protocols](#aflnet-a-greybox-fuzzer-for-network-protocols-icst-2020)
 
 - **Others 2020**
-    - [ICS Protocol Fuzzing: Coverage Guided Packet Crack and Generation](#ics-protocol-fuzzing-coverage-guided-packet-crack-and-generation-dac-2020)
+    - [ICS Protocol Fuzzing: Coverage Guided Packet Crack and Generation (DAC 2020)](#ics-protocol-fuzzing-coverage-guided-packet-crack-and-generation-dac-2020)
+    - [Finding Security Vulnerabilities in Network Protocol Implementations (Arxiv 2020)](#finding-security-vulnerabilities-in-network-protocol-implementations-arxiv-2020)
     - [Coverage Guided Differential Adversarial Testing of Deep Learning Systems](#coverage-guided-differential-adversarial-testing-of-deep-learning-systems-tnse-2020)
     - [Fw‐fuzz: A code coverage‐guided fuzzing framework for network protocols on firmware](#fw%e2%80%90fuzz-a-code-coverage%e2%80%90guided-fuzzing-framework-for-network-protocols-on-firmware-2020)
     - [Greybox Fuzzing Based on Ant Colony Algorithm](#greybox-fuzzing-based-on-ant-colony-algorithm-aina-2020)    
@@ -145,6 +147,7 @@ remark: This website is only used for collecting and grouping the related paper.
     - [SeqFuzzer: An Industrial Protocol Fuzzing Framework in Deep Learning Perspective](#seqfuzzer-an-industrial-protocol-fuzzing-framework-in-deep-learning-perspective-icst-2019)
 
 - **Other 2019**
+    - [Leveraging Textual Specifications for Grammar-Based Fuzzing of Network Protocols (AAAI 2019)](#leveraging-textual-specifications-for-grammar-based-fuzzing-of-network-protocols-aaai-2019)
     - [DeepFuzzer: Accelerated Deep Greybox Fuzzing (TDSC 2019)](#deepfuzzer-accelerated-deep-greybox-fuzzing-tdsc-2019)
     - [CAGFuzz: Coverage-Guided Adversarial Generative Fuzzing Testing of Deep Learning Systems](#cagfuzz-coverage-guided-adversarial-generative-fuzzing-testing-of-deep-learning-systems-2019)
     - [Suzzer: A Vulnerability-Guided Fuzzer Based on Deep Learning](#suzzer-a-vulnerability-guided-fuzzer-based-on-deep-learning-inscrypt-2019)
@@ -158,6 +161,7 @@ remark: This website is only used for collecting and grouping the related paper.
     - [Fuzzing IPC with Knowledge Inference](#fuzzing-ipc-with-knowledge-inference-srds-2019)
     - [Be Sensitive and Collaborative: Analyzing Impact of Coverage Metrics in Greybox Fuzzing](#be-sensitive-and-collaborative-analyzing-impact-of-coverage-metrics-in-greybox-fuzzing-raid-2019)
     - [Hydra: An Extensible Fuzzing Framework for Finding Semantic Bugs in File Systems](#hydra-an-extensible-fuzzing-framework-for-finding-semantic-bugs-in-file-systems-sosp-2019)
+    - [Exploring Effective Fuzzing Strategies to Analyze Communication Protocols](#exploring-effective-fuzzing-strategies-to-analyze-communication-protocols-feast-2019)
 
 - **S&P 2018**
     - [T-Fuzz: fuzzing by program transformation](#t-fuzz-fuzzing-by-program-transformation-sp-2018)
@@ -230,6 +234,9 @@ remark: This website is only used for collecting and grouping the related paper.
     - [Learn&Fuzz: Machine Learning for Input Fuzzing](#learnfuzz-machine-learning-for-input-fuzzing-ase-2017)
     - [In-memory fuzzing for binary code similarity analysis]()
   
+- **Other 2017**
+    - [Bbuzz: A Bit-aware Fuzzing Framework for Network Protocol Systematic Reverse Engineering and Analysis](#bbuzz-a-bit-aware-fuzzing-framework-for-network-protocol-systematic-reverse-engineering-and-analysis-mcc-2017)
+
 - **CCS 2016**
     - [Coverage-based Greybox Fuzzing as Markov Chain](#coverage-based-greybox-fuzzing-as-markov-chain-ccs-2016)
     - [Systematic Fuzzing and Testing of TLS Libraries](#systematic-fuzzing-and-testing-of-tls-libraries-ccs-2016)
@@ -246,11 +253,16 @@ remark: This website is only used for collecting and grouping the related paper.
 - **USENIX Security 2015**
     - [Protocol State Fuzzing of TLS Implementations](#protocol-state-fuzzing-of-tls-implementations-usenix-security2015)
 
+- **Others**
+    - [Test Data Generation for Stateful Network Protocol Fuzzing Using a Rule-Based State Machine](#test-data-generation-for-stateful-network-protocol-fuzzing-using-a-rule-based-state-machine-2016)
+    - [PULSAR: Stateful Black-Box Fuzzing of Proprietary Network Protocols](#pulsar-stateful-black-box-fuzzing-of-proprietary-network-protocols-springer-cham-2015)
+    - [SECFUZZ: Fuzz-testing Security Protocols](#secfuzz-fuzz-testing-security-protocols-ast-2012)
+    - [AutoFuzz: Automated Network Protocol Fuzzing Framewor](#autofuzz-automated-network-protocol-fuzzing-framework-ijcsns-2010)
 
 # All Papers (Classification according to Subject)
 
 - [**Survey/Review**](#surveyreview)
-  - [Fuzzing: Hack, Art, and Science (CACM 2020)](#fuzzing-hack-art-and-science-cacm-2020)
+  - [Fuzzing: Hack, Art, and Science](#fuzzing-hack-art-and-science-cacm-2020)
   - [Survey of Directed Fuzzy Technology](#survey-of-directed-fuzzy-technology)
   - [A Review of Machine Learning Applications in Fuzzing](#a-review-of-machine-learning-applications-in-fuzzing)
   - [A systematic review of fuzzing based on machine learning techniques](#a-systematic-review-of-fuzzing-based-on-machine-learning-techniques)
@@ -258,6 +270,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Fuzzing: Art, Science, and Engineering](#fuzzing-art-science-and-engineering)
   - [Fuzzing: a survey](#fuzzing-a-survey)
   - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
+  - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 
 - [**Concurrency Fuzzing**](#concurrency-fuzzing)
   - [KRace: Data Race Fuzzing for Kernel File Systems (S&P 220)](#krace-data-race-fuzzing-for-kernel-file-systems-sp-2020)
@@ -292,12 +305,23 @@ remark: This website is only used for collecting and grouping the related paper.
 - [**IoT or protocols fuzzing**](#iot-or-protocols-fuzzing)
   - [ICS Protocol Fuzzing: Coverage Guided Packet Crack and Generation (DAC 2020)](#ics-protocol-fuzzing-coverage-guided-packet-crack-and-generation-dac-2020)
   - [AFLNET: A Greybox Fuzzer for Network Protocols (ICST 2020)](#aflnet-a-greybox-fuzzer-for-network-protocols-icst-2020)
+  - [Finding Security Vulnerabilities in Network Protocol Implementations (Arxiv 2020)](#finding-security-vulnerabilities-in-network-protocol-implementations-arxiv-2020)
   - [Smart seed selection-based effective black box fuzzing for IIoT protocol (2020)](#smart-seed-selection-based-effective-black-box-fuzzing-for-iiot-protocol-2020)
   - [Fw‐fuzz: A code coverage‐guided fuzzing framework for network protocols on firmware (2020)](#fw%e2%80%90fuzz-a-code-coverage%e2%80%90guided-fuzzing-framework-for-network-protocols-on-firmware-2020)
+  - [Poster: Fuzzing IoT Firmware via Multi-stage Message Generation (CCS 2019 Poster)](#poster-fuzzing-iot-firmware-via-multi-stage-message-generation-ccs-2019)
+  - [SeqFuzzer: An Industrial Protocol Fuzzing Framework in Deep Learning Perspective (ICST 2019)](#seqfuzzer-an-industrial-protocol-fuzzing-framework-in-deep-learning-perspective-icst-2019)
+  - [SPFuzz: A Hierarchical Scheduling Framework for Stateful Network Protocol Fuzzing (IEEE Access 2019)](#spfuzz-a-hierarchical-scheduling-framework-for-stateful-network-protocol-fuzzing-ieee-access-2019)
   - [HFuzz: Towards automatic fuzzing testing of NB-IoT core network protocols implementations (FGCS 2019)](#hfuzz-towards-automatic-fuzzing-testing-of-nb-iot-core-network-protocols-implementations-fgcs-2019)
   - [FIRM-AFL: High-Throughput Greybox Fuzzing of IoT Firmware via Augmented Process Emulation (USENIX Security2019)](#firm-afl-high-throughput-greybox-fuzzing-of-iot-firmware-via-augmented-process-emulation-usenix-security2019)
+  - [Exploring Effective Fuzzing Strategies to Analyze Communication Protocols (FEAST 2019)](#exploring-effective-fuzzing-strategies-to-analyze-communication-protocols-feast-2019)
+  - [Leveraging Textual Specifications for Grammar-Based Fuzzing of Network Protocols (AAAI 2019)](#leveraging-textual-specifications-for-grammar-based-fuzzing-of-network-protocols-aaai-2019)
   - [IoTFuzzer: Discovering Memory Corruptions in IoT Through App-based Fuzzing (NDSS 2018)](#iotfuzzer-discovering-memory-corruptions-in-iot-through-app-based-fuzzing-ndss-2018)
+  - [Bbuzz: A Bit-aware Fuzzing Framework for Network Protocol Systematic Reverse Engineering and Analysis (MCC 2017)](#bbuzz-a-bit-aware-fuzzing-framework-for-network-protocol-systematic-reverse-engineering-and-analysis-mcc-2017)
+  - [Test Data Generation for Stateful Network Protocol Fuzzing Using a Rule-Based State Machine (2016)](#test-data-generation-for-stateful-network-protocol-fuzzing-using-a-rule-based-state-machine-2016)
   - [Protocol State Fuzzing of TLS Implementations (USENIX Security2015)](#protocol-state-fuzzing-of-tls-implementations-usenix-security2015)
+  - [PULSAR: Stateful Black-Box Fuzzing of Proprietary Network Protocols (Springer, Cham, 2015)](#pulsar-stateful-black-box-fuzzing-of-proprietary-network-protocols-springer-cham-2015)
+  - [SECFUZZ: Fuzz-testing Security Protocols (AST 2012)](#secfuzz-fuzz-testing-security-protocols-ast-2012)
+  - [AutoFuzz: Automated Network Protocol Fuzzing Framework (IJCSNS 2010)](#autofuzz-automated-network-protocol-fuzzing-framework-ijcsns-2010)
 
 - [**SMT Fuzzing**](#smt-fuzzing)
   - [Validating SMT Solvers via Semantic Fusion (PLDI 2020)](#validating-smt-solvers-via-semantic-fusion-pldi-2020)
@@ -546,6 +570,13 @@ remark: This website is only used for collecting and grouping the related paper.
 **Abstract:** As one of the most popular software testing techniques, fuzzing can find a variety of weaknesses in a program, such as software bugs and vulnerabilities, by generating numerous test inputs. Due to its effectiveness, fuzzing is regarded as a valuable bug hunting method. In this paper, we present an overview of fuzzing that concentrates on its general process, as well as classifications, followed by detailed discussion of the key obstacles and some state-of-the-art technologies which aim to overcome or mitigate these obstacles. We further investigate and classify several widely used fuzzing tools. Our primary goal is to equip the stakeholder with a better understanding of fuzzing and the potential solutions for improving fuzzing methods in the spectrum of software testing and security. To inspire future research, we also predict some future directions with regard to fuzzing.
 
 
+### A Review of Fuzzing Tools and Methods
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/2017_review.pdf)
+
+**Abstract:** This paper reviewed some of the most noteworthy academic literature and practical work that has been produced in the field of fuzzing. We first examined how vulnerabilities come to exist in software and how security researchers find them. After a brief overview of common vulnerability types and methods of static analysis, we looked in depth at the field of fuzzing. Competing approaches to fuzzing were examined, from simple random inputs all the way to using genetic algorithms and taint analysis. The importance of measuring code coverage to evaluate the completeness of a fuzzing campaign was examined. Finally, the focus was placed on the fuzz testing of web browsers and the specific tools and techniques related to that.
+
+
 
 # Concurrency Fuzzing
 
@@ -722,13 +753,6 @@ The ideal solution for binary security analysis would be a static rewriter that 
 **Abstract:** Coverage-guided fuzzing is one of the most successful approaches for discovering software bugs and security vulnerabilities. Of its three main components: (1) test case generation, (2) code coverage tracing, and (3) crash triage, code coverage tracing is a dominant source of overhead. Coverage-guided fuzzers trace every test case's code coverage through either static or dynamic binary instrumentation, or more recently, using hardware support. Unfortunately, tracing all test cases incurs significant performance penalties--even when the overwhelming majority of test cases and their coverage information are discarded because they do not increase code coverage. To eliminate needless tracing by coverage-guided fuzzers, we introduce the notion of coverage-guided tracing. Coverage-guided tracing leverages two observations: (1) only a fraction of generated test cases increase coverage, and thus require tracing; and (2) coverage-increasing test cases become less frequent over time. Coverage-guided tracing encodes the current frontier of coverage in the target binary so that it self-reports when a test case produces new coverage--without tracing. This acts as a filter for tracing; restricting the expense of tracing to only coverage-increasing test cases. Thus, coverage-guided tracing trades increased time handling coverage-increasing test cases for decreased time handling non-coverage-increasing test cases. To show the potential of coverage-guided tracing, we create an implementation based on the static binary instrumentor Dyninst called UnTracer. We evaluate UnTracer using eight real-world binaries commonly used by the fuzzing community. Experiments show that after only an hour of fuzzing, UnTracer's average overhead is below 1%, and after 24-hours of fuzzing, UnTracer approaches 0% overhead, while tracing every test case with popular white- and black-box-binary tracers AFL-Clang, AFL-QEMU, and AFL-Dyninst incurs overheads of 36%, 612%, and 518%, respectively. We further integrate UnTracer with the state-of-the-art hybrid fuzzer QSYM and show that in 24-hours of fuzzing, QSYM-UnTracer executes 79% and 616% more test cases than QSYM-Clang and QSYM-QEMU, respectively.
 
 
-### Poster: Fuzzing IoT Firmware via Multi-stage Message Generation (CCS 2019)
-
-* <img src="image/pdf_24px.png">[Paper](https://wpengfei.github.io/iothunter-final.pdf)
-
-**Abstract:** In this work, we present IoTHunter, the first grey-box fuzzer for fuzzing stateful protocols in IoT firmware. IoTHunter addresses the state scheduling problem based on a multi-stage message generation mechanism on runtime monitoring of IoT firmware. We evaluate IoTHunter with a set of real-world programs, and the result shows that IoTHunter outperforms black-box fuzzer boofuzz, which has a 2.2x, 2.0x, and 2.5x increase for function coverage, block coverage, and edge coverage, respectively. IoTHunter also found five new vulnerabilities in the firmware of home router Mikrotik, which have been reported to the vendor.
-
-
 ### INSTRIM Lightweight Instrumentation for Coverage-guided Fuzzing (NDSS 2018 workshop)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/NDSS18_INSTRIM.pdf)
@@ -743,7 +767,7 @@ The ideal solution for binary security analysis would be a static rewriter that 
 
 ### ICS Protocol Fuzzing: Coverage Guided Packet Crack and Generation (DAC 2020)
 
-* <img src="image/pdf_24px.png">[Paper](./Paper/ICST20_AFLNet.pdf)
+* <img src="image/pdf_24px.png">[Paper](./Paper/DAC20_ICSProtocol.pdf)
 
 **Abstract:** Industrial Control System (ICS) protocols play an essential role in building communications among system components. Recently, many severe vulnerabilities, such as Stuxnet and DragonFly, exposed in ICS protocols have affected a wide distribution of devices. Therefore, it is of vital importance to ensure their correctness. However, the vulnerability detection efficiency of traditional techniques such as fuzzing is challenged by the complexity and diversity of the protocols.
 
@@ -755,6 +779,14 @@ In this paper, we propose to equip the traditional protocol fuzzing with coverag
 * <img src="image/pdf_24px.png">[Paper](./Paper/ICST20_AFLNet.pdf)
 
 **Abstract:** Server fuzzing is difficult. Unlike simple command-line tools, servers feature a massive state space that can be traversed effectively only with well-defined sequences of input messages. Valid sequences are specified in a protocol. In this paper, we present AFLNET, the first grey-box fuzzer for protocol implementations. Unlike existing protocol fuzzers, AFLNET takes a mutational approach and uses state-feedback to guide the fuzzing process. AFLNET is seeded with a corpus of recorded message exchanges between the server and an actual client. No protocol specification or message grammars are required. AFLNET acts as a client and replays variations of the original sequence of messages sent to the server and retains those variations that were effective at increasing the coverage of the code or state space. To identify the server states that are exercised by a message sequence, AFLNET uses the server’s response codes. From this feedback, AFLNET identifies progressive regions in the state space, and systematically steers towards such regions. The case studies with AFLNET on two popular protocol implementations demonstrate a substantial performance boost over the state-of-the-art. AFLNET discovered two new CVEs that are classified as critical (CVSS score CRITICAL 9.8).
+
+
+### Finding Security Vulnerabilities in Network Protocol Implementations (Arxiv 2020)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/Arxiv20_Protocols.pdf)
+
+**Abstract:** Implementations of network protocols are often prone to vulnerabilities caused by developers’ mistakes when accessing memory regions and dealing with arithmetic operations. Finding practical approaches for checking the security of network protocol implementations has proven to be a challenging problem. The main reason is that the protocol software state-space is too large to be explored. Here we propose a novel verification approach that combines fuzzing with symbolic execution to verify intricate properties in network protocol implementations. We use fuzzing for an initial exploration of the network protocol, while symbolic execution explores both the program paths and protocol states, which were uncovered by fuzzing. From this combination, we automatically generate high-coverage test input packets for a network protocol implementation.We surveyed various approaches based on fuzzing and symbolic execution to understand how these techniques can be effectively combined and then choose a suitable tool to develop further our model on top of it. In our preliminary evaluation, we used ESBMC, Map2Check, and KLEE as software verifiers and SPIKE as fuzzer to check their suitability to verify our network protocol implementations. Our experimental results show that ESBMC can be further developed within our verification framework called FuSeBMC, to efficiently and effectively detect intricate security vulnerabilities in network protocol implementations.
+
 
 
 ### Smart seed selection-based effective black box fuzzing for IIoT protocol (2020)
@@ -769,6 +801,29 @@ In this paper, we propose to equip the traditional protocol fuzzing with coverag
 * <img src="image/pdf_24px.png">[Paper](https://onlinelibrary.wiley.com/doi/abs/10.1002/cpe.5756)
 
 **Abstract:** Fuzzing is an effective approach to detect software vulnerabilities utilizing changeable generated inputs. However, fuzzing the network protocol on the firmware of IoT devices is limited by inefficiency of test case generation, cross‐architecture instrumentation, and fault detection. In this article, we propose the Fw‐fuzz, a coverage‐guided and crossplatform framework for fuzzing network services running in the context of firmware on embedded architectures, which can generate more valuable test cases by introspecting program runtime information and using a genetic algorithm model. Specifically, we propose novel dynamic instrumentation in Fw‐fuzz to collect the running state of the firmware program. Then Fw‐fuzz adopts a genetic algorithm model to guide the generation of inputs with high code coverage. We fully implement the prototype system of Fw‐fuzz and conduct evaluations on network service programs of various architectures in MIPS, ARM, and PPC. By comparing with the protocol fuzzers Boofuzz and Peach in metrics of edge coverage, our prototype system achieves an average growth of 33.7% and 38.4%, respectively. We further verify six known vulnerabilities and discover 5 0‐day vulnerabilities with the Fw‐fuzz, which prove the validity and utility of our framework. The overhead of our system expressed as an additional 5% of memory growth.
+
+
+### Poster: Fuzzing IoT Firmware via Multi-stage Message Generation (CCS 2019)
+
+* <img src="image/pdf_24px.png">[Paper](https://wpengfei.github.io/iothunter-final.pdf)
+
+**Abstract:** In this work, we present IoTHunter, the first grey-box fuzzer for fuzzing stateful protocols in IoT firmware. IoTHunter addresses the state scheduling problem based on a multi-stage message generation mechanism on runtime monitoring of IoT firmware. We evaluate IoTHunter with a set of real-world programs, and the result shows that IoTHunter outperforms black-box fuzzer boofuzz, which has a 2.2x, 2.0x, and 2.5x increase for function coverage, block coverage, and edge coverage, respectively. IoTHunter also found five new vulnerabilities in the firmware of home router Mikrotik, which have been reported to the vendor.
+
+
+### SeqFuzzer: An Industrial Protocol Fuzzing Framework in Deep Learning Perspective (ICST 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/ICST19_SeqFuzzer.pdf)
+
+**Abstract:** Industrial networks are the cornerstone of modern industrial control systems. Performing security checks of industrial communication processes help detect unknown risks and vulnerabilities. Fuzz testing is a widely used method for performing security checks that takes advantage of automation. However, there is a big challenge to carry out security checks on the industrial networks due to the increasing variety and complexity of industrial communication protocols. In this case, existing approaches usually take a long time to model the protocol for generating test cases, which is labor-intensive and timeconsuming. This becomes even worse when the target protocol is stateful. To help in addressing this problem, we employed a deep learning model to learn the structures of protocol frames and deal with the temporal features of stateful protocols. We propose a fuzzing framework named SeqFuzzer which automatically learns the protocol frame structures from communication traffic and generates fake but plausible messages as test cases. For proving the usability of our approach, we applied SeqFuzzer to widelyused Ethernet for Control Automation Technology (EtherCAT) devices and successfully detected several security vulnerabilities
+
+
+###  SPFuzz: A Hierarchical Scheduling Framework for Stateful Network Protocol Fuzzing (IEEE Access 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/.pdf)
+
+**Abstract:** In recent years, the fuzzing technology is widely used to detect the software vulnerabilities owing to the coverage improvement in the target program and the easiness of use. However, it is less efficient to fuzz the stateful protocols due to the difficulties like maintaining states and dependencies of messages. To address these challenges, we present SPFuzz, a framework for building flexible, coverage guided stateful protocol fuzzing. We define a language in SPFuzz to describe the protocol specifications, protocol states transitions and dependencies for generating valuable test cases, maintaining correct messages in session states and handling protocol dependencies by updating message data in time. The SPFuzz adopts a three-level mutation strategy, namely head, content, and sequence mutation strategy to drive the fuzzing process to cover more paths, in conjunction with the method to randomly assign weights to messages and strategies. We use the following metrics to evaluate the performance of SPFuzz and other frameworks upon three protocol implementations, i.e., Proftpd, Oftpd, and OpenSSL, which are three-granularity coverages specifically function, basic block, and edge. In experiments, the SPFuzz framework outperforms the existing
+stateful protocol fuzzing tool Boofuzz by an average of 69.12% in three granularities coverage tests. This demonstrates that the SPFuzz has the ability to explore more and deeper paths of the target program. We further triggered CVE-2015-0291 in OpenSSL 1.0.2 with the SPFuzz, which proves the validity and
+utility of our framework.
 
 
 ### HFuzz: Towards automatic fuzzing testing of NB-IoT core network protocols implementations (FGCS 2019)
@@ -789,6 +844,31 @@ In this paper, we propose to equip the traditional protocol fuzzing with coverag
 **Abstract:** Cyber attacks against IoT devices are a severe threat. These attacks exploit software vulnerabilities in IoT firmware. Fuzzing is an effective software testing technique for vulnerability discovery. In this work, we present FIRM-AFL, the first high-throughput grey box fuzzer for IoT firmware. FIRMAFL addresses two fundamental problems in IoT fuzzing. First, it addresses compatibility issues by enabling fuzzing for POSIX-compatible firmware that can be emulated in a system emulator. Second, it addresses the performance bottleneck caused by system-mode emulation with a novel technique called augmented process emulation. By combining system mode emulation and user-mode emulation in a novel way, augmented process emulation provides high compatibility as system-mode emulation and high throughput as user-mode emulation. Our evaluation results show that (1) FIRM-AFL is fully functional and capable of finding real-world vulnerabilities in IoT programs; (2) the throughput of FIRM-AFL is on average 8.2 times higher than system-mode emulation based fuzzing; and (3) FIRM-AFL is able to find 1-day vulnerabilities much faster than system-mode emulation based fuzzing, and is able to find 0-day vulnerabilities.
 
 
+### Advancing Protocol Fuzzing for Industrial Automation and Control Systems (ICISSP 2018)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/ICISSP18_Advancing.pdf)
+
+**Abstract:** Testing for security vulnerabilities is playing an important role in the changing domain of industrial automation and control systems. These systems are increasingly connected to each other via networking technology and are faced with new cyber threats. To improve the security properties of such systems, their robustness must be ensured. Security testing frameworks aim at enabling the assurance of robustness even at the time of development and can play a key role in bringing security into the industrial domain.
+
+Fuzzing describes a technique to discover vulnerabilities in technical systems and is best known from its usage in IT security testing. It uses randomly altered data to provoke unexpected behaviour and can be used in combination with regular unit testing. Combined with the power of fuzzing, the effectiveness of security testing frameworks can be increased. 
+
+In this work, different fuzzing tools were evaluated for their properties and then compared with the requirements for an application in the industrial domain. As no fuzzer was fully satisfying these requirements, a new fuzzer, combining the strength of different others, was designed and implemented, and then evaluated. The evaluation includes a real-world application where multiple vulnerabilities in industrial automation components could be identified.
+
+
+### Exploring Effective Fuzzing Strategies to Analyze Communication Protocols (FEAST 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/FEAST19_Exploring.pdf)
+
+**Abstract:** In recent years, coverage-based greybox fuzzing has become popular forvulnerability detection due to its simplicity and efficiency. However, it is less powerful when applied directly to protocol fuzzing due to the unique challenges involved in fuzzing communication protocols. In particular, the communication among multiple ends contains more than one packet, which are not necessarily dependent upon each other, i.e., fuzzing single (usually the first) packet can only achieve extremely limited code coverage. In this paper, we study such challenges and demonstrate the limitation of current non-stateful greybox fuzzer. In order to achieve higher code coverage, we design stateful protocol fuzzing strategies for communication protocols to explore the code related to different protocol states. Our approach contains a state switching engine, together with a multi-state forkserver to consistently and flexibly fuzz different states of an compiler-instrumented protocol program. Our experimental results on OpenSSL show that our approach achieves an improvement of 73% more code coverage and 2× unique crashes when comparing against fuzzing the first packet during a protocol handshake.
+
+
+### Leveraging Textual Specifications for Grammar-Based Fuzzing of Network Protocols (AAAI 2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/AAAi19_Leveraging.pdf)
+
+**Abstract:** Grammar-based fuzzing is a technique used to find software vulnerabilities by injecting well-formed inputs generated following rules that encode application semantics. Most grammar-based fuzzers for network protocols rely on human experts to manually specify these rules. In this work we study automated learning of protocol rules from textual specifications (i.e. RFCs). We evaluate the automatically extracted protocol rules by applying them to a state-of-the-art fuzzer for transport protocols and show that it leads to a smaller number of test cases while finding the same attacks as the system that uses manually specified rules.
+
+
 ### IoTFuzzer: Discovering Memory Corruptions in IoT Through App-based Fuzzing (NDSS 2018)
 
 * <img src="image/GoSSIP_note.jpg">[Reading Note](https://securitygossip.com/blog/2018/06/15/iotfuzzer-discovering-memory-corruptions-in-iot-through-app-based-fuzzing/)
@@ -800,17 +880,64 @@ In this paper, we propose to equip the traditional protocol fuzzing with coverag
 **Abstract:** With more IoT devices entering the consumer market, it becomes imperative to detect their security vulnerabilities before an attacker does. Existing binary analysis based approaches only work on firmware, which is less accessible except for those equipped with special tools for extracting the code from the device. To address this challenge in IoT security analysis, we present in this paper a novel automatic fuzzing framework, called IOTFUZZER, which aims at finding memory corruption vulnerabilities in IoT devices without access to their firmware images. The key idea is based upon the observation that most IoT devices are controlled through their official mobile apps, and such an app often contains rich information about the protocol it uses to communicate with its device. Therefore, by identifying and reusing program-specific logic (e.g., encryption) to mutate the test case (particularly message fields), we are able to effectively probe IoT targets without relying on any knowledge about its protocol specifications. In our research, we implemented IOTFUZZER and evaluated 17 real-world IoT devices running on different protocols, and our approach successfully identified 15 memory corruption vulnerabilities (including 8 previously unknown ones).
 
 
+### Bbuzz: A Bit-aware Fuzzing Framework for Network Protocol Systematic Reverse Engineering and Analysis (MCC 2017)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/MCC17-Binfuzz.pdf)
+
+**Abstract:** Fuzzing is a critical part of secure software development life-cycle, for finding vulnerabilities, developing exploits, and reverse engineering. This relies on appropriate approaches, tools and frameworks. File and protocol fuzzing is well covered, multiple approaches and implementations exist. Unfortunately, assessed tools do not posses the required capabilities for working with protocols, where constructing bit groups are not byte aligned. In this paper, a systematic approach is proposed and tool prototype developed for the cyber red teaming purposes. In a case study, the developed Bbuzz tool is used to reverse engineer a proprietary NATO Link-1 network protocol allowing to inject rogue airplane tracks into air operations command and control system.
+
+
+### Test Data Generation for Stateful Network Protocol Fuzzing Using a Rule-Based State Machine (2016)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/2016_Protocol.pdf)
+
+**Abstract:** To improve the efficiency and coverage of stateful network protocol fuzzing, this paper proposes a new method, using a rule-based state machine and a stateful rule tree to guide the generation of fuzz testing data. The method first builds a rule-based state machine model as a formal description of the states of a network protocol. This removes safety paths, to cut down the scale of the state space. Then it uses a stateful rule tree to describe the relationship between states and messages, and then remove useless items from it. According to the message sequence obtained by the analysis of paths using the stateful rule tree and the protocol specification, an abstract data model of test case generation is defined. The fuzz testing data is produced by various generation algorithms through filling data in the fields of the data model. Using the rule-based state machine and the stateful rule tree, the quantity of test data can be reduced. Experimental results indicate that our method can discover the same vulnerabilities as traditional approaches, using less test data, while optimizing test data generation and improving test efficiency.
+
+
+
 ### Protocol State Fuzzing of TLS Implementations (USENIX Security2015)
 
 * <img src="image/youdao_note_24px.png">[Reading Note](http://note.youdao.com/noteshare?id=eb0ec80133498dd0b2e073a5174c5f0d&sub=F972E69029854C398925A5F8D5E91484)
 
-* <img src="image/pdf_24px.png">[Paper](./Paper/USENIX15_Protocol_Slides.pdf)
+* <img src="image/pdf_24px.png">[Slides](./Paper/USENIX15_Protocol_Slides.pdf)
 
-* <img src="image/ppt_24px.png">[Slides](./Paper/USENIX15_Protocol.pdf)
+* <img src="image/ppt_24px.png">[Paper](./Paper/USENIX15_Protocol.pdf)
 
 **Abstract:** We describe a largely automated and systematic analysis of TLS implementations by what we call ‘protocol state fuzzing’: we use state machine learning to infer state machines from protocol implementations, using only blackbox testing, and then inspect the inferred state machines to look for spurious behaviour which might be an indication of flaws in the program logic. For detecting the presence of spurious behaviour the approach is almost fully automatic: we automatically obtain state machines and any spurious behaviour is then trivial to see. Detecting whether the spurious behaviour introduces exploitable security weaknesses does require manual investigation. Still, we take the point of view that any spurious functionality in a security protocol implementation is dangerous and should be removed.
 
 We analysed both server- and client-side implementations with a test harness that supports several key exchange algorithms and the option of client certificate authentication. We show that this approach can catch an interesting class of implementation flaws that is apparently common in security protocol implementations: in three of the TLS implementations analysed new security flaws were found (in GnuTLS, the Java Secure Socket Extension, and OpenSSL). This shows that protocol state fuzzing is a useful technique to systematically analyse security protocol implementations. As our analysis of different TLS implementations resulted in different and unique state machines for each one, the technique can also be used for fingerprinting TLS implementations.
+
+
+### PULSAR: Stateful Black-Box Fuzzing of Proprietary Network Protocols (Springer, Cham, 2015)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/Springer15_PULSAR.pdf)
+
+**Abstract:** The security of network services and their protocols critically depends on minimizing their attack surface. A single flaw in an implementation can suffice to compromise a service and expose sensitive data to an attacker. The discovery of vulnerabilities in protocol implementations, however, is a challenging task: While for standard protocols this process can be conducted with regular techniques for auditing, the situation becomes difficult for proprietary protocols if neither the program code nor the specification of the protocol are easily accessible. As a result, vulnerabilities in closed-source implementations can often remain undiscovered for a longer period of time. In this paper, we present PULSAR, a method for stateful black-box fuzzing of proprietary network protocols. Our method combines concepts from fuzz testing with techniques for automatic protocol reverse engineering and simulation. It proceeds by observing the traffic of a proprietary protocol and inferring a generative model for message formats and protocol states that can not only analyze but also simulate communication. During fuzzing this simulation can effectively explore the protocol state space and thereby enables uncovering vulnerabilities deep inside the protocol implementation. We demonstrate the efficacy of PULSAR in two case studies, where it identifies known as well as unknown vulnerabilities.
+
+
+
+### SECFUZZ: Fuzz-testing Security Protocols (AST 2012)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/AST12_SECFUZZ.pdf)
+
+**Abstract:** We propose a light-weight, yet effective, technique for fuzz-testing security protocols. Our technique is modular, it exercises (stateful) protocol implementations in depth, and handles encrypted traffic. We use a concrete implementation of the protocol to generate valid inputs, and mutate the inputs using a set of fuzz operators. A dynamic memory analysis tool monitors the execution as an oracle to detect he vulnerabilities exposed by fuzz-testing. We provide the fuzzer with the necessary keys and cryptographic algorithms in order to properly mutate encrypted messages. We present a case study on two widely used, mature implementations of the Internet Key Exchange (IKE) protocol and report on two
+new vulnerabilities discovered by our fuzz-testing tool. We also compare the effectiveness of our technique to two existing model-based fuzz-testing tools for IKE.
+
+
+### Extension of SPIKE for Encrypted Protocol Fuzzing (2011)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/IEEE2011_protocol.pdf)
+
+**Abstract:** A fuzzer is a program that attempts to find security vulnerabilities in an application by sending random or semi-random input. Fuzzers
+have been widely used to find vulnerabilities in protocol implementations. The implementations may conform to the design of the protocol, but most of the times some glitches might remain. As a result vulnerabilities might remain unnoticed. Consequently, different implementations of the same protocol may be vulnerable to different kind of attacks. Fuzzers help us discover such implementation flaws. Among the currently available and popular ones, SPIKE is one recognized open-source fuzzing framework. However, SPIKE has a limitation of fuzzing only non-encrypted protocols. This paper presents the extension of SPIKE, called ESPIKE, for fuzzing of encrypted protocols. ESPIKE will facilitate testing implementations of
+SSL encrypted protocols. As a proof of concept for efficiency of ESPIKE we demonstrate its usage on sftp and https protocol.
+
+
+### AutoFuzz: Automated Network Protocol Fuzzing Framework (IJCSNS 2010)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/IJCSNS10_Autofuzz.pdf)
+
+**Abstract:** Assessing software security involves steps such as code review, risk analysis, penetration testing and fuzzing. During the fuzzing phase, the tester‟s goal is to find flaws in software by sending unexpected input to the target application and monitoring its behavior. In this paper we introduce the AutoFuzz [1] - extendable, open source framework used for testing network protocol implementations. AutoFuzz is a „smart‟, man-in-the-middle, semi deterministic network protocol fuzzing framework. AutoFuzz learns a protocol implementation by constructing a Finite State Automaton (FSA) which captures the observed communications between a client and a server [5]. In addition, AutoFuzz learns individual message syntax, including fields and probable types, by applying the bioinformatics techniques of [2]. Finally, AutoFuzz can fuzz client or server protocol implementations by intelligently modifying the communication sessions between them using the FSA as a guide. AutoFuzz was applied to a variety of File Transfer Protocol (FTP) server implementations, confirming old and discovering new vulnerabilities.
 
 
 
@@ -1733,13 +1860,6 @@ In this paper, we propose a deep-learning-based approach to predict the reachabi
 * <img src="image/pdf_24px.png">[Paper](./Paper/SP19_NEUZZ.pdf)
 
 **Abstract:** Fuzzing has become the de facto standard technique for finding software vulnerabilities. However, even state-of-the-art fuzzers are not very efficient at finding hard-to-trigger software bugs. Most popular fuzzers use evolutionary guidance to generate inputs that can trigger different bugs. Such evolutionary algorithms, while fast and simple to implement, often get stuck in fruitless sequences of random mutations. Gradient-guided optimization presents a promising alternative to evolutionary guidance. Gradient-guided techniques have been shown to significantly outperform evolutionary algorithms at solving high-dimensional structured optimization problems in domains like machine learning by efficiently utilizing gradients or higher-order derivatives of the underlying function. However, gradient-guided approaches are not directly applicable to fuzzing as real-world program behaviors contain many discontinuities, plateaus, and ridges where the gradient-based methods often get stuck. We observe that this problem can be addressed by creating a smooth surrogate function approximating the target program's discrete branching behavior. In this paper, we propose a novel program smoothing technique using surrogate neural network models that can incrementally learn smooth approximations of a complex, real-world program's branching behaviors. We further demonstrate that such neural network models can be used together with gradient-guided input generation schemes to significantly increase the efficiency of the fuzzing process. Our extensive evaluations demonstrate that NEUZZ significantly outperforms 10 state-of-the-art graybox fuzzers on 10 popular real-world programs both at finding new bugs and achieving higher edge coverage. NEUZZ found 31 previously unknown bugs (including two CVEs) that other fuzzers failed to find in 10 real-world programs and achieved 3X more edge coverage than all of the tested graybox fuzzers over 24 hour runs. Furthermore, NEUZZ also outperformed existing fuzzers on both LAVA-M and DARPA CGC bug datasets.
-
-
-### SeqFuzzer: An Industrial Protocol Fuzzing Framework in Deep Learning Perspective (ICST 2019)
-
-* <img src="image/pdf_24px.png">[Paper](./Paper/ICST19_SeqFuzzer.pdf)
-
-**Abstract:** Industrial networks are the cornerstone of modern industrial control systems. Performing security checks of industrial communication processes help detect unknown risks and vulnerabilities. Fuzz testing is a widely used method for performing security checks that takes advantage of automation. However, there is a big challenge to carry out security checks on the industrial networks due to the increasing variety and complexity of industrial communication protocols. In this case, existing approaches usually take a long time to model the protocol for generating test cases, which is labor-intensive and timeconsuming. This becomes even worse when the target protocol is stateful. To help in addressing this problem, we employed a deep learning model to learn the structures of protocol frames and deal with the temporal features of stateful protocols. We propose a fuzzing framework named SeqFuzzer which automatically learns the protocol frame structures from communication traffic and generates fake but plausible messages as test cases. For proving the usability of our approach, we applied SeqFuzzer to widelyused Ethernet for Control Automation Technology (EtherCAT) devices and successfully detected several security vulnerabilities
 
 
 ### Compiler Fuzzing through Deep Learning (ISSTA 2018)

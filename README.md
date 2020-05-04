@@ -40,7 +40,7 @@ remark: This website is only used for collecting and grouping the related paper.
     - [IJON: Exploring Deep State Spaces via Fuzzing](#ijon-exploring-deep-state-spaces-via-fuzzing-sp-2020)
     - [PANGOLIN: Incremental Hybrid Fuzzing with Polyhedral Path Abstraction](#pangolin-incremental-hybrid-fuzzing-with-polyhedral-path-abstraction-sp-2020)
     - [KRace: Data Race Fuzzing for Kernel File Systems](#krace-data-race-fuzzing-for-kernel-file-systems-sp-2020)
-    - [Fuzzing JavaScript Engines with Aspect-preserving Mutation]
+    - [Fuzzing JavaScript Engines with Aspect-preserving Mutation](#fuzzing-javascript-engines-with-aspect-preserving-mutation-sp-2020)
     
 - **USENIX Security 2020**
     - [GREYONE: Data Flow Sensitive Fuzzing](#greyone-data-flow-sensitive-fuzzing-usenix-security2020)
@@ -371,7 +371,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [VUzzer: Application-aware Evolutionary Fuzzing (NDSS 2017)](#vuzzer-application-aware-evolutionary-fuzzing-ndss-2017)
   
 - [**Grammars \ Inputs-aware Fuzzing**](#grammars--inputs-aware-fuzzing)
-  - [Fuzzing JavaScript Engines with Aspect-preserving Mutation (S&P 2020)]
+  - [Fuzzing JavaScript Engines with Aspect-preserving Mutation (S&P 2020)](#fuzzing-javascript-engines-with-aspect-preserving-mutation-sp-2020)
   - [Smart Greybox Fuzzing (TSE 2019)](#smart-greybox-fuzzing-tse-2019)
   - [Semantic Fuzzing with Zest (ISSTA 2019)](#semantic-fuzzing-with-zest-issta-2019)
   - [Field-aware Evolutionary Fuzzing Based on Input Specifications and Vulnerability Metrics (2019)](#field-aware-evolutionary-fuzzing-based-on-input-specifications-and-vulnerability-metrics-2019)
@@ -602,7 +602,7 @@ In this paper, we bring coverage-guided fuzzing to the concurrency dimension wit
 
 ### HyDiff: Hybrid Differential Software Analysis (ICSE 2020)
 
-* <img src="image/pdf_24px.png">[Paper](./Paper/ICSE20_Hydif.pdf)
+* <img src="image/pdf_24px.png">[Paper](./Paper/ICSE20_Hydiff.pdf)
 
 * <img src="image/github_24px.png">[Code](https://github.com/yannicnoller/hydiff)
 
@@ -1323,11 +1323,13 @@ In this paper, we present an application-aware evolutionary fuzzing strategy tha
 
 ### Fuzzing JavaScript Engines with Aspect-preserving Mutation (S&P 2020)
 
-* <img src="image/pdf_24px.png">[Paper](./Paper/SP20_DIE.pdf)
+* <img src="image/pdf_24px.png">[Paper](https://gts3.org/assets/papers/2020/park:die.pdf)
 
 * <img src="image/github_24px.png">[Code](https://github.com/sslab-gatech/DIE)
 
-**Abstract:**
+**Abstract:** Fuzzing is a practical, widely-deployed technique to find bugs in complex, real-world programs like JavaScript engines. We observed, however, that existing fuzzing approaches, either generative or mutational, fall short in fully harvesting high-quality input corpora such as known proof of concept (PoC) exploits or unit tests. Existing fuzzers tend to destruct subtle semantics or conditions encoded in the input corpus in order to generate new test cases because this approach helps in discovering new code paths of the program. Nevertheless, for JavaScript-like complex programs, such a conventional design leads to test cases that tackle only shallow parts of the complex codebase and fails to reach deep bugs effectively due to the huge input space. 
+
+In this paper, we advocate a new technique, called an aspect preserving mutation, that stochastically preserves the desirable properties, called aspects, that we prefer to be maintained across mutation. We demonstrate the aspect preservation with two mutation strategies, namely, structure and type preservation, in our fully-fledged JavaScript fuzzer, called DIE. Our evaluation shows that DIE’s aspect-preserving mutation is more effective in discovering new bugs (5.7× more unique crashes) and producing valid test cases (2.4× fewer runtime errors) than the state-ofthe-art JavaScript fuzzers. DIE newly discovered 48 high-impact bugs in ChakraCore, JavaScriptCore, and V8 (38 fixed with 12 CVEs assigned as of today). The source code of DIE is publicly available as an open-source project.
 
 
 

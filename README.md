@@ -14,7 +14,7 @@ remark: This website is only used for collecting and grouping the related paper.
     - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
     - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 
-- **IPDI 2020**
+- **PLDI 2020**
     - [Validating SMT Solvers via Semantic Fusion](#validating-smt-solvers-via-semantic-fusion-pldi-2020)
 
 - **ICSE 2020**

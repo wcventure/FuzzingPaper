@@ -321,7 +321,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Protocol State Fuzzing of TLS Implementations (USENIX Security2015)](#protocol-state-fuzzing-of-tls-implementations-usenix-security2015)
   - [PULSAR: Stateful Black-Box Fuzzing of Proprietary Network Protocols (Springer, Cham, 2015)](#pulsar-stateful-black-box-fuzzing-of-proprietary-network-protocols-springer-cham-2015)
   - [SECFUZZ: Fuzz-testing Security Protocols (AST 2012)](#secfuzz-fuzz-testing-security-protocols-ast-2012)
-  - [AutoFuzz: Automated Network Protocol Fuzzing Framework (IJCSN S2010)](#autofuzz-automated-network-protocol-fuzzing-framweork-ijcsns-2010)
+  - [AutoFuzz: Automated Network Protocol Fuzzing Framework (IJCSNS 2010)](#autofuzz-automated-network-protocol-fuzzing-framweork-ijcsns-2010)
 
 - [**SMT Fuzzing**](#smt-fuzzing)
   - [On the Unusual Effectiveness of Type-aware Mutations for Testing SMT Solvers (2020)](#)

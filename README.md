@@ -128,7 +128,7 @@ remark: This website is only used for collecting and grouping the related paper.
 - **FSE 2019**
     - [Cerebro: Context-aware Adaptive Fuzzing for Effective Vulnerability Detection](#cerebro-context-aware-adaptive-fuzzing-for-effective-vulnerability-detection-fse-2019)
     - [Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing](#just-fuzz-it-solving-floating-point-constraints-using-coverage-guided-fuzzing-fse-2019)
-	- [FUDGE: Fuzz Driver Generation at Scale](#fudge-fuzz-driver-generation-at-scale-fse-2019)
+    - [FUDGE: Fuzz Driver Generation at Scale](#fudge-fuzz-driver-generation-at-scale-fse-2019)
 
 - **ISSTA 2019**
     - [Semantic Fuzzing with Zest](#semantic-fuzzing-with-zest-issta-2019)
@@ -321,9 +321,10 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Protocol State Fuzzing of TLS Implementations (USENIX Security2015)](#protocol-state-fuzzing-of-tls-implementations-usenix-security2015)
   - [PULSAR: Stateful Black-Box Fuzzing of Proprietary Network Protocols (Springer, Cham, 2015)](#pulsar-stateful-black-box-fuzzing-of-proprietary-network-protocols-springer-cham-2015)
   - [SECFUZZ: Fuzz-testing Security Protocols (AST 2012)](#secfuzz-fuzz-testing-security-protocols-ast-2012)
-  - [AutoFuzz: Automated Network Protocol Fuzzing Framework (IJCSNS 2010)](#autofuzz-automated-network-protocol-fuzzing-framework-ijcsns-2010)
+  - [AutoFuzz: Automated Network Protocol Fuzzing Framework (IJCSN S2010)](#autofuzz-automated-network-protocol-fuzzing-framweork-ijcsns-2010)
 
 - [**SMT Fuzzing**](#smt-fuzzing)
+  - [On the Unusual Effectiveness of Type-aware Mutations for Testing SMT Solvers (2020)](#)
   - [Validating SMT Solvers via Semantic Fusion (PLDI 2020)](#validating-smt-solvers-via-semantic-fusion-pldi-2020)
   - [Detecting Critical Bugs in SMT Solvers Using Blackbox Mutational Fuzzing (2020)](#detecting-critical-bugs-in-smt-solvers-using-blackbox-mutational-fuzzing-2020)
   - [Automatically Testing String Solvers (ICSE 2020)](#automatically-testing-string-solvers-icse-2020)
@@ -942,6 +943,16 @@ SSL encrypted protocols. As a proof of concept for efficiency of ESPIKE we demon
 
 
 # SMT Fuzzing
+
+### On the Unusual Effectiveness of Type-aware Mutations for Testing SMT Solvers
+
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2004.08799.pdf)
+
+**Abstract:** We propose type-aware operator mutation, a simple, but unusually effective approach for testing SMT solvers.
+The key idea is to mutate operators of conforming types within the seed formulas to generate well-typed mutant formulas. These mutant formulas are then used as the test cases for SMT solvers. We realized typeaware operator mutation within the OpFuzz tool and used it to stress-test Z3 and CVC4, two state-of-the-art SMT solvers. Type-aware operator mutations are unusually effective: During nine months of extensive testing with OpFuzz, we reported 909 bugs in Z3 and CVC4,1 out of which 632 bugs were confirmed and 531 of the confirmed bugs were fixed by the developers. The detected bugs are highly diverse — we found bugs of many different types (soundness bugs, invalid model bugs, crashes, etc.), logics and solver configurations. We have further conducted an in-depth study on the bugs found by OpFuzz. The study results show that the bugs found by OpFuzz are of high quality. Many of them affect core components of the SMT solvers’ codebases, and some required major changes for the developers to fix. Among the 909 bugs found by OpFuzz, 130 were soundness
+bugs, the most critical bugs in SMT solvers, and 501 were in the default modes of the solvers. Notably, OpFuzz
+found 16 critical soundness bugs in CVC4, which has proved to be a very stable SMT solver
+
 
 ### Validating SMT Solvers via Semantic Fusion (PLDI 2020)
 

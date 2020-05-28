@@ -14,6 +14,10 @@ remark: This website is only used for collecting and grouping the related paper.
     - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
     - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 
+- **FSE 2020**
+    - [Fuzzing: On the Exponential Cost of Vulnerability Discovery](#fuzzing-on-the-exponential-cost-of-vulnerability-discovery-fse-2020)
+    - [Boosting Fuzzer Efficiency: An Information Theoretic Perspective](#boosting-fuzzer-efficiency-an-information-theoretic-perspective-fse-2020)
+    
 - **PLDI 2020**
     - [Validating SMT Solvers via Semantic Fusion](#validating-smt-solvers-via-semantic-fusion-pldi-2020)
 
@@ -59,6 +63,7 @@ remark: This website is only used for collecting and grouping the related paper.
     - [AFLNET: A Greybox Fuzzer for Network Protocols](#aflnet-a-greybox-fuzzer-for-network-protocols-icst-2020)
 
 - **Others 2020**
+    - [Finding Bugs in File Systems with an Extensible Fuzzing Framework (TOS 2020)](#finding-bugs-in-file-systems-with-an-extensible-fuzzing-framework-tos-2020)
     - [ICS Protocol Fuzzing: Coverage Guided Packet Crack and Generation (DAC 2020)](#ics-protocol-fuzzing-coverage-guided-packet-crack-and-generation-dac-2020)
     - [Finding Security Vulnerabilities in Network Protocol Implementations (Arxiv 2020)](#finding-security-vulnerabilities-in-network-protocol-implementations-arxiv-2020)
     - [Coverage Guided Differential Adversarial Testing of Deep Learning Systems](#coverage-guided-differential-adversarial-testing-of-deep-learning-systems-tnse-2020)
@@ -69,6 +74,7 @@ remark: This website is only used for collecting and grouping the related paper.
     - [Smart seed selection-based effective black box fuzzing for IIoT protocol](#smart-seed-selection-based-effective-black-box-fuzzing-for-iiot-protocol)
     - [RDFuzz: Accelerating Directed Fuzzing with Intertwined Schedule and Optimized Mutation](#rdfuzz-accelerating-directed-fuzzing-with-intertwined-schedule-and-optimized-mutation-2020)
     - [Detecting Critical Bugs in SMT Solvers Using Blackbox Mutational Fuzzing](#detecting-critical-bugs-in-smt-solvers-using-blackbox-mutational-fuzzing-2020)
+    - [A deep convolution generative adversarial networks based fuzzing framework for industry control protocols](#a-deep-convolution-generative-adversarial-networks-based-fuzzing-framework-for-industry-control-protocols)
 
 - **OOPSLA 2019**
     - [FuzzFactory: Domain-Specific Fuzzing with Waypoints](#fuzzfactory-domain-specific-fuzzing-with-waypoints-oopsla-2019)
@@ -290,6 +296,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Coverage-Directed Differential Testing of JVM Implementations (PLDI 2016)](#coverage-directed-differential-testing-of-jvm-implementations-pldi-2016)
 
 - [**Evaluate Fuzzing**](#evaluate-fuzzing)
+  - [Fuzzing: On the Exponential Cost of Vulnerability Discovery (FSE 2020)](#fuzzing-on-the-exponential-cost-of-vulnerability-discovery-fse-2020)
   - [A Feature-Oriented Corpus for understanding, Evaluating and Improving Fuzz Testing (ASIACCS 2019)](#a-feature-oriented-corpus-for-understanding-evaluating-and-improving-fuzz-testing-asiaccs-2019)
   - [Be Sensitive and Collaborative: Analyzing Impact of Coverage Metrics in Greybox Fuzzing (RAID 2019)](#be-sensitive-and-collaborative-analyzing-impact-of-coverage-metrics-in-greybox-fuzzing-raid-2019)
   - [Study and Comparison of General Purpose Fuzzers (2019)](#study-and-comparison-of-general-purpose-fuzzers)
@@ -303,6 +310,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [INSTRIM Lightweight Instrumentation for Coverage-guided Fuzzing (NDSS 2018 workshop)](#instrim-lightweight-instrumentation-for-coverage-guided-fuzzing-ndss-2018-workshop)
 
 - [**IoT or protocols fuzzing**](#iot-or-protocols-fuzzing)
+  - [A deep convolution generative adversarial networks based fuzzing framework for industry control protocols](#a-deep-convolution-generative-adversarial-networks-based-fuzzing-framework-for-industry-control-protocols)
   - [ICS Protocol Fuzzing: Coverage Guided Packet Crack and Generation (DAC 2020)](#ics-protocol-fuzzing-coverage-guided-packet-crack-and-generation-dac-2020)
   - [AFLNET: A Greybox Fuzzer for Network Protocols (ICST 2020)](#aflnet-a-greybox-fuzzer-for-network-protocols-icst-2020)
   - [Finding Security Vulnerabilities in Network Protocol Implementations (Arxiv 2020)](#finding-security-vulnerabilities-in-network-protocol-implementations-arxiv-2020)
@@ -337,6 +345,7 @@ remark: This website is only used for collecting and grouping the related paper.
 - [**Kernel Fuzzing**](#kernel-fuzzing)
   - [HFL: Hybrid Fuzzing on the Linux Kernel (NDSS 2020)](#hfl-hybrid-fuzzing-on-the-linux-kernel-ndss-2020)
   - [KRace: Data Race Fuzzing for Kernel File Systems (S&P 2020)](#krace-data-race-fuzzing-for-kernel-file-systems-sp-2020)
+  - [Finding Bugs in File Systems with an Extensible Fuzzing Framework (TOS 2020)](#finding-bugs-in-file-systems-with-an-extensible-fuzzing-framework-tos-2020)
   - [PeriScope: An Effective Probing and Fuzzing Framework for the Hardware-OS Boundary (NDSS2019)](#periscope-an-effective-probing-and-fuzzing-framework-for-the-hardware-os-boundary-ndss2019)
   - [Hydra: An Extensible Fuzzing Framework for Finding Semantic Bugs in File Systems (SOSP 2019)](#hydra-an-extensible-fuzzing-framework-for-finding-semantic-bugs-in-file-systems-sosp-2019)
   - [Fuzzing File Systems via Two-Dimensional Input Space Exploration (S&P 2019)](#fuzzing-file-systems-via-two-dimensional-input-space-exploration-sp-2019)
@@ -490,6 +499,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [DifFuzz: Differential Fuzzing for Side-Channel Analysis (ICSE 2019)](#diffuzz-differential-fuzzing-for-side-channel-analysis-icse-2019)
 
 - [**Other Interesting Fuzzing**](#other-interesting-fuzzing)
+  - [Boosting Fuzzer Efficiency: An Information Theoretic Perspective (FSE 2020)](#boosting-fuzzer-efficiency-an-information-theoretic-perspective-fse-2020)
   - [Fuzzing Error Handling Code using Context-Sensitive Software Fault Injection (USENIX Security2020)](#fuzzing-error-handling-code-using-context-sensitive-software-fault-injection-usenix-security2020)
   - [FANS: Fuzzing Android Native System Services via Automated Interface Analysis (USENIX Security2020)](#fans-fuzzing-android-native-system-services-via-automated-interface-analysis-usenix-security2020)
   - [Fuzzing IPC with Knowledge Inference (SRDS 2019)](#fuzzing-ipc-with-knowledge-inference-srds-2019)
@@ -588,7 +598,6 @@ remark: This website is only used for collecting and grouping the related paper.
 **Abstract:** Data races occur when two threads fail to use proper synchronization when accessing shared data. In kernel file systems, which are highly concurrent by design, data races are common mistakes and often wreak havoc on the users, causing inconsistent states or data losses. Prior fuzzing practices on file systems have been effective in uncovering hundreds of bugs, but they mostly focus on the sequential aspect of file system execution and do not comprehensively explore the concurrency dimension and hence, forgo the opportunity to catch data races.
 
 In this paper, we bring coverage-guided fuzzing to the concurrency dimension with three new constructs: 1) a new coverage tracking metric, alias coverage, specially designed to capture the exploration progress in the concurrency dimension; 2) an evolution algorithm for generating, mutating, and merging multithreaded syscall sequences as inputs for concurrency fuzzing; and 3) a comprehensive lockset and happens-before modeling for kernel synchronization primitives for precise data race detection. These components are integrated into KRACE, an end-to-end fuzzing framework that has discovered 23 data races in ext4, btrfs, and the VFS layer so far, and 9 are confirmed to be harmful.
-
 
 
 ### ConFuzz: A Concurrency Fuzzer (2019)
@@ -690,6 +699,16 @@ We have implemented classfuzz and conducted an extensive evaluation of it agains
 
 # Evaluate Fuzzing
 
+### Fuzzing: On the Exponential Cost of Vulnerability Discovery (FSE 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://mboehme.github.io/paper/FSE20.EmpiricalLaw.pdf)
+ 
+**Abstract:** We present counterintuitive results for the scalability of fuzzing. Given the same non-deterministic fuzzer, finding the same bugs linearly faster requires linearly more machines. Yet, finding linearly more bugs in the same time requires exponentially more machines. Similarly, with exponentially more machines, we can cover the same code exponentially faster, but uncovered code only linearly faster. In other words, re-discovering the same vulnerabilities (or achieving the same coverage) is cheap but finding new vulnerabilities (or achieving more coverage) is expensive. This holds even under the simplifying assumption of no parallelization overhead. 
+
+We derive these observations from over four CPU years worth of fuzzing campaigns involving almost three hundred open source programs, two state-of-the-art greybox fuzzers, four measures of code coverage, and two measures of vulnerability discovery. We provide a probabilistic analysis and conduct simulation experiments to explain this phenomenon.
+
+
+
 ### A Feature-Oriented Corpus for understanding, Evaluating and Improving Fuzz Testing (ASIACCS 2019)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/ASIACCS19_Feature-Oriented.pdf)
@@ -765,6 +784,13 @@ The ideal solution for binary security analysis would be a static rewriter that 
 
 
 # IoT or protocols fuzzing
+
+### A deep convolution generative adversarial networks based fuzzing framework for industry control protocols
+
+* <img src="image/pdf_24px.png">[Paper](https://link.springer.com/content/pdf/10.1007/s10845-020-01584-z.pdf)
+
+**Abstract:** A growing awareness is brought that the safety and security of industrial control systems cannot be dealt with in isolation, and the safety and security of industrial control protocols (ICPs) should be considered jointly. Fuzz testing (fuzzing) for the ICP is a common way to discover whether the ICP itself is designed and implemented with flaws and network security vulnerability. Traditional fuzzing methods promote the safety and security testing of ICPs, and many of them have practical applications. However, most traditional fuzzing methods rely heavily on the specification of ICPs, which makes the test process a costly, time-consuming, troublesome and boring task. And the task is hard to repeat if the specification does not exist. In this study, we propose a smart and automated protocol fuzzing methodology based on improved deep convolution generative adversarial network and give a series of performance metrics. An automated and intelligent fuzzing framework BLSTM-DCNNFuzz for application is designed. Several typical ICPs, including Modbus and EtherCAT, are applied to test the effectiveness and efficiency of our framework. Experiment results show that our methodology outperforms the existing ones like General Purpose Fuzzer and other deep learning based fuzzing methods in convenience, effectiveness, and efficiency.
+
 
 ### ICS Protocol Fuzzing: Coverage Guided Packet Crack and Generation (DAC 2020)
 
@@ -1011,6 +1037,15 @@ Our evaluation on popular fuzzers and real-world applications shows that Fuzzifi
 
 
 # Kernel Fuzzing
+
+### Finding Bugs in File Systems with an Extensible Fuzzing Framework (TOS 2020)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/TOS20_FileSys.pdf)
+
+**Abstract:** File systems are too large to be bug free. Although handwritten test suites have been widely used to stress file systems, they can hardly keep up with the rapid increase in file system size and complexity, leading to new bugs being introduced. These bugs come in various flavors: buffer overflows to complicated semantic bugs. Although bug-specific checkers exist, they generally lack a way to explore file system states thoroughly. More importantly, no turnkey solution exists that unifies the checking effort of various aspects of a file system under one umbrella. 
+
+In this article, to highlight the potential of applying fuzzing to find any type of file system bugs in a generic way, we propose Hydra, an extensible fuzzing framework. Hydra provides building blocks for file system fuzzing, including input mutators, feedback engines, test executors, and bug post-processors. As a result, developers only need to focus on building the core logic for finding bugs of their interests. We showcase the effectiveness of Hydra with four checkers that hunt crash inconsistency, POSIX violations, logic assertion failures, and memory errors. So far, Hydra has discovered 157 new bugs in Linux file systems, including three in verified file systems (FSCQ and Yxv6).
+
 
 ### PeriScope: An Effective Probing and Fuzzing Framework for the Hardware-OS Boundary (NDSS2019)
 
@@ -2049,6 +2084,15 @@ We instantiate our approach to the problem of fuzzing smart contracts, a domain 
 
 
 # Other Interesting Fuzzing
+
+### Boosting Fuzzer Efficiency: An Information Theoretic Perspective (FSE 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://mboehme.github.io/paper/FSE20.Entropy.pdf)
+
+**Abstract:** In this paper, we take the fundamental perspective of fuzzing as a learning process. Suppose before fuzzing, we know nothing about the behaviors of a program P: What does it do? Executing the first test input, we learn how P behaves for this input. Executing the next input, we either observe the same or discover a new behavior. As such, each execution reveals “some amount” of information about P’s behaviors. A classic measure of information is Shannon’s entropy. Measuring entropy allows us to quantify how much is learned from each generated test input about the behaviors of the program. Within a probabilistic model of fuzzing, we show how entropy also measures fuzzer efficiency. Specifically, it measures the general rate at which the fuzzer discovers new behaviors. Intuitively, efficient fuzzers maximize information.
+
+From this information theoretic perspective, we develop Entropic, an entropy-based power schedule for greybox fuzzing which assigns more energy to seeds that maximize information. We implemented Entropic into the popular greybox fuzzer LibFuzzer. Our experiments with more than 250 open-source programs (60 million LoC) demonstrate a substantially improved efficiency and confirm our hypothesis that an efficient fuzzer maximizes information. Entropic has been independently evaluated and invited for integration into main-line LibFuzzer. Entropic will run on more than 25,000 machines fuzzing hundreds of security-critical software systems simultaneously and continuously.
+
 
 ### Fuzzing Error Handling Code using Context-Sensitive Software Fault Injection (USENIX Security2020)
 

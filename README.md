@@ -201,7 +201,7 @@ remark: This website is only used for collecting and grouping the related paper.
 - **ASE 2018**
     - [ContractFuzzer: Fuzzing Smart Contracts for Vulnerability Detection](#contractfuzzer-fuzzing-smart-contracts-for-vulnerability-detection-ase-2018)
     - [FairFuzz: A Targeted Mutation Strategy for Increasing Greybox Fuzz Testing Coverage](#fairfuzz-a-targeted-mutation-strategy-for-increasing-greybox-fuzz-testing-coverage-ase-2018)
-    - [Differential Program Analysis with Fuzzing and Symbolic Execution]()
+    - [Differential Program Analysis with Fuzzing and Symbolic Execution](#differential-program-analysis-with-fuzzing-and-symbolic-execution-ase-2018)
 
 - **ISSTA 2018**
     - [Badger: Complexity Analysis with Fuzzing and Symbolic Execution](#badger-complexity-analysis-with-fuzzing-and-symbolic-execution-issta-2018)
@@ -213,6 +213,7 @@ remark: This website is only used for collecting and grouping the related paper.
   
 - **ACSAC 2018**
     - [TIFF: Using Input Type Inference To Improve Fuzzing](#tiff-using-input-type-inference-to-improve-fuzzing-acsac-2018)
+    - [A Heuristic Framework to Detect Concurrency Vulnerabilities](#a-heuristic-framework-to-detect-concurrency-vulnerabilities-acsac-2018)
 
 - **S&P 2017**
     - [NEZHA: Efficient Domain-Independent Differential Testing](#nezha-efficient-domain-independent-differential-testing-sp-2017)
@@ -279,9 +280,10 @@ remark: This website is only used for collecting and grouping the related paper.
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 
 - [**Concurrency Fuzzing**](#concurrency-fuzzing)
-  - [KRace: Data Race Fuzzing for Kernel File Systems (S&P 220)](#krace-data-race-fuzzing-for-kernel-file-systems-sp-2020)
+  - [KRace: Data Race Fuzzing for Kernel File Systems (S&P 2020)](#krace-data-race-fuzzing-for-kernel-file-systems-sp-2020)
   - [ConFuzz—A Concurrency Fuzzer (2019)](#confuzz-a-concurrency-fuzzer-2019)
   - [Razzer: Finding Kernel Race Bugs through Fuzzing (S&P 2019)](#razzer-finding-kernel-race-bugs-through-fuzzing-sp-2019)
+  - [A Heuristic Framework to Detect Concurrency Vulnerabilities](#a-heuristic-framework-to-detect-concurrency-vulnerabilities-acsac-2018)
 
 - [**Differential Fuzzing**](#differential-fuzzing)
   - [Coverage Guided Differential Adversarial Testing of Deep Learning Systems (TNSE 2020)](#coverage-guided-differential-adversarial-testing-of-deep-learning-systems-tnse-2020)
@@ -605,6 +607,17 @@ In this paper, we bring coverage-guided fuzzing to the concurrency dimension wit
 * <img src="image/pdf_24px.png">[Paper](./Paper/AISC19_ConFuzz.pdf)
 
 **Abstract:** Concurrency bugs are as equally vulnerable as the bugs found in the single-threaded programs and these bugs can be exploited using concurrency attacks. Unfortunately, there is not much literature available in detecting various kinds of concurrency issues in a multi-threaded program due to its complexity and uncertainty. In this paper, we aim at detecting concurrency bugs by using directed evolutionary fuzzing with the help of static analysis of the source code. Concurrency bug detection involves two main entities: an input and a particular thread execution order. The evolutionary part of fuzzing will prefer inputs that involve memory access patterns across threads (data flow interleaving) and thread ordering that disturb the data dependence more and direct them to trigger concurrency bugs. This paper suggests the idea of a concurrency fuzzer, which is first of its kind. We use a combination of LLVM, Thread Sanitizer and fuzzing techniques to detect various concurrency issues in an application. The source code of the application is statically analyzed for various paths, from the different thread related function calls to the main function. Every basic block in these paths are assigned a unique ID and a weight based on the distance of the basic block from the thread function calls. These basic blocks are instrumented to print their ID and weight upon execution. The knowledge about the basic blocks in the sliced paths are used to generate new sets of inputs from the old ones, thus covering even more basic blocks in the path and thereby increasing the chances of hitting a concurrency warning. We use Thread Sanitizer present in the LLVM compiler infrastructure to detect the concurrency bug warnings while executing each input. The inputs are directed to discover even new address locations with possible concurrency issues. The system was tested on three simple multi-threaded applications pigz, pbzip2, and pixz. The results show a quicker detection of unique addresses in the application with possible concurrency issues.
+
+
+### A Heuristic Framework to Detect Concurrency Vulnerabilities (ACSAC 2018)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/ACSAC18_AFLCon.pdf)
+
+**Abstract:** With a growing demand of concurrent software to exploit multi-core hardware capability, concurrency vulnerabilities have become an inevitable threat to the security of today's IT industry. Existing concurrent program detection schemes focus mainly on detecting concurrency errors such as data races, atomicity violation, etc., with little attention paid to detect concurrency vulnerabilities that may be exploited to infringe security. In this paper, we propose a heuristic framework that combines both static analysis and fuzz testing to detect targeted concurrency vulnerabilities such as concurrency buffer overflow, double free, and use-after-free. The static analysis locates sensitive concurrent operations in a concurrent program, categorizes each finding into a potential type of concurrency vulnerability, and determines the execution order of the sensitive operations in each finding that would trigger the suspected concurrency vulnerability. The results are then plugged into the fuzzer with the execution order fixed by the static analysis in order to trigger the suspected concurrency vulnerabilities.
+
+In order to introduce more variance which increases possibility that the concurrency errors can be triggered, we also propose manipulation of thread scheduling priority to enable a fuzzer such as AFL to effectively explore thread interleavings in testing a concurrent program. To the best of our knowledge, this is the first fuzzer that is capable of effectively exploring concurrency errors.
+
+In evaluating the proposed heuristic framework with a benchmark suit of six real-world concurrent C programs, the framework detected two concurrency vulnerabilities for the proposed concurrency vulnerability detection, both being confirmed to be true positives, and produced three new crashes for the proposed interleaving exploring fuzzer that existing fuzzers could not produce. These results demonstrate the power and effectiveness of the proposed heuristic framework in detecting concurrency errors and vulnerabilities.
 
 
 

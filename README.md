@@ -4,6 +4,7 @@ remark: This website is only used for collecting and grouping the related paper.
 # All Papers (Classification according to Publication)
 
 - **Survey/Review**
+    - [SoK: The Progress, Challenges, and Perspectives of Directed Greybox Fuzzing](#sok-the-progress-challenges-and-perspectives-of-directed-greybox-fuzzing)
     - [Fuzzing: Hack, Art, and Science](#fuzzing-hack-art-and-science-cacm-2020)
     - [Survey of Directed Fuzzy Technology](#survey-of-directed-fuzzy-technology)
     - [A Review of Machine Learning Applications in Fuzzing](#a-review-of-machine-learning-applications-in-fuzzing)
@@ -269,6 +270,7 @@ remark: This website is only used for collecting and grouping the related paper.
 # All Papers (Classification according to Subject)
 
 - [**Survey/Review**](#surveyreview)
+  - [SoK: The Progress, Challenges, and Perspectives of Directed Greybox Fuzzing](#sok-the-progress-challenges-and-perspectives-of-directed-greybox-fuzzing)
   - [Fuzzing: Hack, Art, and Science](#fuzzing-hack-art-and-science-cacm-2020)
   - [Survey of Directed Fuzzy Technology](#survey-of-directed-fuzzy-technology)
   - [A Review of Machine Learning Applications in Fuzzing](#a-review-of-machine-learning-applications-in-fuzzing)
@@ -522,6 +524,12 @@ remark: This website is only used for collecting and grouping the related paper.
 
 
 # Survey/Review
+
+### SoK: The Progress, Challenges, and Perspectives of Directed Greybox Fuzzing
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/Arxiv20_SoK.pdf)
+
+**Abstract:** Greybox fuzzing has been the most scalable and practical approach to software testing. Most greybox fuzzing tools are coverage guided as code coverage is strongly correlated with bug coverage. However, since most covered codes may not containbugs, blindly extending code coverage is less efficient, especially for corner cases. Unlike coverage-based fuzzers who extend the code coverage in an undirected manner, a directed fuzzer spends most of its time budget on reaching specific target locations (e.g.,the bug-prone zone) without wasting resources stressing unrelated parts. Thus, directed greybox fuzzing is particularly suitable for scenarios such as patch testing, bug reproduction, and special bug hunting. In this paper, we conduct the first in-depth study of directed greybox fuzzing. We investigate 28 state-of-the-artfuzzers (82% are published after 2019) closely related to DGF, which have various directed types and optimization techniques. Based on the feature of DGF, we extract 15 metrics to conducta thorough assessment of the collected tools and systemize the knowledge of this field. Finally, we summarize the challenges and provide perspectives of this field, aiming to facilitate and boost future research on this topic.
 
 ### Fuzzing: Hack, Art, and Science (CACM 2020)
 

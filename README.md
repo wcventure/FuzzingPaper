@@ -76,6 +76,7 @@ remark: This website is only used for collecting and grouping the related paper.
     - [RDFuzz: Accelerating Directed Fuzzing with Intertwined Schedule and Optimized Mutation](#rdfuzz-accelerating-directed-fuzzing-with-intertwined-schedule-and-optimized-mutation-2020)
     - [Detecting Critical Bugs in SMT Solvers Using Blackbox Mutational Fuzzing](#detecting-critical-bugs-in-smt-solvers-using-blackbox-mutational-fuzzing-2020)
     - [A deep convolution generative adversarial networks based fuzzing framework for industry control protocols](#a-deep-convolution-generative-adversarial-networks-based-fuzzing-framework-for-industry-control-protocols)
+    - [TOFU: Target-Oriented FUzzer](#tofu-target-oriented-fuzzer-arxiv-2020)
 
 - **OOPSLA 2019**
     - [FuzzFactory: Domain-Specific Fuzzing with Waypoints](#fuzzfactory-domain-specific-fuzzing-with-waypoints-oopsla-2019)
@@ -427,6 +428,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities (ICSE 2020)](#typestate-guided-fuzzer-for-discovering-use-after-free-vulnerabilities-icse-2020)
   - [Ankou: Guiding Grey-box Fuzzing towards Combinatorial Difference (ICSE 2020)](#ankou-guiding-grey-box-fuzzing-towards-combinatorial-difference-icse-2020)
   - [RDFuzz: Accelerating Directed Fuzzing with Intertwined Schedule and Optimized Mutation (2020)](#rdfuzz-accelerating-directed-fuzzing-with-intertwined-schedule-and-optimized-mutation-2020)
+  - [TOFU: Target-Oriented FUzzer (Arxiv 2020)](#tofu-target-oriented-fuzzer-arxiv-2020)
   - [Sequence coverage directed greybox fuzzing (ICPC 2019)](#sequence-coverage-directed-greybox-fuzzing-icpc-2019)
   - [Hawkeye: Towards a Desired Directed Grey-box Fuzzer (CCS 2018)](#hawkeye-towards-a-desired-directed-grey-box-fuzzer-ccs-2018)
   - [Directed Greybox Fuzzing (CCS 2017)](#directed-greybox-fuzzing-ccs-2017)
@@ -1683,6 +1685,12 @@ In this paper, we propose IJON, an annotation mechanism that a human analyst can
 * <img src="image/pdf_24px.png">[Paper](https://www.hindawi.com/journals/mpe/2020/7698916/)
 
 **Abstract:** Directed fuzzing is a practical technique, which concentrates its testing energy on the process toward the target code areas, while costing little on other unconcerned components. It is a promising way to make better use of available resources, especially in testing large-scale programs. However, by observing the state-of-the-art-directed fuzzing engine (AFLGo), we argue that there are two universal limitations, the balance problem between the exploration and the exploitation and the blindness in mutation toward the target code areas. In this paper, we present a new prototype RDFuzz to address these two limitations. In RDFuzz, we first introduce the frequency-guided strategy in the exploration and improve its accuracy by adopting the branch-level instead of the path-level frequency. Then, we introduce the input-distance-based evaluation strategy in the exploitation stage and present an optimized mutation to distinguish and protect the distance sensitive input content. Moreover, an intertwined testing schedule is leveraged to perform the exploration and exploitation in turn. We test RDFuzz on 7 benchmarks, and the experimental results demonstrate that RDFuzz is skilled at driving the program toward the target code areas, and it is not easily stuck by the balance problem of the exploration and the exploitation.
+
+### TOFU: Target-Oriented FUzzer (Arxiv 2020)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/Arxiv20_TOFU.pdf)
+
+**Abstract:** Program fuzzing—providing randomly constructed inputs to a computer program—has proved to be a powerful way to uncover bugs, find security vulnerabilities, and generate test inputs that increase code coverage. In many applications, however, one is interested in a target-oriented approach—one wants to find an input that causes the program to reach a specific target point in the program. We have created TOFU (for Target-Oriented FUzzer) to address the directed fuzzing problem. TOFU’s search is biased according to a distance metric that scores each input according to how close the input’s execution trace gets to the target locations. TOFU is also input-structure aware (i.e., the search makes use of a specification of a superset of the program’s allowed inputs). Our experiments on xmllint show that TOFU is 28% faster than AFLGo, while reaching 45% more targets. Moreover, both distance-guided search and exploitation of knowledge of the input structure contribute significantly to TOFU’s performance.
 
 
 

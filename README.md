@@ -22,6 +22,15 @@ remark: This website is only used for collecting and grouping the related paper.
 - **PLDI 2020**
     - [Validating SMT Solvers via Semantic Fusion](#validating-smt-solvers-via-semantic-fusion-pldi-2020)
 
+- **USENIX Security 2020**
+    - [GREYONE: Data Flow Sensitive Fuzzing](#greyone-data-flow-sensitive-fuzzing-usenix-security2020)
+    - [FuzzGuard: Filtering out Unreachable Inputs in Directed Grey-box Fuzzing through Deep Learning](#fuzzguard-filtering-out-unreachable-inputs-in-directed-grey-box-fuzzing-through-deep-learning-usenix-security2020)
+    - [ParmeSan: Sanitizer-guided Greybox Fuzzing](#parmesan-sanitizer-guided-greybox-fuzzing-usenix-security2020)
+    - [EcoFuzz: Adaptive Energy-Saving Greybox Fuzzing as a Variant of the Adversarial Multi-Armed Bandit](#ecofuzz-adaptive-energy-saving-greybox-fuzzing-as-a-variant-of-the-adversarial-multi-armed-bandit-usenix-security2020)
+    - [FANS: Fuzzing Android Native System Services via Automated Interface Analysis](#fans-fuzzing-android-native-system-services-via-automated-interface-analysis-usenix-security2020)
+    - [Fuzzing Error Handling Code using Context-Sensitive Software Fault Injection](#fuzzing-error-handling-code-using-context-sensitive-software-fault-injection-usenix-security2020)
+    - [USBFuzz: A Framework for Fuzzing USB Drivers by Device Emulation](#usbfuzz-a-framework-for-fuzzing-usb-drivers-by-device-emulation-usenix-security2020)
+
 - **ICSE 2020**
     - [Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities](#typestate-guided-fuzzer-for-discovering-use-after-free-vulnerabilities-icse-2020)
     - [MemLock: Memory Usage Guided Fuzzing](#memlock-memory-usage-guided-fuzzing-icse2020)
@@ -47,14 +56,6 @@ remark: This website is only used for collecting and grouping the related paper.
     - [KRace: Data Race Fuzzing for Kernel File Systems](#krace-data-race-fuzzing-for-kernel-file-systems-sp-2020)
     - [Fuzzing JavaScript Engines with Aspect-preserving Mutation](#fuzzing-javascript-engines-with-aspect-preserving-mutation-sp-2020)
     
-- **USENIX Security 2020**
-    - [GREYONE: Data Flow Sensitive Fuzzing](#greyone-data-flow-sensitive-fuzzing-usenix-security2020)
-    - [FuzzGuard: Filtering out Unreachable Inputs in Directed Grey-box Fuzzing through Deep Learning](#fuzzguard-filtering-out-unreachable-inputs-in-directed-grey-box-fuzzing-through-deep-learning-usenix-security2020)
-    - [ParmeSan: Sanitizer-guided Greybox Fuzzing](#parmesan-sanitizer-guided-greybox-fuzzing-usenix-security2020)
-    - [EcoFuzz: Adaptive Energy-Saving Greybox Fuzzing as a Variant of the Adversarial Multi-Armed Bandit](#ecofuzz-adaptive-energy-saving-greybox-fuzzing-as-a-variant-of-the-adversarial-multi-armed-bandit-usenix-security2020)
-    - [FANS: Fuzzing Android Native System Services via Automated Interface Analysis](#fans-fuzzing-android-native-system-services-via-automated-interface-analysis-usenix-security2020)
-    - [Fuzzing Error Handling Code using Context-Sensitive Software Fault Injection](#fuzzing-error-handling-code-using-context-sensitive-software-fault-injection-usenix-security2020)
-
 - **SANER 2020**
     - [ETHPLOIT: From Fuzzing to Efficient Exploit Generation against Smart Contracts](#ethploit-from-fuzzing-to-efficient-exploit-generation-against-smart-contracts-saner2020)
     - [Sequence directed hybrid fuzzing](#sequence-directed-hybrid-fuzzing-saner-2020)
@@ -507,6 +508,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [DifFuzz: Differential Fuzzing for Side-Channel Analysis (ICSE 2019)](#diffuzz-differential-fuzzing-for-side-channel-analysis-icse-2019)
 
 - [**Other Interesting Fuzzing**](#other-interesting-fuzzing)
+  - [USBFuzz: A Framework for Fuzzing USB Drivers by Device Emulation (USENIX Security2020)](#usbfuzz-a-framework-for-fuzzing-usb-drivers-by-device-emulation-usenix-security2020)
   - [Boosting Fuzzer Efficiency: An Information Theoretic Perspective (FSE 2020)](#boosting-fuzzer-efficiency-an-information-theoretic-perspective-fse-2020)
   - [Fuzzing Error Handling Code using Context-Sensitive Software Fault Injection (USENIX Security2020)](#fuzzing-error-handling-code-using-context-sensitive-software-fault-injection-usenix-security2020)
   - [FANS: Fuzzing Android Native System Services via Automated Interface Analysis (USENIX Security2020)](#fans-fuzzing-android-native-system-services-via-automated-interface-analysis-usenix-security2020)
@@ -2121,6 +2123,18 @@ We instantiate our approach to the problem of fuzzing smart contracts, a domain 
 
 
 # Other Interesting Fuzzing
+
+### USBFuzz: A Framework for Fuzzing USB Drivers by Device Emulation (USENIX Security2020)
+
+* <img src="image/wechat_24px.png">[Reading Note](https://mp.weixin.qq.com/s/MXz2NU45NGCYyNMCDfECHA)
+
+* <img src="image/pdf_24px.png">[Paper](https://nebelwelt.net/files/20SEC3.pdf)
+
+**Abstract:** The Universal Serial Bus (USB) connects external devices to a host. This interface exposes the OS kernels and device drivers to attacks by malicious devices. Unfortunately, kernels and drivers were developed under a security model that implicitly trusts connected devices. Drivers expect faulty hardware but not malicious attacks. Similarly, security testing drivers are challenging as input must cross the hardware/software barrier. Fuzzing, the most widely used bug-finding technique, relies on providing random data to programs. However, fuzzing device drivers is challenging due to the difficulty in crossing the hardware/software barrier and providing random device data to the driver under test. 
+
+We present USBFuzz, a portable, flexible, and modular framework for fuzz testing USB drivers. At its core, USBFuzz uses a software-emulated USB device to provide random device data to drivers (when they perform IO operations). As the emulated USB device works at the device level, porting
+it to other platforms is straight-forward. Using the USBFuzz framework, we apply (i) coverage-guided fuzzing to a broad range of USB drivers in the Linux kernel; (ii) dumb fuzzing in FreeBSD, MacOS, and Windows through cross-pollination seeded by the Linux inputs; and (iii) focused fuzzing of a USB webcam driver. USBFuzz discovered a total of 26 new bugs, including 16 memory bugs of high-security impact in various Linux subsystems (USB core, USB sound, and network), one bug in FreeBSD, three in MacOS (two resulting in an unplanned reboot and one freezing the system), and four in Windows 8 and Windows 10 (resulting in Blue Screens of Death), and one bug in the Linux USB host controller driver and another one in a USB camera driver. From the Linux bugs, we have fixed and upstreamed 11 bugs and received 10 CVEs.
+
 
 ### Boosting Fuzzer Efficiency: An Information Theoretic Perspective (FSE 2020)
 

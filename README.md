@@ -80,7 +80,7 @@ remark: This website is only used for collecting and grouping the related paper.
     - [TOFU: Target-Oriented FUzzer](#tofu-target-oriented-fuzzer-arxiv-2020)
 
 - **ACSAC 2019**
-    - [Opening Pandora’s Box through ATFuzzer: Dynamic Analysis of AT Interface for AndroidSmartphones](#Opening-Pandora’s-Box-through-ATFuzzer-Dynamic-Analysis-of-AT-Interface-for-Android-Smartphones-ACSAC-2019)
+    - [Opening Pandora’s Box through ATFuzzer: Dynamic Analysis of AT Interface for AndroidSmartphones](#Opening-Pandoras-Box-through-ATFuzzer-Dynamic-Analysis-of-AT-Interface-for-Android-Smartphones-ACSAC-2019)
 
 - **OOPSLA 2019**
     - [FuzzFactory: Domain-Specific Fuzzing with Waypoints](#fuzzfactory-domain-specific-fuzzing-with-waypoints-oopsla-2019)

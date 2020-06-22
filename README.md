@@ -79,6 +79,9 @@ remark: This website is only used for collecting and grouping the related paper.
     - [A deep convolution generative adversarial networks based fuzzing framework for industry control protocols](#a-deep-convolution-generative-adversarial-networks-based-fuzzing-framework-for-industry-control-protocols)
     - [TOFU: Target-Oriented FUzzer](#tofu-target-oriented-fuzzer-arxiv-2020)
 
+- **ACSAC 2019**
+    - [Opening Pandora’s Box through ATFuzzer: Dynamic Analysis of AT Interface for AndroidSmartphones](#Opening-Pandora’s-Box-through-ATFuzzer-Dynamic-Analysis-of-AT-Interface-for-Android-Smartphones-ACSAC-2019)
+
 - **OOPSLA 2019**
     - [FuzzFactory: Domain-Specific Fuzzing with Waypoints](#fuzzfactory-domain-specific-fuzzing-with-waypoints-oopsla-2019)
     - [Compiler Fuzzing: How Much Does It Matter](#compiler-fuzzing-how-much-does-it-matter-oopsla2019)
@@ -2184,6 +2187,14 @@ In this paper, we propose a new fuzzing solution to discover IPC bugs in IPC ser
 Our high throughput fuzzer design for long running interactive targets allows us to fuzz a large number of hypervisors, both open source, and proprietary. In contrast to one-dimensional fuzzers such as AFL, HYPER-CUBE can interact with any number of interfaces in any order.
 
 Our evaluation shows that we can find more bugs (over 2x) and coverage (as much as 2x) than state of the art hypervisor fuzzers. Additionally, in most cases, we were able to do so using multiple orders of magnitude less time than comparable fuzzers. HYPER-CUBE was also able to rediscover a set of well-known vulnerabilities for hypervisors, such as VENOM, in less than five minutes. In total, HYPER-CUBE found 54 novel bugs, and so far we obtained 37 CVEs. Our evaluation results demonstrates that next generation coverage-guided fuzzers should incorporate a higher-throughput design for long running targets such as hypervisors.
+
+
+### Opening Pandora’s Box through ATFuzzer: Dynamic Analysis of AT Interface for Android Smartphones (ACSAC 2019)
+* <img src="image/pdf_24px.png">[Paper](./Paper/ACSAC19_ATFuzzer.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/Imtiazkarimik23/ATFuzzer)
+
+**Abstract:** This paper focuses on checking the correctness and robustness ofthe AT command interface exposed by the cellular baseband processor through Bluetooth and USB. A device’s application processor uses this interface for issuing high-level commands (or, AT commands) to the baseband processor for performing cellular network operations (e.g., placing a phone call). Vulnerabilities in this interface can be leveraged by malicious Bluetooth peripherals to launch pernicious attacks including DoS and privacy attacks. To identify such vulnerabilities, we propose ATFuzzer that uses a grammar-guided evolutionary fuzzing approach which mutates production rules of the AT command grammar instead of concrete AT commands. Empirical evaluation with ATFuzzer on 10 Android smartphones from 6 vendors revealed 4 invalid AT command grammars over Bluetooth and 13 over USB with implications ranging from DoS, downgrade of cellular protocol version (e.g., from 4G to 3G/2G) to severe privacy leaks. The vulnerabilities along with the invalid AT command grammars were responsibly disclosed to affected vendors and two of the reported vulnerabilities have been already assigned CVEs (CVE-2019-16400 and CVE-2019-16401).
 
 
 ### FuzzFactory: Domain-Specific Fuzzing with Waypoints (OOPSLA 2019)

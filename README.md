@@ -612,6 +612,8 @@ remark: This website is only used for collecting and grouping the related paper.
 
 ### KRace: Data Race Fuzzing for Kernel File Systems (S&P 2020)
 
+* <img src="image/youtube.png">[Video](https://youtu.be/8m2fMxvRtgg)
+
 * <img src="image/pdf_24px.png">[Paper](./Paper/SP20_KRace.pdf)
 
 **Abstract:** Data races occur when two threads fail to use proper synchronization when accessing shared data. In kernel file systems, which are highly concurrent by design, data races are common mistakes and often wreak havoc on the users, causing inconsistent states or data losses. Prior fuzzing practices on file systems have been effective in uncovering hundreds of bugs, but they mostly focus on the sequential aspect of file system execution and do not comprehensively explore the concurrency dimension and hence, forgo the opportunity to catch data races.
@@ -1756,7 +1758,14 @@ In this paper, we propose Sequence-coverage Directed Fuzzing (SCDF), a lightweig
 
 ### MemLock: Memory Usage Guided Fuzzing (ICSE2020)
 
+* <img src="image/youtube.png">[Video](https://youtu.be/fXxx46Oj-_s)
+
 * <img src="image/pdf_24px.png">[Paper](https://wcventure.github.io/pdf/ICSE2020_MemLock.pdf)
+
+* <img src="image/ppt_24px.png">[Slides](https://wcventure.github.io/pdf/ICSE2020_MemLock_Slides.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/wcventure/MemLock-Fuzz)
+
 
 **Abstract:** Uncontrolled memory consumption is a kind of critical software security weaknesses.
 It can also become a security-critical vulnerability when attackers can control the input to consume a large amount of memory to launch a Denial-of-Service attack. 
@@ -2062,8 +2071,12 @@ We implemented a prototype of GREYONE and evaluated it on the LAVA data set and 
 
 ### sFuzz: An Efficient Adaptive Fuzzer for Solidity Smart Contracts (ICSE 2020)
 
-* <img src="image/github_24px.png">[Demo](https://contract.guardstrike.com/#/scan)
+* <img src="image/youtube.png">[Demo](https://contract.guardstrike.com/#/scan)
 
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2004.08563.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/duytai/sFuzz)
+  
 **Abstract:** Smart contracts are Turing-complete programs that execute on the infrastructure of the blockchain, which often manage valuable digital assets. Solidity is one of the most popular programming languages for writing smart contracts on the Ethereum platform.Like traditional programs, smart contracts may contain vulnerabilities. Unlike traditional programs, smart contracts cannot be easily patched once they are deployed. It is thus important that smart contracts are tested thoroughly before deployment. In this work, we present an adaptive fuzzer for smart contracts on the Ethereum platform called sFuzz. Compared to existing Solidity fuzzers, sFuzz combines the strategy in the AFL fuzzer and an efficient lightweight multi-objective adaptive strategy targeting those hard-to-cover branches. sFuzz has been applied to more than 4 thousand smart contracts and the experimental results show that (1) sFuzz is efficient, e.g., two order of magnitudes faster than state-of-the-art tools; (2) sFuzz is effective in achieving high code coverage and discovering vulnerabilities; and (3) the different fuzzing strategies in sFuzz complement each other.
 
 

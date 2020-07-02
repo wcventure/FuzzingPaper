@@ -27,7 +27,7 @@ remark: This website is only used for collecting and grouping the related paper.
 	- [SpecFuzz: Bringing Spectre-type vulnerabilities to the surface]
 	- [FuzzGen: Automatic Fuzzer Generation]
 	- [MUZZ: Thread-aware Grey-box Fuzzing for Effective Bug Hunting in Multithreaded Programs]
-	- [Montage: A Neural Network Language Model-Guided JavaScript Engine Fuzzer(Usenix Security2020)]
+	- [Montage: A Neural Network Language Model-Guided JavaScript Engine Fuzzer]
     - [GREYONE: Data Flow Sensitive Fuzzing](#greyone-data-flow-sensitive-fuzzing-usenix-security2020)
     - [FuzzGuard: Filtering out Unreachable Inputs in Directed Grey-box Fuzzing through Deep Learning](#fuzzguard-filtering-out-unreachable-inputs-in-directed-grey-box-fuzzing-through-deep-learning-usenix-security2020)
     - [ParmeSan: Sanitizer-guided Greybox Fuzzing](#parmesan-sanitizer-guided-greybox-fuzzing-usenix-security2020)
@@ -399,7 +399,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [VUzzer: Application-aware Evolutionary Fuzzing (NDSS 2017)](#vuzzer-application-aware-evolutionary-fuzzing-ndss-2017)
   
 - [**Grammars \ Inputs-aware Fuzzing**](#grammars--inputs-aware-fuzzing)
-  - [Montage: A Neural Network Language Model-Guided JavaScript Engine Fuzzer(Usenix Security2020)]
+  - [Montage: A Neural Network Language Model-Guided JavaScript Engine Fuzzer (Usenix Security2020)]
   - [Fuzzing JavaScript Engines with Aspect-preserving Mutation (S&P 2020)](#fuzzing-javascript-engines-with-aspect-preserving-mutation-sp-2020)
   - [Smart Greybox Fuzzing (TSE 2019)](#smart-greybox-fuzzing-tse-2019)
   - [Semantic Fuzzing with Zest (ISSTA 2019)](#semantic-fuzzing-with-zest-issta-2019)

@@ -23,6 +23,11 @@ remark: This website is only used for collecting and grouping the related paper.
     - [Validating SMT Solvers via Semantic Fusion](#validating-smt-solvers-via-semantic-fusion-pldi-2020)
 
 - **USENIX Security 2020**
+	- [Frankenstein: Advanced Wireless Fuzzing to Exploit New Bluetooth Escalation Targets]
+	- [SpecFuzz: Bringing Spectre-type vulnerabilities to the surface]
+	- [FuzzGen: Automatic Fuzzer Generation]
+	- [MUZZ: Thread-aware Grey-box Fuzzing for Effective Bug Hunting in Multithreaded Programs]
+	- [Montage: A Neural Network Language Model-Guided JavaScript Engine Fuzzer(Usenix Security2020)]
     - [GREYONE: Data Flow Sensitive Fuzzing](#greyone-data-flow-sensitive-fuzzing-usenix-security2020)
     - [FuzzGuard: Filtering out Unreachable Inputs in Directed Grey-box Fuzzing through Deep Learning](#fuzzguard-filtering-out-unreachable-inputs-in-directed-grey-box-fuzzing-through-deep-learning-usenix-security2020)
     - [ParmeSan: Sanitizer-guided Greybox Fuzzing](#parmesan-sanitizer-guided-greybox-fuzzing-usenix-security2020)
@@ -288,6 +293,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 
 - [**Concurrency Fuzzing**](#concurrency-fuzzing)
+  - [MUZZ: Thread-aware Grey-box Fuzzing for Effective Bug Hunting in Multithreaded Programs (USENIX Security2020)]
   - [KRace: Data Race Fuzzing for Kernel File Systems (S&P 2020)](#krace-data-race-fuzzing-for-kernel-file-systems-sp-2020)
   - [ConFuzz—A Concurrency Fuzzer (2019)](#confuzz-a-concurrency-fuzzer-2019)
   - [Razzer: Finding Kernel Race Bugs through Fuzzing (S&P 2019)](#razzer-finding-kernel-race-bugs-through-fuzzing-sp-2019)
@@ -320,6 +326,8 @@ remark: This website is only used for collecting and grouping the related paper.
   - [INSTRIM Lightweight Instrumentation for Coverage-guided Fuzzing (NDSS 2018 workshop)](#instrim-lightweight-instrumentation-for-coverage-guided-fuzzing-ndss-2018-workshop)
 
 - [**IoT or protocols fuzzing**](#iot-or-protocols-fuzzing)
+  - [Analysis of DTLS Implementations Using Protocol State Fuzzing (USENIX Security2020)]
+  - [Frankenstein: Advanced Wireless Fuzzing to Exploit New Bluetooth Escalation Targets (USENIX Security2020)]
   - [A deep convolution generative adversarial networks based fuzzing framework for industry control protocols](#a-deep-convolution-generative-adversarial-networks-based-fuzzing-framework-for-industry-control-protocols)
   - [ICS Protocol Fuzzing: Coverage Guided Packet Crack and Generation (DAC 2020)](#ics-protocol-fuzzing-coverage-guided-packet-crack-and-generation-dac-2020)
   - [AFLNET: A Greybox Fuzzer for Network Protocols (ICST 2020)](#aflnet-a-greybox-fuzzer-for-network-protocols-icst-2020)
@@ -391,6 +399,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [VUzzer: Application-aware Evolutionary Fuzzing (NDSS 2017)](#vuzzer-application-aware-evolutionary-fuzzing-ndss-2017)
   
 - [**Grammars \ Inputs-aware Fuzzing**](#grammars--inputs-aware-fuzzing)
+  - [Montage: A Neural Network Language Model-Guided JavaScript Engine Fuzzer(Usenix Security2020)]
   - [Fuzzing JavaScript Engines with Aspect-preserving Mutation (S&P 2020)](#fuzzing-javascript-engines-with-aspect-preserving-mutation-sp-2020)
   - [Smart Greybox Fuzzing (TSE 2019)](#smart-greybox-fuzzing-tse-2019)
   - [Semantic Fuzzing with Zest (ISSTA 2019)](#semantic-fuzzing-with-zest-issta-2019)

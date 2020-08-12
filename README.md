@@ -16,6 +16,11 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 
+- **ASE 2020**
+  - [BigFuzz: Efficient Fuzz Testing for Data Analytics using Framework Abstraction]
+  - [MoFuzz: A Fuzzer Suite for Testing Model-Driven Software Engineering Tools]
+  - [Zeror: Speed Up Fuzzing with Coverage-sensitive Tracing and Scheduling]
+
 - **ISSTA 2020**
   - [Active Fuzzing for Testing and Securing Cyber-Physical Systems](#active-fuzzing-for-testing-and-securing-cyber-physical-systems-issta-2020)
   - [Learning Input Tokens for Effective Fuzzing](#learning-input-tokens-for-effective-fuzzing-issta-2020)

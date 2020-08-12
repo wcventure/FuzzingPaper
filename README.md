@@ -4,6 +4,7 @@ remark: This website is only used for collecting and grouping the related paper.
 # All Papers (Classification according to Publication)
 
 - **Survey/Review**
+  - [Fuzzing: Challenges and Reflections](#fuzzing-challenges-and-reflections)
   - [SoK: The Progress, Challenges, and Perspectives of Directed Greybox Fuzzing](#sok-the-progress-challenges-and-perspectives-of-directed-greybox-fuzzing)
   - [Fuzzing: Hack, Art, and Science](#fuzzing-hack-art-and-science-cacm-2020)
   - [Survey of Directed Fuzzy Technology](#survey-of-directed-fuzzy-technology)
@@ -292,6 +293,7 @@ remark: This website is only used for collecting and grouping the related paper.
 # All Papers (Classification according to Subject)
 
 - [**Survey/Review**](#surveyreview)
+  - [Fuzzing: Challenges and Reflections](#fuzzing-challenges-and-reflections)
   - [SoK: The Progress, Challenges, and Perspectives of Directed Greybox Fuzzing](#sok-the-progress-challenges-and-perspectives-of-directed-greybox-fuzzing)
   - [Fuzzing: Hack, Art, and Science](#fuzzing-hack-art-and-science-cacm-2020)
   - [Survey of Directed Fuzzy Technology](#survey-of-directed-fuzzy-technology)
@@ -567,11 +569,19 @@ remark: This website is only used for collecting and grouping the related paper.
 
 # Survey/Review
 
+### Fuzzing: Challenges and Reflections
+
+* <img src="image/pdf_24px.png">[Paper](https://www.comp.nus.edu.sg/~abhik/pdf/IEEE-SW-Fuzzing.pdf)
+
+**Abstract:** Fuzzing is a method to discover software bugs and vulnerabilities by automatic test input generation which has found tremendous recent interest in both academia and industry. Fuzzing comes in the form of several techniques. On one hand, we have symbolic execution, which enables a particularly effective approach to fuzzing by systematically enumerating the paths of a program. On the other hand, we have random input generation, which generates large amounts of inputs per second with none or minimal program analysis overhead. In this article, we summarize the open challenges and opportunities for fuzzing and symbolic execution as they emerged in discussions among researchers and practitioners in a Shonan Meeting, and were validated in a subsequent survey. We take a forward-looking view of the software vulnerability discovery technologies and provide concrete directions for future research.
+
+
 ### SoK: The Progress, Challenges, and Perspectives of Directed Greybox Fuzzing
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/Arxiv20_SoK.pdf)
 
 **Abstract:** Greybox fuzzing has been the most scalable and practical approach to software testing. Most greybox fuzzing tools are coverage guided as code coverage is strongly correlated with bug coverage. However, since most covered codes may not containbugs, blindly extending code coverage is less efficient, especially for corner cases. Unlike coverage-based fuzzers who extend the code coverage in an undirected manner, a directed fuzzer spends most of its time budget on reaching specific target locations (e.g.,the bug-prone zone) without wasting resources stressing unrelated parts. Thus, directed greybox fuzzing is particularly suitable for scenarios such as patch testing, bug reproduction, and special bug hunting. In this paper, we conduct the first in-depth study of directed greybox fuzzing. We investigate 28 state-of-the-artfuzzers (82% are published after 2019) closely related to DGF, which have various directed types and optimization techniques. Based on the feature of DGF, we extract 15 metrics to conducta thorough assessment of the collected tools and systemize the knowledge of this field. Finally, we summarize the challenges and provide perspectives of this field, aiming to facilitate and boost future research on this topic.
+
 
 ### Fuzzing: Hack, Art, and Science (CACM 2020)
 

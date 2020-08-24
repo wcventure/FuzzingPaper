@@ -83,6 +83,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Sequence directed hybrid fuzzing](#sequence-directed-hybrid-fuzzing-saner-2020)
   
 - **ICST 2020**
+  - [Language-Agnostic Generation of Compilable Test Programs](#language-agnostic-generation-of-compilable-test-programs-icst-2020)
   - [ct-fuzz: Fuzzing for Timing Leaks](#ct-fuzz-fuzzing-for-timing-leaks-icst-2020)
   - [AFLNET: A Greybox Fuzzer for Network Protocols](#aflnet-a-greybox-fuzzer-for-network-protocols-icst-2020)
 
@@ -373,6 +374,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Validating SMT Solvers via Semantic Fusion (PLDI 2020)](#validating-smt-solvers-via-semantic-fusion-pldi-2020)
   - [Detecting Critical Bugs in SMT Solvers Using Blackbox Mutational Fuzzing (2020)](#detecting-critical-bugs-in-smt-solvers-using-blackbox-mutational-fuzzing-2020)
   - [Automatically Testing String Solvers (ICSE 2020)](#automatically-testing-string-solvers-icse-2020)
+  - [Language-Agnostic Generation of Compilable Test Programs (ICST 2020)](#language-agnostic-generation-of-compilable-test-programs-icst-2020)
   - [StringFuzz: A fuzzer for string solvers (CAV 2018)](#stringfuzz-a-fuzzer-for-string-solvers-cav-2018)
 
 - [**Anti Fuzzing**](#anti-fuzzing)
@@ -420,6 +422,7 @@ remark: This website is only used for collecting and grouping the related paper.
 - [**Grammars \ Inputs-aware Fuzzing**](#grammars--inputs-aware-fuzzing)
   - [Montage: A Neural Network Language Model-Guided JavaScript Engine Fuzzer (Usenix Security2020)](#montage-a-neural-network-language-model-guided-javascript-engine-fuzzer-usenix-security2020)
   - [Fuzzing JavaScript Engines with Aspect-preserving Mutation (S&P 2020)](#fuzzing-javascript-engines-with-aspect-preserving-mutation-sp-2020)
+  - [Language-Agnostic Generation of Compilable Test Programs (ICST 2020)](#language-agnostic-generation-of-compilable-test-programs-icst-2020)
   - [Smart Greybox Fuzzing (TSE 2019)](#smart-greybox-fuzzing-tse-2019)
   - [Semantic Fuzzing with Zest (ISSTA 2019)](#semantic-fuzzing-with-zest-issta-2019)
   - [Field-aware Evolutionary Fuzzing Based on Input Specifications and Vulnerability Metrics (2019)](#field-aware-evolutionary-fuzzing-based-on-input-specifications-and-vulnerability-metrics-2019)
@@ -1491,6 +1494,14 @@ In this paper, we present an application-aware evolutionary fuzzing strategy tha
 
 In this paper, we advocate a new technique, called an aspect preserving mutation, that stochastically preserves the desirable properties, called aspects, that we prefer to be maintained across mutation. We demonstrate the aspect preservation with two mutation strategies, namely, structure and type preservation, in our fully-fledged JavaScript fuzzer, called DIE. Our evaluation shows that DIE’s aspect-preserving mutation is more effective in discovering new bugs (5.7× more unique crashes) and producing valid test cases (2.4× fewer runtime errors) than the state-ofthe-art JavaScript fuzzers. DIE newly discovered 48 high-impact bugs in ChakraCore, JavaScriptCore, and V8 (38 fixed with 12 CVEs assigned as of today). The source code of DIE is publicly available as an open-source project.
 
+
+### Language-Agnostic Generation of Compilable Test Programs (ICST 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://ieeexplore.ieee.org/document/9159098)
+
+* <img src="image/github_24px.png">[Code](https://github.com/FAU-Inf2/StarSmith)
+
+**Abstract:** Testing is an integral part of the development of compilers and other language processors. To automatically create large sets of test programs, random program generators, or fuzzers, have emerged. Unfortunately, existing approaches are either language-specific (and thus require a rewrite for each language) or may generate programs that violate rules of the respective programming language (which limits their usefulness). This work introduces *Smith, a language-agnostic framework for the generation of valid, compilable test programs. It takes as input an abstract attribute grammar that specifies the syntactic and semantic rules of a programming language. It then creates test programs that satisfy all these rules. By aggressively pruning the search space and keeping the construction as local as possible, *Smith can generate huge, complex test programs in short time. We present four case studies covering four real-world programming languages (C, Lua, SQL, and SMT-LIB 2) to show that *Smith is both efficient and effective, while being flexible enough to support programming languages that differ considerably. We found bugs in all four case studies. For example, *Smith detected 165 different crashes in older versions of GCC and LLVM. *Smith and the language grammars are available online.
 
 
 ### Smart Greybox Fuzzing (TSE 2019)

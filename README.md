@@ -542,7 +542,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [ct-fuzz: Fuzzing for Timing Leaks (ICST 2020)](#ct-fuzz-fuzzing-for-timing-leaks-icst-2020)
   - [DifFuzz: Differential Fuzzing for Side-Channel Analysis (ICSE 2019)](#diffuzz-differential-fuzzing-for-side-channel-analysis-icse-2019)
 
--[**API Fuzzing**]()
+- [**API Fuzzing**]()
   - [Intelligent REST API Data Fuzzing (FSE 2020]
   - [REST-ler: Stateful REST API Fuzzing (ICSE 2019)](#rest-ler-stateful-rest-api-fuzzing-icse-2019)
 

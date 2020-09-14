@@ -17,9 +17,9 @@ remark: This website is only used for collecting and grouping the related paper.
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 
 - **ASE 2020**
-  - [BigFuzz: Efficient Fuzz Testing for Data Analytics using Framework Abstraction]
-  - [MoFuzz: A Fuzzer Suite for Testing Model-Driven Software Engineering Tools]
-  - [Zeror: Speed Up Fuzzing with Coverage-sensitive Tracing and Scheduling]
+  - [BigFuzz: Efficient Fuzz Testing for Data Analytics using Framework Abstraction](#bigfuzz-efficient-fuzz-testing-for-data-analytics-using-framework-abstraction-ase-2020)
+  - [MoFuzz: A Fuzzer Suite for Testing Model-Driven Software Engineering Tools](#mofuzz-a-fuzzer-suite-for-testing-model-driven-software-engineering-tools-ase-2020)
+  - [Zeror: Speed Up Fuzzing with Coverage-sensitive Tracing and Scheduling](#zeror-speed-up-fuzzing-with-coverage-sensitive-tracing-and-scheduling-ase-2020)
 
 - **ISSTA 2020**
   - [Active Fuzzing for Testing and Securing Cyber-Physical Systems](#active-fuzzing-for-testing-and-securing-cyber-physical-systems-issta-2020)
@@ -30,7 +30,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Fuzzing: On the Exponential Cost of Vulnerability Discovery](#fuzzing-on-the-exponential-cost-of-vulnerability-discovery-fse-2020)
   - [Boosting Fuzzer Efficiency: An Information Theoretic Perspective](#boosting-fuzzer-efficiency-an-information-theoretic-perspective-fse-2020)
   - [CrFuzz: Fuzzing Multi-purpose Programs through Input Validation]
-  - [Detecting Critical Bugs in SMT Solvers using Blackbox Mutational Fuzzing]
+  - [Detecting Critical Bugs in SMT Solvers using Blackbox Mutational Fuzzing](#detecting-critical-bugs-in-smt-solvers-using-blackbox-mutational-fuzzing-fse)
   - [Intelligent REST API Data Fuzzing]
   - [MTFuzz: Fuzzing with a Multi-task Neural Network](#mtfuzz-fuzzing-with-a-multi-task-neural-network-fse-2020)
     
@@ -39,11 +39,11 @@ remark: This website is only used for collecting and grouping the related paper.
 
 - **USENIX Security 2020**
   - [Analysis of DTLS Implementations Using Protocol State Fuzzing](#analysis-of-dtls-implementations-using-protocol-state-fuzzing-usenix-security2020)
-	- [Frankenstein: Advanced Wireless Fuzzing to Exploit New Bluetooth Escalation Targets](#frankenstein-advanced-wireless-fuzzing-to-exploit-new-bluetooth-escalation-targets-usenix-security2020)
-	- [SpecFuzz: Bringing Spectre-type vulnerabilities to the surface](#specfuzz-bringing-spectre-type-vulnerabilities-to-the-surface-usenix-security2020)
-	- [FuzzGen: Automatic Fuzzer Generation](#fuzzgen-automatic-fuzzer-generation-usenix-security2020)
-	- [MUZZ: Thread-aware Grey-box Fuzzing for Effective Bug Hunting in Multithreaded Programs](#muzz-thread-aware-grey-box-fuzzing-for-effective-bug-hunting-in-multithreaded-programs-usenix-security2020)
-	- [Montage: A Neural Network Language Model-Guided JavaScript Engine Fuzzer](#montage-a-neural-network-language-model-guided-javascript-engine-fuzzer-usenix-security2020)
+  - [Frankenstein: Advanced Wireless Fuzzing to Exploit New Bluetooth Escalation Targets](#frankenstein-advanced-wireless-fuzzing-to-exploit-new-bluetooth-escalation-targets-usenix-security2020)
+  - [SpecFuzz: Bringing Spectre-type vulnerabilities to the surface](#specfuzz-bringing-spectre-type-vulnerabilities-to-the-surface-usenix-security2020)
+  - [FuzzGen: Automatic Fuzzer Generation](#fuzzgen-automatic-fuzzer-generation-usenix-security2020)
+  - [MUZZ: Thread-aware Grey-box Fuzzing for Effective Bug Hunting in Multithreaded Programs](#muzz-thread-aware-grey-box-fuzzing-for-effective-bug-hunting-in-multithreaded-programs-usenix-security2020)
+  - [Montage: A Neural Network Language Model-Guided JavaScript Engine Fuzzer](#montage-a-neural-network-language-model-guided-javascript-engine-fuzzer-usenix-security2020)
   - [GREYONE: Data Flow Sensitive Fuzzing](#greyone-data-flow-sensitive-fuzzing-usenix-security2020)
   - [FuzzGuard: Filtering out Unreachable Inputs in Directed Grey-box Fuzzing through Deep Learning](#fuzzguard-filtering-out-unreachable-inputs-in-directed-grey-box-fuzzing-through-deep-learning-usenix-security2020)
   - [ParmeSan: Sanitizer-guided Greybox Fuzzing](#parmesan-sanitizer-guided-greybox-fuzzing-usenix-security2020)
@@ -98,7 +98,6 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Binary-level Directed Fuzzing for Use-After-Free Vulnerabilities](#binary-level-directed-fuzzing-for-use-after-free-vulnerabilities)
   - [Smart seed selection-based effective black box fuzzing for IIoT protocol](#smart-seed-selection-based-effective-black-box-fuzzing-for-iiot-protocol)
   - [RDFuzz: Accelerating Directed Fuzzing with Intertwined Schedule and Optimized Mutation](#rdfuzz-accelerating-directed-fuzzing-with-intertwined-schedule-and-optimized-mutation-2020)
-  - [Detecting Critical Bugs in SMT Solvers Using Blackbox Mutational Fuzzing](#detecting-critical-bugs-in-smt-solvers-using-blackbox-mutational-fuzzing-2020)
   - [A deep convolution generative adversarial networks based fuzzing framework for industry control protocols](#a-deep-convolution-generative-adversarial-networks-based-fuzzing-framework-for-industry-control-protocols)
   - [TOFU: Target-Oriented FUzzer](#tofu-target-oriented-fuzzer-arxiv-2020)
 
@@ -369,10 +368,9 @@ remark: This website is only used for collecting and grouping the related paper.
   - [AutoFuzz: Automated Network Protocol Fuzzing Framework (IJCSNS 2010)](#autofuzz-automated-network-protocol-fuzzing-framework-ijcsns-2010)
 
 - [**SMT Fuzzing**](#smt-fuzzing)
-  - [Detecting Critical Bugs in SMT Solvers using Blackbox Mutational Fuzzing (FSE 2020)]
+  - [Detecting Critical Bugs in SMT Solvers using Blackbox Mutational Fuzzing (FSE 2020)](#detecting-critical-bugs-in-smt-solvers-using-blackbox-mutational-fuzzing-fse)
   - [On the Unusual Effectiveness of Type-aware Mutations for Testing SMT Solvers (2020)](#on-the-unusual-effectiveness-of-type-aware-mutations-for-testing-smt-solvers)
   - [Validating SMT Solvers via Semantic Fusion (PLDI 2020)](#validating-smt-solvers-via-semantic-fusion-pldi-2020)
-  - [Detecting Critical Bugs in SMT Solvers Using Blackbox Mutational Fuzzing (2020)](#detecting-critical-bugs-in-smt-solvers-using-blackbox-mutational-fuzzing-2020)
   - [Automatically Testing String Solvers (ICSE 2020)](#automatically-testing-string-solvers-icse-2020)
   - [Language-Agnostic Generation of Compilable Test Programs (ICST 2020)](#language-agnostic-generation-of-compilable-test-programs-icst-2020)
   - [StringFuzz: A fuzzer for string solvers (CAV 2018)](#stringfuzz-a-fuzzer-for-string-solvers-cav-2018)
@@ -412,6 +410,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Driller: Argumenting Fuzzing Through Selective Symbolic Execution (NDSS 2016)](#driller-argumenting-fuzzing-through-selective-symbolic-execution-ndss-2016)
 
 - [**Coverage \ Deeply nested branches \ Addressing Magic bytes \ checksum**](#deeply-nested-branches--addressing-magic-bytes--checksum)
+  - [Zeror: Speed Up Fuzzing with Coverage-sensitive Tracing and Scheduling (ASE 2020)](#zeror-speed-up-fuzzing-with-coverage-sensitive-tracing-and-scheduling-ase-2020)
   - [Not All Coverage Measurements Are Equal: Fuzzing by Coverage Accounting for Input Prioritization (NDSS 2020)](#not-all-coverage-measurements-are-equal-fuzzing-by-coverage-accounting-for-input-prioritization-ndss-2020)
   - [Matryoshka: fuzzing deeply nested branches (CCS 2019)](#matryoshka-fuzzing-deeply-nested-branches-ccs-2019)
   - [REDQUEEN: Fuzzing with Input-to-State Correspondence  (NDSS2019)](#redqueen-fuzzing-with-input-to-state-correspondence-ndss2019)
@@ -546,10 +545,16 @@ remark: This website is only used for collecting and grouping the related paper.
   - [DifFuzz: Differential Fuzzing for Side-Channel Analysis (ICSE 2019)](#diffuzz-differential-fuzzing-for-side-channel-analysis-icse-2019)
 
 - [**API Fuzzing**]()
+<<<<<<< HEAD
+  - [Intelligent REST API Data Fuzzing (FSE 2020)]
+=======
   - [Intelligent REST API Data Fuzzing (FSE 2020]
+>>>>>>> 6b9cf9900fd47e44a6763143ea3e8404ad355a36
   - [REST-ler: Stateful REST API Fuzzing (ICSE 2019)](#rest-ler-stateful-rest-api-fuzzing-icse-2019)
 
 - [**Other Interesting Fuzzing**](#other-interesting-fuzzing)
+  - [BigFuzz: Efficient Fuzz Testing for Data Analytics using Framework Abstraction (ASE 2020)](#bigfuzz-efficient-fuzz-testing-for-data-analytics-using-framework-abstraction-ase-2020)
+  - [MoFuzz: A Fuzzer Suite for Testing Model-Driven Software Engineering Tools (ASE 2020)](#mofuzz-a-fuzzer-suite-for-testing-model-driven-software-engineering-tools-ase-2020)
   - [AFL++ : Combining Incremental Steps of Fuzzing Research (USENIX Woot2020)](#afl-combining-incremental-steps-of-fuzzing-research-usenix-woot2020)
   - [Active Fuzzing for Testing and Securing Cyber-Physical Systems (ISSTA 2020)](#active-fuzzing-for-testing-and-securing-cyber-physical-systems-issta-2020)
   - [CrFuzz: Fuzzing Multi-purpose Programs through Input Validation (FSE 2020)]
@@ -663,7 +668,11 @@ remark: This website is only used for collecting and grouping the related paper.
 
 ### MUZZ: Thread-aware Grey-box Fuzzing for Effective Bug Hunting in Multithreaded Programs (USENIX Security2020)
 
-* <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/conference/usenixsecurity20/presentation/chen-hongxu)
+* <img src="image/youtube.png">[Video](https://www.usenix.org/conference/usenixsecurity20/presentation/chen-hongxu)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/sec20-chen-hongxu.pdf)
+
+* <img src="image/ppt_24px.png">[Slides](https://www.usenix.org/system/files/sec20_slides_chen-hongxu.pdf)
 
 **Abstract:** Grey-box fuzz testing has revealed thousands of vulnerabilities in real-world software owing to its lightweight instrumentation, fast coverage feedback, and dynamic adjusting strategies. However, directly applying grey-box fuzzing to input-dependent multithreaded programs can be extremely inefficient. In practice, multithreading-relevant bugs are usually buried in the sophisticated program flows. Meanwhile, existing grey-box fuzzing techniques do not stress thread-interleavings that affect execution states in multithreaded programs. Therefore, mainstream grey-box fuzzers cannot adequately test problematic segments in multithreaded software, although they might obtain high code coverage statistics.
 
@@ -1082,6 +1091,14 @@ SSL encrypted protocols. As a proof of concept for efficiency of ESPIKE we demon
 
 # SMT Fuzzing
 
+### Detecting Critical Bugs in SMT Solvers Using Blackbox Mutational Fuzzing (FSE 
+2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2004.05934.pdf)
+
+**Abstract:** Formal methods use SMT solvers extensively for deciding formula satisfiability, for instance, in software verification, systematic test generation, and program synthesis. However, due to their complex implementations, solvers may contain critical bugs that lead to unsound results. Given the wide applicability of solvers in software reliability, relying on such unsound results may have detrimental consequences. In this paper, we present STORM, a novel blackbox mutational fuzzing technique for detecting critical bugs in SMT solvers. We run our fuzzer on seven mature solvers and find 29 previously unknown critical bugs. STORM is already being used in testing new features of popular solvers before deployment.
+
+
 ### On the Unusual Effectiveness of Type-aware Mutations for Testing SMT Solvers
 
 * <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2004.08799.pdf)
@@ -1095,13 +1112,6 @@ The key idea is to mutate operators of conforming types within the seed formulas
 * <img src="image/pdf_24px.png">[Paper](https://wintered.github.io/papers/winterer-zhang-su-pldi20.pdf)
 
 **Abstract:** We introduce Semantic Fusion, a general, effective methodology for validating Satisfiability Modulo Theory (SMT) solvers. Our key idea is to fuse two existing equisatisfiable (i.e., both satisfiable or unsatisfiable) formulas into a new formula that combines the structures of its ancestors in a novel manner and preserves the satisfiability by construction. This fused formula is then used for validating SMT solvers. We realized Semantic Fusion as YinYang, a practical SMT solver testing tool. During four months of extensive testing, YinYang has found 45 confirmed, unique bugs in the default arithmetic and string solvers of Z3 and CVC4, the two state-of-the-art SMT solvers. Among these, 41 have already been fixed by the developers. The majority (29/45) of these bugs expose critical soundness issues. Our bug reports and testing effort have been well-appreciated by SMT solver developers.
-
-
-### Detecting Critical Bugs in SMT Solvers Using Blackbox Mutational Fuzzing (2020)
-
-* <img src="image/pdf_24px.png">[Paper](https://mariachris.github.io/Pubs/CORR-2020-STORM.pdf)
-
-**Abstract:** Formal methods use SMT solvers extensively for deciding formula satisfiability, for instance, in software verification, systematic test generation, and program synthesis. However, due to their complex implementations, solvers may contain critical bugs that lead to unsound results. Given the wide applicability of solvers in software reliability, relying on such unsound results may have detrimental consequences. In this paper, we present STORM, a novel blackbox mutational fuzzing technique for detecting critical bugs in SMT solvers. We run our fuzzer on seven mature solvers and find 29 previously unknown critical bugs. STORM is already being used in testing new features of popular solvers before deployment.
 
 
 ### Automatically Testing String Solvers (ICSE 2020)
@@ -1403,6 +1413,17 @@ Our evaluation shows that QSYM does not just outperform state-of-the-art fuzzers
 
 
 # Coverage \ Deeply nested branches \ Addressing Magic bytes \ checksum: 
+
+### Zeror: Speed Up Fuzzing with Coverage-sensitive Tracing and Scheduling (ASE 2020)
+
+* <img src="image/pdf_24px.png">[Paper](http://www.wingtecher.com/themes/WingTecherResearch/assets/papers/ase20.pdf)
+ 
+**Abstract:** Coverage-guided fuzzing is one of the most popular software testing techniques for vulnerability detection. While effective, current fuzzing methods suffer from significant performance penalty due to instrumentation overhead, which limits its practical use. Existing solutions improve the fuzzing speed by decreasing instrumentation overheads but sacrificing coverage accuracy, which results in unstable performance of vulnerability detection.
+
+In this paper, we propose a coverage-sensitive tracing and scheduling framework Zeror that can improve the performance of existing fuzzers, especially in their speed and vulnerability detection. The Zeror is mainly made up of two parts: (1) a self-modifying tracing mechanism to provide a zero-overhead instrumentation for more effective coverage collection, and (2) a real-time scheduling mechanism to support adaptive switch between the zero-overhead instrumented binary and the fully instrumented binary for better vulnerability detection. In this way, Zeror is able to decrease collection overhead and preserve fine-grained coverage for guidance. 
+
+For evaluation, we implement a prototype of Zeror and evaluate it on Google fuzzer-test-suite, which consists of 24 widely-used applications. The results show that Zeror performs better than existing fuzzing speed-up frameworks such as Untracer and INSTRIM, improves the execution speed of the state-of-the-art fuzzers such as AFL and MOPT by 159.80%, helps them achieve better coverage (averagely 10.14% for AFL, 6.91% for MOPT) and detect vulnerabilities faster (averagely 29.00% for AFL, 46.99% for MOPT)
+
 
 ### Not All Coverage Measurements Are Equal: Fuzzing by Coverage Accounting for Input Prioritization (NDSS 2020)
 
@@ -2278,6 +2299,24 @@ We present experimental results showing that these two techniques are necessary 
 
 # Other Interesting Fuzzing
 
+### BigFuzz: Efficient Fuzz Testing for Data Analytics using Framework Abstraction (ASE 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://conf.researchr.org/details/ase-2020/ase-2020-papers/86/BigFuzz-Efficient-Fuzz-Testing-for-Data-Analytics-using-Framework-Abstraction)
+
+**Abstract:** As big data analytics become increasingly popular, data-intensive scalable computing (DISC) systems help address the scalability issue of handling large data. However, there exists a lack of automated testing techniques to test such data-centric applications, because data is often incomplete, continuously evolving, and hard to know a priori. Fuzz testing has been proven to be highly effective in other domains such as security; however, it is nontrivial to apply such traditional fuzzing to big data analytics directly for three reasons: (1) the long latency of DISC systems prohibits the applicability of fuzzing: naïve fuzzing would spend 98% of the time in setting up a test environment; (2) conventional branch coverage is unlikely to scale to DISC applications because most binary code comes from the framework implementation such as Apache Spark; and (3) random bit or byte-level mutations can hardly generate meaningful data, which fails to reveal real-world application bugs.
+
+We propose a novel coverage-guided fuzz testing tool for big data analytics, called BigFuzz. The key essence of our approach is that: (a) we focus on exercising application logic as opposed to increasing framework code coverage by abstracting the DISC frame-work using specifications. BigFuzz performs automated source to source transformations to construct an equivalent DISC application suitable for fast test generation, and (b) we design schema-aware data mutation operators based on our in-depth study of DISC application error types. BigFuzz speeds up the fuzzing time by 78X-1477X compared to random fuzzing, improves application code coverage by 20%-271%, and achieves 33%-157% improvement in detecting application errors. When compared to the state of the art that uses symbolic execution to test big data analytics, BigFuzz is applicable to twice more programs and can find 80.6% more bugs.
+
+
+### MoFuzz: A Fuzzer Suite for Testing Model-Driven Software Engineering Tools (ASE 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://conf.researchr.org/details/ase-2020/ase-2020-papers/93/MoFuzz-A-Fuzzer-Suite-for-Testing-Model-Driven-Software-Engineering-Tools)
+
+* <img src="image/github_24px.png">[Code](https://github.com/hub-se/MoFuzz)
+
+**Abstract:** Fuzzing or fuzz testing is an established technique that aims to discover unexpected program behavior (e.g. bugs, security vulnerabilities, or crashes) by feeding automatically generated data into a program under test. However, the application of fuzzing to test Model-Driven Software Engineering (MDSE) tools is still limited because of the difficulty of existing fuzzers to provide structured, well-typed inputs, namely models that conform to typing and consistency constraints induced by a given meta-model and underlying modeling framework. By drawing from recent advances on both fuzz testing and automated model generation, we present three different approaches for fuzzing MDSE tools: A graph grammar-based fuzzer and two variants of a coverage-guided mutation-based fuzzer working with different sets of model mutation operators. We have evaluated our fuzzing approaches on a set of real-world MDSE tools. Our experimental results show that all approaches can outperform both standard fuzzers and model generators w.r.t.\ their fuzzing capabilities. Moreover, we found that each of our approaches comes with its own strengths and weaknesses in terms of fault finding capabilities and the ability to cover different aspects of the system under test. Thus the approaches complement each other, forming a fuzzer suite for testing MDSE tools.
+
+
 ### AFL++: Combining Incremental Steps of Fuzzing Research (USENIX Woot2020)
 
 * <img src="image/pdf_24px.png">[Paper](https://www.researchgate.net/profile/Andrea_Fioraldi/publication/342420457_AFL_Combining_Incremental_Steps_of_Fuzzing_Research/links/5f1bf0b9a6fdcc9626b02503/AFL-Combining-Incremental-Steps-of-Fuzzing-Research.pdf?_sg%5B0%5D=JfF0Lnj56-9YvEmhCv63i2Nf47zpS07I3euiuSLjR2VeFrx-vh_Lyl9wFLNfKOQ2K3V2l9zmfAKJm2sp9EPUPA.-fwhbl2AdWKqkPR8iYm37vCicsdOFeHmaEA8mKFuhaIodjIaFnA2ItsocLmYk6eNkVF9SYKCpjFSmMOfJ0RShQ&_sg%5B1%5D=AcR_4Lqq86JrcDnpoq77Tkx8AZNoOg8lyLLkKgWK9LQRXfOav1gq8X8DNOnqSTvMfsZ2GUfZwwJPYvVM4_9ZS6L2Q3BG4rLFhnHHYVqOUU0t.-fwhbl2AdWKqkPR8iYm37vCicsdOFeHmaEA8mKFuhaIodjIaFnA2ItsocLmYk6eNkVF9SYKCpjFSmMOfJ0RShQ&_iepl=)
@@ -2292,6 +2331,14 @@ We present experimental results showing that these two techniques are necessary 
 * <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2005.14124.pdf)
 
 **Abstract:** Cyber-physical systems (CPSs) in critical infrastructure face a pervasive threat from attackers, motivating research into a variety of countermeasures for securing them. Assessing the effectiveness of these countermeasures is challenging, however, as realistic benchmarks of attacks are difficult to manually construct, blindly testing is ineffective due to the enormous search spaces and resource requirements, and intelligent fuzzing approaches require impractical amounts of data and network access. In this work, we propose active fuzzing, an automatic approach for finding test suites of packet-level CPS network attacks, targeting scenarios in which attackers can observe sensors and manipulate packets, but have no existing knowledge about the payload encodings. Our approach learns regression models for predicting sensor values that will result from sampled network packets, and uses these predictions to guide a search for payload manipulations (i.e. bit flips) most likely to drive the CPS into an unsafe state. Key to our solution is the use of online active learning, which iteratively updates the models by sampling payloads that are estimated to maximally improve them. We evaluate the efficacy of active fuzzing by implementing it for a water purification plant testbed, finding it can automatically discover a test suite of flow, pressure, and over/underflow attacks, all with substantially less time, data, and network access than the most comparable approach. Finally, we demonstrate that our prediction models can also be utilised as countermeasures themselves, implementing them as anomaly detectors and early warning systems.
+
+
+### CrFuzz: Fuzzing Multi-purpose Programs through Input Validation (FSE 2020)
+
+* <img src="image/pdf_24px.png">[Paper]()
+
+**Abstract:** 
+
 
 
 ### SpecFuzz: Bringing Spectre-type vulnerabilities to the surface (USENIX Security2020)

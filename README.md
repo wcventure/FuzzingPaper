@@ -16,6 +16,10 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 
+- **CCS 2020**
+  - [FREEDOM: Engineering a State-of-the-Art DOM Fuzzer]
+  - [SQUIRREL: Testing Database Management Systems with Language Validity and Coverage Feedback]
+
 - **ASE 2020**
   - [BigFuzz: Efficient Fuzz Testing for Data Analytics using Framework Abstraction](#bigfuzz-efficient-fuzz-testing-for-data-analytics-using-framework-abstraction-ase-2020)
   - [MoFuzz: A Fuzzer Suite for Testing Model-Driven Software Engineering Tools](#mofuzz-a-fuzzer-suite-for-testing-model-driven-software-engineering-tools-ase-2020)
@@ -88,6 +92,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [AFLNET: A Greybox Fuzzer for Network Protocols](#aflnet-a-greybox-fuzzer-for-network-protocols-icst-2020)
 
 - **Others 2020**
+  - [A Quantitative Comparison of Covera (AST 2020)]
   - [Finding Bugs in File Systems with an Extensible Fuzzing Framework (TOS 2020)](#finding-bugs-in-file-systems-with-an-extensible-fuzzing-framework-tos-2020)
   - [ICS Protocol Fuzzing: Coverage Guided Packet Crack and Generation (DAC 2020)](#ics-protocol-fuzzing-coverage-guided-packet-crack-and-generation-dac-2020)
   - [Finding Security Vulnerabilities in Network Protocol Implementations (Arxiv 2020)](#finding-security-vulnerabilities-in-network-protocol-implementations-arxiv-2020)
@@ -545,14 +550,11 @@ remark: This website is only used for collecting and grouping the related paper.
   - [DifFuzz: Differential Fuzzing for Side-Channel Analysis (ICSE 2019)](#diffuzz-differential-fuzzing-for-side-channel-analysis-icse-2019)
 
 - [**API Fuzzing**]()
-<<<<<<< HEAD
   - [Intelligent REST API Data Fuzzing (FSE 2020)]
-=======
-  - [Intelligent REST API Data Fuzzing (FSE 2020]
->>>>>>> 6b9cf9900fd47e44a6763143ea3e8404ad355a36
   - [REST-ler: Stateful REST API Fuzzing (ICSE 2019)](#rest-ler-stateful-rest-api-fuzzing-icse-2019)
 
 - [**Other Interesting Fuzzing**](#other-interesting-fuzzing)
+  - [SQUIRREL: Testing Database Management Systems with Language Validity and Coverage Feedback (CCS 2020)]
   - [BigFuzz: Efficient Fuzz Testing for Data Analytics using Framework Abstraction (ASE 2020)](#bigfuzz-efficient-fuzz-testing-for-data-analytics-using-framework-abstraction-ase-2020)
   - [MoFuzz: A Fuzzer Suite for Testing Model-Driven Software Engineering Tools (ASE 2020)](#mofuzz-a-fuzzer-suite-for-testing-model-driven-software-engineering-tools-ase-2020)
   - [AFL++ : Combining Incremental Steps of Fuzzing Research (USENIX Woot2020)](#afl-combining-incremental-steps-of-fuzzing-research-usenix-woot2020)
@@ -801,6 +803,13 @@ We have implemented classfuzz and conducted an extensive evaluation of it agains
 
 
 # Evaluate Fuzzing
+
+### A Quantitative Comparison of Covera (AST 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://sites.google.com/site/yoshidaatnu/TsuzukiAST2020.pdf)
+ 
+**Abstract:** In recent years, many tools have been developed for fuzz testing that generates and executes test cases repeatedly. However, many studies use different fuzzing targets and evaluation criteria and then it is difficult to compare the performance of the existing tools for fuzz testing. Therefore, we prepared a unified collection of fuzzing targets and then compared 8 fuzzers with the benchmark. In comparison, we compared the fuzzers based on the number of execution paths and branch coverage. The result shows that the number of execution paths is significantly different between the fuzzers. On the other hand, the statistical difference is not confirmed between the branch converges of the fuzzers.
+
 
 ### Fuzzing: On the Exponential Cost of Vulnerability Discovery (FSE 2020)
 
@@ -1201,6 +1210,8 @@ In this paper, we highlight the potential of applying fuzzing to find not just m
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/SP19_Fuzzing_File.pdf)
 
+* <img src="image/ppt_24px.png">[Slides](https://taesoo.kim/pubs/2019/xu:janus-slides.pdf)
+
 **Abstract:** File systems, a basic building block of an OS, are too big and too complex to be bug free. Nevertheless, file systems rely on regular stress-testing tools and formal checkers to find bugs, which are limited due to the ever-increasing complexity of both file systems and OSes. Thus, fuzzing, proven to be an effective and a practical approach, becomes a preferable choice, as it does not need much knowledge about a target. However, three main challenges exist in fuzzing file systems: mutating a large image blob that degrades overall performance, generating image-dependent file operations, and reproducing found bugs, which is difficult for existing OS fuzzers. Hence, we present JANUS, the first feedback-driven fuzzer that explores the two-dimensional input space of a file system, i.e., mutating metadata on a large image, while emitting image-directed file operations. In addition, JANUS relies on a library OS rather than on traditional VMs for fuzzing, which enables JANUS to load a fresh copy of the OS, thereby leading to better reproducibility of bugs. We evaluate JANUS on eight file systems and found 90 bugs in the upstream Linux kernel, 62 of which have been acknowledged. Forty-three bugs have been fixed with 32 CVEs assigned. In addition, JANUS achieves higher code coverage on all the file systems after fuzzing 12 hours, when compared with the state-of-the-art fuzzer Syzkaller for fuzzing file systems. JANUS visits 4.19x and 2.01x more code paths in Btrfs and ext4, respectively. Moreover, JANUS is able to reproduce 88-100% of the crashes, while Syzkaller fails on all of them.
 
 
@@ -1508,6 +1519,8 @@ In this paper, we present an application-aware evolutionary fuzzing strategy tha
 ### Fuzzing JavaScript Engines with Aspect-preserving Mutation (S&P 2020)
 
 * <img src="image/pdf_24px.png">[Paper](https://gts3.org/assets/papers/2020/park:die.pdf)
+
+* <img src="image/ppt_24px.png">[Slides](https://gts3.org/assets/papers/2020/park:die-slides.pdf)
 
 * <img src="image/github_24px.png">[Code](https://github.com/sslab-gatech/DIE)
 
@@ -2298,6 +2311,15 @@ We present experimental results showing that these two techniques are necessary 
 
 
 # Other Interesting Fuzzing
+
+### SQUIRREL: Testing Database Management Systems with Language Validity and Coverage Feedback (CCS 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/ftp/arxiv/papers/2006/2006.02398.pdf)
+
+**Abstract:** Fuzzing is an increasingly popular technique for verifying software functionalities and finding security vulnerabilities. However, current mutation-based fuzzers cannot effectively test database management systems (DBMSs), which strictly check inputs for valid syntax and semantics. Generation-based testing can guarantee the syntax correctness of the inputs, but it does not utilize any feedback, like code coverage, to guide the path exploration.
+
+In this paper, we develop Squirrel, a novel fuzzing framework that considers both language validity and coverage feedback to test DBMSs. We design an intermediate representation (IR) to maintain SQL queries in a structural and informative manner. To generate syntactically correct queries, we perform type-based mutations on IR, including statement insertion, deletion and replacement. To mitigate semantic errors, we analyze each IR to identify the logical dependencies between arguments, and generate queries that satisfy these dependencies. We evaluated Squirrel on four popular DBMSs: SQLite, MySQL, PostgreSQL and MariaDB. Squirrel found 51 bugs in SQLite, 7 in MySQL and 5 in MariaDB. 52 of the bugs are fixed with 12 CVEs assigned. In our experiment, Squirrel achieves 2.4x-243.9x higher semantic correctness than state-of-the-art fuzzers, and explores 2.0x-10.9x more new edges than mutation-based tools. These results show that Squirrel is effective in finding memory errors of database management systems.
+
 
 ### BigFuzz: Efficient Fuzz Testing for Data Analytics using Framework Abstraction (ASE 2020)
 

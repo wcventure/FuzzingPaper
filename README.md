@@ -25,6 +25,9 @@ remark: This website is only used for collecting and grouping the related paper.
   - [MoFuzz: A Fuzzer Suite for Testing Model-Driven Software Engineering Tools](#mofuzz-a-fuzzer-suite-for-testing-model-driven-software-engineering-tools-ase-2020)
   - [Zeror: Speed Up Fuzzing with Coverage-sensitive Tracing and Scheduling](#zeror-speed-up-fuzzing-with-coverage-sensitive-tracing-and-scheduling-ase-2020)
 
++ **ACCESS 2020**
+  + [CPFuzz: Combining Fuzzing and Falsification of Cyber-Physical Systems](#CPFuzz-Combining-Fuzzing-and-Falsification-of-Cyber-Physical-Systems-access-2020)
+
 - **ISSTA 2020**
   - [Active Fuzzing for Testing and Securing Cyber-Physical Systems](#active-fuzzing-for-testing-and-securing-cyber-physical-systems-issta-2020)
   - [Learning Input Tokens for Effective Fuzzing](#learning-input-tokens-for-effective-fuzzing-issta-2020)
@@ -372,7 +375,8 @@ remark: This website is only used for collecting and grouping the related paper.
   - [PULSAR: Stateful Black-Box Fuzzing of Proprietary Network Protocols (Springer, Cham, 2015)](#pulsar-stateful-black-box-fuzzing-of-proprietary-network-protocols-springer-cham-2015)
   - [SECFUZZ: Fuzz-testing Security Protocols (AST 2012)](#secfuzz-fuzz-testing-security-protocols-ast-2012)
   - [AutoFuzz: Automated Network Protocol Fuzzing Framework (IJCSNS 2010)](#autofuzz-automated-network-protocol-fuzzing-framework-ijcsns-2010)
-
+  + [CPFuzz: Combining Fuzzing and Falsification of Cyber-Physical Systems](#CPFuzz-Combining-Fuzzing-and-Falsification-of-Cyber-Physical-Systems-access-2020)
+  
 - [**SMT Fuzzing**](#smt-fuzzing)
   - [Detecting Critical Bugs in SMT Solvers using Blackbox Mutational Fuzzing (FSE 2020)](#detecting-critical-bugs-in-smt-solvers-using-blackbox-mutational-fuzzing-fse)
   - [On the Unusual Effectiveness of Type-aware Mutations for Testing SMT Solvers (2020)](#on-the-unusual-effectiveness-of-type-aware-mutations-for-testing-smt-solvers)
@@ -1097,6 +1101,12 @@ SSL encrypted protocols. As a proof of concept for efficiency of ESPIKE we demon
 
 **Abstract:** Assessing software security involves steps such as code review, risk analysis, penetration testing and fuzzing. During the fuzzing phase, the tester‟s goal is to find flaws in software by sending unexpected input to the target application and monitoring its behavior. In this paper we introduce the AutoFuzz [1] - extendable, open source framework used for testing network protocol implementations. AutoFuzz is a „smart‟, man-in-the-middle, semi deterministic network protocol fuzzing framework. AutoFuzz learns a protocol implementation by constructing a Finite State Automaton (FSA) which captures the observed communications between a client and a server [5]. In addition, AutoFuzz learns individual message syntax, including fields and probable types, by applying the bioinformatics techniques of [2]. Finally, AutoFuzz can fuzz client or server protocol implementations by intelligently modifying the communication sessions between them using the FSA as a guide. AutoFuzz was applied to a variety of File Transfer Protocol (FTP) server implementations, confirming old and discovering new vulnerabilities.
 
+
+### CPFuzz: Combining Fuzzing and Falsification of Cyber-Physical Systems (ACCESS 2020)
+
+* 
+
+**Abstract:** Coverage-guided grey-box fuzzing for computer systems has been explored for decades. However, existing techniques do not adequately explore the space of continuous behaviors in Cyber-Physical Systems (CPSs), which may miss safety-critical bugs. Optimization-guided falsification is promising to find violations of safety specifications, but not suitable for identifying traditional program bugs. This article presents a fuzzing process for finding safety violations at the development phase, which is guided by two quantities: a branch coverage metric to explore discrete program behaviors and a Linear Temporal Logic (LTL) robust satisfaction metric to identify undesirable continuous plant behaviors. We implement CPFuzz to demonstrate the utility of the idea and estimate its effectiveness on seven control system benchmarks. The results show up to a better performance in average time to find violations on all benchmarks than S-TaLiRo and six benchmarks than S3CAMX. Finally, we exploit CPFuzz to synthesize the sensor spoofing attack on a DC motor with fixed-point overflow vulnerability as a case study.
 
 
 # SMT Fuzzing

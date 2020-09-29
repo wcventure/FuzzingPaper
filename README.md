@@ -24,6 +24,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [BigFuzz: Efficient Fuzz Testing for Data Analytics using Framework Abstraction](#bigfuzz-efficient-fuzz-testing-for-data-analytics-using-framework-abstraction-ase-2020)
   - [MoFuzz: A Fuzzer Suite for Testing Model-Driven Software Engineering Tools](#mofuzz-a-fuzzer-suite-for-testing-model-driven-software-engineering-tools-ase-2020)
   - [Zeror: Speed Up Fuzzing with Coverage-sensitive Tracing and Scheduling](#zeror-speed-up-fuzzing-with-coverage-sensitive-tracing-and-scheduling-ase-2020)
+  - [Generating Highly-structured Input Data by Combining Search-based Testing and Grammar-based Fuzzing](#generating-highly-structured-input-data-by-combining-search-based-testing-and-grammar-based-fuzzing-ase-2020)
 
 - **ISSTA 2020**
   - [Active Fuzzing for Testing and Securing Cyber-Physical Systems](#active-fuzzing-for-testing-and-securing-cyber-physical-systems-issta-2020)
@@ -37,7 +38,11 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Detecting Critical Bugs in SMT Solvers using Blackbox Mutational Fuzzing](#detecting-critical-bugs-in-smt-solvers-using-blackbox-mutational-fuzzing-fse)
   - [Intelligent REST API Data Fuzzing]
   - [MTFuzz: Fuzzing with a Multi-task Neural Network](#mtfuzz-fuzzing-with-a-multi-task-neural-network-fse-2020)
-    
+
+- **ACSAC 2020**
+  - [DPIFuzz: A Differential Fuzzing Framework to Detect DPI Elusion Strategies for QUIC](#dpifuzz-a-differential-fuzzing-framework-to-detect-dpi-elusion-strategies-for-quic-acsac-2020)
+  - [Cupid: Automatic Fuzzer Selection for Collaborative Fuzzing](#cupid-automatic-fuzzer-selection-for-collaborative-fuzzing-acsac-2020)
+
 - **PLDI 2020**
   - [Validating SMT Solvers via Semantic Fusion](#validating-smt-solvers-via-semantic-fusion-pldi-2020)
 
@@ -323,6 +328,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [A Heuristic Framework to Detect Concurrency Vulnerabilities](#a-heuristic-framework-to-detect-concurrency-vulnerabilities-acsac-2018)
 
 - [**Differential Fuzzing**](#differential-fuzzing)
+  - [DPIFuzz: A Differential Fuzzing Framework to Detect DPI Elusion Strategies for QUIC (ACSAC 2020)](#dpifuzz-a-differential-fuzzing-framework-to-detect-dpi-elusion-strategies-for-quic-acsac-2020)
   - [Coverage Guided Differential Adversarial Testing of Deep Learning Systems (TNSE 2020)](#coverage-guided-differential-adversarial-testing-of-deep-learning-systems-tnse-2020)
   - [HyDiff: Hybrid Differential Software Analysis (ICSE 2020)](#hydiff-hybrid-differential-software-analysis-icse-2020)
   - [DifFuzz: Differential Fuzzing for Side-Channel Analysis (ICSE 2019)](#diffuzz-differential-fuzzing-for-side-channel-analysis-icse-2019)
@@ -425,6 +431,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [VUzzer: Application-aware Evolutionary Fuzzing (NDSS 2017)](#vuzzer-application-aware-evolutionary-fuzzing-ndss-2017)
   
 - [**Grammars \ Inputs-aware Fuzzing**](#grammars--inputs-aware-fuzzing)
+  - [Generating Highly-structured Input Data by Combining Search-based Testing and Grammar-based Fuzzing (ASE 2020)](#generating-highly-structured-input-data-by-combining-search-based-testing-and-grammar-based-fuzzing-ase-2020)
   - [Montage: A Neural Network Language Model-Guided JavaScript Engine Fuzzer (Usenix Security2020)](#montage-a-neural-network-language-model-guided-javascript-engine-fuzzer-usenix-security2020)
   - [Fuzzing JavaScript Engines with Aspect-preserving Mutation (S&P 2020)](#fuzzing-javascript-engines-with-aspect-preserving-mutation-sp-2020)
   - [Language-Agnostic Generation of Compilable Test Programs (ICST 2020)](#language-agnostic-generation-of-compilable-test-programs-icst-2020)
@@ -450,6 +457,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [ExploitMeter: Combining Fuzzing with Machine Learning for Automated Evaluation of Software Exploitability (PAC 2017)](#exploitmeter-combining-fuzzing-with-machine-learning-for-automated-evaluation-of-software-exploitability-pac-2017)
 
 - [**Parallel / Ensemble Fuzzing**](#parallel--ensemble-fuzzing)
+  - [Cupid: Automatic Fuzzer Selection for Collaborative Fuzzing (ACSAC 2020)](#cupid-automatic-fuzzer-selection-for-collaborative-fuzzing-acsac-2020)
   - [EnFuzz: Ensemble Fuzzing with Seed Synchronization among Diverse Fuzzers (USENIX Security2019)](#enfuzz-ensemble-fuzzing-with-seed-synchronization-among-diverse-fuzzers-usenix-security2019)
   - [PAFL: Extend FuzzingOptimizations of Single Mode to Industrial Parallel Mode (ESEC/FSE 2018)](#pafl-extend-fuzzingoptimizations-of-single-mode-to-industrial-parallel-mode-esecfse-2018)
 
@@ -713,8 +721,14 @@ In order to introduce more variance which increases possibility that the concurr
 In evaluating the proposed heuristic framework with a benchmark suit of six real-world concurrent C programs, the framework detected two concurrency vulnerabilities for the proposed concurrency vulnerability detection, both being confirmed to be true positives, and produced three new crashes for the proposed interleaving exploring fuzzer that existing fuzzers could not produce. These results demonstrate the power and effectiveness of the proposed heuristic framework in detecting concurrency errors and vulnerabilities.
 
 
-
 # Differential Fuzzing
+
+### DPIFuzz: A Differential Fuzzing Framework to Detect DPI Elusion Strategies for QUIC (ACSAC 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://cispa.de/en/research/publications/3220-dpifuzz-a-differential-fuzzing-frameworkto-detect-dpi-elusion-strategies-for-quic)
+
+**Abstract:** QUIC is an emerging transport protocol that has the potential to replace TCP in the near future. As such, QUIC will become an important target for Deep Packet Inspection (DPI). Reliable DPI is essential, e.g., for corporate environments, to monitor traffic entering and leaving their networks. However, elusion strategies threaten the validity of DPI systems, as they allow attackers to carefully design traffic to fool and thus evade on-path DPI systems. While such elusion strategies for TCP are well documented, it is unclear if attackers will be able to elude QUIC-based DPI systems. In this paper, we systematically explore elusion methodologies for QUIC. To this end, we present DPIFuzz: a differential fuzzing framework which can automatically detect strategies to elude stateful DPI systems for QUIC. We use DPIFuzz to generate and mutate QUIC streams in order to compare (and find differences in) the server-side interpretations of five popular open-source QUIC implementations. We show that DPIFuzz successfully reveals DPI elusion strategies, such as using packets with duplicate packet numbers or exploiting the diverging handling of overlapping stream offsets by QUIC implementations. DPIFuzz additionally finds four security-critical vulnerabilities in these QUIC implementations.
+
 
 ### HyDiff: Hybrid Differential Software Analysis (ICSE 2020)
 
@@ -1510,6 +1524,13 @@ In this paper, we present an application-aware evolutionary fuzzing strategy tha
 
 # Grammars \ Inputs-aware Fuzzing
 
+### Generating Highly-structured Input Data by Combining Search-based Testing and Grammar-based Fuzzing (ASE 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://research.tudelft.nl/en/publications/generating-highly-structured-input-data-by-combining-search-based)
+
+**Abstract:** Software testing is an important and time-consuming task that is often done manually. In the last decades, researchers have come up with techniques to generate input data (e.g., fuzzing) and automate the process of generating test cases (e.g., search-based testing). However, these techniques are known to have their own limitations: search-based testing does not generate highly-structured data; grammar-based fuzzing does not generate test case structures. To address these limitations, we combine these two techniques. By applying grammar-based mutations to the input data gathered by the search-based testing algorithm, it allows us to co-evolve both aspects of test case generation. We evaluate our approach, called G-EvoSuite, by performing an empirical study on 20 Java classes from the three most popular JSON parsers across multiple search budgets. Our results show that the proposed approach on average improves branch coverage for JSON related classes by 15% (with a maximum increase of 50%) without negatively impacting other classes.
+
+
 ### Montage: A Neural Network Language Model-Guided JavaScript Engine Fuzzer (Usenix Security2020)
 
 * <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/sec20summer_lee-suyoung_prepub_0.pdf)
@@ -1721,6 +1742,15 @@ We have developed a prototype system and evaluated it on a set of 19 CTF (captur
 
 
 # Parallel / Ensemble Fuzzing
+
+### Cupid: Automatic Fuzzer Selection for Collaborative Fuzzing (ACSAC 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.syssec.ruhr-uni-bochum.de/media/emma/veroeffentlichungen/2020/09/26/ACSAC20-Cupid_TiM9H07.pdf)
+
+**Abstract:** Combining the strengths of individual fuzzing methods is an appealing idea to find software faults more efficiently, especially when the computing budget is limited. In prior work, EnFuzz introduced the idea of ensemble fuzzing and devised three heuristics to classify properties of fuzzers in terms of diversity. Based on these heuristics, the authors manually picked a combination of different fuzzers that collaborate.
+
+In this paper, we generalize this idea by collecting and applying empirical data from single, isolated fuzzer runs to automatically identify a set of fuzzers that complement each other when executed collaboratively. To this end, we present Cupid, a collaborative fuzzing framework allowing automated, data-driven selection of multiple complementary fuzzers for parallelized and distributed fuzzing. We evaluate the automatically selected target-independent combination of fuzzers by Cupid on Google’s fuzzer-test-suite, a collection of real-world binaries, as well as on the synthetic Lava-M dataset. We find that Cupid outperforms two expert-guided, targetspecific and hand-picked combinations on Google’s fuzzer-test-suite in terms of branch coverage, and improves bug finding on Lava-M by 10%. Most importantly, we improve the latency for obtaining 95% and 99% of the coverage by 90% and 64%, respectively. Furthermore, Cupid reduces the amount of CPU hours needed to find a high-performing combination of fuzzers by multiple orders of magnitude compared to an exhaustive evaluation.
+
 
 ### EnFuzz: Ensemble Fuzzing with Seed Synchronization among Diverse Fuzzers (USENIX Security2019)
 

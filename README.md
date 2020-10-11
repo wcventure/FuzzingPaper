@@ -16,6 +16,9 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 
+- **USENIX Security 2021**
+  - [UNIFUZZ: A Holistic and Pragmatic Metrics-Driven Platform for Evaluating Fuzzers](#unifuzz-a-holistic-and-pragmatic-metrics-driven-platform-for-evaluating-fuzzers-usenix-security2021)
+
 - **CCS 2020**
   - [FREEDOM: Engineering a State-of-the-Art DOM Fuzzer]
   - [SQUIRREL: Testing Database Management Systems with Language Validity and Coverage Feedback](#squirrel-testing-database-management-systems-with-language-validity-and-coverage-feedback-ccs-2020)
@@ -95,6 +98,9 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Language-Agnostic Generation of Compilable Test Programs](#language-agnostic-generation-of-compilable-test-programs-icst-2020)
   - [ct-fuzz: Fuzzing for Timing Leaks](#ct-fuzz-fuzzing-for-timing-leaks-icst-2020)
   - [AFLNET: A Greybox Fuzzer for Network Protocols](#aflnet-a-greybox-fuzzer-for-network-protocols-icst-2020)
+
+- **ASIACCS 2020**
+  - [PathAFL: Path-Coverage Assisted Fuzzing](#pathafl-path-coverage-assisted-fuzzing-asia-ccs-2020)
 
 - **Others 2020**
   - [A Quantitative Comparison of Covera (AST 2020)](#a-quantitative-comparison-of-covera-ast-2020)
@@ -341,6 +347,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Coverage-Directed Differential Testing of JVM Implementations (PLDI 2016)](#coverage-directed-differential-testing-of-jvm-implementations-pldi-2016)
 
 - [**Evaluate Fuzzing**](#evaluate-fuzzing)
+  - [UNIFUZZ: A Holistic and Pragmatic Metrics-Driven Platform for Evaluating Fuzzers (USENIX Security2021)](#unifuzz-a-holistic-and-pragmatic-metrics-driven-platform-for-evaluating-fuzzers-usenix-security2021)
   - [A Quantitative Comparison of Covera (AST 2020)](#a-quantitative-comparison-of-covera-ast-2020)
   - [Fuzzing: On the Exponential Cost of Vulnerability Discovery (FSE 2020)](#fuzzing-on-the-exponential-cost-of-vulnerability-discovery-fse-2020)
   - [A Feature-Oriented Corpus for understanding, Evaluating and Improving Fuzz Testing (ASIACCS 2019)](#a-feature-oriented-corpus-for-understanding-evaluating-and-improving-fuzz-testing-asiaccs-2019)
@@ -421,7 +428,8 @@ remark: This website is only used for collecting and grouping the related paper.
   - [CAB-Fuzz: Practical Concolic Testing Techniques for COTS Operating Systems (Usenix Security2017)](#cab-fuzz-practical-concolic-testing-techniques-for-cots-operating-systems-usenix-security2017)
   - [Driller: Argumenting Fuzzing Through Selective Symbolic Execution (NDSS 2016)](#driller-argumenting-fuzzing-through-selective-symbolic-execution-ndss-2016)
 
-- [**Coverage \ Deeply nested branches \ Addressing Magic bytes \ checksum**](#deeply-nested-branches--addressing-magic-bytes--checksum)
+- [**Path \ Deeply nested branches \ Addressing Magic bytes \ checksum**](#path--deeply-nested-branches--addressing-magic-bytes--checksum)  
+  - [PathAFL: Path-Coverage Assisted Fuzzing (ASIA CCS 2020)](#pathafl-path-coverage-assisted-fuzzing-asia-ccs-2020)
   - [Zeror: Speed Up Fuzzing with Coverage-sensitive Tracing and Scheduling (ASE 2020)](#zeror-speed-up-fuzzing-with-coverage-sensitive-tracing-and-scheduling-ase-2020)
   - [Not All Coverage Measurements Are Equal: Fuzzing by Coverage Accounting for Input Prioritization (NDSS 2020)](#not-all-coverage-measurements-are-equal-fuzzing-by-coverage-accounting-for-input-prioritization-ndss-2020)
   - [Matryoshka: fuzzing deeply nested branches (CCS 2019)](#matryoshka-fuzzing-deeply-nested-branches-ccs-2019)
@@ -818,6 +826,13 @@ We have implemented classfuzz and conducted an extensive evaluation of it agains
 
 
 # Evaluate Fuzzing
+
+### UNIFUZZ: A Holistic and Pragmatic Metrics-Driven Platform for Evaluating Fuzzers (USENIX Security2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2010.01785.pdf)
+ 
+**Abstract:** A flurry of fuzzing tools (fuzzers) have been proposed in the literature, aiming at detecting software vulnerabilities effectively and efficiently. To date, it is however still challenging to compare fuzzers due to the inconsistency of the benchmarks, performance metrics, and/or environments for evaluation, which buries the useful insights and thus impedes the discovery of promising fuzzing primitives. In this paper, we design and develop UNIFUZZ, an open-source and metrics-driven platform for assessing fuzzers in a comprehensive and quantitative manner. Specifically, UNIFUZZ to date has incorporated 35 usable fuzzers, a benchmark of 20 real-world programs, and six categories of performance metrics. We first systematically study the usability of existing fuzzers, find and fix a number of flaws, and integrate them into UNIFUZZ. Based on the study, we propose a collection of pragmatic performance metrics to evaluate fuzzers from six complementary perspectives. Using UNIFUZZ, we conduct in-depth evaluations of several prominent fuzzers including AFL [1], AFLFast [2], Angora [3], Honggfuzz [4], MOPT [5], QSYM [6], T-Fuzz [7] and VUzzer64 [8]. We find that none of them outperforms the others across all the target programs, and that using a single metric to assess the performance of a fuzzer may lead to unilateral conclusions, which demonstrates the significance of comprehensive metrics. Moreover, we identify and investigate previously overlooked factors that may significantly affect a fuzzer's performance, including instrumentation methods and crash analysis tools. Our empirical results show that they are critical to the evaluation of a fuzzer. We hope that our findings can shed light on reliable fuzzing evaluation, so that we can discover promising fuzzing primitives to effectively facilitate fuzzer designs in the future.
+
 
 ### A Quantitative Comparison of Covera (AST 2020)
 
@@ -1438,7 +1453,14 @@ Our evaluation shows that QSYM does not just outperform state-of-the-art fuzzers
 
 
 
-# Coverage \ Deeply nested branches \ Addressing Magic bytes \ checksum: 
+# Path \ Deeply nested branches \ Addressing Magic bytes \ checksum: 
+
+### PathAFL: Path-Coverage Assisted Fuzzing (ASIA CCS 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://dl.acm.org/doi/pdf/10.1145/3320269.3384736)
+ 
+**Abstract:** Fuzzing is an effective method to find software bugs and vulnerabilities. One of the most useful techniques is the coverage-guided fuzzing, whose key element is the tracing code coverage information. Existing coverage-guided fuzzers generally use the the number of basic blocks or edges explored to measure code coverage. Path-coverage can provide more accurate coverage information than basic block and edge coverage. However, the number of paths grows exponentially as the size of a program increases. It is almost impossible to trace all the paths of a real-world application. In this paper, we propose a fuzzing solution named PathAFL, which assists a fuzzer by path identification. It can effectively identify and utilize the important h-path, which is a new path but whose edges have all been touched previously. First, PathAFL only inserts one assembly instruction to AFL's original code to calculate the path hash, and uses a selective instrumentation strategy to reduce the tracing granularity of an execution path. Second, we design a fast filtering algorithm to choose higher weight paths from a large number of h-paths and add them to the seed queue. Third, both the seed selection algorithm and the power schedule are implemented based on the path weight. Finally we implemented PathAFL based on the popular fuzzer AFL and evaluated it on 10 well-fuzzed benchmark programs. In 24 hours, PathAFL explored 38% more paths and 9.3% more edges than AFL. Compared with CollAFL-x, the number is 25% and 5.9% correspondingly. Moreover, PathAFL found the more bugs on the LAVA-M dataset, even four unlisted bugs. The results show that PathAFL outperforms the previous fuzzers in terms of both code coverage and bug discovery. In well-tested programs, PathAFL found 8 new security bugs with 6 CVEs assigned.
+
 
 ### Zeror: Speed Up Fuzzing with Coverage-sensitive Tracing and Scheduling (ASE 2020)
 

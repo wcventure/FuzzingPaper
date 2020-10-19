@@ -116,7 +116,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [RDFuzz: Accelerating Directed Fuzzing with Intertwined Schedule and Optimized Mutation](#rdfuzz-accelerating-directed-fuzzing-with-intertwined-schedule-and-optimized-mutation-2020)
   - [A deep convolution generative adversarial networks based fuzzing framework for industry control protocols](#a-deep-convolution-generative-adversarial-networks-based-fuzzing-framework-for-industry-control-protocols)
   - [TOFU: Target-Oriented FUzzer](#tofu-target-oriented-fuzzer-arxiv-2020)
-  - [BaseSAFE: BaseSAFE: Baseband SAnitized Fuzzing through Emulation](#basesafe-baseband-sanitized-fuzzing-wisec-2020)
+  - [BaseSAFE: BaseSAFE: Baseband SAnitized Fuzzing through Emulation (WiSec 2020)](#basesafe-baseband-sanitized-fuzzing-through-emulation-wisec-2020)
 
 - **ACSAC 2019**
   - [Opening Pandora’s Box through ATFuzzer: Dynamic Analysis of AT Interface for AndroidSmartphones](#Opening-Pandoras-Box-through-ATFuzzer-Dynamic-Analysis-of-AT-Interface-for-Android-Smartphones-ACSAC-2019)
@@ -156,7 +156,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [GRIMOIRE : Synthesizing Structure while Fuzzing](#grimoire-synthesizing-structure-while-fuzzing-usenix-security2019)
   - [RVFuzzer: Finding Input Validation Bugs in Robotic Vehicles through Control-Guided Random Testing](#rvfuzzer-finding-input-validation-bugs-in-robotic-vehicles-through-control-guided-random-testing-usenix-security2019)
   - [FIRM-AFL: High-Throughput Greybox Fuzzing of IoT Firmware via Augmented Process Emulation](#firm-afl-high-throughput-greybox-fuzzing-of-iot-firmware-via-augmented-process-emulation-usenix-security2019)
-  - [Unicorefuzz: On the Viability of Emulation for Kernelspace Fuzzing (USENIX WOOT'19)](#unicorefuzz-kernelspace-fuzzing-woot2019)
+  - [Unicorefuzz: On the Viability of Emulation for Kernelspace Fuzzing (USENIX WOOT'19)](#unicorefuzz-on-the-viability-of-emulation-for-kernelspace-fuzzing-usenix-woot19)
 
 - **ASE 2019**
   - [Learning-Guided Network Fuzzing for Testing Cyber-Physical System Defences](#learning-guided-network-fuzzing-for-testing-cyber-physical-system-defences-ase-2019)
@@ -370,7 +370,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [A deep convolution generative adversarial networks based fuzzing framework for industry control protocols](#a-deep-convolution-generative-adversarial-networks-based-fuzzing-framework-for-industry-control-protocols)
   - [ICS Protocol Fuzzing: Coverage Guided Packet Crack and Generation (DAC 2020)](#ics-protocol-fuzzing-coverage-guided-packet-crack-and-generation-dac-2020)
   - [AFLNET: A Greybox Fuzzer for Network Protocols (ICST 2020)](#aflnet-a-greybox-fuzzer-for-network-protocols-icst-2020)
-  - [BaseSAFE: BaseSAFE: Baseband SAnitized Fuzzing through Emulation (WiSec 2020)](#basesafe-baseband-sanitized-fuzzing-wisec-2020)
+  - [BaseSAFE: BaseSAFE: Baseband SAnitized Fuzzing through Emulation (WiSec 2020)](#basesafe-baseband-sanitized-fuzzing-through-emulation-wisec-2020)
   - [Finding Security Vulnerabilities in Network Protocol Implementations (Arxiv 2020)](#finding-security-vulnerabilities-in-network-protocol-implementations-arxiv-2020)
   - [Smart seed selection-based effective black box fuzzing for IIoT protocol (2020)](#smart-seed-selection-based-effective-black-box-fuzzing-for-iiot-protocol-2020)
   - [Fw‐fuzz: A code coverage‐guided fuzzing framework for network protocols on firmware (2020)](#fw%e2%80%90fuzz-a-code-coverage%e2%80%90guided-fuzzing-framework-for-network-protocols-on-firmware-2020)
@@ -409,7 +409,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Hydra: An Extensible Fuzzing Framework for Finding Semantic Bugs in File Systems (SOSP 2019)](#hydra-an-extensible-fuzzing-framework-for-finding-semantic-bugs-in-file-systems-sosp-2019)
   - [Fuzzing File Systems via Two-Dimensional Input Space Exploration (S&P 2019)](#fuzzing-file-systems-via-two-dimensional-input-space-exploration-sp-2019)
   - [Razzer: Finding Kernel Race Bugs through Fuzzing (S&P 2019)](#razzer-finding-kernel-race-bugs-through-fuzzing-sp-2019)
-  - [Unicorefuzz: On the Viability of Emulation for Kernelspace Fuzzing (USENIX WOOT'19)](#unicorefuzz-kernelspace-fuzzing-woot2019)
+  - [Unicorefuzz: On the Viability of Emulation for Kernelspace Fuzzing (USENIX WOOT'19)](#unicorefuzz-on-the-viability-of-emulation-for-kernelspace-fuzzing-usenix-woot19)
   - [MoonShine: Optimizing OS Fuzzer Seed Selection with Trace Distillation (USENIX Security2018)](#moonshine-optimizing-os-fuzzer-seed-selection-with-trace-distillation-usenix-security2018)
   - [CAB-Fuzz: Practical Concolic Testing Techniques for COTS Operating Systems (Usenix Security2017)](#cab-fuzz-practical-concolic-testing-techniques-for-cots-operating-systems-usenix-security2017)
   - [kAFL: Hardware-Assisted Feedback Fuzzing for OS Kernels (Usenix Security2017)](#kafl-hardware-assisted-feedback-fuzzing-for-os-kernels-usenix-security2017)

@@ -116,6 +116,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [RDFuzz: Accelerating Directed Fuzzing with Intertwined Schedule and Optimized Mutation](#rdfuzz-accelerating-directed-fuzzing-with-intertwined-schedule-and-optimized-mutation-2020)
   - [A deep convolution generative adversarial networks based fuzzing framework for industry control protocols](#a-deep-convolution-generative-adversarial-networks-based-fuzzing-framework-for-industry-control-protocols)
   - [TOFU: Target-Oriented FUzzer](#tofu-target-oriented-fuzzer-arxiv-2020)
+  - [BaseSAFE: BaseSAFE: Baseband SAnitized Fuzzing through Emulation](#basesafe-baseband-sanitized-fuzzing-wisec-2020)
 
 - **ACSAC 2019**
   - [Opening Pandora’s Box through ATFuzzer: Dynamic Analysis of AT Interface for AndroidSmartphones](#Opening-Pandoras-Box-through-ATFuzzer-Dynamic-Analysis-of-AT-Interface-for-Android-Smartphones-ACSAC-2019)
@@ -155,6 +156,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [GRIMOIRE : Synthesizing Structure while Fuzzing](#grimoire-synthesizing-structure-while-fuzzing-usenix-security2019)
   - [RVFuzzer: Finding Input Validation Bugs in Robotic Vehicles through Control-Guided Random Testing](#rvfuzzer-finding-input-validation-bugs-in-robotic-vehicles-through-control-guided-random-testing-usenix-security2019)
   - [FIRM-AFL: High-Throughput Greybox Fuzzing of IoT Firmware via Augmented Process Emulation](#firm-afl-high-throughput-greybox-fuzzing-of-iot-firmware-via-augmented-process-emulation-usenix-security2019)
+  - [Unicorefuzz: On the Viability of Emulation for Kernelspace Fuzzing (USENIX WOOT'19)](#unicorefuzz-kernelspace-fuzzing-woot2019)
 
 - **ASE 2019**
   - [Learning-Guided Network Fuzzing for Testing Cyber-Physical System Defences](#learning-guided-network-fuzzing-for-testing-cyber-physical-system-defences-ase-2019)
@@ -368,6 +370,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [A deep convolution generative adversarial networks based fuzzing framework for industry control protocols](#a-deep-convolution-generative-adversarial-networks-based-fuzzing-framework-for-industry-control-protocols)
   - [ICS Protocol Fuzzing: Coverage Guided Packet Crack and Generation (DAC 2020)](#ics-protocol-fuzzing-coverage-guided-packet-crack-and-generation-dac-2020)
   - [AFLNET: A Greybox Fuzzer for Network Protocols (ICST 2020)](#aflnet-a-greybox-fuzzer-for-network-protocols-icst-2020)
+  - [BaseSAFE: BaseSAFE: Baseband SAnitized Fuzzing through Emulation (WiSec 2020)](#basesafe-baseband-sanitized-fuzzing-wisec-2020)
   - [Finding Security Vulnerabilities in Network Protocol Implementations (Arxiv 2020)](#finding-security-vulnerabilities-in-network-protocol-implementations-arxiv-2020)
   - [Smart seed selection-based effective black box fuzzing for IIoT protocol (2020)](#smart-seed-selection-based-effective-black-box-fuzzing-for-iiot-protocol-2020)
   - [Fw‐fuzz: A code coverage‐guided fuzzing framework for network protocols on firmware (2020)](#fw%e2%80%90fuzz-a-code-coverage%e2%80%90guided-fuzzing-framework-for-network-protocols-on-firmware-2020)
@@ -406,6 +409,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Hydra: An Extensible Fuzzing Framework for Finding Semantic Bugs in File Systems (SOSP 2019)](#hydra-an-extensible-fuzzing-framework-for-finding-semantic-bugs-in-file-systems-sosp-2019)
   - [Fuzzing File Systems via Two-Dimensional Input Space Exploration (S&P 2019)](#fuzzing-file-systems-via-two-dimensional-input-space-exploration-sp-2019)
   - [Razzer: Finding Kernel Race Bugs through Fuzzing (S&P 2019)](#razzer-finding-kernel-race-bugs-through-fuzzing-sp-2019)
+  - [Unicorefuzz: On the Viability of Emulation for Kernelspace Fuzzing (USENIX WOOT'19)](#unicorefuzz-kernelspace-fuzzing-woot2019)
   - [MoonShine: Optimizing OS Fuzzer Seed Selection with Trace Distillation (USENIX Security2018)](#moonshine-optimizing-os-fuzzer-seed-selection-with-trace-distillation-usenix-security2018)
   - [CAB-Fuzz: Practical Concolic Testing Techniques for COTS Operating Systems (Usenix Security2017)](#cab-fuzz-practical-concolic-testing-techniques-for-cots-operating-systems-usenix-security2017)
   - [kAFL: Hardware-Assisted Feedback Fuzzing for OS Kernels (Usenix Security2017)](#kafl-hardware-assisted-feedback-fuzzing-for-os-kernels-usenix-security2017)
@@ -1069,6 +1073,35 @@ In this work, different fuzzing tools were evaluated for their properties and th
 **Abstract:** With more IoT devices entering the consumer market, it becomes imperative to detect their security vulnerabilities before an attacker does. Existing binary analysis based approaches only work on firmware, which is less accessible except for those equipped with special tools for extracting the code from the device. To address this challenge in IoT security analysis, we present in this paper a novel automatic fuzzing framework, called IOTFUZZER, which aims at finding memory corruption vulnerabilities in IoT devices without access to their firmware images. The key idea is based upon the observation that most IoT devices are controlled through their official mobile apps, and such an app often contains rich information about the protocol it uses to communicate with its device. Therefore, by identifying and reusing program-specific logic (e.g., encryption) to mutate the test case (particularly message fields), we are able to effectively probe IoT targets without relying on any knowledge about its protocol specifications. In our research, we implemented IOTFUZZER and evaluated 17 real-world IoT devices running on different protocols, and our approach successfully identified 15 memory corruption vulnerabilities (including 8 previously unknown ones).
 
 
+### BaseSAFE: Baseband SAnitized Fuzzing through Emulation (WiSec 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2005.07797.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/fgsect/BaseSAFE)
+
+**Abstract:** Rogue base stations are an effective attack vector. Cellular basebands represent a critical part of the smartphone’s security: they
+parse large amounts of data even before authentication. They can,
+therefore, grant an attacker a very stealthy way to gather information about calls placed and even to escalate to the main operating system, over-the-air. In this paper, we discuss a novel cellular fuzzing framework that aims to help security researchers find
+critical bugs in cellular basebands and similar embedded systems.
+BaseSAFE allows partial rehosting of cellular basebands for fast
+instrumented fuzzing off-device, even for closed-source firmware
+blobs. BaseSAFE’s sanitizing drop-in allocator, enables spotting
+heap-based buffer-overflows quickly. Using our proof-of-concept
+harness, we fuzzed various parsers of the Nucleus RTOS-based
+MediaTek cellular baseband that are accessible from rogue base stations. The emulator instrumentation is highly optimized, reaching
+hundreds of executions per second on each core for our complex
+test case, around 15k test-cases per second in total. Furthermore,
+we discuss attack vectors for baseband modems. To the best of
+our knowledge, this is the first use of emulation-based fuzzing
+for security testing of commercial cellular basebands. Most of the
+tooling and approaches of BaseSAFE are also applicable for other
+low-level kernels and firmware. Using BaseSAFE, we were able
+to find memory corruptions including heap out-of-bounds writes
+using our proof-of-concept fuzzing harness in the MediaTek cellular baseband. BaseSAFE, the harness, and a large collection of
+LTE signaling message test cases will be released open-source upon
+publication of this paper.
+
+
 ### Bbuzz: A Bit-aware Fuzzing Framework for Network Protocol Systematic Reverse Engineering and Analysis (MCC 2017)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/MCC17-Binfuzz.pdf)
@@ -1246,6 +1279,17 @@ In this paper, we highlight the potential of applying fuzzing to find not just m
 
 **Abstract:** File systems, a basic building block of an OS, are too big and too complex to be bug free. Nevertheless, file systems rely on regular stress-testing tools and formal checkers to find bugs, which are limited due to the ever-increasing complexity of both file systems and OSes. Thus, fuzzing, proven to be an effective and a practical approach, becomes a preferable choice, as it does not need much knowledge about a target. However, three main challenges exist in fuzzing file systems: mutating a large image blob that degrades overall performance, generating image-dependent file operations, and reproducing found bugs, which is difficult for existing OS fuzzers. Hence, we present JANUS, the first feedback-driven fuzzer that explores the two-dimensional input space of a file system, i.e., mutating metadata on a large image, while emitting image-directed file operations. In addition, JANUS relies on a library OS rather than on traditional VMs for fuzzing, which enables JANUS to load a fresh copy of the OS, thereby leading to better reproducibility of bugs. We evaluate JANUS on eight file systems and found 90 bugs in the upstream Linux kernel, 62 of which have been acknowledged. Forty-three bugs have been fixed with 32 CVEs assigned. In addition, JANUS achieves higher code coverage on all the file systems after fuzzing 12 hours, when compared with the state-of-the-art fuzzer Syzkaller for fuzzing file systems. JANUS visits 4.19x and 2.01x more code paths in Btrfs and ext4, respectively. Moreover, JANUS is able to reproduce 88-100% of the crashes, while Syzkaller fails on all of them.
 
+
+### Unicorefuzz: On the Viability of Emulation for Kernelspace Fuzzing (USENIX WOOT'19)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/woot19-paper_maier.pdf)
+
+* <img src="image/ppt_24px.png">[Slides](https://www.usenix.org/sites/default/files/conference/protected-files/woot19_slides_maier.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/fgsect/unicorefuzz)
+
+
+**Abstract:** Fuzzing uncovers an ever-growing number of critical vulnerabilities. Despite the simple concept—execute the target until it crashes—setting up fuzz tests can pose complex challenges. This is especially true for code that cannot run as part of a userland process on desktop operating systems—for example device drivers and kernel components. In this paper, we explore the use of CPU emulation to fuzz arbitrary parsers in kernelspace with coverage-based feedback. We propose and open-source Unicorefuzz and explain merits and pitfalls of emulation-based fuzzing approaches. The viability of the approach is evaluated against artificial Linux kernel modules, the Open vSwitch network virtualization component as well as bugs originally uncovered by syzcaller. Emulator-based fuzzing of kernel code is not very complex to set up and can even be used to fuzz operating systems and devices for which no source code is available.
 
 ### Razzer: Finding Kernel Race Bugs through Fuzzing (S&P 2019)
 
@@ -2409,6 +2453,8 @@ We propose a novel coverage-guided fuzz testing tool for big data analytics, cal
 ### AFL++: Combining Incremental Steps of Fuzzing Research (USENIX Woot2020)
 
 * <img src="image/pdf_24px.png">[Paper](https://www.researchgate.net/profile/Andrea_Fioraldi/publication/342420457_AFL_Combining_Incremental_Steps_of_Fuzzing_Research/links/5f1bf0b9a6fdcc9626b02503/AFL-Combining-Incremental-Steps-of-Fuzzing-Research.pdf?_sg%5B0%5D=JfF0Lnj56-9YvEmhCv63i2Nf47zpS07I3euiuSLjR2VeFrx-vh_Lyl9wFLNfKOQ2K3V2l9zmfAKJm2sp9EPUPA.-fwhbl2AdWKqkPR8iYm37vCicsdOFeHmaEA8mKFuhaIodjIaFnA2ItsocLmYk6eNkVF9SYKCpjFSmMOfJ0RShQ&_sg%5B1%5D=AcR_4Lqq86JrcDnpoq77Tkx8AZNoOg8lyLLkKgWK9LQRXfOav1gq8X8DNOnqSTvMfsZ2GUfZwwJPYvVM4_9ZS6L2Q3BG4rLFhnHHYVqOUU0t.-fwhbl2AdWKqkPR8iYm37vCicsdOFeHmaEA8mKFuhaIodjIaFnA2ItsocLmYk6eNkVF9SYKCpjFSmMOfJ0RShQ&_iepl=)
+
+* <img src="image/github_24px.png">[Code](https://github.com/AFLplusplus/AFLplusplus)
 
 **Abstract:** In this paper, we present AFL++, a community-driven opensource tool that incorporates state-of-the-art fuzzing research, to make the research comparable, reproducible, combinable, and — most importantly – useable. It offers a variety of novel features, for example, its Custom Mutator API, able to extend the fuzzing process at many stages. With it, mutators for specific targets can also be written by experienced security testers. We hope for AFL++ to become a new baseline tool not only for current, but also for future research, as it allows us to test new techniques quickly, and evaluate not only the effectiveness of the single technique versus the state-of-the art, but also in combination with other techniques. The paper gives an evaluation of hand-picked fuzzing technologies —shining light on the fact that while each novel fuzzing method can increase performance in some targets — it decreases performance for other targets. This is an insight future fuzzing research should consider in their evaluations.
 

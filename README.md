@@ -116,7 +116,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [RDFuzz: Accelerating Directed Fuzzing with Intertwined Schedule and Optimized Mutation](#rdfuzz-accelerating-directed-fuzzing-with-intertwined-schedule-and-optimized-mutation-2020)
   - [A deep convolution generative adversarial networks based fuzzing framework for industry control protocols](#a-deep-convolution-generative-adversarial-networks-based-fuzzing-framework-for-industry-control-protocols)
   - [TOFU: Target-Oriented FUzzer](#tofu-target-oriented-fuzzer-arxiv-2020)
-  - [BaseSAFE: BaseSAFE: Baseband SAnitized Fuzzing through Emulation (WiSec 2020)](#basesafe-baseband-sanitized-fuzzing-through-emulation-wisec-2020)
+  - [BaseSAFE: Baseband SAnitized Fuzzing through Emulation](#basesafe-baseband-sanitized-fuzzing-through-emulation-wisec-2020)
 
 - **ACSAC 2019**
   - [Opening Pandora’s Box through ATFuzzer: Dynamic Analysis of AT Interface for AndroidSmartphones](#Opening-Pandoras-Box-through-ATFuzzer-Dynamic-Analysis-of-AT-Interface-for-Android-Smartphones-ACSAC-2019)
@@ -156,7 +156,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [GRIMOIRE : Synthesizing Structure while Fuzzing](#grimoire-synthesizing-structure-while-fuzzing-usenix-security2019)
   - [RVFuzzer: Finding Input Validation Bugs in Robotic Vehicles through Control-Guided Random Testing](#rvfuzzer-finding-input-validation-bugs-in-robotic-vehicles-through-control-guided-random-testing-usenix-security2019)
   - [FIRM-AFL: High-Throughput Greybox Fuzzing of IoT Firmware via Augmented Process Emulation](#firm-afl-high-throughput-greybox-fuzzing-of-iot-firmware-via-augmented-process-emulation-usenix-security2019)
-  - [Unicorefuzz: On the Viability of Emulation for Kernelspace Fuzzing (USENIX WOOT'19)](#unicorefuzz-on-the-viability-of-emulation-for-kernelspace-fuzzing-usenix-woot19)
+  - [Unicorefuzz: On the Viability of Emulation for Kernelspace Fuzzing](#unicorefuzz-on-the-viability-of-emulation-for-kernelspace-fuzzing-usenix-woot19)
 
 - **ASE 2019**
   - [Learning-Guided Network Fuzzing for Testing Cyber-Physical System Defences](#learning-guided-network-fuzzing-for-testing-cyber-physical-system-defences-ase-2019)
@@ -370,7 +370,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [A deep convolution generative adversarial networks based fuzzing framework for industry control protocols](#a-deep-convolution-generative-adversarial-networks-based-fuzzing-framework-for-industry-control-protocols)
   - [ICS Protocol Fuzzing: Coverage Guided Packet Crack and Generation (DAC 2020)](#ics-protocol-fuzzing-coverage-guided-packet-crack-and-generation-dac-2020)
   - [AFLNET: A Greybox Fuzzer for Network Protocols (ICST 2020)](#aflnet-a-greybox-fuzzer-for-network-protocols-icst-2020)
-  - [BaseSAFE: BaseSAFE: Baseband SAnitized Fuzzing through Emulation (WiSec 2020)](#basesafe-baseband-sanitized-fuzzing-through-emulation-wisec-2020)
+  - [BaseSAFE: Baseband SAnitized Fuzzing through Emulation (WiSec 2020)](#basesafe-baseband-sanitized-fuzzing-through-emulation-wisec-2020)
   - [Finding Security Vulnerabilities in Network Protocol Implementations (Arxiv 2020)](#finding-security-vulnerabilities-in-network-protocol-implementations-arxiv-2020)
   - [Smart seed selection-based effective black box fuzzing for IIoT protocol (2020)](#smart-seed-selection-based-effective-black-box-fuzzing-for-iiot-protocol-2020)
   - [Fw‐fuzz: A code coverage‐guided fuzzing framework for network protocols on firmware (2020)](#fw%e2%80%90fuzz-a-code-coverage%e2%80%90guided-fuzzing-framework-for-network-protocols-on-firmware-2020)
@@ -431,8 +431,8 @@ remark: This website is only used for collecting and grouping the related paper.
   - [SAFL: increasing and accelerating testing coverage with symbolic execution and guided fuzzing (ICSE 2018)](#safl-increasing-and-accelerating-testing-coverage-with-symbolic-execution-and-guided-fuzzing-icse-2018)
   - [CAB-Fuzz: Practical Concolic Testing Techniques for COTS Operating Systems (Usenix Security2017)](#cab-fuzz-practical-concolic-testing-techniques-for-cots-operating-systems-usenix-security2017)
   - [Driller: Argumenting Fuzzing Through Selective Symbolic Execution (NDSS 2016)](#driller-argumenting-fuzzing-through-selective-symbolic-execution-ndss-2016)
-  - [Hybrid Fuzz Testing - Discovering Software Bugs via Fuzzing and Symbolic Execution (2012)]
-  - [Hybrid concolic testing (2007)]
+  - [Hybrid Fuzz Testing - Discovering Software Bugs via Fuzzing and Symbolic Execution (2012)](#hybrid-fuzz-testing---discovering-software-bugs-via-fuzzing-and-symbolic-execution-2012)
+  - [Hybrid concolic testing (2007)](#hybrid-concolic-testing-2007)
 
 - [**Path \ Deeply nested branches \ Addressing Magic bytes \ checksum**](#path--deeply-nested-branches--addressing-magic-bytes--checksum)  
   - [PathAFL: Path-Coverage Assisted Fuzzing (ASIA CCS 2020)](#pathafl-path-coverage-assisted-fuzzing-asia-ccs-2020)
@@ -1079,27 +1079,7 @@ In this work, different fuzzing tools were evaluated for their properties and th
 
 * <img src="image/github_24px.png">[Code](https://github.com/fgsect/BaseSAFE)
 
-**Abstract:** Rogue base stations are an effective attack vector. Cellular basebands represent a critical part of the smartphone’s security: they
-parse large amounts of data even before authentication. They can,
-therefore, grant an attacker a very stealthy way to gather information about calls placed and even to escalate to the main operating system, over-the-air. In this paper, we discuss a novel cellular fuzzing framework that aims to help security researchers find
-critical bugs in cellular basebands and similar embedded systems.
-BaseSAFE allows partial rehosting of cellular basebands for fast
-instrumented fuzzing off-device, even for closed-source firmware
-blobs. BaseSAFE’s sanitizing drop-in allocator, enables spotting
-heap-based buffer-overflows quickly. Using our proof-of-concept
-harness, we fuzzed various parsers of the Nucleus RTOS-based
-MediaTek cellular baseband that are accessible from rogue base stations. The emulator instrumentation is highly optimized, reaching
-hundreds of executions per second on each core for our complex
-test case, around 15k test-cases per second in total. Furthermore,
-we discuss attack vectors for baseband modems. To the best of
-our knowledge, this is the first use of emulation-based fuzzing
-for security testing of commercial cellular basebands. Most of the
-tooling and approaches of BaseSAFE are also applicable for other
-low-level kernels and firmware. Using BaseSAFE, we were able
-to find memory corruptions including heap out-of-bounds writes
-using our proof-of-concept fuzzing harness in the MediaTek cellular baseband. BaseSAFE, the harness, and a large collection of
-LTE signaling message test cases will be released open-source upon
-publication of this paper.
+**Abstract:** Rogue base stations are an effective attack vector. Cellular basebands represent a critical part of the smartphone’s security: they parse large amounts of data even before authentication. They can, therefore, grant an attacker a very stealthy way to gather information about calls placed and even to escalate to the main operating system, over-the-air. In this paper, we discuss a novel cellular fuzzing framework that aims to help security researchers find critical bugs in cellular basebands and similar embedded systems. BaseSAFE allows partial rehosting of cellular basebands for fast instrumented fuzzing off-device, even for closed-source firmware blobs. BaseSAFE’s sanitizing drop-in allocator, enables spotting heap-based buffer-overflows quickly. Using our proof-of-concept harness, we fuzzed various parsers of the Nucleus RTOS-based MediaTek cellular baseband that are accessible from rogue base stations. The emulator instrumentation is highly optimized, reaching hundreds of executions per second on each core for our complex test case, around 15k test-cases per second in total. Furthermore, we discuss attack vectors for baseband modems. To the best of our knowledge, this is the first use of emulation-based fuzzing for security testing of commercial cellular basebands. Most of the tooling and approaches of BaseSAFE are also applicable for other low-level kernels and firmware. Using BaseSAFE, we were able to find memory corruptions including heap out-of-bounds writes using our proof-of-concept fuzzing harness in the MediaTek cellular baseband. BaseSAFE, the harness, and a large collection of LTE signaling message test cases will be released open-source upon publication of this paper.
 
 
 ### Bbuzz: A Bit-aware Fuzzing Framework for Network Protocol Systematic Reverse Engineering and Analysis (MCC 2017)
@@ -1287,7 +1267,6 @@ In this paper, we highlight the potential of applying fuzzing to find not just m
 * <img src="image/ppt_24px.png">[Slides](https://www.usenix.org/sites/default/files/conference/protected-files/woot19_slides_maier.pdf)
 
 * <img src="image/github_24px.png">[Code](https://github.com/fgsect/unicorefuzz)
-
 
 **Abstract:** Fuzzing uncovers an ever-growing number of critical vulnerabilities. Despite the simple concept—execute the target until it crashes—setting up fuzz tests can pose complex challenges. This is especially true for code that cannot run as part of a userland process on desktop operating systems—for example device drivers and kernel components. In this paper, we explore the use of CPU emulation to fuzz arbitrary parsers in kernelspace with coverage-based feedback. We propose and open-source Unicorefuzz and explain merits and pitfalls of emulation-based fuzzing approaches. The viability of the approach is evaluated against artificial Linux kernel modules, the Open vSwitch network virtualization component as well as bugs originally uncovered by syzcaller. Emulator-based fuzzing of kernel code is not very complex to set up and can even be used to fuzz operating systems and devices for which no source code is available.
 

@@ -111,7 +111,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Fw‐fuzz: A code coverage‐guided fuzzing framework for network protocols on firmware](#fw%e2%80%90fuzz-a-code-coverage%e2%80%90guided-fuzzing-framework-for-network-protocols-on-firmware-2020)
   - [Greybox Fuzzing Based on Ant Colony Algorithm](#greybox-fuzzing-based-on-ant-colony-algorithm-aina-2020)    
   - [MEUZZ: Smart Seed Scheduling for Hybrid Fuzzing](#meuzz-smart-seed-scheduling-for-hybrid-fuzzing)
-  - [Binary-level Directed Fuzzing for Use-After-Free Vulnerabilities](#binary-level-directed-fuzzing-for-use-after-free-vulnerabilities)
+  - [Binary-level Directed Fuzzing for Use-After-Free Vulnerabilities](#binary-level-directed-fuzzing-for-use-after-free-vulnerabilities-raid-2020)
   - [Smart seed selection-based effective black box fuzzing for IIoT protocol](#smart-seed-selection-based-effective-black-box-fuzzing-for-iiot-protocol)
   - [RDFuzz: Accelerating Directed Fuzzing with Intertwined Schedule and Optimized Mutation](#rdfuzz-accelerating-directed-fuzzing-with-intertwined-schedule-and-optimized-mutation-2020)
   - [A deep convolution generative adversarial networks based fuzzing framework for industry control protocols](#a-deep-convolution-generative-adversarial-networks-based-fuzzing-framework-for-industry-control-protocols)
@@ -486,7 +486,7 @@ remark: This website is only used for collecting and grouping the related paper.
 
 - [**Directed Fuzzing**](#directed-fuzzing)
   - [Sequence directed hybrid fuzzing](#sequence-directed-hybrid-fuzzing-saner-2020)
-  - [Binary-level Directed Fuzzing for Use-After-Free Vulnerabilities (2020)](#binary-level-directed-fuzzing-for-use-after-free-vulnerabilities-2020)
+  - [Binary-level Directed Fuzzing for Use-After-Free Vulnerabilities (RAID 2020)](#binary-level-directed-fuzzing-for-use-after-free-vulnerabilities-raid-2020)
   - [Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities (ICSE 2020)](#typestate-guided-fuzzer-for-discovering-use-after-free-vulnerabilities-icse-2020)
   - [Ankou: Guiding Grey-box Fuzzing towards Combinatorial Difference (ICSE 2020)](#ankou-guiding-grey-box-fuzzing-towards-combinatorial-difference-icse-2020)
   - [RDFuzz: Accelerating Directed Fuzzing with Intertwined Schedule and Optimized Mutation (2020)](#rdfuzz-accelerating-directed-fuzzing-with-intertwined-schedule-and-optimized-mutation-2020)
@@ -553,7 +553,7 @@ remark: This website is only used for collecting and grouping the related paper.
 - [**Binary Fuzzing**](#binary-fuzzing)
   - [WEIZZ: Automatic Grey-Box Fuzzing for Structured Binary Formats (ISSTA 2020)](#weizz-automatic-grey-box-fuzzing-for-structured-binary-formats)
   - [RetroWrite: Statically Instrumenting COTS Binaries for Fuzzing and Sanitization (S&P 2020)](#retrowrite-statically-instrumenting-cots-binaries-for-fuzzing-and-sanitization-sp-2020)
-  - [Binary-level Directed Fuzzing for Use-After-Free Vulnerabilities](#binary-level-directed-fuzzing-for-use-after-free-vulnerabilities-2020)
+  - [Binary-level Directed Fuzzing for Use-After-Free Vulnerabilities (RAID 2020)](#binary-level-directed-fuzzing-for-use-after-free-vulnerabilities-raid-2020)
   - [Ptrix: Efficient Hardware-Assisted Fuzzing for COTS Binary (ASIACCS 2019)](#ptrix-efficient-hardware-assisted-fuzzing-for-cots-binary-asiaccs-2019)
   - [Steelix: Program-State Based Binary Fuzzing (FSE 2017)](#steelix-program-state-based-binary-fuzzing-fse-2017)
 
@@ -616,6 +616,8 @@ remark: This website is only used for collecting and grouping the related paper.
 
 ### SoK: The Progress, Challenges, and Perspectives of Directed Greybox Fuzzing
 
+* <img src="image/wechat_24px.png">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/zpibe5)
+* 
 * <img src="image/pdf_24px.png">[Paper](./Paper/Arxiv20_SoK.pdf)
 
 **Abstract:** Greybox fuzzing has been the most scalable and practical approach to software testing. Most greybox fuzzing tools are coverage guided as code coverage is strongly correlated with bug coverage. However, since most covered codes may not containbugs, blindly extending code coverage is less efficient, especially for corner cases. Unlike coverage-based fuzzers who extend the code coverage in an undirected manner, a directed fuzzer spends most of its time budget on reaching specific target locations (e.g.,the bug-prone zone) without wasting resources stressing unrelated parts. Thus, directed greybox fuzzing is particularly suitable for scenarios such as patch testing, bug reproduction, and special bug hunting. In this paper, we conduct the first in-depth study of directed greybox fuzzing. We investigate 28 state-of-the-artfuzzers (82% are published after 2019) closely related to DGF, which have various directed types and optimization techniques. Based on the feature of DGF, we extract 15 metrics to conducta thorough assessment of the collected tools and systemize the knowledge of this field. Finally, we summarize the challenges and provide perspectives of this field, aiming to facilitate and boost future research on this topic.
@@ -651,6 +653,10 @@ remark: This website is only used for collecting and grouping the related paper.
 
 ### The Art, Science, and Engineering of Fuzzing: A Survey
 
+* <img src="image/wechat_24px.png">[Reading Note1](https://blog.csdn.net/qq_32505207/article/details/104303840)
+
+* <img src="image/wechat_24px.png">[Reading Note2](https://blog.csdn.net/qq_40398985/article/details/103585735)
+
 * <img src="image/pdf_24px.png">[Paper](./Paper/TSE19_Survey.pdf)
 
 **Abstract:** Among the many software testing techniques available today, fuzzing has remained highly popular due to its conceptual simplicity, its low barrier to deployment, and its vast amount of empirical evidence in discovering real-world software vulnerabilities. At a high level, fuzzing refers to a process of repeatedly running a program with generated inputs that may be syntactically or semantically malformed. While researchers and practitioners alike have invested a large and diverse effort towards improving fuzzing in recent years, this surge of work has also made it difficult to gain a comprehensive and coherent view of fuzzing. To help preserve and bring coherence to the vast literature of fuzzing, this paper presents a unified, general-purpose model of fuzzing together with a taxonomy of the current fuzzing literature. We methodically explore the design decisions at every stage of our model fuzzer by surveying the related literature and innovations in the art, science, and engineering that make modern-day fuzzers effective.
@@ -665,7 +671,9 @@ remark: This website is only used for collecting and grouping the related paper.
 
 ### Fuzzing: a survey
 
-* <img src="image/zhihu.png">[Reading Note](https://zhuanlan.zhihu.com/p/99099607)
+* <img src="image/zhihu.png">[Reading Note1](https://zhuanlan.zhihu.com/p/99099607)
+
+* <img src="image/zhihu.png">[Reading Note2](https://blog.csdn.net/u014578266/article/details/89042508)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/Cybersecurity18_Fuzzing.pdf)
 
@@ -693,6 +701,9 @@ remark: This website is only used for collecting and grouping the related paper.
 
 ### MUZZ: Thread-aware Grey-box Fuzzing for Effective Bug Hunting in Multithreaded Programs (USENIX Security2020)
 
+
+* <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/09/18/muzz-thread-aware-grey-box-fuzzing-for-effective-bug-hunting-in-multithreaded-programs/)
+
 * <img src="image/youtube.png">[Video](https://www.usenix.org/conference/usenixsecurity20/presentation/chen-hongxu)
 
 * <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/sec20-chen-hongxu.pdf)
@@ -707,6 +718,8 @@ We evaluate Muzz on twelve real-world multithreaded programs. Experiments show t
 
 
 ### KRace: Data Race Fuzzing for Kernel File Systems (S&P 2020)
+
+* <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/06/19/krace-data-race-fuzzing-for-kernel-file-systems)
 
 * <img src="image/youtube.png">[Video](https://youtu.be/8m2fMxvRtgg)
 
@@ -726,6 +739,8 @@ In this paper, we bring coverage-guided fuzzing to the concurrency dimension wit
 
 ### A Heuristic Framework to Detect Concurrency Vulnerabilities (ACSAC 2018)
 
+* <img src="image/zhihu.png">[Reading Note](https://kuaibao.qq.com/s/20190821AZNY0H00?refer=spider)
+* 
 * <img src="image/pdf_24px.png">[Paper](./Paper/ACSAC18_AFLCon.pdf)
 
 **Abstract:** With a growing demand of concurrent software to exploit multi-core hardware capability, concurrency vulnerabilities have become an inevitable threat to the security of today's IT industry. Existing concurrent program detection schemes focus mainly on detecting concurrency errors such as data races, atomicity violation, etc., with little attention paid to detect concurrency vulnerabilities that may be exploited to infringe security. In this paper, we propose a heuristic framework that combines both static analysis and fuzz testing to detect targeted concurrency vulnerabilities such as concurrency buffer overflow, double free, and use-after-free. The static analysis locates sensitive concurrent operations in a concurrent program, categorizes each finding into a potential type of concurrency vulnerability, and determines the execution order of the sensitive operations in each finding that would trigger the suspected concurrency vulnerability. The results are then plugged into the fuzzer with the execution order fixed by the static analysis in order to trigger the suspected concurrency vulnerabilities.
@@ -745,6 +760,8 @@ In evaluating the proposed heuristic framework with a benchmark suit of six real
 
 
 ### HyDiff: Hybrid Differential Software Analysis (ICSE 2020)
+
+* <img src="image/zhihu.png">[Reading Note](https://zhuanlan.zhihu.com/p/138238406)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/ICSE20_Hydiff.pdf)
 
@@ -1361,6 +1378,8 @@ In this paper, we approach the problem of coverage-guided kernel fuzzing in an O
 
 ### HFL: Hybrid Fuzzing on the Linux Kernel (NDSS 2020)
 
+* <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/05/09/hfl-hybrid-fuzzing-on-the-linux-kernel/)
+
 * <img src="image/zhihu.png">[Reading Note](https://zhuanlan.zhihu.com/p/123373175)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/NDSS20_HFL.pdf)
@@ -1598,6 +1617,8 @@ In this paper, we present an application-aware evolutionary fuzzing strategy tha
 
 
 ### Fuzzing JavaScript Engines with Aspect-preserving Mutation (S&P 2020)
+
+* <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/07/10/fuzzing-javascript-engines-with-aspect-preserving-mutation/)
 
 * <img src="image/pdf_24px.png">[Paper](https://gts3.org/assets/papers/2020/park:die.pdf)
 
@@ -1837,6 +1858,8 @@ In this paper, we present PAFL, a framework that utilizes efficient guiding info
 
 ### ParmeSan: Sanitizer-guided Greybox Fuzzing (USENIX Security2020)
 
+* <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/09/04/parmesan-sanitizer-guided-greybox-fuzzing/)
+
 * <img src="image/pdf_24px.png">[Paper](./Paper/USENIX20_ParmeSan.pdf)
 
 * <img src="image/github_24px.png">[Code](https://github.com/vusec/parmesan)
@@ -1850,7 +1873,11 @@ In this paper, we present sanitizer-guided fuzzing, a new design point in this s
 
 ### Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities (ICSE 2020)
 
+* <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/07/31/typestate-guided-fuzzer-for-discovering-use-after-free-vulnerabilities/)
+
 * <img src="image/pdf_24px.png">[Paper](https://www.scedt.tees.ac.uk/s.qin/papers/icse2020-uafl.pdf)
+
+* <img src="image/ppt_24px.png">[Slides](https://wcventure.github.io/pdf/ICSE2020_UAFL_Slides.pdf)
 
 **Abstract:** Existing coverage-based fuzzers usually use the individual control flow graph (CFG) edge coverage 
 to guide the fuzzing process, which has shown great potential in finding vulnerabilities.
@@ -1871,6 +1898,8 @@ We discovered 10 previously unknown vulnerabilities, and received 5 new CVEs.
 
 ### IJON: Exploring Deep State Spaces via Fuzzing (S&P 2020)
 
+* <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/03/20/ijon-exploring-deep-state-spaces-via-fuzzing/)
+ 
 * <img src="image/zhihu.png">[Reading Note](https://zhuanlan.zhihu.com/p/109971382)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/SP20_IJON.pdf)
@@ -1892,7 +1921,9 @@ In this paper, we propose IJON, an annotation mechanism that a human analyst can
 
 # Directed Fuzzing
 
-### Binary-level Directed Fuzzing for Use-After-Free Vulnerabilities (2020)
+### Binary-level Directed Fuzzing for Use-After-Free Vulnerabilities (RAID 2020)
+
+* <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://mp.weixin.qq.com/s/_kFbnKNa-fXbfqF-7TFN5A)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/Arxiv20_BinaryUAF.pdf)
 
@@ -1976,6 +2007,8 @@ In this paper, we propose Sequence-coverage Directed Fuzzing (SCDF), a lightweig
 
 
 ### MemLock: Memory Usage Guided Fuzzing (ICSE2020)
+
+ * <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://mp.weixin.qq.com/s/w1qNvhm6MtPIp8IHqZFKgQ)
 
 * <img src="image/youtube.png">[Video](https://youtu.be/fXxx46Oj-_s)
 
@@ -2172,7 +2205,7 @@ In this paper, we propose a deep-learning-based approach to predict the reachabi
 
 ### NeuFuzz: Efficient Fuzzing With Deep Neural Network (Access 2019)
 
-* <img src="image/pdf_24px.png">[Paper](./Paper/Access19_NeuFuzz .pdf)
+* <img src="image/pdf_24px.png">[Paper](./Paper/Access19_NeuFuzz.pdf)
 
 **Abstract:** Coverage-guided gray box fuzzing is one of the most popular and effective techniques for discovering vulnerabilities due to its nature of high speed and scalability. However, the existing techniques generally focus on code coverage but not on vulnerable code. These techniques aim to cover as many paths as possible rather than to explore paths that are more likely to be vulnerable. When selecting the seeds to test, the existing fuzzers usually treat all seed inputs equally, ignoring the fact that paths exercised by different seed inputs are not equally vulnerable. This results in wasting time testing uninteresting paths rather than vulnerable paths, thus reducing the efficiency of vulnerability detection. In this paper, we present a solution, NeuFuzz, using the deep neural network to guide intelligent seed selection during gray box fuzzing to alleviate the aforementioned limitation. In particular, the deep neural network is used to learn the hidden vulnerability pattern from a large number of vulnerable and clean program paths to train a prediction model to classify whether paths are vulnerable. The fuzzer then prioritizes seed inputs that are capable of covering the likely to be vulnerable paths and assigns more mutation energy (i.e., the number of inputs to be generated) to these seeds. We implemented a prototype of NeuFuzz based on an existing fuzzer PTfuzz and evaluated it on two different test suites: LAVA-M and nine real-world applications. The experimental results showed that NeuFuzz can find more vulnerabilities than the existing fuzzers in less time. We have found 28 new security bugs in these applications, 21 of which have been assigned as CVE IDs.
 
@@ -2278,6 +2311,8 @@ We introduce DeepSmith, a novel machine learning approach to accelerating compil
 # Data Flow Sensitive Fuzzing
 
 ### GREYONE: Data Flow Sensitive Fuzzing (USENIX Security2020)
+
+* <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/05/29/greyone-data-flow-sensitive-fuzzing/)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/USENIX20_GREYONE.pdf)
 
@@ -2467,6 +2502,8 @@ Our prototype for detecting Spectre V1 vulnerabilities successfully identifies a
 
 ### FuzzGen: Automatic Fuzzer Generation (USENIX Security2020)
 
+* <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/06/05/fuzzgen-automatic-fuzzer-generation/)
+
 * <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/sec20fall_ispoglou_prepub.pdf)
 
 **Abstract:** Fuzzing is a testing technique to discover unknown vulnerabilities in software. When applying fuzzing to libraries, the core idea of supplying random input remains unchanged, yet it is non-trivial to achieve good code coverage. Libraries cannot run as standalone programs, but instead are invoked through another application. Triggering code deep in a library remains challenging as specific sequences of API calls are required to build up the necessary state. Libraries are diverse and have unique interfaces that require unique fuzzers, so far written by a human analyst.
@@ -2499,6 +2536,8 @@ From this information theoretic perspective, we develop Entropic, an entropy-bas
 
 ### Fuzzing Error Handling Code using Context-Sensitive Software Fault Injection (USENIX Security2020)
 
+* <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/07/15/fuzzing-error-handling-code-using-context-sensitive-software-fault-injection/)
+
 * <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/sec20fall_jiang_prepub.pdf)
 
 **Abstract:** Error handling code is often critical but difficult to test in reality. As a result, many hard-to-find bugs exist in error handling code and may cause serious security problems once triggered. Fuzzing has become a widely used technique for finding software bugs nowadays. Fuzzing approaches mutate and/or generate various inputs to cover infrequently-executed code. However, existing fuzzing approaches are very limited in testing error handling code, because some of this code can be only triggered by occasional errors (such as insufficient memory and network-connection failures), but not specific inputs. Therefore, existing fuzzing approaches in general cannot effectively test such error handling code.
@@ -2507,6 +2546,8 @@ In this paper, we propose a new fuzzing framework named FIFUZZ, to effectively t
 
 
 ### FANS: Fuzzing Android Native System Services via Automated Interface Analysis (USENIX Security2020)
+
+ * <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/08/14/fans-fuzzing-android-native-system-services-via-automated-interface-analysis/)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/USENIX20_Fans.pdf)
 
@@ -2529,6 +2570,8 @@ In this paper, we propose a new fuzzing solution to discover IPC bugs in IPC ser
 
 
 ### HYPER-CUBE: High-Dimensional Hypervisor Fuzzing (NDSS 2020)
+
+* <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/04/28/hyper-cube-high-dimensional-hypervisor-fuzzing/)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/NDSS20_HYPER-CUBE.pdf)
 

@@ -1291,7 +1291,7 @@ In this paper, we highlight the potential of applying fuzzing to find not just m
 
 * <img src="image/wechat_24px.png">[Reading Note From BAIZE](https://mp.weixin.qq.com/s/nq1A12Dra2vUiQWbtLXctg)
 
-* <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://loccs.sjtu.edu.cn/gossip/blog/2019/03/06/razzer-finding-kernel-race-bugs-through-fuzzing/)
+* <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2019/03/06/razzer-finding-kernel-race-bugs-through-fuzzing/)
 
 * <img src="image/blog_24px.jpg">[Reading Note](https://www.jianshu.com/p/43ced9660257)
 
@@ -1550,7 +1550,7 @@ To resolve the issue, we propose coverage accounting, an innovative approach tha
 
 * <img src="image/youdao_note_24px.png">[Reading Note](http://note.youdao.com/noteshare?id=6a4b00d912eab145d1c1f32f11bde3e0&sub=7DADC02169A14B33979BCCB2556E4526)
 
-* <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://loccs.sjtu.edu.cn/gossip/blog/2019/06/05/redqueen-fuzzing-with-input-to-state-correspondence/)
+* <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2019/06/05/redqueen-fuzzing-with-input-to-state-correspondence/)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/NDSS19_REDQUEEN.pdf)
 
@@ -1874,6 +1874,8 @@ In this paper, we present sanitizer-guided fuzzing, a new design point in this s
 ### Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities (ICSE 2020)
 
 * <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/07/31/typestate-guided-fuzzer-for-discovering-use-after-free-vulnerabilities/)
+
+* <img src="image/wechat_24px.png">[Reading Note](https://mp.weixin.qq.com/s/RE19ba-BnQsZRST338lJHA)
 
 * <img src="image/pdf_24px.png">[Paper](https://www.scedt.tees.ac.uk/s.qin/papers/icse2020-uafl.pdf)
 

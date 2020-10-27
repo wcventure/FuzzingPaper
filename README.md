@@ -103,6 +103,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [PathAFL: Path-Coverage Assisted Fuzzing](#pathafl-path-coverage-assisted-fuzzing-asia-ccs-2020)
 
 - **Others 2020**
+  - [CSEFuzz: Fuzz Testing Based on Symbolic Execution (Access 2020)](#csefuzz-fuzz-testing-based-on-symbolic-execution-access-2020)
   - [A Quantitative Comparison of Covera (AST 2020)](#a-quantitative-comparison-of-covera-ast-2020)
   - [Finding Bugs in File Systems with an Extensible Fuzzing Framework (TOS 2020)](#finding-bugs-in-file-systems-with-an-extensible-fuzzing-framework-tos-2020)
   - [ICS Protocol Fuzzing: Coverage Guided Packet Crack and Generation (DAC 2020)](#ics-protocol-fuzzing-coverage-guided-packet-crack-and-generation-dac-2020)
@@ -417,6 +418,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [IMF: Inferred Model-based Fuzzer (CCS 2017)](#imf-inferred-model-based-fuzzer-ccs-2017)
 
 - [**Hybrid Fuzzing**](#hybrid-fuzzing)
+  - [CSEFuzz: Fuzz Testing Based on Symbolic Execution (Access 2020)](#csefuzz-fuzz-testing-based-on-symbolic-execution-access-2020)
   - [Sequence directed hybrid fuzzing (SANER 2020)](#sequence-directed-hybrid-fuzzing-saner-2020)
   - [HFL: Hybrid Fuzzing on the Linux Kernel (NDSS 2020)](#hfl-hybrid-fuzzing-on-the-linux-kernel-ndss-2020)
   - [PANGOLIN: Incremental Hybrid Fuzzing with Polyhedral Path Abstraction (S&P 2020)](#pangolin-incremental-hybrid-fuzzing-with-polyhedral-path-abstraction-sp-2020)
@@ -1368,6 +1370,13 @@ In this paper, we approach the problem of coverage-guided kernel fuzzing in an O
 
 
 # Hybrid Fuzzing:
+
+### CSEFuzz: Fuzz Testing Based on Symbolic Execution (Access 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9222017)
+
+**Abstract:** Fuzz testing has been successful in finding defects of various software packages. These defects include file parsing, image processing, Internet browsers, and network protocols. However, the quality of the initial seed test cases greatly influences the coverage and defect detection capability of fuzz testing. To address this issue, we propose CSEFuzz, a fuzz testing approach based on symbolic execution for defect detection. First, CSEFuzz generates candidate test cases by symbolic execution and collects coverage information of the test cases. Then, CSEFuzz extracts the test-case templates of the test cases and selects a set of test-case templates according to specific coverage criteria. Finally, CSEFuzz selects test cases according to the selected test-case templates, and the selected test cases are used as initial seed test cases for fuzz testing. Experiments are conducted on 11 open-source programs. The results show that in comparison with afl-cmin, which is the test-case selection command of Kelinci, CSEFuzz with a path coverage criterion reduces the time costs of the initial seed test selection and verification by 94.26%. In addition, compared with afl-cmin, 32 more paths are covered and 16 more defects are detected by CSEFuzz
+
 
 ### Sequence directed hybrid fuzzing (SANER 2020)
 

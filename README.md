@@ -37,7 +37,7 @@ remark: This website is only used for collecting and grouping the related paper.
 - **FSE 2020**
   - [Fuzzing: On the Exponential Cost of Vulnerability Discovery](#fuzzing-on-the-exponential-cost-of-vulnerability-discovery-fse-2020)
   - [Boosting Fuzzer Efficiency: An Information Theoretic Perspective](#boosting-fuzzer-efficiency-an-information-theoretic-perspective-fse-2020)
-  - [CrFuzz: Fuzzing Multi-purpose Programs through Input Validation]
+  - [CrFuzz: Fuzzing Multi-purpose Programs through Input Validation](#crfuzz-fuzzing-multi-purpose-programs-through-input-validation-fse-2020)
   - [Detecting Critical Bugs in SMT Solvers using Blackbox Mutational Fuzzing](#detecting-critical-bugs-in-smt-solvers-using-blackbox-mutational-fuzzing-fse)
   - [Intelligent REST API Data Fuzzing]
   - [MTFuzz: Fuzzing with a Multi-task Neural Network](#mtfuzz-fuzzing-with-a-multi-task-neural-network-fse-2020)
@@ -582,7 +582,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [MoFuzz: A Fuzzer Suite for Testing Model-Driven Software Engineering Tools (ASE 2020)](#mofuzz-a-fuzzer-suite-for-testing-model-driven-software-engineering-tools-ase-2020)
   - [AFL++ : Combining Incremental Steps of Fuzzing Research (USENIX Woot2020)](#afl-combining-incremental-steps-of-fuzzing-research-usenix-woot2020)
   - [Active Fuzzing for Testing and Securing Cyber-Physical Systems (ISSTA 2020)](#active-fuzzing-for-testing-and-securing-cyber-physical-systems-issta-2020)
-  - [CrFuzz: Fuzzing Multi-purpose Programs through Input Validation (FSE 2020)]
+  - [CrFuzz: Fuzzing Multi-purpose Programs through Input Validation (FSE 2020)](#crfuzz-fuzzing-multi-purpose-programs-through-input-validation-fse-2020)
   - [SpecFuzz: Bringing Spectre-type vulnerabilities to the surface (USENIX Security2020)](#specfuzz-bringing-spectre-type-vulnerabilities-to-the-surface-usenix-security2020)
   - [FuzzGen: Automatic Fuzzer Generation (USENIX Security2020)](#fuzzgen-automatic-fuzzer-generation-usenix-security2020)
   - [USBFuzz: A Framework for Fuzzing USB Drivers by Device Emulation (USENIX Security2020)](#usbfuzz-a-framework-for-fuzzing-usb-drivers-by-device-emulation-usenix-security2020)
@@ -2486,9 +2486,9 @@ We propose a novel coverage-guided fuzz testing tool for big data analytics, cal
 
 ### CrFuzz: Fuzzing Multi-purpose Programs through Input Validation (FSE 2020)
 
-* <img src="image/pdf_24px.png">[Paper]()
+* <img src="image/pdf_24px.png">[Paper](https://lifeasageek.github.io/papers/suhwan-crfuzz.pdf)
 
-**Abstract:** 
+**Abstract:** Fuzz testing has been proved its effectiveness in discovering software vulnerabilities. Empowered its randomness nature along with a coverage-guiding feature, fuzzing has been identified a vast number of vulnerabilities in real-world programs. This paper begins with an observation that the design of the current state-of-the-art fuzzers is not well suited for a particular (but yet important) set of software programs. Specifically, current fuzzers have limitations in fuzzing programs serving multiple purposes, where each purpose is controlled by extra options. This paper proposes CrFuzz, which overcomes this limitation. CrFuzz designs a clustering analysis to automatically predict if a newly given input would be accepted or not by a target program. Exploiting this prediction capability, CrFuzz is designed to efficiently explore the programs with multiple purposes. We employed CrFuzz for three state-of-the-art fuzzers, AFL, QSYM, and MOpt, and CrFuzz-augmented versions have shown 19.3% and 5.68% better path and edge coverage on average. More importantly, during two weeks of long-running experiments, CrFuzz discovered 277 previously unknown vulnerabilities where 212 of those are already confirmed and fixed by the respected vendors. We would like to emphasize that many of these vulnerabilities were discoverd from FFMpeg, ImageMagick, and Graphicsmagick, all of which are targets of Google’s OSS-Fuzz project and thus heavily fuzzed for last three years by far. Nevertheless, CrFuzz identified a remarkable number of vulnerabilities, demonstrating its effectiveness of vulnerability finding capability.
 
 
 

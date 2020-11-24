@@ -20,7 +20,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [UNIFUZZ: A Holistic and Pragmatic Metrics-Driven Platform for Evaluating Fuzzers](#unifuzz-a-holistic-and-pragmatic-metrics-driven-platform-for-evaluating-fuzzers-usenix-security2021)
 
 - **CCS 2020**
-  - [FREEDOM: Engineering a State-of-the-Art DOM Fuzzer]
+  - [FREEDOM: Engineering a State-of-the-Art DOM Fuzzer](#freedom-engineering-a-state-of-the-art-dom-fuzzer-ccs-2020)
   - [SQUIRREL: Testing Database Management Systems with Language Validity and Coverage Feedback](#squirrel-testing-database-management-systems-with-language-validity-and-coverage-feedback-ccs-2020)
 
 - **ASE 2020**
@@ -39,7 +39,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Boosting Fuzzer Efficiency: An Information Theoretic Perspective](#boosting-fuzzer-efficiency-an-information-theoretic-perspective-fse-2020)
   - [CrFuzz: Fuzzing Multi-purpose Programs through Input Validation](#crfuzz-fuzzing-multi-purpose-programs-through-input-validation-fse-2020)
   - [Detecting Critical Bugs in SMT Solvers using Blackbox Mutational Fuzzing](#detecting-critical-bugs-in-smt-solvers-using-blackbox-mutational-fuzzing-fse)
-  - [Intelligent REST API Data Fuzzing]
+  - [Intelligent REST API Data Fuzzing](#intelligent-rest-api-data-fuzzing-fse-2020)
   - [MTFuzz: Fuzzing with a Multi-task Neural Network](#mtfuzz-fuzzing-with-a-multi-task-neural-network-fse-2020)
 
 - **ACSAC 2020**
@@ -574,11 +574,12 @@ remark: This website is only used for collecting and grouping the related paper.
   - [ct-fuzz: Fuzzing for Timing Leaks (ICST 2020)](#ct-fuzz-fuzzing-for-timing-leaks-icst-2020)
   - [DifFuzz: Differential Fuzzing for Side-Channel Analysis (ICSE 2019)](#diffuzz-differential-fuzzing-for-side-channel-analysis-icse-2019)
 
-- [**API Fuzzing**]()
-  - [Intelligent REST API Data Fuzzing (FSE 2020)]
+- [**API Fuzzing**](#api-fuzzing)
+  - [Intelligent REST API Data Fuzzing (FSE 2020)](#intelligent-rest-api-data-fuzzing-fse-2020)
   - [REST-ler: Stateful REST API Fuzzing (ICSE 2019)](#rest-ler-stateful-rest-api-fuzzing-icse-2019)
 
 - [**Other Interesting Fuzzing**](#other-interesting-fuzzing)
+  - [FREEDOM: Engineering a State-of-the-Art DOM Fuzzer (CCS 2020)](#freedom-engineering-a-state-of-the-art-dom-fuzzer-ccs-2020)
   - [SQUIRREL: Testing Database Management Systems with Language Validity and Coverage Feedback (CCS 2020)](#squirrel-testing-database-management-systems-with-language-validity-and-coverage-feedback-ccs-2020)
   - [BigFuzz: Efficient Fuzz Testing for Data Analytics using Framework Abstraction (ASE 2020)](#bigfuzz-efficient-fuzz-testing-for-data-analytics-using-framework-abstraction-ase-2020)
   - [MoFuzz: A Fuzzer Suite for Testing Model-Driven Software Engineering Tools (ASE 2020)](#mofuzz-a-fuzzer-suite-for-testing-model-driven-software-engineering-tools-ase-2020)
@@ -2437,6 +2438,13 @@ We instantiate our approach to the problem of fuzzing smart contracts, a domain 
 
 # API Fuzzing
 
+### Intelligent REST API Data Fuzzing (FSE 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://patricegodefroid.github.io/public_psfiles/fse2020.pdf)
+
+**Abstract:** The cloud runs on REST APIs. In this paper, we study how to intelligently generate data payloads embedded in REST API requests in order to find data-processing bugs in cloud services. We discuss how to leverage REST API specifications, which, by definition, contain data schemas for API request bodies.  We then propose and evaluate a range of data fuzzing techniques, including structural schema fuzzing rules, various rule combinations, search heuristics, extracting data values from examples included in REST API specifications, and learning data values on-the-fly from previous service responses. After evaluating these techniques, we identify the top-performing combination and use this algorithm to fuzz several Microsoft Azure cloud services. During our experiments, we found 100s of “Internal Server Error” service crashes, which we triaged into 17 unique bugs and reported to Azure developers.  All these bugs are reproducible, confirmed, and fixed or in the process of being fixed.
+
+
 ### REST-ler: Stateful REST API Fuzzing (ICSE 2019)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/ICSE19_RESTler.pdf)
@@ -2445,8 +2453,17 @@ We instantiate our approach to the problem of fuzzing smart contracts, a domain 
 We present experimental results showing that these two techniques are necessary to thoroughly exercise a service under test while pruning the large search space of possible request sequences. We used REST-ler to test GitLab, a large open-source self-hosted Git service, as well as several Microsoft Azure and Office365 cloud services. REST-ler found 28 bugs in Gitlab and several bugs in each of the Azure and Office365 cloud services tested so far. These bugs have been confirmed by the service owners, and are either in the process of being fixed or have already been fixed.
 
 
-
 # Other Interesting Fuzzing
+
+### FREEDOM: Engineering a State-of-the-Art DOM Fuzzer (CCS 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://dl.acm.org/doi/pdf/10.1145/3372297.3423340)
+
+* <img src="image/github_24px.png">[Code](https://github.com/sslab-gatech/freedom)
+
+**Abstract:** The DOM engine of a web browser is a popular attack surface and has been thoroughly fuzzed during its development. A common approach adopted by the latest DOM fuzzers is to generate new inputs based on context-free grammars. However, such a generative approach fails to capture the data dependencies in the inputs of a DOM engine, namely, HTML documents. Meanwhile, it is unclear whether or not coverage-guided mutation, which is well-known to be effective in fuzzing numerous software, still remains to be effective against DOM engines. Worse yet, existing DOM fuzzers cannot adopt a coverage-guided approach because they are unable to fully support HTML mutation and suffer from low browser throughput. To scientifically understand the effectiveness and limitations of the two approaches, we propose FreeDom, a full-fledged cluster-friendly DOM fuzzer that works with both generative and coverage-guided modes. FreeDom relies on a context-aware intermediate representation to describe HTML documents with proper data dependencies. FreeDom also exhibits up to 3.74x higher throughput through browser self-termination. FreeDom has found 24 previously unknown bugs in commodity browsers including Safari, Firefox, and Chrome, and 10 CVEs has been assigned so far. With the context-aware generation, FreeDom finds 3x more unique crashes in WebKit than the state-of-the-art DOM fuzzer, Domato. FreeDom guided by coverage is more effective in revealing new code blocks (2.62%) and finds three complex bugs that its generative approach fails to find. However, coverage-guided mutation that bootstraps with an empty corpus triggers 3.8x fewer unique crashes than the generative approach. The newly revealed coverage, more often than not, negatively affects the effectiveness of DOM fuzzers in bug finding. Therefore, we consider context-aware generation the best practice to find more DOM engine bugs and expect further improvement on coverage-guided DOM fuzzing facilitated by FreeDom.
+
+
 
 ### SQUIRREL: Testing Database Management Systems with Language Validity and Coverage Feedback (CCS 2020)
 
@@ -2601,6 +2618,8 @@ Our evaluation shows that we can find more bugs (over 2x) and coverage (as much 
 
 
 ### FuzzFactory: Domain-Specific Fuzzing with Waypoints (OOPSLA 2019)
+
+* <img src="image/csdn_24px.png">[Reading Note](https://blog.csdn.net/weixin_44728238/article/details/106528070)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/OOPSLA19_FuzzFactory.pdf)
 

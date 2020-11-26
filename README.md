@@ -223,6 +223,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [CollAFL: Path Sensitive Fuzzing](#collafl-path-sensitive-fuzzing-sp-2018)
 
 - **USENIX Security 2018**
+  - [FUZE: Towards Facilitating Exploit Generation for Kernel Use-After-Free Vulnerabilities]
   - [MoonShine: Optimizing OS Fuzzer Seed Selection with Trace Distillation](#moonshine-optimizing-os-fuzzer-seed-selection-with-trace-distillation-usenix-security2018)
   - [QSYM : A Practical Concolic Execution Engine Tailored for Hybrid Fuzzing](#qsym-a-practical-concolic-execution-engine-tailored-for-hybrid-fuzzing-usenix-security2018)
 
@@ -412,6 +413,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Razzer: Finding Kernel Race Bugs through Fuzzing (S&P 2019)](#razzer-finding-kernel-race-bugs-through-fuzzing-sp-2019)
   - [Unicorefuzz: On the Viability of Emulation for Kernelspace Fuzzing (USENIX WOOT'19)](#unicorefuzz-on-the-viability-of-emulation-for-kernelspace-fuzzing-usenix-woot19)
   - [MoonShine: Optimizing OS Fuzzer Seed Selection with Trace Distillation (USENIX Security2018)](#moonshine-optimizing-os-fuzzer-seed-selection-with-trace-distillation-usenix-security2018)
+  - [FUZE: Towards Facilitating Exploit Generation for Kernel Use-After-Free Vulnerabilities (USENIX Security2018)]
   - [CAB-Fuzz: Practical Concolic Testing Techniques for COTS Operating Systems (Usenix Security2017)](#cab-fuzz-practical-concolic-testing-techniques-for-cots-operating-systems-usenix-security2017)
   - [kAFL: Hardware-Assisted Feedback Fuzzing for OS Kernels (Usenix Security2017)](#kafl-hardware-assisted-feedback-fuzzing-for-os-kernels-usenix-security2017)
   - [DIFUZE: Interface aware fuzzing for kernel drivers (CCS 2017)](#difuze-interface-aware-fuzzing-for-kernel-drivers-ccs-2017)
@@ -1322,6 +1324,23 @@ In this paper, we highlight the potential of applying fuzzing to find not just m
 **Abstract:** OS fuzzers primarily test the system call interface between the OS kernel and user-level applications for security vulnerabilities. The effectiveness of evolutionary OS fuzzers depends heavily on the quality and diversity of their seed system call sequences. However, generating good seeds for OS fuzzing is a hard problem as the behavior of each system call depends heavily on the OS kernel state created by the previously executed system calls. Therefore, popular evolutionary OS fuzzers often rely on hand-coded rules for generating valid seed sequences of system calls that can bootstrap the fuzzing process. Unfortunately, this approach severely restricts the diversity of the seed system call sequences and therefore limits the effectiveness of the fuzzers.
 In this paper, we develop MoonShine, a novel strategy for distilling seeds for OS fuzzers from system call traces of real-world programs while still maintaining the dependencies across the system calls. MoonShine leverages light-weight static analysis for efficiently detecting dependencies across different system calls.
 We designed and implemented MoonShine as an extension to Syzkaller, a state-of-the-art evolutionary fuzzer for the Linux kernel. Starting from traces containing 2.8 million system calls gathered from 3,220 real-world programs, MoonShine distilled down to just over 14,000 calls while preserving 86% of the original code coverage. Using these distilled seed system call sequences, MoonShine was able to improve Syzkaller's achieved code coverage for the Linux kernel by 13% on average. MoonShine also found 14 new vulnerabilities in the Linux kernel that were not found by Syzkaller.
+
+
+### FUZE: Towards Facilitating Exploit Generation for Kernel Use-After-Free Vulnerabilities (USENIX Security2018)
+
+* <img src="image/because.png">[Reading Note](https://www.jianshu.com/p/cfe7c9f7e852?utm_campaign=hugo)
+  
+* <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-wu_0.pdf)
+
+* <img src="image/ppt_24px.png">[Slides](https://www.usenix.org/sites/default/files/conference/protected-files/security18_slides_wu.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/ww9210/Linux_kernel_exploits)
+
+**Abstract:** Software vendors usually prioritize their bug remediation based on ease of their exploitation. However, accurately determining exploitability typically takes tremendous hours and requires significant manual efforts. To address this issue, automated exploit generation techniques can be adopted. In practice, they however exhibit an insufficient ability to evaluate exploitability particularly for the kernel Use-After-Free (UAF) vulnerabilities. This is mainly because of the complexity of UAF exploitation as well as the scalability of an OS kernel.
+
+In this paper, we therefore propose FUZE, a new framework to facilitate the process of kernel UAF exploitation. The design principle behind this technique is that we expect the ease of crafting an exploit could augment a security analyst with the ability to expedite exploitability evaluation. Technically, FUZE utilizes kernel fuzzing along with symbolic execution to identify, analyze and evaluate the system calls valuable and useful for kernel UAF exploitation.
+
+To demonstrate the utility of FUZE, we implement FUZE on a 64-bit Linux system by extending a binary analysis framework and a kernel fuzzer. Using 15 real-world kernel UAF vulnerabilities on Linux systems, we then demonstrate FUZE could not only escalate kernel UAF exploitability and but also diversify working exploits. In addition, we show that FUZE could facilitate security mitigation bypassing, making exploitability evaluation less labor-intensive and more efficient.
 
 
 ### kAFL: Hardware-Assisted Feedback Fuzzing for OS Kernels (Usenix Security2017)

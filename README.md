@@ -18,6 +18,7 @@ remark: This website is only used for collecting and grouping the related paper.
 
 - **USENIX Security 2021**
   - [UNIFUZZ: A Holistic and Pragmatic Metrics-Driven Platform for Evaluating Fuzzers](#unifuzz-a-holistic-and-pragmatic-metrics-driven-platform-for-evaluating-fuzzers-usenix-security2021)
+  - [Nyx: Greybox Hypervisor Fuzzing using Fast Snapshots and Affine Types](#nyx-greybox-hypervisor-fuzzing-using-fast-snapshots-and-affine-types-usenix-security2021)
 
 - **CCS 2020**
   - [FREEDOM: Engineering a State-of-the-Art DOM Fuzzer](#freedom-engineering-a-state-of-the-art-dom-fuzzer-ccs-2020)
@@ -581,6 +582,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [REST-ler: Stateful REST API Fuzzing (ICSE 2019)](#rest-ler-stateful-rest-api-fuzzing-icse-2019)
 
 - [**Other Interesting Fuzzing**](#other-interesting-fuzzing)
+  - [Nyx: Greybox Hypervisor Fuzzing using Fast Snapshots and Affine Types](#nyx-greybox-hypervisor-fuzzing-using-fast-snapshots-and-affine-types-usenix-security2021)
   - [FREEDOM: Engineering a State-of-the-Art DOM Fuzzer (CCS 2020)](#freedom-engineering-a-state-of-the-art-dom-fuzzer-ccs-2020)
   - [SQUIRREL: Testing Database Management Systems with Language Validity and Coverage Feedback (CCS 2020)](#squirrel-testing-database-management-systems-with-language-validity-and-coverage-feedback-ccs-2020)
   - [BigFuzz: Efficient Fuzz Testing for Data Analytics using Framework Abstraction (ASE 2020)](#bigfuzz-efficient-fuzz-testing-for-data-analytics-using-framework-abstraction-ase-2020)
@@ -2480,6 +2482,16 @@ We present experimental results showing that these two techniques are necessary 
 
 
 # Other Interesting Fuzzing
+
+### Nyx: Greybox Hypervisor Fuzzing using Fast Snapshots and Affine Types (USENIX Security2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/sec21summer_schumilo.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/RUB-SysSec/nyx)
+
+**Abstract:** A hypervisor (also know as virtual machine monitor, VMM) enforces the security boundaries between different virtual machines (VMs) running on the same physical machine. A malicious user who is able to run her own kernel on a cloud VM can interact with a large variety of attack surfaces. Exploiting a software fault in any of these surfaces leads to full access to all other VMs that are co-located on the same host. Hence, the efficient detection of hypervisor vulnerabilities is crucial for the security of the modern cloud infrastructure. Recent work showed that blind fuzzing is the most efficient approach to identify security issues in hypervisors, mainly due to an outstandingly high test throughput.
+
+In this paper we present the design and implementation of NYX, a highly optimized, coverage-guided hypervisor fuzzer. We show how a fast snapshot restoration mechanism that allows us to reload the system under test thousands of times per second is key to performance. Furthermore, we introduce a novel mutation engine based on custom bytecode programs, encoded as directed acyclic graphs (DAG), and affine types, that enables the required flexibility to express complex interactions. Our evaluation shows that, while NYX has a lower throughput than the state-of-the-art hypervisor fuzzer, it performs competitively on simple targets: NYX typically requires only a few minutes longer to achieve the same test coverage. On complex devices, however, our approach is able to significantly outperform existing works. Moreover, we are able to uncover substantially more bugs: in total, we uncovered 44 new bugs with 22 CVEs requested. Our results demonstrate that coverage guidance is highly valuable, even if a blind fuzzer can be significantly faster.
 
 ### FREEDOM: Engineering a State-of-the-Art DOM Fuzzer (CCS 2020)
 

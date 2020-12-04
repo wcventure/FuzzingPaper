@@ -1185,7 +1185,14 @@ The key idea is to mutate operators of conforming types within the seed formulas
 
 ### Validating SMT Solvers via Semantic Fusion (PLDI 2020)
 
+* <img src="image/youtube.png">[Video](https://youtu.be/hEWpbO5yXPw)
+
 * <img src="image/pdf_24px.png">[Paper](https://wintered.github.io/papers/winterer-zhang-su-pldi20.pdf)
+
+* <img src="image/pdf_24px.png">[Slides](https://testsmt.github.io/slides/pldi20-semantic-fusion.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/testsmt/yinyang)
+
 
 **Abstract:** We introduce Semantic Fusion, a general, effective methodology for validating Satisfiability Modulo Theory (SMT) solvers. Our key idea is to fuse two existing equisatisfiable (i.e., both satisfiable or unsatisfiable) formulas into a new formula that combines the structures of its ancestors in a novel manner and preserves the satisfiability by construction. This fused formula is then used for validating SMT solvers. We realized Semantic Fusion as YinYang, a practical SMT solver testing tool. During four months of extensive testing, YinYang has found 45 confirmed, unique bugs in the default arithmetic and string solvers of Z3 and CVC4, the two state-of-the-art SMT solvers. Among these, 41 have already been fixed by the developers. The majority (29/45) of these bugs expose critical soundness issues. Our bug reports and testing effort have been well-appreciated by SMT solver developers.
 

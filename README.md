@@ -2303,7 +2303,7 @@ We introduce DeepSmith, a novel machine learning approach to accelerating compil
 
 ### Coverage Guided Differential Adversarial Testing of Deep Learning Systems (TNSE 2020)
 
-* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/1911.07931)
+* <img src="image/pdf_24px.png">[Paper](https://commons.erau.edu/cgi/viewcontent.cgi?article=2502&context=publication)
 
 **Abstract:** Deep learning is increasingly applied to safety-critical application domains such as autonomous cars and medical devices. It is of significant importance to ensure their reliability and robustness. In this paper, we propose DLFuzz, the coverage guided differential adversarial testing framework to guide deep learing systems exposing incorrect behaviors. DLFuzz keeps minutely mutating the input to maximize the neuron coverage and the prediction difference between the original input and the mutated input, without manual labeling effort or cross-referencing oracles from other systems with the same functionality. We also design multiple novel strategies for neuron selection to improve the neuron coverage. The incorrect behaviors obtained by DLFuzz are then exploited for retraining and improving the dependability of the models. We present empirical evaluations on two well-known datasets to demonstrate its effectiveness. Compared with DeepXplore, the state-of-the-art deep learning white-box testing framework, DLFuzz does not require extra efforts to find similar functional deep learning systems for cross-referencing check. But DLFuzz could generate 338.59% more adversarial inputs with 89.82% smaller perturbations, while maintaining the identities of the original inputs. DLFuzz also managed to averagely obtain 2.86% higher neuron coverage, and save 20.11% time consumption with respect to DeepXplore. We then evaluate the effectiveness of strategies for neuron selection, and demonstrated that all these strategies perform better than DeepXplore. Finally, DLFuzz proved to be able to improve the accuracy of deep learning systems by incorporating these adversarial inputs to retrain.
 
@@ -2369,7 +2369,8 @@ We implemented a prototype of GREYONE and evaluated it on the LAVA data set and 
 
 * <img src="image/pdf_24px.png">[Paper](https://andreafioraldi.github.io/assets/weizz-issta2020.pdf)
 
-**Abstract:** Fuzzing technologies have evolved at a fast pace in recent years, revealing bugs in programs with ever increasing depth and speed. Applications working with complex formats are however more difficult to take on, as inputs need to meet certain format-specific characteristics to get through the initial parsing stage and reach deeper behaviors of the program.
+**Abstract:** Fuzzing technologies have evolved at a fast pace in recent years, revealing bugs in programs with ever increasing depth and speed. Applications working with complex 
+formats are however more difficult to take on, as inputs need to meet certain format-specific characteristics to get through the initial parsing stage and reach deeper behaviors of the program.
 
 Unlike prior proposals based on manually written format specifications, we propose a technique to automatically generate and mutate inputs for unknown chunk-based binary formats. We identify dependencies between input bytes and comparison instructions, and use them to assign tags that characterize the processing logic of the program. Tags become the building block for structure-aware mutations involving chunks and fields of the input.
 

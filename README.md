@@ -46,7 +46,7 @@ remark: This website is only used for collecting and grouping the related paper.
 - **ACSAC 2020**
   - [DPIFuzz: A Differential Fuzzing Framework to Detect DPI Elusion Strategies for QUIC](#dpifuzz-a-differential-fuzzing-framework-to-detect-dpi-elusion-strategies-for-quic-acsac-2020)
   - [Cupid: Automatic Fuzzer Selection for Collaborative Fuzzing](#cupid-automatic-fuzzer-selection-for-collaborative-fuzzing-acsac-2020)
-  - [OmniFuzz: A Flexible Framework for Expediting Bug Finding by Leveraging Past (Mis-)Behavior to Discover New Bugs]
+  - [OmniFuzz: A Flexible Framework for Expediting Bug Finding by Leveraging Past (Mis-)Behavior to Discover New Bugs](#omniFuzz-a-flexible-framework-for-expediting-bug-finding-by-leveraging-past-acsac-2020)
 
 
 - **PLDI 2020**
@@ -525,7 +525,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Program-Adaptive Mutational Fuzzing (S&P 2015)](#program-adaptive-mutational-fuzzing-sp-2015)
 
 - [**Learning-based Fuzzing**](#learning-based-fuzzing)
-  - [OmniFuzz: A Flexible Framework for Expediting Bug Finding by Leveraging Past (Mis-)Behavior to Discover New Bugs (ACSAC 2020)]
+  - [OmniFuzz: A Flexible Framework for Expediting Bug Finding by Leveraging Past (Mis-)Behavior to Discover New Bugs (ACSAC 2020)](#omniFuzz-a-flexible-framework-for-expediting-bug-finding-by-leveraging-past-acsac-2020)
   - [Learning Input Tokens for Effective Fuzzing (ISSTA 2020)](#learning-input-tokens-for-effective-fuzzing-issta-2020)
   - [MTFuzz: Fuzzing with a Multi-task Neural Network (FSE 2020)](#mtfuzz-fuzzing-with-a-multi-task-neural-network-fse-2020)
   - [FuzzGuard: Filtering out Unreachable Inputs in Directed Grey-box Fuzzing through Deep Learning (USENIX Security2020)](#fuzzguard-filtering-out-unreachable-inputs-in-directed-grey-box-fuzzing-through-deep-learning-usenix-security2020)

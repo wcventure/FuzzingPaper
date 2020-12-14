@@ -46,6 +46,8 @@ remark: This website is only used for collecting and grouping the related paper.
 - **ACSAC 2020**
   - [DPIFuzz: A Differential Fuzzing Framework to Detect DPI Elusion Strategies for QUIC](#dpifuzz-a-differential-fuzzing-framework-to-detect-dpi-elusion-strategies-for-quic-acsac-2020)
   - [Cupid: Automatic Fuzzer Selection for Collaborative Fuzzing](#cupid-automatic-fuzzer-selection-for-collaborative-fuzzing-acsac-2020)
+  - [OmniFuzz: A Flexible Framework for Expediting Bug Finding by Leveraging Past (Mis-)Behavior to Discover New Bugs](#omnifuzz-a-flexible-framework-for-expediting-bug-finding-by-leveraging-past-mis-behavior-to-discover-new-bugs-acsac-2020)
+
 
 - **PLDI 2020**
   - [Validating SMT Solvers via Semantic Fusion](#validating-smt-solvers-via-semantic-fusion-pldi-2020)
@@ -523,6 +525,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Program-Adaptive Mutational Fuzzing (S&P 2015)](#program-adaptive-mutational-fuzzing-sp-2015)
 
 - [**Learning-based Fuzzing**](#learning-based-fuzzing)
+  - [OmniFuzz: A Flexible Framework for Expediting Bug Finding by Leveraging Past (Mis-)Behavior to Discover New Bugs (ACSAC 2020)](#omnifuzz-a-flexible-framework-for-expediting-bug-finding-by-leveraging-past-mis-behavior-to-discover-new-bugs-acsac-2020)
   - [Learning Input Tokens for Effective Fuzzing (ISSTA 2020)](#learning-input-tokens-for-effective-fuzzing-issta-2020)
   - [MTFuzz: Fuzzing with a Multi-task Neural Network (FSE 2020)](#mtfuzz-fuzzing-with-a-multi-task-neural-network-fse-2020)
   - [FuzzGuard: Filtering out Unreachable Inputs in Directed Grey-box Fuzzing through Deep Learning (USENIX Security2020)](#fuzzguard-filtering-out-unreachable-inputs-in-directed-grey-box-fuzzing-through-deep-learning-usenix-security2020)
@@ -2206,6 +2209,14 @@ We implemented the exponential schedule by extending AFL. In 24 hours, AFLFAST e
 
 
 # Learning-based Fuzzing
+
+### OmniFuzz: A Flexible Framework for Expediting Bug Finding by Leveraging Past (Mis-)Behavior to Discover New Bugs (ACSAC 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://dl.acm.org/doi/pdf/10.1145/3427228.3427269)
+
+Among various fuzzing approaches, coverage-guided grey-box fuzzing is perhaps the most prominent, due to its ease of use and effectiveness. Using this approach, the selection of inputs focuses on maximizing program coverage, e.g., in terms of the different branches that have been traversed. In this work, we begin with the observation that selecting any input that explores a new path, and giving equal weight to all paths, can lead to severe inefficiencies. For instance, although seemingly "new" crashes involving previously unexplored paths may be discovered, these often have the same root cause and actually correspond to the same bug. 
+
+To address these inefficiencies, we introduce a framework that incorporates a tighter feedback loop to guide the fuzzing process in exploring truly diverse code paths. Our framework employs (i) a vulnerability-aware selection of coverage metrics for enhancing the effectiveness of code exploration, (ii) crash deduplication information for early feedback, and (iii) a configurable input culling strategy that interleaves multiple strategies to achieve comprehensiveness. A novel aspect of our work is the use of hardware performance counters to derive coverage metrics. We present an approach for assessing and selecting the hardware events that can be used as a meaningful coverage metric for a target program. The results of our empirical evaluation using real-world programs demonstrate the effectiveness of our approach: in some cases, we explore fewer than 50% of the paths compared to a base fuzzer (AFL, MOpt, and Fairfuzz), yet on average, we improve new bug discovery by 31%, and find the same bugs (as the base) 3.3 times faster. Moreover, although we specifically chose applications that have been subject to recent fuzzing campaigns, we still discovered 9 new vulnerabilities.
 
 ### Learning Input Tokens for Effective Fuzzing (ISSTA 2020)
 

@@ -48,7 +48,6 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Cupid: Automatic Fuzzer Selection for Collaborative Fuzzing](#cupid-automatic-fuzzer-selection-for-collaborative-fuzzing-acsac-2020)
   - [OmniFuzz: A Flexible Framework for Expediting Bug Finding by Leveraging Past (Mis-)Behavior to Discover New Bugs](#omnifuzz-a-flexible-framework-for-expediting-bug-finding-by-leveraging-past-mis-behavior-to-discover-new-bugs-acsac-2020)
 
-
 - **PLDI 2020**
   - [Validating SMT Solvers via Semantic Fusion](#validating-smt-solvers-via-semantic-fusion-pldi-2020)
 
@@ -106,6 +105,9 @@ remark: This website is only used for collecting and grouping the related paper.
   - [PathAFL: Path-Coverage Assisted Fuzzing](#pathafl-path-coverage-assisted-fuzzing-asia-ccs-2020)
 
 - **Others 2020**
+  - [Fuzzing Technique in Web Applications and Beyond (MCTE 2020)](#fuzzing-technique-in-web-applications-and-beyond-mcte-2020)
+  - [Vulnerability Detection in SIoT Applications: A Fuzzing Method on their Binaries (IEEE Transactions on Network Science and Engineering 2020)](#vulnerability-detection-in-siot-applications-a-fuzzing-method-on-their-binaries-ieee-transactions-on-network-science-and-engineering-2020)
+  - [MaxAFL: Maximizing Code Coverage with a Gradient-Based Optimization Technique (Electronics 2020)](#maxafl-maximizing-code-coverage-with-a-gradient-based-optimization-technique-electronics-2020)
   - [CSEFuzz: Fuzz Testing Based on Symbolic Execution (Access 2020)](#csefuzz-fuzz-testing-based-on-symbolic-execution-access-2020)
   - [A Quantitative Comparison of Covera (AST 2020)](#a-quantitative-comparison-of-covera-ast-2020)
   - [Finding Bugs in File Systems with an Extensible Fuzzing Framework (TOS 2020)](#finding-bugs-in-file-systems-with-an-extensible-fuzzing-framework-tos-2020)
@@ -370,6 +372,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [INSTRIM Lightweight Instrumentation for Coverage-guided Fuzzing (NDSS 2018 workshop)](#instrim-lightweight-instrumentation-for-coverage-guided-fuzzing-ndss-2018-workshop)
 
 - [**IoT or protocols fuzzing**](#iot-or-protocols-fuzzing)
+  - [Vulnerability Detection in SIoT Applications: A Fuzzing Method on their Binaries (IEEE Transactions on Network Science and Engineering 2020)](#vulnerability-detection-in-siot-applications-a-fuzzing-method-on-their-binaries-ieee-transactions-on-network-science-and-engineering-2020)
   - [Analysis of DTLS Implementations Using Protocol State Fuzzing (USENIX Security2020)](#analysis-of-dtls-implementations-using-protocol-state-fuzzing-usenix-security2020)
   - [Frankenstein: Advanced Wireless Fuzzing to Exploit New Bluetooth Escalation Targets (USENIX Security2020)](#frankenstein-advanced-wireless-fuzzing-to-exploit-new-bluetooth-escalation-targets-usenix-security2020)
   - [A deep convolution generative adversarial networks based fuzzing framework for industry control protocols](#a-deep-convolution-generative-adversarial-networks-based-fuzzing-framework-for-industry-control-protocols)
@@ -416,7 +419,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Razzer: Finding Kernel Race Bugs through Fuzzing (S&P 2019)](#razzer-finding-kernel-race-bugs-through-fuzzing-sp-2019)
   - [Unicorefuzz: On the Viability of Emulation for Kernelspace Fuzzing (USENIX WOOT'19)](#unicorefuzz-on-the-viability-of-emulation-for-kernelspace-fuzzing-usenix-woot19)
   - [MoonShine: Optimizing OS Fuzzer Seed Selection with Trace Distillation (USENIX Security2018)](#moonshine-optimizing-os-fuzzer-seed-selection-with-trace-distillation-usenix-security2018)
-  - [FUZE: Towards Facilitating Exploit Generation for Kernel Use-After-Free Vulnerabilities (USENIX Security2018)]
+  - [FUZE: Towards Facilitating Exploit Generation for Kernel Use-After-Free Vulnerabilities (USENIX Security2018)](#fuze-towards-facilitating-exploit-generation-for-kernel-use-after-free-vulnerabilities-usenix-security2018)
   - [CAB-Fuzz: Practical Concolic Testing Techniques for COTS Operating Systems (Usenix Security2017)](#cab-fuzz-practical-concolic-testing-techniques-for-cots-operating-systems-usenix-security2017)
   - [kAFL: Hardware-Assisted Feedback Fuzzing for OS Kernels (Usenix Security2017)](#kafl-hardware-assisted-feedback-fuzzing-for-os-kernels-usenix-security2017)
   - [DIFUZE: Interface aware fuzzing for kernel drivers (CCS 2017)](#difuze-interface-aware-fuzzing-for-kernel-drivers-ccs-2017)
@@ -441,7 +444,8 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Hybrid Fuzz Testing - Discovering Software Bugs via Fuzzing and Symbolic Execution (2012)](#hybrid-fuzz-testing---discovering-software-bugs-via-fuzzing-and-symbolic-execution-2012)
   - [Hybrid concolic testing (2007)](#hybrid-concolic-testing-2007)
 
-- [**Path \ Deeply nested branches \ Addressing Magic bytes \ checksum**](#path--deeply-nested-branches--addressing-magic-bytes--checksum)  
+- [**Coverage \ Path \ Magic bytes \ Checksum**](#coverage--path--magic-bytes--checksum)  
+  - [MaxAFL: Maximizing Code Coverage with a Gradient-Based Optimization Technique (Electronics 2020)](#maxafl-maximizing-code-coverage-with-a-gradient-based-optimization-technique-electronics-2020)
   - [PathAFL: Path-Coverage Assisted Fuzzing (ASIA CCS 2020)](#pathafl-path-coverage-assisted-fuzzing-asia-ccs-2020)
   - [Zeror: Speed Up Fuzzing with Coverage-sensitive Tracing and Scheduling (ASE 2020)](#zeror-speed-up-fuzzing-with-coverage-sensitive-tracing-and-scheduling-ase-2020)
   - [Not All Coverage Measurements Are Equal: Fuzzing by Coverage Accounting for Input Prioritization (NDSS 2020)](#not-all-coverage-measurements-are-equal-fuzzing-by-coverage-accounting-for-input-prioritization-ndss-2020)
@@ -584,6 +588,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [REST-ler: Stateful REST API Fuzzing (ICSE 2019)](#rest-ler-stateful-rest-api-fuzzing-icse-2019)
 
 - [**Other Interesting Fuzzing**](#other-interesting-fuzzing)
+  - [Fuzzing Technique in Web Applications and Beyond (MCTE 2020)](#fuzzing-technique-in-web-applications-and-beyond-mcte-2020)
   - [Nyx: Greybox Hypervisor Fuzzing using Fast Snapshots and Affine Types](#nyx-greybox-hypervisor-fuzzing-using-fast-snapshots-and-affine-types-usenix-security2021)
   - [FREEDOM: Engineering a State-of-the-Art DOM Fuzzer (CCS 2020)](#freedom-engineering-a-state-of-the-art-dom-fuzzer-ccs-2020)
   - [SQUIRREL: Testing Database Management Systems with Language Validity and Coverage Feedback (CCS 2020)](#squirrel-testing-database-management-systems-with-language-validity-and-coverage-feedback-ccs-2020)
@@ -958,6 +963,13 @@ The ideal solution for binary security analysis would be a static rewriter that 
 
 
 # IoT or protocols fuzzing
+
+### Vulnerability Detection in SIoT Applications: A Fuzzing Method on their Binaries (IEEE Transactions on Network Science and Engineering 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9259242)
+
+**Abstract:** SIoT enables devices to communicate with each other automatically, which is not reliable when applications in SIoT are vulnerable. To improve the security of SIoT, different techniques have been employed so far, mainly to detect vulnerabilities in SIoT applications. Among the detection techniques, fuzzing is one of the most effective ones that can significantly improve the security of SIoT applications. However, the existing fuzzing methods have three problems. First of all, the schemes to instrument target binaries cause high memory overhead because they instrument at all edges to obtain the coverage information. Moreover, they introduce a severe problem called edge collision, i.e., two different edges are deemed the same during fuzzing. Thirdly, none of the existing fuzzers conduct fuzzing using path coverage because path coverage has high memory overhead. In this paper, we propose BECFuzz to resolve the above three problems. BECFuzz instruments at specific edges, and conducts fuzzing based on both edge coverage and path coverage, which greatly improves its effectiveness. We implement our BECFuzz based on two typical fuzzers which are widely recognised as baselines, AFL and AFLFast, and run experiments on 18 real-world programs. The results demonstrate that our method suppresses the state-of-art fuzzers in performance.
+
 
 ### Analysis of DTLS Implementations Using Protocol State Fuzzing (USENIX Security2020)
 
@@ -1548,8 +1560,14 @@ Our evaluation shows that QSYM does not just outperform state-of-the-art fuzzers
 **Abstract:** We present hybrid concolic testing, an algorithm that interleaves random testing with concolic execution to obtain both a deep and a wide exploration of program state space. Our algorithm generates test inputs automatically by interleaving random testing until saturation with bounded exhaustive symbolic exploration of program points. It thus combines the ability of random search to reach deep program states quickly together with the ability of concolic testing to explore states in a neighborhood exhaustively. We have implemented our algorithm on top of CUTE and applied it to obtain better branch coverage for an editor implementation (VIM 5.7, 150K lines of code) as well as a data structure implementation in C. Our experiments suggest that hybrid concolic testing can handle large programs and provide, for the same testing budget, almost 4× the branch coverage than random testing and almost 2× that of concolic testing.
 
 
+# Coverage \ Path \ Magic bytes \ Checksum
 
-# Path \ Deeply nested branches \ Addressing Magic bytes \ checksum: 
+### MaxAFL: Maximizing Code Coverage with a Gradient-Based Optimization Technique (Electronics 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.mdpi.com/2079-9292/10/1/11/pdf)
+
+**Abstract:** Evolutionary fuzzers generally work well with typical software programs because of their simple algorithm. However, there is a limitation that some paths with complex constraints cannot be tested even after long execution. Fuzzers based on concolic execution have emerged to address this issue. The concolic execution fuzzers also have limitations in scalability. Recently, the gradient-based fuzzers that use a gradient to mutate inputs have been introduced. Gradient-based fuzzers can be applied to real-world programs and achieve high code coverage. However, there is a problem that the existing gradient-based fuzzers require heavyweight analysis or sufficient learning time. In this paper, we propose a new type of gradient-based fuzzer, MaxAFL, to overcome the limitations of existing gradient-based fuzzers. Our approach constructs an objective function through fine-grained static analysis. After constructing a well-made objective function, we can apply the gradient-based optimization algorithm. We use a modified gradient-descent algorithm to minimize our objective function and propose some probabilistic techniques to escape local optimum. We introduce an adaptive objective function which aims to explore various paths in the program. We implemented MaxAFL based on the original AFL. MaxAFL achieved increase of code coverage per time compared with three other fuzzers in six open-source Linux binaries. We also measured cumulative code coverage per total execution, and MaxAFL outperformed the other fuzzers in this metric. Finally, MaxAFL can also find more bugs than the other fuzzers.
+
 
 ### PathAFL: Path-Coverage Assisted Fuzzing (ASIA CCS 2020)
 
@@ -2485,6 +2503,13 @@ We present experimental results showing that these two techniques are necessary 
 
 
 # Other Interesting Fuzzing
+
+### Fuzzing Technique in Web Applications and Beyond (MCTE 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://iopscience.iop.org/article/10.1088/1742-6596/1678/1/012109/pdf)
+
+**Abstract:** Web security is an old yet important topic. With the emergence of new applications and new threats, we need new techniques to fight against these threats. Fuzzing technique has been proven as an effective tool and has the potential of evolving with the new threats. In this paper, we discuss the applications of fuzzing technique in both web and other areas. We also present a case study by implementing a fuzzer in this study. 
+
 
 ### Nyx: Greybox Hypervisor Fuzzing using Fast Snapshots and Affine Types (USENIX Security2021)
 

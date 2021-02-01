@@ -16,9 +16,21 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 
+- **ICSE 2021**
+  - [Fuzzing Symbolic Expressions](#fuzzing-symbolic-expressions-icse-2021)
+  - [Graph-based Fuzz Testing for Deep Learning Inference Engines](#graph-based-fuzz-testing-for-deep-learning-inference-engines-icse-2021)
+  - [Growing A Test Corpus with Bonsai Fuzzing](#growing-a-test-corpus-with-bonsai-fuzzing-icse-2021)
+
 - **USENIX Security 2021**
   - [UNIFUZZ: A Holistic and Pragmatic Metrics-Driven Platform for Evaluating Fuzzers](#unifuzz-a-holistic-and-pragmatic-metrics-driven-platform-for-evaluating-fuzzers-usenix-security2021)
   - [Nyx: Greybox Hypervisor Fuzzing using Fast Snapshots and Affine Types](#nyx-greybox-hypervisor-fuzzing-using-fast-snapshots-and-affine-types-usenix-security2021)
+  - [Breaking Through Binaries: Compiler-quality Instrumentation for Better Binary-only Fuzzing]
+  
+- **NDSS 2011**
+  - [Favocado: Fuzzing the Binding Code of JavaScript Engines Using Semantically Correct Test Cases](#favocado-fuzzing-the-binding-code-of-javascript-engines-using-semantically-correct-test-cases-ndss-2021)
+
+- **Others 2021**
+  - [CMFuzz: context-aware adaptive mutation for fuzzers (Empirical Software Engineering 2021)](#cmfuzz-context-aware-adaptive-mutation-for-fuzzers-empirical-software-engineering-2021)
 
 - **CCS 2020**
   - [FREEDOM: Engineering a State-of-the-Art DOM Fuzzer](#freedom-engineering-a-state-of-the-art-dom-fuzzer-ccs-2020)
@@ -228,7 +240,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [CollAFL: Path Sensitive Fuzzing](#collafl-path-sensitive-fuzzing-sp-2018)
 
 - **USENIX Security 2018**
-  - [FUZE: Towards Facilitating Exploit Generation for Kernel Use-After-Free Vulnerabilities]
+  - [FUZE: Towards Facilitating Exploit Generation for Kernel Use-After-Free Vulnerabilities](#fuze-towards-facilitating-exploit-generation-for-kernel-use-after-free-vulnerabilities-usenix-security2018)
   - [MoonShine: Optimizing OS Fuzzer Seed Selection with Trace Distillation](#moonshine-optimizing-os-fuzzer-seed-selection-with-trace-distillation-usenix-security2018)
   - [QSYM : A Practical Concolic Execution Engine Tailored for Hybrid Fuzzing](#qsym-a-practical-concolic-execution-engine-tailored-for-hybrid-fuzzing-usenix-security2018)
 
@@ -335,13 +347,6 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 
-- [**Concurrency Fuzzing**](#concurrency-fuzzing)
-  - [MUZZ: Thread-aware Grey-box Fuzzing for Effective Bug Hunting in Multithreaded Programs (USENIX Security2020)](#muzz-thread-aware-grey-box-fuzzing-for-effective-bug-hunting-in-multithreaded-programs-usenix-security2020)
-  - [KRace: Data Race Fuzzing for Kernel File Systems (S&P 2020)](#krace-data-race-fuzzing-for-kernel-file-systems-sp-2020)
-  - [ConFuzz—A Concurrency Fuzzer (2019)](#confuzz-a-concurrency-fuzzer-2019)
-  - [Razzer: Finding Kernel Race Bugs through Fuzzing (S&P 2019)](#razzer-finding-kernel-race-bugs-through-fuzzing-sp-2019)
-  - [A Heuristic Framework to Detect Concurrency Vulnerabilities](#a-heuristic-framework-to-detect-concurrency-vulnerabilities-acsac-2018)
-
 - [**Differential Fuzzing**](#differential-fuzzing)
   - [DPIFuzz: A Differential Fuzzing Framework to Detect DPI Elusion Strategies for QUIC (ACSAC 2020)](#dpifuzz-a-differential-fuzzing-framework-to-detect-dpi-elusion-strategies-for-quic-acsac-2020)
   - [Coverage Guided Differential Adversarial Testing of Deep Learning Systems (TNSE 2020)](#coverage-guided-differential-adversarial-testing-of-deep-learning-systems-tnse-2020)
@@ -398,6 +403,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [AutoFuzz: Automated Network Protocol Fuzzing Framework (IJCSNS 2010)](#autofuzz-automated-network-protocol-fuzzing-framework-ijcsns-2010)
 
 - [**SMT Fuzzing**](#smt-fuzzing)
+  - [Fuzzing Symbolic Expressions (ICSE 2021)](#fuzzing-symbolic-expressions-icse-2021)
   - [Detecting Critical Bugs in SMT Solvers using Blackbox Mutational Fuzzing (FSE 2020)](#detecting-critical-bugs-in-smt-solvers-using-blackbox-mutational-fuzzing-fse)
   - [On the Unusual Effectiveness of Type-aware Mutations for Testing SMT Solvers (2020)](#on-the-unusual-effectiveness-of-type-aware-mutations-for-testing-smt-solvers)
   - [Validating SMT Solvers via Semantic Fusion (PLDI 2020)](#validating-smt-solvers-via-semantic-fusion-pldi-2020)
@@ -456,6 +462,9 @@ remark: This website is only used for collecting and grouping the related paper.
   - [VUzzer: Application-aware Evolutionary Fuzzing (NDSS 2017)](#vuzzer-application-aware-evolutionary-fuzzing-ndss-2017)
   
 - [**Grammars \ Inputs-aware Fuzzing**](#grammars--inputs-aware-fuzzing)
+  - [Growing A Test Corpus with Bonsai Fuzzing (ICSE 2021)](#growing-a-test-corpus-with-bonsai-fuzzing-icse-2021)
+  - [Favocado: Fuzzing the Binding Code of JavaScript Engines Using Semantically Correct Test Cases (NDSS 2021)](#favocado-fuzzing-the-binding-code-of-javascript-engines-using-semantically-correct-test-cases-ndss-2021)
+  - [CMFuzz: context-aware adaptive mutation for fuzzers (Empirical Software Engineering 2021)](#cmfuzz-context-aware-adaptive-mutation-for-fuzzers-empirical-software-engineering-2021)
   - [Generating Highly-structured Input Data by Combining Search-based Testing and Grammar-based Fuzzing (ASE 2020)](#generating-highly-structured-input-data-by-combining-search-based-testing-and-grammar-based-fuzzing-ase-2020)
   - [Montage: A Neural Network Language Model-Guided JavaScript Engine Fuzzer (Usenix Security2020)](#montage-a-neural-network-language-model-guided-javascript-engine-fuzzer-usenix-security2020)
   - [Fuzzing JavaScript Engines with Aspect-preserving Mutation (S&P 2020)](#fuzzing-javascript-engines-with-aspect-preserving-mutation-sp-2020)
@@ -548,6 +557,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Learn&Fuzz: Machine Learning for Input Fuzzing (ASE 2017)](#learnfuzz-machine-learning-for-input-fuzzing-ase-2017)
 
 - [**Fuzzing Machine Learning Model**](#fuzzing-machine-learning-model)
+  - [Graph-based Fuzz Testing for Deep Learning Inference Engines (ICSE 2021)](#graph-based-fuzz-testing-for-deep-learning-inference-engines-icse-2021)
   - [Fuzz Testing based Data Augmentation to Improve Robustness of Deep Neural Networks (ICSE 2020)](#fuzz-testing-based-data-augmentation-to-improve-robustness-of-deep-neural-networks-icse-2020)
   - [Coverage Guided Differential Adversarial Testing of Deep Learning Systems (TNSE 2020)](#coverage-guided-differential-adversarial-testing-of-deep-learning-systems-tnse-2020)
   - [CAGFuzz: Coverage-Guided Adversarial Generative Fuzzing Testing of Deep Learning Systems 2019](#cagfuzz-coverage-guided-adversarial-generative-fuzzing-testing-of-deep-learning-systems-2019)
@@ -562,6 +572,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [VUzzer: Application-aware Evolutionary Fuzzing](#vuzzer-application-aware-evolutionary-fuzzing-ndss-2017)
 
 - [**Binary Fuzzing**](#binary-fuzzing)
+  - [Breaking Through Binaries: Compiler-quality Instrumentation for Better Binary-only Fuzzing  (USENIX Security2021)]
   - [WEIZZ: Automatic Grey-Box Fuzzing for Structured Binary Formats (ISSTA 2020)](#weizz-automatic-grey-box-fuzzing-for-structured-binary-formats)
   - [RetroWrite: Statically Instrumenting COTS Binaries for Fuzzing and Sanitization (S&P 2020)](#retrowrite-statically-instrumenting-cots-binaries-for-fuzzing-and-sanitization-sp-2020)
   - [Binary-level Directed Fuzzing for Use-After-Free Vulnerabilities (RAID 2020)](#binary-level-directed-fuzzing-for-use-after-free-vulnerabilities-raid-2020)
@@ -582,6 +593,13 @@ remark: This website is only used for collecting and grouping the related paper.
   - [JVM Fuzzing for JIT-Induced Side-Channel Detection (ICSE 2020)](#jvm-fuzzing-for-jit-induced-side-channel-detection-icse-2020)
   - [ct-fuzz: Fuzzing for Timing Leaks (ICST 2020)](#ct-fuzz-fuzzing-for-timing-leaks-icst-2020)
   - [DifFuzz: Differential Fuzzing for Side-Channel Analysis (ICSE 2019)](#diffuzz-differential-fuzzing-for-side-channel-analysis-icse-2019)
+
+- [**Concurrency Fuzzing**](#concurrency-fuzzing)
+  - [MUZZ: Thread-aware Grey-box Fuzzing for Effective Bug Hunting in Multithreaded Programs (USENIX Security2020)](#muzz-thread-aware-grey-box-fuzzing-for-effective-bug-hunting-in-multithreaded-programs-usenix-security2020)
+  - [KRace: Data Race Fuzzing for Kernel File Systems (S&P 2020)](#krace-data-race-fuzzing-for-kernel-file-systems-sp-2020)
+  - [ConFuzz—A Concurrency Fuzzer (2019)](#confuzz-a-concurrency-fuzzer-2019)
+  - [Razzer: Finding Kernel Race Bugs through Fuzzing (S&P 2019)](#razzer-finding-kernel-race-bugs-through-fuzzing-sp-2019)
+  - [A Heuristic Framework to Detect Concurrency Vulnerabilities](#a-heuristic-framework-to-detect-concurrency-vulnerabilities-acsac-2018)
 
 - [**API Fuzzing**](#api-fuzzing)
   - [Intelligent REST API Data Fuzzing (FSE 2020)](#intelligent-rest-api-data-fuzzing-fse-2020)
@@ -708,60 +726,6 @@ remark: This website is only used for collecting and grouping the related paper.
 * <img src="image/pdf_24px.png">[Paper](./Paper/2017_review.pdf)
 
 **Abstract:** This paper reviewed some of the most noteworthy academic literature and practical work that has been produced in the field of fuzzing. We first examined how vulnerabilities come to exist in software and how security researchers find them. After a brief overview of common vulnerability types and methods of static analysis, we looked in depth at the field of fuzzing. Competing approaches to fuzzing were examined, from simple random inputs all the way to using genetic algorithms and taint analysis. The importance of measuring code coverage to evaluate the completeness of a fuzzing campaign was examined. Finally, the focus was placed on the fuzz testing of web browsers and the specific tools and techniques related to that.
-
-
-
-# Concurrency Fuzzing
-
-### MUZZ: Thread-aware Grey-box Fuzzing for Effective Bug Hunting in Multithreaded Programs (USENIX Security2020)
-
-
-* <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/09/18/muzz-thread-aware-grey-box-fuzzing-for-effective-bug-hunting-in-multithreaded-programs/)
-
-* <img src="image/youtube.png">[Video](https://www.usenix.org/conference/usenixsecurity20/presentation/chen-hongxu)
-
-* <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/sec20-chen-hongxu.pdf)
-
-* <img src="image/ppt_24px.png">[Slides](https://www.usenix.org/system/files/sec20_slides_chen-hongxu.pdf)
-
-**Abstract:** Grey-box fuzz testing has revealed thousands of vulnerabilities in real-world software owing to its lightweight instrumentation, fast coverage feedback, and dynamic adjusting strategies. However, directly applying grey-box fuzzing to input-dependent multithreaded programs can be extremely inefficient. In practice, multithreading-relevant bugs are usually buried in the sophisticated program flows. Meanwhile, existing grey-box fuzzing techniques do not stress thread-interleavings that affect execution states in multithreaded programs. Therefore, mainstream grey-box fuzzers cannot adequately test problematic segments in multithreaded software, although they might obtain high code coverage statistics.
-
-To this end, we propose Muzz, a new grey-box fuzzing technique that hunts for bugs in multithreaded programs. Muzz owns three novel thread-aware instrumentations, namely coverage-oriented instrumentation, thread-context instrumentation, and schedule-intervention instrumentation. During fuzzing, these instrumentations engender runtime feedback to accentuate execution states caused by thread interleavings. By leveraging such feedback in the dynamic seed selection and execution strategies, Muzz preserves more valuable seeds that expose bugs under a multithreading context.
-
-We evaluate Muzz on twelve real-world multithreaded programs. Experiments show that Muzz outperforms AFL in both multithreading-relevant seed generation and concurrency-vulnerability detection. Further, by replaying the target programs against the generated seeds, Muzz also reveals more concurrency-bugs (e.g., data-races, thread-leaks) than AFL. In total, Muzz detected eight new concurrency-vulnerabilities and nineteen new concurrency-bugs. At the time of writing, four reported issues have received CVE IDs.
-
-
-### KRace: Data Race Fuzzing for Kernel File Systems (S&P 2020)
-
-* <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/06/19/krace-data-race-fuzzing-for-kernel-file-systems)
-
-* <img src="image/youtube.png">[Video](https://youtu.be/8m2fMxvRtgg)
-
-* <img src="image/pdf_24px.png">[Paper](./Paper/SP20_KRace.pdf)
-
-**Abstract:** Data races occur when two threads fail to use proper synchronization when accessing shared data. In kernel file systems, which are highly concurrent by design, data races are common mistakes and often wreak havoc on the users, causing inconsistent states or data losses. Prior fuzzing practices on file systems have been effective in uncovering hundreds of bugs, but they mostly focus on the sequential aspect of file system execution and do not comprehensively explore the concurrency dimension and hence, forgo the opportunity to catch data races.
-
-In this paper, we bring coverage-guided fuzzing to the concurrency dimension with three new constructs: 1) a new coverage tracking metric, alias coverage, specially designed to capture the exploration progress in the concurrency dimension; 2) an evolution algorithm for generating, mutating, and merging multithreaded syscall sequences as inputs for concurrency fuzzing; and 3) a comprehensive lockset and happens-before modeling for kernel synchronization primitives for precise data race detection. These components are integrated into KRACE, an end-to-end fuzzing framework that has discovered 23 data races in ext4, btrfs, and the VFS layer so far, and 9 are confirmed to be harmful.
-
-
-### ConFuzz: A Concurrency Fuzzer (2019)
-
-* <img src="image/pdf_24px.png">[Paper](./Paper/AISC19_ConFuzz.pdf)
-
-**Abstract:** Concurrency bugs are as equally vulnerable as the bugs found in the single-threaded programs and these bugs can be exploited using concurrency attacks. Unfortunately, there is not much literature available in detecting various kinds of concurrency issues in a multi-threaded program due to its complexity and uncertainty. In this paper, we aim at detecting concurrency bugs by using directed evolutionary fuzzing with the help of static analysis of the source code. Concurrency bug detection involves two main entities: an input and a particular thread execution order. The evolutionary part of fuzzing will prefer inputs that involve memory access patterns across threads (data flow interleaving) and thread ordering that disturb the data dependence more and direct them to trigger concurrency bugs. This paper suggests the idea of a concurrency fuzzer, which is first of its kind. We use a combination of LLVM, Thread Sanitizer and fuzzing techniques to detect various concurrency issues in an application. The source code of the application is statically analyzed for various paths, from the different thread related function calls to the main function. Every basic block in these paths are assigned a unique ID and a weight based on the distance of the basic block from the thread function calls. These basic blocks are instrumented to print their ID and weight upon execution. The knowledge about the basic blocks in the sliced paths are used to generate new sets of inputs from the old ones, thus covering even more basic blocks in the path and thereby increasing the chances of hitting a concurrency warning. We use Thread Sanitizer present in the LLVM compiler infrastructure to detect the concurrency bug warnings while executing each input. The inputs are directed to discover even new address locations with possible concurrency issues. The system was tested on three simple multi-threaded applications pigz, pbzip2, and pixz. The results show a quicker detection of unique addresses in the application with possible concurrency issues.
-
-
-### A Heuristic Framework to Detect Concurrency Vulnerabilities (ACSAC 2018)
-
-* <img src="image/zhihu.png">[Reading Note](https://kuaibao.qq.com/s/20190821AZNY0H00?refer=spider)
-* 
-* <img src="image/pdf_24px.png">[Paper](./Paper/ACSAC18_AFLCon.pdf)
-
-**Abstract:** With a growing demand of concurrent software to exploit multi-core hardware capability, concurrency vulnerabilities have become an inevitable threat to the security of today's IT industry. Existing concurrent program detection schemes focus mainly on detecting concurrency errors such as data races, atomicity violation, etc., with little attention paid to detect concurrency vulnerabilities that may be exploited to infringe security. In this paper, we propose a heuristic framework that combines both static analysis and fuzz testing to detect targeted concurrency vulnerabilities such as concurrency buffer overflow, double free, and use-after-free. The static analysis locates sensitive concurrent operations in a concurrent program, categorizes each finding into a potential type of concurrency vulnerability, and determines the execution order of the sensitive operations in each finding that would trigger the suspected concurrency vulnerability. The results are then plugged into the fuzzer with the execution order fixed by the static analysis in order to trigger the suspected concurrency vulnerabilities.
-
-In order to introduce more variance which increases possibility that the concurrency errors can be triggered, we also propose manipulation of thread scheduling priority to enable a fuzzer such as AFL to effectively explore thread interleavings in testing a concurrent program. To the best of our knowledge, this is the first fuzzer that is capable of effectively exploring concurrency errors.
-
-In evaluating the proposed heuristic framework with a benchmark suit of six real-world concurrent C programs, the framework detected two concurrency vulnerabilities for the proposed concurrency vulnerability detection, both being confirmed to be true positives, and produced three new crashes for the proposed interleaving exploring fuzzer that existing fuzzers could not produce. These results demonstrate the power and effectiveness of the proposed heuristic framework in detecting concurrency errors and vulnerabilities.
 
 
 # Differential Fuzzing
@@ -1182,6 +1146,13 @@ SSL encrypted protocols. As a proof of concept for efficiency of ESPIKE we demon
 
 
 # SMT Fuzzing
+
+### Fuzzing Symbolic Expressions (ICSE 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://conf.researchr.org/details/icse-2021/icse-2021-papers/23/Fuzzing-Symbolic-Expressions)
+
+**Abstract:** Recent years have witnessed a wide array of results in software testing, exploring different approaches and methodologies ranging from fuzzers to symbolic engines, with a full spectrum of instances in between such as concolic execution and hybrid fuzzing. A key ingredient of many of these tools is Satisfiability Modulo Theories (SMT) solvers, which are used to reason over symbolic expressions collected during the analysis. In this paper, we investigate whether techniques borrowed from the fuzzing domain can be applied to check whether symbolic formulas are satisfiable in the context of concolic and hybrid fuzzing engines, providing a viable alternative to classic SMT solving techniques. We devise a new approximate solver, \fuzzysat, and show that it is both competitive with and complementary to state-of-the-art solvers such as Z3 with respect to handling queries generated by hybrid fuzzers.
+
 
 ### Detecting Critical Bugs in SMT Solvers Using Blackbox Mutational Fuzzing (FSE 
 2020)
@@ -1659,6 +1630,31 @@ In this paper, we present an application-aware evolutionary fuzzing strategy tha
 
 
 # Grammars \ Inputs-aware Fuzzing
+
+### Growing A Test Corpus with Bonsai Fuzzing (ICSE 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://conf.researchr.org/details/icse-2021/icse-2021-papers/63/Growing-A-Test-Corpus-with-Bonsai-Fuzzing)
+
+**Abstract:** This paper presents a coverage-guided grammar-based fuzzing technique for automatically generating a corpus of concise test inputs for programs such as compilers. We walk-through a case study of a compiler designed for education and the corresponding problem of generating meaningful test cases to provide to students. The prior state-of-the-art solution is a combination of fuzzing and test-case reduction techniques such as variants of delta-debugging. Our key insight is that instead of attempting to minimize convoluted fuzzer-generated test inputs, we can instead grow concise test inputs by construction using a form of iterative deepening. We call this approach Bonsai Fuzzing. Experimental results show that Bonsai Fuzzing can generate test corpora having inputs that are 16–45% smaller in size on average as compared to a fuzz-then-reduce approach, while achieving approximately the same code coverage and fault-detection capability.
+
+
+### Favocado: Fuzzing the Binding Code of JavaScript Engines Using Semantically Correct Test Cases (NDSS 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://sefcom.asu.edu/publications/favocado-ndss21.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/favocado/Favocado)
+
+**Abstract:** JavaScript runtime systems include some specialized programming interfaces, called binding layers. Binding layers translate data representations between JavaScript and unsafe low-level languages, such as C and C++, by converting data between different types. Due to the wide adoption of JavaScript (and JavaScript engines) in the entire computing ecosystem, discovering bugs in JavaScript binding layers is critical. Nonetheless, existing JavaScript fuzzers cannot adequately fuzz binding layers due to two major challenges: Generating syntactically and semantically correct test cases and reducing the size of the input space for fuzzing.
+
+In this paper, we propose Favocado, a novel fuzzing approach that focuses on fuzzing binding layers of JavaScript runtime systems. Favocado can generate syntactically and semantically correct JavaScript test cases through the use of extracted semantic information and careful maintaining of execution states. This way, test cases that Favocado generates do not raise unintended runtime exceptions, which substantially increases the chance of triggering binding code. Additionally, exploiting a unique feature (relative isolation) of binding layers, Favocado significantly reduces the size of the fuzzing input space by splitting DOM objects into equivalence classes and focusing fuzzing within each equivalence class. We demonstrate the effectiveness of Favocado in our experiments and show that Favocado outperforms a stateof-the-art DOM fuzzer. Finally, during the evaluation, we find 61 previously unknown bugs in four JavaScript runtime systems (Adobe Acrobat Reader, Foxit PDF Reader, Chromium, and WebKit). 33 of these bugs are security vulnerabilities.
+
+
+### CMFuzz: context-aware adaptive mutation for fuzzers (Empirical Software Engineering 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://link.springer.com/article/10.1007/s10664-020-09927-3)
+
+**Abstract:** Mutation-based fuzzing is a simple yet effective technique to discover bugs and security vulnerabilities in software. Given a set of well-formed initial seeds, mutation-based fuzzers continually generate interesting seeds by applying specific mutation strategy in order to maximize code coverage or the number of unique bugs explored at any point-in-time. However, existing fuzzers remain limited in the paths it could cover since it simply follows a uniform distribution to choose mutation operators. In this paper, we proposed a novel context-aware adaptive mutation scheme, namely CMFuzz, which utilizes a contextual bandit algorithm LinUCB to effectively choose optimal mutation operators for various seed files. To this end, CMFuzz dynamically extracts and encodes file characteristics, which allows mutation-based fuzzers to perform context-aware mutation. We apply this scheme on top of several state-of-the-art fuzzers, i.e., PTfuzz, AFL, and AFLFast, and implement CMFuzz-PT, CMFuzz-AFL, and CMFuzz-AFLFast, respectively. We conduct evaluation on 12 real-world open source applications and LAVA-M dataset against their counterparts. Extensive evaluations demonstrate that CMFuzz-based fuzzers achieve higher code coverage and find more crashes at a faster rate than their counterparts on most cases. Furthermore, we also utilize other mainstream bandit algorithms, e.g., Thompson Sample and epsilon-greedy, and implement Thompson-PT and Greedy-PT based on PTfuzz to examine the performance of proposed model. CMFuzz-PT significantly outperforms Thompson-PT especially in terms of unique crashes and paths, i.e., found 1.79× unique crashes and 1.29× unique paths on average. Compared to Greedy-PT, our approach still increases the amount of unique crashes and paths by 1.11× and 1.05×, respectively.
+
 
 ### Generating Highly-structured Input Data by Combining Search-based Testing and Grammar-based Fuzzing (ASE 2020)
 
@@ -2322,6 +2318,13 @@ We introduce DeepSmith, a novel machine learning approach to accelerating compil
 
 # Fuzzing Machine Learning Model
 
+### Graph-based Fuzz Testing for Deep Learning Inference Engines (ICSE 2021)]
+
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2008.05933.pdf)
+
+**Abstract:** With the wide use of Deep Learning (DL) systems, academy and industry begin to pay attention to their quality. Testing is one of the major methods of quality assurance. However, existing testing techniques focus on the quality of DL models but lacks attention to the core underlying inference engines (i.e., frameworks and libraries). Inspired by the success stories of fuzz testing, we design a graph-based fuzz testing method to improve the quality of DL inference engines. This method is naturally followed by the graph structure of DL models. An operator-level coverage based on graph theory is introduced and six different mutations are implemented to generate diversified DL models by exploring combinations of model structures, parameters, and data. The Monte Carlo Tree Search (MCTS) is used to drive DL model generation without a training process. The experimental results show that the MCTS outperforms the random method in boosting operator-level coverage and detecting exceptions. Our method has discovered more than 40 different exceptions in three types of undesired behaviors: model conversion failure, inference failure, output comparison failure. The mutation strategies are useful to generate new valid test inputs, by up to an 8.2% more operator-level coverage on average and 8.6 more exceptions captured.
+
+
 ### Fuzz Testing based Data Augmentation to Improve Robustness of Deep Neural Networks (ICSE 2020)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/ICSE20_DNN.pdf)
@@ -2382,6 +2385,15 @@ We implemented a prototype of GREYONE and evaluated it on the LAVA data set and 
 
 
 # Binary Fuzzing
+
+### Breaking Through Binaries: Compiler-quality Instrumentation for Better Binary-only Fuzzing  (USENIX Security2021)
+
+* <img src="image/pdf_24px.png">[Paper](http://static1.1.sqspcdn.com/static/f/543048/28391424/1610229123433/FIBRE_USENIX_21.pdf?token=GEQB02WSpQG2An7JHgbtZ6adoTA%3D)
+
+**Abstract:** Coverage-guided fuzzing is one of the most effective software security testing techniques. Fuzzing takes on one of two forms: compiler-based or binary-only, depending on the availability of source code. While the fuzzing community has improved compiler-based fuzzing with performanceand feedback-enhancing program transformations, binaryonly fuzzing lags behind due to the semantic and performance limitations of instrumenting code at the binary level. Many fuzzing use cases are binary-only (i.e., closed source). Thus, applying fuzzing-enhancing program transformations to binary-only fuzzing—without sacrificing performance—remains a compelling challenge.
+
+This paper examines the properties required to achieve compiler-quality binary-only fuzzing instrumentation. Based on our findings, we design FIBRE: a platform for applying fuzzing-enhancing program transformation to binary-only targets—maintaining compiler-level performance. We showcase FIBRE’s capabilities in an implementation for the popular fuzzer AFL, including five compiler-style fuzzing-enhancing transformations, and evaluate it against the leading binaryonly fuzzing instrumenters AFL-QEMU and AFL-Dyninst. Across LAVA-M and real-world targets, FIBRE improves crash-finding by 26–96% and 37–131%; and throughput by 48–78% and 159–203% compared to AFL-Dyninst and AFLQEMU, respectively—while maintaining compiler-level of overhead of 27%. We also show that FIBRE supports realworld open- and closed-source software of varying size (10K–100MB), complexity (100–1M basic blocks), platform (Linux and Windows), and format (e.g., stripped and PIC).
+
 
 ### WEIZZ: Automatic Grey-box Fuzzing for Structured Binary Formats
 
@@ -2485,6 +2497,61 @@ We instantiate our approach to the problem of fuzzing smart contracts, a domain 
 **Abstract:** Testing-based methodologies like fuzzing are able to analyze complex software which is not amenable to traditional formal approaches like verification, model checking, and abstract interpretation. Despite enormous success at exposing countless security vulnerabilities in many popular software projects, applications of testing-based approaches have mainly targeted checking traditional safety properties like memory safety. While unquestionably important, this class of properties does not precisely characterize other important security aspects such as information leakage, e.g., through side channels. In this work we extend testing-based software analysis methodologies to two-safety properties, which enables the precise discovery of information leaks in complex software. In particular, we present the ct-fuzz tool, which lends coverage-guided greybox fuzzers the ability to detect two-safety property violations. Our approach is capable of exposing violations to any two-safety property expressed as equality between two program traces. Empirically, we demonstrate that ct-fuzz swiftly reveals timing leaks in popular cryptographic implementations.
 
 
+
+# Concurrency Fuzzing
+
+### MUZZ: Thread-aware Grey-box Fuzzing for Effective Bug Hunting in Multithreaded Programs (USENIX Security2020)
+
+
+* <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/09/18/muzz-thread-aware-grey-box-fuzzing-for-effective-bug-hunting-in-multithreaded-programs/)
+
+* <img src="image/youtube.png">[Video](https://www.usenix.org/conference/usenixsecurity20/presentation/chen-hongxu)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/sec20-chen-hongxu.pdf)
+
+* <img src="image/ppt_24px.png">[Slides](https://www.usenix.org/system/files/sec20_slides_chen-hongxu.pdf)
+
+**Abstract:** Grey-box fuzz testing has revealed thousands of vulnerabilities in real-world software owing to its lightweight instrumentation, fast coverage feedback, and dynamic adjusting strategies. However, directly applying grey-box fuzzing to input-dependent multithreaded programs can be extremely inefficient. In practice, multithreading-relevant bugs are usually buried in the sophisticated program flows. Meanwhile, existing grey-box fuzzing techniques do not stress thread-interleavings that affect execution states in multithreaded programs. Therefore, mainstream grey-box fuzzers cannot adequately test problematic segments in multithreaded software, although they might obtain high code coverage statistics.
+
+To this end, we propose Muzz, a new grey-box fuzzing technique that hunts for bugs in multithreaded programs. Muzz owns three novel thread-aware instrumentations, namely coverage-oriented instrumentation, thread-context instrumentation, and schedule-intervention instrumentation. During fuzzing, these instrumentations engender runtime feedback to accentuate execution states caused by thread interleavings. By leveraging such feedback in the dynamic seed selection and execution strategies, Muzz preserves more valuable seeds that expose bugs under a multithreading context.
+
+We evaluate Muzz on twelve real-world multithreaded programs. Experiments show that Muzz outperforms AFL in both multithreading-relevant seed generation and concurrency-vulnerability detection. Further, by replaying the target programs against the generated seeds, Muzz also reveals more concurrency-bugs (e.g., data-races, thread-leaks) than AFL. In total, Muzz detected eight new concurrency-vulnerabilities and nineteen new concurrency-bugs. At the time of writing, four reported issues have received CVE IDs.
+
+
+### KRace: Data Race Fuzzing for Kernel File Systems (S&P 2020)
+
+* <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/06/19/krace-data-race-fuzzing-for-kernel-file-systems)
+
+* <img src="image/youtube.png">[Video](https://youtu.be/8m2fMxvRtgg)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/SP20_KRace.pdf)
+
+**Abstract:** Data races occur when two threads fail to use proper synchronization when accessing shared data. In kernel file systems, which are highly concurrent by design, data races are common mistakes and often wreak havoc on the users, causing inconsistent states or data losses. Prior fuzzing practices on file systems have been effective in uncovering hundreds of bugs, but they mostly focus on the sequential aspect of file system execution and do not comprehensively explore the concurrency dimension and hence, forgo the opportunity to catch data races.
+
+In this paper, we bring coverage-guided fuzzing to the concurrency dimension with three new constructs: 1) a new coverage tracking metric, alias coverage, specially designed to capture the exploration progress in the concurrency dimension; 2) an evolution algorithm for generating, mutating, and merging multithreaded syscall sequences as inputs for concurrency fuzzing; and 3) a comprehensive lockset and happens-before modeling for kernel synchronization primitives for precise data race detection. These components are integrated into KRACE, an end-to-end fuzzing framework that has discovered 23 data races in ext4, btrfs, and the VFS layer so far, and 9 are confirmed to be harmful.
+
+
+### ConFuzz: A Concurrency Fuzzer (2019)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/AISC19_ConFuzz.pdf)
+
+**Abstract:** Concurrency bugs are as equally vulnerable as the bugs found in the single-threaded programs and these bugs can be exploited using concurrency attacks. Unfortunately, there is not much literature available in detecting various kinds of concurrency issues in a multi-threaded program due to its complexity and uncertainty. In this paper, we aim at detecting concurrency bugs by using directed evolutionary fuzzing with the help of static analysis of the source code. Concurrency bug detection involves two main entities: an input and a particular thread execution order. The evolutionary part of fuzzing will prefer inputs that involve memory access patterns across threads (data flow interleaving) and thread ordering that disturb the data dependence more and direct them to trigger concurrency bugs. This paper suggests the idea of a concurrency fuzzer, which is first of its kind. We use a combination of LLVM, Thread Sanitizer and fuzzing techniques to detect various concurrency issues in an application. The source code of the application is statically analyzed for various paths, from the different thread related function calls to the main function. Every basic block in these paths are assigned a unique ID and a weight based on the distance of the basic block from the thread function calls. These basic blocks are instrumented to print their ID and weight upon execution. The knowledge about the basic blocks in the sliced paths are used to generate new sets of inputs from the old ones, thus covering even more basic blocks in the path and thereby increasing the chances of hitting a concurrency warning. We use Thread Sanitizer present in the LLVM compiler infrastructure to detect the concurrency bug warnings while executing each input. The inputs are directed to discover even new address locations with possible concurrency issues. The system was tested on three simple multi-threaded applications pigz, pbzip2, and pixz. The results show a quicker detection of unique addresses in the application with possible concurrency issues.
+
+
+### A Heuristic Framework to Detect Concurrency Vulnerabilities (ACSAC 2018)
+
+* <img src="image/zhihu.png">[Reading Note](https://kuaibao.qq.com/s/20190821AZNY0H00?refer=spider)
+* 
+* <img src="image/pdf_24px.png">[Paper](./Paper/ACSAC18_AFLCon.pdf)
+
+**Abstract:** With a growing demand of concurrent software to exploit multi-core hardware capability, concurrency vulnerabilities have become an inevitable threat to the security of today's IT industry. Existing concurrent program detection schemes focus mainly on detecting concurrency errors such as data races, atomicity violation, etc., with little attention paid to detect concurrency vulnerabilities that may be exploited to infringe security. In this paper, we propose a heuristic framework that combines both static analysis and fuzz testing to detect targeted concurrency vulnerabilities such as concurrency buffer overflow, double free, and use-after-free. The static analysis locates sensitive concurrent operations in a concurrent program, categorizes each finding into a potential type of concurrency vulnerability, and determines the execution order of the sensitive operations in each finding that would trigger the suspected concurrency vulnerability. The results are then plugged into the fuzzer with the execution order fixed by the static analysis in order to trigger the suspected concurrency vulnerabilities.
+
+In order to introduce more variance which increases possibility that the concurrency errors can be triggered, we also propose manipulation of thread scheduling priority to enable a fuzzer such as AFL to effectively explore thread interleavings in testing a concurrent program. To the best of our knowledge, this is the first fuzzer that is capable of effectively exploring concurrency errors.
+
+In evaluating the proposed heuristic framework with a benchmark suit of six real-world concurrent C programs, the framework detected two concurrency vulnerabilities for the proposed concurrency vulnerability detection, both being confirmed to be true positives, and produced three new crashes for the proposed interleaving exploring fuzzer that existing fuzzers could not produce. These results demonstrate the power and effectiveness of the proposed heuristic framework in detecting concurrency errors and vulnerabilities.
+
+
+
 # API Fuzzing
 
 ### Intelligent REST API Data Fuzzing (FSE 2020)
@@ -2500,6 +2567,7 @@ We instantiate our approach to the problem of fuzzing smart contracts, a domain 
 
 **Abstract:** This paper introduces REST-ler, the first stateful REST API fuzzer. REST-ler analyzes the API specification of a cloud service and generates sequences of requests that automatically test the service through its API. REST-ler generates test sequences by (1) inferring producer-consumer dependencies among request types declared in the specification (eg inferring that “a request B should be executed after request A” because B takes as an input a resource-id x produced by A) and by (2) analyzing dynamic feedback from responses observed during prior test executions in order to generate new tests (eg learning that “a request C after a request sequence A;B is refused by the service” and therefore avoiding this combination in the future).
 We present experimental results showing that these two techniques are necessary to thoroughly exercise a service under test while pruning the large search space of possible request sequences. We used REST-ler to test GitLab, a large open-source self-hosted Git service, as well as several Microsoft Azure and Office365 cloud services. REST-ler found 28 bugs in Gitlab and several bugs in each of the Azure and Office365 cloud services tested so far. These bugs have been confirmed by the service owners, and are either in the process of being fixed or have already been fixed.
+
 
 
 # Other Interesting Fuzzing
@@ -2521,6 +2589,7 @@ We present experimental results showing that these two techniques are necessary 
 
 In this paper we present the design and implementation of NYX, a highly optimized, coverage-guided hypervisor fuzzer. We show how a fast snapshot restoration mechanism that allows us to reload the system under test thousands of times per second is key to performance. Furthermore, we introduce a novel mutation engine based on custom bytecode programs, encoded as directed acyclic graphs (DAG), and affine types, that enables the required flexibility to express complex interactions. Our evaluation shows that, while NYX has a lower throughput than the state-of-the-art hypervisor fuzzer, it performs competitively on simple targets: NYX typically requires only a few minutes longer to achieve the same test coverage. On complex devices, however, our approach is able to significantly outperform existing works. Moreover, we are able to uncover substantially more bugs: in total, we uncovered 44 new bugs with 22 CVEs requested. Our results demonstrate that coverage guidance is highly valuable, even if a blind fuzzer can be significantly faster.
 
+
 ### FREEDOM: Engineering a State-of-the-Art DOM Fuzzer (CCS 2020)
 
 * <img src="image/pdf_24px.png">[Paper](https://dl.acm.org/doi/pdf/10.1145/3372297.3423340)
@@ -2528,7 +2597,6 @@ In this paper we present the design and implementation of NYX, a highly optimize
 * <img src="image/github_24px.png">[Code](https://github.com/sslab-gatech/freedom)
 
 **Abstract:** The DOM engine of a web browser is a popular attack surface and has been thoroughly fuzzed during its development. A common approach adopted by the latest DOM fuzzers is to generate new inputs based on context-free grammars. However, such a generative approach fails to capture the data dependencies in the inputs of a DOM engine, namely, HTML documents. Meanwhile, it is unclear whether or not coverage-guided mutation, which is well-known to be effective in fuzzing numerous software, still remains to be effective against DOM engines. Worse yet, existing DOM fuzzers cannot adopt a coverage-guided approach because they are unable to fully support HTML mutation and suffer from low browser throughput. To scientifically understand the effectiveness and limitations of the two approaches, we propose FreeDom, a full-fledged cluster-friendly DOM fuzzer that works with both generative and coverage-guided modes. FreeDom relies on a context-aware intermediate representation to describe HTML documents with proper data dependencies. FreeDom also exhibits up to 3.74x higher throughput through browser self-termination. FreeDom has found 24 previously unknown bugs in commodity browsers including Safari, Firefox, and Chrome, and 10 CVEs has been assigned so far. With the context-aware generation, FreeDom finds 3x more unique crashes in WebKit than the state-of-the-art DOM fuzzer, Domato. FreeDom guided by coverage is more effective in revealing new code blocks (2.62%) and finds three complex bugs that its generative approach fails to find. However, coverage-guided mutation that bootstraps with an empty corpus triggers 3.8x fewer unique crashes than the generative approach. The newly revealed coverage, more often than not, negatively affects the effectiveness of DOM fuzzers in bug finding. Therefore, we consider context-aware generation the best practice to find more DOM engine bugs and expect further improvement on coverage-guided DOM fuzzing facilitated by FreeDom.
-
 
 
 ### SQUIRREL: Testing Database Management Systems with Language Validity and Coverage Feedback (CCS 2020)
@@ -2581,7 +2649,6 @@ We propose a novel coverage-guided fuzz testing tool for big data analytics, cal
 * <img src="image/pdf_24px.png">[Paper](https://lifeasageek.github.io/papers/suhwan-crfuzz.pdf)
 
 **Abstract:** Fuzz testing has been proved its effectiveness in discovering software vulnerabilities. Empowered its randomness nature along with a coverage-guiding feature, fuzzing has been identified a vast number of vulnerabilities in real-world programs. This paper begins with an observation that the design of the current state-of-the-art fuzzers is not well suited for a particular (but yet important) set of software programs. Specifically, current fuzzers have limitations in fuzzing programs serving multiple purposes, where each purpose is controlled by extra options. This paper proposes CrFuzz, which overcomes this limitation. CrFuzz designs a clustering analysis to automatically predict if a newly given input would be accepted or not by a target program. Exploiting this prediction capability, CrFuzz is designed to efficiently explore the programs with multiple purposes. We employed CrFuzz for three state-of-the-art fuzzers, AFL, QSYM, and MOpt, and CrFuzz-augmented versions have shown 19.3% and 5.68% better path and edge coverage on average. More importantly, during two weeks of long-running experiments, CrFuzz discovered 277 previously unknown vulnerabilities where 212 of those are already confirmed and fixed by the respected vendors. We would like to emphasize that many of these vulnerabilities were discoverd from FFMpeg, ImageMagick, and Graphicsmagick, all of which are targets of Google’s OSS-Fuzz project and thus heavily fuzzed for last three years by far. Nevertheless, CrFuzz identified a remarkable number of vulnerabilities, demonstrating its effectiveness of vulnerability finding capability.
-
 
 
 ### SpecFuzz: Bringing Spectre-type vulnerabilities to the surface (USENIX Security2020)

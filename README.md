@@ -24,10 +24,14 @@ remark: This website is only used for collecting and grouping the related paper.
 - **USENIX Security 2021**
   - [UNIFUZZ: A Holistic and Pragmatic Metrics-Driven Platform for Evaluating Fuzzers](#unifuzz-a-holistic-and-pragmatic-metrics-driven-platform-for-evaluating-fuzzers-usenix-security2021)
   - [Nyx: Greybox Hypervisor Fuzzing using Fast Snapshots and Affine Types](#nyx-greybox-hypervisor-fuzzing-using-fast-snapshots-and-affine-types-usenix-security2021)
-  - [Breaking Through Binaries: Compiler-quality Instrumentation for Better Binary-only Fuzzing]
+  - [Breaking Through Binaries: Compiler-quality Instrumentation for Better Binary-only Fuzzing](#breaking-through-binaries-compiler-quality-instrumentation-for-better-binary-only-fuzzing--usenix-security2021)
   
 - **NDSS 2011**
   - [Favocado: Fuzzing the Binding Code of JavaScript Engines Using Semantically Correct Test Cases](#favocado-fuzzing-the-binding-code-of-javascript-engines-using-semantically-correct-test-cases-ndss-2021)
+
+- **ICST 2021**
+  - [Industrial Oriented Evaluation of Fuzzing Techniques](#industrial-oriented-evaluation-of-fuzzing-techniques-icst-2021)
+  - [Learning-Based Fuzzing of IoT Message Brokers
 
 - **Others 2021**
   - [CMFuzz: context-aware adaptive mutation for fuzzers (Empirical Software Engineering 2021)](#cmfuzz-context-aware-adaptive-mutation-for-fuzzers-empirical-software-engineering-2021)
@@ -361,6 +365,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Coverage-Directed Differential Testing of JVM Implementations (PLDI 2016)](#coverage-directed-differential-testing-of-jvm-implementations-pldi-2016)
 
 - [**Evaluate Fuzzing**](#evaluate-fuzzing)
+  - [Industrial Oriented Evaluation of Fuzzing Techniques (ICST 2021)](#industrial-oriented-evaluation-of-fuzzing-techniques-icst-2021)
   - [UNIFUZZ: A Holistic and Pragmatic Metrics-Driven Platform for Evaluating Fuzzers (USENIX Security2021)](#unifuzz-a-holistic-and-pragmatic-metrics-driven-platform-for-evaluating-fuzzers-usenix-security2021)
   - [A Quantitative Comparison of Covera (AST 2020)](#a-quantitative-comparison-of-covera-ast-2020)
   - [Fuzzing: On the Exponential Cost of Vulnerability Discovery (FSE 2020)](#fuzzing-on-the-exponential-cost-of-vulnerability-discovery-fse-2020)
@@ -377,6 +382,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [INSTRIM Lightweight Instrumentation for Coverage-guided Fuzzing (NDSS 2018 workshop)](#instrim-lightweight-instrumentation-for-coverage-guided-fuzzing-ndss-2018-workshop)
 
 - [**IoT or protocols fuzzing**](#iot-or-protocols-fuzzing)
+  - [Learning-Based Fuzzing of IoT Message Brokers (ICST 2021)]
   - [Vulnerability Detection in SIoT Applications: A Fuzzing Method on their Binaries (IEEE Transactions on Network Science and Engineering 2020)](#vulnerability-detection-in-siot-applications-a-fuzzing-method-on-their-binaries-ieee-transactions-on-network-science-and-engineering-2020)
   - [Analysis of DTLS Implementations Using Protocol State Fuzzing (USENIX Security2020)](#analysis-of-dtls-implementations-using-protocol-state-fuzzing-usenix-security2020)
   - [Frankenstein: Advanced Wireless Fuzzing to Exploit New Bluetooth Escalation Targets (USENIX Security2020)](#frankenstein-advanced-wireless-fuzzing-to-exploit-new-bluetooth-escalation-targets-usenix-security2020)
@@ -538,6 +544,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Program-Adaptive Mutational Fuzzing (S&P 2015)](#program-adaptive-mutational-fuzzing-sp-2015)
 
 - [**Learning-based Fuzzing**](#learning-based-fuzzing)
+  - [Learning-Based Fuzzing of IoT Message Brokers (ICST 2021)]
   - [OmniFuzz: A Flexible Framework for Expediting Bug Finding by Leveraging Past (Mis-)Behavior to Discover New Bugs (ACSAC 2020)](#omnifuzz-a-flexible-framework-for-expediting-bug-finding-by-leveraging-past-mis-behavior-to-discover-new-bugs-acsac-2020)
   - [Learning Input Tokens for Effective Fuzzing (ISSTA 2020)](#learning-input-tokens-for-effective-fuzzing-issta-2020)
   - [MTFuzz: Fuzzing with a Multi-task Neural Network (FSE 2020)](#mtfuzz-fuzzing-with-a-multi-task-neural-network-fse-2020)
@@ -572,7 +579,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [VUzzer: Application-aware Evolutionary Fuzzing](#vuzzer-application-aware-evolutionary-fuzzing-ndss-2017)
 
 - [**Binary Fuzzing**](#binary-fuzzing)
-  - [Breaking Through Binaries: Compiler-quality Instrumentation for Better Binary-only Fuzzing  (USENIX Security2021)]
+  - [Breaking Through Binaries: Compiler-quality Instrumentation for Better Binary-only Fuzzing  (USENIX Security2021)](#breaking-through-binaries-compiler-quality-instrumentation-for-better-binary-only-fuzzing--usenix-security2021)
   - [WEIZZ: Automatic Grey-Box Fuzzing for Structured Binary Formats (ISSTA 2020)](#weizz-automatic-grey-box-fuzzing-for-structured-binary-formats)
   - [RetroWrite: Statically Instrumenting COTS Binaries for Fuzzing and Sanitization (S&P 2020)](#retrowrite-statically-instrumenting-cots-binaries-for-fuzzing-and-sanitization-sp-2020)
   - [Binary-level Directed Fuzzing for Use-After-Free Vulnerabilities (RAID 2020)](#binary-level-directed-fuzzing-for-use-after-free-vulnerabilities-raid-2020)
@@ -827,6 +834,14 @@ We have implemented classfuzz and conducted an extensive evaluation of it agains
 
 
 # Evaluate Fuzzing
+
+### Industrial Oriented Evaluation of Fuzzing Techniques (ICST 2021)
+
+* <img src="image/pdf_24px.png">[Paper](http://www.wingtecher.com/themes/WingTecherResearch/assets/papers/icst21.pdf)
+ 
+**Abstract:** Fuzzing is a promising method for discovering vulnerabilities. Recently, various techniques are developed to improve the efficiency of fuzzing, and impressive gains are observed in evaluation results. However, evaluation is complex, as many factors affect the results, for example, test suites, baseline and metrics. Even more, most experiment setups are lab-oriented, lacking industrial settings such as large code-base and parallel runs. The correlation between the academic evaluation results and the bug-finding ability in real industrial settings has not been sufficiently studied.
+
+In this paper, we test representative fuzzing techniques to reveal their efficiency in industrial settings. First, we apply typical fuzzers on academic widely used small projects from LAVAM suite. We also apply the same fuzzers on large practical projects from Google’s fuzzer-test-suite, which is rarely used in academic settings. Both experiments are performed in both single and parallel run. By analyzing the results, we found that most optimizations working well on LAVA-M suite fail to achieve satisfying results on Google’s fuzzer-test-suite (e.g. compared to AFL, QSYM detects 82x more synthesized bugs in LAVA-M, but only detects 26% real bugs in Google’s fuzzer-test-suite), and the original AFL even outperforms most academic optimization variants in industry widely used parallel runs (e.g. AFL covers 13% more paths than AFLFast). Then, we summarize common pitfalls of those optimizations, analyze the corresponding root causes, and propose potential directions such as orchestrations and synchronization to overcome the problems. For example, when running in parallel on those large practical projects, the proposed horizontal orchestration could cover 36%-82% more paths, and discover 46%-150% more unique crashes or bugs, compared to fuzzers such as AFL, FairFuzz and QSYM.
 
 ### UNIFUZZ: A Holistic and Pragmatic Metrics-Driven Platform for Evaluating Fuzzers (USENIX Security2021)
 

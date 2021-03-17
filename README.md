@@ -36,9 +36,11 @@ remark: This website is only used for collecting and grouping the related paper.
   
 - **ICST 2021**
   - [Industrial Oriented Evaluation of Fuzzing Techniques](#industrial-oriented-evaluation-of-fuzzing-techniques-icst-2021)
-  - [Learning-Based Fuzzing of IoT Message Broker]
+  - [Learning-Based Fuzzing of IoT Message Broker](#learning-based-fuzzing-of-iot-message-brokers-icst-2021)
 
 - **Others 2021**
+  - [MooFuzz: Many-Objective Optimization Seed Schedule for Fuzzer (Mathematics 2021)](#moofuzz-many-objective-optimization-seed-schedule-for-fuzzer-mathematics-2021)
+  - [PMFuzz: Test Case Generation for Persistent Memory Programs (ASPLOS 2021)](#pmfuzz-test-case-generation-for-persistent-memory-programs-asplos-2021)
   - [A Priority Based Path Searching Method for Improving Hybrid Fuzzing (Computers & Security 2021)](#a-priority-based-path-searching-method-for-improving-hybrid-fuzzing-computers--security-2021)
   - [CMFuzz: context-aware adaptive mutation for fuzzers (Empirical Software Engineering 2021)](#cmfuzz-context-aware-adaptive-mutation-for-fuzzers-empirical-software-engineering-2021)
   - [Refined Grey-Box Fuzzing with Sivo (arXiv 2021)](#refined-grey-box-fuzzing-with-sivo-arxiv-2021)
@@ -132,6 +134,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [PathAFL: Path-Coverage Assisted Fuzzing](#pathafl-path-coverage-assisted-fuzzing-asia-ccs-2020)
 
 - **Others 2020**
+  - [BanditFuzz: Fuzzing SMT Solvers with Reinforcement Learning (2020)](#banditfuzz-fuzzing-smt-solvers-with-reinforcement-learning-2020)
   - [Fuzzing Technique in Web Applications and Beyond (MCTE 2020)](#fuzzing-technique-in-web-applications-and-beyond-mcte-2020)
   - [Vulnerability Detection in SIoT Applications: A Fuzzing Method on their Binaries (IEEE Transactions on Network Science and Engineering 2020)](#vulnerability-detection-in-siot-applications-a-fuzzing-method-on-their-binaries-ieee-transactions-on-network-science-and-engineering-2020)
   - [MaxAFL: Maximizing Code Coverage with a Gradient-Based Optimization Technique (Electronics 2020)](#maxafl-maximizing-code-coverage-with-a-gradient-based-optimization-technique-electronics-2020)
@@ -393,7 +396,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [INSTRIM Lightweight Instrumentation for Coverage-guided Fuzzing (NDSS 2018 workshop)](#instrim-lightweight-instrumentation-for-coverage-guided-fuzzing-ndss-2018-workshop)
 
 - [**IoT or protocols fuzzing**](#iot-or-protocols-fuzzing)
-  - [Learning-Based Fuzzing of IoT Message Brokers (ICST 2021)]
+  - [Learning-Based Fuzzing of IoT Message Brokers (ICST 2021)](#learning-based-fuzzing-of-iot-message-brokers-icst-2021)
   - [Vulnerability Detection in SIoT Applications: A Fuzzing Method on their Binaries (IEEE Transactions on Network Science and Engineering 2020)](#vulnerability-detection-in-siot-applications-a-fuzzing-method-on-their-binaries-ieee-transactions-on-network-science-and-engineering-2020)
   - [Analysis of DTLS Implementations Using Protocol State Fuzzing (USENIX Security2020)](#analysis-of-dtls-implementations-using-protocol-state-fuzzing-usenix-security2020)
   - [Frankenstein: Advanced Wireless Fuzzing to Exploit New Bluetooth Escalation Targets (USENIX Security2020)](#frankenstein-advanced-wireless-fuzzing-to-exploit-new-bluetooth-escalation-targets-usenix-security2020)
@@ -423,6 +426,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Fuzzing Symbolic Expressions (ICSE 2021)](#fuzzing-symbolic-expressions-icse-2021)
   - [Detecting Critical Bugs in SMT Solvers using Blackbox Mutational Fuzzing (FSE 2020)](#detecting-critical-bugs-in-smt-solvers-using-blackbox-mutational-fuzzing-fse)
   - [On the Unusual Effectiveness of Type-aware Mutations for Testing SMT Solvers (2020)](#on-the-unusual-effectiveness-of-type-aware-mutations-for-testing-smt-solvers)
+  - [BanditFuzz: Fuzzing SMT Solvers with Reinforcement Learning (2020)](#banditfuzz-fuzzing-smt-solvers-with-reinforcement-learning-2020)
   - [Validating SMT Solvers via Semantic Fusion (PLDI 2020)](#validating-smt-solvers-via-semantic-fusion-pldi-2020)
   - [Automatically Testing String Solvers (ICSE 2020)](#automatically-testing-string-solvers-icse-2020)
   - [Language-Agnostic Generation of Compilable Test Programs (ICST 2020)](#language-agnostic-generation-of-compilable-test-programs-icst-2020)
@@ -551,6 +555,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [AddressSanitizer: A Fast Address Sanity Checker  (USENIX Security2012)](#addresssanitizer-a-fast-address-sanity-checker-usenix-security2012)
 
 - [**Schedule (Power & Mutation)**](#schedule-power--mutation)
+  - [MooFuzz: Many-Objective Optimization Seed Schedule for Fuzzer (Mathematics 2021)](#moofuzz-many-objective-optimization-seed-schedule-for-fuzzer-mathematics-2021)
   - [EcoFuzz: Adaptive Energy-Saving Greybox Fuzzing as a Variant of the Adversarial Multi-Armed Bandit (USENIX Security2020)](#ecofuzz-adaptive-energy-saving-greybox-fuzzing-as-a-variant-of-the-adversarial-multi-armed-bandit-usenix-security2020)
   - [MOPT: Optimize Mutation Scheduling for Fuzzers (USENIX Security2019)](#mopt-optimize-mutation-scheduling-for-fuzzers-usenix-security2019)
   - [Cerebro: Context-aware Adaptive Fuzzing for Effective Vulnerability Detection (FSE 2019)](#cerebro-context-aware-adaptive-fuzzing-for-effective-vulnerability-detection-fse-2019)
@@ -559,7 +564,7 @@ remark: This website is only used for collecting and grouping the related paper.
 
 - [**Learning-based Fuzzing**](#learning-based-fuzzing)
   - [Reinforcement Learning-based Hierarchical Seed Scheduling for Greybox Fuzzing (NDSS 2021)]
-  - [Learning-Based Fuzzing of IoT Message Brokers (ICST 2021)]
+  - [Learning-Based Fuzzing of IoT Message Brokers (ICST 2021)](#learning-based-fuzzing-of-iot-message-brokers-icst-2021)
   - [OmniFuzz: A Flexible Framework for Expediting Bug Finding by Leveraging Past (Mis-)Behavior to Discover New Bugs (ACSAC 2020)](#omnifuzz-a-flexible-framework-for-expediting-bug-finding-by-leveraging-past-mis-behavior-to-discover-new-bugs-acsac-2020)
   - [Learning Input Tokens for Effective Fuzzing (ISSTA 2020)](#learning-input-tokens-for-effective-fuzzing-issta-2020)
   - [MTFuzz: Fuzzing with a Multi-task Neural Network (FSE 2020)](#mtfuzz-fuzzing-with-a-multi-task-neural-network-fse-2020)
@@ -628,6 +633,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [REST-ler: Stateful REST API Fuzzing (ICSE 2019)](#rest-ler-stateful-rest-api-fuzzing-icse-2019)
 
 - [**Other Interesting Fuzzing**](#other-interesting-fuzzing)
+  - [PMFuzz: Test Case Generation for Persistent Memory Programs (ASPLOS 2021)](#pmfuzz-test-case-generation-for-persistent-memory-programs-asplos-2021)
   - [PGFUZZ: Policy-Guided Fuzzing for Robotic Vehicles (NDSS 2021)](#pgfuzz-policy-guided-fuzzing-for-robotic-vehicles-ndss-2021)
   - [IntelliGen: Automatic Driver Synthesis for Fuzz Testing (ICSE 2021 SEIP)](#intelligen-automatic-driver-synthesis-for-fuzz-testing-icse-2021-seip)
   - [WINNIE: Fuzzing Windows Applications with Harness Synthesis and Fast Cloning (NDSS 2021)](#winnie-fuzzing-windows-applications-with-harness-synthesis-and-fast-cloning-ndss-2021)
@@ -965,6 +971,13 @@ The ideal solution for binary security analysis would be a static rewriter that 
 
 # IoT or protocols fuzzing
 
+### Learning-Based Fuzzing of IoT Message Brokers (ICST 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://graz.pure.elsevier.com/en/publications/learning-based-fuzzing-of-iot-message-brokers)
+
+**Abstract:** The number of devices in the Internet of Things (IoT) immensely grew in recent years. A frequent challenge in the assurance of the dependability of IoT systems is that components of the system appear as a black box. This paper presents a semi-automatic testing methodology for black-box systems that combines automata learning and fuzz testing. Our testing technique uses stateful fuzzing based on a model that is automatically inferred by automata learning. Applying this technique, we can simultaneously test multiple implementations for unexpected behavior and possible security vulnerabilities.We show the effectiveness of our learning-based fuzzing technique in a case study on the MQTT protocol. MQTT is a widely used publish/subscribe protocol in the IoT. Our case study reveals several inconsistencies between five different MQTT brokers. The found inconsistencies expose possible security vulnerabilities and violations of the MQTT specification.
+
+
 ### Vulnerability Detection in SIoT Applications: A Fuzzing Method on their Binaries (IEEE Transactions on Network Science and Engineering 2020)
 
 * <img src="image/pdf_24px.png">[Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9259242)
@@ -1205,6 +1218,13 @@ SSL encrypted protocols. As a proof of concept for efficiency of ESPIKE we demon
 
 **Abstract:** We propose type-aware operator mutation, a simple, but unusually effective approach for testing SMT solvers.
 The key idea is to mutate operators of conforming types within the seed formulas to generate well-typed mutant formulas. These mutant formulas are then used as the test cases for SMT solvers. We realized typeaware operator mutation within the OpFuzz tool and used it to stress-test Z3 and CVC4, two state-of-the-art SMT solvers. Type-aware operator mutations are unusually effective: During nine months of extensive testing with OpFuzz, we reported 909 bugs in Z3 and CVC4,1 out of which 632 bugs were confirmed and 531 of the confirmed bugs were fixed by the developers. The detected bugs are highly diverse — we found bugs of many different types (soundness bugs, invalid model bugs, crashes, etc.), logics and solver configurations. We have further conducted an in-depth study on the bugs found by OpFuzz. The study results show that the bugs found by OpFuzz are of high quality. Many of them affect core components of the SMT solvers’ codebases, and some required major changes for the developers to fix. Among the 909 bugs found by OpFuzz, 130 were soundness bugs, the most critical bugs in SMT solvers, and 501 were in the default modes of the solvers. Notably, OpFuzz found 16 critical soundness bugs in CVC4, which has proved to be a very stable SMT solver
+
+
+### BanditFuzz: Fuzzing SMT Solvers with Reinforcement Learning (2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://uwspace.uwaterloo.ca/handle/10012/15753)
+
+Satisfiability Modulo Theories (SMT) solvers are fundamental tools in the broad context of software engineering and security research. If SMT solvers are to continue to have an impact, it is imperative we develop efficient and systematic testing methods for them. To this end, we present a reinforcement learning driven fuzzing system BanditFuzz that zeroes in on the grammatical constructs of well-formed solver inputs that are the root cause of performance or correctness issues in solvers-under-test. To the best of our knowledge, BanditFuzz is the first machine-learning based fuzzer for SMT solvers. BanditFuzz takes as input a grammar G describing the well-formed inputs to a set of distinct solvers (say, P_1 and P_2) that implement the same specification and a fuzzing objective (e.g., maximize the relative performance difference between P_1 and P_2), and outputs a ranked list of grammatical constructs that are likely to maximize performance differences between P_1 and P_2 or are root causes of errors in these solvers. Typically, mutation fuzzing is implemented as a set of random mutations applied to a given input. By contrast, the key innovation behind BanditFuzz is the modeling of a grammar-preserving fuzzing mutator as a reinforcement learning (RL) agent that, via blackbox interactions with programs-under-test, learns which grammatical constructs are most likely the cause of an error or performance issue. Using BanditFuzz, we discovered 1700 syntactically unique inputs resulting in inconsistent answers across state-of-the-art SMT solvers Z3, CVC4, Colibri, MathSAT, and Z3str3 over the floating-point and string SMT theories. Further, using BanditFuzz, we constructed two benchmark suites (with 400 floating-point and 110 string instances) that expose performance issues in all considered solvers. We also performed a comparison of BanditFuzz against random, mutation, and evolutionary fuzzing methods. We observed up to a 31% improvement in performance fuzzing and up to 81% improvement in the number of bugs found by BanditFuzz relative to these other methods for the same amount of time provided to all methods.
 
 
 ### Validating SMT Solvers via Semantic Fusion (PLDI 2020)
@@ -2216,6 +2236,13 @@ AddressSanitizer achieves efficiency without sacrificing comprehensiveness. Its 
 
 # Schedule (Power & Mutation)
 
+### MooFuzz: Many-Objective Optimization Seed Schedule for Fuzzer (Mathematics 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.mdpi.com/2227-7390/9/3/205)
+
+**Abstract:** Coverage-based Greybox Fuzzing (CGF) is a practical and effective solution for finding bugs and vulnerabilities in software. A key challenge of CGF is how to select conducive seeds and allocate accurate energy. To address this problem, we propose a novel many-objective optimization solution, MooFuzz, which can identify different states of the seed pool and continuously gather different information about seeds to guide seed schedule and energy allocation. First, MooFuzz conducts risk marking in dangerous positions of the source code. Second, it can automatically update the collected information, including the path risk, the path frequency, and the mutation information. Next, MooFuzz classifies seed pool into three states and adopts different objectives to select seeds. Finally, we design an energy recovery mechanism to monitor energy usage in the fuzzing process and reduce energy consumption. We implement our fuzzing framework and evaluate it on seven real-world programs. The experimental results show that MooFuzz outperforms other state-of-the-art fuzzers, including AFL, AFLFast, FairFuzz, and PerfFuzz, in terms of path discovery and bug detection.
+
+
 ### EcoFuzz: Adaptive Energy-Saving Greybox Fuzzing as a Variant of the Adversarial Multi-Armed Bandit (USENIX Security2020)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/USENIX20_EcoFuzz.pdf)
@@ -2642,6 +2669,15 @@ We present experimental results showing that these two techniques are necessary 
 
 
 # Other Interesting Fuzzing
+
+### PMFuzz: Test Case Generation for Persistent Memory Programs (ASPLOS 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://asplos-conference.org/abstracts/asplos21-paper8-extended_abstract.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/Systems-ShiftLab/PMFuzz)
+
+**Abstract:** This work provides PMFuzz, a fuzzer that automatically generates high-value test cases to detect crash consistency bugs in PM programs. The source of PMFuzz is publicly available at: https://github.com/Systems-ShiftLab/PMFuzz. We implement PMFuzz on top of a well-known fuzzer, AFL++ by incorporating our key insights, and evaluate PMFuzz in a real PM system with common PM programs, including keyvalue stores and databases.
+
 
 ### PGFUZZ: Policy-Guided Fuzzing for Robotic Vehicles (NDSS 2021)
 

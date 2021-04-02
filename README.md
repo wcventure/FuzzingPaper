@@ -234,6 +234,10 @@ remark: This website is only used for collecting and grouping the related paper.
   - [MemFuzz: Using Memory Accesses to Guide Fuzzing](#memfuzz-using-memory-accesses-to-guide-fuzzing-icst-2019)
   - [SeqFuzzer: An Industrial Protocol Fuzzing Framework in Deep Learning Perspective](#seqfuzzer-an-industrial-protocol-fuzzing-framework-in-deep-learning-perspective-icst-2019)
 
+- **ISSRE 2019**
+  - [Engineering a Better Fuzzer with SynergicallyIntegrated Optimizations](#engineering-a-better-fuzzer-with-synergically-integrated-optimizations-issre-2019)
+  - [Fuzzing Error Handling Code in Device Drivers Based on Software Fault Injection](#fuzzing-error-handling-code-in-device-drivers-based-on-software-fault-injection)
+
 - **Other 2019**
   - [Leveraging Textual Specifications for Grammar-Based Fuzzing of Network Protocols (AAAI 2019)](#leveraging-textual-specifications-for-grammar-based-fuzzing-of-network-protocols-aaai-2019)
   - [DeepFuzzer: Accelerated Deep Greybox Fuzzing (TDSC 2019)](#deepfuzzer-accelerated-deep-greybox-fuzzing-tdsc-2019)
@@ -324,7 +328,10 @@ remark: This website is only used for collecting and grouping the related paper.
 - **ASE 2017**
   - [Learn&Fuzz: Machine Learning for Input Fuzzing](#learnfuzz-machine-learning-for-input-fuzzing-ase-2017)
   - [In-memory fuzzing for binary code similarity analysis]()
-  
+
+- **ISSRE 2017**
+  - [Chizpurfle: A Gray-Box Android Fuzzer for Vendor Service Customizations](#chizpurfle-a-gray-box-android-fuzzer-for-vendor-service-customizations)
+
 - **Other 2017**
   - [Bbuzz: A Bit-aware Fuzzing Framework for Network Protocol Systematic Reverse Engineering and Analysis](#bbuzz-a-bit-aware-fuzzing-framework-for-network-protocol-systematic-reverse-engineering-and-analysis-mcc-2017)
 
@@ -668,6 +675,9 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Designing New Operating Primitives to Improve Fuzzing Performance (CCS 2017)](#designing-new-operating-primitives-to-improve-fuzzing-performance-ccs-2017)
   - [In-memory fuzzing for binary code similarity analysis (ASE 2017)](#in-memory-fuzzing-for-binary-code-similarity-analysis-ase-2017)
   - [Systematic Fuzzing and Testing of TLS Libraries (CCS 2016)](#systematic-fuzzing-and-testing-of-tls-libraries-ccs-2016)
+  - [Engineering a Better Fuzzer with SynergicallyIntegrated Optimizations (ISSRE 2019)](#engineering-a-better-fuzzer-with-synergically-integrated-optimizations-issre-2019)
+  - [Fuzzing Error Handling Code in Device Drivers Based on Software Fault Injection (ISSRE 2019)](#fuzzing-error-handling-code-in-device-drivers-based-on-software-fault-injection)
+  - [Chizpurfle: A Gray-Box Android Fuzzer for Vendor Service Customizations (ISSRE 2017)](#chizpurfle-a-gray-box-android-fuzzer-for-vendor-service-customizations)
 
 
 
@@ -3004,6 +3014,27 @@ In this paper, we present a novel method that leverages in-memory fuzzing for bi
 **Abstract:** We present TLS-Attacker, an open source framework for evaluating the security of TLS libraries. TLS-Attacker allows security engineers to create custom TLS message flows and arbitrarily modify message contents using a simple interface in order to test the behavior of their libraries. Based on TLS-Attacker, we present a two-stage fuzzing approach to evaluate TLS server behavior. Our approach automatically searches for cryptographic failures and boundary violation vulnerabilities. It allowed us to find unusual padding oracle vulnerabilities and overflows/overreads in widely used TLS libraries, including OpenSSL, Botan, and MatrixSSL.
 
 Our findings motivate developers to create comprehensive test suites, including positive as well as negative tests, for the evaluation of TLS libraries. We use TLS-Attacker to create such a test suite framework which finds further problems in Botan.
+
+
+### Engineering a Better Fuzzer with Synergically Integrated Optimizations (ISSRE 2019)
+
+* <img src="image/pdf_24px.png">[Paper](http://www.wingtecher.com/themes/WingTecherResearch/assets/papers/issre19_betterfuzzer.pdf)
+
+**Abstract:** State-of-the-art fuzzers implement various optimizations to enhance their performance. As the optimizations reside in different stages such as input seed selection and mutation, it is tempting to combine the optimizations in different stages. However, our initial attempts demonstrate that naive combination actually worsens the performance, which explains that most optimizations are still isolated by stages and metrics. In this paper, we present InteFuzz, the first framework that synergically integrates multiple fuzzing optimizations. We analyze the root cause for performance degradation in naive combination, and discover optimizations conflict in coverage criteria and optimization granularity. To resolve the conflicts, we propose a novel priority-based scheduling mechanism. The dynamic integration considers both branch-based and block-based coverage feedbacks that are used by most fuzzing optimizations. In our evaluation, we extract four optimizations from popular fuzzers such as AFLFast and FairFuzz and compare InteFuzz against naive combinations. The evaluation results show that InteFuzz outperforms the naive combination by 29% and 26% in path-and branch-coverage. Additionally, InteFuzz triggers 222 more unique crashes, and discovers 33 zero-day vulnerabilities in real-world projects with 12 registered as CVEs.
+
+
+### Fuzzing Error Handling Code in Device Drivers Based on Software Fault Injection (ISSRE 2019)
+
+* <img src="image/pdf_24px.png">[Paper](https://hal.inria.fr/hal-02389293/document)
+
+**Abstract:** Device drivers remain a main source of runtime failures in operating systems. To detect bugs in device drivers, fuzzing has been commonly used in practice. However, a main limitation of existing fuzzing approaches is that they cannot effectively test error handling code. Indeed, these fuzzing approaches require effective inputs to cover target code, but much error handling code in drivers is triggered by occasional errors (such as insufficient memory and hardware malfunctions) that are not related to inputs. In this paper, based on software fault injection, we propose a new fuzzing approach named FIZZER, to test error handling code in device drivers. At compile time, FIZZER uses static analysis to recommend possible error sites that can trigger error handling code. During driver execution, by analyzing runtime information, it automatically fuzzes error-site sequences for fault injection to improve code coverage. We evaluate FIZZER on 18 device drivers in Linux 4.19, and in total find 22 real bugs. The code coverage is increased by over 15% compared to normal execution without fuzzing.
+
+
+### Chizpurfle: A Gray-Box Android Fuzzer for Vendor Service Customizations (ISSRE 2017)
+
+* <img src="image/pdf_24px.png">[Paper](https://orbilu.uni.lu/handle/10993/40955)
+
+**Abstract:** Android has become the most popular mobile OS, as it enables device manufacturers to introduce customizations to compete with value-added services. However, customizations make the OS less dependable and secure, since they can introduce software flaws. Such flaws can be found by using fuzzing, a popular testing technique among security researchers.This paper presents Chizpurfle, a novel "gray-box" fuzzing tool for vendor-specific Android services. Testing these services is challenging for existing tools, since vendors do not provide source code and the services cannot be run on a device emulator. Chizpurfle has been designed to run on an unmodified Android OS on an actual device. The tool automatically discovers, fuzzes, and profiles proprietary services. This work evaluates the applicability and performance of Chizpurfle on the Samsung Galaxy S6 Edge, and discusses software bugs found in privileged vendor services.
 
 
 ##### Page Traffic Analysis

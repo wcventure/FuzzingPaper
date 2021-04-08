@@ -1498,6 +1498,7 @@ To this end, this paper proposes HFL, which not only combines fuzzing with symbo
 
 ### SAVIOR: Towards Bug-Driven Hybrid Testing (S&P 2020)
 
+* <img src="image/zhihu.png">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67)
 * <img src="image/pdf_24px.png">[Paper](./Paper/SP20_SAVIOR.pdf)
 
 **Abstract:** Hybrid testing combines fuzz testing and concolic execution. It leverages fuzz testing to test easy-to-reach code regions and uses concolic execution to explore code blocks guarded by complex branch conditions. As a result, hybrid testing is able to reach deeper into program state space than fuzz testing or concolic execution alone. Recently, hybrid testing has seen significant advancement. However, its code coveragecentric design is inefficient in vulnerability detection. First, it blindly selects seeds for concolic execution and aims to explore new code continuously. However, as statistics shows, a large portion of the explored code is often invulnerable. Therefore, giving equal attention to every part of the code during hybrid testing is a non-optimal strategy. It also slows down the detection of real vulnerabilities by over 43%. Second, classic hybrid testing quickly moves on after reaching a chunk of code, rather than examining the hidden defects inside. It may frequently miss subtle yet exploitable vulnerabilities despite that it has already explored the vulnerable code paths.

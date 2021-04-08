@@ -786,6 +786,8 @@ remark: This website is only used for collecting and grouping the related paper.
 
 ### HyDiff: Hybrid Differential Software Analysis (ICSE 2020)
 
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#NrdLd)
+  
 * <img src="image/zhihu.png">[Reading Note](https://zhuanlan.zhihu.com/p/138238406)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/ICSE20_Hydiff.pdf)
@@ -823,6 +825,8 @@ We have evaluated classming on mainstream JVM implementations, including OpenJDK
 
 ### Hunting for bugs in code coverage tools via randomized differential testing (ICSE 2019)
 
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#9tQHI)
+
 * <img src="image/zhihu.png">[Reading Note](https://zhuanlan.zhihu.com/p/125157536)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/ICSE19_Difftest.pdf)
@@ -831,6 +835,8 @@ We have evaluated classming on mainstream JVM implementations, including OpenJDK
 
 
 ### Different is Good: Detecting the Use of Uninitialized Variables through Differential Replay (CCS 2019)
+
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#COkNh)
 
 * <img src="image/zhihu.png">[Reading Note](https://zhuanlan.zhihu.com/p/131312498)
  
@@ -968,6 +974,8 @@ The ideal solution for binary security analysis would be a static rewriter that 
 
 ### Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing (S&P 2019)
 
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#PouZd)
+* 
 * <img src="image/wechat_24px.png">[Reading Note](https://mp.weixin.qq.com/s/Cf_0F2bPmK8Gmp5JWnPOiA)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/SP19_Full-speed.pdf)
@@ -1478,6 +1486,8 @@ In this paper, we approach the problem of coverage-guided kernel fuzzing in an O
 
 ### HFL: Hybrid Fuzzing on the Linux Kernel (NDSS 2020)
 
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#FalkC)
+  
 * <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/05/09/hfl-hybrid-fuzzing-on-the-linux-kernel/)
 
 * <img src="image/zhihu.png">[Reading Note](https://zhuanlan.zhihu.com/p/123373175)
@@ -1493,12 +1503,16 @@ To this end, this paper proposes HFL, which not only combines fuzzing with symbo
 
 ### PANGOLIN: Incremental Hybrid Fuzzing with Polyhedral Path Abstraction (S&P 2020)
 
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#iztcu)
+  
 * <img src="image/pdf_24px.png">[Paper](./Paper/SP20_PANGOLIN.pdf)
 
 **Abstract:** Hybrid fuzzing, which combines the merits of both fuzzing and concolic execution, has become one of the most important trends in coverage-guided fuzzing techniques. Despite the tremendous research on hybrid fuzzers, we observe that existing techniques are still inefficient. One important reason is that these techniques, which we refer to as non-incremental fuzzers, cache and reuse few computation results and, thus, lose many optimization opportunities. To be incremental, we propose “polyhedral path abstraction”, which preserves the exploration state in the concolic execution stage and allows more effective mutation and constraint solving over existing techniques. We have implemented our idea as a tool, namely PANGOLIN, and evaluated it using LAVA-M as well as nine real-world programs. The evaluation results showed that PANGOLIN outperforms the state-of-the-art fuzzing techniques with the improvement of coverage rate ranging from 10% to 30%. Moreover, PANGOLIN found 400 more bugs in LAVA-M and discovered 41 unseen bugs with 8 of them assigned with the CVE IDs.
 
 
 ### SAVIOR: Towards Bug-Driven Hybrid Testing (S&P 2020)
+
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#VwAnn)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/SP20_SAVIOR.pdf)
 
@@ -1517,6 +1531,8 @@ We propose SAVIOR, a new hybrid testing framework pioneering a bug-driven princi
 
 ### Send Hardest Problems My Way: Probabilistic Path Prioritization for Hybrid Fuzzing (NDSS 2019)
 
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#NHtzS)
+  
 * <img src="image/pdf_24px.png">[Paper](./Paper/NDSS19_Probabilistic.pdf)
 
 **Abstract:** Hybrid fuzzing which combines fuzzing and concolic execution has become an advanced technique for software vulnerability detection. Based on the observation that fuzzing and concolic execution are complementary in nature, the state-of-the-art hybrid fuzzing systems deploy "demand launch" and "optimal switch" strategies. Although these ideas sound intriguing, we point out several fundamental limitations in them, due to oversimplified assumptions. We then propose a novel "discriminative dispatch" strategy to better utilize the capability of concolic execution. We design a novel Monte Carlo based probabilistic path prioritization model to quantify each path's difficulty and prioritize them for concolic execution. This model treats fuzzing as a random sampling process. It calculates each path's probability based on the sampling information. Finally, our model prioritizes and assigns the most difficult paths to concolic execution. We implement a prototype system DigFuzz and evaluate our system with two representative datasets. Results show that the concolic execution in DigFuzz outperforms than that in a state-of-the-art hybrid fuzzing system Driller in every major aspect. In particular, the concolic execution in DigFuzz contributes to discovering more vulnerabilities (12 vs. 5) and producing more code coverage (18.9% vs. 3.8%) on the CQE dataset than the concolic execution in Driller.
@@ -1554,6 +1570,8 @@ Our evaluation shows that QSYM does not just outperform state-of-the-art fuzzers
 
 
 ### Angora: Efficient Fuzzing by Principled Search (S&P 2018)
+
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#A4ojR)
 
 * <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2019/01/03/angora-efficient-fuzzing-by-principled-search/)
 
@@ -1637,6 +1655,8 @@ For evaluation, we implement a prototype of Zeror and evaluate it on Google fuzz
 
 ### Not All Coverage Measurements Are Equal: Fuzzing by Coverage Accounting for Input Prioritization (NDSS 2020)
 
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#kNyMv)
+  
 * <img src="image/pdf_24px.png">[Paper](./Paper/NDSS20_Prioritization.pdf)
  
 **Abstract:** Coverage-based fuzzing has been actively studied and widely adopted for finding vulnerabilities in real-world software applications. With code coverage, such as statement coverage and transition coverage, as the guidance of input mutation, coverage-based fuzzing can generate inputs that cover more code and thus find more vulnerabilities without prerequisite information such as input format. Current coverage-based fuzzing tools treat covered code equally. All inputs that contribute to new statements or transitions are kept for future mutation no matter what the statements or transitions are and how much they impact security. Although this design is reasonable from the perspective of software testing, which aims to full code coverage, it is inefficient for vulnerability discovery since that 1) current techniques are still inadequate to reach full coverage within a reasonable amount of time, and that 2) we always want to discover vulnerabilities early so that it can be patched promptly. Even worse, due to the non-discriminative code coverage treatment, current fuzzing tools suffer from recent anti-fuzzing techniques and become much less effective in finding real-world vulnerabilities.
@@ -1758,6 +1778,8 @@ In this paper, we propose POLYGLOT, a generic fuzzing framework that generates h
 
 ### Fuzzing JavaScript Engines with Aspect-preserving Mutation (S&P 2020)
 
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#1Nr9y)
+  
 * <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/07/10/fuzzing-javascript-engines-with-aspect-preserving-mutation/)
 
 * <img src="image/pdf_24px.png">[Paper](https://gts3.org/assets/papers/2020/park:die.pdf)
@@ -1789,6 +1811,8 @@ In this paper, we advocate a new technique, called an aspect preserving mutation
 
 ### Semantic Fuzzing with Zest (ISSTA 2019)
 
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#h6RGL)
+
 * <img src="image/pdf_24px.png">[Paper](./Paper/ISSTA19_Zest.pdf)
 
 **Abstract:** Programs expecting structured inputs often consist of both a syntactic analysis stage, which parses raw input, and a semantic analysis stage, which conducts checks on the parsed input and executes the core logic of the program. Generator-based testing tools in the lineage of QuickCheck are a promising way to generate random syntactically valid test inputs for these programs. We present Zest, a technique which automatically guides QuickCheck-like randominput generators to better explore the semantic analysis stage of test programs. Zest converts random-input generators into deterministic parametric generators. We present the key insight that mutations in the untyped parameter domain map to structural mutations in the input domain. Zest leverages program feedback in the form of code coverage and input validity to perform feedback-directed parameter search. We evaluate Zest against AFL and QuickCheck on five Java programs: Maven, Ant, BCEL, Closure, and Rhino. Zest covers 1.03x-2.81x as many branches within the benchmarks semantic analysis stages as baseline techniques. Further, we find 10 new bugs in the semantic analysis stages of these benchmarks. Zest is the most effective technique in finding these bugs reliably and quickly, requiring at most 10 minutes on average to find each bug.
@@ -1803,6 +1827,8 @@ In this paper, we advocate a new technique, called an aspect preserving mutation
 
 ### Parser-Directed Fuzzing (PLDI 2019)
 
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#KuJuN)
+  
 * <img src="image/pdf_24px.png">[Paper](./Paper/PLDI19_Parser.pdf)
 
 **Abstract:** To be effective, software test generation needs to well cover the space of possible inputs. Traditional fuzzing generates large numbers of random inputs, which however are unlikely to contain keywords and other specific inputs of non-trivial input languages. Constraint-based test generation solves conditions of paths leading to uncovered code, but fails on programs with complex input conditions because of path explosion.
@@ -1819,6 +1845,8 @@ In this paper, we pre­sent the de­sign and im­ple­men­ta­ti­on of GRI­MO
 
 ### SLF: Fuzzing without Valid Seed Inputs (ICSE 2019)
 
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#mhYUc)
+
 * <img src="image/pdf_24px.png">[Paper](./Paper/ICSE19_SLF.pdf)
 
 **Abstract:** Fuzzing is an important technique to detect software bugs and vulnerabilities. It works by mutating a small set of seed inputs to generate a large number of new inputs. Fuzzers’ performance often substantially degrades when valid seed inputs are not available. Although existing techniques such as symbolic execution can generate seed inputs from scratch, they have various limitations hindering their applications in real-world complex software without source code. In this paper, we propose a novel fuzzing technique that features the capability of generating valid seed inputs. It piggy-backs on AFL to identify input validity checks and the input fields that have impact on such checks. It further classifies these checks according to their relations to the input. Such classes include arithmetic relation, object offset, data structure length and so on. A multi-goal search algorithm is developed to apply class specific mutations in order to satisfy inter-dependent checks all together. We evaluate our technique on 20 popular benchmark programs collected from other fuzzing projects and the Google fuzzer test suite, and compare it with existing fuzzers AFL and AFLFast, symbolic execution engines KLEE and S2E, and a hybrid tool Driller that combines fuzzing with symbolic execution. The results show that our technique is highly effective and efficient, out-performing the other tools.
@@ -1826,6 +1854,8 @@ In this paper, we pre­sent the de­sign and im­ple­men­ta­ti­on of GRI­MO
 
 ### Superion: Grammar-Aware Greybox Fuzzing (ICSE 2019)
 
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#uJyov)
+  
 * <img src="image/pdf_24px.png">[Paper](./Paper/ICSE19_Superion.pdf)
 
 **Abstract:** In recent years, coverage-based greybox fuzzing has proven itself to be one of the most effective techniques for finding security bugs in practice. Particularly, American Fuzzy Lop (AFL for short) is deemed to be a great success in fuzzing relatively simple test inputs. Unfortunately, when it meets structured test inputs such as XML and JavaScript, those grammar-blind trimming and mutation strategies in AFL hinder the effectiveness and efficiency. To this end, we propose a grammar-aware coverage-based grey-box fuzzing approach to fuzz programs that process structured inputs. Given the grammar (which is often publicly available) of test inputs, we introduce a grammar-aware trimming strategy to trim test inputs at the tree level using the abstract syntax trees (ASTs) of parsed test inputs. Further, we introduce two grammar-aware mutation strategies (i.e., enhanced dictionary-based mutation and tree-based mutation). Specifically, tree-based mutation works via replacing subtrees using the ASTs of parsed test inputs. Equipped with grammar-awareness, our approach can carry the fuzzing exploration into width and depth. We implemented our approach as an extension to AFL, named Superion; and evaluated the effectiveness of Superion on real-life large-scale programs (a XML engine libplist and three JavaScript engines WebKit, Jerryscript and ChakraCore). Our results have demonstrated that Superion can improve the code coverage (i.e., 16.7% and 8.8% in line and function coverage) and bug-finding capability (i.e., 30 new bugs, among which we discovered 21 new vulnerabilities with 16 CVEs assigned and 3.2K USD bug bounty rewards received) over AFL and jsfunfuzz.
@@ -1833,6 +1863,8 @@ In this paper, we pre­sent the de­sign and im­ple­men­ta­ti­on of GRI­MO
 
 ### ProFuzzer: On-the-fly Input Type Probing for Better Zero-day Vulnerability Discovery (S&P 2019)
 
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#u2wje)
+  
 * <img src="image/zhihu.png">[Reading Note](https://zhuanlan.zhihu.com/p/130901035)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/SP19_Profuzz.pdf)
@@ -1846,6 +1878,8 @@ In this paper, we pre­sent the de­sign and im­ple­men­ta­ti­on of GRI­MO
 
 ### CodeAlchemist: Semantics-Aware Code Generation to Find Vulnerabilities in JavaScript Engines (NDSS 2019)
 
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#CfBUR)
+  
 * <img src="image/blog_24px.jpg">[Reading Note from dawuge](https://dawuge.github.io/2019/10/31/CodeAlchemistandT-Fuzz/)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/NDSS19_CodeAlchemist.pdf)
@@ -1884,6 +1918,8 @@ Our experiments show that combining context-free grammars and feedback-driven fu
 
 ### TIFF: Using Input Type Inference To Improve Fuzzing (ACSAC 2018)
 
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#M4YZI)
+  
 * <img src="image/pdf_24px.png">[Paper](./Paper/ACSAC18_TIFF.pdf)
 
 * <img src="image/github_24px.png">[Code](https://github.com/vusec/tiff)
@@ -1998,6 +2034,8 @@ In this paper, we present PAFL, a framework that utilizes efficient guiding info
 
 ### ParmeSan: Sanitizer-guided Greybox Fuzzing (USENIX Security2020)
 
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#TieIo)
+  
 * <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/09/04/parmesan-sanitizer-guided-greybox-fuzzing/)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/USENIX20_ParmeSan.pdf)
@@ -2013,6 +2051,8 @@ In this paper, we present sanitizer-guided fuzzing, a new design point in this s
 
 ### Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities (ICSE 2020)
 
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#fUjb3)
+  
 * <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/07/31/typestate-guided-fuzzer-for-discovering-use-after-free-vulnerabilities/)
 
 * <img src="image/wechat_24px.png">[Reading Note](https://mp.weixin.qq.com/s/RE19ba-BnQsZRST338lJHA)
@@ -2055,6 +2095,8 @@ In this paper, we propose IJON, an annotation mechanism that a human analyst can
 
 ### MemFuzz: Using Memory Accesses to Guide Fuzzing (ICST 2019)
 
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#VwAnn)
+  
 * <img src="image/pdf_24px.png">[Paper](./Paper/ICST19_MemFuzz.pdf)
 
 **Abstract:** Fuzzing is a form of random testing that is widely used for finding bugs and vulnerabilities. State of the art approaches commonly leverage information about the control flow of prior executions of the program under test to decide which inputs to mutate further. By relying solely on control flow information to characterize executions, such approaches may miss relevant differences. We propose augmenting evolutionary fuzzing by additionally leveraging information about memory accesses performed by the target program. The resulting approach can leverage more sophisticated information about the execution of the target program, enhancing the effectiveness of the evolutionary fuzzing. We implement our approach as a modification of the widely used AFL fuzzer and evaluate our implementation on three widely used target applications. We find distinct crashes from those detected by AFL for all three targets in our evaluation.
@@ -2094,6 +2136,8 @@ In this paper, we propose IJON, an annotation mechanism that a human analyst can
 
 ### TOFU: Target-Oriented FUzzer (Arxiv 2020)
 
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#JkwNr)
+  
 * <img src="image/pdf_24px.png">[Paper](./Paper/Arxiv20_TOFU.pdf)
 
 **Abstract:** Program fuzzing—providing randomly constructed inputs to a computer program—has proved to be a powerful way to uncover bugs, find security vulnerabilities, and generate test inputs that increase code coverage. In many applications, however, one is interested in a target-oriented approach—one wants to find an input that causes the program to reach a specific target point in the program. We have created TOFU (for Target-Oriented FUzzer) to address the directed fuzzing problem. TOFU’s search is biased according to a distance metric that scores each input according to how close the input’s execution trace gets to the target locations. TOFU is also input-structure aware (i.e., the search makes use of a specification of a superset of the program’s allowed inputs). Our experiments on xmllint show that TOFU is 28% faster than AFLGo, while reaching 45% more targets. Moreover, both distance-guided search and exploitation of knowledge of the input structure contribute significantly to TOFU’s performance.
@@ -2157,7 +2201,9 @@ In this paper, we propose Sequence-coverage Directed Fuzzing (SCDF), a lightweig
 
 ### MemLock: Memory Usage Guided Fuzzing (ICSE2020)
 
- * <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://mp.weixin.qq.com/s/w1qNvhm6MtPIp8IHqZFKgQ)
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#2YZjC)
+ 
+* <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://mp.weixin.qq.com/s/w1qNvhm6MtPIp8IHqZFKgQ)
 
 * <img src="image/youtube.png">[Video](https://youtu.be/fXxx46Oj-_s)
 
@@ -2288,6 +2334,8 @@ Our evaluation shows MEUZZ significantly outperforms the state-of-the-art grey-b
 
 ### MOPT: Optimize Mutation Scheduling for Fuzzers (USENIX Security2019)
 
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#b2mww)
+  
 * <img src="image/pdf_24px.png">[Paper](./Paper/USENIX19_MOPT.pdf)
 
 * <img src="image/github_24px.png">[Code](https://github.com/puppet-meteor/MOpt-AFL)
@@ -2477,6 +2525,8 @@ We introduce DeepSmith, a novel machine learning approach to accelerating compil
 
 ### DLFuzz: Differential Fuzzing Testing of Deep Learning Systems (FSE 2018)
 
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#cGYa7)
+
 * <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/1808.09413.pdf)
 
 **Abstract:** Deep learning (DL) systems are increasingly applied to safety-critical domains such as autonomous driving cars. It is of significant importance to ensure the reliability and robustness of DL systems. Existing testing methodologies always fail to include rare inputs in the testing dataset and exhibit low neuron coverage. In this paper, we propose DLFuzz, the frst differential fuzzing testing framework to guide DL systems exposing incorrect behaviors. DLFuzz keeps minutely mutating the input to maximize the neuron coverage and the prediction difference between the original input and the mutated input, without manual labeling effort or cross-referencing oracles from other DL systems with the same functionality. We present empirical evaluations on two well-known datasets to demonstrate its efficiency. Compared with DeepXplore, the state-of-the-art DL whitebox testing framework, DLFuzz does not require extra efforts to find similar functional DL systems for cross-referencing check, but could generate 338.59% more adversarial inputs with 89.82% smaller perturbations, averagely obtain 2.86% higher neuron coverage, and save 20.11% time consumption.
@@ -2486,6 +2536,8 @@ We introduce DeepSmith, a novel machine learning approach to accelerating compil
 
 ### GREYONE: Data Flow Sensitive Fuzzing (USENIX Security2020)
 
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#6w6sp)
+  
 * <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/05/29/greyone-data-flow-sensitive-fuzzing/)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/USENIX20_GREYONE.pdf)
@@ -2710,6 +2762,8 @@ We present experimental results showing that these two techniques are necessary 
 
 ### IntelliGen: Automatic Driver Synthesis for Fuzz Testing (ICSE 2021 SEIP)
 
+* <img src="image/blog_24px.jpg">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/namw67#yaQJR)
+  
 * <img src="image/pdf_24px.png">[Paper](http://www.wingtecher.com/themes/WingTecherResearch/assets/papers/icse_seip_0221.pdf)
 
 **Abstract:** Fuzzing is a technique widely used in vulnerability detection. The process usually involves writing effective fuzz driver programs, which, when done manually, can be extremely labor intensive. Previous attempts at automation leave much to be desired, in either degree of automation or quality of output. In this paper, we propose IntelliGen, a framework that constructs valid fuzz drivers automatically. First, IntelliGen determines a set of entry functions and evaluates their respective chance of exhibiting a vulnerability. Then, IntelliGen generates fuzz drivers for the entry functions through hierarchical parameter replacement and type inference. We implemented IntelliGen and evaluated its effectiveness on real-world programs selected from the Android Open-Source Project, Google’s fuzzer-testsuite and industrial collaborators. IntelliGen covered on average 1.08×-2.03× more basic blocks and 1.36×-2.06× more paths over state-of-the-art fuzz driver synthesizers FUDGE and FuzzGen. IntelliGen performed on par with manually written drivers and found 10 more bugs.

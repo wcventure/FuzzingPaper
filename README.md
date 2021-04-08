@@ -1275,6 +1275,7 @@ The experimental evaluation shows that our technique effectively reveals bugs in
 
 ### Antifuzz: impeding fuzzing audits of binary executables (USENIX Security2019)
 
+* <img src="image/blog_24px.png">[Paper](https://www.cnblogs.com/xiongjia/p/)13237538.html
 * <img src="image/pdf_24px.png">[Paper](./Paper/USENIX19_Antifuzz.pdf)
 
 * <img src="image/github_24px.png">[Code](https://github.com/RUB-SysSec/antifuzz)

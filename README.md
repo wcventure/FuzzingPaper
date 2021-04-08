@@ -2788,6 +2788,7 @@ In this paper we present the design and implementation of NYX, a highly optimize
 
 ### SQUIRREL: Testing Database Management Systems with Language Validity and Coverage Feedback (CCS 2020)
 
+* <img src="image/blog_24px.png">[Reading Note](https://www.cnblogs.com/xuesu/p/14245904.html)
 * <img src="image/pdf_24px.png">[Paper](https://arxiv.org/ftp/arxiv/papers/2006/2006.02398.pdf)
 
 **Abstract:** Fuzzing is an increasingly popular technique for verifying software functionalities and finding security vulnerabilities. However, current mutation-based fuzzers cannot effectively test database management systems (DBMSs), which strictly check inputs for valid syntax and semantics. Generation-based testing can guarantee the syntax correctness of the inputs, but it does not utilize any feedback, like code coverage, to guide the path exploration.

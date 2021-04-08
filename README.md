@@ -1309,6 +1309,7 @@ In this article, to highlight the potential of applying fuzzing to find any type
 
 ### PeriScope: An Effective Probing and Fuzzing Framework for the Hardware-OS Boundary (NDSS2019)
 
+* <img src="image/zhihu.png">[Reading Note](https://zhuanlan.zhihu.com/p/62174894)
 * <img src="image/pdf_24px.png">[Paper](./Paper/NDSS19_PeriScope.pdf)
 
 **Abstract:** The OS kernel is an attractive target for remote attackers. If compromised, the kernel gives adversaries full system access, including the ability to install rootkits, extract sensitive information, and perform other malicious actions, all while evading detection. Most of the kernel's attack surface is situated along the system call boundary. Ongoing kernel protection efforts have focused primarily on securing this boundary; several capable analysis and fuzzing frameworks have been developed for this purpose.

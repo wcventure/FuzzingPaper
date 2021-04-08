@@ -732,9 +732,9 @@ remark: This website is only used for collecting and grouping the related paper.
 
 ### The Art, Science, and Engineering of Fuzzing: A Survey
 
-* <img src="image/wechat_24px.png">[Reading Note1](https://blog.csdn.net/qq_32505207/article/details/104303840)
+* <img src="image/csdn_24px.png">[Reading Note1](https://blog.csdn.net/qq_32505207/article/details/104303840)
 
-* <img src="image/wechat_24px.png">[Reading Note2](https://blog.csdn.net/qq_40398985/article/details/103585735)
+* <img src="image/csdn_24px.png">[Reading Note2](https://blog.csdn.net/qq_40398985/article/details/103585735)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/TSE19_Survey.pdf)
 
@@ -752,7 +752,7 @@ remark: This website is only used for collecting and grouping the related paper.
 
 * <img src="image/zhihu.png">[Reading Note1](https://zhuanlan.zhihu.com/p/99099607)
 
-* <img src="image/zhihu.png">[Reading Note2](https://blog.csdn.net/u014578266/article/details/89042508)
+* <img src="image/csdn_24px.png">[Reading Note2](https://blog.csdn.net/u014578266/article/details/89042508)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/Cybersecurity18_Fuzzing.pdf)
 
@@ -1097,6 +1097,8 @@ utility of our framework.
 
 
 ### FIRM-AFL: High-Throughput Greybox Fuzzing of IoT Firmware via Augmented Process Emulation (USENIX Security2019)
+
+* <img src="image/csdn_24px.png">[Reading Note](https://blog.csdn.net/weixin_39945679/article/details/111370554)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/USENIX19_FirmAFL.pdf)
 
@@ -1665,7 +1667,7 @@ overcome common fuzzing roadblocks in a highly effective and efficient manner. O
 
 ### T-Fuzz: fuzzing by program transformation (S&P 2018)
 
-* <img src="image/youdao_note_24px.png">[Reading Note](https://blog.csdn.net/Chen_zju/article/details/80934710)
+* <img src="image/csdn_24px.png">[Reading Note](https://blog.csdn.net/Chen_zju/article/details/80934710)
 
 * <img src="image/blog_24px.jpg">[Reading Note from dawuge](https://dawuge.github.io/2019/10/31/CodeAlchemistandT-Fuzz/)
 
@@ -1691,7 +1693,7 @@ overcome common fuzzing roadblocks in a highly effective and efficient manner. O
 
 * <img src="image/youdao_note_24px.png">[Reading Note](http://note.youdao.com/noteshare?id=b0505524143c5f9439c6a5d9dcff9b1d&sub=D8A73723348B4976BA191B235EB13307)
 
-* <img src="image/blog_24px.jpg">[Reading Note](https://blog.csdn.net/qq_32505207/article/details/104690747)
+* <img src="image/csdn_24px.jpg">[Reading Note](https://blog.csdn.net/qq_32505207/article/details/104690747)
 
 * <img src="image/because.png">[Reading Note](https://github.com/bsauce/Some-Papers-About-Fuzzing/blob/master/xmind_picture/VUzzer%20Application-aware%20Evolutionary%20Fuzzing-ndss2017.png)
 
@@ -2813,6 +2815,8 @@ We propose a novel coverage-guided fuzz testing tool for big data analytics, cal
 
 
 ### AFL++: Combining Incremental Steps of Fuzzing Research (USENIX Woot2020)
+
+* <img src="image/csdn_24px.png">[Reading Note](https://blog.csdn.net/sinat_38816924/article/details/112910305)
 
 * <img src="image/pdf_24px.png">[Paper](https://www.researchgate.net/profile/Andrea_Fioraldi/publication/342420457_AFL_Combining_Incremental_Steps_of_Fuzzing_Research/links/5f1bf0b9a6fdcc9626b02503/AFL-Combining-Incremental-Steps-of-Fuzzing-Research.pdf?_sg%5B0%5D=JfF0Lnj56-9YvEmhCv63i2Nf47zpS07I3euiuSLjR2VeFrx-vh_Lyl9wFLNfKOQ2K3V2l9zmfAKJm2sp9EPUPA.-fwhbl2AdWKqkPR8iYm37vCicsdOFeHmaEA8mKFuhaIodjIaFnA2ItsocLmYk6eNkVF9SYKCpjFSmMOfJ0RShQ&_sg%5B1%5D=AcR_4Lqq86JrcDnpoq77Tkx8AZNoOg8lyLLkKgWK9LQRXfOav1gq8X8DNOnqSTvMfsZ2GUfZwwJPYvVM4_9ZS6L2Q3BG4rLFhnHHYVqOUU0t.-fwhbl2AdWKqkPR8iYm37vCicsdOFeHmaEA8mKFuhaIodjIaFnA2ItsocLmYk6eNkVF9SYKCpjFSmMOfJ0RShQ&_iepl=)
 

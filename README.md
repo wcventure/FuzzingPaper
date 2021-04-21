@@ -16,6 +16,9 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 
+- **PLDI 2021**
+  - [Automated Conformance Testing for JavaScript Engines via Deep Compiler Fuzzing](#automated-conformance-testing-for-javascript-engines-via-deep-compiler-fuzzing-pldi-2021)
+
 - **ICSE 2021**
   - [Fuzzing Symbolic Expressions](#fuzzing-symbolic-expressions-icse-2021)
   - [Graph-based Fuzz Testing for Deep Learning Inference Engines](#graph-based-fuzz-testing-for-deep-learning-inference-engines-icse-2021)
@@ -37,6 +40,7 @@ remark: This website is only used for collecting and grouping the related paper.
 - **ICST 2021**
   - [Industrial Oriented Evaluation of Fuzzing Techniques](#industrial-oriented-evaluation-of-fuzzing-techniques-icst-2021)
   - [Learning-Based Fuzzing of IoT Message Broker](#learning-based-fuzzing-of-iot-message-brokers-icst-2021)
+  - [RiverFuzzRL - an open-source tool to experiment with reinforcement learning for fuzzing](#riverfuzzrl---an-open-source-tool-to-experiment-with-reinforcement-learning-for-fuzzing-icst-2021)
 
 - **Others 2021**
   - [An Empirical Study of OSS-Fuzz Bugs (MSR 2021)](#an-empirical-study-of-oss-fuzz-bugs-msr-2021)
@@ -491,7 +495,8 @@ remark: This website is only used for collecting and grouping the related paper.
   - [FairFuzz: A Targeted Mutation Strategy for Increasing Greybox Fuzz Testing Coverage (ASE 2018)](#fairfuzz-a-targeted-mutation-strategy-for-increasing-greybox-fuzz-testing-coverage-ase-2018)
   - [VUzzer: Application-aware Evolutionary Fuzzing (NDSS 2017)](#vuzzer-application-aware-evolutionary-fuzzing-ndss-2017)
   
-- [**Grammars \ Inputs-aware Fuzzing**](#grammars--inputs-aware-fuzzing)
+- [**Grammars \ Context-aware Fuzzing**](#grammars--context-aware-fuzzing)
+  - [Automated Conformance Testing for JavaScript Engines via Deep Compiler Fuzzing (PLDI 2021)](#automated-conformance-testing-for-javascript-engines-via-deep-compiler-fuzzing-pldi-2021)
   - [Growing A Test Corpus with Bonsai Fuzzing (ICSE 2021)](#growing-a-test-corpus-with-bonsai-fuzzing-icse-2021)
   - [Favocado: Fuzzing the Binding Code of JavaScript Engines Using Semantically Correct Test Cases (NDSS 2021)](#favocado-fuzzing-the-binding-code-of-javascript-engines-using-semantically-correct-test-cases-ndss-2021)
   - [CMFuzz: context-aware adaptive mutation for fuzzers (Empirical Software Engineering 2021)](#cmfuzz-context-aware-adaptive-mutation-for-fuzzers-empirical-software-engineering-2021)
@@ -571,8 +576,10 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Program-Adaptive Mutational Fuzzing (S&P 2015)](#program-adaptive-mutational-fuzzing-sp-2015)
 
 - [**Learning-based Fuzzing**](#learning-based-fuzzing)
+  - [Automated Conformance Testing for JavaScript Engines via Deep Compiler Fuzzing (PLDI 2021)](#automated-conformance-testing-for-javascript-engines-via-deep-compiler-fuzzing-pldi-2021)
   - [Reinforcement Learning-based Hierarchical Seed Scheduling for Greybox Fuzzing (NDSS 2021)](#reinforcement-learning-based-hierarchical-seed-scheduling-for-greybox-fuzzing-ndss-2021)
   - [Learning-Based Fuzzing of IoT Message Brokers (ICST 2021)](#learning-based-fuzzing-of-iot-message-brokers-icst-2021)
+  - [RiverFuzzRL - an open-source tool to experiment with reinforcement learning for fuzzing (ICST 2021)](#riverfuzzrl---an-open-source-tool-to-experiment-with-reinforcement-learning-for-fuzzing-icst-2021)
   - [OmniFuzz: A Flexible Framework for Expediting Bug Finding by Leveraging Past (Mis-)Behavior to Discover New Bugs (ACSAC 2020)](#omnifuzz-a-flexible-framework-for-expediting-bug-finding-by-leveraging-past-mis-behavior-to-discover-new-bugs-acsac-2020)
   - [Learning Input Tokens for Effective Fuzzing (ISSTA 2020)](#learning-input-tokens-for-effective-fuzzing-issta-2020)
   - [MTFuzz: Fuzzing with a Multi-task Neural Network (FSE 2020)](#mtfuzz-fuzzing-with-a-multi-task-neural-network-fse-2020)
@@ -1002,6 +1009,13 @@ The ideal solution for binary security analysis would be a static rewriter that 
 * <img src="image/pdf_24px.png">[Paper](https://graz.pure.elsevier.com/en/publications/learning-based-fuzzing-of-iot-message-brokers)
 
 **Abstract:** The number of devices in the Internet of Things (IoT) immensely grew in recent years. A frequent challenge in the assurance of the dependability of IoT systems is that components of the system appear as a black box. This paper presents a semi-automatic testing methodology for black-box systems that combines automata learning and fuzz testing. Our testing technique uses stateful fuzzing based on a model that is automatically inferred by automata learning. Applying this technique, we can simultaneously test multiple implementations for unexpected behavior and possible security vulnerabilities.We show the effectiveness of our learning-based fuzzing technique in a case study on the MQTT protocol. MQTT is a widely used publish/subscribe protocol in the IoT. Our case study reveals several inconsistencies between five different MQTT brokers. The found inconsistencies expose possible security vulnerabilities and violations of the MQTT specification.
+
+### RiverFuzzRL - an open-source tool to experiment with reinforcement learning for fuzzing (ICST 2021)
+
+* <img src="image/pdf_24px.png">[Paper](http://scholar.google.com.sg/scholar_url?url=https://www.researchgate.net/profile/Alin-Stefanescu/publication/350789915_RiverFuzzRL_-_an_open-source_tool_to_experiment_with_reinforcement_learning_for_fuzzing/links/607213bc299bf1c911c1f61e/RiverFuzzRL-an-open-source-tool-to-experiment-with-reinforcement-learning-for-fuzzing.pdf&hl=en&sa=X&d=8691306607121847918&ei=vKd-YN6rHJD_mAGorriYDA&scisig=AAGBfm1x8hqCl6MSOMq2nNmzMdKU89-8aQ&nossl=1&oi=scholaralrt&hist=5D-EiWoAAAAJ:11619674075933241424:AAGBfm2WuunMRs1akVK27Fttx6PhkTPyfg&html=&folt=rel&fols=)
+
+**Abstract:** Combining fuzzing techniques and reinforcement learning could be an important direction in software testing. However, there is a gap in support for experimentation in this field, as there are no open-source tools to let academia and industry to perform experiments easily. The purpose of this paper is to fill this gap by introducing a new framework, named RiverFuzzRL, on top of our already mature framework for AI-guided fuzzing, River. We provide out-of-the-box implementations for users to choose from or customize for their test target. The work presented here is performed on testing binaries and does not require access to the source code, but it can be easily adapted to other types of software testing as well. We also discuss the challenges faced, opportunities, and factors that are important for performance, as seen in the evaluation.
+
 
 
 ### Vulnerability Detection in SIoT Applications: A Fuzzing Method on their Binaries (IEEE Transactions on Network Science and Engineering 2020)
@@ -1726,7 +1740,7 @@ In this paper, we present an application-aware evolutionary fuzzing strategy tha
 
 
 
-# Grammars \ Inputs-aware Fuzzing
+# Grammars \ Context-aware Fuzzing
 
 ### Growing A Test Corpus with Bonsai Fuzzing (ICSE 2021)
 
@@ -2371,6 +2385,14 @@ We implemented the exponential schedule by extending AFL. In 24 hours, AFLFAST e
 
 
 # Learning-based Fuzzing
+
+### Automated Conformance Testing for JavaScript Engines via Deep Compiler Fuzzing (PLDI 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2104.07460)
+
+**Abstract:** JavaScript (JS) is a popular, platform-independent programming language. To ensure the interoperability of JS programs across different platforms, the implementation of a JS engine should conform to the ECMAScript standard. However, doing so is challenging as there are many subtle definitions of API behaviors, and the definitions keep evolving.
+We present COMFORT, a new compiler fuzzing framework for detecting JS engine bugs and behaviors that deviate from the ECMAScript standard. COMFORT leverages the recent advance in deep learning-based language models to automatically generate JS test code. As a departure from prior fuzzers, COMFORT utilizes the well-structured ECMAScript specifications to automatically generate test data along with the test programs to expose bugs that could be overlooked by the developers or manually written test cases. COMFORT then applies differential testing methodologies on the generated test cases to expose standard conformance bugs. We apply COMFORT to ten mainstream JS engines. In 200 hours of automated concurrent testing runs, we discover bugs in all tested JS engines. We had identified 158 unique JS engine bugs, of which 129 have been verified, and 115 have already been fixed by the developers. Furthermore, 21 of the Comfort-generated test cases have been added to Test262, the official ECMAScript conformance test suite.
+
 
 ### Reinforcement Learning-based Hierarchical Seed Scheduling for Greybox Fuzzing (NDSS 2021)
 
@@ -3108,4 +3130,4 @@ Our findings motivate developers to create comprehensive test suites, including 
 
 ##### Page Traffic Analysis
 
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=_VeCo_FuoOtsn-TdhQzjjz4dxYv-HMUz1-0OKUiZdeM'></script>
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=lv-pnJIiq6psRp_b6rbzbHVqY98ziz-RPU0MjN2FBhg&cl=ffffff&w=a"></script>

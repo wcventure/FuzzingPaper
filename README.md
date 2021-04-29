@@ -16,6 +16,9 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 
+- **OOPSLA 2021**
+  - [Fuzzing Channel-Based Concurrency Runtimes using Types and Effects](#fuzzing-channel-based-concurrency-runtimes-using-types-and-effects-slides-oopsla-2021)
+  
 - **PLDI 2021**
   - [Automated Conformance Testing for JavaScript Engines via Deep Compiler Fuzzing](#automated-conformance-testing-for-javascript-engines-via-deep-compiler-fuzzing-pldi-2021)
 
@@ -638,6 +641,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [DifFuzz: Differential Fuzzing for Side-Channel Analysis (ICSE 2019)](#diffuzz-differential-fuzzing-for-side-channel-analysis-icse-2019)
 
 - [**Concurrency Fuzzing**](#concurrency-fuzzing)
+  - [Fuzzing Channel-Based Concurrency Runtimes using Types and Effects Slides (OOPSLA 2021)](#fuzzing-channel-based-concurrency-runtimes-using-types-and-effects-slides-oopsla-2021)
   - [MUZZ: Thread-aware Grey-box Fuzzing for Effective Bug Hunting in Multithreaded Programs (USENIX Security2020)](#muzz-thread-aware-grey-box-fuzzing-for-effective-bug-hunting-in-multithreaded-programs-usenix-security2020)
   - [KRace: Data Race Fuzzing for Kernel File Systems (S&P 2020)](#krace-data-race-fuzzing-for-kernel-file-systems-sp-2020)
   - [ConFuzz—A Concurrency Fuzzer (2019)](#confuzz-a-concurrency-fuzzer-2019)
@@ -2694,8 +2698,20 @@ We instantiate our approach to the problem of fuzzing smart contracts, a domain 
 
 # Concurrency Fuzzing
 
-### MUZZ: Thread-aware Grey-box Fuzzing for Effective Bug Hunting in Multithreaded Programs (USENIX Security2020)
+### Fuzzing Channel-Based Concurrency Runtimes using Types and Effects Slides (OOPSLA 2021)
 
+* <img src="image/pdf_24px.png">[Paper](https://dl.acm.org/doi/pdf/10.1145/3428254)
+
+* <img src="image/youtube.png">[Video](https://youtu.be/nN0re0gydJg)
+
+**Abstract:** Modern programming languages support concurrent programming based on channels and processes. Channels enable synchronous and asynchronous message-passing between independent light-weight processes making it easy to express common concurrency patterns.
+The implementation of channels and processes in compilers and language runtimes is a difficult task that relies heavily on traditional and error-prone low-level concurrency primitives, raising concerns about correctness and reliability.
+In this paper, we present an automatic program generation technique to test such programming language implementations. We define a type and effect system for programs that communicate over channels and where every execution is guaranteed to eventually terminate. We can generate and run such programs, and if a program fails to terminate, we have found a bug in the programming language implementation.
+We implement such an automatic program generator and apply it to Go, Kotlin, Crystal, and Flix. We find two new bugs in Flix, and reproduce two bugs; one in Crystal and one in Kotlin.
+
+
+
+### MUZZ: Thread-aware Grey-box Fuzzing for Effective Bug Hunting in Multithreaded Programs (USENIX Security2020)
 
 * <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/09/18/muzz-thread-aware-grey-box-fuzzing-for-effective-bug-hunting-in-multithreaded-programs/)
 

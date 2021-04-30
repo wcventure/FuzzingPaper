@@ -1,4 +1,5 @@
 # Recent Papers Related To Fuzzing
+
 remark: This website is only used for collecting and grouping the related paper. If there are any paper need to be updated, you can contribute PR.
 
 # All Papers (Classification according to Publication)
@@ -16,6 +17,9 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 
+- **S&P2021**
+  - [DiFuzzRTL: Differential Fuzz Testing to Find CPU Bugs](#difuzzrtl-differential-fuzz-testing-to-find-cpu-bug-sp-2021)
+  
 - **OOPSLA 2021**
   - [Fuzzing Channel-Based Concurrency Runtimes using Types and Effects](#fuzzing-channel-based-concurrency-runtimes-using-types-and-effects-slides-oopsla-2021)
   
@@ -30,6 +34,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [IntelliGen: Automatic Driver Synthesis for Fuzz Testing](#intelligen-automatic-driver-synthesis-for-fuzz-testing-icse-2021-seip)
 
 - **USENIX Security 2021**
+  - [Constraint-guided Directed Greybox Fuzzing](#constraint-guided-directed-greybox-fuzzing-usenix-security2021)
   - [UNIFUZZ: A Holistic and Pragmatic Metrics-Driven Platform for Evaluating Fuzzers](#unifuzz-a-holistic-and-pragmatic-metrics-driven-platform-for-evaluating-fuzzers-usenix-security2021)
   - [Nyx: Greybox Hypervisor Fuzzing using Fast Snapshots and Affine Types](#nyx-greybox-hypervisor-fuzzing-using-fast-snapshots-and-affine-types-usenix-security2021)
   - [Breaking Through Binaries: Compiler-quality Instrumentation for Better Binary-only Fuzzing](#breaking-through-binaries-compiler-quality-instrumentation-for-better-binary-only-fuzzing--usenix-security2021)
@@ -381,6 +386,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 
 - [**Differential Fuzzing**](#differential-fuzzing)
+  - [DiFuzzRTL: Differential Fuzz Testing to Find CPU Bug (S&P 2021)](#difuzzrtl-differential-fuzz-testing-to-find-cpu-bug-sp-2021)
   - [DPIFuzz: A Differential Fuzzing Framework to Detect DPI Elusion Strategies for QUIC (ACSAC 2020)](#dpifuzz-a-differential-fuzzing-framework-to-detect-dpi-elusion-strategies-for-quic-acsac-2020)
   - [Coverage Guided Differential Adversarial Testing of Deep Learning Systems (TNSE 2020)](#coverage-guided-differential-adversarial-testing-of-deep-learning-systems-tnse-2020)
   - [HyDiff: Hybrid Differential Software Analysis (ICSE 2020)](#hydiff-hybrid-differential-software-analysis-icse-2020)
@@ -544,6 +550,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [MemFuzz: Using Memory Accesses to Guide Fuzzing (ICST 2019)](#memfuzz-using-memory-accesses-to-guide-fuzzing-icst-2019)
 
 - [**Directed Fuzzing**](#directed-fuzzing)
+  - [Constraint-guided Directed Greybox Fuzzing (USENIX Security2021)](#constraint-guided-directed-greybox-fuzzing-usenix-security2021)
   - [Constructing More Complete Control Flow Graphs Utilizing Directed Gray-Box Fuzzing (MDPI 2021)](#constructing-more-complete-control-flow-graphs-utilizing-directed-gray-box-fuzzing-mdpi-2021)
   - [Sequence directed hybrid fuzzing (SANER 2020)](#sequence-directed-hybrid-fuzzing-saner-2020)
   - [Binary-level Directed Fuzzing for Use-After-Free Vulnerabilities (RAID 2020)](#binary-level-directed-fuzzing-for-use-after-free-vulnerabilities-raid-2020)
@@ -787,6 +794,13 @@ remark: This website is only used for collecting and grouping the related paper.
 
 
 # Differential Fuzzing
+
+### DiFuzzRTL: Differential Fuzz Testing to Find CPU Bug (S&P 2021)
+
+* <img src="image/github_24px.png">[Code](https://github.com/yannicnoller/hydiff)
+  
+**Abstract:** DifuzzRTL is a differential fuzz testing approach for CPU verification. We introduce new coverage metric, register-coverage, which comprehensively captures the states of an RTL design and correctly guides the input generation. DifuzzRTL automatically instruments register-coverage, randomly generates and mutates instructions defined in ISA, then cross-check against an ISA simulator to detect bugs.
+
 
 ### DPIFuzz: A Differential Fuzzing Framework to Detect DPI Elusion Strategies for QUIC (ACSAC 2020)
 
@@ -2122,6 +2136,13 @@ In this paper, we propose IJON, an annotation mechanism that a human analyst can
 
 
 # Directed Fuzzing
+
+### Constraint-guided Directed Greybox Fuzzing (USENIX Security2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://lifeasageek.github.io/papers/gwangmu-cafl.pdf)
+
+**Abstract:** Directed greybox fuzzing is an augmented fuzzing technique intended for the targeted usages such as crash reproduction and proof-of-concept generation, which gives directedness to fuzzing by driving the seeds toward the designated program locations called target sites. However, we find that directed greybox fuzzing can still suffer from the long fuzzing time before exposing the targeted crash, because it does not consider the ordered target sites and the data conditions. This paper presents constraint-guided directed greybox fuzzing that aims to satisfy a sequence of constraints rather than merely reaching a set of target sites. Constraint-guided greybox fuzzing defines a constraint as the combination of a target site and the data conditions, and drives the seeds to satisfy the constraints in the specified order. We automatically generate the constraints with seven types of crash dumps and four types of patch changelogs, and evaluate the prototype system CAFL against the representative directed greybox fuzzing system AFLGo with 47 real-world crashes and 12 patch changelogs. The evaluation shows CAFL outperforms AFLGo by 2.88x for crash reproduction, and better performs in PoC generation as the constraints get explicit.
+
 
 ### Constructing More Complete Control Flow Graphs Utilizing Directed Gray-Box Fuzzing (MDPI 2021)
 

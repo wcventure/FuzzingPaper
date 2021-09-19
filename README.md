@@ -17,14 +17,19 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 
+- **S&P 2021**
+  - [PATA: Fuzzing with Path Aware Taint Analysis](#pata-fuzzing-with-path-aware-taint-analysis-sp-2022)
+
 - **ISSTA 2021**
   - [Fuzzing SMT Solvers via Two-Dimensional Input Space Exploration](#fuzzing-smt-solvers-via-two-dimensional-input-space-exploration-issta-2021)
   - [Gramatron: Effective Grammar-Aware Fuzzing](#gramatron-effective-grammar-aware-fuzzing-issta-2021)
   - [QFuzz: Quantitative Fuzzing for Side Channels](#qfuzz-quantitative-fuzzing-for-side-channels-issta-2021)
   - [Seed Selection for Successful Fuzzing](#seed-selection-for-successful-fuzzing-issta-2021)
+  - [ProFuzzBench - A Benchmark for Stateful Protocol Fuzzing](#profuzzbench---a-benchmark-for-stateful-protocol-fuzzing-issta-2021)
 
 - **ASE 2021**
   - [Scalable Fuzzing of Program Binaries with E9AFL](#scalable-fuzzing-of-program-binaries-with-e9afl-ase-2021)
+  - [Towards Systematic and Dynamic Task Allocation for Collaborative Parallel Fuzzing](#towards-systematic-and-dynamic-task-allocation-for-collaborative-parallel-fuzzing-ase-2021-nier)
 
 - **FSE 2021**
   - [Estimating Residual Risk in Greybox Fuzzing](#estimating-residual-risk-in-greybox-fuzzing-fse-2021)
@@ -40,6 +45,7 @@ remark: This website is only used for collecting and grouping the related paper.
   
 - **CCS 2021**
   - [Snipuzz: Black-box Fuzzing of IoT Firmware via Message Snippet Inference](#snipuzz-black-box-fuzzing-of-iot-firmware-via-message-snippet-inference-ccs-2021)
+  - [Hardware Support to Improve Fuzzing Performance and Precision](#hardware-support-to-improve-fuzzing-performance-and-precision-ccs-2021)
   
 - **OOPSLA 2021**
   - [Fuzzing Channel-Based Concurrency Runtimes using Types and Effects](#fuzzing-channel-based-concurrency-runtimes-using-types-and-effects-slides-oopsla-2021)
@@ -80,6 +86,9 @@ remark: This website is only used for collecting and grouping the related paper.
   - [OTA: An Operation-oriented Time Allocation Strategy for Greybox Fuzzing](#ota-an-operation-oriented-time-allocation-strategy-for-greybox-fuzzing-saner-2021)
 
 - **Others 2021**
+  - [Duo: Differential Fuzzing for Deep Learning Operators (IEEE Transactions on Reliability 2021)](#duo-differential-fuzzing-for-deep-learning-operators-ieee-transactions-on-reliability-2021)
+  - [Rtkaller: State-aware Task Generation for RTOS Fuzzing (EMSOFT 2021)](#rtkaller-state-aware-task-generation-for-rtos-fuzzing-emsoft-2021)
+  - [Neural Network Guided Evolutionary Fuzzing for Finding Traffic Violations of Autonomous Vehicles (arXiv 2021)](#neural-network-guided-evolutionary-fuzzing-for-finding-traffic-violations-of-autonomous-vehicles-arxiv-2021)
   - [Fuzzing: Cyberphysical System Testing for Security and Dependability (Computer 2021)](#fuzzing-cyberphysical-system-testing-for-security-and-dependability-computer-2021)
   - [ESRFuzzer: an enhanced fuzzing framework for physical SOHO router devices to discover multi-Type vulnerabilities (Cybersecurity 2021)](#esrfuzzer-an-enhanced-fuzzing-framework-for-physical-soho-router-devices-to-discover-multi-type-vulnerabilities-cybersecurity-2021)
   - [ICPFuzzer: proprietary communication protocol fuzzing by using machine learning and feedback strategies (Cybersecurity 2021)](#icpfuzzer-proprietary-communication-protocol-fuzzing-by-using-machine-learning-and-feedback-strategies-cybersecurity-2021)
@@ -441,6 +450,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 
 - [**Differential Fuzzing**](#differential-fuzzing)
+  - [Duo: Differential Fuzzing for Deep Learning Operators (IEEE Transactions on Reliability 2021)](#duo-differential-fuzzing-for-deep-learning-operators-ieee-transactions-on-reliability-2021)
   - [DiFuzzRTL: Differential Fuzz Testing to Find CPU Bug (S&P 2021)](#difuzzrtl-differential-fuzz-testing-to-find-cpu-bug-sp-2021)
   - [DPIFuzz: A Differential Fuzzing Framework to Detect DPI Elusion Strategies for QUIC (ACSAC 2020)](#dpifuzz-a-differential-fuzzing-framework-to-detect-dpi-elusion-strategies-for-quic-acsac-2020)
   - [Coverage Guided Differential Adversarial Testing of Deep Learning Systems (TNSE 2020)](#coverage-guided-differential-adversarial-testing-of-deep-learning-systems-tnse-2020)
@@ -476,6 +486,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [INSTRIM Lightweight Instrumentation for Coverage-guided Fuzzing (NDSS 2018 workshop)](#instrim-lightweight-instrumentation-for-coverage-guided-fuzzing-ndss-2018-workshop)
 
 - [**IoT or protocols fuzzing**](#iot-or-protocols-fuzzing) 
+  - [ProFuzzBench - A Benchmark for Stateful Protocol Fuzzing (ISSTA 2021)](#profuzzbench---a-benchmark-for-stateful-protocol-fuzzing-issta-2021)
   - [TCP-Fuzz: Detecting Memory and Semantic Bugs in TCP Stacks with Fuzzing (USENIX ATC 2021)](#tcp-fuzz-detecting-memory-and-semantic-bugs-in-tcp-stacks-with-fuzzing-usenix-atc-2021)
   - [ICPFuzzer: proprietary communication protocol fuzzing by using machine learning and feedback strategies (Cybersecurity 2021)](#icpfuzzer-proprietary-communication-protocol-fuzzing-by-using-machine-learning-and-feedback-strategies-cybersecurity-2021)
   - [FIRM-COV: High-Coverage Greybox Fuzzing for IoT Firmware via Optimized Process Emulation (Access 2021)](#firm-cov-high-coverage-greybox-fuzzing-for-iot-firmware-via-optimized-process-emulation-access-2021)
@@ -562,6 +573,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Hybrid concolic testing (2007)](#hybrid-concolic-testing-2007)
 
 - [**Coverage \ Path \ Magic bytes \ Checksum**](#coverage--path--magic-bytes--checksum)  
+  - [PATA: Fuzzing with Path Aware Taint Analysis (S&P 2022)](#pata-fuzzing-with-path-aware-taint-analysis-sp-2022)
   - [OTA: An Operation-oriented Time Allocation Strategy for Greybox Fuzzing (SANER 2021)](#ota-an-operation-oriented-time-allocation-strategy-for-greybox-fuzzing-saner-2021)
   - [MaxAFL: Maximizing Code Coverage with a Gradient-Based Optimization Technique (Electronics 2020)](#maxafl-maximizing-code-coverage-with-a-gradient-based-optimization-technique-electronics-2020)
   - [PathAFL: Path-Coverage Assisted Fuzzing (ASIA CCS 2020)](#pathafl-path-coverage-assisted-fuzzing-asia-ccs-2020)
@@ -610,6 +622,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [ExploitMeter: Combining Fuzzing with Machine Learning for Automated Evaluation of Software Exploitability (PAC 2017)](#exploitmeter-combining-fuzzing-with-machine-learning-for-automated-evaluation-of-software-exploitability-pac-2017)
 
 - [**Parallel / Ensemble Fuzzing**](#parallel--ensemble-fuzzing)
+  - [Towards Systematic and Dynamic Task Allocation for Collaborative Parallel Fuzzing (ASE 2021 NIER)](#towards-systematic-and-dynamic-task-allocation-for-collaborative-parallel-fuzzing-ase-2021-nier)
   - [CollabFuzz: A Framework for Collaborative Fuzzing (EuroSec 2021)](#collabfuzz-a-framework-for-collaborative-fuzzing-eurosec-2021)
   - [Improving Web Application Vulnerability Detection Leveraging Ensemble Fuzzing (ENASE 2021)](#improving-web-application-vulnerability-detection-leveraging-ensemble-fuzzing-enase-2021)
   - [Cupid: Automatic Fuzzer Selection for Collaborative Fuzzing (ACSAC 2020)](#cupid-automatic-fuzzer-selection-for-collaborative-fuzzing-acsac-2020)
@@ -751,6 +764,9 @@ remark: This website is only used for collecting and grouping the related paper.
 
 
 - [**Other Interesting Fuzzing**](#other-interesting-fuzzing)
+  - [Hardware Support to Improve Fuzzing Performance and Precision (CCS 2021)](#hardware-support-to-improve-fuzzing-performance-and-precision-ccs-2021)
+  - [Rtkaller: State-aware Task Generation for RTOS Fuzzing (EMSOFT 2021)](#rtkaller-state-aware-task-generation-for-rtos-fuzzing-emsoft-2021)
+  - [Neural Network Guided Evolutionary Fuzzing for Finding Traffic Violations of Autonomous Vehicles (arXiv 2021)](#neural-network-guided-evolutionary-fuzzing-for-finding-traffic-violations-of-autonomous-vehicles-arxiv-2021)
   - [Fuzzing: Cyberphysical System Testing for Security and Dependability (Computer 2021)](#fuzzing-cyberphysical-system-testing-for-security-and-dependability-computer-2021)
   - [ESRFuzzer: an enhanced fuzzing framework for physical SOHO router devices to discover multi-Type vulnerabilities (Cybersecurity 2021)](#esrfuzzer-an-enhanced-fuzzing-framework-for-physical-soho-router-devices-to-discover-multi-type-vulnerabilities-cybersecurity-2021)
   - [Estimating Residual Risk in Greybox Fuzzing (FSE 2021)](#estimating-residual-risk-in-greybox-fuzzing-fse-2021)
@@ -891,6 +907,13 @@ remark: This website is only used for collecting and grouping the related paper.
 
 
 # Differential Fuzzing
+
+### Duo: Differential Fuzzing for Deep Learning Operators (IEEE Transactions on Reliability 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://ieeexplore.ieee.org/abstract/document/9536229)
+
+**Abstract:** Deep learning (DL) libraries reduce the barriers to the DL model construction. In DL libraries, various building blocks are DL operators with different functionality, responsible for processing high-dimensional tensors during training and inference. Thus, the quality of operators could directly impact the quality of models. However, existing DL testing techniques mainly focus on robustness testing of trained neural network models and cannot locate DL operators’ defects. The insufficient test input and undetermined test output in operator testing have become challenging for DL library developers. In this article, we propose an approach, namely Duo, which combines fuzzing techniques and differential testing techniques to generate input and evaluate corresponding output. It implements mutation-based fuzzing to produce tensor inputs by employing nine mutation operators derived from genetic algorithms and differential testing to evaluate outputs’ correctness from multiple operator instances. Duo is implemented in a tool and used to evaluate seven operators from TensorFlow, PyTorch, MNN, and MXNet in an experiment. The result shows that Duo can expose defects of DL operators and realize multidimension evaluation for DL operators from different DL libraries.
+
 
 ### DiFuzzRTL: Differential Fuzz Testing to Find CPU Bug (S&P 2021)
 
@@ -1151,6 +1174,15 @@ The ideal solution for binary security analysis would be a static rewriter that 
 
 # IoT or protocols fuzzing
 
+### ProFuzzBench - A Benchmark for Stateful Protocol Fuzzing (ISSTA 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2101.05102.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/profuzzbench/profuzzbench)
+
+**Abstract:** We present a new benchmark (ProFuzzBench) for stateful fuzzing of network protocols. The benchmark includes a suite of representative open-source network servers for popular protocols, and tools to automate experimentation. We discuss challenges and potential directions for future research based on this benchmark.
+
+
 ### TCP-Fuzz: Detecting Memory and Semantic Bugs in TCP Stacks with Fuzzing (USENIX ATC 2021)
 
 * <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/atc21-zou.pdf)
@@ -1261,6 +1293,8 @@ In this paper, we propose to equip the traditional protocol fuzzing with coverag
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/ICST20_AFLNet.pdf)
 
+* <img src="image/github_24px.png">[Code](https://github.com/aflnet/aflnet)
+
 **Abstract:** Server fuzzing is difficult. Unlike simple command-line tools, servers feature a massive state space that can be traversed effectively only with well-defined sequences of input messages. Valid sequences are specified in a protocol. In this paper, we present AFLNET, the first grey-box fuzzer for protocol implementations. Unlike existing protocol fuzzers, AFLNET takes a mutational approach and uses state-feedback to guide the fuzzing process. AFLNET is seeded with a corpus of recorded message exchanges between the server and an actual client. No protocol specification or message grammars are required. AFLNET acts as a client and replays variations of the original sequence of messages sent to the server and retains those variations that were effective at increasing the coverage of the code or state space. To identify the server states that are exercised by a message sequence, AFLNET uses the server’s response codes. From this feedback, AFLNET identifies progressive regions in the state space, and systematically steers towards such regions. The case studies with AFLNET on two popular protocol implementations demonstrate a substantial performance boost over the state-of-the-art. AFLNET discovered two new CVEs that are classified as critical (CVSS score CRITICAL 9.8).
 
 
@@ -1269,7 +1303,6 @@ In this paper, we propose to equip the traditional protocol fuzzing with coverag
 * <img src="image/pdf_24px.png">[Paper](./Paper/Arxiv20_Protocols.pdf)
 
 **Abstract:** Implementations of network protocols are often prone to vulnerabilities caused by developers’ mistakes when accessing memory regions and dealing with arithmetic operations. Finding practical approaches for checking the security of network protocol implementations has proven to be a challenging problem. The main reason is that the protocol software state-space is too large to be explored. Here we propose a novel verification approach that combines fuzzing with symbolic execution to verify intricate properties in network protocol implementations. We use fuzzing for an initial exploration of the network protocol, while symbolic execution explores both the program paths and protocol states, which were uncovered by fuzzing. From this combination, we automatically generate high-coverage test input packets for a network protocol implementation.We surveyed various approaches based on fuzzing and symbolic execution to understand how these techniques can be effectively combined and then choose a suitable tool to develop further our model on top of it. In our preliminary evaluation, we used ESBMC, Map2Check, and KLEE as software verifiers and SPIKE as fuzzer to check their suitability to verify our network protocol implementations. Our experimental results show that ESBMC can be further developed within our verification framework called FuSeBMC, to efficiently and effectively detect intricate security vulnerabilities in network protocol implementations.
-
 
 
 ### Smart seed selection-based effective black box fuzzing for IIoT protocol (2020)
@@ -1880,6 +1913,16 @@ Our evaluation shows that QSYM does not just outperform state-of-the-art fuzzers
 
 # Coverage \ Path \ Magic bytes \ Checksum
 
+### PATA: Fuzzing with Path Aware Taint Analysis (S&P 2022)
+
+* <img src="image/pdf_24px.png">[Paper](http://www.wingtecher.com/themes/WingTecherResearch/assets/papers/sp22.pdf)
+
+**Abstract:** Taint analysis assists fuzzers in solving complex fuzzing constraints by inferring the influencing input bytes. Execution paths in real-world programs often reach loops, where constraints in these loops can be visited and recorded multiple times. Conventional taint analysis techniques experience difficulties when distinguishing between multiple occurrences of the same constraint. In this paper, we propose PATA, a fuzzer that implements path-aware taint analysis, i.e. one that distinguishes between multiple occurrences of the same variable based on the execution path information. PATA does so using the following steps. First, PATA identifies variables used in constraints and constructs the Representative Variable Sequence (RVS), consisting of occurrences of all representative constraint variables and their values. Next, PATA perturbs the input, matches its RVS with that of the original input, and looks for value changes to identify the influencing input bytes for each entry in the RVS. Finally, PATA mutates the corresponding input bytes to solve constraints in the given path.
+
+To demonstrate the effectiveness of PATA over conventional taint analysis methods, we evaluated its performance on the benchmarks Google’s fuzzer-test-suite and LAVA-M against AFL, MOPT, TortoriseFuzz, VUzzer, Angora, REDQUEEN, and GREYONE. On Google’s fuzzer-test-suite, PATA outperformed these state-of-the-art fuzzers by 29%–1830% and 7%–87% in
+the number of unique paths found and basic blocks covered, respectively. More importantly, it found more bugs than the comparison fuzzers, including 17 unlisted ones. On LAVA-M, PATA performed the best out of all evaluated fuzzers and found 2602 bugs. On open-source projects, PATA found 40 previously unknown bugs, with 12 of them confirmed as CVEs.
+
+
 ### OTA: An Operation-oriented Time Allocation Strategy for Greybox Fuzzing (SANER 2021)
 
 * <img src="image/pdf_24px.png">[Paper](https://ieeexplore.ieee.org/abstract/document/9425969)
@@ -2291,6 +2334,15 @@ We have developed a prototype system and evaluated it on a set of 19 CTF (captur
 
 
 # Parallel / Ensemble Fuzzing
+
+### Towards Systematic and Dynamic Task Allocation for Collaborative Parallel Fuzzing (ASE 2021 NIER)
+
+* <img src="image/pdf_24px.png">[Paper](https://thuanpv.github.io/publications/AFLTeam-ASE21-NIER.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/MelbourneFuzzingHub/aflteam)
+
+**Abstract:** Parallel coverage-guided greybox fuzzing is the most common setup for vulnerability discovery at scale. However, so far it has received little attention from the research community compared to single-mode fuzzing, leaving open several problems particularly in its task allocation strategies. Current approaches focus on managing micro tasks, at the seed input level, and their task division algorithms are either ad-hoc or static. In this paper, we leverage research on graph partitioning and search algorithms to propose a systematic and dynamic task allocation solution that works at the macro-task level. First, we design an attributed graph to capture both the program structures (e.g., program call graph) and fuzzing information (e.g., branch hit counts, bug discovery probability). Second, our graph partitioning algorithm divides the global program search space into sub-search-spaces. Finally our search algorithm prioritizes these sub-search-spaces (i.e., tasks) and explores them to maximize code coverage and number of bugs found. The results are collected to update the graph and guide further iterations of partitioning and exploration. We implemented a prototype tool called AFLTeam. In our preliminary experiments on well-tested benchmarks, AFLTeam achieved higher code coverage (up to 16.4% branch coverage improvement) compared to the default parallel mode of AFL and discovered 2 zero-day bugs in FFmpeg and JasPer toolkits.
+
 
 ### CollabFuzz: A Framework for Collaborative Fuzzing (EuroSec 2021)
 
@@ -3197,6 +3249,30 @@ We present experimental results showing that these two techniques are necessary 
 
 
 # Other Interesting Fuzzing
+
+### Hardware Support to Improve Fuzzing Performance and Precision (CCS 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://gts3.org/assets/papers/2021/ding:snap.pdf)
+
+**Abstract:** Coverage-guided fuzzing is considered one of the most efficient bug-finding techniques, given its number of bugs reported. However, coverage tracing provided by existing software-based approaches, such as source instrumentation and dynamic binary translation, can incur large overhead. Hindered by the significantly lowered execution speed, it also becomes less beneficial to improve coverage feedback by incorporating additional execution states. In this paper, we propose SNAP, a customized hardware platform that implements hardware primitives to enhance the performance and precision of coverage-guided fuzzing. By sitting at the bottom of the computer stack, SNAP leverages the existing CPU pipeline and micro-architectural features to provide coverage tracing and rich execution semantics with near-zero cost regardless of source code availability. Prototyped as a synthesized RISC-V BOOM processor on FPGA, SNAP incurs a barely 3.1% tracing overhead on the SPEC benchmarks while achieving a 228× higher fuzzing throughput than the existing software-based solution. Posing only a 4.8% area and 6.5% power overhead, SNAP is highly practical and can be adopted by existing CPU architectures with minimal changes.
+
+
+### Rtkaller: State-aware Task Generation for RTOS Fuzzing (EMSOFT 2021)
+
+* <img src="image/pdf_24px.png">[Paper](http://www.wingtecher.com/themes/WingTecherResearch/assets/papers/emsoft21.pdf)
+
+**Abstract:** A real-time operating system (RTOS) is an operating system designed to meet certain real-time requirements. It is widely used in embedded applications, and its correctness is safety-critical. However, the validation of RTOS is challenging due to its complex real-time features and large code base.
+
+In this paper, we propose Rtkaller, a state-aware kernel fuzzer for the vulnerability detection in RTOS. First, Rtkaller implements an automatic task initialization to transform the syscall sequences into initial tasks with more real-time information. Then, a coverage-guided task mutation is designed to generate those tasks that explore more in-depth real-time related code for parallel execution. Moreover, Rtkaller realizes a task modification to correct those tasks that may hang during fuzzing. We evaluated it on recent versions
+of rt-Linux, which is one of the most widely used RTOS. Compared to the state-of-the-art kernel fuzzers Syzkaller and Moonshine, Rtkaller achieves the same code coverage at the speed of 1.7X and 1.6X , gains an increase of 26.1% and 22.0% branch coverage within 24 hours respectively. More importantly, Rtkaller has confirmed 28 previously unknown vulnerabilities that are missed by other fuzzers.
+
+
+### Neural Network Guided Evolutionary Fuzzing for Finding Traffic Violations of Autonomous Vehicles (arXiv 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2109.06126.pdf)
+
+**Abstract:** Self-driving cars and trucks, autonomous vehicles (AVs), should not be accepted by regulatory bodies and the public until they have much higher confidence in their safety and reliability -- which can most practically and convincingly be achieved by testing. But existing testing methods are inadequate for checking the end-to-end behaviors of AV controllers against complex, real-world corner cases involving interactions with multiple independent agents such as pedestrians and human-driven vehicles. While test-driving AVs on streets and highways fails to capture many rare events, existing simulation-based testing methods mainly focus on simple scenarios and do not scale well for complex driving situations that require sophisticated awareness of the surroundings. To address these limitations, we propose a new fuzz testing technique, called AutoFuzz, which can leverage widely-used AV simulators' API grammars. to generate semantically and temporally valid complex driving scenarios (sequences of scenes). AutoFuzz is guided by a constrained Neural Network (NN) evolutionary search over the API grammar to generate scenarios seeking to find unique traffic violations. Evaluation of our prototype on one state-of-the-art learning-based controller and two rule-based controllers shows that AutoFuzz efficiently finds hundreds of realistic traffic violations resembling real-world crashes. Further, fine-tuning the learning-based controller with the traffic violations found by AutoFuzz successfully reduced the traffic violations found in the new version of the AV controller software.
+
 
 ### Fuzzing: Cyberphysical System Testing for Security and Dependability (Computer 2021)
 

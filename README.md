@@ -3214,7 +3214,9 @@ We present experimental results showing that these two techniques are necessary 
 
 ### Estimating Residual Risk in Greybox Fuzzing (FSE 2021)
 
-* <img src="image/pdf_24px.png">[Paper](https://web.cs.ucla.edu/~wangjiyuan/research/FSE2021_heterofuzz.pdf)
+* <img src="image/pdf_24px.png">[Paper](https://mboehme.github.io/paper/FSE21.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/Adaptive-Bias/fse21_paper270)
 
 **Abstract:** For any errorless fuzzing campaign, no matter how long, there is always some residual risk that a software error would be discovered if only the campaign was run for just a bit longer. Recently, greybox fuzzing tools have found widespread adoption. Yet, practitioners can only guess when the residual risk of a greybox fuzzing campaign falls below a specific, maximum allowable threshold.
 

@@ -63,7 +63,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [UNIFUZZ: A Holistic and Pragmatic Metrics-Driven Platform for Evaluating Fuzzers](#unifuzz-a-holistic-and-pragmatic-metrics-driven-platform-for-evaluating-fuzzers-usenix-security2021)
   - [Nyx: Greybox Hypervisor Fuzzing using Fast Snapshots and Affine Types](#nyx-greybox-hypervisor-fuzzing-using-fast-snapshots-and-affine-types-usenix-security2021)
   - [Breaking Through Binaries: Compiler-quality Instrumentation for Better Binary-only Fuzzing](#breaking-through-binaries-compiler-quality-instrumentation-for-better-binary-only-fuzzing--usenix-security2021)
-  - [The Use of Likely Invariants as Feedback for Fuzzers](#the-use-of-likely-invariants-as-feedback-for-fuzzers)
+  - [The Use of Likely Invariants as Feedback for Fuzzers](#the-use-of-likely-invariants-as-feedback-for-fuzzers-usenix-security2021)
   
 - **NDSS 2021**
   - [Favocado: Fuzzing the Binding Code of JavaScript Engines Using Semantically Correct Test Cases](#favocado-fuzzing-the-binding-code-of-javascript-engines-using-semantically-correct-test-cases-ndss-2021)

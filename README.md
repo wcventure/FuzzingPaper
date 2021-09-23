@@ -46,6 +46,11 @@ remark: This website is only used for collecting and grouping the related paper.
 - **CCS 2021**
   - [Snipuzz: Black-box Fuzzing of IoT Firmware via Message Snippet Inference](#snipuzz-black-box-fuzzing-of-iot-firmware-via-message-snippet-inference-ccs-2021)
   - [Hardware Support to Improve Fuzzing Performance and Precision](#hardware-support-to-improve-fuzzing-performance-and-precision-ccs-2021)
+  - [SoFi: Reflection-Augmented Fuzzing for JavaScript Engines]
+  - [T-Reqs: HTTP Request Smuggling with Differential Fuzzing]
+  - [V-SHUTTLE: Scalable and Semantics-Aware Hypervisor Fuzzing]
+  - [Same Coverage, Less Bloat: Accelerating Binary-only Fuzzing with Coverage-preserving Coverage-guided Tracing]
+  - [Regression Greybox Fuzzing]
   
 - **OOPSLA 2021**
   - [Fuzzing Channel-Based Concurrency Runtimes using Types and Effects](#fuzzing-channel-based-concurrency-runtimes-using-types-and-effects-slides-oopsla-2021)

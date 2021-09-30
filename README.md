@@ -2062,7 +2062,9 @@ In this paper, we propose a new fuzzing technique, called Token-Level Fuzzing. I
 
 * <img src="image/pdf_24px.png">[Paper](https://www.computer.org/csdl/proceedings-article/sp/2021/893400b217/1t0x95QZOEg)
 
-* <img src="image/youtube.png">[Video](https://youtu.be/h0yPNk8lJdo)
+* <img src="image/youtube.png">[Video](https://youtu.be/tcTbXr8zf-Y)
+
+* <img src="image/github_24px.png">[Code](https://github.com/s3team/Polyglot)
 
 **Abstract:** Language processors, such as compilers and interpreters, are indispensable in building modern software. Errors in language processors can lead to severe consequences, like incorrect functionalities or even malicious attacks. However, it is not trivial to automatically test language processors to find bugs. Existing testing methods (or fuzzers) either fail to generate high-quality (i.e., semantically correct) test cases, or only support limited programming languages. In this paper, we propose POLYGLOT, a generic fuzzing framework that generates high-quality test cases for exploring processors of different programming languages. To achieve the generic applicability, POLYGLOT neutralizes the difference in syntax and semantics of programming languages with a uniform intermediate representation (IR). To improve the language validity, POLYGLOT performs constrained mutation and semantic validation to preserve syntactic correctness and fix semantic errors. We have applied POLYGLOT on 21 popular language processors of 9 programming languages, and identified 173 new bugs, 113 of which are fixed with 18 CVEs assigned. Our experiments show that POLYGLOT can support a wide range of programming languages, and outperforms existing fuzzers with up to 30x improvement in code coverage.
 

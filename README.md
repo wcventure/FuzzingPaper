@@ -43,6 +43,7 @@ remark: This website is only used for collecting and grouping the related paper.
   
 - **OOPSLA 2021**
   - [Fuzzing Channel-Based Concurrency Runtimes using Types and Effects](#fuzzing-channel-based-concurrency-runtimes-using-types-and-effects-slides-oopsla-2021)
+  - [Fully Automated Functional Fuzzing of Android Apps for Detecting Non-crashing Logic Bugs](#fully-automated-functional-fuzzing-of-android-apps-for-detecting-non-crashing-logic-bugs-oopsla-2021)
   
 - **PLDI 2021**
   - [Automated Conformance Testing for JavaScript Engines via Deep Compiler Fuzzing](#automated-conformance-testing-for-javascript-engines-via-deep-compiler-fuzzing-pldi-2021)
@@ -80,6 +81,8 @@ remark: This website is only used for collecting and grouping the related paper.
   - [OTA: An Operation-oriented Time Allocation Strategy for Greybox Fuzzing](#ota-an-operation-oriented-time-allocation-strategy-for-greybox-fuzzing-saner-2021)
 
 - **Others 2021**
+  - [webFuzz: Grey-Box Fuzzing for Web Applications (ESORICS 2021)](#webfuzz-grey-box-fuzzing-for-web-applications-esorics-2021)
+  - [Vulnerability-Oriented Fuzz Testing for Connected Autonomous Vehicle Systems ( IEEE Transactions on Reliability 2021)](#vulnerability-oriented-fuzz-testing-for-connected-autonomous-vehicle-systems--ieee-transactions-on-reliability-2021)
   - [Fuzzing: Cyberphysical System Testing for Security and Dependability (Computer 2021)](#fuzzing-cyberphysical-system-testing-for-security-and-dependability-computer-2021)
   - [ESRFuzzer: an enhanced fuzzing framework for physical SOHO router devices to discover multi-Type vulnerabilities (Cybersecurity 2021)](#esrfuzzer-an-enhanced-fuzzing-framework-for-physical-soho-router-devices-to-discover-multi-type-vulnerabilities-cybersecurity-2021)
   - [ICPFuzzer: proprietary communication protocol fuzzing by using machine learning and feedback strategies (Cybersecurity 2021)](#icpfuzzer-proprietary-communication-protocol-fuzzing-by-using-machine-learning-and-feedback-strategies-cybersecurity-2021)
@@ -751,6 +754,9 @@ remark: This website is only used for collecting and grouping the related paper.
 
 
 - [**Other Interesting Fuzzing**](#other-interesting-fuzzing)
+  - [Fully Automated Functional Fuzzing of Android Apps for Detecting Non-crashing Logic Bugs (OOPSLA 2021)](#fully-automated-functional-fuzzing-of-android-apps-for-detecting-non-crashing-logic-bugs-oopsla-2021)
+  - [webFuzz: Grey-Box Fuzzing for Web Applications (ESORICS 2021)](#webfuzz-grey-box-fuzzing-for-web-applications-esorics-2021)
+  - [Vulnerability-Oriented Fuzz Testing for Connected Autonomous Vehicle Systems ( IEEE Transactions on Reliability 2021)](#vulnerability-oriented-fuzz-testing-for-connected-autonomous-vehicle-systems--ieee-transactions-on-reliability-2021)
   - [Fuzzing: Cyberphysical System Testing for Security and Dependability (Computer 2021)](#fuzzing-cyberphysical-system-testing-for-security-and-dependability-computer-2021)
   - [ESRFuzzer: an enhanced fuzzing framework for physical SOHO router devices to discover multi-Type vulnerabilities (Cybersecurity 2021)](#esrfuzzer-an-enhanced-fuzzing-framework-for-physical-soho-router-devices-to-discover-multi-type-vulnerabilities-cybersecurity-2021)
   - [Estimating Residual Risk in Greybox Fuzzing (FSE 2021)](#estimating-residual-risk-in-greybox-fuzzing-fse-2021)
@@ -3197,6 +3203,35 @@ We present experimental results showing that these two techniques are necessary 
 
 
 # Other Interesting Fuzzing
+
+### Fully Automated Functional Fuzzing of Android Apps for Detecting Non-crashing Logic Bugs (OOPSLA 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://tingsu.github.io/files/oopsla21-Genie.pdf)
+
+**Abstract:** Android apps are GUI-based event-driven software and have become ubiquitous in recent years. Obviously, functional correctness is critical for an app’s success. However, in addition to crash bugs, non-crashing functional bugs (in short as “non-crashing bugs” in this work) like inadvertent function failures, silent user data lost and incorrect display information are prevalent, even in popular, well-tested apps. These non-crashing functional bugs are usually caused by program logic errors and manifest themselves on the graphic user interfaces (GUIs). In practice, such bugs pose significant challenges in effectively detecting them because (1) current practices heavily rely on expensive, small-scale manual validation (the lack of automation); and (2) modern fully automated testing has been limited to crash bugs (the lack of test oracles).
+
+This paper fills this gap by introducing independent view fuzzing, a novel, fully automated approach for detecting non-crashing functional bugs in Android apps. Inspired by metamorphic testing, our key insight is to leverage the commonly-held independent view property of Android apps to manufacture property-preserving mutant tests from a set of seed tests that validate certain app properties. The mutated tests help exercise the tested apps under additional, adverse conditions. Any property violations indicate likely functional bugs for further manual confirmation. We have realized our approach as an automated, end-to-end functional fuzzing tool, Genie. Given an app, (1) Genie automatically detects non-crashing bugs without requiring human-provided tests and oracles (thus fully automated); and (2) the detected non-crashing bugs are diverse (thus general and not limited to specific functional properties), which set Genie apart from prior work. 
+
+We have evaluated Genie on 12 real-world Android apps and successfully uncovered 34 previously unknown non-crashing bugs in their latest releases — all have been confirmed, and 22 have already been fixed. Most of the detected bugs are nontrivial and have escaped developer (and user) testing for at least one year and affected many app releases, thus clearly demonstrating Genie’s effectiveness. According to our analysis, Genie achieves a reasonable true positive rate of 40.9%, while these 34 non-crashing bugs could not be detected by prior fully automated GUI testing tools (as our evaluation confirms). Thus, our work complements and enhances existing manual testing and fully automated testing for crash bugs.
+
+
+### webFuzz: Grey-Box Fuzzing for Web Applications (ESORICS 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://ieeexplore.ieee.org/abstract/document/9557794)
+
+**Abstract:** Fuzzing is significantly evolved in analysing native code, but web applications, invariably, have received limited attention until now. This paper designs, implements and evaluates webFuzz, a gray-box fuzzing prototype for discovering vulnerabilities in web applications.
+
+webFuzz is successful in leveraging instrumentation for detecting cross-site scripting (XSS) vulnerabilities, as well as covering more code faster than black-box fuzzers. In particular, webFuzz has discovered one zero-day vulnerability in WordPress, a leading CMS platform, and five in an online commerce application named CE-Phoenix.
+
+Moreover, in order to systematically evaluate webFuzz, and similar tools, we provide the first attempt for automatically synthesizing reflective cross-site scripting (RXSS) vulnerabilities in vanilla web applications.
+
+
+### Vulnerability-Oriented Fuzz Testing for Connected Autonomous Vehicle Systems ( IEEE Transactions on Reliability 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://ieeexplore.ieee.org/abstract/document/9557794)
+
+**Abstract:** In an era of connectivity and automation, the vehicle industry is adopting numerous technologies to transform driver-centric vehicles into intelligent mechanical devices driven by software components. Software integration and network connectivity inherit numerous security issues that open the door for malicious attacks. Software security testing is a scalable and practical approach to identify systems’ weaknesses and vulnerabilities at an early stage and throughout their life-cycle. Security specialists recommend fuzz testing to identify vulnerabilities within vehicle software systems. Nevertheless, the randomness and blindness of fuzzing hinder it from becoming a reliable security tool. This article presents a vulnerability-oriented fuzz (VulFuzz) testing framework that utilizes security vulnerability metrics designed particularly for connected and autonomous vehicles to direct and prioritize the fuzz testing toward the most vulnerable components. While most gray-box fuzzing techniques aim solely to expand code coverage, the proposed approach assigns weights to ensure a thorough examination of the most vulnerable components. Moreover, we employ an input structure-aware mutation technique that can bypass vehicle software systems’ input formats to boost test performance and avoid dropped test cases. Such a testing technique will contribute to the quality assurance of vehicle software engineering. We implemented the proposed approach on OpenPilot, a driver assistance system, and compared our results to American fuzzy lop (AFL) and an unguided mutation-based fuzzer. Within 16.8 h, VulFuzz exposed 335 crashes, 41 times more than AFL and two times more than an unguided mutation-based fuzzer. VulFuzz is explicitly efficient for automotive systems, reaching the same code coverage as AFL but with more exposed crashes and fewer dropped messages.
+
 
 ### Fuzzing: Cyberphysical System Testing for Security and Dependability (Computer 2021)
 

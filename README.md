@@ -92,14 +92,11 @@ remark: This website is only used for collecting and grouping the related paper.
   - [OTA: An Operation-oriented Time Allocation Strategy for Greybox Fuzzing](#ota-an-operation-oriented-time-allocation-strategy-for-greybox-fuzzing-saner-2021)
 
 - **Others 2021**
-<<<<<<< HEAD
   - [webFuzz: Grey-Box Fuzzing for Web Applications (ESORICS 2021)](#webfuzz-grey-box-fuzzing-for-web-applications-esorics-2021)
-  - [Vulnerability-Oriented Fuzz Testing for Connected Autonomous Vehicle Systems ( IEEE Transactions on Reliability 2021)](#vulnerability-oriented-fuzz-testing-for-connected-autonomous-vehicle-systems--ieee-transactions-on-reliability-2021)
-=======
+  - [Vulnerability-Oriented Fuzz Testing for Connected Autonomous Vehicle Systems (IEEE Transactions on Reliability 2021)](#vulnerability-oriented-fuzz-testing-for-connected-autonomous-vehicle-systems--ieee-transactions-on-reliability-2021)
   - [Duo: Differential Fuzzing for Deep Learning Operators (IEEE Transactions on Reliability 2021)](#duo-differential-fuzzing-for-deep-learning-operators-ieee-transactions-on-reliability-2021)
   - [Rtkaller: State-aware Task Generation for RTOS Fuzzing (EMSOFT 2021)](#rtkaller-state-aware-task-generation-for-rtos-fuzzing-emsoft-2021)
   - [Neural Network Guided Evolutionary Fuzzing for Finding Traffic Violations of Autonomous Vehicles (arXiv 2021)](#neural-network-guided-evolutionary-fuzzing-for-finding-traffic-violations-of-autonomous-vehicles-arxiv-2021)
->>>>>>> 6c4759bc2e06b1205df21a60af61fb6d14ceb314
   - [Fuzzing: Cyberphysical System Testing for Security and Dependability (Computer 2021)](#fuzzing-cyberphysical-system-testing-for-security-and-dependability-computer-2021)
   - [ESRFuzzer: an enhanced fuzzing framework for physical SOHO router devices to discover multi-Type vulnerabilities (Cybersecurity 2021)](#esrfuzzer-an-enhanced-fuzzing-framework-for-physical-soho-router-devices-to-discover-multi-type-vulnerabilities-cybersecurity-2021)
   - [ICPFuzzer: proprietary communication protocol fuzzing by using machine learning and feedback strategies (Cybersecurity 2021)](#icpfuzzer-proprietary-communication-protocol-fuzzing-by-using-machine-learning-and-feedback-strategies-cybersecurity-2021)
@@ -773,15 +770,12 @@ remark: This website is only used for collecting and grouping the related paper.
 
 
 - [**Other Interesting Fuzzing**](#other-interesting-fuzzing)
-<<<<<<< HEAD
   - [Fully Automated Functional Fuzzing of Android Apps for Detecting Non-crashing Logic Bugs (OOPSLA 2021)](#fully-automated-functional-fuzzing-of-android-apps-for-detecting-non-crashing-logic-bugs-oopsla-2021)
   - [webFuzz: Grey-Box Fuzzing for Web Applications (ESORICS 2021)](#webfuzz-grey-box-fuzzing-for-web-applications-esorics-2021)
   - [Vulnerability-Oriented Fuzz Testing for Connected Autonomous Vehicle Systems ( IEEE Transactions on Reliability 2021)](#vulnerability-oriented-fuzz-testing-for-connected-autonomous-vehicle-systems--ieee-transactions-on-reliability-2021)
-=======
   - [Hardware Support to Improve Fuzzing Performance and Precision (CCS 2021)](#hardware-support-to-improve-fuzzing-performance-and-precision-ccs-2021)
   - [Rtkaller: State-aware Task Generation for RTOS Fuzzing (EMSOFT 2021)](#rtkaller-state-aware-task-generation-for-rtos-fuzzing-emsoft-2021)
   - [Neural Network Guided Evolutionary Fuzzing for Finding Traffic Violations of Autonomous Vehicles (arXiv 2021)](#neural-network-guided-evolutionary-fuzzing-for-finding-traffic-violations-of-autonomous-vehicles-arxiv-2021)
->>>>>>> 6c4759bc2e06b1205df21a60af61fb6d14ceb314
   - [Fuzzing: Cyberphysical System Testing for Security and Dependability (Computer 2021)](#fuzzing-cyberphysical-system-testing-for-security-and-dependability-computer-2021)
   - [ESRFuzzer: an enhanced fuzzing framework for physical SOHO router devices to discover multi-Type vulnerabilities (Cybersecurity 2021)](#esrfuzzer-an-enhanced-fuzzing-framework-for-physical-soho-router-devices-to-discover-multi-type-vulnerabilities-cybersecurity-2021)
   - [Estimating Residual Risk in Greybox Fuzzing (FSE 2021)](#estimating-residual-risk-in-greybox-fuzzing-fse-2021)

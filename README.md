@@ -48,9 +48,9 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Hardware Support to Improve Fuzzing Performance and Precision](#hardware-support-to-improve-fuzzing-performance-and-precision-ccs-2021)
   - [SoFi: Reflection-Augmented Fuzzing for JavaScript Engines]
   - [T-Reqs: HTTP Request Smuggling with Differential Fuzzing]
-  - [V-SHUTTLE: Scalable and Semantics-Aware Hypervisor Fuzzing]
-  - [Same Coverage, Less Bloat: Accelerating Binary-only Fuzzing with Coverage-preserving Coverage-guided Tracing]
-  - [Regression Greybox Fuzzing]
+  - [V-SHUTTLE: Scalable and Semantics-Aware Hypervisor Fuzzing](#v-shuttle-scalable-and-semantics-aware-hypervisor-fuzzing-ccs-2021)
+  - [Same Coverage, Less Bloat: Accelerating Binary-only Fuzzing with Coverage-preserving Coverage-guided Tracing](#same-coverage-less-bloat-accelerating-binary-only-fuzzing-with-coverage-preserving-coverage-guided-tracing-ccs-2021)
+  - [Regression Greybox Fuzzing](#regression-greybox-fuzzing-ccs-2021)
   
 - **OOPSLA 2021**
   - [Fuzzing Channel-Based Concurrency Runtimes using Types and Effects](#fuzzing-channel-based-concurrency-runtimes-using-types-and-effects-slides-oopsla-2021)
@@ -593,6 +593,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [VUzzer: Application-aware Evolutionary Fuzzing (NDSS 2017)](#vuzzer-application-aware-evolutionary-fuzzing-ndss-2017)
   
 - [**Grammars \ Context-aware Fuzzing**](#grammars--context-aware-fuzzing)
+  - [V-SHUTTLE: Scalable and Semantics-Aware Hypervisor Fuzzing (CCS 2021)](#v-shuttle-scalable-and-semantics-aware-hypervisor-fuzzing-ccs-2021)
   - [Token-Level Fuzzing (WiSec 2021)](#token-level-fuzzing-wisec-2021)
   - [Fuzzing With Optimized Grammar-Aware Mutation Strategies (Access 2021)](#fuzzing-with-optimized-grammar-aware-mutation-strategies-access-2021)
   - [Extended grammar-based fuzzing algorithm for JavaScript Engines (2021)](#extended-grammar-based-fuzzing-algorithm-for-javascript-engines-2021)
@@ -645,6 +646,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [MemFuzz: Using Memory Accesses to Guide Fuzzing (ICST 2019)](#memfuzz-using-memory-accesses-to-guide-fuzzing-icst-2019)
 
 - [**Directed Fuzzing**](#directed-fuzzing)
+  - [Regression Greybox Fuzzing (CCS 2021)](#regression-greybox-fuzzing-ccs-2021)
   - [KCFuzz: Directed Fuzzing Based on Keypoint Coverage (ICAIS 2021)](#kcfuzz-directed-fuzzing-based-on-keypoint-coverage-icais-2021)
   - [Constraint-guided Directed Greybox Fuzzing (USENIX Security2021)](#constraint-guided-directed-greybox-fuzzing-usenix-security2021)
   - [Constructing More Complete Control Flow Graphs Utilizing Directed Gray-Box Fuzzing (MDPI 2021)](#constructing-more-complete-control-flow-graphs-utilizing-directed-gray-box-fuzzing-mdpi-2021)
@@ -726,6 +728,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [VUzzer: Application-aware Evolutionary Fuzzing](#vuzzer-application-aware-evolutionary-fuzzing-ndss-2017)
 
 - [**Binary Fuzzing**](#binary-fuzzing)
+  - [Same Coverage, Less Bloat: Accelerating Binary-only Fuzzing with Coverage-preserving Coverage-guided Tracing (CCS 2021)](#same-coverage-less-bloat-accelerating-binary-only-fuzzing-with-coverage-preserving-coverage-guided-tracing-ccs-2021)
   - [Scalable Fuzzing of Program Binaries with E9AFL (ASE 2021)](#scalable-fuzzing-of-program-binaries-with-e9afl-ase-2021)
   - [STOCHFUZZ: Sound and Cost-effective Fuzzing of Stripped Binaries by Incremental and Stochastic Rewriting (S&P 2021)](#stochfuzz-sound-and-cost-effective-fuzzing-of-stripped-binaries-by-incremental-and-stochastic-rewriting-sp-2021)
   - [Breaking Through Binaries: Compiler-quality Instrumentation for Better Binary-only Fuzzing  (USENIX Security2021)](#breaking-through-binaries-compiler-quality-instrumentation-for-better-binary-only-fuzzing--usenix-security2021)
@@ -2039,6 +2042,15 @@ In this paper, we present an application-aware evolutionary fuzzing strategy tha
 
 # Grammars \ Context-aware Fuzzing
 
+### V-SHUTTLE: Scalable and Semantics-Aware Hypervisor Fuzzing (CCS 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/sec21-salls.pdf)
+
+**Abstract:** With the wide application and deployment of cloud computing in enterprises, virtualization developers and security researchers are paying more attention to cloud computing security. The core component of cloud computing products is the hypervisor, which is also known as the virtual machine monitor (VMM) that can isolate multiple virtual machines in one host machine. However, compromising the hypervisor can lead to virtual machine escape and the elevation of privilege, allowing attackers to gain the permission of code execution in the host. Therefore, the security analysis and vulnerability detection of the hypervisor are critical for cloud computing enterprises. Importantly, virtual devices expose many interfaces to a guest user for communication, making virtual devices the most vulnerable part of a hypervisor. However, applying fuzzing to the virtual devices of a hypervisor is challenging because the data structures transferred by DMA are constructed in a nested form according to protocol specifications. Failure to understand the protocol of the virtual devices will make the fuzzing process stuck in the initial fuzzing stage, resulting in inefficient fuzzing.
+
+In this paper, we propose a new framework called V-Shuttle to conduct hypervisor fuzzing, which performs scalable and semanticsaware hypervisor fuzzing. To address the above challenges, we first design a DMA redirection mechanism to significantly reduce the manual efforts to reconstruct virtual devices’ protocol structures and make the fuzzing environment setup automated and scalable. Furthermore, we put forward a new fuzzing mutation scheduling mechanism called seedpool to make the virtual device fuzzing process semantics-aware and speed up the fuzzing process to achieve high coverage. Extensive evaluation on QEMU and VirtualBox, two of the most popular hypervisor platforms among the world, shows that V-Shuttle can efficiently reproduce existing vulnerabilities and find new vulnerabilities. We further carried out a long-term fuzzing campaign in QEMU/KVM and VirtualBox with V-Shuttle. In total, we discovered 35 new bugs with 17 CVEs assigne.
+
+
 ### Token-Level Fuzzing (WiSec 2021)
 
 * <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/sec21-salls.pdf)
@@ -2465,6 +2477,17 @@ In this paper, we propose IJON, an annotation mechanism that a human analyst can
 
 
 # Directed Fuzzing
+
+### Regression Greybox Fuzzing (CCS 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://mboehme.github.io/paper/CCS21.pdf)
+
+**Abstract:** What you change is what you fuzz! In an empirical study of all fuzzer-generated bug reports in OSSFuzz, we found that four in every five bugs have been introduced by recent code changes. That is, 77% of 23k bugs are regressions. For a newly added project, there is usually an initial burst of new reports at 2-3 bugs per day. However, after that initial burst, and after weeding out most of the existing bugs, we still get a constant rate of 3-4 bug reports per week. The constant rate can only be explained by an increasing regression rate. Indeed, the probability that a reported bug is a regression (i.e., we could identify the bug-introducing commit) increases from 20% for the first bug to 92% after a few hundred bug reports.
+
+In this paper, we introduce regression greybox fuzzing (RGF) a fuzzing approach that focuses on code that has changed more recently or more often. However, for any active software project, it is impractical to fuzz sufficiently each code commit individually. Instead, we propose to fuzz all commits simultaneously, but code present in more (recent) commits with higher priority. We observe that most code is never changed and relatively old. So, we identify means to strengthen the signal from executed code-of-interest. We also extend the concept of power schedules to the bytes of a seed and introduce Ant Colony Optimization to assign more energy to those bytes which promise to generate more interesting inputs.
+
+Our large-scale fuzzing experiment demonstrates the validity of our main hypothesis and the efficiency of regression greybox fuzzing. We conducted our experiments in a reproducible manner within Fuzzbench, an extensible fuzzer evaluation platform. Our experiments involved 3+ CPU-years worth of fuzzing campaigns and 20 bugs in 15 open-source C programs available on OSSFuzz.
+
 
 ### KCFuzz: Directed Fuzzing Based on Keypoint Coverage (ICAIS 2021)
 
@@ -2977,6 +3000,15 @@ We implemented a prototype of GREYONE and evaluated it on the LAVA data set and 
 
 
 # Binary Fuzzing
+
+### Same Coverage, Less Bloat: Accelerating Binary-only Fuzzing with Coverage-preserving Coverage-guided Tracing (CCS 2021) 
+
+* <img src="image/pdf_24px.png">[Paper](https://www.comp.nus.edu.sg/~abhik/pdf/ASE21.pdf)
+
+**Abstract:** Coverage-guided fuzzing’s aggressive, high-volume testing has helped reveal tens of thousands of software security flaws. While executing billions of test cases mandates fast code coverage tracing, the nature of binary-only targets leads to reduced tracing performance. A recent advancement in binary fuzzing performance is Coverage-guided Tracing (CGT), which brings orders-of-magnitude gains in throughput by restricting the expense of coverage tracing to only when new coverage is guaranteed. Unfortunately, CGT suits only a basic block coverage granularity—yet most fuzzers require finer-grain coverage metrics: edge coverage and hit counts. It is this limitation which prohibits nearly all of today’s state-of-the-art fuzzers from attaining the performance benefits of CGT.
+
+This paper tackles the challenges of adapting CGT to fuzzing’s most ubiquitous coverage metrics. We introduce and implement a suite of enhancements that expand CGT’s introspection to fuzzing’s most common code coverage metrics, while maintaining its orders-of-magnitude speedup over conventional always-on coverage tracing. We evaluate their trade-offs with respect to fuzzing performance and effectiveness across 12 diverse real-world binaries (8 open- and 4 closed-source). On average, our coverage-preserving CGT attains near-identical speed to the present block-coverageonly CGT, UnTracer; and outperforms leading binary- and sourcelevel coverage tracers QEMU, Dyninst, RetroWrite, and AFL-Clang by 2–24×, finding more bugs in less time.
+
 
 ### Scalable Fuzzing of Program Binaries with E9AFL (ASE 2021)
 

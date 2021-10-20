@@ -30,6 +30,7 @@ remark: This website is only used for collecting and grouping the related paper.
 - **ASE 2021**
   - [Scalable Fuzzing of Program Binaries with E9AFL](#scalable-fuzzing-of-program-binaries-with-e9afl-ase-2021)
   - [Towards Systematic and Dynamic Task Allocation for Collaborative Parallel Fuzzing](#towards-systematic-and-dynamic-task-allocation-for-collaborative-parallel-fuzzing-ase-2021-nier)
+  - [RULF: Rust Library Fuzzing via API Dependency Graph Traversal](#rulf-rust-library-fuzzing-via-api-dependency-graph-traversal-ase-2021)
 
 - **FSE 2021**
   - [Estimating Residual Risk in Greybox Fuzzing](#estimating-residual-risk-in-greybox-fuzzing-fse-2021)
@@ -775,6 +776,7 @@ remark: This website is only used for collecting and grouping the related paper.
 
 
 - [**Other Interesting Fuzzing**](#other-interesting-fuzzing)
+  - [RULF: Rust Library Fuzzing via API Dependency Graph Traversal](#rulf-rust-library-fuzzing-via-api-dependency-graph-traversal-ase-2021)
   - [Fully Automated Functional Fuzzing of Android Apps for Detecting Non-crashing Logic Bugs (OOPSLA 2021)](#fully-automated-functional-fuzzing-of-android-apps-for-detecting-non-crashing-logic-bugs-oopsla-2021)
   - [webFuzz: Grey-Box Fuzzing for Web Applications (ESORICS 2021)](#webfuzz-grey-box-fuzzing-for-web-applications-esorics-2021)
   - [Vulnerability-Oriented Fuzz Testing for Connected Autonomous Vehicle Systems ( IEEE Transactions on Reliability 2021)](#vulnerability-oriented-fuzz-testing-for-connected-autonomous-vehicle-systems--ieee-transactions-on-reliability-2021)
@@ -3294,6 +3296,13 @@ We present experimental results showing that these two techniques are necessary 
 # Other Interesting Fuzzing
 
 <<<<<<< HEAD
+### RULF: Rust Library Fuzzing via API Dependency Graph Traversal (ASE 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2104.12064)
+
+**Abstract:** Robustness is a key concern for Rust library development because Rust promises no risks of undefined behaviors if developers use safe APIs only. Fuzzing is a practical approach for examining the robustness of programs. However, existing fuzzing tools are not directly applicable to library APIs due to the absence of fuzz targets. It mainly relies on human efforts to design fuzz targets case by case which is labor-intensive. To address this problem, this paper proposes a novel automated fuzz target generation approach for fuzzing Rust libraries via API dependency graph traversal. We identify several essential requirements for library fuzzing, including validity and effectiveness of fuzz targets, high API coverage, and efficiency. To meet these requirements, we first employ breadth-first search with pruning to find API sequences under a length threshold, then we backward search longer sequences for uncovered APIs, and finally we optimize the sequence set as a set covering problem. We implement our fuzz target generator and conduct fuzzing experiments with AFL++ on several real-world popular Rust projects. Our tool finally generates 7 to 118 fuzz targets for each library with API coverage up to 0.92. We exercise each target with a threshold of 24 hours and find 30 previously-unknown bugs from seven libraries.
+
+
 ### Fully Automated Functional Fuzzing of Android Apps for Detecting Non-crashing Logic Bugs (OOPSLA 2021)
 
 * <img src="image/pdf_24px.png">[Paper](https://tingsu.github.io/files/oopsla21-Genie.pdf)
@@ -3321,7 +3330,8 @@ Moreover, in order to systematically evaluate webFuzz, and similar tools, we pro
 * <img src="image/pdf_24px.png">[Paper](https://ieeexplore.ieee.org/abstract/document/9557794)
 
 **Abstract:** In an era of connectivity and automation, the vehicle industry is adopting numerous technologies to transform driver-centric vehicles into intelligent mechanical devices driven by software components. Software integration and network connectivity inherit numerous security issues that open the door for malicious attacks. Software security testing is a scalable and practical approach to identify systems’ weaknesses and vulnerabilities at an early stage and throughout their life-cycle. Security specialists recommend fuzz testing to identify vulnerabilities within vehicle software systems. Nevertheless, the randomness and blindness of fuzzing hinder it from becoming a reliable security tool. This article presents a vulnerability-oriented fuzz (VulFuzz) testing framework that utilizes security vulnerability metrics designed particularly for connected and autonomous vehicles to direct and prioritize the fuzz testing toward the most vulnerable components. While most gray-box fuzzing techniques aim solely to expand code coverage, the proposed approach assigns weights to ensure a thorough examination of the most vulnerable components. Moreover, we employ an input structure-aware mutation technique that can bypass vehicle software systems’ input formats to boost test performance and avoid dropped test cases. Such a testing technique will contribute to the quality assurance of vehicle software engineering. We implemented the proposed approach on OpenPilot, a driver assistance system, and compared our results to American fuzzy lop (AFL) and an unguided mutation-based fuzzer. Within 16.8 h, VulFuzz exposed 335 crashes, 41 times more than AFL and two times more than an unguided mutation-based fuzzer. VulFuzz is explicitly efficient for automotive systems, reaching the same code coverage as AFL but with more exposed crashes and fewer dropped messages.
-=======
+
+
 ### Hardware Support to Improve Fuzzing Performance and Precision (CCS 2021)
 
 * <img src="image/pdf_24px.png">[Paper](https://gts3.org/assets/papers/2021/ding:snap.pdf)

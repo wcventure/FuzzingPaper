@@ -3284,7 +3284,6 @@ We present experimental results showing that these two techniques are necessary 
 
 # Other Interesting Fuzzing
 
-<<<<<<< HEAD
 ### Fully Automated Functional Fuzzing of Android Apps for Detecting Non-crashing Logic Bugs (OOPSLA 2021)
 
 * <img src="image/pdf_24px.png">[Paper](https://tingsu.github.io/files/oopsla21-Genie.pdf)
@@ -3312,7 +3311,8 @@ Moreover, in order to systematically evaluate webFuzz, and similar tools, we pro
 * <img src="image/pdf_24px.png">[Paper](https://ieeexplore.ieee.org/abstract/document/9557794)
 
 **Abstract:** In an era of connectivity and automation, the vehicle industry is adopting numerous technologies to transform driver-centric vehicles into intelligent mechanical devices driven by software components. Software integration and network connectivity inherit numerous security issues that open the door for malicious attacks. Software security testing is a scalable and practical approach to identify systems’ weaknesses and vulnerabilities at an early stage and throughout their life-cycle. Security specialists recommend fuzz testing to identify vulnerabilities within vehicle software systems. Nevertheless, the randomness and blindness of fuzzing hinder it from becoming a reliable security tool. This article presents a vulnerability-oriented fuzz (VulFuzz) testing framework that utilizes security vulnerability metrics designed particularly for connected and autonomous vehicles to direct and prioritize the fuzz testing toward the most vulnerable components. While most gray-box fuzzing techniques aim solely to expand code coverage, the proposed approach assigns weights to ensure a thorough examination of the most vulnerable components. Moreover, we employ an input structure-aware mutation technique that can bypass vehicle software systems’ input formats to boost test performance and avoid dropped test cases. Such a testing technique will contribute to the quality assurance of vehicle software engineering. We implemented the proposed approach on OpenPilot, a driver assistance system, and compared our results to American fuzzy lop (AFL) and an unguided mutation-based fuzzer. Within 16.8 h, VulFuzz exposed 335 crashes, 41 times more than AFL and two times more than an unguided mutation-based fuzzer. VulFuzz is explicitly efficient for automotive systems, reaching the same code coverage as AFL but with more exposed crashes and fewer dropped messages.
-=======
+
+
 ### Hardware Support to Improve Fuzzing Performance and Precision (CCS 2021)
 
 * <img src="image/pdf_24px.png">[Paper](https://gts3.org/assets/papers/2021/ding:snap.pdf)
@@ -3335,7 +3335,6 @@ of rt-Linux, which is one of the most widely used RTOS. Compared to the state-of
 * <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2109.06126.pdf)
 
 **Abstract:** Self-driving cars and trucks, autonomous vehicles (AVs), should not be accepted by regulatory bodies and the public until they have much higher confidence in their safety and reliability -- which can most practically and convincingly be achieved by testing. But existing testing methods are inadequate for checking the end-to-end behaviors of AV controllers against complex, real-world corner cases involving interactions with multiple independent agents such as pedestrians and human-driven vehicles. While test-driving AVs on streets and highways fails to capture many rare events, existing simulation-based testing methods mainly focus on simple scenarios and do not scale well for complex driving situations that require sophisticated awareness of the surroundings. To address these limitations, we propose a new fuzz testing technique, called AutoFuzz, which can leverage widely-used AV simulators' API grammars. to generate semantically and temporally valid complex driving scenarios (sequences of scenes). AutoFuzz is guided by a constrained Neural Network (NN) evolutionary search over the API grammar to generate scenarios seeking to find unique traffic violations. Evaluation of our prototype on one state-of-the-art learning-based controller and two rule-based controllers shows that AutoFuzz efficiently finds hundreds of realistic traffic violations resembling real-world crashes. Further, fine-tuning the learning-based controller with the traffic violations found by AutoFuzz successfully reduced the traffic violations found in the new version of the AV controller software.
->>>>>>> 6c4759bc2e06b1205df21a60af61fb6d14ceb314
 
 
 ### Fuzzing: Cyberphysical System Testing for Security and Dependability (Computer 2021)

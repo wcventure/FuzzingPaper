@@ -3551,7 +3551,9 @@ Our prototype for detecting Spectre V1 vulnerabilities successfully identifies a
 
 * <img src="image/GoSSIP_note.jpg">[Reading Note from GoSSIP](https://securitygossip.com/blog/2020/06/05/fuzzgen-automatic-fuzzer-generation/)
 
-* <img src="image/wechat_24px.png">[Reading Note](http://www.xderedu.com/2020/08/08/FuzzGen%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/)
+* <img src="image/wechat_24px.png">[Reading Note From BAIZE](https://mp.weixin.qq.com/s/d2VEQTLtHV5Z-li6M3KBFA)
+
+* <img src="image/wechat_24px.png">[Reading Note](https://mp.weixin.qq.com/s/99UC9UWqKzVcbW18WQTO1w)
 
 * <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/sec20fall_ispoglou_prepub.pdf)
 

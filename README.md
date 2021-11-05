@@ -391,6 +391,9 @@ remark: This website is only used for collecting and grouping the related paper.
 - **ICCAD 2018**
   - [RFUZZ: Coverage-Directed Fuzz Testing of RTL on FPGAs](#rfuzz-coverage-directed-fuzz-testing-of-rtl-on-fpgas-iccad-2018)
 
+- **Other 2018**
+  - [FuzzerGym: A Competitive Framework for Fuzzing and Learning](#fuzzergym-a-competitive-framework-for-fuzzing-and-learning-arxiv-2018)
+
 - **S&P 2017**
   - [NEZHA: Efficient Domain-Independent Differential Testing](#nezha-efficient-domain-independent-differential-testing-sp-2017)
   - [Skyfire: Data-Driven Seed Generation for Fuzzing](#skyfire-data-driven-seed-generation-for-fuzzing-sp-2017)
@@ -713,6 +716,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [V-Fuzz: Vulnerability-Oriented Evolutionary Fuzzing (Arxiv 2019)](#v-fuzz-vulnerability-oriented-evolutionary-fuzzing-arxiv-2019)
   - [Compiler Fuzzing through Deep Learning (ISSTA 2018)](#compiler-fuzzing-through-deep-learning-issta-2018)
   - [Deep Reinforcement Fuzzing (SPW 2018)](#deep-reinforcement-fuzzing-spw-2018)
+  - [FuzzerGym: A Competitive Framework for Fuzzing and Learning (arxiv 2018)](#fuzzergym-a-competitive-framework-for-fuzzing-and-learning-arxiv-2018)
   - [ExploitMeter: Combining Fuzzing with Machine Learning for Automated Evaluation of Software Exploitability (PAC 2017)](#exploitmeter-combining-fuzzing-with-machine-learning-for-automated-evaluation-of-software-exploitability-pac-2017)
   - [Learn&Fuzz: Machine Learning for Input Fuzzing (ASE 2017)](#learnfuzz-machine-learning-for-input-fuzzing-ase-2017)
 
@@ -2931,6 +2935,13 @@ We introduce DeepSmith, a novel machine learning approach to accelerating compil
 * <img src="image/pdf_24px.png">[Paper](./Paper/SPW18_Deep.pdf)
 
 **Abstract:** Fuzzing is the process of finding security vulnerabilities in input-processing code by repeatedly testing the code with modified inputs. In this paper, we formalize fuzzing as a reinforcement learning problem using the concept of Markov decision processes. This in turn allows us to apply state-of-the-art deep Q -learning algorithms that optimize rewards, which we define from runtime properties of the program under test. By observing the rewards caused by mutating with a specific set of actions performed on an initial program input, the fuzzing agent learns a policy that can next generate new higher-reward inputs. We have implemented this new approach, and preliminary empirical evidence shows that reinforcement fuzzing can outperform baseline random fuzzing.
+
+
+### FuzzerGym: A Competitive Framework for Fuzzing and Learning (arxiv 2018)
+
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/1807.07490.pdf)
+
+**Abstract:** Fuzzing is a commonly used technique designed to test software by automatically crafting program inputs. Currently, the most successful fuzzing algorithms emphasize simple, low-overhead strategies with the ability to efficiently monitor program state during execution. Through compile-time instrumentation, these approaches have access to numerous aspects of program state including coverage, data flow, and heterogeneous fault detection and classification. However, existing approaches utilize blind random mutation strategies when generating test inputs. We present a different approach that uses this state information to optimize mutation operators using reinforcement learning (RL). By integrating OpenAI Gym with libFuzzer we are able to simultaneously leverage advancements in reinforcement learning as well as fuzzing to achieve deeper coverage across several varied benchmarks. Our technique connects the rich, efficient program monitors provided by LLVM Santizers with a deep neural net to learn mutation selection strategies directly from the input data. The cross-language, asynchronous architecture we developed enables us to apply any OpenAI Gym compatible deep reinforcement learning algorithm to any fuzzing problem with minimal slowdown.
 
 
 ### Learn&Fuzz: Machine Learning for Input Fuzzing (ASE 2017)

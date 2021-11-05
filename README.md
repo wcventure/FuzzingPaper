@@ -17,8 +17,19 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 
+- **S&P 2022**
+  - [BEACON: Directed Grey-Box Fuzzing with Provable Path Pruning](#beacon-directed-grey-box-fuzzing-with-provable-path-pruning-sp-2022)
+
+- **SOSP 2021**
+  - [HEALER: Relation Learning Guided Kernel Fuzzing](#healer-relation-learning-guided-kernel-fuzzing-sosp-2021)
+
 - **S&P 2021**
   - [PATA: Fuzzing with Path Aware Taint Analysis](#pata-fuzzing-with-path-aware-taint-analysis-sp-2022)
+  - [DiFuzzRTL: Differential Fuzz Testing to Find CPU Bugs](#difuzzrtl-differential-fuzz-testing-to-find-cpu-bug-sp-2021)
+  - [STOCHFUZZ: Sound and Cost-effective Fuzzing of Stripped Binaries by Incremental and Stochastic Rewriting](#stochfuzz-sound-and-cost-effective-fuzzing-of-stripped-binaries-by-incremental-and-stochastic-rewriting-sp-2021)
+  - [NTFUZZ: Enabling Type-Aware Kernel Fuzzing on Windows with Static Binary Analysis](#ntfuzz-enabling-type-aware-kernel-fuzzing-on-windows-with-static-binary-analysissp-2021)
+  - [DIANE: Identifying Fuzzing Triggers in Apps to Generate Under-constrained Inputs for IoT Devices](#diane-identifying-fuzzing-triggers-in-apps-to-generate-under-constrained-inputs-for-iot-devices-sp-2020)
+  - [One Engine to Fuzz 'em All: Generic Language Processor Testing with Semantic Validation](#one-engine-to-fuzz-em-all-generic-language-processor-testing-with-semantic-validation-sp-2021)
 
 - **ISSTA 2021**
   - [Fuzzing SMT Solvers via Two-Dimensional Input Space Exploration](#fuzzing-smt-solvers-via-two-dimensional-input-space-exploration-issta-2021)
@@ -36,13 +47,6 @@ remark: This website is only used for collecting and grouping the related paper.
   - [HeteroFuzz: Fuzz Testing to Detect Platform Dependent Divergence for Heterogeneous Applications](#heterofuzz-fuzz-testing-to-detect-platform-dependent-divergence-for-heterogeneous-applications-fse-2021)
   - [FuzzBench: An Open Fuzzer Benchmarking Platform and Service](#fuzzbench-an-open-fuzzer-benchmarking-platform-and-service-fse-2021)
 
-- **S&P 2021**
-  - [DiFuzzRTL: Differential Fuzz Testing to Find CPU Bugs](#difuzzrtl-differential-fuzz-testing-to-find-cpu-bug-sp-2021)
-  - [STOCHFUZZ: Sound and Cost-effective Fuzzing of Stripped Binaries by Incremental and Stochastic Rewriting](#stochfuzz-sound-and-cost-effective-fuzzing-of-stripped-binaries-by-incremental-and-stochastic-rewriting-sp-2021)
-  - [NTFUZZ: Enabling Type-Aware Kernel Fuzzing on Windows with Static Binary Analysis](#ntfuzz-enabling-type-aware-kernel-fuzzing-on-windows-with-static-binary-analysissp-2021)
-  - [DIANE: Identifying Fuzzing Triggers in Apps to Generate Under-constrained Inputs for IoT Devices](#diane-identifying-fuzzing-triggers-in-apps-to-generate-under-constrained-inputs-for-iot-devices-sp-2020)
-  - [One Engine to Fuzz 'em All: Generic Language Processor Testing with Semantic Validation](#one-engine-to-fuzz-em-all-generic-language-processor-testing-with-semantic-validation-sp-2021)
-  
 - **CCS 2021**
   - [Snipuzz: Black-box Fuzzing of IoT Firmware via Message Snippet Inference](#snipuzz-black-box-fuzzing-of-iot-firmware-via-message-snippet-inference-ccs-2021)
   - [Hardware Support to Improve Fuzzing Performance and Precision](#hardware-support-to-improve-fuzzing-performance-and-precision-ccs-2021)
@@ -540,6 +544,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [FUZZIFICATION: Anti-Fuzzing Technique (USENIX Security2019)](#fuzzification-anti-fuzzing-technique-usenix-security2019)
 
 - [**Kernel Fuzzing**](#kernel-fuzzing)
+  - [HEALER: Relation Learning Guided Kernel Fuzzing (SOSP 2021)](#healer-relation-learning-guided-kernel-fuzzing-sosp-2021)
   - [NTFUZZ: Enabling Type-Aware Kernel Fuzzing on Windows with Static Binary Analysis(S&P 2021)](#ntfuzz-enabling-type-aware-kernel-fuzzing-on-windows-with-static-binary-analysissp-2021)
   - [HFL: Hybrid Fuzzing on the Linux Kernel (NDSS 2020)](#hfl-hybrid-fuzzing-on-the-linux-kernel-ndss-2020)
   - [KRace: Data Race Fuzzing for Kernel File Systems (S&P 2020)](#krace-data-race-fuzzing-for-kernel-file-systems-sp-2020)
@@ -646,6 +651,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [MemFuzz: Using Memory Accesses to Guide Fuzzing (ICST 2019)](#memfuzz-using-memory-accesses-to-guide-fuzzing-icst-2019)
 
 - [**Directed Fuzzing**](#directed-fuzzing)
+  - [BEACON: Directed Grey-Box Fuzzing with Provable Path Pruning (S&P 2022)](#beacon-directed-grey-box-fuzzing-with-provable-path-pruning-sp-2022)
   - [Regression Greybox Fuzzing (CCS 2021)](#regression-greybox-fuzzing-ccs-2021)
   - [KCFuzz: Directed Fuzzing Based on Keypoint Coverage (ICAIS 2021)](#kcfuzz-directed-fuzzing-based-on-keypoint-coverage-icais-2021)
   - [Constraint-guided Directed Greybox Fuzzing (USENIX Security2021)](#constraint-guided-directed-greybox-fuzzing-usenix-security2021)
@@ -1571,6 +1577,17 @@ Our evaluation on popular fuzzers and real-world applications shows that Fuzzifi
 
 # Kernel Fuzzing
 
+### HEALER: Relation Learning Guided Kernel Fuzzing (SOSP 2021)
+
+* <img src="image/youtube.png">[Video](https://www.youtube.com/watch?v=2jZkBxNrIGg)
+
+* <img src="image/pdf_24px.png">[Paper](http://www.wingtecher.com/themes/WingTecherResearch/assets/papers/healer-sosp21.pdf)
+
+**Abstract:** Modern operating system kernels are too complex to be free of bugs. Fuzzing is a promising approach for vulnerability detection and has been applied to kernel testing. However, existing work does not consider the influence relations between system calls when generating and mutating inputs, resulting in difficulties when trying to reach into the kernel’s deeper logic effectively.
+
+In this paper, we propose HEALER, a kernel fuzzer that improves fuzzing’s effectiveness by utilizing system call relation learning. HEALER learns the influence relations between system calls by dynamically analyzing minimized test cases. Then, HEALER utilizes the learned relations to guide input generation and mutation, which improves the quality of test cases and the effectiveness of fuzzing. We implemented HEALER and evaluated its performance on recent versions of the Linux kernel. Compared to state-of-the-art kernel fuzzers such as Syzkaller and Moonshine, HEALER improves branch coverage by 28% and 21%, while achieving a speedup of 2.2× and 1.8×, respectively. In addition, HEALER detected 218 vulnerabilities, 33 of which are previously unknown and have been confirmed by the corresponding kernel maintainers.
+
+
 ### NTFUZZ: Enabling Type-Aware Kernel Fuzzing on Windows with Static Binary Analysis(S&P 2021)
 
 * <img src="image/youtube.png">[Video](https://youtu.be/3zYzuRJlIdw)
@@ -2477,6 +2494,16 @@ In this paper, we propose IJON, an annotation mechanism that a human analyst can
 
 
 # Directed Fuzzing
+
+### BEACON: Directed Grey-Box Fuzzing with Provable Path Pruning (S&P 2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://5hadowblad3.github.io/files/Oakland22-Beacon.pdf)
+
+* <img src="image/github_24px.png">[Code](https://hub.docker.com/r/yguoaz/beacon)
+  
+**Abstract:** Unlike coverage-based fuzzing that gives equal attention to every part of a code, directed fuzzing aims to direct a fuzzer to a specific target in the code, e.g., the code with potential vulnerabilities. Despite much progress, we observe that existing directed fuzzers are still not efficient as they often symbolically or concretely execute a lot of program paths that cannot reach the target code. They thus waste a lot of computational resources.
+This paper presents BEACON, which can effectively direct a greybox fuzzer in the sea of paths in a provable manner. That is, assisted by a lightweight static analysis that computes abstracted preconditions for reaching the target, we can prune 82.94% of the executing paths at runtime with negligible analysis overhead (ă5h) but with the guarantee that the pruned paths must be spurious with respect to the target. We have implemented our approach, BEACON, and compared it to five state-of-the-art (directed) fuzzers in the application scenario of vulnerability reproduction. The evaluation results demonstrate that BEACON is 11.50x faster on average than existing directed grey-box fuzzers and it can also improve the speed of the conventional coverage-guided fuzzers, AFL, AFL++, and Mopt, to reproduce specific bugs with 6.31x ,11.86x, and 10.92x speedup, respectively. More interestingly, when used to test the vulnerability patches, BEACON found 14 incomplete fixes of existing CVE-identified vulnerabilities and 8 new bugs while 10 of them are exploitable with new CVE ids assigned
+
 
 ### Regression Greybox Fuzzing (CCS 2021)
 

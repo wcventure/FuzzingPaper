@@ -3050,7 +3050,7 @@ We implemented a prototype of GREYONE and evaluated it on the LAVA data set and 
 
 ### Same Coverage, Less Bloat: Accelerating Binary-only Fuzzing with Coverage-preserving Coverage-guided Tracing (CCS 2021) 
 
-* <img src="image/pdf_24px.png">[Paper](https://www.comp.nus.edu.sg/~abhik/pdf/ASE21.pdf)
+* <img src="image/pdf_24px.png">[Paper](http://www.impedimenttoprogress.com/storage/publications/ZUnTracer_CCS_2021.pdf)
 
 **Abstract:** Coverage-guided fuzzing’s aggressive, high-volume testing has helped reveal tens of thousands of software security flaws. While executing billions of test cases mandates fast code coverage tracing, the nature of binary-only targets leads to reduced tracing performance. A recent advancement in binary fuzzing performance is Coverage-guided Tracing (CGT), which brings orders-of-magnitude gains in throughput by restricting the expense of coverage tracing to only when new coverage is guaranteed. Unfortunately, CGT suits only a basic block coverage granularity—yet most fuzzers require finer-grain coverage metrics: edge coverage and hit counts. It is this limitation which prohibits nearly all of today’s state-of-the-art fuzzers from attaining the performance benefits of CGT.
 

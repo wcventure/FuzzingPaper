@@ -43,7 +43,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Towards Systematic and Dynamic Task Allocation for Collaborative Parallel Fuzzing](#towards-systematic-and-dynamic-task-allocation-for-collaborative-parallel-fuzzing-ase-2021-nier)
 
 - **FSE 2021**
-  - [Skeletal Approximation for SMT Solver Testing (FSE 2021)](#skeletal-approximation-for-smt-solver-testing-fse-2021)
+  - [Skeletal Approximation Enumeration for SMT Solver Testing (FSE 2021)](#skeletal-approximation-enumeration-for-smt-solver-testing-fse-2021)
   - [Estimating Residual Risk in Greybox Fuzzing](#estimating-residual-risk-in-greybox-fuzzing-fse-2021)
   - [HeteroFuzz: Fuzz Testing to Detect Platform Dependent Divergence for Heterogeneous Applications](#heterofuzz-fuzz-testing-to-detect-platform-dependent-divergence-for-heterogeneous-applications-fse-2021)
   - [FuzzBench: An Open Fuzzer Benchmarking Platform and Service](#fuzzbench-an-open-fuzzer-benchmarking-platform-and-service-fse-2021)
@@ -534,7 +534,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [AutoFuzz: Automated Network Protocol Fuzzing Framework (IJCSNS 2010)](#autofuzz-automated-network-protocol-fuzzing-framework-ijcsns-2010)
 
 - [**SMT Fuzzing**](#smt-fuzzing)
-  - [Skeletal Approximation for SMT Solver Testing (FSE 2021)](#skeletal-approximation-for-smt-solver-testing-fse-2021)
+  - [Skeletal Approximation Enumeration for SMT Solver Testing (FSE 2021)](#skeletal-approximation-enumeration-for-smt-solver-testing-fse-2021)
   - [Fuzzing SMT Solvers via Two-Dimensional Input Space Exploration (ISSTA 2021)](#fuzzing-smt-solvers-via-two-dimensional-input-space-exploration-issta-2021)
   - [Detecting Critical Bugs in SMT Solvers using Blackbox Mutational Fuzzing (FSE 2020)](#detecting-critical-bugs-in-smt-solvers-using-blackbox-mutational-fuzzing-fse)
   - [On the Unusual Effectiveness of Type-aware Mutations for Testing SMT Solvers (2020)](#on-the-unusual-effectiveness-of-type-aware-mutations-for-testing-smt-solvers)
@@ -1494,7 +1494,7 @@ SSL encrypted protocols. As a proof of concept for efficiency of ESPIKE we demon
 
 # SMT Fuzzing
 
-### Skeletal Approximation for SMT Solver Testing (FSE 2021)
+### Skeletal Approximation Enumeration for SMT Solver Testing (FSE 2021)
 
 * <img src="image/pdf_24px.png">[Paper](https://dl.acm.org/doi/abs/10.1145/3468264.3468540)
 

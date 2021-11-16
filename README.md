@@ -21,9 +21,9 @@ remark: This website is only used for collecting and grouping the related paper.
   - [BEACON: Directed Grey-Box Fuzzing with Provable Path Pruning](#beacon-directed-grey-box-fuzzing-with-provable-path-pruning-sp-2022)
 
 - **ASE 2021**
-  - [CorbFuzz: Checking Browser Security Policies with Fuzzing]()
+  - [CorbFuzz: Checking Browser Security Policies with Fuzzing](#corbfuzz-checking-browser-security-policies-with-fuzzing-ase-2021)
   - [Scalable Fuzzing of Program Binaries with E9AFL](#scalable-fuzzing-of-program-binaries-with-e9afl-ase-2021)
-  - [SMARTIAN : Enhancing Smart Contract Fuzzing with Static and Dynamic Data-Flow Analyses]()
+  - [SMARTIAN : Enhancing Smart Contract Fuzzing with Static and Dynamic Data-Flow Analyses](#smartian--enhancing-smart-contract-fuzzing-with-static-and-dynamic-data-flow-analyses-ase-2021)
   - [Towards Systematic and Dynamic Task Allocation for Collaborative Parallel Fuzzing](#towards-systematic-and-dynamic-task-allocation-for-collaborative-parallel-fuzzing-ase-2021-nier)
 
 - **SOSP 2021**
@@ -754,6 +754,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Steelix: Program-State Based Binary Fuzzing (FSE 2017)](#steelix-program-state-based-binary-fuzzing-fse-2017)
 
 - [**SmartContracts**](#smart-contracts)
+  - [SMARTIAN : Enhancing Smart Contract Fuzzing with Static and Dynamic Data-Flow Analyses](#smartian--enhancing-smart-contract-fuzzing-with-static-and-dynamic-data-flow-analyses-ase-2021)
   - [HFContractFuzzer: Fuzzing Hyperledger Fabric Smart Contracts for Vulnerability Detection (EASE 2021)](#hfcontractfuzzer-fuzzing-hyperledger-fabric-smart-contracts-for-vulnerability-detection-ease-2021)
   - [sFuzz: An Efficient Adaptive Fuzzer for Solidity Smart Contracts (ICSE 2020)](#sfuzz-an-efficient-adaptive-fuzzer-for-solidity-smart-contracts-icse-2020)
   - [Targeted Greybox Fuzzing with Static Lookahead Analysis (ICSE 2020)](#targeted-greybox-fuzzing-with-static-lookahead-analysis-icse-2020)
@@ -787,6 +788,7 @@ remark: This website is only used for collecting and grouping the related paper.
 
 
 - [**Other Interesting Fuzzing**](#other-interesting-fuzzing)
+  - [CorbFuzz: Checking Browser Security Policies with Fuzzing](#corbfuzz-checking-browser-security-policies-with-fuzzing-ase-2021)
   - [Fully Automated Functional Fuzzing of Android Apps for Detecting Non-crashing Logic Bugs (OOPSLA 2021)](#fully-automated-functional-fuzzing-of-android-apps-for-detecting-non-crashing-logic-bugs-oopsla-2021)
   - [webFuzz: Grey-Box Fuzzing for Web Applications (ESORICS 2021)](#webfuzz-grey-box-fuzzing-for-web-applications-esorics-2021)
   - [Vulnerability-Oriented Fuzz Testing for Connected Autonomous Vehicle Systems ( IEEE Transactions on Reliability 2021)](#vulnerability-oriented-fuzz-testing-for-connected-autonomous-vehicle-systems--ieee-transactions-on-reliability-2021)
@@ -3139,7 +3141,7 @@ Our technique can perform comparably to structure-aware fuzzing proposals that r
 
 * <img src="image/pdf_24px.png">[Paper](https://softsec.kaist.ac.kr/~jschoi/data/ase2021.pdf)
 
-**Abstract:** Unlike traditional software, smart contracts have the unique organization in which a sequence of transactions shares persistent states. Unfortunately, such a characteristic makes it difficult for existing fuzzers to find out critical transaction sequences. To tackle this challenge, we employ both static and dynamic analyses for fuzzing smart contracts. First, we statically analyze smart contract bytecodes to predict which transaction sequences will lead to effective testing, and figure out if there is a certain constraint that each transaction should satisfy. Such information is then passed to the fuzzing phase and used to construct an initial seed corpus. During a fuzzing campaign, we perform a lightweight dynamic data-flow analysis to collect data-flow-based feedback to effectively guide fuzzing. We implement our ideas on a practical open-source fuzzer, named SMARTIAN. SMARTIAN can discover bugs in real-world smart contracts without the need for the source code. Our experimental results show that SMARTIAN is more effective than existing state-of-the-art tools in finding known CVEs from real-world contracts. SMARTIAN also outperforms other tools in terms of code coverage.
+**Abstract:** Unlike traditional software, smart contracts have the unique organization in which a sequence of transactions shares persistent states. Unfortunately, such a characteristic makes it difficult for existing fuzzers to find out critical transaction sequences. To tackle this challenge, we employ both static and dynamic analyses for fuzzing smart contracts. First, we statically analyze smart contract bytecodes to predict which transaction sequences will lead to effective testing, and figure out if there is a certain constraint that each transaction should satisfy. Such information is then passed to the fuzzing phase and used to construct an initial seed corpus. During a fuzzing campaign, we perform a lightweight dynamic data-flow analysis to collect data-flow-based feedback to effectively guide fuzzing. We implement our ideas on a practical open-source fuzzer, named SMARTIAN. SMARTIAN can discover bugs in real-world smart contracts without the need for the source code. Our experimental results show that SMARTIAN is more effective than existing state-of-the-art tools in finding known CVEs from real-world contracts. SMARTIAN also outperforms other tools in terms of code coverage.
 
 
 ### HFContractFuzzer: Fuzzing Hyperledger Fabric Smart Contracts for Vulnerability Detection (EASE 2021)

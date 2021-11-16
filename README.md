@@ -20,6 +20,12 @@ remark: This website is only used for collecting and grouping the related paper.
 - **S&P 2022**
   - [BEACON: Directed Grey-Box Fuzzing with Provable Path Pruning](#beacon-directed-grey-box-fuzzing-with-provable-path-pruning-sp-2022)
 
+- **ASE 2021**
+  - [CorbFuzz: Checking Browser Security Policies with Fuzzing]()
+  - [Scalable Fuzzing of Program Binaries with E9AFL](#scalable-fuzzing-of-program-binaries-with-e9afl-ase-2021)
+  - [SMARTIAN : Enhancing Smart Contract Fuzzing with Static and Dynamic Data-Flow Analyses]()
+  - [Towards Systematic and Dynamic Task Allocation for Collaborative Parallel Fuzzing](#towards-systematic-and-dynamic-task-allocation-for-collaborative-parallel-fuzzing-ase-2021-nier)
+
 - **SOSP 2021**
   - [HEALER: Relation Learning Guided Kernel Fuzzing](#healer-relation-learning-guided-kernel-fuzzing-sosp-2021)
 
@@ -37,10 +43,6 @@ remark: This website is only used for collecting and grouping the related paper.
   - [QFuzz: Quantitative Fuzzing for Side Channels](#qfuzz-quantitative-fuzzing-for-side-channels-issta-2021)
   - [Seed Selection for Successful Fuzzing](#seed-selection-for-successful-fuzzing-issta-2021)
   - [ProFuzzBench - A Benchmark for Stateful Protocol Fuzzing](#profuzzbench---a-benchmark-for-stateful-protocol-fuzzing-issta-2021)
-
-- **ASE 2021**
-  - [Scalable Fuzzing of Program Binaries with E9AFL](#scalable-fuzzing-of-program-binaries-with-e9afl-ase-2021)
-  - [Towards Systematic and Dynamic Task Allocation for Collaborative Parallel Fuzzing](#towards-systematic-and-dynamic-task-allocation-for-collaborative-parallel-fuzzing-ase-2021-nier)
 
 - **FSE 2021**
   - [Skeletal Approximation Enumeration for SMT Solver Testing (FSE 2021)](#skeletal-approximation-enumeration-for-smt-solver-testing-fse-2021)
@@ -3133,6 +3135,12 @@ Our technique can perform comparably to structure-aware fuzzing proposals that r
 
 
 # Smart Contracts
+### SMARTIAN : Enhancing Smart Contract Fuzzing with Static and Dynamic Data-Flow Analyses (ASE 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://softsec.kaist.ac.kr/~jschoi/data/ase2021.pdf)
+
+**Abstract:** Unlike traditional software, smart contracts have the unique organization in which a sequence of transactions shares persistent states. Unfortunately, such a characteristic makes it difficult for existing fuzzers to find out critical transaction sequences. To tackle this challenge, we employ both static and dynamic analyses for fuzzing smart contracts. First, we statically analyze smart contract bytecodes to predict which transaction sequences will lead to effective testing, and figure out if there is a certain constraint that each transaction should satisfy. Such information is then passed to the fuzzing phase and used to construct an initial seed corpus. During a fuzzing campaign, we perform a lightweight dynamic data-flow analysis to collect data-flow-based feedback to effectively guide fuzzing. We implement our ideas on a practical open-source fuzzer, named SMARTIAN. SMARTIAN can discover bugs in real-world smart contracts without the need for the source code. Our experimental results show that SMARTIAN is more effective than existing state-of-the-art tools in finding known CVEs from real-world contracts. SMARTIAN also outperforms other tools in terms of code coverage.
+
 
 ### HFContractFuzzer: Fuzzing Hyperledger Fabric Smart Contracts for Vulnerability Detection (EASE 2021)
 
@@ -3330,6 +3338,10 @@ We present experimental results showing that these two techniques are necessary 
 
 
 # Other Interesting Fuzzing
+### CorbFuzz: Checking Browser Security Policies with Fuzzing (ASE 2021)
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2109.00398.pdf)
+
+**Abstract:** Browsers use security policies to block malicious behaviors. Cross-Origin Read Blocking (CORB) is a browser security policy for preventing side-channel attacks such as Spectre. We propose a web browser security policy fuzzer called CorbFuzz for checking CORB and similar policies. In implementing a security policy, the browser only has access to HTTP requests and responses, and takes policy actions based solely on those interactions. In checking the browser security policies, CorbFuzz uses a policy oracle that tracks the web application behavior and infers the desired policy action based on the web application state. By comparing the policy oracle with the browser behavior, CorbFuzz detects weaknesses in browser security policies. CorbFuzz checks the web browser policy by fuzzing a set of web applications where the state-related queries are symbolically evaluated for increased coverage and automation. CorbFuzz collects type information from database queries and branch conditions in order to prevent the generation of inconsistent data values during fuzzing. We evaluated CorbFuzz on CORB implementations of Chromium and Webkit, and Opaque Response Blocking (ORB) policy implementation of Firefox using web applications collected from GitHub. We found three classes of weaknesses in Chromium's implementation of CORB.
 
 ### Fully Automated Functional Fuzzing of Android Apps for Detecting Non-crashing Logic Bugs (OOPSLA 2021)
 

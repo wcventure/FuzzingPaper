@@ -133,6 +133,8 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Refined Grey-Box Fuzzing with Sivo (arXiv 2021)](#refined-grey-box-fuzzing-with-sivo-arxiv-2021)
   - [Fuzzing Hardware Like Software (arXiv 2021)](#fuzzing-hardware-like-software-arxiv-2021)
   - [Constructing More Complete Control Flow Graphs Utilizing Directed Gray-Box Fuzzing (MDPI 2021)](#constructing-more-complete-control-flow-graphs-utilizing-directed-gray-box-fuzzing-mdpi-2021)
+  - [Symbolic Security Predicates: Hunt Program Weaknesses (ISPRAS Open 2021)](#symbolic-security-predicates-hunt-program-weaknesses-ispras-open-2021)
+  - [Towards Symbolic Pointers Reasoning in Dynamic Symbolic Execution (IVMEM 2021)](#towards-symbolic-pointers-reasoning-in-dynamic-symbolic-execution-ivmem-2021)
 
 - **CCS 2020**
   - [FREEDOM: Engineering a State-of-the-Art DOM Fuzzer](#freedom-engineering-a-state-of-the-art-dom-fuzzer-ccs-2020)
@@ -241,6 +243,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [A deep convolution generative adversarial networks based fuzzing framework for industry control protocols](#a-deep-convolution-generative-adversarial-networks-based-fuzzing-framework-for-industry-control-protocols)
   - [TOFU: Target-Oriented FUzzer](#tofu-target-oriented-fuzzer-arxiv-2020)
   - [BaseSAFE: Baseband SAnitized Fuzzing through Emulation](#basesafe-baseband-sanitized-fuzzing-through-emulation-wisec-2020)
+  - [Sydr: Cutting Edge Dynamic Symbolic Execution (ISPRAS Open 2020)](#sydr-cutting-edge-dynamic-symbolic-execution-ispras-open-2020)
 
 - **ACSAC 2019**
   - [Opening Pandora’s Box through ATFuzzer: Dynamic Analysis of AT Interface for AndroidSmartphones](#Opening-Pandoras-Box-through-ATFuzzer-Dynamic-Analysis-of-AT-Interface-for-Android-Smartphones-ACSAC-2019)
@@ -571,9 +574,12 @@ remark: This website is only used for collecting and grouping the related paper.
   - [IMF: Inferred Model-based Fuzzer (CCS 2017)](#imf-inferred-model-based-fuzzer-ccs-2017)
 
 - [**Hybrid Fuzzing**](#hybrid-fuzzing)
+  - [Symbolic Security Predicates: Hunt Program Weaknesses (ISPRAS Open 2021)](#symbolic-security-predicates-hunt-program-weaknesses-ispras-open-2021)
+  - [Towards Symbolic Pointers Reasoning in Dynamic Symbolic Execution (IVMEM 2021)](#towards-symbolic-pointers-reasoning-in-dynamic-symbolic-execution-ivmem-2021)
   - [FUZZOLIC: Mixing fuzzing and concolic execution (Computers&Security 2021)](#fuzzolic-mixing-fuzzing-and-concolic-execution-computerssecurity-2021)
   - [SHFuzz: A hybrid fuzzing method assisted by static analysis for binary programs (China Communications 2021)]((#shfuzz-a-hybrid-fuzzing-method-assisted-by-static-analysis-for-binary-programs-china-communications-2021))
   - [A Priority Based Path Searching Method for Improving Hybrid Fuzzing (Computers & Security 2021)](#a-priority-based-path-searching-method-for-improving-hybrid-fuzzing-computers--security-2021)
+  - [Sydr: Cutting Edge Dynamic Symbolic Execution (ISPRAS Open 2020)](#sydr-cutting-edge-dynamic-symbolic-execution-ispras-open-2020)
   - [CSEFuzz: Fuzz Testing Based on Symbolic Execution (Access 2020)](#csefuzz-fuzz-testing-based-on-symbolic-execution-access-2020)
   - [Sequence directed hybrid fuzzing (SANER 2020)](#sequence-directed-hybrid-fuzzing-saner-2020)
   - [HFL: Hybrid Fuzzing on the Linux Kernel (NDSS 2020)](#hfl-hybrid-fuzzing-on-the-linux-kernel-ndss-2020)
@@ -1780,6 +1786,27 @@ In this paper, we approach the problem of coverage-guided kernel fuzzing in an O
 
 # Hybrid Fuzzing:
 
+### Symbolic Security Predicates: Hunt Program Weaknesses (ISPRAS Open 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2111.05770.pdf)
+
+**Abstract** Dynamic symbolic execution (DSE) is a powerful method for path exploration during hybrid fuzzing and automatic bug detection. We propose security predicates to effectively detect undefined behavior and memory access violation errors. Initially, we symbolically execute program on paths that don't trigger any errors (hybrid fuzzing may explore these paths). Then we construct a symbolic security predicate to verify some error condition. Thus, we may change the program data flow to entail null pointer dereference, division by zero, out-of-bounds access, or integer overflow weaknesses. Unlike static analysis, dynamic symbolic execution does not only report errors but also generates new input data to reproduce them. Furthermore, we introduce function semantics modeling for common C/C++ standard library functions. We aim to model the control flow inside a function with a single symbolic formula. This assists bug detection, speeds up path exploration, and overcomes overconstraints in path predicate. We implement the proposed techniques in our dynamic symbolic execution tool Sydr. Thus, we utilize powerful methods from Sydr such as path predicate slicing that eliminates irrelevant constraints.
+
+We present Juliet Dynamic to measure dynamic bug detection tools accuracy. The testing system also verifies that generated inputs trigger sanitizers. We evaluate Sydr accuracy for 11 CWEs from Juliet test suite. Sydr shows 95.59% overall accuracy. We make Sydr evaluation artifacts publicly available to facilitate results reproducibility.
+
+
+### Towards Symbolic Pointers Reasoning in Dynamic Symbolic Execution (IVMEM 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2109.03698.pdf)
+
+* <img src="image/ppt_24px.png">[Slides](https://vishnya.xyz/mirror/kuts-ivmem2021.pdf)
+
+**Abstract** Dynamic symbolic execution is a widely used technique for automated software testing, designed for execution paths exploration and program errors detection. A hybrid approach has recently become widespread, when the main goal of symbolic execution is helping fuzzer increase program coverage. The more branches symbolic executor can invert, the more useful it is for fuzzer. A program control flow often depends on memory values, which are obtained by computing address indexes from user input. However, most DSE tools don't support such dependencies, so they miss some desired program branches.
+We implement symbolic addresses reasoning on memory reads in our dynamic symbolic execution tool Sydr. Possible memory access regions are determined by either analyzing memory address symbolic expressions, or binary searching with SMT-solver. We propose an enhanced linearization technique to model memory accesses.
+
+Different memory modeling methods are compared on the set of programs. Our evaluation shows that symbolic addresses handling allows to discover new symbolic branches and increase the program coverage.
+
+
 ### FUZZOLIC: Mixing fuzzing and concolic execution (Computers&Security 2021)
 
 * <img src="image/pdf_24px.png">[Paper](https://www.sciencedirect.com/science/article/pii/S0167404821001929)
@@ -1801,6 +1828,17 @@ In this article, we investigate how to improve the performance and effectiveness
 * <img src="image/pdf_24px.png">[Paper](https://www.sciencedirect.com/science/article/pii/S0167404821000663?casa_token=OUEFq5TSDv0AAAAA:jDit2FK_0vPqynepfWH__-mPOAQwfZaRP7Qv9G19x_t22z20N6C293JaNz2I16W2djytcOEFHrGM)
 
 **Abstract:** Hybrid fuzzing which combines classical fuzzing with concolic execution to produce effective test suites is an advanced software vulnerability detection technique. Because fuzzing and concolic execution are complementary in nature, some researchers propose “optimal strategy” and “discriminative dispatch strategy” to improve the performance of hybrid fuzzing. Although the ideas are interesting and useful, they have some limitations, such as high time overhead and difficulties in implementation. In this paper, we propose a Priority Based Path Searching method (PBPS) to utilize the capability of concolic execution better. PBPS evaluates each path's solving cost and solving demand, and prioritizes them based on two path characteristics, which are path lengths and sample-hits for concolic execution. The rationale is to keep the pipeline full by readily feeding the concolic engine with paths whose constraints are simpler to solve and are less likely to be explored by fuzz testing. We implement PBPS in Driller, which is a popular hybrid fuzzer and we evaluate our system “QuickFuzz” with the CQE dataset. Experimental results show that compared with DigFuzz and the original Driller, “QuickFuzz” discovers more vulnerabilities and achieves higher code coverage on the CQE dataset.
+
+
+### Sydr: Cutting Edge Dynamic Symbolic Execution (ISPRAS Open 2020)
+
+* <img src="image/youtube.png">[Video](https://www.ispras.ru/conf/2020/video/compiler-technology-11-december.mp4#t=6021)
+
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2011.09269.pdf)
+
+* <img src="image/ppt_24px.png">[Slides](https://vishnya.xyz/vishnyakov-isprasopen2020.pdf)
+
+**Abstract** The security development lifecycle (SDL) is becoming an industry standard. Dynamic symbolic execution (DSE) has enormous amount of applications in computer security (fuzzing, vulnerability discovery, reverse-engineering, etc.). We propose several performance and accuracy improvements for dynamic symbolic execution. Skipping non-symbolic instructions allows to build a path predicate 1.2--3.5 times faster. Symbolic engine simplifies formulas during symbolic execution. Path predicate slicing eliminates irrelevant conjuncts from solver queries. We handle each jump table (switch statement) as multiple branches and describe the method for symbolic execution of multi-threaded programs. The proposed solutions were implemented in Sydr tool. Sydr performs inversion of branches in path predicate. Sydr combines DynamoRIO dynamic binary instrumentation tool with Triton symbolic engine. We evaluated Sydr features on 64-bit Linux executables.
 
 
 ### CSEFuzz: Fuzz Testing Based on Symbolic Execution (Access 2020)

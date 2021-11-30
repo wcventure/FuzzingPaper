@@ -54,8 +54,8 @@ remark: This website is only used for collecting and grouping the related paper.
 - **CCS 2021**
   - [Snipuzz: Black-box Fuzzing of IoT Firmware via Message Snippet Inference](#snipuzz-black-box-fuzzing-of-iot-firmware-via-message-snippet-inference-ccs-2021)
   - [Hardware Support to Improve Fuzzing Performance and Precision](#hardware-support-to-improve-fuzzing-performance-and-precision-ccs-2021)
-  - [SoFi: Reflection-Augmented Fuzzing for JavaScript Engines]
-  - [T-Reqs: HTTP Request Smuggling with Differential Fuzzing]
+  - [SoFi: Reflection-Augmented Fuzzing for JavaScript Engines](#sofi-reflection-augmented-fuzzing-for-javascript-engines-ccs-2021)
+  - [T-Reqs: HTTP Request Smuggling with Differential Fuzzing](#t-reqs-http-request-smuggling-with-differential-fuzzing-ccs-2021)
   - [V-SHUTTLE: Scalable and Semantics-Aware Hypervisor Fuzzing](#v-shuttle-scalable-and-semantics-aware-hypervisor-fuzzing-ccs-2021)
   - [Same Coverage, Less Bloat: Accelerating Binary-only Fuzzing with Coverage-preserving Coverage-guided Tracing](#same-coverage-less-bloat-accelerating-binary-only-fuzzing-with-coverage-preserving-coverage-guided-tracing-ccs-2021)
   - [Regression Greybox Fuzzing](#regression-greybox-fuzzing-ccs-2021)
@@ -100,6 +100,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [OTA: An Operation-oriented Time Allocation Strategy for Greybox Fuzzing](#ota-an-operation-oriented-time-allocation-strategy-for-greybox-fuzzing-saner-2021)
 
 - **Others 2021**
+  - [SANRAZOR: Reducing Redundant Sanitizer Checks in C/C++ Programs (OSDI 2021)](#sanrazor-reducing-redundant-sanitizer-checks-in-cc-programs-osdi-2021)
   - [webFuzz: Grey-Box Fuzzing for Web Applications (ESORICS 2021)](#webfuzz-grey-box-fuzzing-for-web-applications-esorics-2021)
   - [Vulnerability-Oriented Fuzz Testing for Connected Autonomous Vehicle Systems (IEEE Transactions on Reliability 2021)](#vulnerability-oriented-fuzz-testing-for-connected-autonomous-vehicle-systems--ieee-transactions-on-reliability-2021)
   - [Duo: Differential Fuzzing for Deep Learning Operators (IEEE Transactions on Reliability 2021)](#duo-differential-fuzzing-for-deep-learning-operators-ieee-transactions-on-reliability-2021)
@@ -471,6 +472,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 
 - [**Differential Fuzzing**](#differential-fuzzing)
+  - [T-Reqs: HTTP Request Smuggling with Differential Fuzzing (CCS 2021)](#t-reqs-http-request-smuggling-with-differential-fuzzing-ccs-2021)
   - [Duo: Differential Fuzzing for Deep Learning Operators (IEEE Transactions on Reliability 2021)](#duo-differential-fuzzing-for-deep-learning-operators-ieee-transactions-on-reliability-2021)
   - [DiFuzzRTL: Differential Fuzz Testing to Find CPU Bug (S&P 2021)](#difuzzrtl-differential-fuzz-testing-to-find-cpu-bug-sp-2021)
   - [DPIFuzz: A Differential Fuzzing Framework to Detect DPI Elusion Strategies for QUIC (ACSAC 2020)](#dpifuzz-a-differential-fuzzing-framework-to-detect-dpi-elusion-strategies-for-quic-acsac-2020)
@@ -612,6 +614,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [VUzzer: Application-aware Evolutionary Fuzzing (NDSS 2017)](#vuzzer-application-aware-evolutionary-fuzzing-ndss-2017)
   
 - [**Grammars \ Context-aware Fuzzing**](#grammars--context-aware-fuzzing)
+  - [SoFi: Reflection-Augmented Fuzzing for JavaScript Engines (CCS 2021)](#sofi-reflection-augmented-fuzzing-for-javascript-engines-ccs-2021)
   - [V-SHUTTLE: Scalable and Semantics-Aware Hypervisor Fuzzing (CCS 2021)](#v-shuttle-scalable-and-semantics-aware-hypervisor-fuzzing-ccs-2021)
   - [Token-Level Fuzzing (WiSec 2021)](#token-level-fuzzing-wisec-2021)
   - [Fuzzing With Optimized Grammar-Aware Mutation Strategies (Access 2021)](#fuzzing-with-optimized-grammar-aware-mutation-strategies-access-2021)
@@ -694,6 +697,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [SlowFuzz: Automated Domain-Independent Detection of Algorithmic Complexity Vulnerabilities (CCS 2017)](#slowfuzz-automated-domain-independent-detection-of-algorithmic-complexity-vulnerabilities-ccs-2017)
 
 - [**Enhancing Memory Error Detection**](#enhancing-memory-error)
+  - [SANRAZOR: Reducing Redundant Sanitizer Checks in C/C++ Programs (OSDI 2021)](#sanrazor-reducing-redundant-sanitizer-checks-in-cc-programs-osdi-2021)
   - [Unleashing Fuzzing Through Comprehensive, Efficient, and Faithful Exploitable-Bug Exposing (2021)](#unleashing-fuzzing-through-comprehensive-efficient-and-faithful-exploitable-bug-exposing)
   - [HDR-Fuzz: Detecting Buffer Overruns using AddressSanitizer Instrumentation and Fuzzing (2021)](#hdr-fuzz-detecting-buffer-overruns-using-addresssanitizer-instrumentation-and-fuzzing-2021)
   - [Enhancing Memory Error Detection for Large-Scale Applications and Fuzz Testing (NDSS 2018)](#enhancing-memory-error-detection-for-large-scale-applications-and-fuzz-testing-ndss-2018)
@@ -943,6 +947,12 @@ remark: This website is only used for collecting and grouping the related paper.
 
 
 # Differential Fuzzing
+
+### T-Reqs: HTTP Request Smuggling with Differential Fuzzing (CCS 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://seclab.nu/static/publications/ccs2021treqs.pdf)
+
+**Abstract:** HTTP Request Smuggling (HRS) is an attack that exploits the HTTP processing discrepancies between two servers deployed in a proxy-origin configuration, allowing attackers to smuggle hidden requests through the proxy. While this idea is not new, HRS is soaring in popularity due to recently revealed novel exploitation techniques and real-life abuse scenarios. In this work, we step back from the highly-specific exploits hogging the spotlight, and present the first work that systematically explores HRS within a scientific framework. We design an experiment infrastructure powered by a novel grammar-based differential fuzzer, test 10 popular server/proxy/CDN technologies in combinations, identify pairs that result in processing discrepancies, and discover exploits that lead to HRS. Our experiment reveals previously unknown ways to manipulate HTTP requests for exploitation, and for the first time documents the server pairs prone to HRS.
 
 ### Duo: Differential Fuzzing for Deep Learning Operators (IEEE Transactions on Reliability 2021)
 
@@ -2116,6 +2126,17 @@ In this paper, we present an application-aware evolutionary fuzzing strategy tha
 
 # Grammars \ Context-aware Fuzzing
 
+### SoFi: Reflection-Augmented Fuzzing for JavaScript Engines (CCS 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://dl.acm.org/doi/10.1145/3460120.3484823)
+
+**Abstract:** JavaScript engines have been shown prone to security vulnerabilities, which can lead to serious consequences due to their popularity. Fuzzing is an effective testing technique to discover vulnerabilities. The main challenge of fuzzing JavaScript engines is to generate syntactically and semantically valid inputs such that deep functionalities can be explored. However, due to the dynamic nature of JavaScript and the special features of different engines, it is quite challenging to generate semantically meaningful test inputs.
+
+We observed that state-of-the-art semantic-aware JavaScript fuzzers usually require manually written rules to analyze the semantics for a JavaScript engine, which is labor-intensive, incomplete and engine-specific. Moreover, the error rate of generated test cases is still high. Another challenge is that existing fuzzers cannot generate new method calls that are not included in the initial seed corpus or pre-defined rules, which limits the bug-finding capability.
+
+To this end, we propose a novel semantic-aware fuzzing technique named SoFi. To guarantee the validity of the generated test cases, SoFi adopts a fine-grained program analysis to identify available variables and infer types of these variables for the mutation. Moreover, an automatic repair strategy is proposed to repair syntax/semantic errors in invalid test cases. To improve the exploration capability of SoFi, we propose a reflection-based analysis to identify unseen attributes and methods of objects, which are further used in the mutation. With fine-grained analysis and reflection-based augmentation, SoFi can generate more valid and diverse test cases. Besides, SoFi is general in different JavaScript engines without any manual configuration (e.g., the grammar rules). The evaluation results have shown that SoFi outperforms state-of-the-art techniques in generating semantically valid inputs, improving code coverage and detecting more bugs. SoFi discovered 51 bugs in popular JavaScript engines, 28 of which have been confirmed or fixed by the developers and 10 CVE IDs have been assigned.
+
+
 ### V-SHUTTLE: Scalable and Semantics-Aware Hypervisor Fuzzing (CCS 2021)
 
 * <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/sec21-salls.pdf)
@@ -2757,6 +2778,19 @@ Unfortunately, existing detection mechanisms for algorithmic complexity vulnerab
 
 
 # Enhancing Memory Error:
+
+### SANRAZOR: Reducing Redundant Sanitizer Checks in C/C++ Programs (OSDI 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/osdi21-zhang.pdf)
+
+* <img src="image/ppt_24px.png">[Slides](https://www.usenix.org/system/files/osdi21_slides_zhang_0.pdf)
+
+* <img src="image/youtube.png">[Video](https://youtu.be/XEoTlvim7bw)
+
+* <img src="image/blog_24px.jpg">[Reading Note](https://forum.yoledge.com/topic/73/sanrazor-reducing-redundant-sanitizer-checks-in-c-c-programs-osdi-21)
+
+**Abstract:** Sanitizers detect unsafe actions such as invalid memory accesses by inserting checks that are validated during a program’s execution. Despite their extensive use for debugging and vulnerability discovery, sanitizer checks often induce a high runtime cost. One important reason for the high cost is, as we observe in this paper, that many sanitizer checks are redundant — the same safety property is repeatedly checked — leading to unnecessarily wasted computing resources. To help more profitably utilize sanitizers, we introduce SanRazor, a practical tool aiming to effectively detect and remove redundant sanitizer checks. SanRazor adopts a novel hybrid approach — it captures both dynamic code coverage and static data dependencies of checks, and uses the extracted information to perform a redundant check analysis. Our evaluation on the SPEC benchmarks shows that SanRazor can reduce the overhead of sanitizers significantly, from 73.8% to 28.0–62.0% for AddressSanitizer, and from 160.1% to 36.6–124.4% for UndefinedBehaviorSanitizer (depending on the applied reduction scheme). Our further evaluation on 38 CVEs from 10 commonly-used programs shows that SanRazor reduced checks suffice to detect at least 33 out of the 38 CVEs. Furthermore, by combining SanRazor with an existing sanitizer reduction tool ASAP, we show synergistic effect by reducing the runtime cost to only 7.0% with a reasonable tradeoff of security.
+
 
 ### Unleashing Fuzzing Through Comprehensive, Efficient, and Faithful Exploitable-Bug Exposing
 

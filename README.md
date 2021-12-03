@@ -23,7 +23,7 @@ remark: This website is only used for collecting and grouping the related paper.
 - **ICSE 2022**
   - [WindRanger: A Directed Greybox Fuzzer driven by Deviation Basic Block]
   - [MOREST: Model-based ERESTful API Testing with Execution Feedback]
-  - [Controlled Concurrency Testing via Periodical Scheduling]
+  - [Controlled Concurrency Testing via Periodical Scheduling](#controlled-concurrency-testing-via-periodical-scheduling-icse-2022)
 
 - **ASE 2021**
   - [CorbFuzz: Checking Browser Security Policies with Fuzzing](#corbfuzz-checking-browser-security-policies-with-fuzzing-ase-2021)
@@ -31,7 +31,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [SMARTIAN : Enhancing Smart Contract Fuzzing with Static and Dynamic Data-Flow Analyses](#smartian--enhancing-smart-contract-fuzzing-with-static-and-dynamic-data-flow-analyses-ase-2021)
   - [Towards Systematic and Dynamic Task Allocation for Collaborative Parallel Fuzzing](#towards-systematic-and-dynamic-task-allocation-for-collaborative-parallel-fuzzing-ase-2021-nier)
   - [Improving Configurability of Unit-level Continuous Fuzzing: An Industrial Case Study with SAP HANA](#improving-configurability-of-unit-level-continuous-fuzzing-an-industrial-case-study-with-sap-hana-ase-2021-industry)
-  - [Understanding and Detecting Performance Bugs in Markdown Compilers]
+  - [Understanding and Detecting Performance Bugs in Markdown Compilers](#understanding-and-detecting-performance-bugs-in-markdown-compilers-ase-2021)
 
 - **SOSP 2021**
   - [HEALER: Relation Learning Guided Kernel Fuzzing](#healer-relation-learning-guided-kernel-fuzzing-sosp-2021)
@@ -106,7 +106,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [OTA: An Operation-oriented Time Allocation Strategy for Greybox Fuzzing](#ota-an-operation-oriented-time-allocation-strategy-for-greybox-fuzzing-saner-2021)
 
 - **Others 2021**
-  - [Machine Learning Guided Cross-Contract Fuzzing (2021)]
+  - [Machine Learning Guided Cross-Contract Fuzzing (2021)](#machine-learning-guided-cross-contract-fuzzing-2021)
   - [SANRAZOR: Reducing Redundant Sanitizer Checks in C/C++ Programs (OSDI 2021)](#sanrazor-reducing-redundant-sanitizer-checks-in-cc-programs-osdi-2021)
   - [webFuzz: Grey-Box Fuzzing for Web Applications (ESORICS 2021)](#webfuzz-grey-box-fuzzing-for-web-applications-esorics-2021)
   - [Vulnerability-Oriented Fuzz Testing for Connected Autonomous Vehicle Systems (IEEE Transactions on Reliability 2021)](#vulnerability-oriented-fuzz-testing-for-connected-autonomous-vehicle-systems--ieee-transactions-on-reliability-2021)
@@ -696,6 +696,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [CollAFL: Path Sensitive Fuzzing (S&P 2018)](#collafl-path-sensitive-fuzzing-sp-2018) 
 
 - [**Performance Fuzzing**](#performance-fuzzing)
+  - [Understanding and Detecting Performance Bugs in Markdown Compilers (ASE 2021)](#understanding-and-detecting-performance-bugs-in-markdown-compilers-ase-2021)
   - [HotFuzz: Discovering Algorithmic Denial-of-Service Vulnerabilities Through Guided Micro-Fuzzing (NDSS 2020)](#hotfuzz-discovering-algorithmic-denial-of-service-vulnerabilities-through-guided-micro-fuzzing-ndss-2020)
   - [MemLock: Memory Usage Guided Fuzzing (ICSE 2020)](#memlock-memory-usage-guided-fuzzing-icse2020)
   - [Singularity: Pattern Fuzzing for Worst Case Complexity (FSE 2018)](#singularity-pattern-fuzzing-for-worst-case-complexity-fse-2018)
@@ -773,7 +774,8 @@ remark: This website is only used for collecting and grouping the related paper.
   - [Steelix: Program-State Based Binary Fuzzing (FSE 2017)](#steelix-program-state-based-binary-fuzzing-fse-2017)
 
 - [**SmartContracts**](#smart-contracts)
-  - [SMARTIAN : Enhancing Smart Contract Fuzzing with Static and Dynamic Data-Flow Analyses](#smartian--enhancing-smart-contract-fuzzing-with-static-and-dynamic-data-flow-analyses-ase-2021)
+  - [Machine Learning Guided Cross-Contract Fuzzing (2021)](#machine-learning-guided-cross-contract-fuzzing-2021)
+  - [SMARTIAN : Enhancing Smart Contract Fuzzing with Static and Dynamic Data-Flow Analyses (ASE 2021)](#smartian--enhancing-smart-contract-fuzzing-with-static-and-dynamic-data-flow-analyses-ase-2021)
   - [HFContractFuzzer: Fuzzing Hyperledger Fabric Smart Contracts for Vulnerability Detection (EASE 2021)](#hfcontractfuzzer-fuzzing-hyperledger-fabric-smart-contracts-for-vulnerability-detection-ease-2021)
   - [sFuzz: An Efficient Adaptive Fuzzer for Solidity Smart Contracts (ICSE 2020)](#sfuzz-an-efficient-adaptive-fuzzer-for-solidity-smart-contracts-icse-2020)
   - [Targeted Greybox Fuzzing with Static Lookahead Analysis (ICSE 2020)](#targeted-greybox-fuzzing-with-static-lookahead-analysis-icse-2020)
@@ -792,6 +794,7 @@ remark: This website is only used for collecting and grouping the related paper.
   - [DifFuzz: Differential Fuzzing for Side-Channel Analysis (ICSE 2019)](#diffuzz-differential-fuzzing-for-side-channel-analysis-icse-2019)
 
 - [**Concurrency Fuzzing**](#concurrency-fuzzing)
+  - [Controlled Concurrency Testing via Periodical Scheduling (ICSE 2022)](#controlled-concurrency-testing-via-periodical-scheduling-icse-2022)
   - [Fuzzing Channel-Based Concurrency Runtimes using Types and Effects Slides (OOPSLA 2021)](#fuzzing-channel-based-concurrency-runtimes-using-types-and-effects-slides-oopsla-2021)
   - [MUZZ: Thread-aware Grey-box Fuzzing for Effective Bug Hunting in Multithreaded Programs (USENIX Security2020)](#muzz-thread-aware-grey-box-fuzzing-for-effective-bug-hunting-in-multithreaded-programs-usenix-security2020)
   - [KRace: Data Race Fuzzing for Kernel File Systems (S&P 2020)](#krace-data-race-fuzzing-for-kernel-file-systems-sp-2020)
@@ -2714,6 +2717,18 @@ In this paper, we propose Sequence-coverage Directed Fuzzing (SCDF), a lightweig
 
 # Performance Fuzzing
 
+### Understanding and Detecting Performance Bugs in Markdown Compilers (ASE 2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://appsrv.cse.cuhk.edu.hk/~phli/paper/ase21_mdperffuzz.pdf)
+
+**Abstract:** Markdown compilers are widely used for translating plain Markdown text into formatted text, yet they suffer from
+performance bugs that cause performance degradation and
+resource exhaustion. Currently, there is little knowledge and
+understanding about these performance bugs in the wild. In
+this work, we first conduct a comprehensive study of known
+performance bugs in Markdown compilers. We identify that the ways Markdown compilers handle the language’s context-sensitive features are the dominant root cause of performance bugs. To detect unknown performance bugs, we develop MDPERFFUZZ, a fuzzing framework with a syntax-tree based mutation strategy to efficiently generate test cases to manifest such bugs. It equips an execution trace similarity algorithm to de-duplicate the bug reports. With MDPERFFUZZ, we successfully identified 216 new performance bugs in real-world Markdown compilers and applications. Our work demonstrates that the performance bugs are a common, severe, yet previously overlooked security problem.
+
+
 ### HotFuzz: Discovering Algorithmic Denial-of-Service Vulnerabilities Through Guided Micro-Fuzzing (NDSS 2020)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/NDSS20_HotFuzz.pdf)
@@ -3223,6 +3238,14 @@ Our technique can perform comparably to structure-aware fuzzing proposals that r
 
 
 # Smart Contracts
+
+### Machine Learning Guided Cross-Contract Fuzzing (2021)
+
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/ftp/arxiv/papers/2111/2111.12423.pdf)
+
+**Abstract:** Smart contract transactions are increasingly interleaved by cross-contract calls. While many tools have been developed to identify a common set of vulnerabilities to guard smart contracts, the cross-contract vulnerability is however overlooked by existing tools. Cross-contract vulnerabilities are exploitable bugs that manifest in the presence of more than two interacting contracts. Existing methods are however limited to analyze a maximum of two contracts at the same time. Detecting cross-contract vulnerabilities is highly non-trivial. With multiple interacting contracts, the search space is much larger than that of a single contract. To address this problem, we present xFuzz, a machine learning guided smart contract fuzzing framework. The machine learning models are trained with novel features (e.g., word vectors and instructions) and are used to filter likely benign program paths. Comparing with existing static tools, machine learning model is proven to be more robust, avoiding directly adopting manually-defined rules in specific tools. We compare xFuzz with three state-of-the-art tools on 7,391 contracts. xFuzz detects 18 exploitable cross-contract vulnerabilities, of which 15 vulnerabilities are exposed for the first time. Furthermore, our approach is shown to be efficient in detecting non-cross-contract vulnerabilities as well-using less than 20% time as that of other fuzzing tools, xFuzz detects twice as many vulnerabilities.
+
+
 ### SMARTIAN : Enhancing Smart Contract Fuzzing with Static and Dynamic Data-Flow Analyses (ASE 2021)
 
 * <img src="image/pdf_24px.png">[Paper](https://softsec.kaist.ac.kr/~jschoi/data/ase2021.pdf)
@@ -3330,6 +3353,13 @@ We evaluate QFuzz on a large set of benchmarks from existing work and real-world
 
 
 # Concurrency Fuzzing
+
+### Controlled Concurrency Testing via Periodical Scheduling (ICSE 2022)
+
+* <img src="image/github_24px.png">[Code](https://sites.google.com/view/period-cct/)
+
+**Abstract:** Controlled Concurrency testing (CCT) techniques have been shown promising for concurrency bugs detection. They often have a mechanism to control the order in which threads get executed, and attempt to explore the space of possible interleavings of a concurrent program to detect bugs. Various CCT techniques have been proposed, but they are generally ineffective and ad-hoc. In this paper, we introduce a novel CCT technique PERIOD. Unlike previous works, PERIOD models the execution of concurrent programs as periodical execution, and systematically explores the space of possible interleavings, where the exploration is guided by periodical scheduling and influenced by previously tested interleavings. We have evaluated PERIOD on 10 real-world CVEs and 36 widely-used benchmark programs. Our experimental results show that PERIOD demonstrates superiority over other CCT techniques in both effectiveness and performance overhead. Moreover, we have discovered 5 previously unknown concurrency bugs in real-world programs.
+
 
 ### Fuzzing Channel-Based Concurrency Runtimes using Types and Effects Slides (OOPSLA 2021)
 

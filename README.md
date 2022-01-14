@@ -32,7 +32,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [CONFETTI: Amplifying Concolic Guidance for Fuzzers](#confetti-amplifying-concolic-guidance-for-fuzzers-icse-2022)
   - [Demystifying the Dependency Challenge in Kernel Fuzzing](#demystifying-the-dependency-challenge-in-kernel-fuzzing-icse-2022)
   - [Evaluating and Improving Neural Program-Smoothing-based Fuzzing](#evaluating-and-improving-neural-program-smoothing-based-fuzzing-icse-2022)
-  - [Fuzzing Class Specifications]
+  - [Fuzzing Class Specifications](#fuzzing-class-specifications-icse-2022)
   - [GraphFuzz: Library API Fuzzing with Lifetime-aware Dataflow Graphs](#graphfuzz-library-api-fuzzing-with-lifetime-aware-dataflow-graphs-icse-2022)
   - [Linear-time Temporal Logic guided Greybox Fuzzing](#linear-time-temporal-logic-guided-greybox-fuzzing-icse-2022)
   - [Muffin: Testing Deep Learning Libraries via Neural Architecture Fuzzing](#muffin-testing-deep-learning-libraries-via-neural-architecture-fuzzing-icse-2022)
@@ -2821,6 +2821,8 @@ Our large-scale fuzzing experiment demonstrates the validity of our main hypothe
 
 
 ### DeltaFuzz: Historical Version Information Guided Fuzz Testing (Journal of Computer Science and Technology 2021)
+
+* <img src="image/youtube.png">[Video](https://lcs.ios.ac.cn/setta2021/videos/day2_10.mp4)
 
 * <img src="image/pdf_24px.png">[Paper](https://jcst.ict.ac.cn/EN/10.1007/s11390-021-1663-7)
 

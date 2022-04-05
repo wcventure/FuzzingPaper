@@ -23,6 +23,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 
 - **S&P 2022**
+  - [Effective Seed Scheduling for Fuzzing with Graph Centrality Analysis](#effective-seed-scheduling-for-fuzzing-with-graph-centrality-analysis-sp-2022)
   - [BEACON: Directed Grey-Box Fuzzing with Provable Path Pruning](#beacon-directed-grey-box-fuzzing-with-provable-path-pruning-sp-2022)
 
 - **NDSS 2022**
@@ -818,6 +819,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [AddressSanitizer: A Fast Address Sanity Checker  (USENIX Security2012)](#addresssanitizer-a-fast-address-sanity-checker-usenix-security2012)
 
 - [**Schedule (Power & Mutation)**](#schedule-power--mutation)
+  - [Effective Seed Scheduling for Fuzzing with Graph Centrality Analysis](#effective-seed-scheduling-for-fuzzing-with-graph-centrality-analysis-sp-2022)
   - [Path Transitions Tell More: Optimizing Fuzzing Schedules via Runtime Program States (ICSE 2022)](#path-transitions-tell-more-optimizing-fuzzing-schedules-via-runtime-program-states-icse-2022)
   - [FEFuzzer: Hybrid Files Fuzzing Tool (2022)](#fefuzzer-hybrid-files-fuzzing-tool-2022)
   - [Seed Selection for Successful Fuzzing (ISSTA 2021)](#seed-selection-for-successful-fuzzing-issta-2021)
@@ -3267,6 +3269,21 @@ AddressSanitizer achieves efficiency without sacrificing comprehensiveness. Its 
 
 
 # Schedule (Power & Mutation)
+
+### Effective Seed Scheduling for Fuzzing with Graph Centrality Analysis (S&P 2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/abs/2203.12064)
+
+* <img src="image/github_24px.png">[Code](https://github.com/Dongdongshe/K-Scheduler)
+
+**Abstract:** Seed scheduling, the order in which seeds are selected, can greatly affect the performance of a fuzzer. Existing approaches schedule seeds based on their historical mutation data, but ignore the structure of the underlying Control Flow Graph (CFG). Examining the CFG can help seed scheduling by revealing the potential edge coverage gain from mutating a seed. 
+
+An ideal strategy will schedule seeds based on a count of all reachable and feasible edges from a seed through mutations, but computing feasibility along all edges is prohibitively expensive. Therefore, a seed scheduling strategy must approximate this count. We observe that an approximate count should have 3 properties — (i) it should increase if there are more edges reachable from a seed; (ii) it should decrease if mutation history information suggests an edge is hard to reach or is located far away from currently visited edges; and (iii) it should be efficient to compute over large CFGs. 
+
+We observe that centrality measures from graph analysis naturally provide these three properties and therefore can efficiently approximate the likelihood of reaching unvisited edges by mutating a seed. We therefore build a graph called the edge horizon graph that connects seeds to their closest unvisited nodes and compute the seed node's centrality to measure the potential edge coverage gain from mutating a seed.
+
+We implement our approach in K-scheduler and compare with many popular seed scheduling strategies. We find that K-scheduler increases feature coverage by 25.89% compared to Entropic and edge coverage by 4.21% compared to the next-best AFL-based seed scheduler, in arithmetic mean on 12 Google FuzzBench programs. It also finds 3 more previously-unknown bugs than the next-best AFL-based seed scheduler.
+
 
 ### Path Transitions Tell More: Optimizing Fuzzing Schedules via Runtime Program States (ICSE 2022)
 

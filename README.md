@@ -1,6 +1,6 @@
 # Recent Papers Related To Fuzzing
 
-Remark: This website is only used for collecting and grouping the related paper. If there are any paper need to be updated, you can contribute PR. 
+Remark: This website is only used for collecting and grouping the related paper. If there are any paper need to be updated, you can contribute PR. s
 
 Main Repo.: [https://github.com/wcventure/FuzzingPaper](https://github.com/wcventure/FuzzingPaper)  
 Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.net/mirrors/wcventure/FuzzingPaper)
@@ -120,6 +120,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [V-SHUTTLE: Scalable and Semantics-Aware Hypervisor Fuzzing](#v-shuttle-scalable-and-semantics-aware-hypervisor-fuzzing-ccs-2021)
   - [Same Coverage, Less Bloat: Accelerating Binary-only Fuzzing with Coverage-preserving Coverage-guided Tracing](#same-coverage-less-bloat-accelerating-binary-only-fuzzing-with-coverage-preserving-coverage-guided-tracing-ccs-2021)
   - [Regression Greybox Fuzzing](#regression-greybox-fuzzing-ccs-2021)
+  - [SyzGen: Automated Generation of Syscall Specification of Closed-Source macOS Drivers](SyzGen-Automated-Generation-of-Syscall-Specification-of-Closed-Source-macOS-Drivers-ccs-2021)
   
 - **OOPSLA 2021**
   - [Fuzzing Channel-Based Concurrency Runtimes using Types and Effects](#fuzzing-channel-based-concurrency-runtimes-using-types-and-effects-slides-oopsla-2021)

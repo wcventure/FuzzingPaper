@@ -120,7 +120,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [V-SHUTTLE: Scalable and Semantics-Aware Hypervisor Fuzzing](#v-shuttle-scalable-and-semantics-aware-hypervisor-fuzzing-ccs-2021)
   - [Same Coverage, Less Bloat: Accelerating Binary-only Fuzzing with Coverage-preserving Coverage-guided Tracing](#same-coverage-less-bloat-accelerating-binary-only-fuzzing-with-coverage-preserving-coverage-guided-tracing-ccs-2021)
   - [Regression Greybox Fuzzing](#regression-greybox-fuzzing-ccs-2021)
-  - [SyzGen: Automated Generation of Syscall Specification of Closed-Source macOS Drivers](SyzGen-Automated-Generation-of-Syscall-Specification-of-Closed-Source-macOS-Drivers-ccs-2021)
+  - [SyzGen: Automated Generation of Syscall Specification of Closed-Source macOS Drivers](#SyzGen-Automated-Generation-of-Syscall-Specification-of-Closed-Source-macOS-Drivers-ccs-2021)
   
 - **OOPSLA 2021**
   - [Fuzzing Channel-Based Concurrency Runtimes using Types and Effects](#fuzzing-channel-based-concurrency-runtimes-using-types-and-effects-slides-oopsla-2021)
@@ -1408,9 +1408,7 @@ The ideal solution for binary security analysis would be a static rewriter that 
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/ccs21_syzgen.pdf)
 
-**Abstract:** Kernel drivers are a critical part of the attack surface since they constitute a large fraction of kernel codebase and oftentimes lack proper
-vetting, especially for those closed-source ones. Unfortunately, the complex input structure and unknown relationships/dependencies among interfaces make them very challenging to understand. Thus, security analysts primarily rely on manual audit for interface recovery to generate meaningful fuzzing test cases. In this paper,
-we present SyzGen, a first attempt to automate the generation ofbsyscall specifications for closed-source macOS drivers and facilitate interface-aware fuzzing. We leverage two insights to overcome the challenges of binary analysis: (1) iterative refinement of syscall knowledge and (2) extraction and extrapolation of ependencies from a small number of execution traces. We evaluated our approach on 25 targets. The results show that SyzGen can effectively produce high-quality specifications, leading to 34 bugs, including one that attackers can exploit to escalate privilege, and 2 CVEs to date.
+**Abstract:** Kernel drivers are a critical part of the attack surface since they constitute a large fraction of kernel codebase and oftentimes lack proper vetting, especially for those closed-source ones. Unfortunately, the complex input structure and unknown relationships/dependencies among interfaces make them very challenging to understand. Thus, security analysts primarily rely on manual audit for interface recovery to generate meaningful fuzzing test cases. In this paper, we present SyzGen, a first attempt to automate the generation ofbsyscall specifications for closed-source macOS drivers and facilitate interface-aware fuzzing. We leverage two insights to overcome the challenges of binary analysis: (1) iterative refinement of syscall knowledge and (2) extraction and extrapolation of ependencies from a small number of execution traces. We evaluated our approach on 25 targets. The results show that SyzGen can effectively produce high-quality specifications, leading to 34 bugs, including one that attackers can exploit to escalate privilege, and 2 CVEs to date.
 
 
 

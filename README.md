@@ -31,7 +31,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [Semantic-Informed Driver Fuzzing Without Both the Hardware Devices and the Emulators]
   - [MobFuzz: Adaptive Multi-objective Optimization in Gray-box Fuzzing]
   - [Context-Sensitive and Directional Concurrency Fuzzing for Data-Race Detection]
-  - [datAFLow: Towards a Data-Flow-Guided Fuzzer](###datAFLow: Towards a Data-Flow-Guided Fuzzer (NDSS 2022))
+  - [datAFLow: Towards a Data-Flow-Guided Fuzzer](#datAFLow: Towards a Data-Flow-Guided Fuzzer (NDSS 2022))
 
 - **USENIX SEC 2022**
   - [SyzScope: Revealing High-Risk Security Impacts of Fuzzer-Exposed Bugs in Linux kernel](#syzscope-revealing-high-risk-security-impacts-of-fuzzer-exposed-bugs-in-linux-kernel-usenix-sec22)
@@ -879,7 +879,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities (ICSE 2020)](#typestate-guided-fuzzer-for-discovering-use-after-free-vulnerabilities-icse-2020)
   - [REDQUEEN: Fuzzing with Input-to-State Correspondence  (NDSS2019)](#redqueen-fuzzing-with-input-to-state-correspondence-ndss2019)
   - [VUzzer: Application-aware Evolutionary Fuzzing](#vuzzer-application-aware-evolutionary-fuzzing-ndss-2017)
-  - [datAFLow: Towards a Data-Flow-Guided Fuzzer](###datAFLow: Towards a Data-Flow-Guided Fuzzer (NDSS 2022))
+  - [datAFLow: Towards a Data-Flow-Guided Fuzzer](#datAFLow: Towards a Data-Flow-Guided Fuzzer (NDSS 2022))
 
 - [**Binary Fuzzing**](#binary-fuzzing)
   - [spotFuzzer: Static Instrument and Fuzzing Windows COTs (2022)](#spotfuzzer-static-instrument-and-fuzzing-windows-cots-2022)
@@ -3654,6 +3654,8 @@ We introduce DeepSmith, a novel machine learning approach to accelerating compil
 We implemented a prototype of GREYONE and evaluated it on the LAVA data set and 19 real-world programs. The results showed that it outperforms various state-of-the-art fuzzers in terms of both code coverage and vulnerability discovery. In the LAVA data set, GREYONE found all listed bugs and 336 more unlisted. In real-world programs, GREYONE on average found 2.12X unique program paths and 3.09X unique bugs than state-of-the-art evolutionary fuzzers, including AFL, VUzzer, CollAFL, Angora and Honggfuzz, Moreover, GREYONE on average found 1.2X unique program paths and 1.52X unique bugs than a state-of-the-art symbolic execution assisted fuzzer QSYM. In total, it found 105 new security bugs, of which 41 are confirmed by CVE.
 
 ### datAFLow: Towards a Data-Flow-Guided Fuzzer (NDSS 2022)
+
+* <img src="image/github_24px.png">[Code](https://github.com/HexHive/datAFLow)
 
 * <img src="image/pdf_24px.png">[Paper](https://www.ndss-symposium.org/wp-content/uploads/fuzzing2022_23001_paper.pdf)
 

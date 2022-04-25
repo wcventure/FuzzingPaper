@@ -31,7 +31,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [Semantic-Informed Driver Fuzzing Without Both the Hardware Devices and the Emulators]
   - [MobFuzz: Adaptive Multi-objective Optimization in Gray-box Fuzzing]
   - [Context-Sensitive and Directional Concurrency Fuzzing for Data-Race Detection]
-  - [datAFLow: Towards a Data-Flow-Guided Fuzzer](#datAFLow: Towards a Data-Flow-Guided Fuzzer (NDSS 2022))
+  - [datAFLow: Towards a Data-Flow-Guided Fuzzer](###datAFLow: Towards a Data-Flow-Guided Fuzzer (NDSS 2022))
 
 - **USENIX SEC 2022**
   - [SyzScope: Revealing High-Risk Security Impacts of Fuzzer-Exposed Bugs in Linux kernel](#syzscope-revealing-high-risk-security-impacts-of-fuzzer-exposed-bugs-in-linux-kernel-usenix-sec22)
@@ -879,7 +879,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities (ICSE 2020)](#typestate-guided-fuzzer-for-discovering-use-after-free-vulnerabilities-icse-2020)
   - [REDQUEEN: Fuzzing with Input-to-State Correspondence  (NDSS2019)](#redqueen-fuzzing-with-input-to-state-correspondence-ndss2019)
   - [VUzzer: Application-aware Evolutionary Fuzzing](#vuzzer-application-aware-evolutionary-fuzzing-ndss-2017)
-  - [datAFLow: Towards a Data-Flow-Guided Fuzzer](#datAFLow: Towards a Data-Flow-Guided Fuzzer (NDSS 2022))
+  - [datAFLow: Towards a Data-Flow-Guided Fuzzer](###datAFLow: Towards a Data-Flow-Guided Fuzzer (NDSS 2022))
 
 - [**Binary Fuzzing**](#binary-fuzzing)
   - [spotFuzzer: Static Instrument and Fuzzing Windows COTs (2022)](#spotfuzzer-static-instrument-and-fuzzing-windows-cots-2022)

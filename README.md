@@ -1,6 +1,6 @@
 # Recent Papers Related To Fuzzing
 
-Remark: This website is only used for collecting and grouping the related paper. If there are any paper need to be updated, you can contribute PR. s
+Remark: This website is only used for collecting and grouping the related paper. If there are any paper need to be updated, you can contribute PR.
 
 Main Repo.: [https://github.com/wcventure/FuzzingPaper](https://github.com/wcventure/FuzzingPaper)  
 Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.net/mirrors/wcventure/FuzzingPaper)
@@ -8,6 +8,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
 # All Papers (Classification according to Publication)
 
 - **Survey/Review**
+  - [Fuzzing: A Survey for Roadmap](#fuzzing-a-survey-for-roadmap)
   - [Fuzzing: Challenges and Reflections](#fuzzing-challenges-and-reflections)
   - [SoK: The Progress, Challenges, and Perspectives of Directed Greybox Fuzzing](#sok-the-progress-challenges-and-perspectives-of-directed-greybox-fuzzing)
   - [Fuzzing: Hack, Art, and Science](#fuzzing-hack-art-and-science-cacm-2020)
@@ -18,20 +19,20 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [Fuzzing: Art, Science, and Engineering](#fuzzing-art-science-and-engineering)
   - [Fuzzing: a survey](#fuzzing-a-survey)
   - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
-  - [Fuzzing: A Survey for Roadmap](#fuzzing-a-survey-for-roadmap)
   - [Survey of Software Fuzzing Techniques](#survey-of-software-fuzzing-techniques)
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 
 - **S&P 2022**
   - [Effective Seed Scheduling for Fuzzing with Graph Centrality Analysis](#effective-seed-scheduling-for-fuzzing-with-graph-centrality-analysis-sp-2022)
   - [BEACON: Directed Grey-Box Fuzzing with Provable Path Pruning](#beacon-directed-grey-box-fuzzing-with-provable-path-pruning-sp-2022)
+  - [JIGSAW: Efficient and Scalable Path Constraints Fuzzing](#jigsaw-efficient-and-scalable-path-constraints-fuzzing-sp-2022)
 
 - **NDSS 2022**
   - [EMS: History-Driven Mutation for Coverage-based Fuzzing](#ems-history-driven-mutation-for-coverage-based-fuzzing-ndss-2022)
-  - [Semantic-Informed Driver Fuzzing Without Both the Hardware Devices and the Emulators]
-  - [MobFuzz: Adaptive Multi-objective Optimization in Gray-box Fuzzing]
-  - [Context-Sensitive and Directional Concurrency Fuzzing for Data-Race Detection]
-  - [datAFLow: Towards a Data-Flow-Guided Fuzzer](###datAFLow: Towards a Data-Flow-Guided Fuzzer (NDSS 2022))
+  - [Semantic-Informed Driver Fuzzing Without Both the Hardware Devices and the Emulators](#semantic-informed-driver-fuzzing-without-both-the-hardware-devices-and-the-emulators-icse-2022)
+  - [MobFuzz: Adaptive Multi-objective Optimization in Gray-box Fuzzing](#mobfuzz-adaptive-multi-objective-optimization-in-gray-box-fuzzing-ndss-2022)
+  - [Context-Sensitive and Directional Concurrency Fuzzing for Data-Race Detection](#context-sensitive-and-directional-concurrency-fuzzing-for-data-race-detection-ndss-2022)
+  - [datAFLow: Towards a Data-Flow-Guided Fuzzer](#dataflow-towards-a-data-flow-guided-fuzzer-ndss-2022)
 
 - **USENIX SEC 2022**
   - [SyzScope: Revealing High-Risk Security Impacts of Fuzzer-Exposed Bugs in Linux kernel](#syzscope-revealing-high-risk-security-impacts-of-fuzzer-exposed-bugs-in-linux-kernel-usenix-sec22)
@@ -46,7 +47,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [GraphFuzz: Library API Fuzzing with Lifetime-aware Dataflow Graphs](#graphfuzz-library-api-fuzzing-with-lifetime-aware-dataflow-graphs-icse-2022)
   - [Linear-time Temporal Logic guided Greybox Fuzzing](#linear-time-temporal-logic-guided-greybox-fuzzing-icse-2022)
   - [Muffin: Testing Deep Learning Libraries via Neural Architecture Fuzzing](#muffin-testing-deep-learning-libraries-via-neural-architecture-fuzzing-icse-2022)
-  - [One Fuzzing Strategy to Rule Them All]
+  - [One Fuzzing Strategy to Rule Them All](#one-fuzzing-strategy-to-rule-them-all-icse-2022)
   - [On the Reliability of Coverage-Based Fuzzer Benchmarking](#on-the-reliability-of-coverage-based-fuzzer-benchmarking-icse-2022)
   - [Path Transitions Tell More: Optimizing Fuzzing Schedules via Runtime Program States](#path-transitions-tell-more-optimizing-fuzzing-schedules-via-runtime-program-states-icse-2022)
   - [R2Z2: Detecting Rendering Regressions in Web Browsers through Differential Fuzz Testing](#r2z2-detecting-rendering-regressions-in-web-browsers-through-differential-fuzz-testing-icse-2022)
@@ -647,7 +648,8 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
 
 - [**Kernel Fuzzing**](#kernel-fuzzing)
   - [Demystifying the Dependency Challenge in Kernel Fuzzing (ICSE 2022)](#demystifying-the-dependency-challenge-in-kernel-fuzzing-icse-2022)
-  - [SyzScope: Revealing High-Risk Security Impacts of Fuzzer-Exposed Bugs in Linux kernel  (USENIX SEC'22)](#syzscope-revealing-high-risk-security-impacts-of-fuzzer-exposed-bugs-in-linux-kernel-usenix-sec22)
+  - [Semantic-Informed Driver Fuzzing Without Both the Hardware Devices and the Emulators (ICSE 2022)](#semantic-informed-driver-fuzzing-without-both-the-hardware-devices-and-the-emulators-icse-2022)
+  - [SyzScope: Revealing High-Risk Security Impacts of Fuzzer-Exposed Bugs in Linux kernel  (USENIX  2022)](#syzscope-revealing-high-risk-security-impacts-of-fuzzer-exposed-bugs-in-linux-kernel-usenix-sec22)
   - [HEALER: Relation Learning Guided Kernel Fuzzing (SOSP 2021)](#healer-relation-learning-guided-kernel-fuzzing-sosp-2021)
   - [NTFUZZ: Enabling Type-Aware Kernel Fuzzing on Windows with Static Binary Analysis (S&P 2021)](#ntfuzz-enabling-type-aware-kernel-fuzzing-on-windows-with-static-binary-analysissp-2021)
   - [HFL: Hybrid Fuzzing on the Linux Kernel (NDSS 2020)](#hfl-hybrid-fuzzing-on-the-linux-kernel-ndss-2020)
@@ -694,7 +696,8 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [Hybrid Fuzz Testing - Discovering Software Bugs via Fuzzing and Symbolic Execution (2012)](#hybrid-fuzz-testing---discovering-software-bugs-via-fuzzing-and-symbolic-execution-2012)
   - [Hybrid concolic testing (2007)](#hybrid-concolic-testing-2007)
 
-- [**Coverage \ Path \ Magic bytes \ Checksum**](#coverage--path--magic-bytes--checksum)  
+- [**Mutation\Coverage\Path**](#mutationcoveragepath)
+  - [One Fuzzing Strategy to Rule Them  (ICSE 2022)](#one-fuzzing-strategy-to-rule-them-all-icse-2022)
   - [BeDivFuzz: Integrating Behavioral Diversity into Generator-based Fuzzing (ICSE 2022)](#bedivfuzz-integrating-behavioral-diversity-into-generator-based-fuzzing-icse-2022)
   - [FuzzingDriver: the Missing Dictionary to Increase Code Coverage in Fuzzers (SANER 2022)](#fuzzingdriver-the-missing-dictionary-to-increase-code-coverage-in-fuzzers-saner-2022)
   - [PATA: Fuzzing with Path Aware Taint Analysis (S&P 2022)](#pata-fuzzing-with-path-aware-taint-analysis-sp-2022)
@@ -821,7 +824,8 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [AddressSanitizer: A Fast Address Sanity Checker  (USENIX Security2012)](#addresssanitizer-a-fast-address-sanity-checker-usenix-security2012)
 
 - [**Schedule (Power & Mutation)**](#schedule-power--mutation)
-  - [Effective Seed Scheduling for Fuzzing with Graph Centrality Analysis](#effective-seed-scheduling-for-fuzzing-with-graph-centrality-analysis-sp-2022)
+  - [MobFuzz: Adaptive Multi-objective Optimization in Gray-box Fuzzing (NDSS 2022)](#mobfuzz-adaptive-multi-objective-optimization-in-gray-box-fuzzing-ndss-2022)
+  - [Effective Seed Scheduling for Fuzzing with Graph Centrality Analysis (S&P 2022)](#effective-seed-scheduling-for-fuzzing-with-graph-centrality-analysis-sp-2022)
   - [Path Transitions Tell More: Optimizing Fuzzing Schedules via Runtime Program States (ICSE 2022)](#path-transitions-tell-more-optimizing-fuzzing-schedules-via-runtime-program-states-icse-2022)
   - [FEFuzzer: Hybrid Files Fuzzing Tool (2022)](#fefuzzer-hybrid-files-fuzzing-tool-2022)
   - [Seed Selection for Successful Fuzzing (ISSTA 2021)](#seed-selection-for-successful-fuzzing-issta-2021)
@@ -873,13 +877,13 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [TensorFuzz: Debugging Neural Networks with Coverage-Guided Fuzzing (ICML 2019)](#tensorfuzz-debugging-neural-networks-with-coverage-guided-fuzzing-icml-2019)
 
 - [**Data Flow Sensitive Fuzzing**](#data-flow-sensitive-fuzzing)
+  - [datAFLow: Towards a Data-Flow-Guided Fuzzer (NDSS 2022)](#dataflow-towards-a-data-flow-guided-fuzzer-ndss-2022)
   - [ovAFLow: Detecting Memory Corruption Bugs with Fuzzing-based Taint Inference (Journal of Computer Science and Technology 2021)](#ovaflow-detecting-memory-corruption-bugs-with-fuzzing-based-taint-inference-journal-of-computer-science-and-technology-2021)
   - [DIAR: Removing Uninteresting Bytes from Seeds in Software Fuzzing (2021)](#diar-removing-uninteresting-bytes-from-seeds-in-software-fuzzing-2021)
   - [GREYONE Data Flow Sensitive Fuzzing (USENIX Security2020)](#greyone-data-flow-sensitive-fuzzing-usenix-security2020)
   - [Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities (ICSE 2020)](#typestate-guided-fuzzer-for-discovering-use-after-free-vulnerabilities-icse-2020)
   - [REDQUEEN: Fuzzing with Input-to-State Correspondence  (NDSS2019)](#redqueen-fuzzing-with-input-to-state-correspondence-ndss2019)
   - [VUzzer: Application-aware Evolutionary Fuzzing](#vuzzer-application-aware-evolutionary-fuzzing-ndss-2017)
-  - [datAFLow: Towards a Data-Flow-Guided Fuzzer](###datAFLow: Towards a Data-Flow-Guided Fuzzer (NDSS 2022))
 
 - [**Binary Fuzzing**](#binary-fuzzing)
   - [spotFuzzer: Static Instrument and Fuzzing Windows COTs (2022)](#spotfuzzer-static-instrument-and-fuzzing-windows-cots-2022)
@@ -909,6 +913,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [ContractFuzzer: Fuzzing Smart Contracts for Vulnerability Detection (ASE 2018)](#contractfuzzer-fuzzing-smart-contracts-for-vulnerability-detection-ase-2018)
 
 - [**Constraint Solving**](#constraint-solving)
+  - [JIGSAW: Efficient and Scalable Path Constraints Fuzzing (S&P 2022)](#jigsaw-efficient-and-scalable-path-constraints-fuzzing-sp-2022)
   - [Fuzzing Symbolic Expressions (ICSE 2021)](#fuzzing-symbolic-expressions-icse-2021)
   - [Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing (FSE 2019)](#just-fuzz-it-solving-floating-point-constraints-using-coverage-guided-fuzzing-fse-2019)
 
@@ -919,6 +924,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [DifFuzz: Differential Fuzzing for Side-Channel Analysis (ICSE 2019)](#diffuzz-differential-fuzzing-for-side-channel-analysis-icse-2019)
 
 - [**Concurrency Fuzzing**](#concurrency-fuzzing)
+  - [Context-Sensitive and Directional Concurrency Fuzzing for Data-Race Detection (NDSS 2022)](#context-sensitive-and-directional-concurrency-fuzzing-for-data-race-detection-ndss-2022)
   - [Controlled Concurrency Testing via Periodical Scheduling (ICSE 2022)](#controlled-concurrency-testing-via-periodical-scheduling-icse-2022)
   - [Fuzzing Channel-Based Concurrency Runtimes using Types and Effects Slides (OOPSLA 2021)](#fuzzing-channel-based-concurrency-runtimes-using-types-and-effects-slides-oopsla-2021)
   - [MUZZ: Thread-aware Grey-box Fuzzing for Effective Bug Hunting in Multithreaded Programs (USENIX Security2020)](#muzz-thread-aware-grey-box-fuzzing-for-effective-bug-hunting-in-multithreaded-programs-usenix-security2020)
@@ -1860,6 +1866,15 @@ Our evaluation on popular fuzzers and real-world applications shows that Fuzzifi
 **Abstract:** Fuzz testing operating system kernels remains a daunting task to date. One known challenge is that much of the kernel code is locked under specific kernel states and current kernel fuzzers are not effective in exploring such an enormous state space. We refer to this problem as the dependency challenge. Though there are some efforts trying to address the dependency challenge, the prevalence and categorization of dependencies have never been studied. Most prior work simply attempted to recover dependencies opportunistically whenever they are relatively easy to recognize. In this paper, we undertake a substantial measurement study to systematically understand the real challenge behind dependencies. To our surprise, we show that even for well-fuzzed kernel modules, unresolved dependencies still account for 59% - 88% of the uncovered branches. Furthermore, we show that the dependency challenge is only a symptom rather than the root cause of failing to achieve more coverage. By distilling and summarizing our findings, we believe the research provides valuable guidance to future research in kernel fuzzing. Finally, we propose a number of novel research directions directly based on the insights gained from the measurement study.
 
 
+### Semantic-Informed Driver Fuzzing Without Both the Hardware Devices and the Emulators (ICSE 2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://www-users.cse.umn.edu/~kjlu/papers/drfuzz.pdf)
+
+**Abstract:** Device drivers are security-critical. In monolithic kernels like Linux, there are hundreds of thousands of drivers which run in the same privilege as the core kernel. Consequently, a bug in a driver can compromise the whole system. More critically, drivers are particularly buggy. First, drivers receive complex and untrusted inputs from not only the user space but also the hardware. Second, the driver code can be developed by less-experienced third parties, and is less tested because running a driver requires the corresponding hardware device or the emulator. Therefore, existing studies show that drivers tend to have a higher bug density and have become a major security threat. Existing testing techniques have to focus the fuzzing on a limited number of drivers that have the corresponding devices or the emulators, thus cannot scale.
+
+In this paper, we propose a device-free driver fuzzing system, DR. FUZZ, that does not require hardware devices to fuzztest drivers. The core of DR. FUZZ is a semantic-informed mechanism that efficiently generates inputs to properly construct relevant data structures to pass the “validation chain” in driving initialization, which enables subsequent device-free driver fuzzing. The elimination of the needs for the hardware devices and the emulators removes the bottleneck in driver testing. The semanticinformed mechanism incorporates multiple new techniques to make device-free driver fuzzing practical: inferring valid input values for passing the validation chain in initialization, inferring the temporal usage order of input bytes to minimize mutation space, and employing error states as a feedback to direct the fuzzing going through the validation chain. Moreover, the semantic-informed mechanism is generic; we can also instruct it to generate semi-malformed inputs for a higher code coverage. We evaluate DR. FUZZ on 214 Linux drivers. With an only 24-hour time budget, DR. FUZZ can successfully initialize and enable most of the drivers without the corresponding devices, whereas existing fuzzers like syzkaller cannot succeed in any case. DR. FUZZ also significantly outperforms existing driver fuzzers that are even equipped with the device or emulator in other aspects: it increases the code coverage by 70% and the throughput by 18%. With DR. FUZZ, we also find 46 new bugs in these Linux drivers.
+
+
 ### SyzScope: Revealing High-Risk Security Impacts of Fuzzer-Exposed Bugs in Linux kernel  (USENIX SEC'22)
 
 * <img src="image/youtube.png">[Video](https://youtu.be/MJbqeo5qtQ0)
@@ -2286,7 +2301,14 @@ This thesis presents our attempt to attain the best of both worlds by combining 
 **Abstract:** We present hybrid concolic testing, an algorithm that interleaves random testing with concolic execution to obtain both a deep and a wide exploration of program state space. Our algorithm generates test inputs automatically by interleaving random testing until saturation with bounded exhaustive symbolic exploration of program points. It thus combines the ability of random search to reach deep program states quickly together with the ability of concolic testing to explore states in a neighborhood exhaustively. We have implemented our algorithm on top of CUTE and applied it to obtain better branch coverage for an editor implementation (VIM 5.7, 150K lines of code) as well as a data structure implementation in C. Our experiments suggest that hybrid concolic testing can handle large programs and provide, for the same testing budget, almost 4× the branch coverage than random testing and almost 2× that of concolic testing.
 
 
-# Coverage \ Path \ Magic bytes \ Checksum
+# Mutation\Coverage\Path
+
+### One Fuzzing Strategy to Rule Them All (ICSE 2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://shadowmydx.github.io/papers/icse22-main-1314.pdf)
+
+**Abstract:** Coverage-guided fuzzing has become mainstream in fuzzing to automatically expose program vulnerabilities. Recently, a group of fuzzers are proposed to adopt a random search mechanism namely Havoc, explicitly or implicitly, to augment their edge exploration. However, they only tend to adopt the default setup of Havoc as an implementation option while none of them attempts to explore its power under diverse setups or inspect its rationale for potential improvement. In this paper, to address such issues, we conduct the first empirical study on Havoc to enhance the understanding of its characteristics. Specifically, we first find that applying the default setup of Havoc to fuzzers can significantly improve their edge coverage performance. Interestingly, we further observe that even simply executing Havoc itself without appending it to any fuzzer can lead to strong edge coverage performance and outperform most of our studied fuzzers. Moreover, we also extend the execution time of Havoc and find that most fuzzers can not only achieve significantly higher edge coverage, but also tend to perform similarly (i.e., their performance gaps get largely bridged). Inspired by the findings, we further propose Havoc𝑀𝐴𝐵, which models the Havoc mutation strategy as a multi-armed bandit problem to be solved by dynamically adjusting the mutation strategy. The evaluation result presents that Havoc𝑀𝐴𝐵 can significantly increase the edge coverage by 11.1% on average for all the benchmark projects compared with Havoc and even slightly outperform state-of-the-art QSYM which augments its computing resource by adopting three parallel threads. We further execute Havoc𝑀𝐴𝐵 with three parallel threads and result in 9% higher average edge coverage over QSYM upon all the benchmark projects.
+
 
 ### BeDivFuzz: Integrating Behavioral Diversity into Generator-based Fuzzing (ICSE 2022)
 
@@ -3281,6 +3303,13 @@ AddressSanitizer achieves efficiency without sacrificing comprehensiveness. Its 
 
 # Schedule (Power & Mutation)
 
+### MobFuzz: Adaptive Multi-objective Optimization in Gray-box Fuzzing (NDSS 2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.ndss-symposium.org/wp-content/uploads/2022-314-paper.pdf)
+
+**Abstract:** Coverage-guided gray-box fuzzing (CGF) is an efficient software testing technique. There are usually multiple objectives to optimize in CGF. However, existing CGF methods cannot successfully find the optimal values for multiple objectives simultaneously. In this paper, we propose a gray-box fuzzer for multi-objective optimization (MOO) called MobFuzz. We model the multi-objective optimization process as a multi-player multi-armed bandit (MPMAB). First, it adaptively selects the objective combination that contains the most appropriate objectives for the current situation. Second, our model deals with the power schedule, which adaptively allocates energy to the seeds under the chosen objective combination. In MobFuzz, we propose an evolutionary algorithm called NIC to optimize our chosen objectives simultaneously without incurring additional performance overhead. To prove the effectiveness of MobFuzz, we conduct experiments on 12 real-world programs and the MAGMA data set. Experiment results show that multi-objective optimization in MobFuzz outperforms single-objective fuzzing in the baseline fuzzers. In contrast to them, MobFuzz can select the optimal objective combination and increase the values of multiple objectives up to 107%, with at most a 55% reduction in the energy consumption. Moreover, MobFuzz has up to 6% more program coverage and finds 3x more unique bugs than the baseline fuzzers. The NIC algorithm has at least a 2x improvement with a performance overhead of approximately 3%.
+
+
 ### Effective Seed Scheduling for Fuzzing with Graph Centrality Analysis (S&P 2022)
 
 * <img src="image/pdf_24px.png">[Paper](https://arxiv.org/abs/2203.12064)
@@ -3627,6 +3656,19 @@ We introduce DeepSmith, a novel machine learning approach to accelerating compil
 
 # Data Flow Sensitive Fuzzing
 
+### datAFLow: Towards a Data-Flow-Guided Fuzzer (NDSS 2022)
+
+* <img src="image/github_24px.png">[Code](https://github.com/HexHive/datAFLow)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.ndss-symposium.org/wp-content/uploads/fuzzing2022_23001_paper.pdf)
+
+**Abstract:** Coverage-guided greybox fuzzers rely on feedback derived from control-flow coverage to explore a target program and uncover bugs. This is despite control-flow feedback offering only a coarse-grained approximation of program behavior. Data flow intuitively more-accurately characterizes program behavior. Despite this advantage, fuzzers driven by data-flow coverage have received comparatively little attention, appearing mainly when heavyweight program analyses (e.g., taint analysis, symbolic execution) are used. Unfortunately, these more accurate analyses incur a high run-time penalty, impeding fuzzer throughput. Lightweight data-flow alternatives to control-flow fuzzing remain unexplored.
+
+We present DATAFLOW, a greybox fuzzer driven by lightweight data-flow profiling. Whereas control-flow edges represent the order of operations in a program, data-flow edges capture the dependencies between operations that produce data values and the operations that consume them: indeed, there may be no control dependence between those operations. As such, data-flow coverage captures behaviors not visible as control flow and intuitively discovers more or different bugs. Moreover, we establish a framework for reasoning about data-flow coverage, allowing the computational cost of exploration to be balanced with precision.
+
+We perform a preliminary evaluation of DATAFLOW, comparing fuzzers driven by control flow, taint analysis (both approximate and exact), and data flow. Our initial results suggest that, so far, pure coverage remains the best coverage metric for uncovering bugs in most targets we fuzzed (72 % of them). However, data-flow coverage does show promise in targets where control flow is decoupled from semantics (e.g., parsers). Further evaluation and analysis on a wider range of targets is required.
+
+
 ### ovAFLow: Detecting Memory Corruption Bugs with Fuzzing-based Taint Inference (Journal of Computer Science and Technology 2021)
 
 * <img src="image/pdf_24px.png">[Paper](https://jcst.ict.ac.cn/EN/10.1007/s11390-021-1600-9)
@@ -3653,17 +3695,6 @@ We introduce DeepSmith, a novel machine learning approach to accelerating compil
 
 We implemented a prototype of GREYONE and evaluated it on the LAVA data set and 19 real-world programs. The results showed that it outperforms various state-of-the-art fuzzers in terms of both code coverage and vulnerability discovery. In the LAVA data set, GREYONE found all listed bugs and 336 more unlisted. In real-world programs, GREYONE on average found 2.12X unique program paths and 3.09X unique bugs than state-of-the-art evolutionary fuzzers, including AFL, VUzzer, CollAFL, Angora and Honggfuzz, Moreover, GREYONE on average found 1.2X unique program paths and 1.52X unique bugs than a state-of-the-art symbolic execution assisted fuzzer QSYM. In total, it found 105 new security bugs, of which 41 are confirmed by CVE.
 
-### datAFLow: Towards a Data-Flow-Guided Fuzzer (NDSS 2022)
-
-* <img src="image/github_24px.png">[Code](https://github.com/HexHive/datAFLow)
-
-* <img src="image/pdf_24px.png">[Paper](https://www.ndss-symposium.org/wp-content/uploads/fuzzing2022_23001_paper.pdf)
-
-**Abstract:** Coverage-guided greybox fuzzers rely on feedback derived from control-flow coverage to explore a target program and uncover bugs. This is despite control-flow feedback offering only a coarse-grained approximation of program behavior. Data flow intuitively more-accurately characterizes program behavior. Despite this advantage, fuzzers driven by data-flow coverage have received comparatively little attention, appearing mainly when heavyweight program analyses (e.g., taint analysis, symbolic execution) are used. Unfortunately, these more accurate analyses incur a high run-time penalty, impeding fuzzer throughput. Lightweight data-flow alternatives to control-flow fuzzing remain unexplored.
-
-We present DATAFLOW, a greybox fuzzer driven by lightweight data-flow profiling. Whereas control-flow edges represent the order of operations in a program, data-flow edges capture the dependencies between operations that produce data values and the operations that consume them: indeed, there may be no control dependence between those operations. As such, data-flow coverage captures behaviors not visible as control flow and intuitively discovers more or different bugs. Moreover, we establish a framework for reasoning about data-flow coverage, allowing the computational cost of exploration to be balanced with precision.
-
-We perform a preliminary evaluation of DATAFLOW, comparing fuzzers driven by control flow, taint analysis (both approximate and exact), and data flow. Our initial results suggest that, so far, pure coverage remains the best coverage metric for uncovering bugs in most targets we fuzzed (72 % of them). However, data-flow coverage does show promise in targets where control flow is decoupled from semantics (e.g., parsers). Further evaluation and analysis on a wider range of targets is required.
 
 
 # Binary Fuzzing
@@ -3861,6 +3892,17 @@ We instantiate our approach to the problem of fuzzing smart contracts, a domain 
 
 # Constraint Solving
 
+### JIGSAW: Efficient and Scalable Path Constraints Fuzzing (S&P 2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.cs.ucr.edu/~heng/pubs/jigsaw_sp22.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/R-Fuzz/jigsaw)
+
+**Abstract:** Coverage-guided testing has shown to be an effective way to find bugs. If we model coverage-guided testing as a search problem (i.e., finding inputs that can cover more branches), then its efficiency mainly depends on two factors: (1) the accuracy of the searching algorithm and (2) the number of inputs that can be evaluated per unit time. Therefore, improving the search throughput has shown to be an effective way to improve the performance of coverage-guided testing.
+
+In this work, we present a novel design to improve the search throughput: by evaluating newly generated inputs with JIT-compiled path constraints. This approach allows us to significantly improve the single thread throughput as well as scaling to multiple cores. We also developed several optimization techniques to eliminate major bottlenecks during this process. Evaluation of our prototype JIGSAW shows that our approach can achieve three orders of magnitude higher search throughput than existing fuzzers and can scale to multiple cores. We also find that with such high throughput, a simple gradient-guided search heuristic can solve path constraints collected from a large set of real-world programs faster than SMT solvers with much more sophisticated search heuristics. Evaluation of end-to-end coverage-guided testing also shows that our JIGSAW-powered hybrid fuzzer can outperform state-of-the-art testing tools.
+
+
 ### Fuzzing Symbolic Expressions (ICSE 2021)
 
 * <img src="image/pdf_24px.png">[Paper](https://conf.researchr.org/details/icse-2021/icse-2021-papers/23/Fuzzing-Symbolic-Expressions)
@@ -3909,6 +3951,15 @@ We evaluate QFuzz on a large set of benchmarks from existing work and real-world
 
 
 # Concurrency Fuzzing
+
+### Context-Sensitive and Directional Concurrency Fuzzing for Data-Race Detection (NDSS 2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.ndss-symposium.org/wp-content/uploads/2022-296-paper.pdf)
+
+**Abstract:** Fuzzing is popular for bug detection and vulnerability discovery nowadays. To adopt fuzzing for concurrency problems like data races, several recent concurrency fuzzing approaches consider concurrency information of program execution, and explore thread interleavings by affecting threads scheduling at runtime. However, these approaches are still limited in data-race detection. On the one hand, they fail to consider the execution contexts of thread interleavings, which can miss real data races in specific runtime contexts. On the other hand, they perform random thread-interleaving exploration, which frequently repeats already covered thread interleavings and misses many infrequent thread interleavings.
+
+In this paper, we develop a novel concurrency fuzzing framework named CONZZER, to effectively explore thread interleavings and detect hard-to-find data races. The core of CONZZER is a context-sensitive and directional concurrency fuzzing approach for thread-interleaving exploration, with two new techniques. First, to ensure context sensitivity, we propose a new concurrencycoverage metric, concurrent call pair, to describe thread interleavings with runtime calling contexts. Second, to directionally explore thread interleavings, we propose an adjacency-directed mutation to generate new possible thread interleavings with already covered thread interleavings and then use a breakpoint-control method to attempt to actually cover them at runtime. With these two techniques, this concurrency fuzzing approach can effectively cover infrequent thread interleavings with concrete context information, to help discover hard-to-find data races. We have evaluated CONZZER on 8 user-level applications and 4 kernel-level filesystems, and found 95 real data races. We identify 75 of these data races to be harmful and send them to related developers, and 44 have been confirmed. We also compare CONZZER to existing fuzzing tools, and CONZZER continuously explores more thread interleavings and finds many real data races missed by these tools.
+
 
 ### Controlled Concurrency Testing via Periodical Scheduling (ICSE 2022)
 

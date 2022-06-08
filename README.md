@@ -28,6 +28,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [JIGSAW: Efficient and Scalable Path Constraints Fuzzing](#jigsaw-efficient-and-scalable-path-constraints-fuzzing-sp-2022)
 
 - **NDSS 2022**
+  - [Cooper: Testing the Binding Code of Scripting Languages with Cooperative Mutation](#cooper-testing-the-binding-code-of-scripting-languages-with-cooperative-mutation-ndss-2022)
   - [EMS: History-Driven Mutation for Coverage-based Fuzzing](#ems-history-driven-mutation-for-coverage-based-fuzzing-ndss-2022)
   - [Semantic-Informed Driver Fuzzing Without Both the Hardware Devices and the Emulators](#semantic-informed-driver-fuzzing-without-both-the-hardware-devices-and-the-emulators-icse-2022)
   - [MobFuzz: Adaptive Multi-objective Optimization in Gray-box Fuzzing](#mobfuzz-adaptive-multi-objective-optimization-in-gray-box-fuzzing-ndss-2022)
@@ -714,6 +715,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [VUzzer: Application-aware Evolutionary Fuzzing (NDSS 2017)](#vuzzer-application-aware-evolutionary-fuzzing-ndss-2017)
   
 - [**Grammars \ Semantic \ Context-aware Fuzzing**](#grammars--semantic--context-aware-fuzzing)
+  - [Cooper: Testing the Binding Code of Scripting Languages with Cooperative Mutation (NDSS 2022)](#cooper-testing-the-binding-code-of-scripting-languages-with-cooperative-mutation-ndss-2022)
   - [Fuzzing Class Specifications (ICSE 2022)](#fuzzing-class-specifications-icse-2022)
   - [Efficient ECU Analysis Technology through Structure-aware CAN Fuzzing (Access 2022)](#efficient-ecu-analysis-technology-through-structure-aware-can-fuzzing-access-2022)
   - [Semantic Image Fuzzing of AI Perception Systems](#semantic-image-fuzzing-of-ai-perception-systems)
@@ -2451,6 +2453,17 @@ In this paper, we present an application-aware evolutionary fuzzing strategy tha
 
 
 # Grammars \ Semantic \ Context-aware Fuzzing
+
+### Cooper: Testing the Binding Code of Scripting Languages with Cooperative Mutation (NDSS 2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://huhong789.github.io/papers/xu:cooper.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/TCA-ISCAS/Cooper)
+
+**Abstract:** Scripting languages like JavaScript are being integrated into commercial software to support easy file modification. For example, Adobe Acrobat accepts JavaScript to dynamically manipulate PDF files. To bridge the gap between the high-level scripts and the low-level languages (like C/C++) used to implement the software, a binding layer is necessary to transfer data and transform representations. However, due to the complexity of two sides, the binding code is prone to inconsistent semantics and security holes, which lead to severe vulnerabilities. Existing efforts for testing binding code merely focus on the script side, and thus miss bugs that require special program native inputs.
+
+In this paper, we propose cooperative mutation, which modifies both the script code and the program native input to trigger bugs in binding code. Our insight is that many bugs are due to the interplay between the program initial state and the dynamic operations, which can only be triggered through two-dimensional mutations. We develop three novel techniques to enable practical cooperative mutation on popular scripting languages: we first cluster objects into semantics similar classes to reduce the mutation space of native inputs; then, we statistically infer the relationship between script code and object classes based on a large number of executions; at last, we use the inferred relationship to select proper objects and related script code for targeted mutation. We applied our tool, COOPER, on three popular systems that integrate scripting languages, including Adobe Acrobat, Foxit Reader and Microsoft Word. COOPER successfully found 134 previously unknown bugs. We have reported all of them to the developers. At the time of paper publishing, 59 bugs have been fixed and 33 of them are assigned CVE numbers. We are awarded totally 22K dollars bounty for 17 out of all reported bugs.
+
 
 ### Fuzzing Class Specifications (ICSE 2022)
 

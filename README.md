@@ -479,6 +479,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
 
 - **Other 2018**
   - [FuzzerGym: A Competitive Framework for Fuzzing and Learning](#fuzzergym-a-competitive-framework-for-fuzzing-and-learning-arxiv-2018)
+  - [MTF-Storm: a high performance fuzzer for Modbus/TCP](#MTF-Storm-a-high-performance-fuzzer-for-Modbus-TCP-ETFA-2018)
 
 - **S&P 2017**
   - [NEZHA: Efficient Domain-Independent Differential Testing](#nezha-efficient-domain-independent-differential-testing-sp-2017)
@@ -531,6 +532,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
 - **Others**
   - [Test Data Generation for Stateful Network Protocol Fuzzing Using a Rule-Based State Machine](#test-data-generation-for-stateful-network-protocol-fuzzing-using-a-rule-based-state-machine-2016)
   - [PULSAR: Stateful Black-Box Fuzzing of Proprietary Network Protocols](#pulsar-stateful-black-box-fuzzing-of-proprietary-network-protocols-springer-cham-2015)
+  -  [A Modbus/TCP Fuzzer for testing internetworked industrial systems](#A Modbus-TCP-Fuzzer-for-testing-internetworked-industrial-systems-ETFA-2015)
   - [SECFUZZ: Fuzz-testing Security Protocols](#secfuzz-fuzz-testing-security-protocols-ast-2012)
   - [AutoFuzz: Automated Network Protocol Fuzzing Framewor](#autofuzz-automated-network-protocol-fuzzing-framework-ijcsns-2010)
 
@@ -622,9 +624,11 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [FIRM-AFL: High-Throughput Greybox Fuzzing of IoT Firmware via Augmented Process Emulation (USENIX Security2019)](#firm-afl-high-throughput-greybox-fuzzing-of-iot-firmware-via-augmented-process-emulation-usenix-security2019)
   - [Exploring Effective Fuzzing Strategies to Analyze Communication Protocols (FEAST 2019)](#exploring-effective-fuzzing-strategies-to-analyze-communication-protocols-feast-2019)
   - [Leveraging Textual Specifications for Grammar-Based Fuzzing of Network Protocols (AAAI 2019)](#leveraging-textual-specifications-for-grammar-based-fuzzing-of-network-protocols-aaai-2019)
+  - [MTF-Storm: a high performance fuzzer for Modbus/TCP (ETFA 2018)](#MTF-Storm-a-high-performanc-fuzzer-fo-Modbus-TCP-ETFA-2018)
   - [IoTFuzzer: Discovering Memory Corruptions in IoT Through App-based Fuzzing (NDSS 2018)](#iotfuzzer-discovering-memory-corruptions-in-iot-through-app-based-fuzzing-ndss-2018)
   - [Bbuzz: A Bit-aware Fuzzing Framework for Network Protocol Systematic Reverse Engineering and Analysis (MCC 2017)](#bbuzz-a-bit-aware-fuzzing-framework-for-network-protocol-systematic-reverse-engineering-and-analysis-mcc-2017)
   - [Test Data Generation for Stateful Network Protocol Fuzzing Using a Rule-Based State Machine (2016)](#test-data-generation-for-stateful-network-protocol-fuzzing-using-a-rule-based-state-machine-2016)
+  -  [A Modbus/TCP Fuzzer for testing internetworked industrial systems (ETFA 2015)](#A-Modbus-TCP-Fuzzer-for-testing-internetworked-industrial-systems-ETFA-2015)
   - [Protocol State Fuzzing of TLS Implementations (USENIX Security2015)](#protocol-state-fuzzing-of-tls-implementations-usenix-security2015)
   - [PULSAR: Stateful Black-Box Fuzzing of Proprietary Network Protocols (Springer, Cham, 2015)](#pulsar-stateful-black-box-fuzzing-of-proprietary-network-protocols-springer-cham-2015)
   - [SECFUZZ: Fuzz-testing Security Protocols (AST 2012)](#secfuzz-fuzz-testing-security-protocols-ast-2012)
@@ -1605,6 +1609,14 @@ In this paper, we propose to equip the traditional protocol fuzzing with coverag
 **Abstract:** Fuzzing is an effective approach to detect software vulnerabilities utilizing changeable generated inputs. However, fuzzing the network protocol on the firmware of IoT devices is limited by inefficiency of test case generation, cross‐architecture instrumentation, and fault detection. In this article, we propose the Fw‐fuzz, a coverage‐guided and crossplatform framework for fuzzing network services running in the context of firmware on embedded architectures, which can generate more valuable test cases by introspecting program runtime information and using a genetic algorithm model. Specifically, we propose novel dynamic instrumentation in Fw‐fuzz to collect the running state of the firmware program. Then Fw‐fuzz adopts a genetic algorithm model to guide the generation of inputs with high code coverage. We fully implement the prototype system of Fw‐fuzz and conduct evaluations on network service programs of various architectures in MIPS, ARM, and PPC. By comparing with the protocol fuzzers Boofuzz and Peach in metrics of edge coverage, our prototype system achieves an average growth of 33.7% and 38.4%, respectively. We further verify six known vulnerabilities and discover 5 0‐day vulnerabilities with the Fw‐fuzz, which prove the validity and utility of our framework. The overhead of our system expressed as an additional 5% of memory growth.
 
 
+### BaseSAFE: Baseband SAnitized Fuzzing through Emulation (WiSec 2020)
+
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2005.07797.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/fgsect/BaseSAFE)
+
+**Abstract:** Rogue base stations are an effective attack vector. Cellular basebands represent a critical part of the smartphone’s security: they parse large amounts of data even before authentication. They can, therefore, grant an attacker a very stealthy way to gather information about calls placed and even to escalate to the main operating system, over-the-air. In this paper, we discuss a novel cellular fuzzing framework that aims to help security researchers find critical bugs in cellular basebands and similar embedded systems. BaseSAFE allows partial rehosting of cellular basebands for fast instrumented fuzzing off-device, even for closed-source firmware blobs. BaseSAFE’s sanitizing drop-in allocator, enables spotting heap-based buffer-overflows quickly. Using our proof-of-concept harness, we fuzzed various parsers of the Nucleus RTOS-based MediaTek cellular baseband that are accessible from rogue base stations. The emulator instrumentation is highly optimized, reaching hundreds of executions per second on each core for our complex test case, around 15k test-cases per second in total. Furthermore, we discuss attack vectors for baseband modems. To the best of our knowledge, this is the first use of emulation-based fuzzing for security testing of commercial cellular basebands. Most of the tooling and approaches of BaseSAFE are also applicable for other low-level kernels and firmware. Using BaseSAFE, we were able to find memory corruptions including heap out-of-bounds writes using our proof-of-concept fuzzing harness in the MediaTek cellular baseband. BaseSAFE, the harness, and a large collection of LTE signaling message test cases will be released open-source upon publication of this paper.
+
 ### Poster: Fuzzing IoT Firmware via Multi-stage Message Generation (CCS 2019)
 
 * <img src="image/pdf_24px.png">[Paper](https://wpengfei.github.io/iothunter-final.pdf)
@@ -1647,18 +1659,6 @@ utility of our framework.
 
 **Abstract:** Cyber attacks against IoT devices are a severe threat. These attacks exploit software vulnerabilities in IoT firmware. Fuzzing is an effective software testing technique for vulnerability discovery. In this work, we present FIRM-AFL, the first high-throughput grey box fuzzer for IoT firmware. FIRMAFL addresses two fundamental problems in IoT fuzzing. First, it addresses compatibility issues by enabling fuzzing for POSIX-compatible firmware that can be emulated in a system emulator. Second, it addresses the performance bottleneck caused by system-mode emulation with a novel technique called augmented process emulation. By combining system mode emulation and user-mode emulation in a novel way, augmented process emulation provides high compatibility as system-mode emulation and high throughput as user-mode emulation. Our evaluation results show that (1) FIRM-AFL is fully functional and capable of finding real-world vulnerabilities in IoT programs; (2) the throughput of FIRM-AFL is on average 8.2 times higher than system-mode emulation based fuzzing; and (3) FIRM-AFL is able to find 1-day vulnerabilities much faster than system-mode emulation based fuzzing, and is able to find 0-day vulnerabilities.
 
-
-### Advancing Protocol Fuzzing for Industrial Automation and Control Systems (ICISSP 2018)
-
-* <img src="image/pdf_24px.png">[Paper](./Paper/ICISSP18_Advancing.pdf)
-
-**Abstract:** Testing for security vulnerabilities is playing an important role in the changing domain of industrial automation and control systems. These systems are increasingly connected to each other via networking technology and are faced with new cyber threats. To improve the security properties of such systems, their robustness must be ensured. Security testing frameworks aim at enabling the assurance of robustness even at the time of development and can play a key role in bringing security into the industrial domain.
-
-Fuzzing describes a technique to discover vulnerabilities in technical systems and is best known from its usage in IT security testing. It uses randomly altered data to provoke unexpected behaviour and can be used in combination with regular unit testing. Combined with the power of fuzzing, the effectiveness of security testing frameworks can be increased. 
-
-In this work, different fuzzing tools were evaluated for their properties and then compared with the requirements for an application in the industrial domain. As no fuzzer was fully satisfying these requirements, a new fuzzer, combining the strength of different others, was designed and implemented, and then evaluated. The evaluation includes a real-world application where multiple vulnerabilities in industrial automation components could be identified.
-
-
 ### Exploring Effective Fuzzing Strategies to Analyze Communication Protocols (FEAST 2019)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/FEAST19_Exploring.pdf)
@@ -1673,6 +1673,26 @@ In this work, different fuzzing tools were evaluated for their properties and th
 **Abstract:** Grammar-based fuzzing is a technique used to find software vulnerabilities by injecting well-formed inputs generated following rules that encode application semantics. Most grammar-based fuzzers for network protocols rely on human experts to manually specify these rules. In this work we study automated learning of protocol rules from textual specifications (i.e. RFCs). We evaluate the automatically extracted protocol rules by applying them to a state-of-the-art fuzzer for transport protocols and show that it leads to a smaller number of test cases while finding the same attacks as the system that uses manually specified rules.
 
 
+### MTF-Storm: a high performance fuzzer for Modbus/TCP (ETFA 2018)
+
+* <img src="image/pdf_24px.png">[Paper](https://doi.org/10.1109/ETFA.2018.8502600)
+
+* <img src="image/github_24px.png">[Code](https://github.com/ntinosk-mtf/etfa2018)
+
+**Abstract:**  MTF-Storm is a highly effective fuzzer for industrial systems employing Modbus/TCP connectivity. It achieves high fault coverage, while offering high performance and quick testing of the System-Under-Test (SUT). Analogously to its predecessor MTF, MTF-Storm operates in 3 phases: a) reconnaissance b) fuzz testing and failure detection. Reconnaissance identifies the memory organization of the SUT and the supported functionality, enabling selection and synthesis of fuzz testing sequences that are effective for the specific SUT. MTF-Storm develops its test sequences systematically, starting  with single field tests and proceeding with combined field tests, adopting techniques for automated combinatorial software testing and reducing the test space through partitioning field value ranges. MTF-Storm has been used to evaluate 9 different Modbus/TCP implementations and has identified issues with all of them, ranging from out-of-spec responses to successful denial-of-service attacks and crashes.
+
+
+### Advancing Protocol Fuzzing for Industrial Automation and Control Systems (ICISSP 2018)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/ICISSP18_Advancing.pdf)
+
+**Abstract:** Testing for security vulnerabilities is playing an important role in the changing domain of industrial automation and control systems. These systems are increasingly connected to each other via networking technology and are faced with new cyber threats. To improve the security properties of such systems, their robustness must be ensured. Security testing frameworks aim at enabling the assurance of robustness even at the time of development and can play a key role in bringing security into the industrial domain.
+
+Fuzzing describes a technique to discover vulnerabilities in technical systems and is best known from its usage in IT security testing. It uses randomly altered data to provoke unexpected behaviour and can be used in combination with regular unit testing. Combined with the power of fuzzing, the effectiveness of security testing frameworks can be increased. 
+
+In this work, different fuzzing tools were evaluated for their properties and then compared with the requirements for an application in the industrial domain. As no fuzzer was fully satisfying these requirements, a new fuzzer, combining the strength of different others, was designed and implemented, and then evaluated. The evaluation includes a real-world application where multiple vulnerabilities in industrial automation components could be identified.
+
+
 ### IoTFuzzer: Discovering Memory Corruptions in IoT Through App-based Fuzzing (NDSS 2018)
 
 * <img src="image/GoSSIP_note.jpg">[Reading Note](https://securitygossip.com/blog/2018/06/15/iotfuzzer-discovering-memory-corruptions-in-iot-through-app-based-fuzzing/)
@@ -1682,15 +1702,6 @@ In this work, different fuzzing tools were evaluated for their properties and th
 * <img src="image/ppt_24px.png">[Slides](./Paper/NDSS18_IoTFuzzer_Slides.pdf)
 
 **Abstract:** With more IoT devices entering the consumer market, it becomes imperative to detect their security vulnerabilities before an attacker does. Existing binary analysis based approaches only work on firmware, which is less accessible except for those equipped with special tools for extracting the code from the device. To address this challenge in IoT security analysis, we present in this paper a novel automatic fuzzing framework, called IOTFUZZER, which aims at finding memory corruption vulnerabilities in IoT devices without access to their firmware images. The key idea is based upon the observation that most IoT devices are controlled through their official mobile apps, and such an app often contains rich information about the protocol it uses to communicate with its device. Therefore, by identifying and reusing program-specific logic (e.g., encryption) to mutate the test case (particularly message fields), we are able to effectively probe IoT targets without relying on any knowledge about its protocol specifications. In our research, we implemented IOTFUZZER and evaluated 17 real-world IoT devices running on different protocols, and our approach successfully identified 15 memory corruption vulnerabilities (including 8 previously unknown ones).
-
-
-### BaseSAFE: Baseband SAnitized Fuzzing through Emulation (WiSec 2020)
-
-* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2005.07797.pdf)
-
-* <img src="image/github_24px.png">[Code](https://github.com/fgsect/BaseSAFE)
-
-**Abstract:** Rogue base stations are an effective attack vector. Cellular basebands represent a critical part of the smartphone’s security: they parse large amounts of data even before authentication. They can, therefore, grant an attacker a very stealthy way to gather information about calls placed and even to escalate to the main operating system, over-the-air. In this paper, we discuss a novel cellular fuzzing framework that aims to help security researchers find critical bugs in cellular basebands and similar embedded systems. BaseSAFE allows partial rehosting of cellular basebands for fast instrumented fuzzing off-device, even for closed-source firmware blobs. BaseSAFE’s sanitizing drop-in allocator, enables spotting heap-based buffer-overflows quickly. Using our proof-of-concept harness, we fuzzed various parsers of the Nucleus RTOS-based MediaTek cellular baseband that are accessible from rogue base stations. The emulator instrumentation is highly optimized, reaching hundreds of executions per second on each core for our complex test case, around 15k test-cases per second in total. Furthermore, we discuss attack vectors for baseband modems. To the best of our knowledge, this is the first use of emulation-based fuzzing for security testing of commercial cellular basebands. Most of the tooling and approaches of BaseSAFE are also applicable for other low-level kernels and firmware. Using BaseSAFE, we were able to find memory corruptions including heap out-of-bounds writes using our proof-of-concept fuzzing harness in the MediaTek cellular baseband. BaseSAFE, the harness, and a large collection of LTE signaling message test cases will be released open-source upon publication of this paper.
 
 
 ### Bbuzz: A Bit-aware Fuzzing Framework for Network Protocol Systematic Reverse Engineering and Analysis (MCC 2017)
@@ -1707,7 +1718,6 @@ In this work, different fuzzing tools were evaluated for their properties and th
 **Abstract:** To improve the efficiency and coverage of stateful network protocol fuzzing, this paper proposes a new method, using a rule-based state machine and a stateful rule tree to guide the generation of fuzz testing data. The method first builds a rule-based state machine model as a formal description of the states of a network protocol. This removes safety paths, to cut down the scale of the state space. Then it uses a stateful rule tree to describe the relationship between states and messages, and then remove useless items from it. According to the message sequence obtained by the analysis of paths using the stateful rule tree and the protocol specification, an abstract data model of test case generation is defined. The fuzz testing data is produced by various generation algorithms through filling data in the fields of the data model. Using the rule-based state machine and the stateful rule tree, the quantity of test data can be reduced. Experimental results indicate that our method can discover the same vulnerabilities as traditional approaches, using less test data, while optimizing test data generation and improving test efficiency.
 
 
-
 ### Protocol State Fuzzing of TLS Implementations (USENIX Security2015)
 
 * <img src="image/youdao_note_24px.png">[Reading Note](http://note.youdao.com/noteshare?id=eb0ec80133498dd0b2e073a5174c5f0d&sub=F972E69029854C398925A5F8D5E91484)
@@ -1719,6 +1729,15 @@ In this work, different fuzzing tools were evaluated for their properties and th
 **Abstract:** We describe a largely automated and systematic analysis of TLS implementations by what we call ‘protocol state fuzzing’: we use state machine learning to infer state machines from protocol implementations, using only blackbox testing, and then inspect the inferred state machines to look for spurious behaviour which might be an indication of flaws in the program logic. For detecting the presence of spurious behaviour the approach is almost fully automatic: we automatically obtain state machines and any spurious behaviour is then trivial to see. Detecting whether the spurious behaviour introduces exploitable security weaknesses does require manual investigation. Still, we take the point of view that any spurious functionality in a security protocol implementation is dangerous and should be removed.
 
 We analysed both server- and client-side implementations with a test harness that supports several key exchange algorithms and the option of client certificate authentication. We show that this approach can catch an interesting class of implementation flaws that is apparently common in security protocol implementations: in three of the TLS implementations analysed new security flaws were found (in GnuTLS, the Java Secure Socket Extension, and OpenSSL). This shows that protocol state fuzzing is a useful technique to systematically analyse security protocol implementations. As our analysis of different TLS implementations resulted in different and unique state machines for each one, the technique can also be used for fingerprinting TLS implementations.
+
+
+### A Modbus/TCP Fuzzer for testing internetworked industrial systems (ETFA 2015)
+
+* <img src="image/pdf_24px.png">[Paper](https://doi.org/10.1109/ETFA.2015.7301400)
+
+* <img src="image/github_24px.png">[Code](https://github.com/artemiosv/etfa2015)
+
+**Abstract:** Modbus/TCP is a network protocol for industrial communications encapsulated in TCP/IP network packets. There is an increasing need to test existing Modbus protocol implementations for security vulnerabilities, as devices become accessible even from the Internet. Fuzz testing can be used to discover implementation bugs in a fast and economical way. We present the design and implementation of MTF, a Modbus/TCP Fuzzer. The MTF incorporates a reconnaissance phase in the testing procedure so as to assist mapping the capabilities of the tested device and to adjust the attack vectors towards a more guided and informed testing rather than plain random testing. The MTF was used to test eight implementations of the Modbus protocol and revealed bugs and vulnerabilities that crash the execution, effectively resulting in denial of service attacks using only a few network packets.
 
 
 ### PULSAR: Stateful Black-Box Fuzzing of Proprietary Network Protocols (Springer, Cham, 2015)

@@ -479,7 +479,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
 
 - **Other 2018**
   - [FuzzerGym: A Competitive Framework for Fuzzing and Learning](#fuzzergym-a-competitive-framework-for-fuzzing-and-learning-arxiv-2018)
-  - [MTF-Storm: a high performance fuzzer for Modbus/TCP](#MTF-Storm-a-high-performance-fuzzer-for-Modbus-TCP-ETFA-2018)
+  - [MTF-Storm: a high performance fuzzer for Modbus-TCP](#MTF-Storm-a-high-performance-fuzzer-for-Modbus-TCP-ETFA-2018)
 
 - **S&P 2017**
   - [NEZHA: Efficient Domain-Independent Differential Testing](#nezha-efficient-domain-independent-differential-testing-sp-2017)
@@ -532,7 +532,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
 - **Others**
   - [Test Data Generation for Stateful Network Protocol Fuzzing Using a Rule-Based State Machine](#test-data-generation-for-stateful-network-protocol-fuzzing-using-a-rule-based-state-machine-2016)
   - [PULSAR: Stateful Black-Box Fuzzing of Proprietary Network Protocols](#pulsar-stateful-black-box-fuzzing-of-proprietary-network-protocols-springer-cham-2015)
-  -  [A Modbus/TCP Fuzzer for testing internetworked industrial systems](#A-Modbus-TCP-Fuzzer-for-testing-internetworked-industrial-systems-ETFA-2015)
+  -  [A Modbus-TCP Fuzzer for testing internetworked industrial systems](#A-Modbus-TCP-Fuzzer-for-testing-internetworked-industrial-systems-ETFA-2015)
   - [SECFUZZ: Fuzz-testing Security Protocols](#secfuzz-fuzz-testing-security-protocols-ast-2012)
   - [AutoFuzz: Automated Network Protocol Fuzzing Framewor](#autofuzz-automated-network-protocol-fuzzing-framework-ijcsns-2010)
 
@@ -624,11 +624,11 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [FIRM-AFL: High-Throughput Greybox Fuzzing of IoT Firmware via Augmented Process Emulation (USENIX Security2019)](#firm-afl-high-throughput-greybox-fuzzing-of-iot-firmware-via-augmented-process-emulation-usenix-security2019)
   - [Exploring Effective Fuzzing Strategies to Analyze Communication Protocols (FEAST 2019)](#exploring-effective-fuzzing-strategies-to-analyze-communication-protocols-feast-2019)
   - [Leveraging Textual Specifications for Grammar-Based Fuzzing of Network Protocols (AAAI 2019)](#leveraging-textual-specifications-for-grammar-based-fuzzing-of-network-protocols-aaai-2019)
-  - [MTF-Storm: a high performance fuzzer for Modbus/TCP (ETFA 2018)](#MTF-Storm-a-high-performanc-fuzzer-fo-Modbus-TCP-ETFA-2018)
+  - [MTF-Storm: a high performance fuzzer for Modbus/TCP (ETFA 2018)](#MTF-Storm-a-high-performance-fuzzer-Modbus-TCP-ETFA-2018)
   - [IoTFuzzer: Discovering Memory Corruptions in IoT Through App-based Fuzzing (NDSS 2018)](#iotfuzzer-discovering-memory-corruptions-in-iot-through-app-based-fuzzing-ndss-2018)
   - [Bbuzz: A Bit-aware Fuzzing Framework for Network Protocol Systematic Reverse Engineering and Analysis (MCC 2017)](#bbuzz-a-bit-aware-fuzzing-framework-for-network-protocol-systematic-reverse-engineering-and-analysis-mcc-2017)
   - [Test Data Generation for Stateful Network Protocol Fuzzing Using a Rule-Based State Machine (2016)](#test-data-generation-for-stateful-network-protocol-fuzzing-using-a-rule-based-state-machine-2016)
-  -  [A Modbus/TCP Fuzzer for testing internetworked industrial systems (ETFA 2015)](#A-Modbus-TCP-Fuzzer-for-testing-internetworked-industrial-systems-ETFA-2015)
+  -  [A Modbus-TCP Fuzzer for testing internetworked industrial systems (ETFA 2015)](#A-Modbus-TCP-Fuzzer-for-testing-internetworked-industrial-systems-ETFA-2015)
   - [Protocol State Fuzzing of TLS Implementations (USENIX Security2015)](#protocol-state-fuzzing-of-tls-implementations-usenix-security2015)
   - [PULSAR: Stateful Black-Box Fuzzing of Proprietary Network Protocols (Springer, Cham, 2015)](#pulsar-stateful-black-box-fuzzing-of-proprietary-network-protocols-springer-cham-2015)
   - [SECFUZZ: Fuzz-testing Security Protocols (AST 2012)](#secfuzz-fuzz-testing-security-protocols-ast-2012)
@@ -1673,7 +1673,7 @@ utility of our framework.
 **Abstract:** Grammar-based fuzzing is a technique used to find software vulnerabilities by injecting well-formed inputs generated following rules that encode application semantics. Most grammar-based fuzzers for network protocols rely on human experts to manually specify these rules. In this work we study automated learning of protocol rules from textual specifications (i.e. RFCs). We evaluate the automatically extracted protocol rules by applying them to a state-of-the-art fuzzer for transport protocols and show that it leads to a smaller number of test cases while finding the same attacks as the system that uses manually specified rules.
 
 
-### MTF-Storm: a high performance fuzzer for Modbus/TCP (ETFA 2018)
+### MTF-Storm: a high performance fuzzer for Modbus-TCP (ETFA 2018)
 
 * <img src="image/pdf_24px.png">[Paper](https://doi.org/10.1109/ETFA.2018.8502600)
 
@@ -1731,7 +1731,7 @@ In this work, different fuzzing tools were evaluated for their properties and th
 We analysed both server- and client-side implementations with a test harness that supports several key exchange algorithms and the option of client certificate authentication. We show that this approach can catch an interesting class of implementation flaws that is apparently common in security protocol implementations: in three of the TLS implementations analysed new security flaws were found (in GnuTLS, the Java Secure Socket Extension, and OpenSSL). This shows that protocol state fuzzing is a useful technique to systematically analyse security protocol implementations. As our analysis of different TLS implementations resulted in different and unique state machines for each one, the technique can also be used for fingerprinting TLS implementations.
 
 
-### A Modbus/TCP Fuzzer for testing internetworked industrial systems (ETFA 2015)
+### A Modbus-TCP Fuzzer for testing internetworked industrial systems (ETFA 2015)
 
 * <img src="image/pdf_24px.png">[Paper](https://doi.org/10.1109/ETFA.2015.7301400)
 

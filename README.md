@@ -532,7 +532,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
 - **Others**
   - [Test Data Generation for Stateful Network Protocol Fuzzing Using a Rule-Based State Machine](#test-data-generation-for-stateful-network-protocol-fuzzing-using-a-rule-based-state-machine-2016)
   - [PULSAR: Stateful Black-Box Fuzzing of Proprietary Network Protocols](#pulsar-stateful-black-box-fuzzing-of-proprietary-network-protocols-springer-cham-2015)
-  -  [A Modbus/TCP Fuzzer for testing internetworked industrial systems](#A Modbus-TCP-Fuzzer-for-testing-internetworked-industrial-systems-ETFA-2015)
+  -  [A Modbus/TCP Fuzzer for testing internetworked industrial systems](#A-Modbus-TCP-Fuzzer-for-testing-internetworked-industrial-systems-ETFA-2015)
   - [SECFUZZ: Fuzz-testing Security Protocols](#secfuzz-fuzz-testing-security-protocols-ast-2012)
   - [AutoFuzz: Automated Network Protocol Fuzzing Framewor](#autofuzz-automated-network-protocol-fuzzing-framework-ijcsns-2010)
 

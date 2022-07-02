@@ -660,7 +660,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [IoTFuzzer: Discovering Memory Corruptions in IoT Through App-based Fuzzing (NDSS 2018)](#iotfuzzer-discovering-memory-corruptions-in-iot-through-app-based-fuzzing-ndss-2018)
   - [Bbuzz: A Bit-aware Fuzzing Framework for Network Protocol Systematic Reverse Engineering and Analysis (MCC 2017)](#bbuzz-a-bit-aware-fuzzing-framework-for-network-protocol-systematic-reverse-engineering-and-analysis-mcc-2017)
   - [Test Data Generation for Stateful Network Protocol Fuzzing Using a Rule-Based State Machine (2016)](#test-data-generation-for-stateful-network-protocol-fuzzing-using-a-rule-based-state-machine-2016)
-  -  [A Modbus-TCP Fuzzer for testing internetworked industrial systems (ETFA 2015)](#A-Modbus-TCP-Fuzzer-for-testing-internetworked-industrial-systems-ETFA-2015)
+  - [A Modbus-TCP Fuzzer for testing internetworked industrial systems (ETFA 2015)](#A-Modbus-TCP-Fuzzer-for-testing-internetworked-industrial-systems-ETFA-2015)
   - [Protocol State Fuzzing of TLS Implementations (USENIX Security2015)](#protocol-state-fuzzing-of-tls-implementations-usenix-security2015)
   - [PULSAR: Stateful Black-Box Fuzzing of Proprietary Network Protocols (Springer, Cham, 2015)](#pulsar-stateful-black-box-fuzzing-of-proprietary-network-protocols-springer-cham-2015)
   - [SECFUZZ: Fuzz-testing Security Protocols (AST 2012)](#secfuzz-fuzz-testing-security-protocols-ast-2012)
@@ -901,7 +901,6 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [Learn&Fuzz: Machine Learning for Input Fuzzing (ASE 2017)](#learnfuzz-machine-learning-for-input-fuzzing-ase-2017)
 
 - [**Fuzzing Machine Learning Model**](#fuzzing-machine-learning-model)
-  - [Free Lunch for Testing: Fuzzing Deep-Learning Libraries from Open Source (ICSE 2022)](#free-lunch-for-testing-fuzzing-deep-learning-libraries-from-open-source-icse-2022)
   - [Muffin: Testing Deep Learning Libraries via Neural Architecture Fuzzing (ICSE 2022)](#muffin-testing-deep-learning-libraries-via-neural-architecture-fuzzing-icse-2022)
   - [RapidFuzz: Accelerating fuzzing via Generative Adversarial Networks (Neurocomputing 2021)](#rapidfuzz-accelerating-fuzzing-via-generative-adversarial-networks-neurocomputing-2021)
   - [CoCoFuzzing: Testing Neural Code Models with Coverage-Guided Fuzzing (2021)](#cocofuzzing-testing-neural-code-models-with-coverage-guided-fuzzing-2021)
@@ -972,6 +971,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [A Heuristic Framework to Detect Concurrency Vulnerabilities](#a-heuristic-framework-to-detect-concurrency-vulnerabilities-acsac-2018)
 
 - [**API Testing/Fuzzing**](#api-testingfuzzing)
+  - [Free Lunch for Testing: Fuzzing Deep-Learning Libraries from Open Source (ICSE 2022)](#free-lunch-for-testing-fuzzing-deep-learning-libraries-from-open-source-icse-2022)
   - [Combinatorial Testing of RESTful APIs (ICSE 2022)](#combinatorial-testing-of-restful-apis-icse-2022)
   - [GraphFuzz: Library API Fuzzing with Lifetime-aware Dataflow Graphs (ICSE 2022)](#graph-based-fuzz-testing-for-deep-learning-inference-engines-icse-2021)
   - [MOREST: Model-based RESTful API Testing with Execution Feedback (ICSE 2022)](#morest-model-based-restful-api-testing-with-execution-feedback-icse-2022)
@@ -3636,7 +3636,9 @@ We introduce DeepSmith, a novel machine learning approach to accelerating compil
 
 ### Free Lunch for Testing: Fuzzing Deep-Learning Libraries from Open Source (ICSE 2022)
 
-* <img src="image/pdf_24px.png">[Paper](https://conf.researchr.org/details/icse-2022/icse-2022-papers/5/Free-Lunch-for-Testing-Fuzzing-Deep-Learning-Libraries-from-Open-Source)
+* <img src="image/pdf_24px.png">[Paper](https://cs.stanford.edu/~anjiang/papers/WeiETAL22FreeFuzz.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/ise-uiuc/FreeFuzz)
 
 **Abstract:** Deep learning (DL) systems can make our life much easier, and thus is gaining more and more attention from both academia and industry. Meanwhile, bugs in DL systems can be disastrous, and can even threaten human lives in safety-critical applications. To date, a huge body of research efforts have been dedicated to testing DL models. However, interestingly, there is still limited work for testing the underlying DL libraries, which are the foundation for building, optimizing, and running the DL models. One potential reason is that test generation for the underlying DL libraries can be rather challenging since their public APIs are mainly exposed in Python, making it even hard to automatically determine the API input parameter types due to dynamic typing. In this paper, we propose FreeFuzz, the first approach to fuzzing DL libraries via mining from open source. More specifically, FreeFuzz obtains code/models from three different sources: 1) code snippets from the library documentation, 2) library developer tests, and 3) DL models in the wild. Then, FreeFuzz automatically runs all the collected code/models with instrumentation to collect the dynamic information for each covered API, including the types and values of each parameter during invocation, and shapes of input/output tensors. Lastly, FreeFuzz will leverage the traced dynamic information to perform fuzz testing for each covered API. The extensive study of FreeFuzz on PyTorch and TensorFlow, two of the most popular DL libraries, shows that FreeFuzz is able to automatically trace valid dynamic information for fuzzing 1158 popular APIs, 9X more than state-of-the-art LEMON with 3.5X lower overhead than LEMON. Furthermore, FreeFuzz is able to detect 35 bugs for PyTorch and TensorFlow (with 31 confirmed by developers).
 

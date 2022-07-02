@@ -22,10 +22,28 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [Survey of Software Fuzzing Techniques](#survey-of-software-fuzzing-techniques)
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 
+- **ISSTA 2022**
+  - [Almost Correct Invariants: Synthesizing Inductive Invariants by Fuzzing Proofs]
+  - [ocTer: Documentation-Guided Fuzzing for Testing Deep Learning API Functions]
+  - [Efficient Greybox Fuzzing of Applications in Linux-based IoT Devices via Enhanced User-mode Emulation]
+  - [MDPFuzz: Testing Models Solving Markov Decision Processes]
+  - [PrIntFuzz: Fuzzing Linux Drivers via Automated Virtual Device Simulation]
+  - [SLIME: Program-sensitive Energy Allocation for Fuzzing]
+  - [SnapFuzz: High-Throughput Fuzzing of Network Applications]
+  - [TensileFuzz: Facilitating Seed Input Generation in Fuzzing via String Constraint Solving]
+
+- **FSE 2022**
+  - [Minerva: Browser API Fuzzing with Dynamic Mod-Ref Analysis]
+  - [RoboFuzz: Fuzzing Robotic Systems over Robot Operating System (ROS) for Finding Correctness Bugs]
+  - [SEDiff: Scope-Aware Differential Fuzzing to Test Internal Function Models in Symbolic Execution]
+  - [Testing Deep-Learning Libraries via Fuzzing Relational APIs]
+    
 - **S&P 2022**
   - [Effective Seed Scheduling for Fuzzing with Graph Centrality Analysis](#effective-seed-scheduling-for-fuzzing-with-graph-centrality-analysis-sp-2022)
   - [BEACON: Directed Grey-Box Fuzzing with Provable Path Pruning](#beacon-directed-grey-box-fuzzing-with-provable-path-pruning-sp-2022)
   - [JIGSAW: Efficient and Scalable Path Constraints Fuzzing](#jigsaw-efficient-and-scalable-path-constraints-fuzzing-sp-2022)
+  - [PATA: Fuzzing with Path Aware Taint Analysis]
+  - [FuzzUSB: Hybrid Stateful Fuzzing of USB Gadget Stacks]
 
 - **NDSS 2022**
   - [Cooper: Testing the Binding Code of Scripting Languages with Cooperative Mutation](#cooper-testing-the-binding-code-of-scripting-languages-with-cooperative-mutation-ndss-2022)
@@ -37,6 +55,20 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
 
 - **USENIX SEC 2022**
   - [SyzScope: Revealing High-Risk Security Impacts of Fuzzer-Exposed Bugs in Linux kernel](#syzscope-revealing-high-risk-security-impacts-of-fuzzer-exposed-bugs-in-linux-kernel-usenix-sec22)
+  - [MundoFuzz: Hypervisor Fuzzing with Statistical Coverage Testing and Grammar Inference]
+  - [TheHuzz: Instruction Fuzzing of Processors Using Golden-Reference Models for Finding Software-Exploitable Vulnerabilities]
+  - [Morphuzz: Bending (Input) Space to Fuzz Virtual Devices]
+  - [Fuzzware: Using Precise MMIO Modeling for Effective Firmware Fuzzing]
+  - [FuzzOrigin: Detecting UXSS vulnerabilities in Browsers through Origin Fuzzing]
+  - [Drifuzz: Harvesting Bugs in Device Drivers from Golden Seeds]
+  - [Fuzzing Hardware Like Software](#fuzzing-hardware-like-software-usenix-sec-2022)
+  - [BrakTooth: Causing Havoc on Bluetooth Link Manager via Directed Fuzzing]
+  - [Stateful Greybox Fuzzing]
+  - [AmpFuzz: Fuzzing for Amplification DDoS Vulnerabilities]
+  - [SGXFuzz: Efficiently Synthesizing Nested Structures for SGX Enclave Fuzzing]
+  - [FRAMESHIFTER: Manipulating HTTP/2 Frame Sequences with Fuzzing]
+  - [FIXREVERTER: A Realistic Bug Injection Methodology for Benchmarking Fuzz Testing]
+  - [StateFuzz: System Call-Based State-Aware Linux Driver Fuzzing]
   
 - **ICSE 2022**
   - [μAFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware](#μafl-non-intrusive-feedback-driven-fuzzing-for-microcontroller-firmware-icse-2022)
@@ -211,7 +243,6 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [A Priority Based Path Searching Method for Improving Hybrid Fuzzing (Computers & Security 2021)](#a-priority-based-path-searching-method-for-improving-hybrid-fuzzing-computers--security-2021)
   - [CMFuzz: context-aware adaptive mutation for fuzzers (Empirical Software Engineering 2021)](#cmfuzz-context-aware-adaptive-mutation-for-fuzzers-empirical-software-engineering-2021)
   - [Refined Grey-Box Fuzzing with Sivo (arXiv 2021)](#refined-grey-box-fuzzing-with-sivo-arxiv-2021)
-  - [Fuzzing Hardware Like Software (arXiv 2021)](#fuzzing-hardware-like-software-arxiv-2021)
   - [Constructing More Complete Control Flow Graphs Utilizing Directed Gray-Box Fuzzing (MDPI 2021)](#constructing-more-complete-control-flow-graphs-utilizing-directed-gray-box-fuzzing-mdpi-2021)
   - [Symbolic Security Predicates: Hunt Program Weaknesses (ISPRAS Open 2021)](#symbolic-security-predicates-hunt-program-weaknesses-ispras-open-2021)
   - [Towards Symbolic Pointers Reasoning in Dynamic Symbolic Execution (IVMEM 2021)](#towards-symbolic-pointers-reasoning-in-dynamic-symbolic-execution-ivmem-2021)
@@ -957,7 +988,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
 
 - [**Hardware Fuzzing**](#hardware-fuzzing)
   - [CPU Fuzzing for Discovering Hardware-caused Information Leakage](#cpu-fuzzing-for-discovering-hardware-caused-information-leakage-2022)
-  - [Fuzzing Hardware Like Software (arXiv 2021)](#fuzzing-hardware-like-software-arxiv-2021)
+  - [Fuzzing Hardware Like Software (USENIX SEC 2022)](#fuzzing-hardware-like-software-usenix-sec-2022)
   - [DiFuzzRTL: Differential Fuzz Testing to Find CPU Bugs](#difuzzrtl-differential-fuzz-testing-to-find-cpu-bug-sp-2021)
   - [PeriScope: An Effective Probing and Fuzzing Framework for the Hardware-OS Boundary (NDSS2019)](#periscope-an-effective-probing-and-fuzzing-framework-for-the-hardware-os-boundary-ndss2019)
   
@@ -4194,7 +4225,7 @@ Our findings motivate developers to create comprehensive test suites, including 
 This talk presents our research on the automated discovery of microarchitectural attack vectors. We discuss how we developed Osiris, a fuzzing-based framework that discovers timing side channels in the CPU microarchitecture. In addition to side channels, we present Transynther, an automated approach for finding Meltdown-type transient-execution attacks and generating effective exploitation code for these attacks. Starting from a model of the Meltdown mechanism, Transynther uses a fuzzing-based approach for finding new variants based on known Meltdown-type attacks. With this approach, we did not only re-discover new ways to exploit known attacks but also discovered a new ZombieLoad variant named "Medusa". Our tools are available as open-source software and can be used to check any x86 CPU for potentially new vulnerabilities. We present different case studies based on our findings to demonstrate that the discovered vulnerabilities are indeed relevant.
 
 
-### Fuzzing Hardware Like Software (arXiv 2021)
+### Fuzzing Hardware Like Software (USENIX SEC 2022)
 
 * <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2102.02308.pdf)
 

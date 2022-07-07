@@ -58,7 +58,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [MundoFuzz: Hypervisor Fuzzing with Statistical Coverage Testing and Grammar Inference]
   - [TheHuzz: Instruction Fuzzing of Processors Using Golden-Reference Models for Finding Software-Exploitable Vulnerabilities]
   - [Morphuzz: Bending (Input) Space to Fuzz Virtual Devices]
-  - [Fuzzware: Using Precise MMIO Modeling for Effective Firmware Fuzzing]
+  - [Fuzzware: Using Precise MMIO Modeling for Effective Firmware Fuzzing](#fuzzware-using-precise-mmio-modeling-for-effective-firmware-fuzzing)
   - [FuzzOrigin: Detecting UXSS vulnerabilities in Browsers through Origin Fuzzing]
   - [Drifuzz: Harvesting Bugs in Device Drivers from Golden Seeds]
   - [Fuzzing Hardware Like Software](#fuzzing-hardware-like-software-usenix-sec-2022)
@@ -1037,7 +1037,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [FOT: A Versatile, Configurable, Extensible Fuzzing Framework (FSE 2018)](#fot-a-versatile-configurable-extensible-fuzzing-framework-fse-2018)
   - [Designing New Operating Primitives to Improve Fuzzing Performance (CCS 2017)](#designing-new-operating-primitives-to-improve-fuzzing-performance-ccs-2017)
   - [Chizpurfle: A Gray-Box Android Fuzzer for Vendor Service Customizations (ISSRE 2017)](#chizpurfle-a-gray-box-android-fuzzer-for-vendor-service-customizations-issre-2017)
-
+  - [Fuzzware: Using Precise MMIO Modeling for Effective Firmware Fuzzing](#fuzzware-using-precise-mmio-modeling-for-effective-firmware-fuzzing)
 
 
 
@@ -4652,6 +4652,17 @@ In this paper, we tackle another way to improve the performance of fuzzing, whic
 
 **Abstract:** Android has become the most popular mobile OS, as it enables device manufacturers to introduce customizations to compete with value-added services. However, customizations make the OS less dependable and secure, since they can introduce software flaws. Such flaws can be found by using fuzzing, a popular testing technique among security researchers.This paper presents Chizpurfle, a novel "gray-box" fuzzing tool for vendor-specific Android services. Testing these services is challenging for existing tools, since vendors do not provide source code and the services cannot be run on a device emulator. Chizpurfle has been designed to run on an unmodified Android OS on an actual device. The tool automatically discovers, fuzzes, and profiles proprietary services. This work evaluates the applicability and performance of Chizpurfle on the Samsung Galaxy S6 Edge, and discusses software bugs found in privileged vendor services
 
+### Fuzzware: Using Precise MMIO Modeling for Effective Firmware Fuzzing (USENIX Security2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/sec22summer_scharnowski.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/fuzzware-fuzzer/fuzzware)
+
+**Abstract:** As embedded devices are becoming more pervasive in our everyday lives, they turn into an attractive target for adversaries. Despite their high value and large attack surface, applying automated testing techniques such as fuzzing is not straightforward for such devices. As fuzz testing firmware on constrained embedded devices is inefficient, state-of-the-art approaches instead opt to run the firmware in an emulator (through a process called re-hosting). However, existing approaches either use coarse-grained static models of hardware behavior or require manual effort to re-host the firmware.
+
+We propose a novel combination of lightweight program analysis, re-hosting, and fuzz testing to tackle these challenges. We present the design and implementation of Fuzzware, a software-only system to fuzz test unmodified monolithic firmware in a scalable way. By determining how hardware-generated values are actually used by the firmware logic, Fuzzware can automatically generate models that help focusing the fuzzing process on mutating the inputs that matter, which drastically improves its effectiveness.
+
+We evaluate our approach on synthetic and real-world targets comprising a total of 19 hardware platforms and 77 firmware images. Compared to state-of-the-art work, Fuzzware achieves up to 3.25 times the code coverage and our modeling approach reduces the size of the input space by up to 95.5%. The synthetic samples contain 66 unit tests for various hardware interactions, and we find that our approach is the first generic re-hosting solution to automatically pass all of them. Fuzzware discovered 15 completely new bugs including bugs in targets which were previously analyzed by other works; a total of 12 CVEs were assigned.
 
 
 ##### Page Traffic Analysis

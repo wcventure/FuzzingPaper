@@ -84,7 +84,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [On the Reliability of Coverage-Based Fuzzer Benchmarking](#on-the-reliability-of-coverage-based-fuzzer-benchmarking-icse-2022)
   - [Path Transitions Tell More: Optimizing Fuzzing Schedules via Runtime Program States](#path-transitions-tell-more-optimizing-fuzzing-schedules-via-runtime-program-states-icse-2022)
   - [R2Z2: Detecting Rendering Regressions in Web Browsers through Differential Fuzz Testing](#r2z2-detecting-rendering-regressions-in-web-browsers-through-differential-fuzz-testing-icse-2022)
-  - [Semantic Image Fuzzing of AI Perception Systems](#semantic-fuzzing-with-zest-issta-2019)
+  - [Semantic Image Fuzzing of AI Perception Systems](#semantic-image-fuzzing-of-ai-perception-systems)
   - [Free Lunch for Testing: Fuzzing Deep-Learning Libraries from Open Source](#free-lunch-for-testing-fuzzing-deep-learning-libraries-from-open-source-icse-2022)
   - [WindRanger: A Directed Greybox Fuzzer driven by Deviation Basic Block](#windranger-a-directed-greybox-fuzzer-driven-by-deviation-basic-block-icse-2022)
   - [MOREST: Model-based RESTful API Testing with Execution Feedback](#morest-model-based-restful-api-testing-with-execution-feedback-icse-2022)

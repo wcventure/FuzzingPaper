@@ -1269,6 +1269,14 @@ We have implemented classfuzz and conducted an extensive evaluation of it agains
 
 # Evaluate Fuzzing
 
+### FIXREVERTER: A Realistic Bug Injection Methodology for Benchmarking Fuzz Testing (USENIX Security2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/sec22-zhang-zenong.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/SlaterLatiao/RevBugBench)
+
+**Abstract:** Fuzz testing is an active area of research with proposed improvements published at a rapid pace. Such proposals are assessed empirically: Can they be shown to perform better than the status quo? Such an assessment requires a benchmark of target programs with well-identified, realistic bugs. To ease the construction of such a benchmark, this paper presents FIXREVERTER, a tool that automatically injects realistic bugs in a program. FIXREVERTER takes as input a bugfix pattern which contains both code syntax and semantic conditions. Any code site that matches the specified syntax is undone if the semantic conditions are satisfied, as checked by static analysis, thus (re)introducing a likely bug. This paper focuses on three bugfix patterns, which we call conditional-abort, conditional-execute, and conditional-assign, based on a study of fixes in a corpus of Common Vulnerabilities and Exposures (CVEs). Using FIXREVERTER we have built REVBUGBENCH, which consists of 10 programs into which we have injected nearly 8,000 bugs; the programs are taken from FuzzBench and Binutils, and represent common targets of fuzzing evaluations. We have integrated REVBUGBENCH into the FuzzBench service, and used it to evaluate five fuzzers. Fuzzing performance varies by fuzzer and program, as desired/expected. Overall, 219 unique bugs were reported, 19% of which were detected by just one fuzzer.
+
 ### On the Reliability of Coverage-Based Fuzzer Benchmarking (ICSE 2022)
 
 * <img src="image/pdf_24px.png">[Paper](https://mboehme.github.io/paper/ICSE22.pdf)
@@ -4679,13 +4687,6 @@ We propose a novel combination of lightweight program analysis, re-hosting, and 
 
 We evaluate our approach on synthetic and real-world targets comprising a total of 19 hardware platforms and 77 firmware images. Compared to state-of-the-art work, Fuzzware achieves up to 3.25 times the code coverage and our modeling approach reduces the size of the input space by up to 95.5%. The synthetic samples contain 66 unit tests for various hardware interactions, and we find that our approach is the first generic re-hosting solution to automatically pass all of them. Fuzzware discovered 15 completely new bugs including bugs in targets which were previously analyzed by other works; a total of 12 CVEs were assigned.
 
-### FIXREVERTER: A Realistic Bug Injection Methodology for Benchmarking Fuzz Testing (USENIX Security2022)
-
-* <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/sec22-zhang-zenong.pdf)
-
-* <img src="image/github_24px.png">[Code](https://github.com/SlaterLatiao/RevBugBench)
-
-**Abstract:** Fuzz testing is an active area of research with proposed improvements published at a rapid pace. Such proposals are assessed empirically: Can they be shown to perform better than the status quo? Such an assessment requires a benchmark of target programs with well-identified, realistic bugs. To ease the construction of such a benchmark, this paper presents FIXREVERTER, a tool that automatically injects realistic bugs in a program. FIXREVERTER takes as input a bugfix pattern which contains both code syntax and semantic conditions. Any code site that matches the specified syntax is undone if the semantic conditions are satisfied, as checked by static analysis, thus (re)introducing a likely bug. This paper focuses on three bugfix patterns, which we call conditional-abort, conditional-execute, and conditional-assign, based on a study of fixes in a corpus of Common Vulnerabilities and Exposures (CVEs). Using FIXREVERTER we have built REVBUGBENCH, which consists of 10 programs into which we have injected nearly 8,000 bugs; the programs are taken from FuzzBench and Binutils, and represent common targets of fuzzing evaluations. We have integrated REVBUGBENCH into the FuzzBench service, and used it to evaluate five fuzzers. Fuzzing performance varies by fuzzer and program, as desired/expected. Overall, 219 unique bugs were reported, 19% of which were detected by just one fuzzer.
 
 ##### Page Traffic Analysis
 

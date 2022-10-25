@@ -196,6 +196,9 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
 - **SANER 2021**
   - [OTA: An Operation-oriented Time Allocation Strategy for Greybox Fuzzing](#ota-an-operation-oriented-time-allocation-strategy-for-greybox-fuzzing-saner-2021)
 
+- **JFLA 2022**
+  - [Alt-Ergo-Fuzz: A fuzzer for the Alt-Ergo SMT solver](#alt-ergo-fuzz-a-fuzzer-for-the-alt-ergo-smt-solver-jfla-2022)
+ 
 - **Others 2021**
   - [FuSeBMC v. 4: Smart Seed Generation for Hybrid Fuzzing (2021)](#fusebmc-v-4-smart-seed-generation-for-hybrid-fuzzing-2021)
   - [REST API Fuzzing by Coverage Level Guided Blackbox Testing (2021)](#rest-api-fuzzing-by-coverage-level-guided-blackbox-testing-2021)
@@ -667,6 +670,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [AutoFuzz: Automated Network Protocol Fuzzing Framework (IJCSNS 2010)](#autofuzz-automated-network-protocol-fuzzing-framework-ijcsns-2010)
 
 - [**SMT Fuzzing**](#smt-fuzzing)
+  - [Alt-Ergo-Fuzz: A fuzzer for the Alt-Ergo SMT solver](#alt-ergo-fuzz-a-fuzzer-for-the-alt-ergo-smt-solver-jfla-2022)
   - [BanditFuzz: Fuzzing SMT Solvers with Multi-agent Reinforcement Learning (FM 2021)](#banditfuzz-fuzzing-smt-solvers-with-multi-agent-reinforcement-learning-fm-2021)
   - [Skeletal Approximation Enumeration for SMT Solver Testing (FSE 2021)](#skeletal-approximation-enumeration-for-smt-solver-testing-fse-2021)
   - [Fuzzing SMT Solvers via Two-Dimensional Input Space Exploration (ISSTA 2021)](#fuzzing-smt-solvers-via-two-dimensional-input-space-exploration-issta-2021)
@@ -1807,6 +1811,16 @@ SSL encrypted protocols. As a proof of concept for efficiency of ESPIKE we demon
 
 
 # SMT Fuzzing
+
+### Alt-Ergo-Fuzz: A fuzzer for the Alt-Ergo SMT solver (JFLA 2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://hal.inria.fr/hal-03626861/)
+
+* <img src="image/github_24px.png">[Code](https://github.com/hra687261/alt-ergo-fuzz)
+
+Alt-Ergo is an open source Satisfiability Modulo Theories (SMT) solver programmed in OCaml. It was designed for program verification and it’s used as a back end by other software verification tools such as Frama-C, SPARK, Why3, Atelier-B and Caveat, the reliability of which depends on the soundness of Alt-Ergo’s answers and the absence of bugs in it.
+Fuzzing is an efficient technique to test programs and find bugs. It works by quickly and automatically generating input data with which to test the software. American Fuzzy Lop (AFL) is one of the most well-known and most used fuzzers in both academia and the industry. It has managed to find many bugs in various programs thanks to its grey box fuzzing technique that uses genetic algorithms and program instrumentation to generate test data that maximizes code and execution path coverage in the targeted software.
+In this paper we present Alt-Ergo-Fuzz, a fuzzer for Alt-Ergo that we developed with the aim of finding faults and unsoundness bugs to solve and improve its reliability. By using AFL as a back end, the Crowbar OCaml library for test case generation and the CVC5 SMT solver as a reference solver of which the answers will be used to determine whether or not Alt-Ergo’s answers are correct, we managed to develop Alt-Ergo-Fuzz, which even as a work in progress and in only twenty days of testing managed to find four never found before bugs in Alt-Ergo.
 
 ### BanditFuzz: Fuzzing SMT Solvers with Multi-agent Reinforcement Learning (FM 2021)
 

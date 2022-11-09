@@ -98,6 +98,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [FuzzingDriver: the Missing Dictionary to Increase Code Coverage in Fuzzers](#fuzzingdriver-the-missing-dictionary-to-increase-code-coverage-in-fuzzers-saner-2022)
 
 - **Others 2022**
+  - [Fuzzing with automatically controlled interleavings to detect concurrency bugs (The Journal of Systems & Software)](#fuzzing-with-automatically-controlled-interleavings-to-detect-concurrency-bugs-the-journal-of-systems--software-2022)
   - [ROZZ: Property-based Fuzzing for Robotic Programs in ROS (ICRA 2022)]
   - [SnapFuzz: An Efficient Fuzzing Framework for Network Applications (2022)](#snapfuzz-an-efficient-fuzzing-framework-for-network-applications-2022)
   - [Efficient ECU Analysis Technology through Structure-aware CAN Fuzzing (Access 2022)](#efficient-ecu-analysis-technology-through-structure-aware-can-fuzzing-access-2022)
@@ -444,6 +445,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [Fuzzing Error Handling Code in Device Drivers Based on Software Fault Injection](#fuzzing-error-handling-code-in-device-drivers-based-on-software-fault-injection-issre-2019)
 
 - **Other 2019**
+  - [Fuzz Testing of Multithreaded Applications Based on Waiting (2019)](#fuzz-testing-of-multithreaded-applications-based-on-waiting-micsecs-2019)
   - [Leveraging Textual Specifications for Grammar-Based Fuzzing of Network Protocols (AAAI 2019)](#leveraging-textual-specifications-for-grammar-based-fuzzing-of-network-protocols-aaai-2019)
   - [Fuzzing JavaScript Environment APIs with Interdependent Function Calls (IFM 2019)](#fuzzing-javascript-environment-apis-with-interdependent-function-calls-ifm-2019)
   - [DeepFuzzer: Accelerated Deep Greybox Fuzzing (TDSC 2019)](#deepfuzzer-accelerated-deep-greybox-fuzzing-tdsc-2019)
@@ -965,14 +967,16 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
 
 - [**Concurrency Fuzzing**](#concurrency-fuzzing)
   - [Context-Sensitive and Directional Concurrency Fuzzing for Data-Race Detection (NDSS 2022)](#context-sensitive-and-directional-concurrency-fuzzing-for-data-race-detection-ndss-2022)
-  - [Controlled Concurrency Testing via Periodical Scheduling (ICSE 2022)](#controlled-concurrency-testing-via-periodical-scheduling-icse-2022)
+  - [Fuzzing with automatically controlled interleavings to detect concurrency bugs (The Journal of Systems & Software)](#fuzzing-with-automatically-controlled-interleavings-to-detect-concurrency-bugs-the-journal-of-systems--software-2022)
+  <!--- [Controlled Concurrency Testing via Periodical Scheduling (ICSE 2022)](#controlled-concurrency-testing-via-periodical-scheduling-icse-2022)-->
   - [Fuzzing Channel-Based Concurrency Runtimes using Types and Effects Slides (OOPSLA 2021)](#fuzzing-channel-based-concurrency-runtimes-using-types-and-effects-slides-oopsla-2021)
   - [MUZZ: Thread-aware Grey-box Fuzzing for Effective Bug Hunting in Multithreaded Programs (USENIX Security2020)](#muzz-thread-aware-grey-box-fuzzing-for-effective-bug-hunting-in-multithreaded-programs-usenix-security2020)
   - [KRace: Data Race Fuzzing for Kernel File Systems (S&P 2020)](#krace-data-race-fuzzing-for-kernel-file-systems-sp-2020)
   - [Finding race conditions in Kernels: from fuzzing to symbolic exection (2020)](#finding-race-conditions-in-kernels-from-fuzzing-to-symbolic-exection-2020)
   - [ConFuzz—A Concurrency Fuzzer (2019)](#confuzz-a-concurrency-fuzzer-2019)
   - [Razzer: Finding Kernel Race Bugs through Fuzzing (S&P 2019)](#razzer-finding-kernel-race-bugs-through-fuzzing-sp-2019)
-  - [A Heuristic Framework to Detect Concurrency Vulnerabilities](#a-heuristic-framework-to-detect-concurrency-vulnerabilities-acsac-2018)
+  - [Fuzz Testing of Multithreaded Applications Based on Waiting (2019)](#fuzz-testing-of-multithreaded-applications-based-on-waiting-micsecs-2019)
+  - [A Heuristic Framework to Detect Concurrency Vulnerabilities (2018)](#a-heuristic-framework-to-detect-concurrency-vulnerabilities-acsac-2018)
 
 - [**API Testing/Fuzzing**](#api-testingfuzzing)
   - [Free Lunch for Testing: Fuzzing Deep-Learning Libraries from Open Source (ICSE 2022)](#free-lunch-for-testing-fuzzing-deep-learning-libraries-from-open-source-icse-2022)
@@ -4040,14 +4044,24 @@ We evaluate QFuzz on a large set of benchmarks from existing work and real-world
 In this paper, we develop a novel concurrency fuzzing framework named CONZZER, to effectively explore thread interleavings and detect hard-to-find data races. The core of CONZZER is a context-sensitive and directional concurrency fuzzing approach for thread-interleaving exploration, with two new techniques. First, to ensure context sensitivity, we propose a new concurrencycoverage metric, concurrent call pair, to describe thread interleavings with runtime calling contexts. Second, to directionally explore thread interleavings, we propose an adjacency-directed mutation to generate new possible thread interleavings with already covered thread interleavings and then use a breakpoint-control method to attempt to actually cover them at runtime. With these two techniques, this concurrency fuzzing approach can effectively cover infrequent thread interleavings with concrete context information, to help discover hard-to-find data races. We have evaluated CONZZER on 8 user-level applications and 4 kernel-level filesystems, and found 95 real data races. We identify 75 of these data races to be harmful and send them to related developers, and 44 have been confirmed. We also compare CONZZER to existing fuzzing tools, and CONZZER continuously explores more thread interleavings and finds many real data races missed by these tools.
 
 
-### Controlled Concurrency Testing via Periodical Scheduling (ICSE 2022)
+### Fuzzing with automatically controlled interleavings to detect concurrency bugs (The Journal of Systems & Software 2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.sciencedirect.com/science/article/pii/S0164121222001042)
+
+Concurrency vulnerabilities are an irresistible threat to security, and detecting them is challenging. Triggering the concurrency vulnerabilities requires a specific thread interleaving and a bug-inducing input. Existing methods have focused on one of these but not both or have experimented with small programs, which raises scalability issues. 
+
+This paper introduces AutoInter-fuzzing, a fuzzer controlling thread interleavings elaborately and providing an interleaving-aware power schedule to detect vulnerabilities in a multi-threaded program. AutoInter-fuzzing consists of static analysis and dynamic fuzzing. At the static analysis, the fuzzer extracts and optimizes the interleaving space to be explored and adds instrumentation to control thread interleavings. We apply the power schedule in the dynamic fuzzing to focus on the seeds that reveal the new interleaving space. The fuzzer records the interleaving information in a log when a crash occurs and uses it to reproduce and validate the crash. 
+
+Experiments with 13 real-world multi-threaded programs show that the interleaving-aware power schedule effectively enlarges the untested interleaving space, and AutoInter-fuzzing outperforms AFL and ConAFL in detecting interleaving-relevant vulnerabilities. AutoInter-fuzzing has detected six interleaving-relevant vulnerabilities, including two new vulnerabilities and four interleaving-irrelevant vulnerabilities.
+
+
+<!--### Controlled Concurrency Testing via Periodical Scheduling (ICSE 2022)
 
 * <img src="image/pdf_24px.png">[Paper](https://conf.researchr.org/details/icse-2022/icse-2022-papers/140/Controlled-Concurrency-Testing-via-Periodical-Scheduling)
 
 * <img src="image/github_24px.png">[Code](https://sites.google.com/view/period-cct/)
 
-**Abstract:** Controlled Concurrency testing (CCT) techniques have been shown promising for concurrency bugs detection. They often have a mechanism to control the order in which threads get executed, and attempt to explore the space of possible interleavings of a concurrent program to detect bugs. Various CCT techniques have been proposed, but they are generally ineffective and ad-hoc. In this paper, we introduce a novel CCT technique PERIOD. Unlike previous works, PERIOD models the execution of concurrent programs as periodical execution, and systematically explores the space of possible interleavings, where the exploration is guided by periodical scheduling and influenced by previously tested interleavings. We have evaluated PERIOD on 10 real-world CVEs and 36 widely-used benchmark programs. Our experimental results show that PERIOD demonstrates superiority over other CCT techniques in both effectiveness and performance overhead. Moreover, we have discovered 5 previously unknown concurrency bugs in real-world programs.
-
+**Abstract:** Controlled Concurrency testing (CCT) techniques have been shown promising for concurrency bugs detection. They often have a mechanism to control the order in which threads get executed, and attempt to explore the space of possible interleavings of a concurrent program to detect bugs. Various CCT techniques have been proposed, but they are generally ineffective and ad-hoc. In this paper, we introduce a novel CCT technique PERIOD. Unlike previous works, PERIOD models the execution of concurrent programs as periodical execution, and systematically explores the space of possible interleavings, where the exploration is guided by periodical scheduling and influenced by previously tested interleavings. We have evaluated PERIOD on 10 real-world CVEs and 36 widely-used benchmark programs. Our experimental results show that PERIOD demonstrates superiority over other CCT techniques in both effectiveness and performance overhead. Moreover, we have discovered 5 previously unknown concurrency bugs in real-world programs.-->
 
 ### Fuzzing Channel-Based Concurrency Runtimes using Types and Effects Slides (OOPSLA 2021)
 
@@ -4097,6 +4111,12 @@ In this paper, we bring coverage-guided fuzzing to the concurrency dimension wit
 
 **Abstract:** Concurrency bugs are as equally vulnerable as the bugs found in the single-threaded programs and these bugs can be exploited using concurrency attacks. Unfortunately, there is not much literature available in detecting various kinds of concurrency issues in a multi-threaded program due to its complexity and uncertainty. In this paper, we aim at detecting concurrency bugs by using directed evolutionary fuzzing with the help of static analysis of the source code. Concurrency bug detection involves two main entities: an input and a particular thread execution order. The evolutionary part of fuzzing will prefer inputs that involve memory access patterns across threads (data flow interleaving) and thread ordering that disturb the data dependence more and direct them to trigger concurrency bugs. This paper suggests the idea of a concurrency fuzzer, which is first of its kind. We use a combination of LLVM, Thread Sanitizer and fuzzing techniques to detect various concurrency issues in an application. The source code of the application is statically analyzed for various paths, from the different thread related function calls to the main function. Every basic block in these paths are assigned a unique ID and a weight based on the distance of the basic block from the thread function calls. These basic blocks are instrumented to print their ID and weight upon execution. The knowledge about the basic blocks in the sliced paths are used to generate new sets of inputs from the old ones, thus covering even more basic blocks in the path and thereby increasing the chances of hitting a concurrency warning. We use Thread Sanitizer present in the LLVM compiler infrastructure to detect the concurrency bug warnings while executing each input. The inputs are directed to discover even new address locations with possible concurrency issues. The system was tested on three simple multi-threaded applications pigz, pbzip2, and pixz. The results show a quicker detection of unique addresses in the application with possible concurrency issues.
 
+
+### Fuzz Testing of Multithreaded Applications Based on Waiting (MICSECS 2019)
+
+* <img src="image/pdf_24px.png">[Paper](https://ceur-ws.org/Vol-2590/short25.pdf)
+
+**Abstract:** In our days, it is hard to imagine big software products written without the use of multithreading. However, they not only use multithreading, but are also complicated by being distributed. On one hand, it gives performance advantages, but on the other hand, it becomes much more difficult to find bugs and test such applications. When developing programs that use multithreading, we can find the following types of errors: priority inversions, deadlock, livelock, ABA problem, and others. Such errors can lead to large financial losses, for example, in the banking infrastructure, or losses of human lives in aircraft engineering, civil engineering, medical devices and other areas. Special tools such as Valgrind, Google TSAN and others are used to find such bugs. Until recently, such tools were not able to fuzzing testing multithreaded applications, but now Google TSAN has a special module. The main limitation of the testing fuzzing module is that it is not able to handle waiting on nonatomic variables. The results presented in this paper allow us to carry fuzzing testing of threads and at the same time correctly handle the situation with waiting on variables that are not atomic, as well as examples on which the improved algorithm successfully copes with handling such waiting.
 
 ### A Heuristic Framework to Detect Concurrency Vulnerabilities (ACSAC 2018)
 

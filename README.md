@@ -24,7 +24,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
 
 - **ISSTA 2022**
   - [Almost Correct Invariants: Synthesizing Inductive Invariants by Fuzzing Proofs]
-  - [ocTer: Documentation-Guided Fuzzing for Testing Deep Learning API Functions]
+  - [ocTer: Documentation-Guided Fuzzing for Testing Deep Learning API Functions](#octer-documentation-guided-fuzzing-for-testing-deep-learning-api-functions-issta-2022)
   - [Efficient Greybox Fuzzing of Applications in Linux-based IoT Devices via Enhanced User-mode Emulation]
   - [MDPFuzz: Testing Models Solving Markov Decision Processes]
   - [PrIntFuzz: Fuzzing Linux Drivers via Automated Virtual Device Simulation]
@@ -36,7 +36,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [Minerva: Browser API Fuzzing with Dynamic Mod-Ref Analysis]
   - [RoboFuzz: Fuzzing Robotic Systems over Robot Operating System (ROS) for Finding Correctness Bugs]
   - [SEDiff: Scope-Aware Differential Fuzzing to Test Internal Function Models in Symbolic Execution]
-  - [Testing Deep-Learning Libraries via Fuzzing Relational APIs]
+  - [Fuzzing Deep-Learning Libraries via Automated Relational API Inference](#fuzzing-deep-learning-libraries-via-automated-relational-api-inference-esecfse-2022)
     
 - **S&P 2022**
   - [Effective Seed Scheduling for Fuzzing with Graph Centrality Analysis](#effective-seed-scheduling-for-fuzzing-with-graph-centrality-analysis-sp-2022)
@@ -907,6 +907,8 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [Learn&Fuzz: Machine Learning for Input Fuzzing (ASE 2017)](#learnfuzz-machine-learning-for-input-fuzzing-ase-2017)
 
 - [**Fuzzing Machine Learning Model**](#fuzzing-machine-learning-model)
+  - [ocTer: Documentation-Guided Fuzzing for Testing Deep Learning API Functions (ISSTA 2022)](#octer-documentation-guided-fuzzing-for-testing-deep-learning-api-functions-issta-2022)
+  - [Fuzzing Deep-Learning Libraries via Automated Relational API Inference (ESEC/FSE 2022)](#fuzzing-deep-learning-libraries-via-automated-relational-api-inference-esecfse-2022)
   - [Muffin: Testing Deep Learning Libraries via Neural Architecture Fuzzing (ICSE 2022)](#muffin-testing-deep-learning-libraries-via-neural-architecture-fuzzing-icse-2022)
   - [RapidFuzz: Accelerating fuzzing via Generative Adversarial Networks (Neurocomputing 2021)](#rapidfuzz-accelerating-fuzzing-via-generative-adversarial-networks-neurocomputing-2021)
   - [CoCoFuzzing: Testing Neural Code Models with Coverage-Guided Fuzzing (2021)](#cocofuzzing-testing-neural-code-models-with-coverage-guided-fuzzing-2021)
@@ -3651,6 +3653,25 @@ We introduce DeepSmith, a novel machine learning approach to accelerating compil
 
 
 # Fuzzing Machine Learning Model
+
+### ocTer: Documentation-Guided Fuzzing for Testing Deep Learning API Functions (ISSTA 2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.cs.purdue.edu/homes/lintan/publications/docter-issta22.pdf)
+
+**Abstract:** Input constraints are useful for many software development tasks. For example, input constraints of a function enable the generation of valid inputs, i.e., inputs that follow these constraints, to test the function deeper. API functions of deep learning (DL) libraries have DL-specific input constraints, which are described informally in the free-form API documentation. Existing constraint-extraction techniques are ineffective for extracting DL-specific input constraints.
+
+To fill this gap, we design and implement a new technique—DocTer—to analyze API documentation to extract DL-specific input constraints for DL API functions. DocTer features a novel algorithm that automatically constructs rules to extract API parameter constraints from syntactic patterns in the form of dependency parse trees of API descriptions. These rules are then applied to a large volume of API documents in popular DL libraries to extract their input parameter constraints. To demonstrate the effectiveness of the extracted constraints, DocTer uses the constraints to enable the automatic generation of valid and invalid inputs to test DL API functions.
+
+Our evaluation on three popular DL libraries (TensorFlow, PyTorch, and MXNet) shows that DocTer’s precision in extracting input constraints is 85.4%. DocTer detects 94 bugs from 174 API functions, including one previously unknown security vulnerability that is now documented in the CVE database, while a baseline technique without input constraints detects only 59 bugs. Most (63) of the 94 bugs are previously unknown, 54 of which have been fixed or confirmed by developers after we report them. In addition,
+DocTer detects 43 inconsistencies in documents, 39 of which are fixed or confirmed.
+
+
+### Fuzzing Deep-Learning Libraries via Automated Relational API Inference (ESEC/FSE 2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://cs.stanford.edu/~anjiang/papers/FSE22DeepREL.pdf)
+
+**Abstract:** Deep Learning (DL) has gained wide attention in recent years. Meanwhile, bugs in DL systems can lead to serious consequences, and may even threaten human lives. As a result, a growing body of research has been dedicated to DL model testing. However, there is still limited work on testing DL libraries, e.g., PyTorch and TensorFlow, which serve as the foundations for building, training, and running DL models. Prior work on fuzzing DL libraries can only generate tests for APIs which have been invoked by documentation examples, developer tests, or DL models, leaving a large number of APIs untested. In this paper, we propose RelFuzz, which leverages API relations to further advance DL library testing. Our basic hypothesis is that for a DL library under test, there may exist a number of APIs sharing similar input parameters and outputs; in this way, we can easily “borrow” test inputs from invoked APIs to test other relational APIs. Furthermore, we formalize the notion of value equivalence and status equivalence for relational APIs to serve as the oracle for effective bug finding. We have implemented RelFuzz as a fully automated fuzzing technique, which 1) automatically infers potential API relations based on API syntactic/semantic information, 2) synthesizes concrete test programs for invoking relational APIs, 3) validates the inferred relational APIs via representative test inputs, and finally 4) performs fuzzing on the verified relational APIs to find potential inconsistencies. Our evaluation on two of the most popular DL libraries, PyTorch and TensorFlow, demonstrates that RelFuzz can cover 157% more APIs than state-of-the-art FreeFuzz. To date, RelFuzz has detected 162 bugs in total, with 106 already confirmed by the developers as previously unknown bugs. Surprisingly, RelFuzz was able to detect 13.5% of the high-priority bugs for the entire PyTorch issue-tracking system since our first PyTorch bug report. Also, besides the 162 code bugs, we were also able to detect 14 documentation bugs (all confirmed).
+
 
 ### Free Lunch for Testing: Fuzzing Deep-Learning Libraries from Open Source (ICSE 2022)
 

@@ -67,7 +67,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [AmpFuzz: Fuzzing for Amplification DDoS Vulnerabilities]
   - [SGXFuzz: Efficiently Synthesizing Nested Structures for SGX Enclave Fuzzing]
   - [FRAMESHIFTER: Manipulating HTTP/2 Frame Sequences with Fuzzing]
-  - [FIXREVERTER: A Realistic Bug Injection Methodology for Benchmarking Fuzz Testing]
+  - [FIXREVERTER: A Realistic Bug Injection Methodology for Benchmarking Fuzz Testing](#fixreverter-a-realistic-bug-injection-methodology-for-benchmarking-fuzz-testing-usenix-sec22)
   - [StateFuzz: System Call-Based State-Aware Linux Driver Fuzzing]
   
 - **ICSE 2022**
@@ -606,6 +606,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [Coverage-Directed Differential Testing of JVM Implementations (PLDI 2016)](#coverage-directed-differential-testing-of-jvm-implementations-pldi-2016)
 
 - [**Evaluate Fuzzing**](#evaluate-fuzzing)
+  - [FIXREVERTER: A Realistic Bug Injection Methodology for Benchmarking Fuzz Testing (USENIX Security2022)](#fixreverter-a-realistic-bug-injection-methodology-for-benchmarking-fuzz-testing-usenix-sec22)
   - [On the Reliability of Coverage-Based Fuzzer Benchmarking (ICSE 2022)](#on-the-reliability-of-coverage-based-fuzzer-benchmarking-icse-2022)
   - [Mutation Analysis: Answering the Fuzzing Challenge (2022)](#mutation-analysis-answering-the-fuzzing-challenge-2022)
   - [Evaluating Code Coverage for Kernel Fuzzers via Function Call Graph (Access 2021)](#evaluating-code-coverage-for-kernel-fuzzers-via-function-call-graph-access-2021)
@@ -1273,6 +1274,14 @@ We have implemented classfuzz and conducted an extensive evaluation of it agains
 
 
 # Evaluate Fuzzing
+
+### FIXREVERTER: A Realistic Bug Injection Methodology for Benchmarking Fuzz Testing (USENIX Security2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.usenix.org/system/files/sec22-zhang-zenong.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/SlaterLatiao/RevBugBench)
+
+**Abstract:** Fuzz testing is an active area of research with proposed improvements published at a rapid pace. Such proposals are assessed empirically: Can they be shown to perform better than the status quo? Such an assessment requires a benchmark of target programs with well-identified, realistic bugs. To ease the construction of such a benchmark, this paper presents FIXREVERTER, a tool that automatically injects realistic bugs in a program. FIXREVERTER takes as input a bugfix pattern which contains both code syntax and semantic conditions. Any code site that matches the specified syntax is undone if the semantic conditions are satisfied, as checked by static analysis, thus (re)introducing a likely bug. This paper focuses on three bugfix patterns, which we call conditional-abort, conditional-execute, and conditional-assign, based on a study of fixes in a corpus of Common Vulnerabilities and Exposures (CVEs). Using FIXREVERTER we have built REVBUGBENCH, which consists of 10 programs into which we have injected nearly 8,000 bugs; the programs are taken from FuzzBench and Binutils, and represent common targets of fuzzing evaluations. We have integrated REVBUGBENCH into the FuzzBench service, and used it to evaluate five fuzzers. Fuzzing performance varies by fuzzer and program, as desired/expected. Overall, 219 unique bugs were reported, 19% of which were detected by just one fuzzer.
 
 ### On the Reliability of Coverage-Based Fuzzer Benchmarking (ICSE 2022)
 

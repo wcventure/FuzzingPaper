@@ -90,7 +90,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
 - **SANER 2022**
   - [FuzzingDriver: the Missing Dictionary to Increase Code Coverage in Fuzzers](#fuzzingdriver-the-missing-dictionary-to-increase-code-coverage-in-fuzzers-saner-2022)
 - **Others 2022**
-  - [UltraFuzz: Towards Resource-saving in Distributed Fuzzing (TSE 2022)]
+  - [UltraFuzz: Towards Resource-saving in Distributed Fuzzing (TSE 2022)](#ultrafuzz-towards-resource-saving-in-distributed-fuzzing-tse-2022)
   - [Fuzzing with automatically controlled interleavings to detect concurrency bugs (The Journal of Systems & Software)](#fuzzing-with-automatically-controlled-interleavings-to-detect-concurrency-bugs-the-journal-of-systems--software-2022)
   - [ROZZ: Property-based Fuzzing for Robotic Programs in ROS (ICRA 2022)]
   - [SnapFuzz: An Efficient Fuzzing Framework for Network Applications (2022)](#snapfuzz-an-efficient-fuzzing-framework-for-network-applications-2022)
@@ -707,7 +707,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [SemFuzz: Semantics-based Automatic Generation of Proof-of-Concept Exploits (CCS 2017)](#semfuzz-semantics-based-automatic-generation-of-proof-of-concept-exploits-ccs-2017)
   - [ExploitMeter: Combining Fuzzing with Machine Learning for Automated Evaluation of Software Exploitability (PAC 2017)](#exploitmeter-combining-fuzzing-with-machine-learning-for-automated-evaluation-of-software-exploitability-pac-2017)
 - [**Parallel / Ensemble Fuzzing**](#parallel--ensemble-fuzzing)
-  - [UltraFuzz: Towards Resource-saving in Distributed Fuzzing (TSE 2022)]
+  - [UltraFuzz: Towards Resource-saving in Distributed Fuzzing (TSE 2022)](#ultrafuzz-towards-resource-saving-in-distributed-fuzzing-tse-2022)
   - [Towards Systematic and Dynamic Task Allocation for Collaborative Parallel Fuzzing (ASE 2021 NIER)](#towards-systematic-and-dynamic-task-allocation-for-collaborative-parallel-fuzzing-ase-2021-nier)
   - [CollabFuzz: A Framework for Collaborative Fuzzing (EuroSec 2021)](#collabfuzz-a-framework-for-collaborative-fuzzing-eurosec-2021)
   - [Improving Web Application Vulnerability Detection Leveraging Ensemble Fuzzing (ENASE 2021)](#improving-web-application-vulnerability-detection-leveraging-ensemble-fuzzing-enase-2021)

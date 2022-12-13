@@ -34,7 +34,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
 - **ISSTA 2022**
   - [Almost Correct Invariants: Synthesizing Inductive Invariants by Fuzzing Proofs]
   - [ocTer: Documentation-Guided Fuzzing for Testing Deep Learning API Functions](#octer-documentation-guided-fuzzing-for-testing-deep-learning-api-functions-issta-2022)
-  - [Efficient Greybox Fuzzing of Applications in Linux-based IoT Devices via Enhanced User-mode Emulation]
+  - [Efficient Greybox Fuzzing of Applications in Linux-based IoT Devices via Enhanced User-mode Emulation](#efficient-greybox-fuzzing-of-applications-in-linux-based-iot-devices-via-enhanced-user-mode-emulation-issta-2022)
   - [MDPFuzz: Testing Models Solving Markov Decision Processes]
   - [PrIntFuzz: Fuzzing Linux Drivers via Automated Virtual Device Simulation]
   - [SLIME: Program-sensitive Energy Allocation for Fuzzing]
@@ -562,6 +562,8 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
     - [INSTRIM Lightweight Instrumentation for Coverage-guided Fuzzing (NDSS 2018 workshop)](#instrim-lightweight-instrumentation-for-coverage-guided-fuzzing-ndss-2018-workshop)
     - [SyzGen: Automated Generation of Syscall Specification of Closed-Source macOS Drivers (CCS 2021)](#syzgen-automated-generation-of-syscall-specification-of-closed-source-macos-drivers-ccs-2021)
 - [IoT or protocols fuzzing](#iot-or-protocols-fuzzing)
+    - [Efficient Greybox Fuzzing of Applications in Linux-based IoT Devices via Enhanced User-mode Emulation (ISSTA 2022)](#efficient-greybox-fuzzing-of-applications-in-linux-based-iot-devices-via-enhanced-user-mode-emulation-issta-2022)
+    - [FuzzUSB: Hybrid Stateful Fuzzing of USB Gadget Stacks (S&P 2022)](#fuzzusb-hybrid-stateful-fuzzing-of-usb-gadget-stacks-fse-2022)
     - [SNPSFuzzer: A Fast Greybox Fuzzer for Stateful Network Protocols using Snapshots (2022)](#snpsfuzzer-a-fast-greybox-fuzzer-for-stateful-network-protocols-using-snapshots-2022)
     - [SnapFuzz: An Efficient Fuzzing Framework for Network Applications (2022)](#snapfuzz-an-efficient-fuzzing-framework-for-network-applications-2022)
     - [State Selection Algorithms and Their Impact on The Performance of Stateful Network Protocol Fuzzing (2021)](#state-selection-algorithms-and-their-impact-on-the-performance-of-stateful-network-protocol-fuzzing-2021)
@@ -1362,6 +1364,21 @@ The ideal solution for binary security analysis would be a static rewriter that 
 
 
 # IoT or protocols fuzzing
+
+### Efficient Greybox Fuzzing of Applications in Linux-based IoT Devices via Enhanced User-mode Emulation (ISSTA 2022)
+
+* <img src="image/youtube.png">[Video](https://youtu.be/BFXH9uTbr5M)
+
+* <img src="image/blog_24px.jpg">[Reading Note](https://hackmd.io/@Zero871015/EQUAFL)
+
+* <img src="image/pdf_24px.png">[Paper](https://doi.org/10.1145/3533767.3534414)
+
+**Abstract:** Greybox fuzzing has become one of the most effective vulnerability discovery techniques. However, greybox fuzzing techniques cannot be directly applied to applications in IoT devices. The main reason is that executing these applications highly relies on specific system environments and hardware. To execute the applications in Linux based IoT devices, most existing fuzzing techniques use full-system emulation for the purpose of maximizing compatibility. However, compared with user-mode emulation, full-system emulation suffers from great overhead. Therefore, some previous works, such as Firm-AFL, propose to combine full-system emulation and user-mode emulation to speed up the fuzzing process. Despite the attempts of trying to shift the application towards user-mode emulation, no existing technique supports to execute these applications fully in the user-mode emulation.
+
+To address this issue, we propose EQUAFL, which can automatically setup the execution environment to execute embedded application under user-mode emulation. EQUAFL first executes the application under full-system emulation and observe for the key points where the program may get stuck or even crash during user-mode emulation. With the observed information, EQUAFL can migrate the needed environment for user-mode emulation. Then, EQUAFL uses an enhanced user-mode emulation to replay system calls of network, and resource management behaviors to fulfill the needs of the embedded application during its execution.
+
+We evaluate EQUAFL on 70 network applications from different series of IoT devices. The result shows EQUAFL outperforms the state-of-the-arts in fuzzing efficiency (on average, 26 times faster than AFL-QEMU with full-system emulation, 14 times than Firm-AFL). We have also discovered ten vulnerabilities including six CVEs from the tested firmware images.
+
 
 ### FuzzUSB: Hybrid Stateful Fuzzing of USB Gadget Stacks (FSE 2022)
 

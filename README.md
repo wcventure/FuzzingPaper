@@ -50,7 +50,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [BEACON: Directed Grey-Box Fuzzing with Provable Path Pruning](#beacon-directed-grey-box-fuzzing-with-provable-path-pruning-sp-2022)
   - [JIGSAW: Efficient and Scalable Path Constraints Fuzzing](#jigsaw-efficient-and-scalable-path-constraints-fuzzing-sp-2022)
   - [PATA: Fuzzing with Path Aware Taint Analysis]
-  - [FuzzUSB: Hybrid Stateful Fuzzing of USB Gadget Stacks]
+  - [FuzzUSB: Hybrid Stateful Fuzzing of USB Gadget Stacks](#fuzzusb-hybrid-stateful-fuzzing-of-usb-gadget-stacks-fse-2022)
 - **NDSS 2022**
   - [Cooper: Testing the Binding Code of Scripting Languages with Cooperative Mutation](#cooper-testing-the-binding-code-of-scripting-languages-with-cooperative-mutation-ndss-2022)
   - [EMS: History-Driven Mutation for Coverage-based Fuzzing](#ems-history-driven-mutation-for-coverage-based-fuzzing-ndss-2022)
@@ -986,6 +986,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
     - [INSTRIM Lightweight Instrumentation for Coverage-guided Fuzzing (NDSS 2018 workshop)](#instrim-lightweight-instrumentation-for-coverage-guided-fuzzing-ndss-2018-workshop)
     - [SyzGen: Automated Generation of Syscall Specification of Closed-Source macOS Drivers (CCS 2021)](#syzgen-automated-generation-of-syscall-specification-of-closed-source-macos-drivers-ccs-2021)
 - [IoT or protocols fuzzing](#iot-or-protocols-fuzzing)
+    - [FuzzUSB: Hybrid Stateful Fuzzing of USB Gadget Stacks (FSE 2022)](#fuzzusb-hybrid-stateful-fuzzing-of-usb-gadget-stacks-fse-2022)
     - [SNPSFuzzer: A Fast Greybox Fuzzer for Stateful Network Protocols using Snapshots (2022)](#snpsfuzzer-a-fast-greybox-fuzzer-for-stateful-network-protocols-using-snapshots-2022)
     - [SnapFuzz: An Efficient Fuzzing Framework for Network Applications (2022)](#snapfuzz-an-efficient-fuzzing-framework-for-network-applications-2022)
     - [State Selection Algorithms and Their Impact on The Performance of Stateful Network Protocol Fuzzing (2021)](#state-selection-algorithms-and-their-impact-on-the-performance-of-stateful-network-protocol-fuzzing-2021)
@@ -1814,8 +1815,16 @@ The ideal solution for binary security analysis would be a static rewriter that 
 
 
 
-
 # IoT or protocols fuzzing
+
+### FuzzUSB: Hybrid Stateful Fuzzing of USB Gadget Stacks (FSE 2022)
+
+* <img src="image/youtube.png">[Video](https://youtu.be/nSt-XSsOycE)
+
+* <img src="image/pdf_24px.png">[Paper](https://ieeexplore.ieee.org/document/9833593)
+
+**Abstract:** Universal Serial Bus (USB) is the de facto protocol supported by peripherals and mobile devices, such as USB thumb drives and smart phones. For many devices, USB Type-C ports are the primary interface for charging, file transfer, audio, video, etc. Accordingly, attackers have exploited different vulnerabilities within USB stacks, compromising host machines via BadUSB attacks or jailbreaking iPhones from USB connections. While there exist fuzzing frameworks dedicated to USB vulnerability discovery, all of them focus on USB host stacks and ignore USB gadget stacks, which enable all the features within modern peripherals and smart devices. In this paper, we propose FuzzUSB, the first fuzzing framework for the USB gadget stack within commodity OS kernels, leveraging static analysis, symbolic execution, and stateful fuzzing. FuzzUSB combines static analysis and symbolic execution to extract internal state machines from USB gadget drivers, and uses them to achieve state-guided fuzzing through multi-channel inputs. We have implemented FuzzUSB upon the syzkaller kernel fuzzer and applied it to the most recent mainline Linux, Android, and FreeBSD kernels. As a result, we have found 34 previously unknown bugs within the Linux and Android kernels, and opened 8 CVEs. Furthermore, compared to the baseline, FuzzUSB has also demonstrated different improvements, including 3× higher code coverage, 50× improved bug-finding efficiency for Linux USB gadget stacks, 2× higher code coverage for FreeBSD USB gadget stacks, and reproducing known bugs that could not be detected by the baseline fuzzers. We believe FuzzUSB provides developers a powerful tool to thwart USB-related vulnerabilities within modern devices and complete the current USB fuzzing scope.
+
 
 ### SNPSFuzzer: A Fast Greybox Fuzzer for Stateful Network Protocols using Snapshots (2022)
 

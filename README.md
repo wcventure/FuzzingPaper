@@ -44,8 +44,8 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [Unicorn: Detect Runtime Error in Time-Series Databases With Hybrid Input Synthesis](#unicorn-detect-runtime-error-in-time-series-databases-with-hybrid-input-synthesis-issta-2022)
 - **ESEC/FSE 2022**
   - [Minerva: Browser API Fuzzing with Dynamic Mod-Ref Analysis](#minerva-browser-api-fuzzing-with-dynamic-mod-ref-analysis-fse-2022)
-  - [RoboFuzz: Fuzzing Robotic Systems over Robot Operating System (ROS) for Finding Correctness Bugs]
-  - [SEDiff: Scope-Aware Differential Fuzzing to Test Internal Function Models in Symbolic Execution]
+  - [RoboFuzz: Fuzzing Robotic Systems over Robot Operating System (ROS) for Finding Correctness Bugs](#robofuzz-fuzzing-robotic-systems-over-robot-operating-system-ros-for-finding-correctness-bugs-fse-2022)
+  - [SEDiff: Scope-Aware Differential Fuzzing to Test Internal Function Models in Symbolic Execution](#sediff-scope-aware-differential-fuzzing-to-test-internal-function-models-in-symbolic-execution-fse-2022)
   - [Fuzzing Deep-Learning Libraries via Automated Relational API Inference](#fuzzing-deep-learning-libraries-via-automated-relational-api-inference-esec-2022)
 - **S&P 2022**
   - [Effective Seed Scheduling for Fuzzing with Graph Centrality Analysis](#effective-seed-scheduling-for-fuzzing-with-graph-centrality-analysis-sp-2022)
@@ -523,6 +523,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
     - [Survey of Software Fuzzing Techniques](#survey-of-software-fuzzing-techniques)
     - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
 - [Differential Fuzzing](#differential-fuzzing)
+    - [SEDiff: Scope-Aware Differential Fuzzing to Test Internal Function Models in Symbolic Execution (FSE 2022)](#sediff-scope-aware-differential-fuzzing-to-test-internal-function-models-in-symbolic-execution-fse-2022)
     - [T-Reqs: HTTP Request Smuggling with Differential Fuzzing (CCS 2021)](#t-reqs-http-request-smuggling-with-differential-fuzzing-ccs-2021)
     - [CatchBackdoor: Backdoor Testing by Critical Trojan Neural Path Identification via Differential Fuzzing (2021)](#catchbackdoor-backdoor-testing-by-critical-trojan-neural-path-identification-via-differential-fuzzing-2021)
     - [Duo: Differential Fuzzing for Deep Learning Operators (IEEE Transactions on Reliability 2021)](#duo-differential-fuzzing-for-deep-learning-operators-ieee-transactions-on-reliability-2021)
@@ -893,6 +894,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
     - [Fuzzing Hardware Like Software (USENIX SEC 2022)](#fuzzing-hardware-like-software-usenix-sec-2022)
     - [PeriScope: An Effective Probing and Fuzzing Framework for the Hardware-OS Boundary (NDSS2019)](#periscope-an-effective-probing-and-fuzzing-framework-for-the-hardware-os-boundary-ndss2019)
 - [Other Interesting Fuzzing](#other-interesting-fuzzing)
+    - [RoboFuzz: Fuzzing Robotic Systems over Robot Operating System (ROS) for Finding Correctness Bugs (FSE 2022)](#robofuzz-fuzzing-robotic-systems-over-robot-operating-system-ros-for-finding-correctness-bugs-fse-2022)
     - [Almost Correct Invariants: Synthesizing Inductive Invariants by Fuzzing Proofs (ISSTA 2022)](#almost-correct-invariants-synthesizing-inductive-invariants-by-fuzzing-proofs-issta-2022)
     - [?AFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware (ICSE 2022)](#?afl-non-intrusive-feedback-driven-fuzzing-for-microcontroller-firmware-icse-2022)
     - [CorbFuzz: Checking Browser Security Policies with Fuzzing (ASE 2021)](#corbfuzz-checking-browser-security-policies-with-fuzzing-ase-2021)
@@ -1049,6 +1051,17 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
 
 
 # Differential Fuzzing
+
+### SEDiff: Scope-Aware Differential Fuzzing to Test Internal Function Models in Symbolic Execution (FSE 2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.cse.cuhk.edu.hk/~wei/papers/fse22_sediff.pdf)
+
+**Abstract:** Symbolic execution has become a foundational program analysis technique. Performing symbolic execution unavoidably encounters internal functions (e.g., library functions) that provide basic operations such as string processing. Many symbolic execution engines construct internal function models that abstract function behaviors for scalability and compatibility concerns. Due to the high complexity of constructing the models, developers intentionally summarize only partial behaviors of a function, namely modeled functionalities, in the models. The correctness of the internal function models is critical because it would impact all applications of symbolic execution, e.g., bug detection and model checking.
+
+A naive solution to testing the correctness of internal function models is to cross-check whether the behaviors of the models comply with their corresponding original function implementations. However, such a solution would mostly detect overwhelming inconsistencies concerning the unmodeled functionalities, which are out of the scope of models and thus considered false reports. We argue that a reasonable testing approach should target only the functionalities that developers intend to model. While being necessary, automatically identifying the modeled functionalities, i.e., the scope, is a significant challenge.
+
+In this paper, we propose a scope-aware differential testing framework, SEDiff, to tackle this problem. We design a novel algorithm to automatically map the modeled functionalities to the code in the original implementations. SEDiff then applies scope-aware grey-box differential fuzzing to relevant code in the original implementations. It also equips a new scope-aware input generator and a tailored bug checker that efficiently and correctly detect erroneous inconsistencies. We extensively evaluated SEDiff on several popular real-world symbolic execution engines targeting binary, web and kernel. Our manual investigation shows that SEDiff precisely identifies the modeled functionalities and detects 46 new bugs in the internal function models used in the symbolic execution engines.
+
 
 ### T-Reqs: HTTP Request Smuggling with Differential Fuzzing (CCS 2021)
 
@@ -4323,6 +4336,15 @@ We present PeriScope, a Linux kernel based probing framework that enables fine-g
 
 
 # Other Interesting Fuzzing
+
+### RoboFuzz: Fuzzing Robotic Systems over Robot Operating System (ROS) for Finding Correctness Bugs (FSE 2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://squizz617.github.io/pubs/robofuzz-fse22.pdf)
+
+**Abstract:** Robotic systems are becoming an integral part of human lives. Responding to the increased demands for robot productions, Robot Operating System (ROS), an open-source middleware suite for robotic development, is gaining traction by providing practical tools and libraries for quickly developing robots. In this paper, we are concerned with a relatively less-tested class of bugs in ROS and ROS-based robotic systems, called semantic correctness bugs, including the violation of specification, violation of physical laws, and cyber-physical discrepancy. These bugs often stem from the cyber-physical nature of robotic systems, in which noisy hardware components are intertwined with software components, and thus cannot be detected by existing fuzzing approaches that mostly focus on finding memory-safety bugs.
+
+We propose RoboFuzz, a feedback-driven fuzzing framework that integrates with ROS and enables testing of the correctness bugs. RoboFuzz features (1) data type-aware mutation for effectively stressing data-driven ROS systems, (2) hybrid execution for acquiring robotic states from both real-world and a simulator, capturing unforeseen cyber-physical discrepancies, (3) an oracle handler that identifies correctness bugs by checking the execution states against predefined correctness oracles, and (4) a semantic feedback engine for providing augmented guidance to the input mutator, complementing classic code coverage-based feedback, which is less effective for distributed, data-driven robots. By encoding the correctness invariants of ROS and four ROS-compatible robotic systems into specialized oracles, RoboFuzz detected 30 previously unknown bugs, of which 25 are acknowledged and six have been fixed.
+
 
 ### Almost Correct Invariants: Synthesizing Inductive Invariants by Fuzzing Proofs (ISSTA 2022)
 

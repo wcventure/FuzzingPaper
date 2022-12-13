@@ -21,6 +21,16 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
   - [Survey of Software Fuzzing Techniques](#survey-of-software-fuzzing-techniques)
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
+- **ASE 2022**
+  - [Effectively Generating Vulnerable Transaction Sequences in Smart Contracts with Reinforcement Learning-guided Fuzzing]
+  - [Efficient Greybox Fuzzing to Detect Memory Errors]
+  - [FuzzerAid: Grouping Fuzzed Crashes Based On Fault Signatures]
+  - [Fuzzle: Making a Puzzle for Fuzzers]
+  - [Griffin: Grammar-Free DBMS Fuzzing]
+  - [HTFuzz: Heap Operation Sequence Sensitive Fuzzing]
+  - [LawBreaker: An Approach for Specifying Traffic Laws and Fuzzing Autonomous Vehicles]
+  - [QATest: A Uniform Fuzzing Framework for Question Answering Systems]
+  - [So Many Fuzzers, So Little Time - Experience from Evaluating Fuzzers on the Contiki-NG Network (Hay)StackVirt]
 - **ISSTA 2022**
   - [Almost Correct Invariants: Synthesizing Inductive Invariants by Fuzzing Proofs]
   - [ocTer: Documentation-Guided Fuzzing for Testing Deep Learning API Functions](#octer-documentation-guided-fuzzing-for-testing-deep-learning-api-functions-issta-2022)

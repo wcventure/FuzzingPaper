@@ -873,7 +873,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
 - [**Concurrency Fuzzing**](#concurrency-fuzzing)
   - [Context-Sensitive and Directional Concurrency Fuzzing for Data-Race Detection (NDSS 2022)](#context-sensitive-and-directional-concurrency-fuzzing-for-data-race-detection-ndss-2022)
   - [Fuzzing with automatically controlled interleavings to detect concurrency bugs (The Journal of Systems & Software)](#fuzzing-with-automatically-controlled-interleavings-to-detect-concurrency-bugs-the-journal-of-systems--software-2022)
-  <!--- [Controlled Concurrency Testing via Periodical Scheduling (ICSE 2022)](#controlled-concurrency-testing-via-periodical-scheduling-icse-2022)-->
+  - [Controlled Concurrency Testing via Periodical Scheduling (ICSE 2022)](#controlled-concurrency-testing-via-periodical-scheduling-icse-2022)
   - [Fuzzing Channel-Based Concurrency Runtimes using Types and Effects Slides (OOPSLA 2021)](#fuzzing-channel-based-concurrency-runtimes-using-types-and-effects-slides-oopsla-2021)
   - [MUZZ: Thread-aware Grey-box Fuzzing for Effective Bug Hunting in Multithreaded Programs (USENIX Security2020)](#muzz-thread-aware-grey-box-fuzzing-for-effective-bug-hunting-in-multithreaded-programs-usenix-security2020)
   - [KRace: Data Race Fuzzing for Kernel File Systems (S&P 2020)](#krace-data-race-fuzzing-for-kernel-file-systems-sp-2020)
@@ -883,6 +883,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [Fuzz Testing of Multithreaded Applications Based on Waiting (2019)](#fuzz-testing-of-multithreaded-applications-based-on-waiting-micsecs-2019)
   - [A Heuristic Framework to Detect Concurrency Vulnerabilities (2018)](#a-heuristic-framework-to-detect-concurrency-vulnerabilities-acsac-2018)
 - [**API Testing/Fuzzing**](#api-testingfuzzing)
+  - [Minerva: Browser API Fuzzing with Dynamic Mod-Ref Analysis]
   - [Free Lunch for Testing: Fuzzing Deep-Learning Libraries from Open Source (ICSE 2022)](#free-lunch-for-testing-fuzzing-deep-learning-libraries-from-open-source-icse-2022)
   - [Combinatorial Testing of RESTful APIs (ICSE 2022)](#combinatorial-testing-of-restful-apis-icse-2022)
   - [GraphFuzz: Library API Fuzzing with Lifetime-aware Dataflow Graphs (ICSE 2022)](#graph-based-fuzz-testing-for-deep-learning-inference-engines-icse-2021)
@@ -4002,13 +4003,13 @@ This paper introduces AutoInter-fuzzing, a fuzzer controlling thread interleavin
 Experiments with 13 real-world multi-threaded programs show that the interleaving-aware power schedule effectively enlarges the untested interleaving space, and AutoInter-fuzzing outperforms AFL and ConAFL in detecting interleaving-relevant vulnerabilities. AutoInter-fuzzing has detected six interleaving-relevant vulnerabilities, including two new vulnerabilities and four interleaving-irrelevant vulnerabilities.
 
 
-<!--### Controlled Concurrency Testing via Periodical Scheduling (ICSE 2022)
+### Controlled Concurrency Testing via Periodical Scheduling (ICSE 2022)
 
 * <img src="image/pdf_24px.png">[Paper](https://conf.researchr.org/details/icse-2022/icse-2022-papers/140/Controlled-Concurrency-Testing-via-Periodical-Scheduling)
 
 * <img src="image/github_24px.png">[Code](https://sites.google.com/view/period-cct/)
 
-**Abstract:** Controlled Concurrency testing (CCT) techniques have been shown promising for concurrency bugs detection. They often have a mechanism to control the order in which threads get executed, and attempt to explore the space of possible interleavings of a concurrent program to detect bugs. Various CCT techniques have been proposed, but they are generally ineffective and ad-hoc. In this paper, we introduce a novel CCT technique PERIOD. Unlike previous works, PERIOD models the execution of concurrent programs as periodical execution, and systematically explores the space of possible interleavings, where the exploration is guided by periodical scheduling and influenced by previously tested interleavings. We have evaluated PERIOD on 10 real-world CVEs and 36 widely-used benchmark programs. Our experimental results show that PERIOD demonstrates superiority over other CCT techniques in both effectiveness and performance overhead. Moreover, we have discovered 5 previously unknown concurrency bugs in real-world programs.-->
+**Abstract:** Controlled Concurrency testing (CCT) techniques have been shown promising for concurrency bugs detection. They often have a mechanism to control the order in which threads get executed, and attempt to explore the space of possible interleavings of a concurrent program to detect bugs. Various CCT techniques have been proposed, but they are generally ineffective and ad-hoc. In this paper, we introduce a novel CCT technique PERIOD. Unlike previous works, PERIOD models the execution of concurrent programs as periodical execution, and systematically explores the space of possible interleavings, where the exploration is guided by periodical scheduling and influenced by previously tested interleavings. We have evaluated PERIOD on 10 real-world CVEs and 36 widely-used benchmark programs. Our experimental results show that PERIOD demonstrates superiority over other CCT techniques in both effectiveness and performance overhead. Moreover, we have discovered 5 previously unknown concurrency bugs in real-world programs.
 
 ### Fuzzing Channel-Based Concurrency Runtimes using Types and Effects Slides (OOPSLA 2021)
 
@@ -4080,6 +4081,14 @@ In evaluating the proposed heuristic framework with a benchmark suit of six real
 
 
 # API Testing/Fuzzing
+
+### Minerva: Browser API Fuzzing with Dynamic Mod-Ref Analysis (FSE 2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://hexhive.epfl.ch/publications/files/22FSE.pdf)
+
+**Abstract:** Browser APIs are essential to the modern web experience. Due to their large number and complexity, they vastly expand the attack surface of browsers. To detect vulnerabilities in these APIs, fuzzers generate test cases with a large amount of random API invocations. However, the massive search space formed by arbitrary API combinations hinders their effectiveness: since randomly-picked API invocations unlikely interfere with each other (i.e., compute on partially shared data), few interesting API interactions are explored. Consequently, reducing the search space by revealing inter-API relations is a major challenge in browser fuzzing.
+
+We propose Minerva, an efficient browser fuzzer for browser API bug detection. The key idea is to leverage API interference relations to reduce redundancy and improve coverage. Minerva consists of two modules: dynamic mod-ref analysis and guided code generation. Before fuzzing starts, the dynamic mod-ref analysis module builds an API interference graph. It first automatically identifies individual browser APIs from the browser's code base. Next, it instruments the browser to dynamically collect mod-ref relations between APIs. During fuzzing, the guided code generation module synthesizes highly-relevant API invocations guided by the mod-ref relations. We evaluate Minerva on three mainstream browsers, i.e. Safari, FireFox, and Chromium. Compared to state-of-the-art fuzzers, Minerva improves edge coverage by $19.63%$ to $229.62%$ and finds 2x to 3x more unique bugs. Besides, Minerva has discovered 35 previously-unknown bugs out of which 20 have been fixed with 5 CVEs assigned and acknowledged by browser vendors.
 
 ### Combinatorial Testing of RESTful APIs (ICSE 2022)
 

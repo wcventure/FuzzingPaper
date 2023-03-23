@@ -334,7 +334,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [BaseSAFE: Baseband SAnitized Fuzzing through Emulation](#basesafe-baseband-sanitized-fuzzing-through-emulation-wisec-2020)
   - [Sydr: Cutting Edge Dynamic Symbolic Execution (ISPRAS Open 2020)](#sydr-cutting-edge-dynamic-symbolic-execution-ispras-open-2020)
 - **ACSAC 2019**
-  - [Opening Pandora's Box through ATFuzzer: Dynamic Analysis of AT Interface for AndroidSmartphones](#Opening-Pandoras-Box-through-ATFuzzer-Dynamic-Analysis-of-AT-Interface-for-Android-Smartphones-ACSAC-2019)
+  - [Opening Pandoras Box through ATFuzzer: Dynamic Analysis of AT Interface for AndroidSmartphones](#Opening-Pandoras-Box-through-ATFuzzer-Dynamic-Analysis-of-AT-Interface-for-Android-Smartphones-ACSAC-2019)
 - **OOPSLA 2019**
   - [FuzzFactory: Domain-Specific Fuzzing with Waypoints](#fuzzfactory-domain-specific-fuzzing-with-waypoints-oopsla-2019)
   - [Compiler Fuzzing: How Much Does It Matter](#compiler-fuzzing-how-much-does-it-matter-oopsla2019)
@@ -938,7 +938,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
     - [Fuzzing IPC with Knowledge Inference (SRDS 2019)](#fuzzing-ipc-with-knowledge-inference-srds-2019)
     - [HYPER-CUBE: High-Dimensional Hypervisor Fuzzing (NDSS 2020)](#hyper-cube-high-dimensional-hypervisor-fuzzing-ndss-2020)
     - [Reproducible Crashes: Fuzzing Pharo by Mutating the Test Methods (IWST20 2020)](#reproducible-crashes-fuzzing-pharo-by-mutating-the-test-methods-iwst20-2020)
-    - [Opening Pandora's Box through ATFuzzer: Dynamic Analysis of AT Interface for Android Smartphones (ACSAC 2019)](#opening-pandoras-box-through-atfuzzer-dynamic-analysis-of-at-interface-for-android-smartphones-acsac-2019)
+    - [Opening Pandoras Box through ATFuzzer: Dynamic Analysis of AT Interface for Android Smartphones (ACSAC 2019)](#opening-pandoras-box-through-atfuzzer-dynamic-analysis-of-at-interface-for-android-smartphones-acsac-2019)
     - [FuzzFactory: Domain-Specific Fuzzing with Waypoints (OOPSLA 2019)](#fuzzfactory-domain-specific-fuzzing-with-waypoints-oopsla-2019)
     - [Compiler Fuzzing: How Much Does It Matter (OOPSLA2019)](#compiler-fuzzing-how-much-does-it-matter-oopsla2019)
     - [RVFuzzer: Finding Input Validation Bugs in Robotic Vehicles through Control-Guided Random Testing (USENIX Security2019)](#rvfuzzer-finding-input-validation-bugs-in-robotic-vehicles-through-control-guided-random-testing-usenix-security2019)
@@ -4733,7 +4733,7 @@ Our evaluation shows that we can find more bugs (over 2x) and coverage (as much 
 **Abstract:** Fuzzing (or Fuzz Testing) is a technique to verify the robustness of a program-under-test. Valid input is replaced by random values with the goal to force the program-under-test into unresponsive states. In this position paper, we propose a white box Fuzzing approach by transforming (mutating) existing test methods. We adopt the mechanisms used for test amplification to generate crash inducing tests, which developers can reproduce later. We provide anecdotal evidence that our approach towards Fuzzing reveals crashing issues in the Pharo environment.
 
 
-### Opening Pandora's Box through ATFuzzer: Dynamic Analysis of AT Interface for Android Smartphones (ACSAC 2019)
+### Opening Pandoras Box through ATFuzzer: Dynamic Analysis of AT Interface for Android Smartphones (ACSAC 2019)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/ACSAC19_ATFuzzer.pdf)
 

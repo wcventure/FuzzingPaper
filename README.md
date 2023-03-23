@@ -114,6 +114,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [Better Pay Attention Whilst Fuzzing (2022)](#better-pay-attention-whilst-fuzzing-2022)
   - [looking for lacunae in bitcoin cores fuzzing efforts](#looking-for-lacunae-in-bitcoin-cores-fuzzing-efforts-2022)
   - [FEFuzzer: Hybrid Files Fuzzing Tool (2022)](#fefuzzer-hybrid-files-fuzzing-tool-2022)
+  - [Sydr-Fuzz: Continuous Hybrid Fuzzing and Dynamic Analysis for Security Development Lifecycle (ISPRAS Open 2022)](#sydr-fuzz-continuous-hybrid-fuzzing-and-dynamic-analysis-for-security-development-lifecycle-ispras-open-2022)
 - **ASE 2021**
   - [CorbFuzz: Checking Browser Security Policies with Fuzzing](#corbfuzz-checking-browser-security-policies-with-fuzzing-ase-2021)
   - [Scalable Fuzzing of Program Binaries with E9AFL](#scalable-fuzzing-of-program-binaries-with-e9afl-ase-2021)
@@ -643,6 +644,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
     - [DIFUZE: Interface aware fuzzing for kernel drivers (CCS 2017)](#difuze-interface-aware-fuzzing-for-kernel-drivers-ccs-2017)
     - [IMF: Inferred Model-based Fuzzer (CCS 2017)](#imf-inferred-model-based-fuzzer-ccs-2017)
 - [Hybrid Fuzzing:](#hybrid-fuzzing)
+    - [Sydr-Fuzz: Continuous Hybrid Fuzzing and Dynamic Analysis for Security Development Lifecycle (ISPRAS Open 2022)](#sydr-fuzz-continuous-hybrid-fuzzing-and-dynamic-analysis-for-security-development-lifecycle-ispras-open-2022)
     - [TensileFuzz: Facilitating Seed Input Generation in Fuzzing via String Constraint Solving (ISSTA 2022)](#tensilefuzz-facilitating-seed-input-generation-in-fuzzing-via-string-constraint-solving-issta-2022)
     - [CONFETTI: Amplifying Concolic Guidance for Fuzzers (ICSE 2022)](#confetti-amplifying-concolic-guidance-for-fuzzers-icse-2022)
     - [FuSeBMC v. 4: Smart Seed Generation for Hybrid Fuzzing (2021)](#fusebmc-v-4-smart-seed-generation-for-hybrid-fuzzing-2021)
@@ -2122,6 +2124,15 @@ In this paper, we approach the problem of coverage-guided kernel fuzzing in an O
 
 
 # Hybrid Fuzzing:
+
+### Sydr-Fuzz: Continuous Hybrid Fuzzing and Dynamic Analysis for Security Development Lifecycle (ISPRAS Open 2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2211.11595.pdf)
+
+* <img src="image/ppt_24px.png">[Slides](https://vishnya.xyz/vishnyakov-isprasopen2022.pdf)
+
+**Abstract** Nowadays automated dynamic analysis frameworks for continuous testing are in high demand to ensure software safety and satisfy the security development lifecycle (SDL) requirements. The security bug hunting efficiency of cutting-edge hybrid fuzzing techniques outperforms widely utilized coverage-guided fuzzing. We propose an enhanced dynamic analysis pipeline to leverage productivity of automated bug detection based on hybrid fuzzing. We implement the proposed pipeline in the continuous fuzzing toolset Sydr-Fuzz which is powered by hybrid fuzzing orchestrator, integrating our DSE tool Sydr with libFuzzer and AFL++. Sydr-Fuzz also incorporates security predicate checkers, crash triaging tool Casr, and utilities for corpus minimization and coverage gathering. The benchmarking of our hybrid fuzzer against alternative state-of-the-art solutions demonstrates its superiority over coverage-guided fuzzers while remaining on the same level with advanced hybrid fuzzers. Furthermore, we approve the relevance of our approach by discovering 85 new real-world software flaws within the OSS-Sydr-Fuzz project. Finally, we open Casr source code to the community to facilitate examination of the existing crashes.
+
 
 ### TensileFuzz: Facilitating Seed Input Generation in Fuzzing via String Constraint Solving (ISSTA 2022) 
 

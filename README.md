@@ -21,6 +21,10 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
   - [Survey of Software Fuzzing Techniques](#survey-of-software-fuzzing-techniques)
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
+- **ICISSP/ICPRAM 2023**
+  - [Rainfuzz: Reinforcement-Learning Driven Heat-Maps for Boosting Coverage-Guided Fuzzing](#rainfuzz-reinforcement-learning-driven-heat-maps-for-boosting-coverage-guided-fuzzing-icpram-2023)
+  - [SWaTEval: An Evaluation Framework for Stateful Web Application Testing](#swateval-an-evaluation-framework-for-stateful-web-application-testing-icissp-2023)
+  - [Evaluating the Fork-Awareness of Coverage-Guided Fuzzers](#evaluating-the-fork-awareness-of-coverage-guided-fuzzers-icissp-2023)
 - **ASE 2022**
   - [Effectively Generating Vulnerable Transaction Sequences in Smart Contracts with Reinforcement Learning-guided Fuzzing]
   - [Efficient Greybox Fuzzing to Detect Memory Errors]
@@ -673,6 +677,8 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
     - [Hybrid Fuzz Testing - Discovering Software Bugs via Fuzzing and Symbolic Execution (2012)](#hybrid-fuzz-testing---discovering-software-bugs-via-fuzzing-and-symbolic-execution-2012)
     - [Hybrid concolic testing (2007)](#hybrid-concolic-testing-2007)
 - [Mutation\\Coverage\\Path](#mutationcoveragepath)
+    - [Rainfuzz: Reinforcement-Learning Driven Heat-Maps for Boosting Coverage-Guided Fuzzing](#rainfuzz-reinforcement-learning-driven-heat-maps-for-boosting-coverage-guided-fuzzing-icpram-2023)
+    - [Evaluating the Fork-Awareness of Coverage-Guided Fuzzers](#evaluating-the-fork-awareness-of-coverage-guided-fuzzers-icissp-2023)
     - [One Fuzzing Strategy to Rule Them All (ICSE 2022)](#one-fuzzing-strategy-to-rule-them-all-icse-2022)
     - [BeDivFuzz: Integrating Behavioral Diversity into Generator-based Fuzzing (ICSE 2022)](#bedivfuzz-integrating-behavioral-diversity-into-generator-based-fuzzing-icse-2022)
     - [FuzzingDriver: the Missing Dictionary to Increase Code Coverage in Fuzzers (SANER 2022)](#fuzzingdriver-the-missing-dictionary-to-increase-code-coverage-in-fuzzers-saner-2022)
@@ -739,6 +745,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
 - [Sanitizer-guided Fuzzing](#sanitizer-guided-fuzzing)
     - [ParmeSan: Sanitizer-guided Greybox Fuzzing (USENIX Security2020)](#parmesan-sanitizer-guided-greybox-fuzzing-usenix-security2020)
 - [State / Sequence Guided Fuzzing](#state--sequence-guided-fuzzing)
+    - [SWaTEval: An Evaluation Framework for Stateful Web Application Testing](#swateval-an-evaluation-framework-for-stateful-web-application-testing-icissp-2023)   
     - [Stateful Greybox Fuzzing (USENIX Security 2022)](#stateful-greybox-fuzzing-usenix-security-2022)
     - [Linear-time Temporal Logic guided Greybox Fuzzing (ICSE 2022)](#linear-time-temporal-logic-guided-greybox-fuzzing-icse-2022)
     - [Rtkaller: State-aware Task Generation for RTOS Fuzzing (EMSOFT 2021)](#rtkaller-state-aware-task-generation-for-rtos-fuzzing-emsoft-2021)
@@ -2385,6 +2392,18 @@ This thesis presents our attempt to attain the best of both worlds by combining 
 
 # Mutation\Coverage\Path
 
+### Rainfuzz: Reinforcement-Learning Driven Heat-Maps for Boosting Coverage-Guided Fuzzing (ICPRAM 2023)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/ICPRAM23_Rainfuzz.pdf)
+
+**Abstract:** Fuzzing is a dynamic analysis technique that repeatedly executes the target program with many different inputs to trigger abnormal behavior, such as a crash. One of the most successful techniques consists in generating inputs to increase code-coverage by using a mutational approach: this type of fuzzers maintains a population of inputs, they perform mutations on the inputs in the current population, and they add mutated inputs to the population if they discover new code-coverage in the target program. Researchers are continuously looking for techniques to increment the efficiency of fuzzers; one of these techniques consists in generating heat-maps for targeting specific bytes during the mutation of the input, as not all bytes might be useful for controlling the program’s workflow. We propose the first approach in the literature that uses reinforcement learning for building heat-maps, by formalizing the problem of choosing the position to be mutated within the input as a reinforcement-learning problem. We model the policy by means of a neural network, and we train it by using Proximal Policy Optimization (PPO). We implement our approach in Rainfuzz, and we show the effectiveness of its heat-maps by comparing Rainfuzz against an equivalent fuzzer that performs mutations at random positions. We achieve the best performance by running AFL++ and Rainfuzz in parallel (in a collaborative fuzzing setting), outperforming a setting where we run two AFL++ instances in parallel.
+
+### Evaluating the Fork-Awareness of Coverage-Guided Fuzzers (ICISSP 2023)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/ICISSP23_Fork-awareness.pdf)
+
+**Abstract:** Fuzz testing (or fuzzing) is an effective technique used to find security vulnerabilities. It consists of feeding a software under test with malformed inputs, waiting for a weird system behaviour (often a crash of the system). Over the years, different approaches have been developed, and among the most popular lies the coverage-based one. It relies on the instrumentation of the system to generate inputs able to cover as much code as possible. The success of this approach is also due to its usability as fuzzing techniques research approaches that do not require (or only partial require) human interactions. Despite the efforts, devising a fully-automated fuzzer still seems to be a challenging task. Target systems may be very complex; they may integrate cryptographic primitives, compute and verify check-sums and employ forks to enhance the system security, achieve better performances or manage different connections at the same time. This paper introduces the fork-awareness property to express the fuzzer ability to manage systems using forks. This property is leveraged to evaluate 14 of the most widely coverage-guided fuzzers and highlight how current fuzzers are ineffective against systems using forks.
+
 ### One Fuzzing Strategy to Rule Them All (ICSE 2022)
 
 * <img src="image/pdf_24px.png">[Paper](https://shadowmydx.github.io/papers/icse22-main-1314.pdf)
@@ -2993,6 +3012,14 @@ In this paper, we present sanitizer-guided fuzzing, a new design point in this s
 
 
 # State / Sequence Guided Fuzzing
+
+### SWaTEval: An Evaluation Framework for Stateful Web Application Testing (ICISSP 2023)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/ICISSP23_SWaTEval.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/SWaTEval)
+
+**Abstract:**  Web applications are an easily accessible and valuable target for attackers. Therefore, web applications need to be examined for vulnerabilities. Modern web applications usually behave in a stateful manner and hence have an underlying state machine that determines their behavior based on the current state. To thoroughly test a web application, it is necessary to consider all aspects of a web application, including its internal states. In a blackbox setting, which we presuppose for this work, however, the internal state machine must be inferred before it can be used for testing. For state machine inference it is necessary to choose a similarity measure for web pages. Some approaches for automated blackbox stateful testing for web applications have already been proposed. It is, however, unclear how these approaches perform in comparison. We therefore present our evaluation framework for stateful web application testing, SWaTEval. In our evaluation, we show that SWaTEval is able to reproduce evaluation results from literature, demonstrating that SWaTEval is suitable for conducting meaningful evaluations. Further, we use SWaTEval to evaluate various approaches to similarity measures for web pages, including a new method based on the euclidean distance that we propose in this paper. These similarity measures are an important part of the automated state machine inference necessary for stateful blackbox testing. We show that the choice of similarity measure has an impact on the performance of the state machine inference regarding the number of correctly identified states, and that our newly proposed similarity measure leads to the highest number of correctly identified states.
 
 ### Stateful Greybox Fuzzing (USENIX Security 2022)
 

@@ -37,7 +37,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [So Many Fuzzers, So Little Time - Experience from Evaluating Fuzzers on the Contiki-NG Network (Hay)StackVirt]
 - **ISSTA 2022**
   - [sAlmost Correct Invariants: Synthesizing Inductive Invariants by Fuzzing Proof](#almost-correct-invariants-synthesizing-inductive-invariants-by-fuzzing-proofs-issta-2022)
-  - [ocTer: Documentation-Guided Fuzzing for Testing Deep Learning API Functions](#octer-documentation-guided-fuzzing-for-testing-deep-learning-api-functions-issta-2022)
+  - [DocTer: Documentation-Guided Fuzzing for Testing Deep Learning API Functions](#Docter-documentation-guided-fuzzing-for-testing-deep-learning-api-functions-issta-2022)
   - [Efficient Greybox Fuzzing of Applications in Linux-based IoT Devices via Enhanced User-mode Emulation](#efficient-greybox-fuzzing-of-applications-in-linux-based-iot-devices-via-enhanced-user-mode-emulation-issta-2022)
   - [MDPFuzz: Testing Models Solving Markov Decision Processes](#mdpfuzz-testing-models-solving-markov-decision-processes-issta-2022)
   - [PrIntFuzz: Fuzzing Linux Drivers via Automated Virtual Device Simulation](#printfuzz-fuzzing-linux-drivers-via-automated-virtual-device-simulation-issta-2022)

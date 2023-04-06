@@ -1,6 +1,7 @@
 # Recent Papers Related To Fuzzing
 
 Remark: This website is only used for collecting and grouping the related paper. If there are any paper need to be updated, you can contribute PR.
+We also welcome contributions of summaries of scientific papers based on large language models, such as [chatgpt_academic](https://github.com/binary-husky/chatgpt_academic) and [ChatPaper](https://github.com/kaixindelele/ChatPaper).
 
 ## Contributors
 

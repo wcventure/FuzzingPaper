@@ -21,6 +21,16 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
   - [Survey of Software Fuzzing Techniques](#survey-of-software-fuzzing-techniques)
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
+- **ISSTA 2023**
+  - [Large Language Models are Zero-Shot Fuzzers:Fuzzing Deep-Learning Libraries via Large Language Models](#large-language-models-are-zero-shot-fuzzersfuzzing-deep-learning-libraries-via-large-language-models-issta-2023)
+- **ICSE 2023**
+  - [Evaluating and Improving Hybrid Fuzzing](#evaluating-and-improving-hybrid-fuzzing-icse-2023)
+  - [Fuzzing Automatic Differentiation in Deep-Learning Libraries]
+  - [JITfuzz: Coverage-guided Fuzzing for JVM Just-in-Time Compilers]
+  - [Learning Seed-Adaptive Mutation Strategies for Greybox Fuzzing]
+  - [Operand-Variation-Oriented Differential Analysis for Fuzzing Binding Calls in PDF Readers]
+  - [Regression Fuzzing for Deep Learning Systems]
+  - [Large Language Models are Few-shot Testers: Exploring LLM-based General Bug Reproduction](#large-language-models-are-few-shot-testers-exploring-llm-based-general-bug-reproduction-icse-2023)
 - **ICISSP/ICPRAM 2023**
   - [Rainfuzz: Reinforcement-Learning Driven Heat-Maps for Boosting Coverage-Guided Fuzzing](#rainfuzz-reinforcement-learning-driven-heat-maps-for-boosting-coverage-guided-fuzzing-icpram-2023)
   - [SWaTEval: An Evaluation Framework for Stateful Web Application Testing](#swateval-an-evaluation-framework-for-stateful-web-application-testing-icissp-2023)
@@ -81,7 +91,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [FIXREVERTER: A Realistic Bug Injection Methodology for Benchmarking Fuzz Testing](#fixreverter-a-realistic-bug-injection-methodology-for-benchmarking-fuzz-testing-usenix-sec22)
   - [StateFuzz: System Call-Based State-Aware Linux Driver Fuzzing](#statefuzz-system-call-based-state-aware-linux-driver-fuzzing-usenix-sec-2022)
 - **ICSE 2022**
-  - [?AFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware](#?afl-non-intrusive-feedback-driven-fuzzing-for-microcontroller-firmware-icse-2022)
+  - [¦ÌAFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware](#¦Ìafl-non-intrusive-feedback-driven-fuzzing-for-microcontroller-firmware-icse-2022)
   - [BeDivFuzz: Integrating Behavioral Diversity into Generator-based Fuzzing](#bedivfuzz-integrating-behavioral-diversity-into-generator-based-fuzzing-icse-2022)
   - [CONFETTI: Amplifying Concolic Guidance for Fuzzers](#confetti-amplifying-concolic-guidance-for-fuzzers-icse-2022)
   - [Demystifying the Dependency Challenge in Kernel Fuzzing](#demystifying-the-dependency-challenge-in-kernel-fuzzing-icse-2022)
@@ -616,6 +626,9 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
     - [SECFUZZ: Fuzz-testing Security Protocols (AST 2012)](#secfuzz-fuzz-testing-security-protocols-ast-2012)
     - [Extension of SPIKE for Encrypted Protocol Fuzzing (2011)](#extension-of-spike-for-encrypted-protocol-fuzzing-2011)
     - [AutoFuzz: Automated Network Protocol Fuzzing Framework (IJCSNS 2010)](#autofuzz-automated-network-protocol-fuzzing-framework-ijcsns-2010)
+- [Fuzzing with LLMs](#fuzzing-with-llms)
+    - [Large Language Models are Zero-Shot Fuzzers:Fuzzing Deep-Learning Libraries via Large Language Models (ISSTA 2023)](#large-language-models-are-zero-shot-fuzzersfuzzing-deep-learning-libraries-via-large-language-models-issta-2023)
+    - [Large Language Models are Few-shot Testers: Exploring LLM-based General Bug Reproduction (ICSE 2023)](#large-language-models-are-few-shot-testers-exploring-llm-based-general-bug-reproduction-icse-2023)
 - [SMT Fuzzing](#smt-fuzzing)
     - [Alt-Ergo-Fuzz: A fuzzer for the Alt-Ergo SMT solver (JFLA 2022)](#alt-ergo-fuzz-a-fuzzer-for-the-alt-ergo-smt-solver-jfla-2022)
     - [BanditFuzz: Fuzzing SMT Solvers with Multi-agent Reinforcement Learning (FM 2021)](#banditfuzz-fuzzing-smt-solvers-with-multi-agent-reinforcement-learning-fm-2021)
@@ -647,7 +660,8 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
     - [kAFL: Hardware-Assisted Feedback Fuzzing for OS Kernels (Usenix Security2017)](#kafl-hardware-assisted-feedback-fuzzing-for-os-kernels-usenix-security2017)
     - [DIFUZE: Interface aware fuzzing for kernel drivers (CCS 2017)](#difuze-interface-aware-fuzzing-for-kernel-drivers-ccs-2017)
     - [IMF: Inferred Model-based Fuzzer (CCS 2017)](#imf-inferred-model-based-fuzzer-ccs-2017)
-- [Hybrid Fuzzing:](#hybrid-fuzzing)
+- [Hybrid Fuzzing](#hybrid-fuzzing)
+    - [Evaluating and Improving Hybrid Fuzzing (ICSE 2023)](#evaluating-and-improving-hybrid-fuzzing-icse-2023)
     - [Sydr-Fuzz: Continuous Hybrid Fuzzing and Dynamic Analysis for Security Development Lifecycle (ISPRAS Open 2022)](#sydr-fuzz-continuous-hybrid-fuzzing-and-dynamic-analysis-for-security-development-lifecycle-ispras-open-2022)
     - [TensileFuzz: Facilitating Seed Input Generation in Fuzzing via String Constraint Solving (ISSTA 2022)](#tensilefuzz-facilitating-seed-input-generation-in-fuzzing-via-string-constraint-solving-issta-2022)
     - [CONFETTI: Amplifying Concolic Guidance for Fuzzers (ICSE 2022)](#confetti-amplifying-concolic-guidance-for-fuzzers-icse-2022)
@@ -677,8 +691,8 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
     - [Hybrid Fuzz Testing - Discovering Software Bugs via Fuzzing and Symbolic Execution (2012)](#hybrid-fuzz-testing---discovering-software-bugs-via-fuzzing-and-symbolic-execution-2012)
     - [Hybrid concolic testing (2007)](#hybrid-concolic-testing-2007)
 - [Mutation\\Coverage\\Path](#mutationcoveragepath)
-    - [Rainfuzz: Reinforcement-Learning Driven Heat-Maps for Boosting Coverage-Guided Fuzzing](#rainfuzz-reinforcement-learning-driven-heat-maps-for-boosting-coverage-guided-fuzzing-icpram-2023)
-    - [Evaluating the Fork-Awareness of Coverage-Guided Fuzzers](#evaluating-the-fork-awareness-of-coverage-guided-fuzzers-icissp-2023)
+    - [Rainfuzz: Reinforcement-Learning Driven Heat-Maps for Boosting Coverage-Guided Fuzzing (ICPRAM 2023)](#rainfuzz-reinforcement-learning-driven-heat-maps-for-boosting-coverage-guided-fuzzing-icpram-2023)
+    - [Evaluating the Fork-Awareness of Coverage-Guided Fuzzers (ICISSP 2023)](#evaluating-the-fork-awareness-of-coverage-guided-fuzzers-icissp-2023)
     - [One Fuzzing Strategy to Rule Them All (ICSE 2022)](#one-fuzzing-strategy-to-rule-them-all-icse-2022)
     - [BeDivFuzz: Integrating Behavioral Diversity into Generator-based Fuzzing (ICSE 2022)](#bedivfuzz-integrating-behavioral-diversity-into-generator-based-fuzzing-icse-2022)
     - [FuzzingDriver: the Missing Dictionary to Increase Code Coverage in Fuzzers (SANER 2022)](#fuzzingdriver-the-missing-dictionary-to-increase-code-coverage-in-fuzzers-saner-2022)
@@ -745,7 +759,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
 - [Sanitizer-guided Fuzzing](#sanitizer-guided-fuzzing)
     - [ParmeSan: Sanitizer-guided Greybox Fuzzing (USENIX Security2020)](#parmesan-sanitizer-guided-greybox-fuzzing-usenix-security2020)
 - [State / Sequence Guided Fuzzing](#state--sequence-guided-fuzzing)
-    - [SWaTEval: An Evaluation Framework for Stateful Web Application Testing](#swateval-an-evaluation-framework-for-stateful-web-application-testing-icissp-2023)   
+    - [SWaTEval: An Evaluation Framework for Stateful Web Application Testing (ICISSP 2023)](#swateval-an-evaluation-framework-for-stateful-web-application-testing-icissp-2023)
     - [Stateful Greybox Fuzzing (USENIX Security 2022)](#stateful-greybox-fuzzing-usenix-security-2022)
     - [Linear-time Temporal Logic guided Greybox Fuzzing (ICSE 2022)](#linear-time-temporal-logic-guided-greybox-fuzzing-icse-2022)
     - [Rtkaller: State-aware Task Generation for RTOS Fuzzing (EMSOFT 2021)](#rtkaller-state-aware-task-generation-for-rtos-fuzzing-emsoft-2021)
@@ -829,7 +843,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
     - [Learn\&Fuzz: Machine Learning for Input Fuzzing (ASE 2017)](#learnfuzz-machine-learning-for-input-fuzzing-ase-2017)
 - [Fuzzing Machine Learning Model](#fuzzing-machine-learning-model)
     - [MDPFuzz: Testing Models Solving Markov Decision Processes (ISSTA 2022)](#mdpfuzz-testing-models-solving-markov-decision-processes-issta-2022)
-    - [ocTer: Documentation-Guided Fuzzing for Testing Deep Learning API Functions (ISSTA 2022)](#octer-documentation-guided-fuzzing-for-testing-deep-learning-api-functions-issta-2022)
+    - [DocTer: Documentation-Guided Fuzzing for Testing Deep Learning API Functions (ISSTA 2022)](#docter-documentation-guided-fuzzing-for-testing-deep-learning-api-functions-issta-2022)
     - [Fuzzing Deep-Learning Libraries via Automated Relational API Inference (ESEC/FSE 2022)](#fuzzing-deep-learning-libraries-via-automated-relational-api-inference-esecfse-2022)
     - [Free Lunch for Testing: Fuzzing Deep-Learning Libraries from Open Source (ICSE 2022)](#free-lunch-for-testing-fuzzing-deep-learning-libraries-from-open-source-icse-2022)
     - [Muffin: Testing Deep Learning Libraries via Neural Architecture Fuzzing (ICSE 2022)](#muffin-testing-deep-learning-libraries-via-neural-architecture-fuzzing-icse-2022)
@@ -910,7 +924,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
 - [Other Interesting Fuzzing](#other-interesting-fuzzing)
     - [RoboFuzz: Fuzzing Robotic Systems over Robot Operating System (ROS) for Finding Correctness Bugs (FSE 2022)](#robofuzz-fuzzing-robotic-systems-over-robot-operating-system-ros-for-finding-correctness-bugs-fse-2022)
     - [Almost Correct Invariants: Synthesizing Inductive Invariants by Fuzzing Proofs (ISSTA 2022)](#almost-correct-invariants-synthesizing-inductive-invariants-by-fuzzing-proofs-issta-2022)
-    - [?AFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware (ICSE 2022)](#afl-non-intrusive-feedback-driven-fuzzing-for-microcontroller-firmware-icse-2022)
+    - [¦ÌAFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware (ICSE 2022)](#¦Ìafl-non-intrusive-feedback-driven-fuzzing-for-microcontroller-firmware-icse-2022)
     - [CorbFuzz: Checking Browser Security Policies with Fuzzing (ASE 2021)](#corbfuzz-checking-browser-security-policies-with-fuzzing-ase-2021)
     - [Fully Automated Functional Fuzzing of Android Apps for Detecting Non-crashing Logic Bugs (OOPSLA 2021)](#fully-automated-functional-fuzzing-of-android-apps-for-detecting-non-crashing-logic-bugs-oopsla-2021)
     - [webFuzz: Grey-Box Fuzzing for Web Applications (ESORICS 2021)](#webfuzz-grey-box-fuzzing-for-web-applications-esorics-2021)
@@ -1814,6 +1828,24 @@ SSL encrypted protocols. As a proof of concept for efficiency of ESPIKE we demon
 **Abstract:** Assessing software security involves steps such as code review, risk analysis, penetration testing and fuzzing. During the fuzzing phase, the tester's goal is to find flaws in software by sending unexpected input to the target application and monitoring its behavior. In this paper we introduce the AutoFuzz [1] - extendable, open source framework used for testing network protocol implementations. AutoFuzz is a 'smart', man-in-the-middle, semi deterministic network protocol fuzzing framework. AutoFuzz learns a protocol implementation by constructing a Finite State Automaton (FSA) which captures the observed communications between a client and a server [5]. In addition, AutoFuzz learns individual message syntax, including fields and probable types, by applying the bioinformatics techniques of [2]. Finally, AutoFuzz can fuzz client or server protocol implementations by intelligently modifying the communication sessions between them using the FSA as a guide. AutoFuzz was applied to a variety of File Transfer Protocol (FTP) server implementations, confirming old and discovering new vulnerabilities.
 
 
+# Fuzzing with LLMs
+
+### Large Language Models are Zero-Shot Fuzzers:Fuzzing Deep-Learning Libraries via Large Language Models (ISSTA 2023)
+
+* <img src="image/pdf_24px.png">[Paper](http://export.arxiv.org/abs/2212.14834)
+
+**Abstract:** Detecting bugs in Deep Learning (DL) libraries (e.g., TensorFlow/PyTorch) is critical for almost all downstream DL systems in ensuring effectiveness/safety for end users. Meanwhile, traditional fuzzing techniques can be hardly effective for such a challenging domain since the input DL programs need to satisfy both the input language (e.g., Python) syntax/semantics and the DL API input/shape constraints for tensor computations.
+To address these limitations, we propose TitanFuzz - the first approach to directly leveraging Large Language Models (LLMs) to generate input programs for fuzzing DL libraries. LLMs are titanic models trained on billions of code snippets and can auto-regressively generate human-like code snippets. Our key insight is that modern LLMs can also include numerous code snippets invoking DL library APIs in their training corpora, and thus can implicitly learn both language syntax/semantics and intricate DL API constraints for valid DL program generation. More specifically, we use both generative and infilling LLMs (e.g., Codex/InCoder) to generate and mutate valid/diverse input DL programs for fuzzing. Our experimental results demonstrate that TitanFuzz can achieve 30.38%/50.84% higher code coverage than state-of-the-art fuzzers on TensorFlow/PyTorch. Furthermore, TitanFuzz is able to detect 65 bugs, with 41 already confirmed as previously unknown bugs.
+This paper demonstrates that modern titanic LLMs can be leveraged to directly perform both generation-based and mutation-based fuzzing studied for decades, while being fully automated, generalizable, and applicable to domains challenging for traditional approaches (such as DL systems). We hope TitanFuzz can stimulate more work in this promising direction of LLMs for fuzzing.
+
+
+### Large Language Models are Few-shot Testers: Exploring LLM-based General Bug Reproduction (ICSE 2023)
+
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/abs/2209.11515)
+
+**Abstract:** Many automated test generation techniques have been developed to aid developers with writing tests. To facilitate full automation, most existing techniques aim to either increase coverage, or generate exploratory inputs. However, existing test generation techniques largely fall short of achieving more semantic objectives, such as generating tests to reproduce a given bug report. Reproducing bugs is nonetheless important, as our empirical study shows that the number of tests added in open source repositories due to issues was about 28% of the corresponding project test suite size. Meanwhile, due to the difficulties of transforming the expected program semantics in bug reports into test oracles, existing failure reproduction techniques tend to deal exclusively with program crashes, a small subset of all bug reports. To automate test generation from general bug reports, we propose LIBRO, a framework that uses Large Language Models (LLMs), which have been shown to be capable of performing code-related tasks. Since LLMs themselves cannot execute the target buggy code, we focus on post-processing steps that help us discern when LLMs are effective, and rank the produced tests according to their validity. Our evaluation of LIBRO shows that, on the widely studied Defects4J benchmark, LIBRO can generate failure reproducing test cases for 33% of all studied cases (251 out of 750), while suggesting a bug reproducing test in first place for 149 bugs. To mitigate data contamination, we also evaluate LIBRO against 31 bug reports submitted after the collection of the LLM training data terminated: LIBRO produces bug reproducing tests for 32% of the studied bug reports. Overall, our results show LIBRO has the potential to significantly enhance developer efficiency by automatically generating tests from bug reports.
+
+
 
 # SMT Fuzzing
 
@@ -1823,7 +1855,7 @@ SSL encrypted protocols. As a proof of concept for efficiency of ESPIKE we demon
 
 * <img src="image/github_24px.png">[Code](https://github.com/hra687261/alt-ergo-fuzz)
 
-Alt-Ergo is an open source Satisfiability Modulo Theories (SMT) solver programmed in OCaml. It was designed for program verification and it's used as a back end by other software verification tools such as Frama-C, SPARK, Why3, Atelier-B and Caveat, the reliability of which depends on the soundness of Alt-Ergo's answers and the absence of bugs in it.
+**Abstract:** Alt-Ergo is an open source Satisfiability Modulo Theories (SMT) solver programmed in OCaml. It was designed for program verification and it's used as a back end by other software verification tools such as Frama-C, SPARK, Why3, Atelier-B and Caveat, the reliability of which depends on the soundness of Alt-Ergo's answers and the absence of bugs in it.
 Fuzzing is an efficient technique to test programs and find bugs. It works by quickly and automatically generating input data with which to test the software. American Fuzzy Lop (AFL) is one of the most well-known and most used fuzzers in both academia and the industry. It has managed to find many bugs in various programs thanks to its grey box fuzzing technique that uses genetic algorithms and program instrumentation to generate test data that maximizes code and execution path coverage in the targeted software.
 In this paper we present Alt-Ergo-Fuzz, a fuzzer for Alt-Ergo that we developed with the aim of finding faults and unsoundness bugs to solve and improve its reliability. By using AFL as a back end, the Crowbar OCaml library for test case generation and the CVC5 SMT solver as a reference solver of which the answers will be used to determine whether or not Alt-Ergo's answers are correct, we managed to develop Alt-Ergo-Fuzz, which even as a work in progress and in only twenty days of testing managed to find four never found before bugs in Alt-Ergo.
 
@@ -2130,7 +2162,14 @@ In this paper, we approach the problem of coverage-guided kernel fuzzing in an O
 
 
 
-# Hybrid Fuzzing:
+# Hybrid Fuzzing
+
+### Evaluating and Improving Hybrid Fuzzing (ICSE 2023)
+
+* <img src="image/pdf_24px.png">[Paper](https://conf.researchr.org/details/icse-2023/icse-2023-technical-track/143/Evaluating-and-Improving-Hybrid-Fuzzing)
+
+**Abstract** To date, various hybrid fuzzers have been proposed for maximal program vulnerability exposure by integrating the power of fuzzing strategies and concolic executors. While the existing hybrid fuzzers have shown their superiority over conventional coverage-guided fuzzers, they seldom follow equivalent evaluation setups, e.g., benchmarks and seed corpora. Thus, there is a pressing need for a comprehensive study on the existing hybrid fuzzers to provide implications and guidance for future research in this area. To this end, in this paper, we conduct the first extensive study on state-of-the-art hybrid fuzzers. Surprisingly, our study shows that the performance of existing hybrid fuzzers may not well generalize to other experimental settings. Meanwhile, their performance advantages over conventional coverage-guided fuzzers are overall limited. In addition, instead of simply updating the fuzzing strategies or concolic executors, updating their coordination modes potentially poses crucial performance impact of hybrid fuzzers. Accordingly, we propose Cohuzz to improve the effectiveness of hybrid fuzzers by upgrading their coordination modes. Specifically, based on the baseline hybrid fuzzer QSYM, Cohuzz adopts \textit{edge-oriented scheduling} to schedule edges for applying concolic execution via an online linear regression model with Stochastic Gradient Descent. It also adopts \textit{sampling-augmenting synchronization} to derive seeds for applying fuzzing strategies via the interval path abstraction and John walk as well as incrementally updating the model. Our evaluation results indicate that Cohuzz can significantly increase the edge coverage (e.g., 16.31% higher than the best existing hybrid fuzzer in our study) and expose around 2X more unique crashes than all studied hybrid fuzzers. Moreover, Cohuzz successfully detects 37 previously unknown bugs where 30 are confirmed with 8 new CVEs and 20 are fixed.
+
 
 ### Sydr-Fuzz: Continuous Hybrid Fuzzing and Dynamic Analysis for Security Development Lifecycle (ISPRAS Open 2022)
 
@@ -4444,7 +4483,7 @@ We propose RoboFuzz, a feedback-driven fuzzing framework that integrates with RO
 In this work, we propose \textit{Almost Correct Invariants} as an automated strategy for synthesizing inductive invariants for such ``open" programs. We adopt an active learning strategy where a data-driven learner proposes candidate invariants. In deviation from prior work that attempt to \textit{verify} invariants, we attempt to \textit{falsify} the invariants: we reduce the falsification problem to a set of reachability checks on non-deterministic programs; we ride on the success of modern fuzzers to answer these reachability queries. Our tool, $\textit{ACHAR}$, automatically synthesizes inductive invariants that are sufficient to prove the correctness of the target programs. We compare $\textit{ACHAR}$ with a state-of-the-art invariant synthesis tool that employs theorem proving on formulae built over the program source. Though $\textit{ACHAR}$ is without strong soundness guarantees, our experiments show that even when we provide almost no access to the program source, $\textit{ACHAR}$ outperforms the state-of-the-art invariant generator that has complete access to the source. We also evaluate $\textit{ACHAR}$ on programs that current invariant synthesis engines cannot handle programs that invoke external library calls, inline assembly, and queries to convolution neural networks; $\textit{ACHAR}$ successfully infers the necessary inductive invariants within a reasonable time.
 
 
-### ?AFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware (ICSE 2022)
+### ¦ÌAFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware (ICSE 2022)
 
 * <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2202.03013.pdf)
 

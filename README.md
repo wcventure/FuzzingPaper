@@ -2,15 +2,15 @@
 
 Remark: This website is only used for collecting and grouping the related paper. If there are any paper need to be updated, you can contribute PR.
 
-## Starchart
-
-[![Star History Chart](https://api.star-history.com/svg?repos=wcventure/FuzzingPaper&type=Date)](https://star-history.com/#wcventure/FuzzingPaper&Date)
-
 ## Contributors
 
 <a href="https://github.com/wcventure/FuzzingPaper/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=wcventure/FuzzingPaper" />
 </a>
+
+## Starchart
+
+[![Star History Chart](https://api.star-history.com/svg?repos=wcventure/FuzzingPaper&type=Date)](https://star-history.com/#wcventure/FuzzingPaper&Date)
 
 # All Papers (Classification according to Publication)
 
@@ -528,8 +528,8 @@ Remark: This website is only used for collecting and grouping the related paper.
 # All Papers (Classification according to Subject)
 
 - [Recent Papers Related To Fuzzing](#recent-papers-related-to-fuzzing)
-  - [Starchart](#starchart)
   - [Contributors](#contributors)
+  - [Starchart](#starchart)
 - [All Papers (Classification according to Publication)](#all-papers-classification-according-to-publication)
 - [All Papers (Classification according to Subject)](#all-papers-classification-according-to-subject)
 - [Survey/Review](#surveyreview)

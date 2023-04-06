@@ -2,8 +2,15 @@
 
 Remark: This website is only used for collecting and grouping the related paper. If there are any paper need to be updated, you can contribute PR.
 
-Main Repo.: [https://github.com/wcventure/FuzzingPaper](https://github.com/wcventure/FuzzingPaper)  
-Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.net/mirrors/wcventure/FuzzingPaper)
+## Starchart
+
+[![Star History Chart](https://api.star-history.com/svg?repos=wcventure/FuzzingPaper&type=Date)](https://star-history.com/#wcventure/FuzzingPaper&Date)
+
+## Contributors
+
+<a href="https://github.com/wcventure/FuzzingPaper/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=wcventure/FuzzingPaper" />
+</a>
 
 # All Papers (Classification according to Publication)
 
@@ -91,7 +98,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
   - [FIXREVERTER: A Realistic Bug Injection Methodology for Benchmarking Fuzz Testing](#fixreverter-a-realistic-bug-injection-methodology-for-benchmarking-fuzz-testing-usenix-sec22)
   - [StateFuzz: System Call-Based State-Aware Linux Driver Fuzzing](#statefuzz-system-call-based-state-aware-linux-driver-fuzzing-usenix-sec-2022)
 - **ICSE 2022**
-  - [¦ÌAFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware](#¦Ìafl-non-intrusive-feedback-driven-fuzzing-for-microcontroller-firmware-icse-2022)
+  - [ï¿½ï¿½AFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware](#ï¿½ï¿½afl-non-intrusive-feedback-driven-fuzzing-for-microcontroller-firmware-icse-2022)
   - [BeDivFuzz: Integrating Behavioral Diversity into Generator-based Fuzzing](#bedivfuzz-integrating-behavioral-diversity-into-generator-based-fuzzing-icse-2022)
   - [CONFETTI: Amplifying Concolic Guidance for Fuzzers](#confetti-amplifying-concolic-guidance-for-fuzzers-icse-2022)
   - [Demystifying the Dependency Challenge in Kernel Fuzzing](#demystifying-the-dependency-challenge-in-kernel-fuzzing-icse-2022)
@@ -521,6 +528,8 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
 # All Papers (Classification according to Subject)
 
 - [Recent Papers Related To Fuzzing](#recent-papers-related-to-fuzzing)
+  - [Starchart](#starchart)
+  - [Contributors](#contributors)
 - [All Papers (Classification according to Publication)](#all-papers-classification-according-to-publication)
 - [All Papers (Classification according to Subject)](#all-papers-classification-according-to-subject)
 - [Survey/Review](#surveyreview)
@@ -924,7 +933,7 @@ Mirrors: [https://gitcode.net/mirrors/wcventure/FuzzingPaper](https://gitcode.ne
 - [Other Interesting Fuzzing](#other-interesting-fuzzing)
     - [RoboFuzz: Fuzzing Robotic Systems over Robot Operating System (ROS) for Finding Correctness Bugs (FSE 2022)](#robofuzz-fuzzing-robotic-systems-over-robot-operating-system-ros-for-finding-correctness-bugs-fse-2022)
     - [Almost Correct Invariants: Synthesizing Inductive Invariants by Fuzzing Proofs (ISSTA 2022)](#almost-correct-invariants-synthesizing-inductive-invariants-by-fuzzing-proofs-issta-2022)
-    - [¦ÌAFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware (ICSE 2022)](#¦Ìafl-non-intrusive-feedback-driven-fuzzing-for-microcontroller-firmware-icse-2022)
+    - [ï¿½ï¿½AFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware (ICSE 2022)](#afl-non-intrusive-feedback-driven-fuzzing-for-microcontroller-firmware-icse-2022)
     - [CorbFuzz: Checking Browser Security Policies with Fuzzing (ASE 2021)](#corbfuzz-checking-browser-security-policies-with-fuzzing-ase-2021)
     - [Fully Automated Functional Fuzzing of Android Apps for Detecting Non-crashing Logic Bugs (OOPSLA 2021)](#fully-automated-functional-fuzzing-of-android-apps-for-detecting-non-crashing-logic-bugs-oopsla-2021)
     - [webFuzz: Grey-Box Fuzzing for Web Applications (ESORICS 2021)](#webfuzz-grey-box-fuzzing-for-web-applications-esorics-2021)
@@ -4483,7 +4492,7 @@ We propose RoboFuzz, a feedback-driven fuzzing framework that integrates with RO
 In this work, we propose \textit{Almost Correct Invariants} as an automated strategy for synthesizing inductive invariants for such ``open" programs. We adopt an active learning strategy where a data-driven learner proposes candidate invariants. In deviation from prior work that attempt to \textit{verify} invariants, we attempt to \textit{falsify} the invariants: we reduce the falsification problem to a set of reachability checks on non-deterministic programs; we ride on the success of modern fuzzers to answer these reachability queries. Our tool, $\textit{ACHAR}$, automatically synthesizes inductive invariants that are sufficient to prove the correctness of the target programs. We compare $\textit{ACHAR}$ with a state-of-the-art invariant synthesis tool that employs theorem proving on formulae built over the program source. Though $\textit{ACHAR}$ is without strong soundness guarantees, our experiments show that even when we provide almost no access to the program source, $\textit{ACHAR}$ outperforms the state-of-the-art invariant generator that has complete access to the source. We also evaluate $\textit{ACHAR}$ on programs that current invariant synthesis engines cannot handle programs that invoke external library calls, inline assembly, and queries to convolution neural networks; $\textit{ACHAR}$ successfully infers the necessary inductive invariants within a reasonable time.
 
 
-### ¦ÌAFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware (ICSE 2022)
+### ï¿½ï¿½AFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware (ICSE 2022)
 
 * <img src="image/pdf_24px.png">[Paper](https://arxiv.org/pdf/2202.03013.pdf)
 

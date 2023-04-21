@@ -53,6 +53,7 @@ We also welcome contributions of summaries of scientific papers based on large l
   - [LawBreaker: An Approach for Specifying Traffic Laws and Fuzzing Autonomous Vehicles]
   - [QATest: A Uniform Fuzzing Framework for Question Answering Systems]
   - [So Many Fuzzers, So Little Time - Experience from Evaluating Fuzzers on the Contiki-NG Network (Hay)StackVirt]
+  - [Auto Off-Target: Enabling Thorough and Scalable Testing for Complex Software Systems](#auto-off-target:-enabling-thorough-and-scalable-testing-for-complex-software-systems-ase-2022)
 - **ISSTA 2022**
   - [sAlmost Correct Invariants: Synthesizing Inductive Invariants by Fuzzing Proof](#almost-correct-invariants-synthesizing-inductive-invariants-by-fuzzing-proofs-issta-2022)
   - [DocTer: Documentation-Guided Fuzzing for Testing Deep Learning API Functions](#Docter-documentation-guided-fuzzing-for-testing-deep-learning-api-functions-issta-2022)
@@ -4907,6 +4908,24 @@ We propose a novel combination of lightweight program analysis, re-hosting, and 
 
 We evaluate our approach on synthetic and real-world targets comprising a total of 19 hardware platforms and 77 firmware images. Compared to state-of-the-art work, Fuzzware achieves up to 3.25 times the code coverage and our modeling approach reduces the size of the input space by up to 95.5%. The synthetic samples contain 66 unit tests for various hardware interactions, and we find that our approach is the first generic re-hosting solution to automatically pass all of them. Fuzzware discovered 15 completely new bugs including bugs in targets which were previously analyzed by other works; a total of 12 CVEs were assigned.
 
+### Auto Off-Target: Enabling Thorough and Scalable Testing for Complex Software Systems (ASE 2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://dl.acm.org/doi/pdf/10.1145/3551349.3556915)
+
+* <img src="image/github_24px.png">[Code: AoT](https://github.com/samsung/auto_off_target)
+
+* <img src="image/github_24px.png">[Code: CAS](https://github.com/samsung/cas)
+
+**Abstract:** Software systems powering OS kernels, basebands, bootloaders, firmware, IoT or automotive build the foundation of infrastructure that billions of people rely on every day. Testing these systems is crucial, especially as their complexity grows and they are often written in unsafe languages such as C/C++.
+
+However, testing such complex systems poses significant challenges, e.g., custom hardware for which there is no emulator, or a non-trivial setup of testing and debugging on the target device. As a result, the commonly used testing techniques and tools are not always easily applicable.
+
+An off-target (OT) testing is a promising technique which addresses these challenges: part of the code is extracted and adapted to run on a different hardware platform with better tool support, easier debugging and higher test throughput. Unfortunately, since the process of creating an OT program has been manual, the technique did not scale well and was mostly used in an ad hoc manner.
+
+In this paper we present a novel complex systems testing approach called Auto Off-target (AoT). Based on the information extracted from the source code and from the build process, AoT can automatically generate OT programs in C. AoT goes beyond the code generation and provides mechanisms that help to recreate and discover the program state in the OT code. The generated OTs are self-contained and independent of the original build environment. As a result, pieces of complex or embedded software can be easily
+run, analyzed, debugged and tested on a standard x86_64 machine.
+
+We evaluate AoT on tens of thousands of functions selected from OS kernels, a bootloader and a network stack. We demonstrate we can run fuzzing and symbolic execution on the majority of the generated OTs. We further used AoT in a bug finding campaign and discovered seven bugs in the Android redfin and oriole kernels powering Google Pixel 5 and 6 phones.
 
 ##### Page Traffic Analysis
 

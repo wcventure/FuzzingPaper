@@ -981,6 +981,7 @@ We also welcome contributions of summaries of scientific papers based on large l
     - [Designing New Operating Primitives to Improve Fuzzing Performance (CCS 2017)](#designing-new-operating-primitives-to-improve-fuzzing-performance-ccs-2017)
     - [Chizpurfle: A Gray-Box Android Fuzzer for Vendor Service Customizations (ISSRE 2017)](#chizpurfle-a-gray-box-android-fuzzer-for-vendor-service-customizations-issre-2017)
     - [Fuzzware: Using Precise MMIO Modeling for Effective Firmware Fuzzing (USENIX Security2022)](#fuzzware-using-precise-mmio-modeling-for-effective-firmware-fuzzing-usenix-security2022)
+    - [Auto Off-Target: Enabling Thorough and Scalable Testing for Complex Software Systems](#auto-off-target:-enabling-thorough-and-scalable-testing-for-complex-software-systems-ase-2022)
         - [Page Traffic Analysis](#page-traffic-analysis)
 
 

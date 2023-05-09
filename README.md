@@ -29,6 +29,13 @@ We also welcome contributions of summaries of scientific papers based on large l
   - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
   - [Survey of Software Fuzzing Techniques](#survey-of-software-fuzzing-techniques)
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
+- **NDSS 2023**
+  - [Assessing the Impact of Interface Vulnerabilities in Compartmentalized Software](#assessing-the-impact-of-interface-vulnerabilities-in-compartmentalized-software-ndss-2023)
+  - [FUZZILLI: Fuzzing for JavaScript JIT Compiler Vulnerabilities](#fuzzilli-fuzzing-for-javascript-jit-compiler-vulnerabilities-ndss-2023)
+  - [No Grammar, No Problem: Towards Fuzzing the Linux Kernel without System-Call Descriptions](#no-grammar-no-problem-towards-fuzzing-the-linux-kernel-without-system-call-descriptions-ndss-2023)
+  - [DARWIN: Survival of the Fittest Fuzzing Mutators](#darwin-survival-of-the-fittest-fuzzing-mutators-ndss-2023)
+  - [LOKI: State-Aware Fuzzing Framework for the Implementation of Blockchain Consensus Protocols](#loki-state-aware-fuzzing-framework-for-the-implementation-of-blockchain-consensus-protocols-ndss-2023)
+  - [OBSan: An Out-Of-Bound Sanitizer to Harden DNN Executables](#obsan-an-out-of-bound-sanitizer-to-harden-dnn-executables-ndss-2023)
 - **ISSTA 2023**
   - [Large Language Models are Zero-Shot Fuzzers:Fuzzing Deep-Learning Libraries via Large Language Models](#large-language-models-are-zero-shot-fuzzersfuzzing-deep-learning-libraries-via-large-language-models-issta-2023)
 - **ICSE 2023**
@@ -655,6 +662,7 @@ We also welcome contributions of summaries of scientific papers based on large l
     - [Antifuzz: impeding fuzzing audits of binary executables (USENIX Security2019)](#antifuzz-impeding-fuzzing-audits-of-binary-executables-usenix-security2019)
     - [FUZZIFICATION: Anti-Fuzzing Technique (USENIX Security2019)](#fuzzification-anti-fuzzing-technique-usenix-security2019)
 - [Kernel Fuzzing](#kernel-fuzzing)
+    - [No Grammar, No Problem: Towards Fuzzing the Linux Kernel without System-Call Descriptions (NDSS 2023)](#no-grammar-no-problem-towards-fuzzing-the-linux-kernel-without-system-call-descriptions-ndss-2023)
     - [Demystifying the Dependency Challenge in Kernel Fuzzing (ICSE 2022)](#demystifying-the-dependency-challenge-in-kernel-fuzzing-icse-2022)
     - [Semantic-Informed Driver Fuzzing Without Both the Hardware Devices and the Emulators (ICSE 2022)](#semantic-informed-driver-fuzzing-without-both-the-hardware-devices-and-the-emulators-icse-2022)
     - [SyzScope: Revealing High-Risk Security Impacts of Fuzzer-Exposed Bugs in Linux kernel  (USENIX SEC'22)](#syzscope-revealing-high-risk-security-impacts-of-fuzzer-exposed-bugs-in-linux-kernel--usenix-sec22)
@@ -702,6 +710,7 @@ We also welcome contributions of summaries of scientific papers based on large l
     - [Hybrid Fuzz Testing - Discovering Software Bugs via Fuzzing and Symbolic Execution (2012)](#hybrid-fuzz-testing---discovering-software-bugs-via-fuzzing-and-symbolic-execution-2012)
     - [Hybrid concolic testing (2007)](#hybrid-concolic-testing-2007)
 - [Mutation\\Coverage\\Path](#mutationcoveragepath)
+    - [DARWIN: Survival of the Fittest Fuzzing Mutators (NDSS 2023)](#darwin-survival-of-the-fittest-fuzzing-mutators-ndss-2023)
     - [Rainfuzz: Reinforcement-Learning Driven Heat-Maps for Boosting Coverage-Guided Fuzzing (ICPRAM 2023)](#rainfuzz-reinforcement-learning-driven-heat-maps-for-boosting-coverage-guided-fuzzing-icpram-2023)
     - [Evaluating the Fork-Awareness of Coverage-Guided Fuzzers (ICISSP 2023)](#evaluating-the-fork-awareness-of-coverage-guided-fuzzers-icissp-2023)
     - [One Fuzzing Strategy to Rule Them All (ICSE 2022)](#one-fuzzing-strategy-to-rule-them-all-icse-2022)
@@ -719,6 +728,7 @@ We also welcome contributions of summaries of scientific papers based on large l
     - [FairFuzz: A Targeted Mutation Strategy for Increasing Greybox Fuzz Testing Coverage (ASE 2018)](#fairfuzz-a-targeted-mutation-strategy-for-increasing-greybox-fuzz-testing-coverage-ase-2018)
     - [VUzzer: Application-aware Evolutionary Fuzzing (NDSS 2017)](#vuzzer-application-aware-evolutionary-fuzzing-ndss-2017)
 - [Grammars \\ Semantic \\ Context-aware Fuzzing](#grammars--semantic--context-aware-fuzzing)
+    - [FUZZILLI: Fuzzing for JavaScript JIT Compiler Vulnerabilities (NDSS 2023)](#fuzzilli-fuzzing-for-javascript-jit-compiler-vulnerabilities-ndss-2023)
     - [FRAMESHIFTER: Manipulating HTTP/2 Frame Sequences with Fuzzing (Usenix Security2020)](#frameshifter-manipulating-http2-frame-sequences-with-fuzzing-usenix-security2020)
     - [SGXFuzz: Efficiently Synthesizing Nested Structures for SGX Enclave Fuzzing (Usenix Security2022)](#sgxfuzz-efficiently-synthesizing-nested-structures-for-sgx-enclave-fuzzing-usenix-security2022)
     - [Unicorn: Detect Runtime Error in Time-Series Databases With Hybrid Input Synthesis (ISSTA 2022)](#unicorn-detect-runtime-error-in-time-series-databases-with-hybrid-input-synthesis-issta-2022)
@@ -812,6 +822,7 @@ We also welcome contributions of summaries of scientific papers based on large l
     - [Badger: Complexity Analysis with Fuzzing and Symbolic Execution (ISSTA 2018)](#badger-complexity-analysis-with-fuzzing-and-symbolic-execution-issta-2018)
     - [SlowFuzz: Automated Domain-Independent Detection of Algorithmic Complexity Vulnerabilities (CCS 2017)](#slowfuzz-automated-domain-independent-detection-of-algorithmic-complexity-vulnerabilities-ccs-2017)
 - [Enhancing Memory Error:](#enhancing-memory-error)
+    - [OBSan: An Out-Of-Bound Sanitizer to Harden DNN Executables (NDSS 2023)](#obsan-an-out-of-bound-sanitizer-to-harden-dnn-executables-ndss-2023)
     - [SANRAZOR: Reducing Redundant Sanitizer Checks in C/C++ Programs (OSDI 2021)](#sanrazor-reducing-redundant-sanitizer-checks-in-cc-programs-osdi-2021)
     - [Unleashing Fuzzing Through Comprehensive, Efficient, and Faithful Exploitable-Bug Exposing](#unleashing-fuzzing-through-comprehensive-efficient-and-faithful-exploitable-bug-exposing)
     - [HDR-Fuzz: Detecting Buffer Overruns using AddressSanitizer Instrumentation and Fuzzing (2021)](#hdr-fuzz-detecting-buffer-overruns-using-addresssanitizer-instrumentation-and-fuzzing-2021)
@@ -915,6 +926,7 @@ We also welcome contributions of summaries of scientific papers based on large l
     - [Fuzz Testing of Multithreaded Applications Based on Waiting (MICSECS 2019)](#fuzz-testing-of-multithreaded-applications-based-on-waiting-micsecs-2019)
     - [A Heuristic Framework to Detect Concurrency Vulnerabilities (ACSAC 2018)](#a-heuristic-framework-to-detect-concurrency-vulnerabilities-acsac-2018)
 - [API Testing/Fuzzing](#api-testingfuzzing)
+    - [Assessing the Impact of Interface Vulnerabilities in Compartmentalized Software (NDSS 2023)](#assessing-the-impact-of-interface-vulnerabilities-in-compartmentalized-software-ndss-2023)
     - [Minerva: Browser API Fuzzing with Dynamic Mod-Ref Analysis (FSE 2022)](#minerva-browser-api-fuzzing-with-dynamic-mod-ref-analysis-fse-2022)
     - [Combinatorial Testing of RESTful APIs (ICSE 2022)](#combinatorial-testing-of-restful-apis-icse-2022)
     - [GraphFuzz: Library API Fuzzing with Lifetime-aware Dataflow Graphs (ICSE 2022)](#graphfuzz-library-api-fuzzing-with-lifetime-aware-dataflow-graphs-icse-2022)
@@ -933,6 +945,7 @@ We also welcome contributions of summaries of scientific papers based on large l
     - [Fuzzing Hardware Like Software (USENIX SEC 2022)](#fuzzing-hardware-like-software-usenix-sec-2022)
     - [PeriScope: An Effective Probing and Fuzzing Framework for the Hardware-OS Boundary (NDSS2019)](#periscope-an-effective-probing-and-fuzzing-framework-for-the-hardware-os-boundary-ndss2019)
 - [Other Interesting Fuzzing](#other-interesting-fuzzing)
+    - [LOKI: State-Aware Fuzzing Framework for the Implementation of Blockchain Consensus Protocols (NDSS 2023)](#loki-state-aware-fuzzing-framework-for-the-implementation-of-blockchain-consensus-protocols-ndss-2023)
     - [RoboFuzz: Fuzzing Robotic Systems over Robot Operating System (ROS) for Finding Correctness Bugs (FSE 2022)](#robofuzz-fuzzing-robotic-systems-over-robot-operating-system-ros-for-finding-correctness-bugs-fse-2022)
     - [Almost Correct Invariants: Synthesizing Inductive Invariants by Fuzzing Proofs (ISSTA 2022)](#almost-correct-invariants-synthesizing-inductive-invariants-by-fuzzing-proofs-issta-2022)
     - [��AFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware (ICSE 2022)](#afl-non-intrusive-feedback-driven-fuzzing-for-microcontroller-firmware-icse-2022)
@@ -1976,6 +1989,16 @@ Our evaluation on popular fuzzers and real-world applications shows that Fuzzifi
 
 # Kernel Fuzzing
 
+### No Grammar, No Problem: Towards Fuzzing the Linux Kernel without System-Call Descriptions (NDSS 2023)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.ndss-symposium.org/wp-content/uploads/2023/02/ndss2023_f688_paper.pdf)
+
+**Abstract:** The integrity of the entire computing ecosystem depends on the security of our operating systems (OSes). Unfortunately, due to the scale and complexity of OS code, hundreds of security issues are found in OSes, every year. As such, operating systems have constantly been prime use-cases for applying security-analysis tools. In recent years, fuzz-testing has appeared as the dominant technique for automatically finding security issues in software. As such, fuzzing has been adapted to find thousands of bugs in kernels. However, modern OS fuzzers, such as Syzkaller, rely on precise, extensive, manually created harnesses and grammars for each interface fuzzed within the kernel. Due to this reliance on grammars, current OS fuzzers are faced with scaling-issues.
+
+In this paper, we present FuzzNG, our generic approach to fuzzing system-calls on OSes. Unlike Syzkaller, FuzzNG does not require intricate descriptions of system-call interfaces in order to function. Instead FuzzNG leverages fundamental Kernel design features in order to reshape and simplify the fuzzer’s input-space. As such FuzzNG only requires a small config, for each new target: essentially a list of files and system-call numbers the fuzzer should explore.
+
+We implemented FuzzNG for the Linux kernel. Testing FuzzNG over 10 Linux components with extensive descrip tions in Syzkaller showed that, on average, FuzzNG achieves 102.5% of Syzkaller’s coverage. FuzzNG found 9 new bugs (5 in components that Syzkaller had already fuzzed extensively, for years). Additionally, FuzzNG’s lightweight configs are less than 1.7% the size of Syzkaller’s manually-written grammars. Crucially, FuzzNG achieves this without initial seed-inputs, or expert guidance.
+
 ### Demystifying the Dependency Challenge in Kernel Fuzzing (ICSE 2022)
 
 * <img src="image/pdf_24px.png">[Paper](https://conf.researchr.org/details/icse-2022/icse-2022-papers/89/Demystifying-the-Dependency-Challenge-in-Kernel-Fuzzing)
@@ -2443,6 +2466,24 @@ This thesis presents our attempt to attain the best of both worlds by combining 
 
 # Mutation\Coverage\Path
 
+### DARWIN: Survival of the Fittest Fuzzing Mutators (NDSS 2023)
+
+* * <img src="image/pdf_24px.png">[Paper](https://www.ndss-symposium.org/wp-content/uploads/2023/02/ndss2023_s159_paper.pdf)
+
+**Abstract:** Fuzzing is an automated software testing technique broadly adopted by the industry.
+A popular variant is mutation-based fuzzing, which discovers a large number of bugs in practice.
+While the research community has studied mutation-based fuzzing for years now, the algorithms' interactions within the fuzzer are highly complex and can, together with the randomness in every instance of a fuzzer, lead to unpredictable effects.
+Most efforts to improve this fragile interaction focused on optimizing seed scheduling.
+However, real-world results like Google's FuzzBench highlight that these approaches do not consistently show improvements in practice.
+Another approach to improve the fuzzing process algorithmically is optimizing mutation scheduling.
+Unfortunately, existing mutation scheduling approaches also failed to convince because of missing real-world improvements or too many user-controlled parameters whose configuration requires expert knowledge about the target program.
+This leaves the challenging problem of cleverly processing test cases and achieving a measurable improvement unsolved.
+
+We present DARWIN, a novel mutation scheduler and the first to show fuzzing improvements in a realistic scenario without the need to introduce additional user-configurable parameters, opening this approach to the broad fuzzing community. DARWIN uses an Evolution Strategy to systematically optimize and adapt the probability distribution of the mutation operators during fuzzing.
+We implemented a prototype based on the popular general-purpose fuzzer AFL.
+DARWIN significantly outperforms the state-of-the-art mutation scheduler and the AFL baseline in our own coverage experiment, in FuzzBench, and by finding 15 out of 21 bugs the fastest in the MAGMA benchmark.
+Finally, DARWIN found 20 unique bugs (including one novel bug), 66% more than AFL, in widely-used real-world applications.
+
 ### Rainfuzz: Reinforcement-Learning Driven Heat-Maps for Boosting Coverage-Guided Fuzzing (ICPRAM 2023)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/ICPRAM23_Rainfuzz.pdf)
@@ -2593,6 +2634,15 @@ In this paper, we present an application-aware evolutionary fuzzing strategy tha
 
 
 # Grammars \ Semantic \ Context-aware Fuzzing
+
+### FUZZILLI: Fuzzing for JavaScript JIT Compiler Vulnerabilities (NDSS 2023)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.ndss-symposium.org/wp-content/uploads/2023/02/ndss2023_f290_paper.pdf)
+
+**Abstract:** JavaScript has become an essential part of the Internet infrastructure, and today's interactive web applications would be inconceivable without this programming language. On the downside, this interactivity implies that web applications rely on an ever-increasing amount of computationally intensive JavaScript code, which burdens the JavaScript engine responsible for efficiently executing the code. To meet these rising performance demands, modern JavaScript engines ship with sophisticated just-in-time (JIT) compilers. However, JIT compilers are a complex technology and, consequently, provide a broad attack surface for potential faults that might even be security-critical.
+Previous work on discovering software faults in JavaScript engines found many vulnerabilities, often using fuzz testing. Unfortunately, these fuzzing approaches are not designed to generate source code that actually triggers JIT semantics. Consequently, JIT vulnerabilities are unlikely to be discovered by existing methods.
+In this paper, we close this gap and present the first fuzzer that focuses on JIT vulnerabilities.
+More specifically, we present the design and implementation of an intermediate representation (IR) that focuses on discovering JIT compiler vulnerabilities. We implemented a complete prototype of the proposed approach and evaluated our fuzzer over a period of six months. In total, we discovered 17 confirmed security vulnerabilities. Our results show that targeted JIT fuzzing is possible and a dangerously neglected gap in fuzzing coverage for JavaScript engines.
 
 ### FRAMESHIFTER: Manipulating HTTP/2 Frame Sequences with Fuzzing (Usenix Security2020)
 
@@ -3451,6 +3501,14 @@ Unfortunately, existing detection mechanisms for algorithmic complexity vulnerab
 
 
 # Enhancing Memory Error:
+
+### OBSan: An Out-Of-Bound Sanitizer to Harden DNN Executables (NDSS 2023)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.ndss-symposium.org/wp-content/uploads/2023/02/ndss2023_f103_paper.pdf)
+
+**Abstract:** The rapid adoption of deep neural network (DNN) models on a variety of hardware platforms has boosted the development of deep learning (DL) compilers. DL compilers take as input the high-level DNN model specifications and generate optimized DNN executables for diverse hardware architectures like CPUs and GPUs. Despite the emerging adoption of DL compilers in real-world scenarios, no solutions exist to protect DNN executables. To fill this critical gap, this paper introduces OBSAN, a fast sanitizer designed to check out-of-bound (OOB) behavior of DNN executables. From a holistic view, DNN incorporates bidirectional computation: forward propagation that predicts an output based on an input, and backward propagation that characterizes how the forward prediction is made. Both neuron activations in forward propagation and the gradients in backward propagation should fall within valid ranges, and deviations from the valid ranges would be considered as OOB.
+
+OOB is primarily related to unsafe behavior of DNNs, which root from anomalous inputs and may cause mispredictions or even exploitation via adversarial examples (AEs). We thus design OBSAN, which includes two variants, FOBSAN and BOBSAN, that can detect OOB in the forward and backward propagations, respectively. Each OBSAN is designed as extra passes of DL compilers to integrate with large-scale DNN models, and we design various optimization schemes to reduce the overhead of OBSAN. Evaluations over various anomalous inputs show that OBSAN manifests promising OOB detectability with low overhead. We further present two downstream applications to show how OBSAN prevents online AE generation and facilitates feedback-driven fuzz testing toward DNN executables.
 
 ### SANRAZOR: Reducing Redundant Sanitizer Checks in C/C++ Programs (OSDI 2021)
 
@@ -4319,6 +4377,14 @@ In evaluating the proposed heuristic framework with a benchmark suit of six real
 
 # API Testing/Fuzzing
 
+### Assessing the Impact of Interface Vulnerabilities in Compartmentalized Software (NDSS 2023)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.ndss-symposium.org/wp-content/uploads/2023/02/ndss2023_f117_paper.pdf)
+
+**Abstract:** Least-privilege separation decomposes applications into compartments limited to accessing only what they need. When compartmentalizing existing software, many approaches neglect securing the new inter-compartment interfaces, although what used to be a function call from/to a trusted component is now potentially a targeted attack from a malicious compartment. This results in an entire class of security bugs: Compartment Interface Vulnerabilities (CIVs).
+
+This paper provides an in-depth study of CIVs. We taxonomize these issues and show that they affect all known compartmentalization approaches. We propose ConfFuzz, an in-memory fuzzer specialized to detect CIVs at possible compartment boundaries. We apply ConfFuzz to a set of 25 popular applications and 36 possible compartment APIs, to uncover a wide data-set of 629 vulnerabilities. We systematically study these issues, and extract numerous insights on the prevalence of CIVs, their causes, impact, and the complexity to address them. We stress the critical importance of CIVs in compartmentalization approaches, demonstrating an attack to extract isolated keys in OpenSSL and uncovering a decade-old vulnerability in sudo. We show, among others, that not all interfaces are affected in the same way, that API size is uncorrelated with CIV prevalence, and that addressing interface vulnerabilities goes beyond writing simple checks. We conclude the paper with guidelines for CIV-aware compartment interface design, and appeal for more research towards systematic CIV detection and mitigation.
+
 ### Minerva: Browser API Fuzzing with Dynamic Mod-Ref Analysis (FSE 2022)
 
 * <img src="image/pdf_24px.png">[Paper](https://hexhive.epfl.ch/publications/files/22FSE.pdf)
@@ -4476,6 +4542,21 @@ We present PeriScope, a Linux kernel based probing framework that enables fine-g
 
 
 # Other Interesting Fuzzing
+
+### LOKI: State-Aware Fuzzing Framework for the Implementation of Blockchain Consensus Protocols (NDSS 2023)
+
+* <img src="image/pdf_24px.png">[Paper](https://www.ndss-symposium.org/wp-content/uploads/2023/02/ndss2023_f78_paper.pdf)
+
+**Abstract:** Blockchain consensus protocols are responsible for coordinating the nodes to make agreements on the transaction results.
+Their implementation bugs, including
+memory-related and consensus logic vulnerabilities, may pose serious threats.
+Fuzzing is a promising technique for protocol vulnerability detection.
+However, existing fuzzers cannot deal with complex consensus states of distributed nodes, thus generating a large number of useless packets, inhibiting their effectiveness in reaching the deep logic of consensus protocols.
+
+In this work, we propose LOKI, a blockchain consensus protocol fuzzing framework that detects the consensus memory-related and logic bugs. LOKI senses consensus states in real-time by masquerading as a node. First, LOKI dynamically builds a state model that records the state transition of each node. After that, LOKI adaptively generates the input targets, types, and contents according to the state model. With a bug analyzer, LOKI detects the consensus protocol implementation bugs with well-defined oracles.
+We implemented and evaluated LOKI on four widely used commercial blockchain systems, including Go-Ethereum, Facebook Diem, IBM Fabric, and WeBank FISCO-BCOS.
+LOKI has detected 20 serious previously unknown vulnerabilities with 9 CVEs assigned. 14 of them are memory-related bugs, and 6 are consensus logic bugs.
+Compared with state-of-the-art tools such as Peach, Fluffy, and Twins, LOKI improves the branch coverage by an average of 43.21%, 182.05%, and 291.58%.
 
 ### RoboFuzz: Fuzzing Robotic Systems over Robot Operating System (ROS) for Finding Correctness Bugs (FSE 2022)
 

@@ -3,6 +3,8 @@
 Remark: This website is only used for collecting and grouping the related paper. If there are any paper need to be updated, you can contribute PR.
 We also welcome contributions of summaries of scientific papers based on large language models, such as [chatgpt_academic](https://github.com/binary-husky/chatgpt_academic) and [ChatPaper](https://github.com/kaixindelele/ChatPaper).
 
+Please check the web [wcventure.github.io/FuzzingPaper](wcventure.github.io/FuzzingPaper), as the `.md` file shown in Github is cropped.
+
 ## Contributors
 
 <a href="https://github.com/wcventure/FuzzingPaper/graphs/contributors">
@@ -29,13 +31,13 @@ We also welcome contributions of summaries of scientific papers based on large l
   - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
   - [Survey of Software Fuzzing Techniques](#survey-of-software-fuzzing-techniques)
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
-- **NDSS 2023**
-  - [Assessing the Impact of Interface Vulnerabilities in Compartmentalized Software](#assessing-the-impact-of-interface-vulnerabilities-in-compartmentalized-software-ndss-2023)
-  - [FUZZILLI: Fuzzing for JavaScript JIT Compiler Vulnerabilities](#fuzzilli-fuzzing-for-javascript-jit-compiler-vulnerabilities-ndss-2023)
-  - [No Grammar, No Problem: Towards Fuzzing the Linux Kernel without System-Call Descriptions](#no-grammar-no-problem-towards-fuzzing-the-linux-kernel-without-system-call-descriptions-ndss-2023)
-  - [DARWIN: Survival of the Fittest Fuzzing Mutators](#darwin-survival-of-the-fittest-fuzzing-mutators-ndss-2023)
-  - [LOKI: State-Aware Fuzzing Framework for the Implementation of Blockchain Consensus Protocols](#loki-state-aware-fuzzing-framework-for-the-implementation-of-blockchain-consensus-protocols-ndss-2023)
-  - [OBSan: An Out-Of-Bound Sanitizer to Harden DNN Executables](#obsan-an-out-of-bound-sanitizer-to-harden-dnn-executables-ndss-2023)
+- **PLDI 2023**
+  - [Fuzzing Loop Optimizations in Compilers for C++ and Data-Parallel Languages]
+  - [WasmRef-Isabelle: a Verified Monadic Interpreter and Industrial Fuzzing Oracle for WebAssembly]
+- **S&P 2023**
+  - [UTOPIA: Automatic Generation of Fuzz Driver using Unit Tests]
+  - [TEEzz: Fuzzing Trusted Applications on COTS Android Devices]
+  - [Toss a Fault to Your Witcher: Applying Grey-box Coverage-Guided Mutational Fuzzing to Detect SQL and Command Injection Vulnerabilities]
 - **ISSTA 2023**
   - [Large Language Models are Zero-Shot Fuzzers:Fuzzing Deep-Learning Libraries via Large Language Models](#large-language-models-are-zero-shot-fuzzersfuzzing-deep-learning-libraries-via-large-language-models-issta-2023)
 - **ICSE 2023**
@@ -46,6 +48,13 @@ We also welcome contributions of summaries of scientific papers based on large l
   - [Operand-Variation-Oriented Differential Analysis for Fuzzing Binding Calls in PDF Readers]
   - [Regression Fuzzing for Deep Learning Systems]
   - [Large Language Models are Few-shot Testers: Exploring LLM-based General Bug Reproduction](#large-language-models-are-few-shot-testers-exploring-llm-based-general-bug-reproduction-icse-2023)
+- **NDSS 2023**
+  - [Assessing the Impact of Interface Vulnerabilities in Compartmentalized Software](#assessing-the-impact-of-interface-vulnerabilities-in-compartmentalized-software-ndss-2023)
+  - [FUZZILLI: Fuzzing for JavaScript JIT Compiler Vulnerabilities](#fuzzilli-fuzzing-for-javascript-jit-compiler-vulnerabilities-ndss-2023)
+  - [No Grammar, No Problem: Towards Fuzzing the Linux Kernel without System-Call Descriptions](#no-grammar-no-problem-towards-fuzzing-the-linux-kernel-without-system-call-descriptions-ndss-2023)
+  - [DARWIN: Survival of the Fittest Fuzzing Mutators](#darwin-survival-of-the-fittest-fuzzing-mutators-ndss-2023)
+  - [LOKI: State-Aware Fuzzing Framework for the Implementation of Blockchain Consensus Protocols](#loki-state-aware-fuzzing-framework-for-the-implementation-of-blockchain-consensus-protocols-ndss-2023)
+  - [OBSan: An Out-Of-Bound Sanitizer to Harden DNN Executables](#obsan-an-out-of-bound-sanitizer-to-harden-dnn-executables-ndss-2023)
 - **ICISSP/ICPRAM 2023**
   - [Rainfuzz: Reinforcement-Learning Driven Heat-Maps for Boosting Coverage-Guided Fuzzing](#rainfuzz-reinforcement-learning-driven-heat-maps-for-boosting-coverage-guided-fuzzing-icpram-2023)
   - [SWaTEval: An Evaluation Framework for Stateful Web Application Testing](#swateval-an-evaluation-framework-for-stateful-web-application-testing-icissp-2023)
@@ -994,7 +1003,7 @@ We also welcome contributions of summaries of scientific papers based on large l
     - [Designing New Operating Primitives to Improve Fuzzing Performance (CCS 2017)](#designing-new-operating-primitives-to-improve-fuzzing-performance-ccs-2017)
     - [Chizpurfle: A Gray-Box Android Fuzzer for Vendor Service Customizations (ISSRE 2017)](#chizpurfle-a-gray-box-android-fuzzer-for-vendor-service-customizations-issre-2017)
     - [Fuzzware: Using Precise MMIO Modeling for Effective Firmware Fuzzing (USENIX Security2022)](#fuzzware-using-precise-mmio-modeling-for-effective-firmware-fuzzing-usenix-security2022)
-    - [Auto Off-Target: Enabling Thorough and Scalable Testing for Complex Software Systems](#auto-off-target:-enabling-thorough-and-scalable-testing-for-complex-software-systems-ase-2022)
+    - [Auto Off-Target: Enabling Thorough and Scalable Testing for Complex Software Systems (ASE 2022)](#auto-off-target-enabling-thorough-and-scalable-testing-for-complex-software-systems-ase-2022)
         - [Page Traffic Analysis](#page-traffic-analysis)
 
 

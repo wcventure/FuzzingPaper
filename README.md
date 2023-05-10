@@ -38,6 +38,8 @@ Please check the web [wcventure.github.io/FuzzingPaper](wcventure.github.io/Fuzz
   - [UTOPIA: Automatic Generation of Fuzz Driver using Unit Tests]
   - [TEEzz: Fuzzing Trusted Applications on COTS Android Devices]
   - [Toss a Fault to Your Witcher: Applying Grey-box Coverage-Guided Mutational Fuzzing to Detect SQL and Command Injection Vulnerabilities]
+- ***CCS 2023**
+  - [HOPPER: Interpretative Fuzzing for Libraries]
 - **ISSTA 2023**
   - [Large Language Models are Zero-Shot Fuzzers:Fuzzing Deep-Learning Libraries via Large Language Models](#large-language-models-are-zero-shot-fuzzersfuzzing-deep-learning-libraries-via-large-language-models-issta-2023)
 - **ICSE 2023**

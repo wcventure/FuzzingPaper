@@ -62,6 +62,8 @@ Please check the web [wcventure.github.io/FuzzingPaper](wcventure.github.io/Fuzz
   - [Rainfuzz: Reinforcement-Learning Driven Heat-Maps for Boosting Coverage-Guided Fuzzing](#rainfuzz-reinforcement-learning-driven-heat-maps-for-boosting-coverage-guided-fuzzing-icpram-2023)
   - [SWaTEval: An Evaluation Framework for Stateful Web Application Testing](#swateval-an-evaluation-framework-for-stateful-web-application-testing-icissp-2023)
   - [Evaluating the Fork-Awareness of Coverage-Guided Fuzzers](#evaluating-the-fork-awareness-of-coverage-guided-fuzzers-icissp-2023)
+- **XXX 2023***
+  - [Distributed System Fuzzing](https://arxiv.org/pdf/2305.02601.pdf)
 - **ASE 2022**
   - [Effectively Generating Vulnerable Transaction Sequences in Smart Contracts with Reinforcement Learning-guided Fuzzing]
   - [Efficient Greybox Fuzzing to Detect Memory Errors]

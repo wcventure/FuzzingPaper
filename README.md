@@ -35,6 +35,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](wcventure.github.io/Fuzz
   - [Fuzzing Loop Optimizations in Compilers for C++ and Data-Parallel Languages]
   - [WasmRef-Isabelle: a Verified Monadic Interpreter and Industrial Fuzzing Oracle for WebAssembly]
 - **S&P 2023**
+  - [SelectFuzz: Efficient Directed Fuzzing with Selective Path Exploration](https://www.computer.org/csdl/proceedings-article/sp/2023/933600b050/1Js0DBwgpwY)
   - [UTOPIA: Automatic Generation of Fuzz Driver using Unit Tests]
   - [TEEzz: Fuzzing Trusted Applications on COTS Android Devices]
   - [Toss a Fault to Your Witcher: Applying Grey-box Coverage-Guided Mutational Fuzzing to Detect SQL and Command Injection Vulnerabilities]

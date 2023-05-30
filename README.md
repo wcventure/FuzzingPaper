@@ -570,6 +570,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](wcventure.github.io/Fuzz
     - [Fuzzing: A Survey for Roadmap](#fuzzing-a-survey-for-roadmap)
     - [Survey of Software Fuzzing Techniques](#survey-of-software-fuzzing-techniques)
     - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
+    - [Embedded fuzzing: a review of challenges, tools, and solutions](#embedded-fuzzing-a-review-of-challenges-tools-and-solutions)
 - [Differential Fuzzing](#differential-fuzzing)
     - [SEDiff: Scope-Aware Differential Fuzzing to Test Internal Function Models in Symbolic Execution (FSE 2022)](#sediff-scope-aware-differential-fuzzing-to-test-internal-function-models-in-symbolic-execution-fse-2022)
     - [T-Reqs: HTTP Request Smuggling with Differential Fuzzing (CCS 2021)](#t-reqs-http-request-smuggling-with-differential-fuzzing-ccs-2021)

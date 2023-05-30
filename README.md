@@ -31,6 +31,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](wcventure.github.io/Fuzz
   - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
   - [Survey of Software Fuzzing Techniques](#survey-of-software-fuzzing-techniques)
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
+  - [Embedded fuzzing: a review of challenges, tools, and solutions](#embedded-fuzzing-a-review-of-challenges-tools-and-solutions)
 - **PLDI 2023**
   - [Fuzzing Loop Optimizations in Compilers for C++ and Data-Parallel Languages]
   - [WasmRef-Isabelle: a Verified Monadic Interpreter and Industrial Fuzzing Oracle for WebAssembly]
@@ -1115,6 +1116,13 @@ Please check the web [wcventure.github.io/FuzzingPaper](wcventure.github.io/Fuzz
 * <img src="image/pdf_24px.png">[Paper](./Paper/2017_review.pdf)
 
 **Abstract:** This paper reviewed some of the most noteworthy academic literature and practical work that has been produced in the field of fuzzing. We first examined how vulnerabilities come to exist in software and how security researchers find them. After a brief overview of common vulnerability types and methods of static analysis, we looked in depth at the field of fuzzing. Competing approaches to fuzzing were examined, from simple random inputs all the way to using genetic algorithms and taint analysis. The importance of measuring code coverage to evaluate the completeness of a fuzzing campaign was examined. Finally, the focus was placed on the fuzz testing of web browsers and the specific tools and techniques related to that.
+
+
+### Embedded fuzzing: a review of challenges, tools, and solutions
+
+* <img src="image/pdf_24px.png">[Paper](https://cybersecurity.springeropen.com/articles/10.1186/s42400-022-00123-y)
+
+**Abstract:** Fuzzing has become one of the best-established methods to uncover software bugs. Meanwhile, the market of embedded systems, which binds the software execution tightly to the very hardware architecture, has grown at a steady pace, and that pace is anticipated to become yet more sustained in the near future. Embedded systems also benefit from fuzzing, but the innumerable existing architectures and hardware peripherals complicate the development of general and usable approaches, hence a plethora of tools have recently appeared. Here comes a stringent need for a systematic review in the area of fuzzing approaches for embedded systems, which we term “embedded fuzzing” for brevity. The inclusion criteria chosen in this article are semi-objective in their coverage of the most relevant publication venues as well as of our personal judgement. The review rests on a formal definition we develop to represent the realm of embedded fuzzing. It continues by discussing the approaches that satisfy the inclusion criteria, then defines the relevant elements of comparison and groups the approaches according to how the execution environment is served to the system under test. The resulting review produces a table with 42 entries, which in turn supports discussion suggesting vast room for future research due to the limitations noted.
 
 
 # Differential Fuzzing

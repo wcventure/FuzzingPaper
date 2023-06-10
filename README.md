@@ -92,6 +92,13 @@ Please check the web [wcventure.github.io/FuzzingPaper](wcventure.github.io/Fuzz
   - [RoboFuzz: Fuzzing Robotic Systems over Robot Operating System (ROS) for Finding Correctness Bugs](#robofuzz-fuzzing-robotic-systems-over-robot-operating-system-ros-for-finding-correctness-bugs-fse-2022)
   - [SEDiff: Scope-Aware Differential Fuzzing to Test Internal Function Models in Symbolic Execution](#sediff-scope-aware-differential-fuzzing-to-test-internal-function-models-in-symbolic-execution-fse-2022)
   - [Fuzzing Deep-Learning Libraries via Automated Relational API Inference](#fuzzing-deep-learning-libraries-via-automated-relational-api-inference-esec-2022)
+- **CCS 2022**
+  - [DriveFuzz: Discovering Autonomous Driving Bugs through Driving Quality-Guided Fuzzing](#drivefuzz-discovering-autonomous-driving-bugs-through-driving-quality-guided-fuzzing)
+  - [JIT-Picking: Differential Fuzzing of JavaScript Engines](#jit-picking-differential-fuzzing-of-javascript-engines)
+  - [LibAFL: A Framework to Build Modular and Reusable Fuzzers](#libafl-a-framework-to-build-modular-and-reusable-fuzzers)
+  - [MC^2: Rigorous and Efficient Directed Greybox Fuzzing](#mc-2-rigorous-and-efficient-directed-greybox-fuzzing)
+  - [SFuzz: Slice-based Fuzzing for Real-Time Operating Systems](#sfuzz-slice-based-fuzzing-for-real-time-operating-systems)
+  - [SpecDoctor: Differential Fuzz Testing to Find Transient Execution Vulnerabilities](#specdoctor-differential-fuzz-testing-to-find-transient-execution-vulnerabilities)
 - **S&P 2022**
   - [Effective Seed Scheduling for Fuzzing with Graph Centrality Analysis](#effective-seed-scheduling-for-fuzzing-with-graph-centrality-analysis-sp-2022)
   - [BEACON: Directed Grey-Box Fuzzing with Provable Path Pruning](#beacon-directed-grey-box-fuzzing-with-provable-path-pruning-sp-2022)
@@ -572,6 +579,8 @@ Please check the web [wcventure.github.io/FuzzingPaper](wcventure.github.io/Fuzz
     - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
     - [Embedded fuzzing: a review of challenges, tools, and solutions](#embedded-fuzzing-a-review-of-challenges-tools-and-solutions)
 - [Differential Fuzzing](#differential-fuzzing)
+    - [JIT-Picking: Differential Fuzzing of JavaScript Engines](#jit-picking-differential-fuzzing-of-javascript-engines)
+    - [SpecDoctor: Differential Fuzz Testing to Find Transient Execution Vulnerabilities](#specdoctor-differential-fuzz-testing-to-find-transient-execution-vulnerabilities)
     - [SEDiff: Scope-Aware Differential Fuzzing to Test Internal Function Models in Symbolic Execution (FSE 2022)](#sediff-scope-aware-differential-fuzzing-to-test-internal-function-models-in-symbolic-execution-fse-2022)
     - [T-Reqs: HTTP Request Smuggling with Differential Fuzzing (CCS 2021)](#t-reqs-http-request-smuggling-with-differential-fuzzing-ccs-2021)
     - [CatchBackdoor: Backdoor Testing by Critical Trojan Neural Path Identification via Differential Fuzzing (2021)](#catchbackdoor-backdoor-testing-by-critical-trojan-neural-path-identification-via-differential-fuzzing-2021)
@@ -679,6 +688,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](wcventure.github.io/Fuzz
     - [FUZZIFICATION: Anti-Fuzzing Technique (USENIX Security2019)](#fuzzification-anti-fuzzing-technique-usenix-security2019)
 - [Kernel Fuzzing](#kernel-fuzzing)
     - [No Grammar, No Problem: Towards Fuzzing the Linux Kernel without System-Call Descriptions (NDSS 2023)](#no-grammar-no-problem-towards-fuzzing-the-linux-kernel-without-system-call-descriptions-ndss-2023)
+    - [SFuzz: Slice-based Fuzzing for Real-Time Operating Systems](#sfuzz-slice-based-fuzzing-for-real-time-operating-systems)
     - [Demystifying the Dependency Challenge in Kernel Fuzzing (ICSE 2022)](#demystifying-the-dependency-challenge-in-kernel-fuzzing-icse-2022)
     - [Semantic-Informed Driver Fuzzing Without Both the Hardware Devices and the Emulators (ICSE 2022)](#semantic-informed-driver-fuzzing-without-both-the-hardware-devices-and-the-emulators-icse-2022)
     - [SyzScope: Revealing High-Risk Security Impacts of Fuzzer-Exposed Bugs in Linux kernel  (USENIX SEC'22)](#syzscope-revealing-high-risk-security-impacts-of-fuzzer-exposed-bugs-in-linux-kernel--usenix-sec22)
@@ -813,6 +823,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](wcventure.github.io/Fuzz
     - [DeltaFuzz: Historical Version Information Guided Fuzz Testing (Journal of Computer Science and Technology 2021)](#deltafuzz-historical-version-information-guided-fuzz-testing-journal-of-computer-science-and-technology-2021)
     - [HyDiff: Hybrid Differential Software Analysis (ICSE 2020)](#hydiff-hybrid-differential-software-analysis-icse-2020)
 - [Directed Fuzzing](#directed-fuzzing)
+    - [MC^2: Rigorous and Efficient Directed Greybox Fuzzing](#mc-2-rigorous-and-efficient-directed-greybox-fuzzing)
     - [WindRanger: A Directed Greybox Fuzzer driven by Deviation Basic Block (ICSE 2022)](#windranger-a-directed-greybox-fuzzer-driven-by-deviation-basic-block-icse-2022)
     - [BEACON: Directed Grey-Box Fuzzing with Provable Path Pruning (S\&P 2022)](#beacon-directed-grey-box-fuzzing-with-provable-path-pruning-sp-2022)
     - [Improving Configurability of Unit-level Continuous Fuzzing: An Industrial Case Study with SAP HANA (ASE 2021 Industry)](#improving-configurability-of-unit-level-continuous-fuzzing-an-industrial-case-study-with-sap-hana-ase-2021-industry)
@@ -962,6 +973,8 @@ Please check the web [wcventure.github.io/FuzzingPaper](wcventure.github.io/Fuzz
     - [PeriScope: An Effective Probing and Fuzzing Framework for the Hardware-OS Boundary (NDSS2019)](#periscope-an-effective-probing-and-fuzzing-framework-for-the-hardware-os-boundary-ndss2019)
 - [Other Interesting Fuzzing](#other-interesting-fuzzing)
     - [LOKI: State-Aware Fuzzing Framework for the Implementation of Blockchain Consensus Protocols (NDSS 2023)](#loki-state-aware-fuzzing-framework-for-the-implementation-of-blockchain-consensus-protocols-ndss-2023)
+    - [DriveFuzz: Discovering Autonomous Driving Bugs through Driving Quality-Guided Fuzzing](#drivefuzz-discovering-autonomous-driving-bugs-through-driving-quality-guided-fuzzing)
+    - [LibAFL: A Framework to Build Modular and Reusable Fuzzers](#libafl-a-framework-to-build-modular-and-reusable-fuzzers)
     - [RoboFuzz: Fuzzing Robotic Systems over Robot Operating System (ROS) for Finding Correctness Bugs (FSE 2022)](#robofuzz-fuzzing-robotic-systems-over-robot-operating-system-ros-for-finding-correctness-bugs-fse-2022)
     - [Almost Correct Invariants: Synthesizing Inductive Invariants by Fuzzing Proofs (ISSTA 2022)](#almost-correct-invariants-synthesizing-inductive-invariants-by-fuzzing-proofs-issta-2022)
     - [��AFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware (ICSE 2022)](#afl-non-intrusive-feedback-driven-fuzzing-for-microcontroller-firmware-icse-2022)
@@ -1127,6 +1140,24 @@ Please check the web [wcventure.github.io/FuzzingPaper](wcventure.github.io/Fuzz
 
 
 # Differential Fuzzing
+
+### JIT-Picking: Differential Fuzzing of JavaScript Engines (CCS 2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://dl.acm.org/doi/10.1145/3548606.3560624)
+
+**Abstract:** Modern JavaScript engines that power websites and even full applications on the Web are driven by the need for an increasingly fast and snappy user experience. These engines use several complex and potentially error-prone mechanisms to optimize their performance. Unsurprisingly, the inevitable complexity results in a huge attack surface and varioustypes of software vulnerabilities. On the defender's side, fuzz testing has proven to be an invaluable tool for uncovering different kinds of memory safety violations. Although it is difficult to test interpreters and JIT compilers in an automated way, recent proposals for input generation based on grammars or target-specific intermediate representations helped uncovering many software faults. However, subtle logic bugs and miscomputations that arise from optimization passes in JIT engines continue to elude state-of-the-art testing methods. While such flaws might seem unremarkable at first glance, they are often still exploitable in practice. In this paper, we propose a novel technique for effectively uncovering this class of subtle bugs during fuzzing. The key idea is to take advantage of the tight coupling between a JavaScript engine's interpreter and its corresponding JIT compiler as a domain-specific and generic bug oracle, which in turn yields a highly sensitive fault detection mechanism. We have designed and implemented a prototype of the proposed approach in a tool called JIT-Picker. In an empirical evaluation, we show that our method enables us to detect subtle software faults that prior work missed. In total, we uncovered 32 bugs that were not publicly known and received a $10.000 bug bounty from Mozilla as a reward for our contributions to JIT engine security.
+
+
+### SpecDoctor: Differential Fuzz Testing to Find Transient Execution Vulnerabilities
+
+* <img src="image/pdf_24px.png">[Paper](https://dl.acm.org/doi/abs/10.1145/3548606.3560578)
+
+**Abstract:** Transient execution vulnerabilities have critical security impacts to software systems since those break the fundamental security assumptions guaranteed by the CPU. Detecting these critical vulnerabilities in the RTL development stage is particularly important, as it offers a chance to fix the vulnerability early before reaching the chip manufacturing stage.
+
+This paper proposes SpecDoctor, an automated RTL fuzzer to discover transient execution vulnerabilities in the CPU. To be specific, SpecDoctor designs a fuzzing template, allowing it to test all different scenarios of transient execution vulnerabilities (e.g., Meltdown, Spectre, ForeShadow, etc.) with a single template. Then SpecDoctor performs a multi-phased fuzzing, where each phase is dedicated to solve an individual vulnerability constraint in the RTL context, thereby effectively finding the vulnerabilities.
+
+We implemented and evaluated SpecDoctor on two out-of-order RISC-V CPUs, Boom and NutShell-Argo. During the evaluation, SpecDoctor found transient-execution vulnerabilities which share the similar attack vectors as the previous works. Furthermore, SpecDoctor found two interesting variants which abuse unique attack vectors: Boombard, and Birgus. Boombard exploits an unknown implementation bug in RISC-V Boom, exacerbating it into a critical transient execution vulnerability. Birgus launches a Spectre-type attack with a port contention side channel in NutShell CPU, which is constructed using a unique combination of instructions. We reported the vulnerabilities, and both are confirmed by the developers, illustrating the strong practical impact of SpecDoctor.
+
 
 ### SEDiff: Scope-Aware Differential Fuzzing to Test Internal Function Models in Symbolic Execution (FSE 2022)
 
@@ -2021,6 +2052,14 @@ Our evaluation on popular fuzzers and real-world applications shows that Fuzzifi
 In this paper, we present FuzzNG, our generic approach to fuzzing system-calls on OSes. Unlike Syzkaller, FuzzNG does not require intricate descriptions of system-call interfaces in order to function. Instead FuzzNG leverages fundamental Kernel design features in order to reshape and simplify the fuzzer’s input-space. As such FuzzNG only requires a small config, for each new target: essentially a list of files and system-call numbers the fuzzer should explore.
 
 We implemented FuzzNG for the Linux kernel. Testing FuzzNG over 10 Linux components with extensive descrip tions in Syzkaller showed that, on average, FuzzNG achieves 102.5% of Syzkaller’s coverage. FuzzNG found 9 new bugs (5 in components that Syzkaller had already fuzzed extensively, for years). Additionally, FuzzNG’s lightweight configs are less than 1.7% the size of Syzkaller’s manually-written grammars. Crucially, FuzzNG achieves this without initial seed-inputs, or expert guidance.
+
+
+### SFuzz: Slice-based Fuzzing for Real-Time Operating Systems (CCS 2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://dl.acm.org/doi/10.1145/3548606.3559367)
+
+**Abstract:** Real-Time Operating System (RTOS) has become the main category of embedded systems. It is widely used to support tasks requiring real-time response such as printers and switches. The security of RTOS has been long overlooked as it was running in special environments isolated from attackers. However, with the rapid development of IoT devices, tremendous RTOS devices are connected to the public network. Due to the lack of security mechanisms, these devices are extremely vulnerable to a wide spectrum of attacks. Even worse, the monolithic design of RTOS combines various tasks and services into a single binary, which hinders the current program testing and analysis techniques working on RTOS. In this paper, we propose SFuzz, a novel slice-based fuzzer, to detect security vulnerabilities in RTOS. Our insight is that RTOS usually divides a complicated binary into many separated but single-minded tasks. Each task accomplishes a particular event in a deterministic way and its control flow is usually straightforward and independent. Therefore, we identify such code from the monolithic RTOS binary and synthesize a slice for effective testing. Specifically, SFuzz first identifies functions that handle user input, constructs call graphs that start from callers of these functions, and leverages forward slicing to build the execution tree based on the call graphs and pruning the paths independent of external inputs. Then, it detects and handles roadblocks within the coarse-grain scope that hinder effective fuzzing, such as instructions unrelated to the user input. And then, it conducts coverage-guided fuzzing on these code snippets. Finally, SFuzz leverages forward and backward slicing to track and verify each path constraint and determine whether a bug discovered in the fuzzer is a real vulnerability. SFuzz successfully discovered 77 zero-day bugs on 35 RTOS samples, and 67 of them have been assigned CVE or CNVD IDs. Our empirical evaluation shows that SFuzz outperforms the state-of-the-art tools (e.g., UnicornAFL) on testing RTOS.
+
 
 ### Demystifying the Dependency Challenge in Kernel Fuzzing (ICSE 2022)
 
@@ -3305,6 +3344,17 @@ We implemented our approach on top of the fuzzer AFL and the symbolic execution 
 
 # Directed Fuzzing
 
+### MC^2: Rigorous and Efficient Directed Greybox Fuzzing (CCS 2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://dl.acm.org/doi/10.1145/3548606.3560648)
+
+**Abstract:** Directed greybox fuzzing is a popular technique for targeted software testing that seeks to find inputs that reach a set of target sites in a program. Most existing directed greybox fuzzers do not provide any theoretical analysis of their performance or optimality.
+
+In this paper, we introduce a complexity-theoretic framework to pose directed greybox fuzzing as an oracle-guided search problem where some feedback about the input space (e.g., how close an input is to the target sites) is received by querying an oracle. Our framework assumes that each oracle query can return arbitrary content with a large but constant amount of information. Therefore, we use the number of oracle queries required by a fuzzing algorithm to find a target-reaching input as the performance metric. Using our framework, we design a randomized directed greybox fuzzing algorithm that makes a logarithmic (wrt. the number of all possible inputs) number of queries in expectation to find a target-reaching input. We further prove that the number of oracle queries required by our algorithm is optimal, i.e., no fuzzing algorithm can improve (i.e., minimize) the query count by more than a constant factor.
+
+We implement our approach in MC^2 and outperform state-of-the-art directed greybox fuzzers on challenging benchmarks (Magma and Fuzzer Test Suite) by up to two orders of magnitude (i.e., 134\times) on average. MC^2 also found 15 previously undiscovered bugs that other state-of-the-art directed greybox fuzzers failed to find.
+
+
 ### WindRanger: A Directed Greybox Fuzzer driven by Deviation Basic Block (ICSE 2022)
 
 * <img src="image/pdf_24px.png">[Paper](https://conf.researchr.org/details/icse-2022/icse-2022-papers/162/WindRanger-A-Directed-Greybox-Fuzzer-driven-by-DeviationBasic-Blocks)
@@ -4580,6 +4630,33 @@ In this work, we propose LOKI, a blockchain consensus protocol fuzzing framework
 We implemented and evaluated LOKI on four widely used commercial blockchain systems, including Go-Ethereum, Facebook Diem, IBM Fabric, and WeBank FISCO-BCOS.
 LOKI has detected 20 serious previously unknown vulnerabilities with 9 CVEs assigned. 14 of them are memory-related bugs, and 6 are consensus logic bugs.
 Compared with state-of-the-art tools such as Peach, Fluffy, and Twins, LOKI improves the branch coverage by an average of 43.21%, 182.05%, and 291.58%.
+
+
+### DriveFuzz: Discovering Autonomous Driving Bugs through Driving Quality-Guided Fuzzing (CCS 2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://squizz617.github.io/pubs/drivefuzz-ccs22.pdf)
+
+* <img src="image/github_24px.png">[Code](https://gitlab.com/s3lab-code/public/drivefuzz)
+
+* <img src="image/ppt_24px.png">[Slides](https://squizz617.github.io/slides/drivefuzz-ccs22-slides.pdf)
+
+**Abstract:** Autonomous driving has become real; semi-autonomous driving vehicles in an affordable price range are already on the streets, and major automotive vendors are actively developing full self-driving systems to deploy them in this decade. Before rolling the products out to the end-users, it is critical to test and ensure the safety of the autonomous driving systems, consisting of multiple layers intertwined in a complicated way. However, while safety-critical bugs may exist in any layer and even across layers, relatively little attention has been given to testing the entire driving system across all the layers. Prior work mainly focuses on white-box testing of individual layers and preventing attacks on each layer.
+
+In this paper, we aim at holistic testing of autonomous driving systems that have a whole stack of layers integrated in their entirety. Instead of looking into the individual layers, we focus on the vehicle states that the system continuously changes in the driving environment. This allows us to design DriveFuzz, a new systematic fuzzing framework that can uncover potential vulnerabilities regardless of their locations. DriveFuzz automatically generates and mutates driving scenarios based on diverse factors leveraging a high-fidelity driving simulator. We build novel driving test oracles based on the real-world traffic rules to detect safety-critical misbehaviors, and guide the fuzzer towards such misbehaviors through driving quality metrics referring to the physical states of the vehicle.
+
+DriveFuzz has discovered 30 new bugs in various layers of two autonomous driving systems (Autoware and CARLA Behavior Agent) and three additional bugs in the CARLA simulator. We further analyze the impact of these bugs and how an adversary may exploit them as security vulnerabilities to cause critical accidents in the real world.
+
+
+### LibAFL: A Framework to Build Modular and Reusable Fuzzers (CCS 2022)
+
+* <img src="image/pdf_24px.png">[Paper](https://dl.acm.org/doi/pdf/10.1145/3548606.3560602)
+
+**Abstract:** The release of AFL marked an important milestone in the area of software security testing, revitalizing fuzzing as a major research topic and spurring a large number of research studies that attempted to improve and evaluate the different aspects of the fuzzing pipeline.
+
+Many of these studies implemented their techniques by forking the AFL codebase. While this choice might seem appropriate at first, combining multiple forks into a single fuzzer requires a high engineering overhead, which hinders progress in the area and prevents fair and objective evaluations of different techniques. The highly fragmented landscape of the fuzzing ecosystem also prevents researchers from combining orthogonal techniques and makes it difficult for end users to adopt new prototype solutions.
+
+To tackle this problem, in this paper we propose LibAFL, a framework to build modular and reusable fuzzers. We discuss the different components generally used in fuzzing and map them to an extensible framework. LibAFL allows researchers and engineers to extend the core fuzzer pipeline and share their new components for further evaluations. As part of LibAFL, we integrated techniques from more than 20 previous works and conduct extensive experiments to show the benefit of our framework to combine and evaluate different approaches. We hope this can help to shed light on current advancements in fuzzing and provide a solid base for comparative and extensible research in the future.
+
 
 ### RoboFuzz: Fuzzing Robotic Systems over Robot Operating System (ROS) for Finding Correctness Bugs (FSE 2022)
 

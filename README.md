@@ -39,8 +39,10 @@ Please check the web [wcventure.github.io/FuzzingPaper](wcventure.github.io/Fuzz
   - [TEEzz: Fuzzing Trusted Applications on COTS Android Devices]
   - [Toss a Fault to Your Witcher: Applying Grey-box Coverage-Guided Mutational Fuzzing to Detect SQL and Command Injection Vulnerabilities]
   - [Finding Specification Blind Spots via Fuzz Testing]
-- ***CCS 2023**
+- **CCS 2023**
   - [HOPPER: Interpretative Fuzzing for Libraries]
+- **USENIX SEC 2023**
+  - [MINER: A Hybrid Data-Driven Approach for REST API Fuzzing](https://www.usenix.org/system/files/sec23fall-prepub-129-lyu.pdf)
 - **ISSTA 2023**
   - [Large Language Models are Zero-Shot Fuzzers:Fuzzing Deep-Learning Libraries via Large Language Models](#large-language-models-are-zero-shot-fuzzersfuzzing-deep-learning-libraries-via-large-language-models-issta-2023)
 - **ICSE 2023**

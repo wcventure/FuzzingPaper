@@ -55,6 +55,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](wcventure.github.io/Fuzz
   - [Operand-Variation-Oriented Differential Analysis for Fuzzing Binding Calls in PDF Readers]
   - [Regression Fuzzing for Deep Learning Systems]
   - [Large Language Models are Few-shot Testers: Exploring LLM-based General Bug Reproduction](#large-language-models-are-few-shot-testers-exploring-llm-based-general-bug-reproduction-icse-2023)
+  - [Validating SMT Solvers via Skeleton Enumeration Empowered by Historical Bug-Triggering Inputs](#validating-smt-solvers-via-skeleton-enumeration-empowered-by-historical-bug-triggering-inputs-icse-2023)
 - **NDSS 2023**
   - [Assessing the Impact of Interface Vulnerabilities in Compartmentalized Software](#assessing-the-impact-of-interface-vulnerabilities-in-compartmentalized-software-ndss-2023)
   - [FUZZILLI: Fuzzing for JavaScript JIT Compiler Vulnerabilities](#fuzzilli-fuzzing-for-javascript-jit-compiler-vulnerabilities-ndss-2023)
@@ -676,6 +677,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](wcventure.github.io/Fuzz
     - [Large Language Models are Zero-Shot Fuzzers:Fuzzing Deep-Learning Libraries via Large Language Models (ISSTA 2023)](#large-language-models-are-zero-shot-fuzzersfuzzing-deep-learning-libraries-via-large-language-models-issta-2023)
     - [Large Language Models are Few-shot Testers: Exploring LLM-based General Bug Reproduction (ICSE 2023)](#large-language-models-are-few-shot-testers-exploring-llm-based-general-bug-reproduction-icse-2023)
 - [SMT Fuzzing](#smt-fuzzing)
+    - [Validating SMT Solvers via Skeleton Enumeration Empowered by Historical Bug-Triggering Inputs (ICSE 2023)](#validating-smt-solvers-via-skeleton-enumeration-empowered-by-historical-bug-triggering-inputs-icse-2023)
     - [Alt-Ergo-Fuzz: A fuzzer for the Alt-Ergo SMT solver (JFLA 2022)](#alt-ergo-fuzz-a-fuzzer-for-the-alt-ergo-smt-solver-jfla-2022)
     - [BanditFuzz: Fuzzing SMT Solvers with Multi-agent Reinforcement Learning (FM 2021)](#banditfuzz-fuzzing-smt-solvers-with-multi-agent-reinforcement-learning-fm-2021)
     - [Skeletal Approximation Enumeration for SMT Solver Testing (FSE 2021)](#skeletal-approximation-enumeration-for-smt-solver-testing-fse-2021)
@@ -1936,6 +1938,12 @@ This paper demonstrates that modern titanic LLMs can be leveraged to directly pe
 
 
 # SMT Fuzzing
+
+### Validating SMT Solvers via Skeleton Enumeration Empowered by Historical Bug-Triggering Inputs (ICSE 2023)
+
+* <img src="image/pdf_24px.png">[Paper](https://doi.org/10.1109/ICSE48619.2023.00018)
+
+**Abstract:** SMT solvers check the satisfiability of logic formulas over first-order theories, which have been utilized in a rich number of critical applications, such as software verification, test case generation, and program synthesis. Bugs hidden in SMT solvers would severely mislead those applications and further cause severe consequences. Therefore, ensuring the reliability and robustness of SMT solvers is of critical importance. Although many approaches have been proposed to test SMT solvers, it is still a challenge to discover bugs effectively. To tackle such a challenge, we conduct an empirical study on the historical bug-triggering formulas in SMT solvers' bug tracking systems. We observe that the historical bug-triggering formulas contain valuable skeletons (i.e., core structures of formulas) as well as associated atomic formulas which can cast significant impacts on formulas' ability in triggering bugs. Therefore, we propose a novel approach that utilizes the skeletons extracted from the historical bug-triggering formulas and enumerates atomic formulas under the guidance of association rules derived from historical formulas. In this study, we realized our approach as a practical fuzzing tool HistFuzz and conducted extensive testing on the well-known SMT solvers Z3 and cvc5. To date, HistFuzz has found 111 confirmed new bugs for Z3 and cvc5, of which 108 have been fixed by the developers. More notably, out of the confirmed bugs, 23 are soundness bugs and invalid model bugs found in the solvers' default mode, which are essential for SMT solvers. In addition, our experiments also demonstrate that HistFuzz outperforms the state-of-the-art SMT solver fuzzers in terms of achieved code coverage and effectiveness.
 
 ### Alt-Ergo-Fuzz: A fuzzer for the Alt-Ergo SMT solver (JFLA 2022)
 

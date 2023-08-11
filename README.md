@@ -677,7 +677,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](wcventure.github.io/Fuzz
     - [Large Language Models are Zero-Shot Fuzzers:Fuzzing Deep-Learning Libraries via Large Language Models (ISSTA 2023)](#large-language-models-are-zero-shot-fuzzersfuzzing-deep-learning-libraries-via-large-language-models-issta-2023)
     - [Large Language Models are Few-shot Testers: Exploring LLM-based General Bug Reproduction (ICSE 2023)](#large-language-models-are-few-shot-testers-exploring-llm-based-general-bug-reproduction-icse-2023)
 - [SMT Fuzzing](#smt-fuzzing)
-    - [Validating SMT Solvers via Skeleton Enumeration Empowered by Historical Bug-Triggering Inputs](#validating-smt-solvers-via-skeleton-enumeration-empowered-by-historical-bug-triggering-inputs-icse-2023)
+    - [Validating SMT Solvers via Skeleton Enumeration Empowered by Historical Bug-Triggering Inputs (ICSE 2023)](#validating-smt-solvers-via-skeleton-enumeration-empowered-by-historical-bug-triggering-inputs-icse-2023)
     - [Alt-Ergo-Fuzz: A fuzzer for the Alt-Ergo SMT solver (JFLA 2022)](#alt-ergo-fuzz-a-fuzzer-for-the-alt-ergo-smt-solver-jfla-2022)
     - [BanditFuzz: Fuzzing SMT Solvers with Multi-agent Reinforcement Learning (FM 2021)](#banditfuzz-fuzzing-smt-solvers-with-multi-agent-reinforcement-learning-fm-2021)
     - [Skeletal Approximation Enumeration for SMT Solver Testing (FSE 2021)](#skeletal-approximation-enumeration-for-smt-solver-testing-fse-2021)

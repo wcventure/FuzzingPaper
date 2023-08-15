@@ -32,6 +32,10 @@ Please check the web [wcventure.github.io/FuzzingPaper](wcventure.github.io/Fuzz
   - [Survey of Software Fuzzing Techniques](#survey-of-software-fuzzing-techniques)
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
   - [Embedded fuzzing: a review of challenges, tools, and solutions](#embedded-fuzzing-a-review-of-challenges-tools-and-solutions)
+- **Euro S&P 2023 / Euro S&P Workshops 2023**
+  - [EF/CF: High Performance Smart Contract Fuzzing for Exploit Generation](https://www.computer.org/csdl/proceedings-article/eurosp/2023/651200a449/1OFthvHp1lu)
+  - [Fuzzing SGX Enclaves via Host Program Mutations](https://ieeexplore.ieee.org/document/10190488)
+  - [The Bandit’s States: Modeling State Selection for Stateful Network Fuzzing as Multi-armed Bandit Problem](#the-bandits-states-modeling-state-selection-for-stateful-network-fuzzing-as-multi-armed-bandit-problem)
 - **PLDI 2023**
   - [Fuzzing Loop Optimizations in Compilers for C++ and Data-Parallel Languages]
   - [WasmRef-Isabelle: a Verified Monadic Interpreter and Industrial Fuzzing Oracle for WebAssembly]
@@ -3192,6 +3196,12 @@ In this paper, we present sanitizer-guided fuzzing, a new design point in this s
 
 
 # State / Sequence Guided Fuzzing
+
+### The Bandit’s States: Modeling State Selection for Stateful Network Fuzzing as Multi-armed Bandit Problem
+
+* <img src="image/pdf_24px.png">[Paper](https://publica.fraunhofer.de/entities/publication/7a9ae396-d2f2-47c8-91a0-f30efce0a0fc/details)
+
+**Abstract:** Network interfaces of Industrial Control Systems are a common entry point for attackers, and thus need to be thoroughly tested for vulnerabilities. One way to perform such tests is with network fuzzers, which randomly mutate network packets to induce unexpected behavior and vulnerabilities. Highly stateful network protocols pose a particular challenge to fuzzers, since a fuzzer needs to be aware of the states in order to find deep vulnerabilities. Even if a fuzzer is aware of the states of a stateful network protocol, there are still several challenges to overcome. The challenge we focus on is deciding which state to test next. To make this decision, the fuzzer needs to strike a balance between exploiting known states and exploring states not yet tested. We propose to model this exploration versus exploitation dilemma using a Multi-armed Bandit. In this work, we present two modeling approaches and preliminary experiments. We choose to model the state selection problem with (I) a stochastic Multi-armed Bandit, and (II) an adversarial Multi-armed Bandit. The latter takes into account that coverage can only be discovered once, and that the underlying reward probability therefore decreases over time. Although the adversarial Multi-armed Bandit models the state selection problem more accurately, our experiments show that both approaches lead to statistically indistinguishable fuzzer performance. Furthermore, we show that the baseline fuzzer AFLNet leads to significantly better results in terms of coverage. Building on these unintuitive preliminary results, we aim to investigate the behavior of the agents in more detail, to include additional modeling approaches, and to use additional Systems under Test for the evaluation.
 
 ### SWaTEval: An Evaluation Framework for Stateful Web Application Testing (ICISSP 2023)
 

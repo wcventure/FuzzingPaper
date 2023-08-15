@@ -45,11 +45,32 @@ Please check the web [wcventure.github.io/FuzzingPaper](wcventure.github.io/Fuzz
   - [TEEzz: Fuzzing Trusted Applications on COTS Android Devices]
   - [Toss a Fault to Your Witcher: Applying Grey-box Coverage-Guided Mutational Fuzzing to Detect SQL and Command Injection Vulnerabilities]
   - [Finding Specification Blind Spots via Fuzz Testing]
+  - [SEGFUZZ: Segmentizing Thread Interleaving to Discover Kernel Concurrency Bugs through Fuzzing]
+  - [RSFuzzer: Discovering Deep SMI Handler Vulnerabilities in UEFI Firmware with Hybrid Fuzzing]
+  - [ODDFUZZ: Discovering Java Deserialization Vulnerabilities via Structure-Aware Directed Greybox Fuzzing](https://arxiv.org/pdf/2304.04233.pdf)
+  - [VIDEZZO: Dependency-aware Virtual Device Fuzzing](http://www.nebelwelt.net/publications/files/23Oakland4.pdf)
+  - [DEVFUZZ: Automatic Device Model-Guided Device Driver Fuzzing]
 - **CCS 2023**
   - [HOPPER: Interpretative Fuzzing for Libraries]
 - **USENIX SEC 2023**
   - [MINER: A Hybrid Data-Driven Approach for REST API Fuzzing](https://www.usenix.org/system/files/sec23fall-prepub-129-lyu.pdf)
   - [KextFuzz: Fuzzing macOS Kernel EXTensions on Apple Silicon via Exploiting Mitigations](https://www.usenix.org/conference/usenixsecurity23/presentation/yin)
+  - [MorFuzz: Fuzzing Processor via Runtime Instruction Morphing enhanced Synchronizable Co-simulation](https://www.usenix.org/system/files/usenixsecurity23-xu-jinyan.pdf)
+  - [CarpetFuzz: Automatic Program Option Constraint Extraction from Documentation for Fuzzing](https://www.usenix.org/system/files/usenixsecurity23-wang-dawei.pdf)
+  - [PolyFuzz: Holistic Greybox Fuzzing of Multi-Language Systems](https://www.usenix.org/system/files/sec23summer_411-li_wen-prepub.pdf)
+  - [GLeeFuzz: Fuzzing WebGL Through Error Message Guided Mutation](https://www.usenix.org/system/files/sec23summer_249-peng-prepub.pdf)
+  - [autofz: Automated Fuzzer Composition at Runtime](https://www.usenix.org/system/files/sec23fall-prepub-446-fu.pdf)
+  - [Fuzztruction: Using Fault Injection-based Fuzzing to Leverage Implicit Domain Knowledge](https://www.usenix.org/system/files/sec23summer_10-bars-prepub.pdf)
+  - [DynSQL: Stateful Fuzzing for Database Management Systems with Complex and Valid SQL Query Generation](https://www.usenix.org/system/files/sec23summer_60-jiang_zu_ming-prepub.pdf)
+  - [FuzzJIT: Oracle-Enhanced Fuzzing for JavaScript Engine JIT Compiler](https://www.usenix.org/system/files/sec23summer_118-wang_junjie-prepub.pdf)
+  - [AIFORE: Smart Fuzzing Based on Automatic Input Format Reverse Engineering](https://www.usenix.org/system/files/usenixsecurity23-shi-ji.pdf)
+  - [Automated Exploitable Heap Layout Generation for Heap Overflows Through Manipulation Distance-Guided Fuzzing](https://www.usenix.org/system/files/usenixsecurity23-zhang-bin.pdf)
+  - [Bleem: Packet Sequence Oriented Fuzzing for Protocol Implementations](https://www.usenix.org/system/files/usenixsecurity23-luo-zhengxiong.pdf)
+  - [BoKASAN: Binary-only Kernel Address Sanitizer for Effective Kernel Fuzzing](https://www.usenix.org/system/files/usenixsecurity23-cho.pdf)
+  - [DDRace: Finding Concurrency UAF Vulnerabilities in Linux Drivers with Directed Fuzzing](https://www.usenix.org/system/files/sec23fall-prepub-193-yuan-ming.pdf)
+  - [Forming Faster Firmware Fuzzers](https://download.vusec.net/papers/safirefuzz_sec23.pdf)
+  - [Intender: Fuzzing Intent-Based Networking with Intent-State Transition Guidance](https://www.usenix.org/system/files/usenixsecurity23-kim-jiwon.pdf)\
+  - [MTSan: A Feasible and Practical Memory Sanitizer for Fuzzing COTS Binaries](https://www.usenix.org/system/files/usenixsecurity23-chen-xingman.pdf)
 - **ISSTA 2023**
   - [Large Language Models are Zero-Shot Fuzzers:Fuzzing Deep-Learning Libraries via Large Language Models](#large-language-models-are-zero-shot-fuzzersfuzzing-deep-learning-libraries-via-large-language-models-issta-2023)
 - **ICSE 2023**

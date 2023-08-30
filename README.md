@@ -1608,7 +1608,7 @@ In this paper, we assessed the limitation of coverage-guided fuzzing solutions a
 
 ### SnapFuzz: An Efficient Fuzzing Framework for Network Applications (2022)
 
-* <img src="image/pdf_24px.png">[Paper]()
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/abs/2201.04048)
 
 **Abstract:** In recent years, fuzz testing has benefited from increased computational power and important algorithmic advances, leading to systems that have discovered many critical bugs and vulnerabilities in production software. Despite these successes, not all applications can be fuzzed efficiently. In particular, stateful applications such as network protocol implementations are constrained by their low fuzzing throughput and the need to develop fuzzing harnesses that reset their state and isolate their side effects. In this paper, we present SnapFuzz, a novel fuzzing framework for network applications. SnapFuzz offers a robust architecture that transforms slow asynchronous network communication into fast synchronous communication based on UNIX domain sockets, speeds up all file operations by redirecting them to an in-memory filesystem, and removes the need for many fragile modifications, such as configuring time delays or writing cleanup scripts, together with several other improvements. Using SnapFuzz, we fuzzed five popular networking applications: LightFTP, Dnsmasq, LIVE555, TinyDTLS and Dcmqrscp. We report impressive performance speedups of 72.4x, 49.7x, 24.8x, 23.9x, and 8.5x, respectively, with significantly simpler fuzzing harnesses in all cases. Through its performance advantage, SnapFuzz has also found 12 previously-unknown crashes in these applications.
 

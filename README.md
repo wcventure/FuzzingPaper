@@ -197,6 +197,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](wcventure.github.io/Fuzz
   - [looking for lacunae in bitcoin cores fuzzing efforts](#looking-for-lacunae-in-bitcoin-cores-fuzzing-efforts-2022)
   - [FEFuzzer: Hybrid Files Fuzzing Tool (2022)](#fefuzzer-hybrid-files-fuzzing-tool-2022)
   - [Sydr-Fuzz: Continuous Hybrid Fuzzing and Dynamic Analysis for Security Development Lifecycle (ISPRAS Open 2022)](#sydr-fuzz-continuous-hybrid-fuzzing-and-dynamic-analysis-for-security-development-lifecycle-ispras-open-2022)
+  - [Improving HPC Security with Targeted Syscall Fuzzing (S-HPC 2022)](https://web.eece.maine.edu/~vweaver/projects/perf_events/fuzzer/2022_shpc_fuzzer.pdf)
 - **ASE 2021**
   - [CorbFuzz: Checking Browser Security Policies with Fuzzing](#corbfuzz-checking-browser-security-policies-with-fuzzing-ase-2021)
   - [Scalable Fuzzing of Program Binaries with E9AFL](#scalable-fuzzing-of-program-binaries-with-e9afl-ase-2021)

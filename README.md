@@ -99,7 +99,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
   - [Effectively Generating Vulnerable Transaction Sequences in Smart Contracts with Reinforcement Learning-guided Fuzzing]
   - [Efficient Greybox Fuzzing to Detect Memory Errors]
   - [FuzzerAid: Grouping Fuzzed Crashes Based On Fault Signatures]
-  - [Fuzzle: Making a Puzzle for Fuzzers]
+  - [Fuzzle: Making a Puzzle for Fuzzers](https://dl.acm.org/doi/abs/10.1145/3551349.3556908)
   - [Griffin: Grammar-Free DBMS Fuzzing]
   - [HTFuzz: Heap Operation Sequence Sensitive Fuzzing]
   - [LawBreaker: An Approach for Specifying Traffic Laws and Fuzzing Autonomous Vehicles]
@@ -146,7 +146,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
   - [SyzScope: Revealing High-Risk Security Impacts of Fuzzer-Exposed Bugs in Linux kernel](#syzscope-revealing-high-risk-security-impacts-of-fuzzer-exposed-bugs-in-linux-kernel-usenix-sec22)
   - [MundoFuzz: Hypervisor Fuzzing with Statistical Coverage Testing and Grammar Inference]
   - [TheHuzz: Instruction Fuzzing of Processors Using Golden-Reference Models for Finding Software-Exploitable Vulnerabilities]
-  - [Morphuzz: Bending (Input) Space to Fuzz Virtual Devices]
+  - [Morphuzz: Bending (Input) Space to Fuzz Virtual Devices](https://www.usenix.org/conference/usenixsecurity22/presentation/bulekov)
   - [Fuzzware: Using Precise MMIO Modeling for Effective Firmware Fuzzing](#fuzzware-using-precise-mmio-modeling-for-effective-firmware-fuzzing)
   - [FuzzOrigin: Detecting UXSS vulnerabilities in Browsers through Origin Fuzzing]
   - [Drifuzz: Harvesting Bugs in Device Drivers from Golden Seeds](#drifuzz-harvesting-bugs-in-device-drivers-from-golden-seeds-usenix-sec-2022)

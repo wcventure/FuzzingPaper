@@ -49,7 +49,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
   - [RSFuzzer: Discovering Deep SMI Handler Vulnerabilities in UEFI Firmware with Hybrid Fuzzing]
   - [ODDFUZZ: Discovering Java Deserialization Vulnerabilities via Structure-Aware Directed Greybox Fuzzing](https://arxiv.org/pdf/2304.04233.pdf)
   - [VIDEZZO: Dependency-aware Virtual Device Fuzzing](http://www.nebelwelt.net/publications/files/23Oakland4.pdf)
-  - [DEVFUZZ: Automatic Device Model-Guided Device Driver Fuzzing](https://www.computer.org/csdl/proceedings-article/sp/2023/933600d246/1Nrc0AgBCgM)
+  - [DEVFUZZ: Automatic Device Model-Guided Device Driver Fuzzing](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10179293)
 - **CCS 2023**
   - [HOPPER: Interpretative Fuzzing for Libraries]
 - **USENIX SEC 2023**

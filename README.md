@@ -595,6 +595,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](wcventure.github.io/Fuzz
 - [All Papers (Classification according to Publication)](#all-papers-classification-according-to-publication)
 - [All Papers (Classification according to Subject)](#all-papers-classification-according-to-subject)
 - [Survey/Review](#surveyreview)
+    - [Demystify the Fuzzing Methods: A Comprehensive Survey](#demystify-fuzzing-methods-survey)
     - [Fuzzing: Challenges and Reflections](#fuzzing-challenges-and-reflections)
     - [SoK: The Progress, Challenges, and Perspectives of Directed Greybox Fuzzing](#sok-the-progress-challenges-and-perspectives-of-directed-greybox-fuzzing)
     - [Fuzzing: Hack, Art, and Science (CACM 2020)](#fuzzing-hack-art-and-science-cacm-2020)
@@ -1069,7 +1070,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](wcventure.github.io/Fuzz
 
 ### Demystify the Fuzzing Methods: A Comprehensive Survey (ACM CSUR 2023)
 
-* <img src="image/images_fuzz.png">[Paper](https://dl.acm.org/doi/10.1145/3623375)
+* [Paper](https://dl.acm.org/doi/10.1145/3623375)
 
 **Abstract:** Massive software applications possess complex data structures or parse complex data structures; in such cases, vulnerabilities in the software become inevitable. The vulnerabilities are the source of cyber-security threats, and discovering this before the software deployment is challenging. Fuzzing is a vulnerability discovery solution that resonates with random-mutation, feedback-driven, coverage-guided, constraint-guided, seed-scheduling, and target-oriented strategies. Each technique is wrapped beneath the black-, white-, and grey-box fuzzers to uncover diverse vulnerabilities. It consists of methods such as identifying structural information about the test cases to detect security vulnerabilities, symbolic and concrete program states to explore the unexplored locations, and full semantics of code coverage to create new test cases. We methodically examine each kind of fuzzers and contemporary fuzzers with a profound observation that addresses various research questions and systematically reviews and analyze the gaps and their solutions. Our survey comprised the recent related works on fuzzing techniques to demystify the fuzzing methods concerning the application domains and the target that, in turn, achieves higher code coverage and sound vulnerability detection.
 

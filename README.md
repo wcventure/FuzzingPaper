@@ -1068,7 +1068,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](wcventure.github.io/Fuzz
 
 # Survey/Review
 
-### Demystify the Fuzzing Methods: A Comprehensive Survey (ACM CSUR 2023)
+### Demystify the Fuzzing Methods: A Comprehensive Survey (ACM CSUR 2023)<a name="demystify-fuzzing-methods-survey"></a>
 
 * <img src="image/link.png">[Link](https://dl.acm.org/doi/10.1145/3623375)
 * <img src="image/pdf_24px.png">[Paper](./Paper/ACM_CSUR22_Demystify_Fuzzing.pdf)

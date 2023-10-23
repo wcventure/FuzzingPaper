@@ -41,15 +41,15 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
   - [WasmRef-Isabelle: a Verified Monadic Interpreter and Industrial Fuzzing Oracle for WebAssembly]
 - **S&P 2023**
   - [SelectFuzz: Efficient Directed Fuzzing with Selective Path Exploration](https://www.computer.org/csdl/proceedings-article/sp/2023/933600b050/1Js0DBwgpwY)
-  - [UTOPIA: Automatic Generation of Fuzz Driver using Unit Tests]
+  - [UTOPIA: Automatic Generation of Fuzz Driver using Unit Tests](https://www.computer.org/csdl/proceedings-article/sp/2023/933600a746/1OXH6X6Fexi)
   - [TEEzz: Fuzzing Trusted Applications on COTS Android Devices]
   - [Toss a Fault to Your Witcher: Applying Grey-box Coverage-Guided Mutational Fuzzing to Detect SQL and Command Injection Vulnerabilities]
   - [Finding Specification Blind Spots via Fuzz Testing]
-  - [SEGFUZZ: Segmentizing Thread Interleaving to Discover Kernel Concurrency Bugs through Fuzzing]
+  - [SEGFUZZ: Segmentizing Thread Interleaving to Discover Kernel Concurrency Bugs through Fuzzing](https://www.computer.org/csdl/proceedings-article/sp/2023/933600c104/1OXH3RXf7JC)
   - [RSFuzzer: Discovering Deep SMI Handler Vulnerabilities in UEFI Firmware with Hybrid Fuzzing]
   - [ODDFUZZ: Discovering Java Deserialization Vulnerabilities via Structure-Aware Directed Greybox Fuzzing](https://arxiv.org/pdf/2304.04233.pdf)
   - [VIDEZZO: Dependency-aware Virtual Device Fuzzing](http://www.nebelwelt.net/publications/files/23Oakland4.pdf)
-  - [DEVFUZZ: Automatic Device Model-Guided Device Driver Fuzzing]
+  - [DEVFUZZ: Automatic Device Model-Guided Device Driver Fuzzing](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10179293)
 - **CCS 2023**
   - [HOPPER: Interpretative Fuzzing for Libraries]
 - **USENIX SEC 2023**
@@ -76,7 +76,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
 - **ICSE 2023**
   - [Evaluating and Improving Hybrid Fuzzing](#evaluating-and-improving-hybrid-fuzzing-icse-2023)
   - [Fuzzing Automatic Differentiation in Deep-Learning Libraries]
-  - [JITfuzz: Coverage-guided Fuzzing for JVM Just-in-Time Compilers]
+  - [JITfuzz: Coverage-guided Fuzzing for JVM Just-in-Time Compilers](https://www.computer.org/csdl/proceedings-article/icse/2023/570100a056/1OM4wfy0R7W)
   - [Learning Seed-Adaptive Mutation Strategies for Greybox Fuzzing]
   - [Operand-Variation-Oriented Differential Analysis for Fuzzing Binding Calls in PDF Readers]
   - [Regression Fuzzing for Deep Learning Systems]
@@ -99,7 +99,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
   - [Effectively Generating Vulnerable Transaction Sequences in Smart Contracts with Reinforcement Learning-guided Fuzzing]
   - [Efficient Greybox Fuzzing to Detect Memory Errors]
   - [FuzzerAid: Grouping Fuzzed Crashes Based On Fault Signatures]
-  - [Fuzzle: Making a Puzzle for Fuzzers]
+  - [Fuzzle: Making a Puzzle for Fuzzers](https://dl.acm.org/doi/abs/10.1145/3551349.3556908)
   - [Griffin: Grammar-Free DBMS Fuzzing]
   - [HTFuzz: Heap Operation Sequence Sensitive Fuzzing]
   - [LawBreaker: An Approach for Specifying Traffic Laws and Fuzzing Autonomous Vehicles]
@@ -146,7 +146,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
   - [SyzScope: Revealing High-Risk Security Impacts of Fuzzer-Exposed Bugs in Linux kernel](#syzscope-revealing-high-risk-security-impacts-of-fuzzer-exposed-bugs-in-linux-kernel-usenix-sec22)
   - [MundoFuzz: Hypervisor Fuzzing with Statistical Coverage Testing and Grammar Inference]
   - [TheHuzz: Instruction Fuzzing of Processors Using Golden-Reference Models for Finding Software-Exploitable Vulnerabilities]
-  - [Morphuzz: Bending (Input) Space to Fuzz Virtual Devices]
+  - [Morphuzz: Bending (Input) Space to Fuzz Virtual Devices](https://www.usenix.org/conference/usenixsecurity22/presentation/bulekov)
   - [Fuzzware: Using Precise MMIO Modeling for Effective Firmware Fuzzing](#fuzzware-using-precise-mmio-modeling-for-effective-firmware-fuzzing)
   - [FuzzOrigin: Detecting UXSS vulnerabilities in Browsers through Origin Fuzzing]
   - [Drifuzz: Harvesting Bugs in Device Drivers from Golden Seeds](#drifuzz-harvesting-bugs-in-device-drivers-from-golden-seeds-usenix-sec-2022)

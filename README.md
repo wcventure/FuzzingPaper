@@ -2585,9 +2585,23 @@ This thesis presents our attempt to attain the best of both worlds by combining 
 
 # Mutation\Coverage\Path
 
+### GrayC: Greybox Fuzzing of Compilers and Analysers for C (ISSTA 2023)
+
+* <img src="image/pdf_24px.png">[Paper](./Paper/ISSTA23_GrayC.pdf)
+
+**Abstract:** Fuzzing of compilers and code analysers has led to a large number of bugs being found and fixed in widely-used frameworks such as LLVM, GCC and Frama-C. Most such fuzzing techniques have taken a blackbox approach, with compilers and code analysers starting to become relatively immune to such fuzzers.
+
+We propose a coverage-directed, mutation-based approach for fuzzing C compilers and code analysers, inspired by the success of this type of greybox fuzzing in other application domains. The main challenge of applying mutation-based fuzzing in this context is that naive mutations are likely to generate programs that do not compile. Such programs are not useful for finding deep bugs that affect optimisation, analysis, and code generation routines.
+
+We have designed a novel greybox fuzzer for C compilers and analysers by developing a new set of mutations to target common C constructs, and transforming fuzzed programs so that they produce meaningful output, allowing differential testing to be used as a test oracle, and paving the way for fuzzer-generated programs to be integrated into compiler and code analyser regression test suites.
+
+We have implemented our approach in GrayC, a new open-source LibFuzzer-based tool, and present experiments showing that it provides more coverage on the middle- and back-end stages of compilers and analysers compared to other mutation-based approaches, including Clang-Fuzzer, PolyGlot, and a technique similar to LangFuzz.
+
+We have used GrayC to identify 30 confirmed compiler and code analyser bugs: 25 previously unknown bugs (with 22 of them already fixed in response to our reports) and 5 confirmed bugs reported independently shortly before we found them. A further 3 bug reports are under investigation. Apart from the results above, we have contributed 24 simplified versions of coverage-enhancing test cases produced by GrayC to the Clang/LLVM test suite, targeting 78 previously uncovered functions in the LLVM codebase.
+
 ### DARWIN: Survival of the Fittest Fuzzing Mutators (NDSS 2023)
 
-* * <img src="image/pdf_24px.png">[Paper](https://www.ndss-symposium.org/wp-content/uploads/2023/02/ndss2023_s159_paper.pdf)
+* <img src="image/pdf_24px.png">[Paper](https://www.ndss-symposium.org/wp-content/uploads/2023/02/ndss2023_s159_paper.pdf)
 
 **Abstract:** Fuzzing is an automated software testing technique broadly adopted by the industry.
 A popular variant is mutation-based fuzzing, which discovers a large number of bugs in practice.

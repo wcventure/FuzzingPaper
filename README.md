@@ -77,7 +77,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
   - [MTSan: A Feasible and Practical Memory Sanitizer for Fuzzing COTS Binaries](https://www.usenix.org/system/files/usenixsecurity23-chen-xingman.pdf)
 - **ISSTA 2023**
   - [Large Language Models are Zero-Shot Fuzzers: Fuzzing Deep-Learning Libraries via Large Language Models](#large-language-models-are-zero-shot-fuzzersfuzzing-deep-learning-libraries-via-large-language-models-issta-2023)
-  - [GrayC: Greybox Fuzzing of Compilers and Analysers for C](https://dl.acm.org/doi/10.1145/3597926.3598130)
+  - [GrayC: Greybox Fuzzing of Compilers and Analysers for C](#grayc-greybox-fuzzing-of-compilers-and-analysers-for-c-issta-2023)
 - **ICSE 2023**
   - [Evaluating and Improving Hybrid Fuzzing](#evaluating-and-improving-hybrid-fuzzing-icse-2023)
   - [Fuzzing Automatic Differentiation in Deep-Learning Libraries]

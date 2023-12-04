@@ -1679,7 +1679,7 @@ In this paper, we design a novel fuzzing framework named TCP-Fuzz, to effectivel
 
 ### Fuzzing With Optimized Grammar-Aware Mutation Strategies (Access 2021)
 
-* <img src="image/pdf_24px.png">[Paper](https://ieeexplore.ieee.org/abstract/document/9489311)
+* <img src="image/pdf_24px.png">[Paper](https://ieeexplore.ieee.org/document/9469897)
 
 **Abstract:** Fuzzing is a widely used technique to discover vulnerabilities in software. However, for programs requiring highly structured inputs, the byte-based mutation strategies in existing fuzzers have difficulties in generating valid inputs. To resolve this challenge, Grammar-Based Fuzzing (GBF) utilizes existing grammar specifications to generate new inputs. Some GBFs perform mutation based on Abstract Syntax Trees (ASTs), which can generate inputs conforming to grammars. However, the existing GBFs neglect using feedback to optimize mutation strategies, and blindly generate inputs without considering the effectiveness of those inputs. In this paper, we use the power schedule and the subtree pool to optimize mutation strategies. Specifically, we first translate input files into ASTs, and extract subtrees from ASTs into a subtree pool. Then, we optimize the power schedule on AST nodes based on a probabilistic model. That is, we adaptively determine the time budget for mutating an AST node. Finally, we replace AST nodes along with their subtrees using the ones we select from the subtree pool. We implement a fuzzing tool to demonstrate our strategies. The experiment results show that our method outperforms the state-of-the-art methods in fuzzing efficiency.
 

@@ -34,7 +34,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
   - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
   - [Embedded fuzzing: a review of challenges, tools, and solutions](#embedded-fuzzing-a-review-of-challenges-tools-and-solutions)
 - **ICSE 2024**
-  - [Fuzz4All: Universal Fuzzing with Large Language Models]
+  - [Fuzz4All: Universal Fuzzing with Large Language Models](https://arxiv.org/abs/2308.04748)
   - [Large Language Models are Edge-Case Generators: Crafting Unusual Programs for Fuzzing Deep Learning Libraries]
 - **Euro S&P 2023 / Euro S&P Workshops 2023**
   - [EF/CF: High Performance Smart Contract Fuzzing for Exploit Generation](https://www.computer.org/csdl/proceedings-article/eurosp/2023/651200a449/1OFthvHp1lu)

@@ -1,9 +1,9 @@
 # Recent Papers Related To Fuzzing
 
-Remark: This website is only used for collecting and grouping the related paper. If there are any paper need to be updated, you can contribute PR.
-We also welcome contributions of summaries of scientific papers based on large language models, such as [chatgpt_academic](https://github.com/binary-husky/chatgpt_academic) and [ChatPaper](https://github.com/kaixindelele/ChatPaper).
+1. This website is only used for collecting and grouping the related paper. If there are any paper need to be updated, you can contribute PR.
+2. Please check the web [https://wcventure.github.io/FuzzingPaper/](https://wcventure.github.io/FuzzingPaper/), as the `.md` file shown in Github is cropped.
+3. Advertisement: [Our ICTT (Guangzhou) research group](https://xidian-ictt-gz.github.io/) is accepting applications for master’s, doctoral, postdoctoral, and research assistant positions. We welcome hardworking, serious, and innovative young people who are interested in joining our research group.
 
-Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github.io/FuzzingPaper/), as the `.md` file shown in Github is cropped.
 
 ## Contributors
 
@@ -17,45 +17,40 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
 
 # All Papers (Classification according to Publication)
 
-- **Survey/Review**
-  - [Demystify the Fuzzing Methods: A Comprehensive Survey](#demystify-fuzzing-methods-survey)
-  - [Fuzzing: A Survey for Roadmap](#fuzzing-a-survey-for-roadmap)
-  - [Fuzzing: Challenges and Reflections](#fuzzing-challenges-and-reflections)
-  - [SoK: The Progress, Challenges, and Perspectives of Directed Greybox Fuzzing](#sok-the-progress-challenges-and-perspectives-of-directed-greybox-fuzzing)
-  - [Fuzzing: Hack, Art, and Science](#fuzzing-hack-art-and-science-cacm-2020)
-  - [Survey of Directed Fuzzy Technology](#survey-of-directed-fuzzy-technology)
-  - [A Review of Machine Learning Applications in Fuzzing](#a-review-of-machine-learning-applications-in-fuzzing)
-  - [A systematic review of fuzzing based on machine learning techniques](#a-systematic-review-of-fuzzing-based-on-machine-learning-techniques)
-  - [The Art, Science, and Engineering of Fuzzing: A Survey](#the-art-science-and-engineering-of-fuzzing-a-survey)
-  - [Fuzzing: Art, Science, and Engineering](#fuzzing-art-science-and-engineering)
-  - [Fuzzing: a survey](#fuzzing-a-survey)
-  - [Fuzzing: State of the art](#fuzzing-state-of-the-art)
-  - [Survey of Software Fuzzing Techniques](#survey-of-software-fuzzing-techniques)
-  - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
-  - [Embedded fuzzing: a review of challenges, tools, and solutions](#embedded-fuzzing-a-review-of-challenges-tools-and-solutions)
 - **ICSE 2024**
   - [Fuzz4All: Universal Fuzzing with Large Language Models](https://arxiv.org/abs/2308.04748)
-  - [Large Language Models are Edge-Case Generators: Crafting Unusual Programs for Fuzzing Deep Learning Libraries]
-- **Euro S&P 2023 / Euro S&P Workshops 2023**
-  - [EF/CF: High Performance Smart Contract Fuzzing for Exploit Generation](https://www.computer.org/csdl/proceedings-article/eurosp/2023/651200a449/1OFthvHp1lu)
-  - [Fuzzing SGX Enclaves via Host Program Mutations](https://ieeexplore.ieee.org/document/10190488)
-  - [The Bandit’s States: Modeling State Selection for Stateful Network Fuzzing as Multi-armed Bandit Problem](#the-bandits-states-modeling-state-selection-for-stateful-network-fuzzing-as-multi-armed-bandit-problem)
+  - [Large Language Models are Edge-Case Generators: Crafting Unusual Programs for Fuzzing Deep Learning Libraries](https://conf.researchr.org/details/icse-2024/icse-2024-research-track/61/Large-Language-Models-are-Edge-Case-Generators-Crafting-Unusual-Programs-for-Fuzzing)
+  - [ECFuzz: Effective Configuration Fuzzing for Large-Scale Systems](https://conf.researchr.org/details/icse-2024/icse-2024-research-track/30/ECFuzz-Effective-Configuration-Fuzzing-for-Large-Scale-Systems)
+  - [EDEFuzz: A Web API Fuzzer for Excessive Data Exposures](https://conf.researchr.org/details/icse-2024/icse-2024-research-track/12/EDEFuzz-A-Web-API-Fuzzer-for-Excessive-Data-Exposures)
+  - [FuzzSlice: Pruning False Positives in Static Analysis Warnings through Function-Level Fuzzing](https://conf.researchr.org/details/icse-2024/icse-2024-research-track/39/FuzzSlice-Pruning-False-Positives-in-Static-Analysis-Warnings-through-Function-Level)
+  - [Learning and Repair of Deep Reinforcement Learning Policies from Fuzz-Testing Data](https://conf.researchr.org/details/icse-2024/icse-2024-research-track/25/Learning-and-Repair-of-Deep-Reinforcement-Learning-Policies-from-Fuzz-Testing-Data)
+- **NDSS 2024**
+  - [Large Language Model guided Protocol Fuzzing](https://mengrj.github.io/files/chatafl.pdf)
 - **PLDI 2023**
-  - [Fuzzing Loop Optimizations in Compilers for C++ and Data-Parallel Languages]
-  - [WasmRef-Isabelle: a Verified Monadic Interpreter and Industrial Fuzzing Oracle for WebAssembly]
+  - [Fuzzing Loop Optimizations in Compilers for C++ and Data-Parallel Languages](https://pldi23.sigplan.org/details/pldi-2023-pldi/76/Fuzzing-Loop-Optimizations-in-Compilers-for-C-and-Data-Parallel-Languages)
+  - [WasmRef-Isabelle: a Verified Monadic Interpreter and Industrial Fuzzing Oracle for WebAssembly](https://pldi23.sigplan.org/details/pldi-2023-pldi/5/WasmRef-Isabelle-A-Verified-Monadic-Interpreter-and-Industrial-Fuzzing-Oracle-for-We)
 - **S&P 2023**
   - [SelectFuzz: Efficient Directed Fuzzing with Selective Path Exploration](https://www.computer.org/csdl/proceedings-article/sp/2023/933600b050/1Js0DBwgpwY)
   - [UTOPIA: Automatic Generation of Fuzz Driver using Unit Tests](https://www.computer.org/csdl/proceedings-article/sp/2023/933600a746/1OXH6X6Fexi)
-  - [TEEzz: Fuzzing Trusted Applications on COTS Android Devices]
-  - [Toss a Fault to Your Witcher: Applying Grey-box Coverage-Guided Mutational Fuzzing to Detect SQL and Command Injection Vulnerabilities]
-  - [Finding Specification Blind Spots via Fuzz Testing]
+  - [TEEzz: Fuzzing Trusted Applications on COTS Android Devices](http://hexhive.epfl.ch/publications/files/23Oakland.pdf)
+  - [Toss a Fault to Your Witcher: Applying Grey-box Coverage-Guided Mutational Fuzzing to Detect SQL and Command Injection Vulnerabilities](https://ieeexplore.ieee.org/abstract/document/10179317)
+  - [Finding Specification Blind Spots via Fuzz Testing](https://ieeexplore.ieee.org/document/10179438/)
   - [SEGFUZZ: Segmentizing Thread Interleaving to Discover Kernel Concurrency Bugs through Fuzzing](https://www.computer.org/csdl/proceedings-article/sp/2023/933600c104/1OXH3RXf7JC)
-  - [RSFuzzer: Discovering Deep SMI Handler Vulnerabilities in UEFI Firmware with Hybrid Fuzzing]
+  - [RSFuzzer: Discovering Deep SMI Handler Vulnerabilities in UEFI Firmware with Hybrid Fuzzing](https://ieeexplore.ieee.org/abstract/document/10179421)
   - [ODDFUZZ: Discovering Java Deserialization Vulnerabilities via Structure-Aware Directed Greybox Fuzzing](https://arxiv.org/pdf/2304.04233.pdf)
   - [VIDEZZO: Dependency-aware Virtual Device Fuzzing](http://www.nebelwelt.net/publications/files/23Oakland4.pdf)
   - [DEVFUZZ: Automatic Device Model-Guided Device Driver Fuzzing](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10179293)
 - **CCS 2023**
-  - [HOPPER: Interpretative Fuzzing for Libraries]
+  - [HOPPER: Interpretative Fuzzing for Libraries](https://dl.acm.org/doi/10.1145/3576915.3616610)
+  - [Greybox Fuzzing of Distributed Systems](https://mengrj.github.io/files/CCS23.pdf)
+  - [Fuzz on the Beach: Fuzzing Solana Smart Contracts](https://dl.acm.org/doi/10.1145/3576915.3623178)
+  - [DSFuzz: Detecting Deep State Bugs with Dependent State Exploration](https://dl.acm.org/doi/10.1145/3576915.3616594)
+  - [Profile-guided System Optimizations for Accelerated Greybox Fuzzing](https://dl.acm.org/doi/10.1145/3576915.3616636)
+  - [NestFuzz: Enhancing Fuzzing with Comprehensive Understanding of Input Processing Logic](https://dl.acm.org/doi/10.1145/3576915.3623103)
+  - [Greybox Fuzzing of Distributed Systems](https://dl.acm.org/doi/10.1145/3576915.3623097)
+  - [SyzDirect: Directed Greybox Fuzzing for Linux Kernel](https://dl.acm.org/doi/10.1145/3576915.3623146)
+  - [PyRTFuzz: Detecting Bugs in Python Runtimes via Two-Level Collaborative Fuzzing](https://dl.acm.org/doi/10.1145/3576915.3623166)
+  - [Poster: Combining Fuzzing with Concolic Execution for IoT Firmware Testing](https://dl.acm.org/doi/10.1145/3576915.3624373)
 - **USENIX SEC 2023**
   - [MINER: A Hybrid Data-Driven Approach for REST API Fuzzing](https://www.usenix.org/system/files/sec23fall-prepub-129-lyu.pdf)
   - [KextFuzz: Fuzzing macOS Kernel EXTensions on Apple Silicon via Exploiting Mitigations](https://www.usenix.org/conference/usenixsecurity23/presentation/yin)
@@ -78,6 +73,8 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
 - **ISSTA 2023**
   - [Large Language Models are Zero-Shot Fuzzers: Fuzzing Deep-Learning Libraries via Large Language Models](#large-language-models-are-zero-shot-fuzzersfuzzing-deep-learning-libraries-via-large-language-models-issta-2023)
   - [GrayC: Greybox Fuzzing of Compilers and Analysers for C](#grayc-greybox-fuzzing-of-compilers-and-analysers-for-c-issta-2023)
+  - [1dFuzz: Reproduce 1-Day Vulnerabilities with Directed Differential Fuzzing](https://2023.issta.org/details/issta-2023-technical-papers/61/1dFuzz-Reproduce-1-Day-Vulnerabilities-with-Directed-Differential-Fuzzing)
+  - [Automated Program Repair from Fuzzing Perspective]()
 - **ICSE 2023**
   - [Evaluating and Improving Hybrid Fuzzing](#evaluating-and-improving-hybrid-fuzzing-icse-2023)
   - [Fuzzing Automatic Differentiation in Deep-Learning Libraries]
@@ -94,6 +91,10 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
   - [DARWIN: Survival of the Fittest Fuzzing Mutators](#darwin-survival-of-the-fittest-fuzzing-mutators-ndss-2023)
   - [LOKI: State-Aware Fuzzing Framework for the Implementation of Blockchain Consensus Protocols](#loki-state-aware-fuzzing-framework-for-the-implementation-of-blockchain-consensus-protocols-ndss-2023)
   - [OBSan: An Out-Of-Bound Sanitizer to Harden DNN Executables](#obsan-an-out-of-bound-sanitizer-to-harden-dnn-executables-ndss-2023)
+- **Euro S&P 2023 / Euro S&P Workshops 2023**
+  - [EF/CF: High Performance Smart Contract Fuzzing for Exploit Generation](https://www.computer.org/csdl/proceedings-article/eurosp/2023/651200a449/1OFthvHp1lu)
+  - [Fuzzing SGX Enclaves via Host Program Mutations](https://ieeexplore.ieee.org/document/10190488)
+  - [The Bandit’s States: Modeling State Selection for Stateful Network Fuzzing as Multi-armed Bandit Problem](#the-bandits-states-modeling-state-selection-for-stateful-network-fuzzing-as-multi-armed-bandit-problem)
 - **ICISSP/ICPRAM 2023**
   - [Rainfuzz: Reinforcement-Learning Driven Heat-Maps for Boosting Coverage-Guided Fuzzing](#rainfuzz-reinforcement-learning-driven-heat-maps-for-boosting-coverage-guided-fuzzing-icpram-2023)
   - [SWaTEval: An Evaluation Framework for Stateful Web Application Testing](#swateval-an-evaluation-framework-for-stateful-web-application-testing-icissp-2023)
@@ -600,7 +601,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
 - [All Papers (Classification according to Publication)](#all-papers-classification-according-to-publication)
 - [All Papers (Classification according to Subject)](#all-papers-classification-according-to-subject)
 - [Survey/Review](#surveyreview)
-    - [Demystify the Fuzzing Methods: A Comprehensive Survey](#demystify-fuzzing-methods-survey)
+    - [Demystify the Fuzzing Methods: A Comprehensive Survey (ACM CSUR 2023)](#demystify-the-fuzzing-methods-a-comprehensive-survey-acm-csur-2023)
     - [Fuzzing: Challenges and Reflections](#fuzzing-challenges-and-reflections)
     - [SoK: The Progress, Challenges, and Perspectives of Directed Greybox Fuzzing](#sok-the-progress-challenges-and-perspectives-of-directed-greybox-fuzzing)
     - [Fuzzing: Hack, Art, and Science (CACM 2020)](#fuzzing-hack-art-and-science-cacm-2020)
@@ -616,8 +617,8 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
     - [A Review of Fuzzing Tools and Methods](#a-review-of-fuzzing-tools-and-methods)
     - [Embedded fuzzing: a review of challenges, tools, and solutions](#embedded-fuzzing-a-review-of-challenges-tools-and-solutions)
 - [Differential Fuzzing](#differential-fuzzing)
-    - [JIT-Picking: Differential Fuzzing of JavaScript Engines](#jit-picking-differential-fuzzing-of-javascript-engines-ccs-2022)
-    - [SpecDoctor: Differential Fuzz Testing to Find Transient Execution Vulnerabilities](#specdoctor-differential-fuzz-testing-to-find-transient-execution-vulnerabilities-ccs-2022)
+    - [JIT-Picking: Differential Fuzzing of JavaScript Engines (CCS 2022)](#jit-picking-differential-fuzzing-of-javascript-engines-ccs-2022)
+    - [SpecDoctor: Differential Fuzz Testing to Find Transient Execution Vulnerabilities](#specdoctor-differential-fuzz-testing-to-find-transient-execution-vulnerabilities)
     - [SEDiff: Scope-Aware Differential Fuzzing to Test Internal Function Models in Symbolic Execution (FSE 2022)](#sediff-scope-aware-differential-fuzzing-to-test-internal-function-models-in-symbolic-execution-fse-2022)
     - [T-Reqs: HTTP Request Smuggling with Differential Fuzzing (CCS 2021)](#t-reqs-http-request-smuggling-with-differential-fuzzing-ccs-2021)
     - [CatchBackdoor: Backdoor Testing by Critical Trojan Neural Path Identification via Differential Fuzzing (2021)](#catchbackdoor-backdoor-testing-by-critical-trojan-neural-path-identification-via-differential-fuzzing-2021)
@@ -726,7 +727,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
     - [FUZZIFICATION: Anti-Fuzzing Technique (USENIX Security2019)](#fuzzification-anti-fuzzing-technique-usenix-security2019)
 - [Kernel Fuzzing](#kernel-fuzzing)
     - [No Grammar, No Problem: Towards Fuzzing the Linux Kernel without System-Call Descriptions (NDSS 2023)](#no-grammar-no-problem-towards-fuzzing-the-linux-kernel-without-system-call-descriptions-ndss-2023)
-    - [SFuzz: Slice-based Fuzzing for Real-Time Operating Systems](#sfuzz-slice-based-fuzzing-for-real-time-operating-systems-ccs-2022)
+    - [SFuzz: Slice-based Fuzzing for Real-Time Operating Systems (CCS 2022)](#sfuzz-slice-based-fuzzing-for-real-time-operating-systems-ccs-2022)
     - [Demystifying the Dependency Challenge in Kernel Fuzzing (ICSE 2022)](#demystifying-the-dependency-challenge-in-kernel-fuzzing-icse-2022)
     - [Semantic-Informed Driver Fuzzing Without Both the Hardware Devices and the Emulators (ICSE 2022)](#semantic-informed-driver-fuzzing-without-both-the-hardware-devices-and-the-emulators-icse-2022)
     - [SyzScope: Revealing High-Risk Security Impacts of Fuzzer-Exposed Bugs in Linux kernel  (USENIX SEC'22)](#syzscope-revealing-high-risk-security-impacts-of-fuzzer-exposed-bugs-in-linux-kernel--usenix-sec22)
@@ -774,6 +775,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
     - [Hybrid Fuzz Testing - Discovering Software Bugs via Fuzzing and Symbolic Execution (2012)](#hybrid-fuzz-testing---discovering-software-bugs-via-fuzzing-and-symbolic-execution-2012)
     - [Hybrid concolic testing (2007)](#hybrid-concolic-testing-2007)
 - [Mutation\\Coverage\\Path](#mutationcoveragepath)
+    - [GrayC: Greybox Fuzzing of Compilers and Analysers for C (ISSTA 2023)](#grayc-greybox-fuzzing-of-compilers-and-analysers-for-c-issta-2023)
     - [DARWIN: Survival of the Fittest Fuzzing Mutators (NDSS 2023)](#darwin-survival-of-the-fittest-fuzzing-mutators-ndss-2023)
     - [Rainfuzz: Reinforcement-Learning Driven Heat-Maps for Boosting Coverage-Guided Fuzzing (ICPRAM 2023)](#rainfuzz-reinforcement-learning-driven-heat-maps-for-boosting-coverage-guided-fuzzing-icpram-2023)
     - [Evaluating the Fork-Awareness of Coverage-Guided Fuzzers (ICISSP 2023)](#evaluating-the-fork-awareness-of-coverage-guided-fuzzers-icissp-2023)
@@ -844,6 +846,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
 - [Sanitizer-guided Fuzzing](#sanitizer-guided-fuzzing)
     - [ParmeSan: Sanitizer-guided Greybox Fuzzing (USENIX Security2020)](#parmesan-sanitizer-guided-greybox-fuzzing-usenix-security2020)
 - [State / Sequence Guided Fuzzing](#state--sequence-guided-fuzzing)
+    - [The Bandit’s States: Modeling State Selection for Stateful Network Fuzzing as Multi-armed Bandit Problem](#the-bandits-states-modeling-state-selection-for-stateful-network-fuzzing-as-multi-armed-bandit-problem)
     - [SWaTEval: An Evaluation Framework for Stateful Web Application Testing (ICISSP 2023)](#swateval-an-evaluation-framework-for-stateful-web-application-testing-icissp-2023)
     - [Stateful Greybox Fuzzing (USENIX Security 2022)](#stateful-greybox-fuzzing-usenix-security-2022)
     - [Linear-time Temporal Logic guided Greybox Fuzzing (ICSE 2022)](#linear-time-temporal-logic-guided-greybox-fuzzing-icse-2022)
@@ -861,7 +864,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
     - [DeltaFuzz: Historical Version Information Guided Fuzz Testing (Journal of Computer Science and Technology 2021)](#deltafuzz-historical-version-information-guided-fuzz-testing-journal-of-computer-science-and-technology-2021)
     - [HyDiff: Hybrid Differential Software Analysis (ICSE 2020)](#hydiff-hybrid-differential-software-analysis-icse-2020)
 - [Directed Fuzzing](#directed-fuzzing)
-    - [MC^2: Rigorous and Efficient Directed Greybox Fuzzing](#mc2-rigorous-and-efficient-directed-greybox-fuzzing-ccs-2022)
+    - [MC^2: Rigorous and Efficient Directed Greybox Fuzzing (CCS 2022)](#mc2-rigorous-and-efficient-directed-greybox-fuzzing-ccs-2022)
     - [WindRanger: A Directed Greybox Fuzzer driven by Deviation Basic Block (ICSE 2022)](#windranger-a-directed-greybox-fuzzer-driven-by-deviation-basic-block-icse-2022)
     - [BEACON: Directed Grey-Box Fuzzing with Provable Path Pruning (S\&P 2022)](#beacon-directed-grey-box-fuzzing-with-provable-path-pruning-sp-2022)
     - [Improving Configurability of Unit-level Continuous Fuzzing: An Industrial Case Study with SAP HANA (ASE 2021 Industry)](#improving-configurability-of-unit-level-continuous-fuzzing-an-industrial-case-study-with-sap-hana-ase-2021-industry)
@@ -928,6 +931,16 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
     - [Deep Reinforcement Fuzzing (SPW 2018)](#deep-reinforcement-fuzzing-spw-2018)
     - [FuzzerGym: A Competitive Framework for Fuzzing and Learning (arxiv 2018)](#fuzzergym-a-competitive-framework-for-fuzzing-and-learning-arxiv-2018)
     - [Learn\&Fuzz: Machine Learning for Input Fuzzing (ASE 2017)](#learnfuzz-machine-learning-for-input-fuzzing-ase-2017)
+- [Fuzzing Deep Learning Compilers and Inference Engines](#fuzzing-deep-learning-compilers-and-inference-engines)
+    - [Graph-based Fuzz Testing for Deep Learning Inference Engines (ICSE 2021)](#graph-based-fuzz-testing-for-deep-learning-inference-engines-icse-2021)
+    - [Coverage-Guided Tensor Compiler Fuzzing with Joint IR-Pass Mutation (OOPSLA 2022)](#coverage-guided-tensor-compiler-fuzzing-with-joint-ir-pass-mutation-oopsla-2022)
+    - [NNSmith: Generating Diverse and Valid Test Cases for Deep Learning Compilers (ASPLOS 2023)](#nnsmith-generating-diverse-and-valid-test-cases-for-deep-learning-compilers-asplos-2023)
+    - [Fuzzing Deep Learning Compilers with HirGen (ISSTA 2023)](#fuzzing-deep-learning-compilers-with-hirgen-issta-2023)
+- [Fuzzing Deep Learning Libraries](#fuzzing-deep-learning-libraries)
+    - [DocTer: Documentation-Guided Fuzzing for Testing Deep Learning API Functions (ISSTA 2022)](#docter-documentation-guided-fuzzing-for-testing-deep-learning-api-functions-issta-2022)
+    - [Fuzzing Deep-Learning Libraries via Automated Relational API Inference (ESEC/FSE 2022)](#fuzzing-deep-learning-libraries-via-automated-relational-api-inference-esecfse-2022)
+    - [Free Lunch for Testing: Fuzzing Deep-Learning Libraries from Open Source (ICSE 2022)](#free-lunch-for-testing-fuzzing-deep-learning-libraries-from-open-source-icse-2022)
+    - [Muffin: Testing Deep Learning Libraries via Neural Architecture Fuzzing (ICSE 2022)](#muffin-testing-deep-learning-libraries-via-neural-architecture-fuzzing-icse-2022)
 - [Fuzzing Machine Learning Model](#fuzzing-machine-learning-model)
     - [MDPFuzz: Testing Models Solving Markov Decision Processes (ISSTA 2022)](#mdpfuzz-testing-models-solving-markov-decision-processes-issta-2022)
     - [RapidFuzz: Accelerating fuzzing via Generative Adversarial Networks (Neurocomputing 2021)](#rapidfuzz-accelerating-fuzzing-via-generative-adversarial-networks-neurocomputing-2021)
@@ -938,17 +951,6 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
     - [DeepHunter: A Coverage-Guided Fuzz Testing Framework for Deep Neural Networks (ISSTA 2019)](#deephunter-a-coverage-guided-fuzz-testing-framework-for-deep-neural-networks-issta-2019)
     - [TensorFuzz: Debugging Neural Networks with Coverage-Guided Fuzzing (ICML 2019)](#tensorfuzz-debugging-neural-networks-with-coverage-guided-fuzzing-icml-2019)
     - [DLFuzz: Differential Fuzzing Testing of Deep Learning Systems (FSE 2018)](#dlfuzz-differential-fuzzing-testing-of-deep-learning-systems-fse-2018)
-- [Fuzzing Deep Learning Libraries](#fuzzing-deep-learning-libraries)
-    - [DocTer: Documentation-Guided Fuzzing for Testing Deep Learning API Functions (ISSTA 2022)](#docter-documentation-guided-fuzzing-for-testing-deep-learning-api-functions-issta-2022)
-    - [Fuzzing Deep-Learning Libraries via Automated Relational API Inference (ESEC/FSE 2022)](#fuzzing-deep-learning-libraries-via-automated-relational-api-inference-esecfse-2022)
-    - [Free Lunch for Testing: Fuzzing Deep-Learning Libraries from Open Source (ICSE 2022)](#free-lunch-for-testing-fuzzing-deep-learning-libraries-from-open-source-icse-2022)
-    - [Muffin: Testing Deep Learning Libraries via Neural Architecture Fuzzing (ICSE 2022)](#muffin-testing-deep-learning-libraries-via-neural-architecture-fuzzing-icse-2022)
-
-- [Fuzzing Deep Learning Compilers and Inference Engines](#fuzzing-deep-learning-compilers-and-inference-engines)
-    - [Graph-based Fuzz Testing for Deep Learning Inference Engines (ICSE 2021)](#graph-based-fuzz-testing-for-deep-learning-inference-engines-icse-2021)
-    - [Coverage-Guided Tensor Compiler Fuzzing with Joint IR-Pass Mutation (OOPSLA 2022)](#coverage-guided-tensor-compiler-fuzzing-with-ir-pass-mutation-oopsla-2022)
-    - [NNSmith: Generating Diverse and Valid Test Cases for Deep Learning Compilers (ASPLOS 2023)](#nnsmith-generating-diverse-and-valid-test-cases-for-deep-learning-compilers-asplos-2023)
-    - [Fuzzing Deep Learning Compilers with HirGen (ISSTA 2023)](#fuzzing-deep-learning-compilers-with-hirgen-issta-2023)
 - [Data Flow Sensitive Fuzzing](#data-flow-sensitive-fuzzing)
     - [PATA: Fuzzing with Path Aware Taint Analysis (S\&P 2022)](#pata-fuzzing-with-path-aware-taint-analysis-sp-2022)
     - [datAFLow: Towards a Data-Flow-Guided Fuzzer (NDSS 2022)](#dataflow-towards-a-data-flow-guided-fuzzer-ndss-2022)
@@ -1017,8 +1019,8 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
     - [PeriScope: An Effective Probing and Fuzzing Framework for the Hardware-OS Boundary (NDSS2019)](#periscope-an-effective-probing-and-fuzzing-framework-for-the-hardware-os-boundary-ndss2019)
 - [Other Interesting Fuzzing](#other-interesting-fuzzing)
     - [LOKI: State-Aware Fuzzing Framework for the Implementation of Blockchain Consensus Protocols (NDSS 2023)](#loki-state-aware-fuzzing-framework-for-the-implementation-of-blockchain-consensus-protocols-ndss-2023)
-    - [DriveFuzz: Discovering Autonomous Driving Bugs through Driving Quality-Guided Fuzzing](#drivefuzz-discovering-autonomous-driving-bugs-through-driving-quality-guided-fuzzing-ccs-2022)
-    - [LibAFL: A Framework to Build Modular and Reusable Fuzzers](#libafl-a-framework-to-build-modular-and-reusable-fuzzers-ccs-2022)
+    - [DriveFuzz: Discovering Autonomous Driving Bugs through Driving Quality-Guided Fuzzing (CCS 2022)](#drivefuzz-discovering-autonomous-driving-bugs-through-driving-quality-guided-fuzzing-ccs-2022)
+    - [LibAFL: A Framework to Build Modular and Reusable Fuzzers (CCS 2022)](#libafl-a-framework-to-build-modular-and-reusable-fuzzers-ccs-2022)
     - [RoboFuzz: Fuzzing Robotic Systems over Robot Operating System (ROS) for Finding Correctness Bugs (FSE 2022)](#robofuzz-fuzzing-robotic-systems-over-robot-operating-system-ros-for-finding-correctness-bugs-fse-2022)
     - [Almost Correct Invariants: Synthesizing Inductive Invariants by Fuzzing Proofs (ISSTA 2022)](#almost-correct-invariants-synthesizing-inductive-invariants-by-fuzzing-proofs-issta-2022)
     - [��AFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware (ICSE 2022)](#afl-non-intrusive-feedback-driven-fuzzing-for-microcontroller-firmware-icse-2022)

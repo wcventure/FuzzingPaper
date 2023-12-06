@@ -774,6 +774,7 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
     - [Hybrid Fuzz Testing - Discovering Software Bugs via Fuzzing and Symbolic Execution (2012)](#hybrid-fuzz-testing---discovering-software-bugs-via-fuzzing-and-symbolic-execution-2012)
     - [Hybrid concolic testing (2007)](#hybrid-concolic-testing-2007)
 - [Mutation\\Coverage\\Path](#mutationcoveragepath)
+    - [GrayC: Greybox Fuzzing of Compilers and Analysers for C](#grayc-greybox-fuzzing-of-compilers-and-analysers-for-c-issta-2023)
     - [DARWIN: Survival of the Fittest Fuzzing Mutators (NDSS 2023)](#darwin-survival-of-the-fittest-fuzzing-mutators-ndss-2023)
     - [Rainfuzz: Reinforcement-Learning Driven Heat-Maps for Boosting Coverage-Guided Fuzzing (ICPRAM 2023)](#rainfuzz-reinforcement-learning-driven-heat-maps-for-boosting-coverage-guided-fuzzing-icpram-2023)
     - [Evaluating the Fork-Awareness of Coverage-Guided Fuzzers (ICISSP 2023)](#evaluating-the-fork-awareness-of-coverage-guided-fuzzers-icissp-2023)
@@ -2588,6 +2589,7 @@ This thesis presents our attempt to attain the best of both worlds by combining 
 ### GrayC: Greybox Fuzzing of Compilers and Analysers for C (ISSTA 2023)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/ISSTA23_GrayC.pdf)
+* <img src="image/github_24px.png">[Code](https://github.com/srg-imperial/GrayC)
 
 **Abstract:** Fuzzing of compilers and code analysers has led to a large number of bugs being found and fixed in widely-used frameworks such as LLVM, GCC and Frama-C. Most such fuzzing techniques have taken a blackbox approach, with compilers and code analysers starting to become relatively immune to such fuzzers.
 

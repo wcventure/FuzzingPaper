@@ -108,8 +108,6 @@
   - [Rainfuzz: Reinforcement-Learning Driven Heat-Maps for Boosting Coverage-Guided Fuzzing](#rainfuzz-reinforcement-learning-driven-heat-maps-for-boosting-coverage-guided-fuzzing-icpram-2023)
   - [SWaTEval: An Evaluation Framework for Stateful Web Application Testing](#swateval-an-evaluation-framework-for-stateful-web-application-testing-icissp-2023)
   - [Evaluating the Fork-Awareness of Coverage-Guided Fuzzers](#evaluating-the-fork-awareness-of-coverage-guided-fuzzers-icissp-2023)
-- **XXX 2023***
-  - [Distributed System Fuzzing](https://arxiv.org/pdf/2305.02601.pdf)
 - **ASE 2022**
   - [Effectively Generating Vulnerable Transaction Sequences in Smart Contracts with Reinforcement Learning-guided Fuzzing]
   - [Efficient Greybox Fuzzing to Detect Memory Errors]
@@ -2599,6 +2597,8 @@ This thesis presents our attempt to attain the best of both worlds by combining 
 ### GrayC: Greybox Fuzzing of Compilers and Analysers for C (ISSTA 2023)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/ISSTA23_GrayC.pdf)
+
+* <img src="image/github_24px.png">[Code](https://github.com/srg-imperial/GrayC)
 
 **Abstract:** Fuzzing of compilers and code analysers has led to a large number of bugs being found and fixed in widely-used frameworks such as LLVM, GCC and Frama-C. Most such fuzzing techniques have taken a blackbox approach, with compilers and code analysers starting to become relatively immune to such fuzzers.
 

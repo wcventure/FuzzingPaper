@@ -55,7 +55,8 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
   - [VIDEZZO: Dependency-aware Virtual Device Fuzzing](http://www.nebelwelt.net/publications/files/23Oakland4.pdf)
   - [DEVFUZZ: Automatic Device Model-Guided Device Driver Fuzzing](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10179293)
 - **CCS 2023**
-  - [HOPPER: Interpretative Fuzzing for Libraries]
+  - [Hopper: Interpretative Fuzzing for Libraries](https://dl.acm.org/doi/abs/10.1145/3576915.3616610)
+  - [Greybox Fuzzing of Distributed Systems](https://dl.acm.org/doi/abs/10.1145/3576915.3623097)
 - **USENIX SEC 2023**
   - [MINER: A Hybrid Data-Driven Approach for REST API Fuzzing](https://www.usenix.org/system/files/sec23fall-prepub-129-lyu.pdf)
   - [KextFuzz: Fuzzing macOS Kernel EXTensions on Apple Silicon via Exploiting Mitigations](https://www.usenix.org/conference/usenixsecurity23/presentation/yin)
@@ -98,8 +99,6 @@ Please check the web [wcventure.github.io/FuzzingPaper](https://wcventure.github
   - [Rainfuzz: Reinforcement-Learning Driven Heat-Maps for Boosting Coverage-Guided Fuzzing](#rainfuzz-reinforcement-learning-driven-heat-maps-for-boosting-coverage-guided-fuzzing-icpram-2023)
   - [SWaTEval: An Evaluation Framework for Stateful Web Application Testing](#swateval-an-evaluation-framework-for-stateful-web-application-testing-icissp-2023)
   - [Evaluating the Fork-Awareness of Coverage-Guided Fuzzers](#evaluating-the-fork-awareness-of-coverage-guided-fuzzers-icissp-2023)
-- **XXX 2023***
-  - [Distributed System Fuzzing](https://arxiv.org/pdf/2305.02601.pdf)
 - **ASE 2022**
   - [Effectively Generating Vulnerable Transaction Sequences in Smart Contracts with Reinforcement Learning-guided Fuzzing]
   - [Efficient Greybox Fuzzing to Detect Memory Errors]
@@ -2589,6 +2588,7 @@ This thesis presents our attempt to attain the best of both worlds by combining 
 ### GrayC: Greybox Fuzzing of Compilers and Analysers for C (ISSTA 2023)
 
 * <img src="image/pdf_24px.png">[Paper](./Paper/ISSTA23_GrayC.pdf)
+
 * <img src="image/github_24px.png">[Code](https://github.com/srg-imperial/GrayC)
 
 **Abstract:** Fuzzing of compilers and code analysers has led to a large number of bugs being found and fixed in widely-used frameworks such as LLVM, GCC and Frama-C. Most such fuzzing techniques have taken a blackbox approach, with compilers and code analysers starting to become relatively immune to such fuzzers.

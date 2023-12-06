@@ -24,8 +24,11 @@
   - [EDEFuzz: A Web API Fuzzer for Excessive Data Exposures](https://conf.researchr.org/details/icse-2024/icse-2024-research-track/12/EDEFuzz-A-Web-API-Fuzzer-for-Excessive-Data-Exposures)
   - [FuzzSlice: Pruning False Positives in Static Analysis Warnings through Function-Level Fuzzing](https://conf.researchr.org/details/icse-2024/icse-2024-research-track/39/FuzzSlice-Pruning-False-Positives-in-Static-Analysis-Warnings-through-Function-Level)
   - [Learning and Repair of Deep Reinforcement Learning Policies from Fuzz-Testing Data](https://conf.researchr.org/details/icse-2024/icse-2024-research-track/25/Learning-and-Repair-of-Deep-Reinforcement-Learning-Policies-from-Fuzz-Testing-Data)
+  - [Reorder Pointer Flow in Sound Concurrency Bug Prediction](https://conf.researchr.org/details/icse-2024/icse-2024-research-track/9/Reorder-Pointer-Flow-in-Sound-Concurrency-Bug-Prediction)
 - **NDSS 2024**
   - [Large Language Model guided Protocol Fuzzing](https://mengrj.github.io/files/chatafl.pdf)
+- **ASPLOS 2024**
+  - [Greybox Fuzzing for Concurrency Testing]
 - **PLDI 2023**
   - [Fuzzing Loop Optimizations in Compilers for C++ and Data-Parallel Languages](https://pldi23.sigplan.org/details/pldi-2023-pldi/76/Fuzzing-Loop-Optimizations-in-Compilers-for-C-and-Data-Parallel-Languages)
   - [WasmRef-Isabelle: a Verified Monadic Interpreter and Industrial Fuzzing Oracle for WebAssembly](https://pldi23.sigplan.org/details/pldi-2023-pldi/5/WasmRef-Isabelle-A-Verified-Monadic-Interpreter-and-Industrial-Fuzzing-Oracle-for-We)
@@ -86,11 +89,11 @@
   - [Rare Path Guided Fuzzing](https://2023.issta.org/details/issta-2023-technical-papers/95/Rare-Path-Guided-Fuzzing)
 - **ICSE 2023**
   - [Evaluating and Improving Hybrid Fuzzing](#evaluating-and-improving-hybrid-fuzzing-icse-2023)
-  - [Fuzzing Automatic Differentiation in Deep-Learning Libraries]
+  - [Fuzzing Automatic Differentiation in Deep-Learning Libraries](https://dl.acm.org/doi/10.1109/ICSE48619.2023.00105)
   - [JITfuzz: Coverage-guided Fuzzing for JVM Just-in-Time Compilers](https://www.computer.org/csdl/proceedings-article/icse/2023/570100a056/1OM4wfy0R7W)
-  - [Learning Seed-Adaptive Mutation Strategies for Greybox Fuzzing]
-  - [Operand-Variation-Oriented Differential Analysis for Fuzzing Binding Calls in PDF Readers]
-  - [Regression Fuzzing for Deep Learning Systems]
+  - [Learning Seed-Adaptive Mutation Strategies for Greybox Fuzzing](http://prl.korea.ac.kr/~pronto/home/papers/icse23-seamfuzz.pdf)
+  - [Operand-Variation-Oriented Differential Analysis for Fuzzing Binding Calls in PDF Readers](https://ieeexplore.ieee.org/document/10172882/)
+  - [Regression Fuzzing for Deep Learning Systems](https://ieeexplore.ieee.org/document/10172506/)
   - [Large Language Models are Few-shot Testers: Exploring LLM-based General Bug Reproduction](#large-language-models-are-few-shot-testers-exploring-llm-based-general-bug-reproduction-icse-2023)
   - [Validating SMT Solvers via Skeleton Enumeration Empowered by Historical Bug-Triggering Inputs](#validating-smt-solvers-via-skeleton-enumeration-empowered-by-historical-bug-triggering-inputs-icse-2023)
 - **NDSS 2023**
@@ -115,9 +118,9 @@
   - [Fuzzle: Making a Puzzle for Fuzzers](https://dl.acm.org/doi/abs/10.1145/3551349.3556908)
   - [Griffin: Grammar-Free DBMS Fuzzing](https://dl.acm.org/doi/pdf/10.1145/3551349.3560431)
   - [HTFuzz: Heap Operation Sequence Sensitive Fuzzing](https://dl.acm.org/doi/abs/10.1145/3551349.3560415)
-  - [LawBreaker: An Approach for Specifying Traffic Laws and Fuzzing Autonomous Vehicles]
-  - [QATest: A Uniform Fuzzing Framework for Question Answering Systems]
-  - [So Many Fuzzers, So Little Time - Experience from Evaluating Fuzzers on the Contiki-NG Network (Hay)StackVirt]
+  - [LawBreaker: An Approach for Specifying Traffic Laws and Fuzzing Autonomous Vehicles](https://dl.acm.org/doi/abs/10.1145/3551349.3556897)
+  - [QATest: A Uniform Fuzzing Framework for Question Answering Systems](https://dl.acm.org/doi/10.1145/3551349.3556929)
+  - [So Many Fuzzers, So Little Time - Experience from Evaluating Fuzzers on the Contiki-NG Network (Hay)StackVirt](https://dl.acm.org/doi/10.1145/3551349.3556946)
   - [Auto Off-Target: Enabling Thorough and Scalable Testing for Complex Software Systems](#auto-off-target:-enabling-thorough-and-scalable-testing-for-complex-software-systems-ase-2022)
 - **ISSTA 2022**
   - [sAlmost Correct Invariants: Synthesizing Inductive Invariants by Fuzzing Proof](#almost-correct-invariants-synthesizing-inductive-invariants-by-fuzzing-proofs-issta-2022)

@@ -74,7 +74,16 @@
   - [Large Language Models are Zero-Shot Fuzzers: Fuzzing Deep-Learning Libraries via Large Language Models](#large-language-models-are-zero-shot-fuzzersfuzzing-deep-learning-libraries-via-large-language-models-issta-2023)
   - [GrayC: Greybox Fuzzing of Compilers and Analysers for C](#grayc-greybox-fuzzing-of-compilers-and-analysers-for-c-issta-2023)
   - [1dFuzz: Reproduce 1-Day Vulnerabilities with Directed Differential Fuzzing](https://2023.issta.org/details/issta-2023-technical-papers/61/1dFuzz-Reproduce-1-Day-Vulnerabilities-with-Directed-Differential-Fuzzing)
-  - [Automated Program Repair from Fuzzing Perspective]()
+  - [Automated Program Repair from Fuzzing Perspective](https://2023.issta.org/details/issta-2023-technical-papers/60/Automated-Program-Repair-from-Fuzzing-Perspective)
+  - [Detecting State Inconsistency Bugs in DApps via On-Chain Transaction Replay and Fuzzing](https://2023.issta.org/details/issta-2023-technical-papers/17/Detecting-State-Inconsistency-Bugs-in-DApps-via-On-Chain-Transaction-Replay-and-Fuzzi)
+  - [Fuzzing Deep Learning Compilers with HirGen](https://2023.issta.org/details/issta-2023-technical-papers/13/Fuzzing-Deep-Learning-Compilers-with-HirGen)
+  - [Fuzzing Embedded Systems using Debug Interfaces](https://2023.issta.org/details/issta-2023-technical-papers/74/Fuzzing-Embedded-Systems-using-Debug-Interfaces)
+  - [Green Fuzzer Benchmarking](https://2023.issta.org/details/issta-2023-technical-papers/103/Green-Fuzzer-Benchmarking)
+  - [Green Fuzzing: A Saturation-Based Stopping Criterion using Vulnerability Prediction](https://2023.issta.org/details/issta-2023-technical-papers/116/Green-Fuzzing-A-Saturation-Based-Stopping-Criterion-using-Vulnerability-Prediction)
+  - [Guiding Greybox Fuzzing with Mutation Testing](https://2023.issta.org/details/issta-2023-technical-papers/66/Guiding-Greybox-Fuzzing-with-Mutation-Testing)
+  - [Icicle: A Re-designed Emulator for Grey-Box Firmware Fuzzing](https://2023.issta.org/details/issta-2023-technical-papers/113/Icicle-A-Re-designed-Emulator-for-Grey-Box-Firmware-Fuzzing)
+  - [ItyFuzz: Snapshot-Based Fuzzer for Smart Contract](https://2023.issta.org/details/issta-2023-technical-papers/19/ItyFuzz-Snapshot-Based-Fuzzer-for-Smart-Contract)
+  - [Rare Path Guided Fuzzing](https://2023.issta.org/details/issta-2023-technical-papers/95/Rare-Path-Guided-Fuzzing)
 - **ICSE 2023**
   - [Evaluating and Improving Hybrid Fuzzing](#evaluating-and-improving-hybrid-fuzzing-icse-2023)
   - [Fuzzing Automatic Differentiation in Deep-Learning Libraries]

@@ -109,12 +109,12 @@
   - [SWaTEval: An Evaluation Framework for Stateful Web Application Testing](#swateval-an-evaluation-framework-for-stateful-web-application-testing-icissp-2023)
   - [Evaluating the Fork-Awareness of Coverage-Guided Fuzzers](#evaluating-the-fork-awareness-of-coverage-guided-fuzzers-icissp-2023)
 - **ASE 2022**
-  - [Effectively Generating Vulnerable Transaction Sequences in Smart Contracts with Reinforcement Learning-guided Fuzzing]
-  - [Efficient Greybox Fuzzing to Detect Memory Errors]
-  - [FuzzerAid: Grouping Fuzzed Crashes Based On Fault Signatures]
+  - [Effectively Generating Vulnerable Transaction Sequences in Smart Contracts with Reinforcement Learning-guided Fuzzing](https://dl.acm.org/doi/10.1145/3551349.3560429)
+  - [Efficient Greybox Fuzzing to Detect Memory Errors](https://dl.acm.org/doi/10.1145/3551349.3561161)
+  - [FuzzerAid: Grouping Fuzzed Crashes Based On Fault Signatures](https://dl.acm.org/doi/10.1145/3551349.3556959)
   - [Fuzzle: Making a Puzzle for Fuzzers](https://dl.acm.org/doi/abs/10.1145/3551349.3556908)
-  - [Griffin: Grammar-Free DBMS Fuzzing]
-  - [HTFuzz: Heap Operation Sequence Sensitive Fuzzing]
+  - [Griffin: Grammar-Free DBMS Fuzzing](https://dl.acm.org/doi/pdf/10.1145/3551349.3560431)
+  - [HTFuzz: Heap Operation Sequence Sensitive Fuzzing](https://dl.acm.org/doi/abs/10.1145/3551349.3560415)
   - [LawBreaker: An Approach for Specifying Traffic Laws and Fuzzing Autonomous Vehicles]
   - [QATest: A Uniform Fuzzing Framework for Question Answering Systems]
   - [So Many Fuzzers, So Little Time - Experience from Evaluating Fuzzers on the Contiki-NG Network (Hay)StackVirt]
@@ -157,16 +157,16 @@
   - [datAFLow: Towards a Data-Flow-Guided Fuzzer](#dataflow-towards-a-data-flow-guided-fuzzer-ndss-2022)
 - **USENIX SEC 2022**
   - [SyzScope: Revealing High-Risk Security Impacts of Fuzzer-Exposed Bugs in Linux kernel](#syzscope-revealing-high-risk-security-impacts-of-fuzzer-exposed-bugs-in-linux-kernel-usenix-sec22)
-  - [MundoFuzz: Hypervisor Fuzzing with Statistical Coverage Testing and Grammar Inference]
-  - [TheHuzz: Instruction Fuzzing of Processors Using Golden-Reference Models for Finding Software-Exploitable Vulnerabilities]
+  - [MundoFuzz: Hypervisor Fuzzing with Statistical Coverage Testing and Grammar Inference](https://www.usenix.org/conference/usenixsecurity22/presentation/myung)
+  - [TheHuzz: Instruction Fuzzing of Processors Using Golden-Reference Models for Finding Software-Exploitable Vulnerabilities](https://www.usenix.org/conference/usenixsecurity22/presentation/kande)
   - [Morphuzz: Bending (Input) Space to Fuzz Virtual Devices](https://www.usenix.org/conference/usenixsecurity22/presentation/bulekov)
   - [Fuzzware: Using Precise MMIO Modeling for Effective Firmware Fuzzing](#fuzzware-using-precise-mmio-modeling-for-effective-firmware-fuzzing)
-  - [FuzzOrigin: Detecting UXSS vulnerabilities in Browsers through Origin Fuzzing]
+  - [FuzzOrigin: Detecting UXSS vulnerabilities in Browsers through Origin Fuzzing](https://www.usenix.org/conference/usenixsecurity22/presentation/kim)
   - [Drifuzz: Harvesting Bugs in Device Drivers from Golden Seeds](#drifuzz-harvesting-bugs-in-device-drivers-from-golden-seeds-usenix-sec-2022)
   - [Fuzzing Hardware Like Software](#fuzzing-hardware-like-software-usenix-sec-2022)
   - [BrakTooth: Causing Havoc on Bluetooth Link Manager via Directed Fuzzing](#braktooth-causing-havoc-on-bluetooth-link-manager-via-directed-fuzzing-usenix-sec-2022)
   - [Stateful Greybox Fuzzing](#stateful-greybox-fuzzing-usenix-security-2022)
-  - [AmpFuzz: Fuzzing for Amplification DDoS Vulnerabilities]
+  - [AmpFuzz: Fuzzing for Amplification DDoS Vulnerabilities](https://www.usenix.org/conference/usenixsecurity22/presentation/krupp)
   - [SGXFuzz: Efficiently Synthesizing Nested Structures for SGX Enclave Fuzzing](#sgxfuzz-efficiently-synthesizing-nested-structures-for-sgx-enclave-fuzzing-usenix-security2022)
   - [FRAMESHIFTER: Manipulating HTTP/2 Frame Sequences with Fuzzing](#frameshifter-manipulating-http2-frame-sequences-with-fuzzing-usenix-security2020)
   - [FIXREVERTER: A Realistic Bug Injection Methodology for Benchmarking Fuzz Testing](#fixreverter-a-realistic-bug-injection-methodology-for-benchmarking-fuzz-testing-usenix-sec22)
@@ -199,7 +199,7 @@
 - **Others 2022**
   - [UltraFuzz: Towards Resource-saving in Distributed Fuzzing (TSE 2022)](#ultrafuzz-towards-resource-saving-in-distributed-fuzzing-tse-2022)
   - [Fuzzing with automatically controlled interleavings to detect concurrency bugs (The Journal of Systems & Software)](#fuzzing-with-automatically-controlled-interleavings-to-detect-concurrency-bugs-the-journal-of-systems--software-2022)
-  - [ROZZ: Property-based Fuzzing for Robotic Programs in ROS (ICRA 2022)]
+  - [ROZZ: Property-based Fuzzing for Robotic Programs in ROS (ICRA 2022)](https://ieeexplore.ieee.org/document/9811701/)
   - [SnapFuzz: An Efficient Fuzzing Framework for Network Applications (2022)](#snapfuzz-an-efficient-fuzzing-framework-for-network-applications-2022)
   - [Efficient ECU Analysis Technology through Structure-aware CAN Fuzzing (Access 2022)](#efficient-ecu-analysis-technology-through-structure-aware-can-fuzzing-access-2022)
   - [Smart Contract Fuzzing for Enterprises: The Language Agnostic Way (COMSNETS 2022)](#smart-contract-fuzzing-for-enterprises-the-language-agnostic-way-comsnets-2022)

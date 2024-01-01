@@ -613,7 +613,7 @@
 - [Survey/Review](#surveyreview)
     - [Demystify the Fuzzing Methods: A Comprehensive Survey (ACM CSUR 2023)](#demystify-the-fuzzing-methods-a-comprehensive-survey-acm-csur-2023)
     - [Fuzzing: Challenges and Reflections](#fuzzing-challenges-and-reflections)
-    - [SoK: The Progress, Challenges, and Perspectives of Directed Greybox Fuzzing](#sok-the-progress-challenges-and-perspectives-of-directed-greybox-fuzzing)
+    - [The Progress, Challenges, and Perspectives of Directed Greybox Fuzzing (STVR)](#the-progress-challenges-and-perspectives-of-directed-greybox-fuzzing-stvr)
     - [Fuzzing: Hack, Art, and Science (CACM 2020)](#fuzzing-hack-art-and-science-cacm-2020)
     - [Survey of Directed Fuzzy Technology](#survey-of-directed-fuzzy-technology)
     - [A Review of Machine Learning Applications in Fuzzing](#a-review-of-machine-learning-applications-in-fuzzing)
@@ -1099,13 +1099,13 @@
 **Abstract:** Fuzzing is a method to discover software bugs and vulnerabilities by automatic test input generation which has found tremendous recent interest in both academia and industry. Fuzzing comes in the form of several techniques. On one hand, we have symbolic execution, which enables a particularly effective approach to fuzzing by systematically enumerating the paths of a program. On the other hand, we have random input generation, which generates large amounts of inputs per second with none or minimal program analysis overhead. In this article, we summarize the open challenges and opportunities for fuzzing and symbolic execution as they emerged in discussions among researchers and practitioners in a Shonan Meeting, and were validated in a subsequent survey. We take a forward-looking view of the software vulnerability discovery technologies and provide concrete directions for future research.
 
 
-### SoK: The Progress, Challenges, and Perspectives of Directed Greybox Fuzzing
+### The Progress, Challenges, and Perspectives of Directed Greybox Fuzzing (STVR)
 
 * <img src="image/wechat_24px.png">[Reading Note](https://www.yuque.com/xianglincheng/sc94zo/zpibe5)
-* 
-* <img src="image/pdf_24px.png">[Paper](./Paper/Arxiv20_SoK.pdf)
+* <img src="image/pdf_24px.png">[Paper1](https://onlinelibrary.wiley.com/doi/epdf/10.1002/stvr.1869)
+* <img src="image/pdf_24px.png">[Paper2](./Paper/Arxiv20_SoK.pdf)
 
-**Abstract:** Greybox fuzzing has been the most scalable and practical approach to software testing. Most greybox fuzzing tools are coverage guided as code coverage is strongly correlated with bug coverage. However, since most covered codes may not containbugs, blindly extending code coverage is less efficient, especially for corner cases. Unlike coverage-based fuzzers who extend the code coverage in an undirected manner, a directed fuzzer spends most of its time budget on reaching specific target locations (e.g.,the bug-prone zone) without wasting resources stressing unrelated parts. Thus, directed greybox fuzzing is particularly suitable for scenarios such as patch testing, bug reproduction, and special bug hunting. In this paper, we conduct the first in-depth study of directed greybox fuzzing. We investigate 28 state-of-the-artfuzzers (82% are published after 2019) closely related to DGF, which have various directed types and optimization techniques. Based on the feature of DGF, we extract 15 metrics to conducta thorough assessment of the collected tools and systemize the knowledge of this field. Finally, we summarize the challenges and provide perspectives of this field, aiming to facilitate and boost future research on this topic.
+**Abstract:** Greybox fuzzing is a scalable and practical approach for software testing. Most greybox fuzzing tools are coverage-guided as reaching high code coverage is more likely to find bugs. However, since most covered codes may not contain bugs, blindly extending code coverage is less efficient, especially for corner cases. Unlike coverage-guided greybox fuzzing which increases code coverage in an undirected manner, directed greybox fuzzing (DGF) spends most of its time allocation on reaching specific targets (e.g. the bug-prone zone) without wasting resources stressing unrelated parts. Thus, DGF is particularly suitable for scenarios such as patch testing, bug reproduction, and special bug detection. For now, DGF has become an active research area. However, DGF has general limitations and challenges that are worth further studying. Based on the investigation of 42 state-of-the-art fuzzers that are closely related to DGF, we conducted the first in-depth study to summarize the empirical evidence on the research progress of DGF. This paper studies DGF from a broader view, which takes into account not only the location-directed type that targets specific code parts but also the behavior-directed type that aims to expose abnormal program behaviors. By analyzing the benefits and limitations of DGF research, we try to identify gaps in current research, meanwhile, reveal new research opportunities and suggest areas for further investigation.
 
 
 ### Fuzzing: Hack, Art, and Science (CACM 2020)

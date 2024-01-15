@@ -611,6 +611,7 @@
 - [All Papers (Classification according to Publication)](#all-papers-classification-according-to-publication)
 - [All Papers (Classification according to Subject)](#all-papers-classification-according-to-subject)
 - [Survey/Review](#surveyreview)
+    - [A Survey of Protocol Fuzzing](#a-survey-of-protocol-fuzzing)
     - [Demystify the Fuzzing Methods: A Comprehensive Survey (ACM CSUR 2023)](#demystify-the-fuzzing-methods-a-comprehensive-survey-acm-csur-2023)
     - [Fuzzing: Challenges and Reflections](#fuzzing-challenges-and-reflections)
     - [The Progress, Challenges, and Perspectives of Directed Greybox Fuzzing (STVR)](#the-progress-challenges-and-perspectives-of-directed-greybox-fuzzing-stvr)
@@ -1084,6 +1085,13 @@
 
 
 # Survey/Review
+
+### A Survey of Protocol Fuzzing<a name="a-survey-of-protocol-fuzzing"></a>
+
+* <img src="image/link.png">[Link](https://arxiv.org/abs/2401.01568)
+* <img src="image/pdf_24px.png">[Paper](./Paper/ACM_CSUR24_Protocol_Fuzzing.pdf)
+
+Abstract: Communication protocols form the bedrock of our interconnected world, yet vulnerabilities within their implementations pose significant security threats. Recent developments have seen a surge in fuzzing-based research dedicated to uncovering these vulnerabilities within protocol implementations. However, there still lacks a systematic overview of protocol fuzzing for answering the essential questions such as what the unique challenges are, how existing works solve them, etc. To bridge this gap, we conducted a comprehensive investigation of related works from both academia and industry. Our study includes a detailed summary of the specific challenges in protocol fuzzing, and provides a systematic categorization and overview of existing research efforts. Furthermore, we explore and discuss potential future research directions in protocol fuzzing. This survey serves as a foundational guideline for researchers and practitioners in the field.
 
 ### Demystify the Fuzzing Methods: A Comprehensive Survey (ACM CSUR 2023)<a name="demystify-fuzzing-methods-survey"></a>
 

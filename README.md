@@ -55,6 +55,7 @@
   - [PyRTFuzz: Detecting Bugs in Python Runtimes via Two-Level Collaborative Fuzzing](https://dl.acm.org/doi/10.1145/3576915.3623166)
   - [Poster: Combining Fuzzing with Concolic Execution for IoT Firmware Testing](https://dl.acm.org/doi/10.1145/3576915.3624373)
 - **USENIX SEC 2023**
+  - [FishFuzz: Catch Deeper Bugs by Throwing Larger Nets](https://www.usenix.org/system/files/usenixsecurity23-zheng.pdf)
   - [MINER: A Hybrid Data-Driven Approach for REST API Fuzzing](https://www.usenix.org/system/files/sec23fall-prepub-129-lyu.pdf)
   - [KextFuzz: Fuzzing macOS Kernel EXTensions on Apple Silicon via Exploiting Mitigations](https://www.usenix.org/conference/usenixsecurity23/presentation/yin)
   - [MorFuzz: Fuzzing Processor via Runtime Instruction Morphing enhanced Synchronizable Co-simulation](https://www.usenix.org/system/files/usenixsecurity23-xu-jinyan.pdf)
@@ -855,6 +856,7 @@
     - [EnFuzz: Ensemble Fuzzing with Seed Synchronization among Diverse Fuzzers (USENIX Security2019)](#enfuzz-ensemble-fuzzing-with-seed-synchronization-among-diverse-fuzzers-usenix-security2019)
     - [PAFL: Extend FuzzingOptimizations of Single Mode to Industrial Parallel Mode (ESEC/FSE 2018)](#pafl-extend-fuzzingoptimizations-of-single-mode-to-industrial-parallel-mode-esecfse-2018)
 - [Sanitizer-guided Fuzzing](#sanitizer-guided-fuzzing)
+    - [FishFuzz: Catch Deeper Bugs by Throwing Larger Nets](https://www.usenix.org/system/files/usenixsecurity23-zheng.pdf)
     - [ParmeSan: Sanitizer-guided Greybox Fuzzing (USENIX Security2020)](#parmesan-sanitizer-guided-greybox-fuzzing-usenix-security2020)
 - [State / Sequence Guided Fuzzing](#state--sequence-guided-fuzzing)
     - [The Bandit’s States: Modeling State Selection for Stateful Network Fuzzing as Multi-armed Bandit Problem](#the-bandits-states-modeling-state-selection-for-stateful-network-fuzzing-as-multi-armed-bandit-problem)
@@ -875,6 +877,7 @@
     - [DeltaFuzz: Historical Version Information Guided Fuzz Testing (Journal of Computer Science and Technology 2021)](#deltafuzz-historical-version-information-guided-fuzz-testing-journal-of-computer-science-and-technology-2021)
     - [HyDiff: Hybrid Differential Software Analysis (ICSE 2020)](#hydiff-hybrid-differential-software-analysis-icse-2020)
 - [Directed Fuzzing](#directed-fuzzing)
+    - [FishFuzz: Catch Deeper Bugs by Throwing Larger Nets](https://www.usenix.org/system/files/usenixsecurity23-zheng.pdf)
     - [MC^2: Rigorous and Efficient Directed Greybox Fuzzing (CCS 2022)](#mc2-rigorous-and-efficient-directed-greybox-fuzzing-ccs-2022)
     - [WindRanger: A Directed Greybox Fuzzer driven by Deviation Basic Block (ICSE 2022)](#windranger-a-directed-greybox-fuzzer-driven-by-deviation-basic-block-icse-2022)
     - [BEACON: Directed Grey-Box Fuzzing with Provable Path Pruning (S\&P 2022)](#beacon-directed-grey-box-fuzzing-with-provable-path-pruning-sp-2022)

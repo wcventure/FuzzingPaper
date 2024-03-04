@@ -275,6 +275,11 @@
   - [Nyx: Greybox Hypervisor Fuzzing using Fast Snapshots and Affine Types](#nyx-greybox-hypervisor-fuzzing-using-fast-snapshots-and-affine-types-usenix-security2021)
   - [Breaking Through Binaries: Compiler-quality Instrumentation for Better Binary-only Fuzzing](#breaking-through-binaries-compiler-quality-instrumentation-for-better-binary-only-fuzzing--usenix-security2021)
   - [The Use of Likely Invariants as Feedback for Fuzzers](#the-use-of-likely-invariants-as-feedback-for-fuzzers-usenix-security2021)
+  - [ICSFuzz: Manipulating I/Os and Repurposing Binary Code to Enable Instrumented Fuzzing in ICS Control Applications](https://www.usenix.org/conference/usenixsecurity21/presentation/tychalas)
+  - [Android SmartTVs Vulnerability Discovery via Log-Guided Fuzzing](https://www.usenix.org/conference/usenixsecurity21/presentation/aafer)
+  - [APICraft: Fuzz Driver Generation for Closed-source SDK Libraries](https://www.usenix.org/conference/usenixsecurity21/presentation/zhang-cen)
+  - [SyzVegas: Beating Kernel Fuzzing Odds with Reinforcement Learning](https://www.usenix.org/conference/usenixsecurity21/presentation/wang-daimeng)
+  - [Token-Level Fuzzing](https://www.usenix.org/conference/usenixsecurity21/presentation/salls)
 - **NDSS 2021**
   - [Favocado: Fuzzing the Binding Code of JavaScript Engines Using Semantically Correct Test Cases](#favocado-fuzzing-the-binding-code-of-javascript-engines-using-semantically-correct-test-cases-ndss-2021)
   - [WINNIE: Fuzzing Windows Applications with Harness Synthesis and Fast Cloning](#winnie-fuzzing-windows-applications-with-harness-synthesis-and-fast-cloning-ndss-2021)

@@ -17,6 +17,8 @@
 
 # All Papers (Classification according to Publication)
 
+- **ICISSP 2024**
+  - [Fuzzing Matter(s): A White Paper for Fuzzing the Matter Protocol](https://doi.org/10.5220/0012469200003648)
 - **ICSE 2024**
   - [Fuzz4All: Universal Fuzzing with Large Language Models](https://arxiv.org/abs/2308.04748)
   - [Large Language Models are Edge-Case Generators: Crafting Unusual Programs for Fuzzing Deep Learning Libraries](https://conf.researchr.org/details/icse-2024/icse-2024-research-track/61/Large-Language-Models-are-Edge-Case-Generators-Crafting-Unusual-Programs-for-Fuzzing)
@@ -1569,6 +1571,12 @@ The ideal solution for binary security analysis would be a static rewriter that 
 
 
 # IoT or protocols fuzzing
+
+### Fuzzing Matter(s): A White Paper for Fuzzing the Matter Protocol
+
+* <img src="image/pdf_24px.png">[Paper](https://doi.org/10.5220/0012469200003648)
+
+**Abstract:** IoT and smart home devices have transformed daily life, consequently raising more and more concerns about security vulnerabilities. Robust security testing methods are essential to fortify devices against potential threats. While dynamic analysis techniques, such as fuzzing, help identify vulnerabilities, some challenges arise due to diverse architectures, communication channels and protocols. Testing directly on devices overcomes difficulties in firmware emulation, but lack of protocol standardisation still poses hurdles. The recently released Matter protocol aims to unify smart home ecosystems, thus also simplifying security testing. In particular, Matter inherits the concept of Cluster from Zigbee in its Data Model. The Data Model clearly defines attributes, commands, status codes and events that could be leveraged to design automated security testing techniques such as fuzzing. This paper proposes the design of a fuzzing framework for Matter-enabled smart home devices. The framew ork employs stateful fuzzing to cover the inherent state-fullness of IoT devices. Such a framework would bestow benefits upon manufacturers, researchers, and end-users.
 
 ### PrIntFuzz: Fuzzing Linux Drivers via Automated Virtual Device Simulation (ISSTA 2022)
 

@@ -31,6 +31,12 @@
   - [Large Language Model guided Protocol Fuzzing](https://mengrj.github.io/files/chatafl.pdf)
 - **ASPLOS 2024**
   - [Greybox Fuzzing for Concurrency Testing]
+- **ESORICS 2023**
+  - [ResolFuzz: Differential Fuzzing of DNS Resolvers](https://link.springer.com/chapter/10.1007/978-3-031-51476-0_4)
+  - [Intelligent Zigbee Protocol Fuzzing via Constraint-Field Dependency Inference](https://link.springer.com/chapter/10.1007/978-3-031-51476-0_23)
+  - [LFuzz: Exploiting Locality-Enabled Techniques for File-System Fuzzing](https://link.springer.com/chapter/10.1007/978-3-031-51476-0_25)
+  - [SPLITS: Split Input-to-State Mapping for Effective Firmware Fuzzing](https://link.springer.com/chapter/10.1007/978-3-031-51482-1_15)
+  - [Forkfuzz: Leveraging the Fork-Awareness in Coverage-Guided Fuzzing](https://link.springer.com/chapter/10.1007/978-3-031-54129-2_17)
 - **PLDI 2023**
   - [Fuzzing Loop Optimizations in Compilers for C++ and Data-Parallel Languages](https://pldi23.sigplan.org/details/pldi-2023-pldi/76/Fuzzing-Loop-Optimizations-in-Compilers-for-C-and-Data-Parallel-Languages)
   - [WasmRef-Isabelle: a Verified Monadic Interpreter and Industrial Fuzzing Oracle for WebAssembly](https://pldi23.sigplan.org/details/pldi-2023-pldi/5/WasmRef-Isabelle-A-Verified-Monadic-Interpreter-and-Industrial-Fuzzing-Oracle-for-We)

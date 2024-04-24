@@ -33,6 +33,8 @@
 
 - **ASPLOS 2024**
   - [Greybox Fuzzing for Concurrency Testing]
+- **MobiSys 2023**
+  - [No More Companion Apps Hacking but One Dongle: Hub-Based Blackbox Fuzzing of IoT Firmware](https://dl.acm.org/doi/10.1145/3581791.3596857)
 - **ESORICS 2023**
   - [ResolFuzz: Differential Fuzzing of DNS Resolvers](https://link.springer.com/chapter/10.1007/978-3-031-51476-0_4)
   - [Intelligent Zigbee Protocol Fuzzing via Constraint-Field Dependency Inference](https://link.springer.com/chapter/10.1007/978-3-031-51476-0_23)

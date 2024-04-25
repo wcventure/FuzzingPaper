@@ -16,7 +16,11 @@
 [![Star History Chart](https://api.star-history.com/svg?repos=wcventure/FuzzingPaper&type=Date)](https://star-history.com/#wcventure/FuzzingPaper&Date)
 
 # All Papers (Classification according to Publication)
-
+- **SP 2024**
+  - [Everything is Good for Something: Counterexample-Guided Directed Fuzzing via Likely Invariant Inference](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a142/1Ub23ZRRhRu)
+  - [LABRADOR: Response Guided Directed Fuzzing for Black-box IoT Devices](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a127/1Ub23HQTJ1C)
+  - [SoK: Prudent Evaluation Practices for Fuzzing](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a137/1Ub23V26Svm)
+  - [Titan: Efficient Multi-target Directed Greybox Fuzzing](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a059/1RjEaxqvmQ8)
 - **ICISSP 2024**
   - [Fuzzing Matter(s): A White Paper for Fuzzing the Matter Protocol](https://doi.org/10.5220/0012469200003648)
 - **ICSE 2024**
@@ -660,6 +664,7 @@
     - [NEZHA: Efficient Domain-Independent Differential Testing (S\&P 2017)](#nezha-efficient-domain-independent-differential-testing-sp-2017)
     - [Coverage-Directed Differential Testing of JVM Implementations (PLDI 2016)](#coverage-directed-differential-testing-of-jvm-implementations-pldi-2016)
 - [Evaluate Fuzzing](#evaluate-fuzzing)
+    - [SoK: Prudent Evaluation Practices for Fuzzing (SP 2024)](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a137/1Ub23V26Svm)
     - [FIXREVERTER: A Realistic Bug Injection Methodology for Benchmarking Fuzz Testing (USENIX Security2022)](#fixreverter-a-realistic-bug-injection-methodology-for-benchmarking-fuzz-testing-usenix-security2022)
     - [On the Reliability of Coverage-Based Fuzzer Benchmarking (ICSE 2022)](#on-the-reliability-of-coverage-based-fuzzer-benchmarking-icse-2022)
     - [Mutation Analysis: Answering the Fuzzing Challenge (2022)](#mutation-analysis-answering-the-fuzzing-challenge-2022)
@@ -685,6 +690,7 @@
     - [INSTRIM Lightweight Instrumentation for Coverage-guided Fuzzing (NDSS 2018 workshop)](#instrim-lightweight-instrumentation-for-coverage-guided-fuzzing-ndss-2018-workshop)
     - [SyzGen: Automated Generation of Syscall Specification of Closed-Source macOS Drivers (CCS 2021)](#syzgen-automated-generation-of-syscall-specification-of-closed-source-macos-drivers-ccs-2021)
 - [IoT or protocols fuzzing](#iot-or-protocols-fuzzing)
+    - [LABRADOR: Response Guided Directed Fuzzing for Black-box IoT Devices (SP 2024)](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a127/1Ub23HQTJ1C)
     - [PrIntFuzz: Fuzzing Linux Drivers via Automated Virtual Device Simulation (ISSTA 2022)](#printfuzz-fuzzing-linux-drivers-via-automated-virtual-device-simulation-issta-2022)
     - [SnapFuzz: High-Throughput Fuzzing of Network Applications (ISSTA 2022)](#snapfuzz-high-throughput-fuzzing-of-network-applications-issta-2022)
     - [Efficient Greybox Fuzzing of Applications in Linux-based IoT Devices via Enhanced User-mode Emulation (ISSTA 2022)](#efficient-greybox-fuzzing-of-applications-in-linux-based-iot-devices-via-enhanced-user-mode-emulation-issta-2022)
@@ -892,6 +898,9 @@
     - [DeltaFuzz: Historical Version Information Guided Fuzz Testing (Journal of Computer Science and Technology 2021)](#deltafuzz-historical-version-information-guided-fuzz-testing-journal-of-computer-science-and-technology-2021)
     - [HyDiff: Hybrid Differential Software Analysis (ICSE 2020)](#hydiff-hybrid-differential-software-analysis-icse-2020)
 - [Directed Fuzzing](#directed-fuzzing)
+    - [Everything is Good for Something: Counterexample-Guided Directed Fuzzing via Likely Invariant Inference (SP 2024)](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a142/1Ub23ZRRhRu)
+    - [LABRADOR: Response Guided Directed Fuzzing for Black-box IoT Devices (SP 2024)](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a127/1Ub23HQTJ1C)
+    - [Titan: Efficient Multi-target Directed Greybox Fuzzing (SP 2024)](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a059/1RjEaxqvmQ8)
     - [FishFuzz: Catch Deeper Bugs by Throwing Larger Nets (USENIX Security2023)](https://www.usenix.org/system/files/usenixsecurity23-zheng.pdf)
     - [MC^2: Rigorous and Efficient Directed Greybox Fuzzing (CCS 2022)](#mc2-rigorous-and-efficient-directed-greybox-fuzzing-ccs-2022)
     - [WindRanger: A Directed Greybox Fuzzer driven by Deviation Basic Block (ICSE 2022)](#windranger-a-directed-greybox-fuzzer-driven-by-deviation-basic-block-icse-2022)
@@ -3471,7 +3480,6 @@ Our large-scale fuzzing experiment demonstrates the validity of our main hypothe
 This paper presents HyDiff, the first hybrid approach for differential software analysis. HyDiff integrates and extends two very successful testing techniques: Feedback-directed greybox fuzzing for efficient program testing and shadow symbolic execution for systematic program exploration. HyDiff extends greybox fuzzing with divergence-driven feedback based on novel cost metrics that take into account the control flow graph of the program. Furthermore HyDiff extends shadow symbolic execution by applying four-way forking in a systematic exploration and still having the ability to incorporate concrete inputs in the analysis. HyDiff applies divergence revealing heuristics based on resource consumption and control-flow information to efficiently guide the symbolic exploration, which allows its efficient usage beyond regression testing applications. We introduce differential metrics such as output, decision and cost difference, as well as patch distance, to assist the fuzzing and symbolic execution components in maximizing the execution divergence.
 
 We implemented our approach on top of the fuzzer AFL and the symbolic execution framework Symbolic PathFinder. We illustrate HyDiff on regression and side-channel analysis for Java bytecode programs, and further show how to use HyDiff for robustness analysis of neural networks.
-
 
 # Directed Fuzzing
 

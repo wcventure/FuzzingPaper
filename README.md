@@ -37,6 +37,8 @@
 
 - **ASPLOS 2024**
   - [Greybox Fuzzing for Concurrency Testing]
+- **MobiSys 2023**
+  - [No More Companion Apps Hacking but One Dongle: Hub-Based Blackbox Fuzzing of IoT Firmware](https://dl.acm.org/doi/10.1145/3581791.3596857)
 - **ESORICS 2023**
   - [ResolFuzz: Differential Fuzzing of DNS Resolvers](https://link.springer.com/chapter/10.1007/978-3-031-51476-0_4)
   - [Intelligent Zigbee Protocol Fuzzing via Constraint-Field Dependency Inference](https://link.springer.com/chapter/10.1007/978-3-031-51476-0_23)
@@ -1594,6 +1596,11 @@ The ideal solution for binary security analysis would be a static rewriter that 
 * <img src="image/pdf_24px.png">[Paper](https://doi.org/10.5220/0012469200003648)
 
 **Abstract:** IoT and smart home devices have transformed daily life, consequently raising more and more concerns about security vulnerabilities. Robust security testing methods are essential to fortify devices against potential threats. While dynamic analysis techniques, such as fuzzing, help identify vulnerabilities, some challenges arise due to diverse architectures, communication channels and protocols. Testing directly on devices overcomes difficulties in firmware emulation, but lack of protocol standardisation still poses hurdles. The recently released Matter protocol aims to unify smart home ecosystems, thus also simplifying security testing. In particular, Matter inherits the concept of Cluster from Zigbee in its Data Model. The Data Model clearly defines attributes, commands, status codes and events that could be leveraged to design automated security testing techniques such as fuzzing. This paper proposes the design of a fuzzing framework for Matter-enabled smart home devices. The framew ork employs stateful fuzzing to cover the inherent state-fullness of IoT devices. Such a framework would bestow benefits upon manufacturers, researchers, and end-users.
+
+
+### No More Companion Apps Hacking but One Dongle: Hub-Based Blackbox Fuzzing of IoT Firmware (MobiSys 2023)
+* <img src="image/pdf_24px.png">[Paper](https://dl.acm.org/doi/abs/10.1145/3581791.3596857)
+**Abstract:** Given the massive difficulty in emulating IoT firmware, blackbox fuzzing of IoT devices for vulnerability discovery has become an attractive option. However, existing blackbox IoT fuzzers need much time and tedious effort to reverse engineer the IoT companion app (or manually collect test scripts) of each IoT device, which is unscalable when analyzing many devices. Moreover, fuzzing through a companion app is impeded by the input sanitization inside the app and limited to the manually revealed functions. We notice that IoT devices are typically able to connect a hub using standard wireless protocols (such as ZigBee, Z-Wave, and WiFi). We thus propose a uniform hub-based architecture for fuzzing various IoT devices, without reverse engineering any companion apps. It exploits the messages exchanged between a hub and an IoT device to automatically discover all the functions, and then launches systematic function-oriented message-semantics-guided fuzzing. It avoids sanitization imposed by a companion app. In addition, it conducts device state-sensitive fuzzing, which we find very effective in finding IoT bugs. We implement the system named HubFuzzer. The evaluation shows that HubFuzzer leads to much higher coverage than prior state of the art. We test 21 IoT devices and find 23 zero-day vulnerabilities. Four CVEs have been assigned. 
 
 ### PrIntFuzz: Fuzzing Linux Drivers via Automated Virtual Device Simulation (ISSTA 2022)
 

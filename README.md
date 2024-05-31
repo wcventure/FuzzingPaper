@@ -21,6 +21,16 @@
   - [LABRADOR: Response Guided Directed Fuzzing for Black-box IoT Devices](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a127/1Ub23HQTJ1C)
   - [SoK: Prudent Evaluation Practices for Fuzzing](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a137/1Ub23V26Svm)
   - [Titan: Efficient Multi-target Directed Greybox Fuzzing](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a059/1RjEaxqvmQ8)
+  - [Chronos: Finding Timeout Bugs in Practical Distributed Systems by Deep-Priority Fuzzing with Transient Delay](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a109/1Ub23heRtUA)
+  - [SyzGen++: Dependency Inference for Augmenting Kernel Driver Fuzzing](https://zhyfeng.github.io/files/2024-IEEE-SP-SyzGen++.pdf)
+  - [DY Fuzzing: Formal Dolev-Yao Models Meet Cryptographic Protocol Fuzz Testing](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a096/1Ub234bjuWA)
+  - [Towards Smart Contract Fuzzing on GPU](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a195/1WPcYmDLzKo)
+  - [AFGen: Whole-Function Fuzzing for Applications and Libraries](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a011/1RjE9PjiDss)
+  - [To Boldly Go Where No Fuzzer Has Gone Before: Finding Bugs in Linux' Wireless Stacks through VirtIO Devices](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a024/1RjEa0y9RMQ)
+  - [Predecessor-aware Directed Greybox Fuzzing](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a040/1RjEaeMELbq)
+  - [SATURN: Host-Gadget Synergistic USB Driver Fuzzing](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a051/1RjEaqzRsfC)
+  - [SyzTrust: State-aware Fuzzing on Trusted OS Designed for IoT Devices](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a070/1RjEaG9OpTa)
+  - [LLMIF: Augmented Large Language Model for Fuzzing IoT Devices](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a196/1WPcYnhN15u)
 - **ICISSP 2024**
   - [Fuzzing Matter(s): A White Paper for Fuzzing the Matter Protocol](https://doi.org/10.5220/0012469200003648)
 - **ICSE 2024**
@@ -34,6 +44,11 @@
 - **NDSS 2024**
   - [Large Language Model guided Protocol Fuzzing](https://mengrj.github.io/files/chatafl.pdf)
   - [DeepGo: Predictive Directed Greybox Fuzzing](https://www.ndss-symposium.org/wp-content/uploads/2024-514-paper.pdf)
+  - [ShapFuzz: Efficient Fuzzing via Shapley-Guided Byte Selection](https://www.ndss-symposium.org/ndss-paper/shapfuzz-efficient-fuzzing-via-shapley-guided-byte-selection/)
+  - [EnclaveFuzz: Finding Vulnerabilities in SGX Applications](https://www.ndss-symposium.org/ndss-paper/enclavefuzz-finding-vulnerabilities-in-sgx-applications/)
+  - [MOCK: Optimizing Kernel Fuzzing Mutation with Context-aware Dependency](https://www.ndss-symposium.org/ndss-paper/mock-optimizing-kernel-fuzzing-mutation-with-context-aware-dependency/)
+  - [Predictive Context-sensitive Fuzzing](https://www.ndss-symposium.org/ndss-paper/predictive-context-sensitive-fuzzing/)
+  - [ReqsMiner: Automated Discovery of CDN Forwarding Request Inconsistencies and DoS Attacks with Grammar-based Fuzzing](https://www.ndss-symposium.org/ndss-paper/reqsminer-automated-discovery-of-cdn-forwarding-request-inconsistencies-and-dos-attacks-with-grammar-based-fuzzing/)
 
 - **ASPLOS 2024**
   - [Greybox Fuzzing for Concurrency Testing]

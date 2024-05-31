@@ -21,6 +21,9 @@
   - [LABRADOR: Response Guided Directed Fuzzing for Black-box IoT Devices](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a127/1Ub23HQTJ1C)
   - [SoK: Prudent Evaluation Practices for Fuzzing](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a137/1Ub23V26Svm)
   - [Titan: Efficient Multi-target Directed Greybox Fuzzing](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a059/1RjEaxqvmQ8)
+  - [Chronos: Finding Timeout Bugs in Practical Distributed Systems by Deep-Priority Fuzzing with Transient Delay](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a109/1Ub23heRtUA)
+  - [SyzGen++: Dependency Inference for Augmenting Kernel Driver Fuzzing](https://zhyfeng.github.io/files/2024-IEEE-SP-SyzGen++.pdf)
+  - [DY Fuzzing: Formal Dolev-Yao Models Meet Cryptographic Protocol Fuzz Testing](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a096/1Ub234bjuWA)
 - **ICISSP 2024**
   - [Fuzzing Matter(s): A White Paper for Fuzzing the Matter Protocol](https://doi.org/10.5220/0012469200003648)
 - **ICSE 2024**

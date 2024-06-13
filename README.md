@@ -37,6 +37,8 @@
 
 - **ASPLOS 2024**
   - [Greybox Fuzzing for Concurrency Testing]
+- **Others 2024**
+  - [Crash Report Accumulation During Continuous Fuzzing with CASR (IVMEM 2024)](https://arxiv.org/abs/2405.18174)
 - **MobiSys 2023**
   - [No More Companion Apps Hacking but One Dongle: Hub-Based Blackbox Fuzzing of IoT Firmware](https://dl.acm.org/doi/10.1145/3581791.3596857)
 - **ESORICS 2023**
@@ -1597,6 +1599,15 @@ The ideal solution for binary security analysis would be a static rewriter that 
 
 **Abstract:** IoT and smart home devices have transformed daily life, consequently raising more and more concerns about security vulnerabilities. Robust security testing methods are essential to fortify devices against potential threats. While dynamic analysis techniques, such as fuzzing, help identify vulnerabilities, some challenges arise due to diverse architectures, communication channels and protocols. Testing directly on devices overcomes difficulties in firmware emulation, but lack of protocol standardisation still poses hurdles. The recently released Matter protocol aims to unify smart home ecosystems, thus also simplifying security testing. In particular, Matter inherits the concept of Cluster from Zigbee in its Data Model. The Data Model clearly defines attributes, commands, status codes and events that could be leveraged to design automated security testing techniques such as fuzzing. This paper proposes the design of a fuzzing framework for Matter-enabled smart home devices. The framew ork employs stateful fuzzing to cover the inherent state-fullness of IoT devices. Such a framework would bestow benefits upon manufacturers, researchers, and end-users.
 
+### Crash Report Accumulation During Continuous Fuzzing with CASR (IVMEM 2024)
+
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/abs/2405.18174)
+
+* <img src="image/ppt_24px.png">[Slides](https://sydr-fuzz.github.io/papers/crash-accumulation.pdf)
+
+* <img src="image/youtube.png">[Video](https://www.youtube.com/live/xI1LQS3C7eQ?si=dHNdm4-nZFc2QdQf&t=27620)
+
+**Abstract:** Crash report accumulation is a necessary step during continuous fuzzing. Dynamic software analysis techniques like fuzzing and dynamic symbolic execution generate a large number of crashes for analysis. However, the time and resource constraints often lead to the postponement of fixing some less critical issues, potentially introducing new errors in future releases. Thus, there is a need to distinguish new errors from old ones. We propose a crash accumulation method and implemented it as part of the CASR toolset. We evaluated our approach on crash reports collected from fuzzing results.
 
 ### No More Companion Apps Hacking but One Dongle: Hub-Based Blackbox Fuzzing of IoT Firmware (MobiSys 2023)
 * <img src="image/pdf_24px.png">[Paper](https://dl.acm.org/doi/abs/10.1145/3581791.3596857)

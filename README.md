@@ -49,6 +49,8 @@
   - [Extrapolating Coverage Rate in Greybox Fuzzing](https://dl.acm.org/doi/abs/10.1145/3597503.3639198)
   - [FuzzInMem: Fuzzing Programs via In-memory Structures](https://dl.acm.org/doi/abs/10.1145/3597503.3639172)
   - [RPG: Rust Library Fuzzing with Pool-based Fuzz Target Generation and Generic Support](https://dl.acm.org/doi/abs/10.1145/3597503.3639102)
+  - [Sedar: Obtaining High-Quality Seeds for DBMS Fuzzing via Cross-DBMS SQL Transfer](https://dl.acm.org/doi/abs/10.1145/3597503.3639210)
+  - [SpecBCFuzz: Fuzzing LTL Solvers with Boundary Conditions](https://dl.acm.org/doi/abs/10.1145/3597503.3639087)
 - **NDSS 2024**
   - [Large Language Model guided Protocol Fuzzing](https://mengrj.github.io/files/chatafl.pdf)
   - [DeepGo: Predictive Directed Greybox Fuzzing](https://www.ndss-symposium.org/wp-content/uploads/2024-514-paper.pdf)
@@ -58,7 +60,7 @@
   - [Predictive Context-sensitive Fuzzing](https://www.ndss-symposium.org/ndss-paper/predictive-context-sensitive-fuzzing/)
   - [ReqsMiner: Automated Discovery of CDN Forwarding Request Inconsistencies and DoS Attacks with Grammar-based Fuzzing](https://www.ndss-symposium.org/ndss-paper/reqsminer-automated-discovery-of-cdn-forwarding-request-inconsistencies-and-dos-attacks-with-grammar-based-fuzzing/)
 - **USENIX Security 2024**
-  - [Atropos: Effective Fuzzing of Web Applications for Server-Side Vulnerabilities](https://www.usenix.org/conference/usenixsecurity24/presentation/ren)
+  - [Atropos: Effective Fuzzing of Web Applications for Server-Side Vulnerabilities](https://www.usenix.org/conference/usenixsecurity24/presentation/g%C3%BCler)
   - [ResolverFuzz: Automated Discovery of DNS Resolver Vulnerabilities with Query-Response Fuzzing](https://www.usenix.org/conference/usenixsecurity24/presentation/zhang-qifan)
   - [Cascade: CPU Fuzzing via Intricate Program Generation](https://www.usenix.org/conference/usenixsecurity24/presentation/solt)
   - [Towards Generic Database Management System Fuzzing](https://www.usenix.org/conference/usenixsecurity24/presentation/yang-yupeng)
@@ -70,8 +72,6 @@
   - [WhisperFuzz: White-Box Fuzzing for Detecting and Locating Timing Vulnerabilities in Processors](https://www.usenix.org/conference/usenixsecurity24/presentation/borkar)
   - [HYPERPILL: Fuzzing for Hypervisor-bugs by leveraging the Hardware Virtualization Interface](https://www.usenix.org/conference/usenixsecurity24/presentation/bulekov)
   - [Fuzzing BusyBox: Leveraging LLM and Crash Reuse for Embedded Bug Unearthing](https://www.usenix.org/conference/usenixsecurity24/presentation/asmita)
-  - [Sedar: Obtaining High-Quality Seeds for DBMS Fuzzing via Cross-DBMS SQL Transfer](https://dl.acm.org/doi/abs/10.1145/3597503.3639210)
-  - [SpecBCFuzz: Fuzzing LTL Solvers with Boundary Conditions](https://dl.acm.org/doi/abs/10.1145/3597503.3639087)
 - **ASPLOS 2024**
   - [Greybox Fuzzing for Concurrency Testing]
 - **MobiSys 2023**

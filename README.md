@@ -34,7 +34,6 @@
 - **NDSS 2024**
   - [Large Language Model guided Protocol Fuzzing](https://mengrj.github.io/files/chatafl.pdf)
   - [DeepGo: Predictive Directed Greybox Fuzzing](https://www.ndss-symposium.org/wp-content/uploads/2024-514-paper.pdf)
-
 - **ASPLOS 2024**
   - [Greybox Fuzzing for Concurrency Testing]
 - **ESORICS 2023**
@@ -218,7 +217,6 @@
   - [UltraFuzz: Towards Resource-saving in Distributed Fuzzing (TSE 2022)](#ultrafuzz-towards-resource-saving-in-distributed-fuzzing-tse-2022)
   - [Fuzzing with automatically controlled interleavings to detect concurrency bugs (The Journal of Systems & Software)](#fuzzing-with-automatically-controlled-interleavings-to-detect-concurrency-bugs-the-journal-of-systems--software-2022)
   - [ROZZ: Property-based Fuzzing for Robotic Programs in ROS (ICRA 2022)](https://ieeexplore.ieee.org/document/9811701/)
-  - [SnapFuzz: An Efficient Fuzzing Framework for Network Applications (2022)](#snapfuzz-an-efficient-fuzzing-framework-for-network-applications-2022)
   - [Efficient ECU Analysis Technology through Structure-aware CAN Fuzzing (Access 2022)](#efficient-ecu-analysis-technology-through-structure-aware-can-fuzzing-access-2022)
   - [Smart Contract Fuzzing for Enterprises: The Language Agnostic Way (COMSNETS 2022)](#smart-contract-fuzzing-for-enterprises-the-language-agnostic-way-comsnets-2022)
   - [spotFuzzer: Static Instrument and Fuzzing Windows COTs (2022)](#spotfuzzer-static-instrument-and-fuzzing-windows-cots-2022)
@@ -699,7 +697,6 @@
     - [Drifuzz: Harvesting Bugs in Device Drivers from Golden Seeds (USENIX SEC 2022)](#drifuzz-harvesting-bugs-in-device-drivers-from-golden-seeds-usenix-sec-2022)
     - [StateFuzz: System Call-Based State-Aware Linux Driver Fuzzing (USENIX SEC 2022)](#statefuzz-system-call-based-state-aware-linux-driver-fuzzing-usenix-sec-2022)
     - [SNPSFuzzer: A Fast Greybox Fuzzer for Stateful Network Protocols using Snapshots (2022)](#snpsfuzzer-a-fast-greybox-fuzzer-for-stateful-network-protocols-using-snapshots-2022)
-    - [SnapFuzz: An Efficient Fuzzing Framework for Network Applications (2022)](#snapfuzz-an-efficient-fuzzing-framework-for-network-applications-2022)
     - [State Selection Algorithms and Their Impact on The Performance of Stateful Network Protocol Fuzzing (2021)](#state-selection-algorithms-and-their-impact-on-the-performance-of-stateful-network-protocol-fuzzing-2021)
     - [ICS3Fuzzer: A Framework for Discovering Protocol Implementation Bugs in ICS Supervisory Software by Fuzzing (ACSAC 2021)](#ics3fuzzer-a-framework-for-discovering-protocol-implementation-bugs-in-ics-supervisory-software-by-fuzzing-acsac-2021)
     - [Westworld: Fuzzing-Assisted Remote Dynamic Symbolic Execution of Smart Apps on IoT Cloud Platforms (ACSAC 2021)](#westworld-fuzzing-assisted-remote-dynamic-symbolic-execution-of-smart-apps-on-iot-cloud-platforms-acsac-2021)
@@ -1668,7 +1665,7 @@ In this paper, we assessed the limitation of coverage-guided fuzzing solutions a
 
 ### SNPSFuzzer: A Fast Greybox Fuzzer for Stateful Network Protocols using Snapshots (2022)
 
-* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/abs/2201.04048)
+* <img src="image/pdf_24px.png">[Paper](https://arxiv.org/abs/2202.03643)
 
 **Abstract:** Greybox fuzzing has been widely used in stateless programs and has achieved great success. However, most state-of-the-art greybox fuzzers generally have the problems of slow speed and shallow state depth coverage in the process of fuzzing stateful network protocol programs which are able to remember and store details of the interactions. The existing greybox fuzzers for network protocol programs send a series of well-defined prefix sequences of input messages first and then send mutated messages to test the target state of a stateful network protocol. The process mentioned above causes a high time cost. In this paper, we propose SNPSFuzzer, a fast greybox fuzzer for stateful network protocol using snapshots. SNPSFuzzer dumps the context information when the network protocol program is under a specific state and restores it when the state needs to be fuzzed. Furthermore, we design a message chain analysis algorithm to explore more and deeper network protocol states. Our evaluation shows that, compared with the state-of-the-art network protocol greybox fuzzer AFLNET, SNPSFuzzer increases the speed of network protocol fuzzing by 112.0%-168.9% and improves path coverage by 21.4%-27.5% within 24 hours. Moreover, SNPSFuzzer exposes a previously unreported vulnerability in program Tinydtls.
 

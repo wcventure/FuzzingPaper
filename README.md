@@ -16,11 +16,24 @@
 [![Star History Chart](https://api.star-history.com/svg?repos=wcventure/FuzzingPaper&type=Date)](https://star-history.com/#wcventure/FuzzingPaper&Date)
 
 # All Papers (Classification according to Publication)
+- **ESEC/FSE 2024**
+  - [BRF: Fuzzing the eBPF runtime](https://arxiv.org/abs/2305.08782)
+  - [Evaluating Directed Fuzzers: Are We Heading in the Right Direction?](https://softsec.kaist.ac.kr/~sangkilc/papers/kim-fse24.pdf)
 - **SP 2024**
   - [Everything is Good for Something: Counterexample-Guided Directed Fuzzing via Likely Invariant Inference](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a142/1Ub23ZRRhRu)
   - [LABRADOR: Response Guided Directed Fuzzing for Black-box IoT Devices](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a127/1Ub23HQTJ1C)
   - [SoK: Prudent Evaluation Practices for Fuzzing](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a137/1Ub23V26Svm)
   - [Titan: Efficient Multi-target Directed Greybox Fuzzing](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a059/1RjEaxqvmQ8)
+  - [Chronos: Finding Timeout Bugs in Practical Distributed Systems by Deep-Priority Fuzzing with Transient Delay](http://www.wingtecher.com/themes/WingTecherResearch/assets/papers/paper_from_24/Chronos_sp24.pdf)
+  - [DY Fuzzing: Formal Dolev-Yao Models Meet Cryptographic Protocol Fuzz Testing](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a096/1Ub234bjuWA)
+  - [SyzGen++: Dependency Inference for Augmenting Kernel Driver Fuzzing](https://zhyfeng.github.io/files/2024-IEEE-SP-SyzGen++.pdf)
+  - [Towards Smart Contract Fuzzing on GPU](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a195/1WPcYmDLzKo)
+  - [LLMIF: Augmented Large Language Model for Fuzzing IoT Devices](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a196/1WPcYnhN15u)
+  - [SATURN: Host-Gadget Synergistic USB Driver Fuzzing](http://www.wingtecher.com/themes/WingTecherResearch/assets/papers/SATURN_SP24.pdf)
+  - [To Boldly Go Where No Fuzzer Has Gone Before: Finding Bugs in Linux' Wireless Stacks through VirtIO Devices](https://www.uni-goettingen.de/de/document/download/6b0d1e9d8e2fb7f57cc1a2fab1b071e7.pdf/huster_S&P24.pdf)
+  - [Predecessor-aware Directed Greybox Fuzzing](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a040/1RjEaeMELbq)
+  - [AFGen: Whole-Function Fuzzing for Applications and Libraries](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a011/1RjE9PjiDss)
+  - [SyzTrust: State-aware Fuzzing on Trusted OS Designed for IoT Devices](https://arxiv.org/abs/2309.14742)
 - **ICISSP 2024**
   - [Fuzzing Matter(s): A White Paper for Fuzzing the Matter Protocol](https://doi.org/10.5220/0012469200003648)
 - **ICSE 2024**
@@ -29,12 +42,36 @@
   - [ECFuzz: Effective Configuration Fuzzing for Large-Scale Systems](https://conf.researchr.org/details/icse-2024/icse-2024-research-track/30/ECFuzz-Effective-Configuration-Fuzzing-for-Large-Scale-Systems)
   - [EDEFuzz: A Web API Fuzzer for Excessive Data Exposures](https://conf.researchr.org/details/icse-2024/icse-2024-research-track/12/EDEFuzz-A-Web-API-Fuzzer-for-Excessive-Data-Exposures)
   - [FuzzSlice: Pruning False Positives in Static Analysis Warnings through Function-Level Fuzzing](https://conf.researchr.org/details/icse-2024/icse-2024-research-track/39/FuzzSlice-Pruning-False-Positives-in-Static-Analysis-Warnings-through-Function-Level)
-  - [Learning and Repairx of Deep Reinforcement Learning Policies from Fuzz-Testing Data](https://conf.researchr.org/details/icse-2024/icse-2024-research-track/25/Learning-and-Repair-of-Deep-Reinforcement-Learning-Policies-from-Fuzz-Testing-Data)
+  - [Learning and Repair of Deep Reinforcement Learning Policies from Fuzz-Testing Data](https://conf.researchr.org/details/icse-2024/icse-2024-research-track/25/Learning-and-Repair-of-Deep-Reinforcement-Learning-Policies-from-Fuzz-Testing-Data)
   - [Reorder Pointer Flow in Sound Concurrency Bug Prediction](https://conf.researchr.org/details/icse-2024/icse-2024-research-track/9/Reorder-Pointer-Flow-in-Sound-Concurrency-Bug-Prediction)
+  - [Are We There Yet? Unraveling the State-of-the-Art Smart Contract Fuzzers](https://dl.acm.org/doi/abs/10.1145/3597503.3639152)
+  - [Crossover in Parametric Fuzzing](https://dl.acm.org/doi/abs/10.1145/3597503.3639160)
+  - [Extrapolating Coverage Rate in Greybox Fuzzing](https://dl.acm.org/doi/abs/10.1145/3597503.3639198)
+  - [FuzzInMem: Fuzzing Programs via In-memory Structures](https://dl.acm.org/doi/abs/10.1145/3597503.3639172)
+  - [RPG: Rust Library Fuzzing with Pool-based Fuzz Target Generation and Generic Support](https://dl.acm.org/doi/abs/10.1145/3597503.3639102)
+  - [Sedar: Obtaining High-Quality Seeds for DBMS Fuzzing via Cross-DBMS SQL Transfer](https://dl.acm.org/doi/abs/10.1145/3597503.3639210)
+  - [SpecBCFuzz: Fuzzing LTL Solvers with Boundary Conditions](https://dl.acm.org/doi/abs/10.1145/3597503.3639087)
 - **NDSS 2024**
   - [Large Language Model guided Protocol Fuzzing](https://mengrj.github.io/files/chatafl.pdf)
   - [DeepGo: Predictive Directed Greybox Fuzzing](https://www.ndss-symposium.org/wp-content/uploads/2024-514-paper.pdf)
-
+  - [MOCK: Optimizing Kernel Fuzzing Mutation with Context-aware Dependency](https://www.ndss-symposium.org/ndss-paper/mock-optimizing-kernel-fuzzing-mutation-with-context-aware-dependency/)
+  - [ShapFuzz: Efficient Fuzzing via Shapley-Guided Byte Selection](https://www.ndss-symposium.org/ndss-paper/shapfuzz-efficient-fuzzing-via-shapley-guided-byte-selection/)
+  - [EnclaveFuzz: Finding Vulnerabilities in SGX Applications](https://www.ndss-symposium.org/ndss-paper/enclavefuzz-finding-vulnerabilities-in-sgx-applications/)
+  - [Predictive Context-sensitive Fuzzing](https://www.ndss-symposium.org/ndss-paper/predictive-context-sensitive-fuzzing/)
+  - [ReqsMiner: Automated Discovery of CDN Forwarding Request Inconsistencies and DoS Attacks with Grammar-based Fuzzing](https://www.ndss-symposium.org/ndss-paper/reqsminer-automated-discovery-of-cdn-forwarding-request-inconsistencies-and-dos-attacks-with-grammar-based-fuzzing/)
+- **USENIX Security 2024**
+  - [Atropos: Effective Fuzzing of Web Applications for Server-Side Vulnerabilities](https://www.usenix.org/conference/usenixsecurity24/presentation/g%C3%BCler)
+  - [ResolverFuzz: Automated Discovery of DNS Resolver Vulnerabilities with Query-Response Fuzzing](https://www.usenix.org/conference/usenixsecurity24/presentation/zhang-qifan)
+  - [Cascade: CPU Fuzzing via Intricate Program Generation](https://www.usenix.org/conference/usenixsecurity24/presentation/solt)
+  - [Towards Generic Database Management System Fuzzing](https://www.usenix.org/conference/usenixsecurity24/presentation/yang-yupeng)
+  - [SHiFT: Semi-hosted Fuzz Testing for Embedded Applications](https://www.usenix.org/conference/usenixsecurity24/presentation/mera)
+  - [SDFuzz: Target States Driven Directed Fuzzing](https://www.usenix.org/conference/usenixsecurity24/presentation/li-penghui)
+  - [Critical Code Guided Directed Greybox Fuzzing for Commits](https://www.usenix.org/conference/usenixsecurity24/presentation/xiang-yi)
+  - [EL3XIR: Fuzzing COTS Secure Monitors](https://www.usenix.org/conference/usenixsecurity24/presentation/lindenmeier)
+  - [MultiFuzz: A Multi-Stream Fuzzer For Testing Monolithic Firmware](https://www.usenix.org/conference/usenixsecurity24/presentation/chesser)
+  - [WhisperFuzz: White-Box Fuzzing for Detecting and Locating Timing Vulnerabilities in Processors](https://www.usenix.org/conference/usenixsecurity24/presentation/borkar)
+  - [HYPERPILL: Fuzzing for Hypervisor-bugs by leveraging the Hardware Virtualization Interface](https://www.usenix.org/conference/usenixsecurity24/presentation/bulekov)
+  - [Fuzzing BusyBox: Leveraging LLM and Crash Reuse for Embedded Bug Unearthing](https://www.usenix.org/conference/usenixsecurity24/presentation/asmita)
 - **ASPLOS 2024**
   - [Greybox Fuzzing for Concurrency Testing]
 - **MobiSys 2023**
@@ -743,6 +780,7 @@
     - [Extension of SPIKE for Encrypted Protocol Fuzzing (2011)](#extension-of-spike-for-encrypted-protocol-fuzzing-2011)
     - [AutoFuzz: Automated Network Protocol Fuzzing Framework (IJCSNS 2010)](#autofuzz-automated-network-protocol-fuzzing-framework-ijcsns-2010)
 - [Fuzzing with LLMs](#fuzzing-with-llms)
+    - [Large Language Model guided Protocol Fuzzing (NDSS 2024)](#large-language-model-guided-protocol-fuzzing-ndss-2024)
     - [Large Language Models are Zero-Shot Fuzzers:Fuzzing Deep-Learning Libraries via Large Language Models (ISSTA 2023)](#large-language-models-are-zero-shot-fuzzersfuzzing-deep-learning-libraries-via-large-language-models-issta-2023)
     - [Large Language Models are Few-shot Testers: Exploring LLM-based General Bug Reproduction (ICSE 2023)](#large-language-models-are-few-shot-testers-exploring-llm-based-general-bug-reproduction-icse-2023)
 - [SMT Fuzzing](#smt-fuzzing)

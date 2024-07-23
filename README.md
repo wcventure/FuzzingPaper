@@ -160,7 +160,7 @@
 - **Euro S&P 2023 / Euro S&P Workshops 2023**
   - [EF/CF: High Performance Smart Contract Fuzzing for Exploit Generation](https://www.computer.org/csdl/proceedings-article/eurosp/2023/651200a449/1OFthvHp1lu)
   - [Fuzzing SGX Enclaves via Host Program Mutations](https://ieeexplore.ieee.org/document/10190488)
-  - [The Bandit’s States: Modeling State Selection for Stateful Network Fuzzing as Multi-armed Bandit Problem](#the-bandits-states-modeling-state-selection-for-stateful-network-fuzzing-as-multi-armed-bandit-problem)
+  - [The Bandit’s States: Modeling State Selection for Stateful Network Fuzzing as Multi-armed Bandit Problem](#the-bandits-states)
 - **ICISSP/ICPRAM 2023**
   - [Rainfuzz: Reinforcement-Learning Driven Heat-Maps for Boosting Coverage-Guided Fuzzing](#rainfuzz-reinforcement-learning-driven-heat-maps-for-boosting-coverage-guided-fuzzing-icpram-2023)
   - [SWaTEval: An Evaluation Framework for Stateful Web Application Testing](#swateval-an-evaluation-framework-for-stateful-web-application-testing-icissp-2023)
@@ -918,7 +918,7 @@
     - [FishFuzz: Catch Deeper Bugs by Throwing Larger Nets (USENIX Security2023)](https://www.usenix.org/system/files/usenixsecurity23-zheng.pdf)
     - [ParmeSan: Sanitizer-guided Greybox Fuzzing (USENIX Security2020)](#parmesan-sanitizer-guided-greybox-fuzzing-usenix-security2020)
 - [State / Sequence Guided Fuzzing](#state--sequence-guided-fuzzing)
-    - [The Bandit’s States: Modeling State Selection for Stateful Network Fuzzing as Multi-armed Bandit Problem](#the-bandits-states-modeling-state-selection-for-stateful-network-fuzzing-as-multi-armed-bandit-problem)
+    - [The Bandit’s States: Modeling State Selection for Stateful Network Fuzzing as Multi-armed Bandit Problem](#the-bandits-states)
     - [SWaTEval: An Evaluation Framework for Stateful Web Application Testing (ICISSP 2023)](#swateval-an-evaluation-framework-for-stateful-web-application-testing-icissp-2023)
     - [Stateful Greybox Fuzzing (USENIX Security 2022)](#stateful-greybox-fuzzing-usenix-security-2022)
     - [Linear-time Temporal Logic guided Greybox Fuzzing (ICSE 2022)](#linear-time-temporal-logic-guided-greybox-fuzzing-icse-2022)
@@ -3353,7 +3353,9 @@ In this paper, we present sanitizer-guided fuzzing, a new design point in this s
 
 # State / Sequence Guided Fuzzing
 
-### The Bandit’s States: Modeling State Selection for Stateful Network Fuzzing as Multi-armed Bandit Problem
+### The Bandit’s States
+
+The Bandit’s States: Modeling State Selection for Stateful Network Fuzzing as Multi-armed Bandit Problem
 
 * <img src="image/pdf_24px.png">[Paper](https://publica.fraunhofer.de/entities/publication/7a9ae396-d2f2-47c8-91a0-f30efce0a0fc/details)
 

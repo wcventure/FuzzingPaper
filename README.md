@@ -72,6 +72,7 @@
   - [WhisperFuzz: White-Box Fuzzing for Detecting and Locating Timing Vulnerabilities in Processors](https://www.usenix.org/conference/usenixsecurity24/presentation/borkar)
   - [HYPERPILL: Fuzzing for Hypervisor-bugs by leveraging the Hardware Virtualization Interface](https://www.usenix.org/conference/usenixsecurity24/presentation/bulekov)
   - [Fuzzing BusyBox: Leveraging LLM and Crash Reuse for Embedded Bug Unearthing](https://www.usenix.org/conference/usenixsecurity24/presentation/asmita)
+  - [From One Thousand Pages of Specification to Unveiling Hidden Bugs: Large Language Model Assisted Fuzzing of Matter IoT Devices](https://www.usenix.org/conference/usenixsecurity24/presentation/ma-xiaoyue)
 - **ASPLOS 2024**
   - [Greybox Fuzzing for Concurrency Testing]
 - **MobiSys 2023**

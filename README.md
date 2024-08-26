@@ -34,6 +34,7 @@
   - [Predecessor-aware Directed Greybox Fuzzing](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a040/1RjEaeMELbq)
   - [AFGen: Whole-Function Fuzzing for Applications and Libraries](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a011/1RjE9PjiDss)
   - [SyzTrust: State-aware Fuzzing on Trusted OS Designed for IoT Devices](https://arxiv.org/abs/2309.14742)
+  - [LLMIF: Augmented Large Language Model for Fuzzing IoT Devices](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a196/1WPcYnhN15u)
 - **ICISSP 2024**
   - [Fuzzing Matter(s): A White Paper for Fuzzing the Matter Protocol](https://doi.org/10.5220/0012469200003648)
 - **ICSE 2024**
@@ -54,8 +55,9 @@
 - **NDSS 2024**
   - [Large Language Model guided Protocol Fuzzing](https://mengrj.github.io/files/chatafl.pdf)
   - [DeepGo: Predictive Directed Greybox Fuzzing](https://www.ndss-symposium.org/wp-content/uploads/2024-514-paper.pdf)
-  - [MOCK: Optimizing Kernel Fuzzing Mutation with Context-aware Dependency](https://www.ndss-symposium.org/ndss-paper/mock-optimizing-kernel-fuzzing-mutation-with-context-aware-dependency/)
   - [ShapFuzz: Efficient Fuzzing via Shapley-Guided Byte Selection](https://www.ndss-symposium.org/ndss-paper/shapfuzz-efficient-fuzzing-via-shapley-guided-byte-selection/)
+  - [EnclaveFuzz: Finding Vulnerabilities in SGX Applications](https://www.ndss-symposium.org/ndss-paper/enclavefuzz-finding-vulnerabilities-in-sgx-applications/)
+  - [MOCK: Optimizing Kernel Fuzzing Mutation with Context-aware Dependency](https://www.ndss-symposium.org/ndss-paper/mock-optimizing-kernel-fuzzing-mutation-with-context-aware-dependency/)
   - [EnclaveFuzz: Finding Vulnerabilities in SGX Applications](https://www.ndss-symposium.org/ndss-paper/enclavefuzz-finding-vulnerabilities-in-sgx-applications/)
   - [Predictive Context-sensitive Fuzzing](https://www.ndss-symposium.org/ndss-paper/predictive-context-sensitive-fuzzing/)
   - [ReqsMiner: Automated Discovery of CDN Forwarding Request Inconsistencies and DoS Attacks with Grammar-based Fuzzing](https://www.ndss-symposium.org/ndss-paper/reqsminer-automated-discovery-of-cdn-forwarding-request-inconsistencies-and-dos-attacks-with-grammar-based-fuzzing/)

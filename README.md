@@ -16,7 +16,6 @@
 [![Star History Chart](https://api.star-history.com/svg?repos=wcventure/FuzzingPaper&type=Date)](https://star-history.com/#wcventure/FuzzingPaper&Date)
 
 # All Papers (Classification according to Publication)
-- 
 - **ESEC/FSE 2024**
   - [BRF: Fuzzing the eBPF runtime](https://arxiv.org/abs/2305.08782)
   - [Evaluating Directed Fuzzers: Are We Heading in the Right Direction?](https://softsec.kaist.ac.kr/~sangkilc/papers/kim-fse24.pdf)

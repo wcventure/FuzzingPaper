@@ -32,7 +32,6 @@
   - [Prospector: Boosting Directed Greybox Fuzzing for Large-Scale Target Sets with Iterative Prioritization](https://dl.acm.org/doi/10.1145/3650212.3680365)
   - [Sleuth: A Switchable Dual-Mode Fuzzer to Investigate Bug Impacts Following a Single PoC](https://dl.acm.org/doi/10.1145/3650212.3680316)
   - [Tacoma: Enhanced Browser Fuzzing with Fine-Grained Semantic Alignment](https://dl.acm.org/doi/10.1145/3650212.3680351)
-  - 
 - **ESEC/FSE 2024**
   - [BRF: Fuzzing the eBPF runtime](https://arxiv.org/abs/2305.08782)
   - [Evaluating Directed Fuzzers: Are We Heading in the Right Direction?](https://softsec.kaist.ac.kr/~sangkilc/papers/kim-fse24.pdf)

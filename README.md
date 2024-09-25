@@ -16,6 +16,23 @@
 [![Star History Chart](https://api.star-history.com/svg?repos=wcventure/FuzzingPaper&type=Date)](https://star-history.com/#wcventure/FuzzingPaper&Date)
 
 # All Papers (Classification according to Publication)
+- **ISSTA 2024**
+  - [An Empirical Examination of Fuzzer Mutator Performance](https://dl.acm.org/doi/10.1145/3650212.3680387)
+  - [AsFuzzer: Differential Testing of Assemblers with Error-Driven Grammar Inference](https://dl.acm.org/doi/10.1145/3650212.3680345)
+  - [Atlas: Automating Cross-Language Fuzzing on Android Closed-Source Libraries](https://dl.acm.org/doi/10.1145/3650212.3652133)
+  - [Dance of the ADS: Orchestrating Failures through Historically-Informed Scenario Fuzzing](https://dl.acm.org/doi/10.1145/3650212.3680344)
+  - [DDGF: Dynamic Directed Greybox Fuzzing with Path Profiling](https://dl.acm.org/doi/10.1145/3650212.3680324)
+  - [Enhancing ROS System Fuzzing through Callback Tracing](https://dl.acm.org/doi/10.1145/3650212.3652111)
+  - [FRIES: Fuzzing Rust Library Interactions via Efficient Ecosystem-Guided Target Generation](https://dl.acm.org/doi/10.1145/3650212.3680348)
+  - [Fuzzing JavaScript Interpreters with Coverage-Guided Reinforcement Learning for LLM-Based Mutation](https://dl.acm.org/doi/10.1145/3650212.3680389)
+  - [Fuzzing MLIR Compiler Infrastructure via Operation Dependency Analysis](https://dl.acm.org/doi/10.1145/3650212.3680360)
+  - [How Effective Are They? Exploring Large Language Model Based Fuzz Driver Generation](https://dl.acm.org/doi/10.1145/3650212.3680355)
+  - [Logos: Log Guided Fuzzing for Protocol Implementations](https://dl.acm.org/doi/10.1145/3650212.3680394)
+  - [Midas: Mining Profitable Exploits in On-Chain Smart Contracts via Feedback-Driven Fuzzing and Differential Analysis](https://dl.acm.org/doi/10.1145/3650212.3680321)
+  - [Prospector: Boosting Directed Greybox Fuzzing for Large-Scale Target Sets with Iterative Prioritization](https://dl.acm.org/doi/10.1145/3650212.3680365)
+  - [Sleuth: A Switchable Dual-Mode Fuzzer to Investigate Bug Impacts Following a Single PoC](https://dl.acm.org/doi/10.1145/3650212.3680316)
+  - [Tacoma: Enhanced Browser Fuzzing with Fine-Grained Semantic Alignment](https://dl.acm.org/doi/10.1145/3650212.3680351)
+  - 
 - **ESEC/FSE 2024**
   - [BRF: Fuzzing the eBPF runtime](https://arxiv.org/abs/2305.08782)
   - [Evaluating Directed Fuzzers: Are We Heading in the Right Direction?](https://softsec.kaist.ac.kr/~sangkilc/papers/kim-fse24.pdf)

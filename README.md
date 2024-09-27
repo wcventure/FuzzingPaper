@@ -16,6 +16,15 @@
 [![Star History Chart](https://api.star-history.com/svg?repos=wcventure/FuzzingPaper&type=Date)](https://star-history.com/#wcventure/FuzzingPaper&Date)
 
 # All Papers (Classification according to Publication)
+- **ISSTA 2024**
+  - [Prospector: Boosting Directed Greybox Fuzzing for Large-Scale Target Sets with Iterative Prioritization](https://dl.acm.org/doi/10.1145/3650212.3680365)
+  - [FRIES: Fuzzing Rust Library Interactions via Efficient Ecosystem-Guided Target Generation](https://dl.acm.org/doi/10.1145/3650212.3680348)
+  - [DDGF: Dynamic Directed Greybox Fuzzing with Path Profiling](https://dl.acm.org/doi/10.1145/3650212.3680324)
+  - [Logos: Log Guided Fuzzing for Protocol Implementations](https://dl.acm.org/doi/10.1145/3650212.3680394)
+  - [Policy Testing with MDPFuzz (Replicability Study)](https://dl.acm.org/doi/10.1145/3650212.3680382)
+  - [Fuzzing JavaScript Interpreters with Coverage-Guided Reinforcement Learning for LLM-Based Mutation](https://dl.acm.org/doi/10.1145/3650212.3680389)
+  - [Enhancing ROS System Fuzzing through Callback Tracing](https://dl.acm.org/doi/10.1145/3650212.3652111)
+  - [Sleuth: A Switchable Dual-Mode Fuzzer to Investigate Bug Impacts Following a Single PoC](https://dl.acm.org/doi/10.1145/3650212.3680316)
 - **ESEC/FSE 2024**
   - [BRF: Fuzzing the eBPF runtime](https://arxiv.org/abs/2305.08782)
   - [Evaluating Directed Fuzzers: Are We Heading in the Right Direction?](https://softsec.kaist.ac.kr/~sangkilc/papers/kim-fse24.pdf)

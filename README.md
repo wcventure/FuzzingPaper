@@ -23,15 +23,18 @@
   - [Dance of the ADS: Orchestrating Failures through Historically-Informed Scenario Fuzzing](https://dl.acm.org/doi/10.1145/3650212.3680344)
   - [DDGF: Dynamic Directed Greybox Fuzzing with Path Profiling](https://dl.acm.org/doi/10.1145/3650212.3680324)
   - [Enhancing ROS System Fuzzing through Callback Tracing](https://dl.acm.org/doi/10.1145/3650212.3652111)
-  - [FRIES: Fuzzing Rust Library Interactions via Efficient Ecosystem-Guided Target Generation](https://dl.acm.org/doi/10.1145/3650212.3680348)
   - [Fuzzing JavaScript Interpreters with Coverage-Guided Reinforcement Learning for LLM-Based Mutation](https://dl.acm.org/doi/10.1145/3650212.3680389)
   - [Fuzzing MLIR Compiler Infrastructure via Operation Dependency Analysis](https://dl.acm.org/doi/10.1145/3650212.3680360)
   - [How Effective Are They? Exploring Large Language Model Based Fuzz Driver Generation](https://dl.acm.org/doi/10.1145/3650212.3680355)
   - [Logos: Log Guided Fuzzing for Protocol Implementations](https://dl.acm.org/doi/10.1145/3650212.3680394)
   - [Midas: Mining Profitable Exploits in On-Chain Smart Contracts via Feedback-Driven Fuzzing and Differential Analysis](https://dl.acm.org/doi/10.1145/3650212.3680321)
-  - [Prospector: Boosting Directed Greybox Fuzzing for Large-Scale Target Sets with Iterative Prioritization](https://dl.acm.org/doi/10.1145/3650212.3680365)
-  - [Sleuth: A Switchable Dual-Mode Fuzzer to Investigate Bug Impacts Following a Single PoC](https://dl.acm.org/doi/10.1145/3650212.3680316)
   - [Tacoma: Enhanced Browser Fuzzing with Fine-Grained Semantic Alignment](https://dl.acm.org/doi/10.1145/3650212.3680351)
+  - [Prospector: Boosting Directed Greybox Fuzzing for Large-Scale Target Sets with Iterative Prioritization](https://dl.acm.org/doi/10.1145/3650212.3680365)
+  - [FRIES: Fuzzing Rust Library Interactions via Efficient Ecosystem-Guided Target Generation](https://dl.acm.org/doi/10.1145/3650212.3680348)
+  - [Logos: Log Guided Fuzzing for Protocol Implementations](https://dl.acm.org/doi/10.1145/3650212.3680394)
+  - [Policy Testing with MDPFuzz (Replicability Study)](https://dl.acm.org/doi/10.1145/3650212.3680382)
+  - [Enhancing ROS System Fuzzing through Callback Tracing](https://dl.acm.org/doi/10.1145/3650212.3652111)
+  - [Sleuth: A Switchable Dual-Mode Fuzzer to Investigate Bug Impacts Following a Single PoC](https://dl.acm.org/doi/10.1145/3650212.3680316)
 - **ESEC/FSE 2024**
   - [BRF: Fuzzing the eBPF runtime](https://arxiv.org/abs/2305.08782)
   - [Evaluating Directed Fuzzers: Are We Heading in the Right Direction?](https://softsec.kaist.ac.kr/~sangkilc/papers/kim-fse24.pdf)
@@ -92,7 +95,9 @@
   - [Fuzzing BusyBox: Leveraging LLM and Crash Reuse for Embedded Bug Unearthing](https://www.usenix.org/conference/usenixsecurity24/presentation/asmita)
   - [From One Thousand Pages of Specification to Unveiling Hidden Bugs: Large Language Model Assisted Fuzzing of Matter IoT Devices](https://www.usenix.org/conference/usenixsecurity24/presentation/ma-xiaoyue)
 - **ASPLOS 2024**
-  - [Greybox Fuzzing for Concurrency Testing]
+  - [Greybox Fuzzing for Concurrency Testing](https://dl.acm.org/doi/abs/10.1145/3620665.3640389)
+- **OOPSLA 2024**
+  - [WhiteFox: White-box Compiler Fuzzing Empowered by Large Language Models](https://arxiv.org/abs/2310.15991)
 - **Others 2024**
   - [Crash Report Accumulation During Continuous Fuzzing with CASR (IVMEM 2024)](https://arxiv.org/abs/2405.18174)
 - **MobiSys 2023**
@@ -103,6 +108,9 @@
   - [LFuzz: Exploiting Locality-Enabled Techniques for File-System Fuzzing](https://link.springer.com/chapter/10.1007/978-3-031-51476-0_25)
   - [SPLITS: Split Input-to-State Mapping for Effective Firmware Fuzzing](https://link.springer.com/chapter/10.1007/978-3-031-51482-1_15)
   - [Forkfuzz: Leveraging the Fork-Awareness in Coverage-Guided Fuzzing](https://link.springer.com/chapter/10.1007/978-3-031-54129-2_17)
+- **OOPSLA 2023**
+  - [Accelerating Fuzzing through Prefix-Guided Execution](https://dl.acm.org/doi/10.1145/3586027)
+  - [Towards Better Semantics Exploration for Browser Fuzzing](https://dl.acm.org/doi/10.1145/3622819)
 - **PLDI 2023**
   - [Fuzzing Loop Optimizations in Compilers for C++ and Data-Parallel Languages](https://pldi23.sigplan.org/details/pldi-2023-pldi/76/Fuzzing-Loop-Optimizations-in-Compilers-for-C-and-Data-Parallel-Languages)
   - [WasmRef-Isabelle: a Verified Monadic Interpreter and Industrial Fuzzing Oracle for WebAssembly](https://pldi23.sigplan.org/details/pldi-2023-pldi/5/WasmRef-Isabelle-A-Verified-Monadic-Interpreter-and-Industrial-Fuzzing-Oracle-for-We)
@@ -186,6 +194,8 @@
   - [Rainfuzz: Reinforcement-Learning Driven Heat-Maps for Boosting Coverage-Guided Fuzzing](#rainfuzz-reinforcement-learning-driven-heat-maps-for-boosting-coverage-guided-fuzzing-icpram-2023)
   - [SWaTEval: An Evaluation Framework for Stateful Web Application Testing](#swateval-an-evaluation-framework-for-stateful-web-application-testing-icissp-2023)
   - [Evaluating the Fork-Awareness of Coverage-Guided Fuzzers](#evaluating-the-fork-awareness-of-coverage-guided-fuzzers-icissp-2023)
+- **OOPSLA 2022**
+  - [Satisfiability Modulo Fuzzing: A Synergistic Combination of SMT Solving and Fuzzing](https://dl.acm.org/doi/10.1145/3563332)
 - **ASE 2022**
   - [Effectively Generating Vulnerable Transaction Sequences in Smart Contracts with Reinforcement Learning-guided Fuzzing](https://dl.acm.org/doi/10.1145/3551349.3560429)
   - [Efficient Greybox Fuzzing to Detect Memory Errors](https://dl.acm.org/doi/10.1145/3551349.3561161)
@@ -250,7 +260,7 @@
   - [FIXREVERTER: A Realistic Bug Injection Methodology for Benchmarking Fuzz Testing](#fixreverter-a-realistic-bug-injection-methodology-for-benchmarking-fuzz-testing-usenix-sec22)
   - [StateFuzz: System Call-Based State-Aware Linux Driver Fuzzing](#statefuzz-system-call-based-state-aware-linux-driver-fuzzing-usenix-sec-2022)
 - **ICSE 2022**
-  - [��AFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware](#��afl-non-intrusive-feedback-driven-fuzzing-for-microcontroller-firmware-icse-2022)
+  - [μAFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware](μafl-non-intrusive-feedback-driven-fuzzing-for-microcontroller-firmware-icse-2022)
   - [BeDivFuzz: Integrating Behavioral Diversity into Generator-based Fuzzing](#bedivfuzz-integrating-behavioral-diversity-into-generator-based-fuzzing-icse-2022)
   - [CONFETTI: Amplifying Concolic Guidance for Fuzzers](#confetti-amplifying-concolic-guidance-for-fuzzers-icse-2022)
   - [Demystifying the Dependency Challenge in Kernel Fuzzing](#demystifying-the-dependency-challenge-in-kernel-fuzzing-icse-2022)

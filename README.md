@@ -100,6 +100,7 @@
   - [WhiteFox: White-box Compiler Fuzzing Empowered by Large Language Models](https://arxiv.org/abs/2310.15991)
 - **Others 2024**
   - [Crash Report Accumulation During Continuous Fuzzing with CASR (IVMEM 2024)](https://arxiv.org/abs/2405.18174)
+  - [CrossFuzz: Cross-contract fuzzing for smart contract vulnerability detection](https://www.sciencedirect.com/science/article/pii/S0167642323001582)
 - **MobiSys 2023**
   - [No More Companion Apps Hacking but One Dongle: Hub-Based Blackbox Fuzzing of IoT Firmware](https://dl.acm.org/doi/10.1145/3581791.3596857)
 - **ESORICS 2023**
@@ -194,6 +195,8 @@
   - [Rainfuzz: Reinforcement-Learning Driven Heat-Maps for Boosting Coverage-Guided Fuzzing](#rainfuzz-reinforcement-learning-driven-heat-maps-for-boosting-coverage-guided-fuzzing-icpram-2023)
   - [SWaTEval: An Evaluation Framework for Stateful Web Application Testing](#swateval-an-evaluation-framework-for-stateful-web-application-testing-icissp-2023)
   - [Evaluating the Fork-Awareness of Coverage-Guided Fuzzers](#evaluating-the-fork-awareness-of-coverage-guided-fuzzers-icissp-2023)
+- **Others 2023**
+  - [CIDFuzz: Fuzz testing for continuous integration](https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/sfw2.12125)
 - **OOPSLA 2022**
   - [Satisfiability Modulo Fuzzing: A Synergistic Combination of SMT Solving and Fuzzing](https://dl.acm.org/doi/10.1145/3563332)
 - **ASE 2022**

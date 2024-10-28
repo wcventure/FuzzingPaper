@@ -20,6 +20,10 @@
   - LIFTFUZZ: Validating Binary Lifters through Context-aware Fuzzing with GPT
   - FuzzCache: Optimizing Web Application Fuzzing Through Software-Based Data Cache
   - RANsacked: A Domain-Informed Approach for Fuzzing LTE and 5G RAN-Core Interfaces
+  - RIoTFuzzer: Companion App Assisted Remote Fuzzing for Detecting Vulnerabilities in IoT Devices
+  - On Understanding and Forecasting Fuzzers Performance with Static Analysis
+  - FOX: Coverage-guided Fuzzing as Online Stochastic Control
+  - Prompt Fuzzing for Fuzz Driver Generation
   - DarthShader: Fuzzing WebGPU Shader Translators & Compilers
   - Collapse Like A House of Cards: Hacking Building Automation System Through Fuzzing
   - OSmart: Whitebox Program Option Fuzzing

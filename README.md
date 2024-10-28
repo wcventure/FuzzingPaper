@@ -16,6 +16,22 @@
 [![Star History Chart](https://api.star-history.com/svg?repos=wcventure/FuzzingPaper&type=Date)](https://star-history.com/#wcventure/FuzzingPaper&Date)
 
 # All Papers (Classification according to Publication)
+- **CCS 2024**
+  - LIFTFUZZ: Validating Binary Lifters through Context-aware Fuzzing with GPT
+  - FuzzCache: Optimizing Web Application Fuzzing Through Software-Based Data Cache
+  - RANsacked: A Domain-Informed Approach for Fuzzing LTE and 5G RAN-Core Interfaces
+  - DarthShader: Fuzzing WebGPU Shader Translators & Compilers
+  - Collapse Like A House of Cards: Hacking Building Automation System Through Fuzzing
+  - OSmart: Whitebox Program Option Fuzzing
+  - Program Environment Fuzzing
+  - ProphetFuzz: Fully Automated Prediction and Fuzzing of High-Risk Option Combinations with Only Documentation via Large Language Model
+  - Leveraging Binary Coverage for Effective Generation Guidance in Kernel Fuzzing
+  - Toss a Fault to BpfChecker: Revealing Implementation Flaws for eBPF runtimes with Differential Fuzzing
+  - No Peer, no Cry: Network Application Fuzzing via Fault Injection
+  - Fuzz to the Future: Uncovering Occluded Future Vulnerabilities via Robust Fuzzing
+  - CountDown: Refcount-guided Fuzzing for Exposing Temporal Memory Errors in Linux Kernel
+  - Fuzzing JavaScript Engines with a Graph-based IR
+  - CrossFire: Fuzzing macOS Cross-XPU Memory on Apple Silicon
 - **ISSTA 2024**
   - [An Empirical Examination of Fuzzer Mutator Performance](https://dl.acm.org/doi/10.1145/3650212.3680387)
   - [AsFuzzer: Differential Testing of Assemblers with Error-Driven Grammar Inference](https://dl.acm.org/doi/10.1145/3650212.3680345)

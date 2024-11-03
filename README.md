@@ -114,6 +114,13 @@
   - [HYPERPILL: Fuzzing for Hypervisor-bugs by leveraging the Hardware Virtualization Interface](https://www.usenix.org/conference/usenixsecurity24/presentation/bulekov)
   - [Fuzzing BusyBox: Leveraging LLM and Crash Reuse for Embedded Bug Unearthing](https://www.usenix.org/conference/usenixsecurity24/presentation/asmita)
   - [From One Thousand Pages of Specification to Unveiling Hidden Bugs: Large Language Model Assisted Fuzzing of Matter IoT Devices](https://www.usenix.org/conference/usenixsecurity24/presentation/ma-xiaoyue)
+  - [OptFuzz: Optimization Path Guided Fuzzing for JavaScript JIT Compilers](https://www.usenix.org/conference/usenixsecurity24/presentation/wang-jiming)
+  - [Toward Unbiased Multiple-Target Fuzzing with Path Diversity](https://www.usenix.org/conference/usenixsecurity24/presentation/rong)
+  - [SymBisect: Accurate Bisection for Fuzzer-Exposed Vulnerabilities](https://www.usenix.org/conference/usenixsecurity24/presentation/zhang-zheng)
+  - [Data Coverage for Guided Fuzzing](https://www.usenix.org/conference/usenixsecurity24/presentation/wang-mingzhe)
+  - [LLM-Fuzzer: Scaling Assessment of Large Language Model Jailbreaks](https://www.usenix.org/conference/usenixsecurity24/presentation/yu-jiahao)
+  - [Understanding Ethereum Mempool Security under Asymmetric DoS by Symbolized Stateful Fuzzing](https://www.usenix.org/conference/usenixsecurity24/presentation/wang-yibo)
+  - [From One Thousand Pages of Specification to Unveiling Hidden Bugs: Large Language Model Assisted Fuzzing of Matter IoT Devices](https://www.usenix.org/conference/usenixsecurity24/presentation/ma-xiaoyue)
 - **ASPLOS 2024**
   - [Greybox Fuzzing for Concurrency Testing](https://dl.acm.org/doi/abs/10.1145/3620665.3640389)
 - **OOPSLA 2024**

@@ -183,6 +183,16 @@
   - [Forming Faster Firmware Fuzzers](https://download.vusec.net/papers/safirefuzz_sec23.pdf)
   - [Intender: Fuzzing Intent-Based Networking with Intent-State Transition Guidance](https://www.usenix.org/system/files/usenixsecurity23-kim-jiwon.pdf)\
   - [MTSan: A Feasible and Practical Memory Sanitizer for Fuzzing COTS Binaries](https://www.usenix.org/system/files/usenixsecurity23-chen-xingman.pdf)
+  - µFUZZ: Redesign of Parallel Fuzzing using Microservice Architecture
+  - HyPFuzz: Formal-Assisted Processor Fuzzing
+  - Automata-Guided Control-Flow-Sensitive Fuzz Driver Generation
+  - Hoedur: Embedded Firmware Fuzzing using Multi-Stream Inputs
+  - ReUSB: Replay-Guided USB Driver Fuzzing
+  - Systematic Assessment of Fuzzers using Mutation Analysis
+  - No Linux, No Problem: Fast and Correct Windows Binary Fuzzing via Target-embedded Snapshotting
+  - DAFL: Directed Grey-box Fuzzing guided by Data Dependency
+  - Actor: Action-Guided Kernel Fuzzing
+  - Fuzz The Power: Dual-role State Guided Black-box Fuzzing for USB Power Delivery
 - **ISSTA 2023**
   - [Large Language Models are Zero-Shot Fuzzers: Fuzzing Deep-Learning Libraries via Large Language Models](#large-language-models-are-zero-shot-fuzzersfuzzing-deep-learning-libraries-via-large-language-models-issta-2023)
   - [GrayC: Greybox Fuzzing of Compilers and Analysers for C](#grayc-greybox-fuzzing-of-compilers-and-analysers-for-c-issta-2023)

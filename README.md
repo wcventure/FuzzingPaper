@@ -377,6 +377,7 @@
   - [Same Coverage, Less Bloat: Accelerating Binary-only Fuzzing with Coverage-preserving Coverage-guided Tracing](#same-coverage-less-bloat-accelerating-binary-only-fuzzing-with-coverage-preserving-coverage-guided-tracing-ccs-2021)
   - [Regression Greybox Fuzzing](#regression-greybox-fuzzing-ccs-2021)
   - [SyzGen: Automated Generation of Syscall Specification of Closed-Source macOS Drivers](#SyzGen-Automated-Generation-of-Syscall-Specification-of-Closed-Source-macOS-Drivers-ccs-2021)
+  - [HyperFuzzer: An Efficient Hybrid Fuzzer For Virtual CPUs](https://dl.acm.org/doi/10.1145/3460120.3484748)
 - **OOPSLA 2021**
   - [Fuzzing Channel-Based Concurrency Runtimes using Types and Effects](#fuzzing-channel-based-concurrency-runtimes-using-types-and-effects-slides-oopsla-2021)
   - [Fully Automated Functional Fuzzing of Android Apps for Detecting Non-crashing Logic Bugs](#fully-automated-functional-fuzzing-of-android-apps-for-detecting-non-crashing-logic-bugs-oopsla-2021)
@@ -506,6 +507,7 @@
   - [Fuzzing Error Handling Code using Context-Sensitive Software Fault Injection](#fuzzing-error-handling-code-using-context-sensitive-software-fault-injection-usenix-security2020)
   - [USBFuzz: A Framework for Fuzzing USB Drivers by Device Emulation](#usbfuzz-a-framework-for-fuzzing-usb-drivers-by-device-emulation-usenix-security2020)
   - [AFL++: Combining Incremental Steps of Fuzzing Research (USENIX Woot2020)](#afl-combining-incremental-steps-of-fuzzing-research-usenix-woot2020)
+  - [Agamotto: Accelerating Kernel Driver Fuzzing with Lightweight Virtual Machine Checkpoints](https://www.usenix.org/conference/usenixsecurity20/presentation/song)
 - **ICSE 2020**
   - [Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities](#typestate-guided-fuzzer-for-discovering-use-after-free-vulnerabilities-icse-2020)
   - [MemLock: Memory Usage Guided Fuzzing](#memlock-memory-usage-guided-fuzzing-icse2020)

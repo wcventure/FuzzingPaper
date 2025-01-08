@@ -17,25 +17,25 @@
 
 # All Papers (Classification according to Publication)
 - **CCS 2024**
-  - LIFTFUZZ: Validating Binary Lifters through Context-aware Fuzzing with GPT
-  - FuzzCache: Optimizing Web Application Fuzzing Through Software-Based Data Cache
-  - RANsacked: A Domain-Informed Approach for Fuzzing LTE and 5G RAN-Core Interfaces
-  - RIoTFuzzer: Companion App Assisted Remote Fuzzing for Detecting Vulnerabilities in IoT Devices
-  - On Understanding and Forecasting Fuzzers Performance with Static Analysis
-  - FOX: Coverage-guided Fuzzing as Online Stochastic Control
-  - Prompt Fuzzing for Fuzz Driver Generation
-  - DarthShader: Fuzzing WebGPU Shader Translators & Compilers
-  - Collapse Like A House of Cards: Hacking Building Automation System Through Fuzzing
-  - OSmart: Whitebox Program Option Fuzzing
-  - Program Environment Fuzzing
-  - ProphetFuzz: Fully Automated Prediction and Fuzzing of High-Risk Option Combinations with Only Documentation via Large Language Model
-  - Leveraging Binary Coverage for Effective Generation Guidance in Kernel Fuzzing
-  - Toss a Fault to BpfChecker: Revealing Implementation Flaws for eBPF runtimes with Differential Fuzzing
-  - No Peer, no Cry: Network Application Fuzzing via Fault Injection
-  - Fuzz to the Future: Uncovering Occluded Future Vulnerabilities via Robust Fuzzing
-  - CountDown: Refcount-guided Fuzzing for Exposing Temporal Memory Errors in Linux Kernel
-  - Fuzzing JavaScript Engines with a Graph-based IR
-  - CrossFire: Fuzzing macOS Cross-XPU Memory on Apple Silicon
+  - [LIFTFUZZ: Validating Binary Lifters through Context-aware Fuzzing with GPT](https://dl.acm.org/doi/abs/10.1145/3658644.3670276)
+  - [FuzzCache: Optimizing Web Application Fuzzing Through Software-Based Data Cache](https://dl.acm.org/doi/abs/10.1145/3658644.3670278)
+  - [RANsacked: A Domain-Informed Approach for Fuzzing LTE and 5G RAN-Core Interfaces](https://dl.acm.org/doi/abs/10.1145/3658644.3670320)
+  - [RIoTFuzzer: Companion App Assisted Remote Fuzzing for Detecting Vulnerabilities in IoT Devices](https://dl.acm.org/doi/abs/10.1145/3658644.3670342)
+  - [On Understanding and Forecasting Fuzzers Performance with Static Analysis](https://dl.acm.org/doi/abs/10.1145/3658644.3670348)
+  - [FOX: Coverage-guided Fuzzing as Online Stochastic Control](https://dl.acm.org/doi/abs/10.1145/3658644.3670362)
+  - [Prompt Fuzzing for Fuzz Driver Generation](https://dl.acm.org/doi/abs/10.1145/3658644.3670396)
+  - [DarthShader: Fuzzing WebGPU Shader Translators & Compilers](https://dl.acm.org/doi/abs/10.1145/3658644.3690209)
+  - [Collapse Like A House of Cards: Hacking Building Automation System Through Fuzzing](https://dl.acm.org/doi/abs/10.1145/3658644.3690216)
+  - [OSmart: Whitebox Program Option Fuzzing](https://dl.acm.org/doi/abs/10.1145/3658644.3690228)
+  - [Program Environment Fuzzing](https://dl.acm.org/doi/abs/10.1145/3658644.3690229)
+  - [ProphetFuzz: Fully Automated Prediction and Fuzzing of High-Risk Option Combinations with Only Documentation via Large Language Model](https://dl.acm.org/doi/abs/10.1145/3658644.3690231)
+  - [Leveraging Binary Coverage for Effective Generation Guidance in Kernel Fuzzing](https://dl.acm.org/doi/abs/10.1145/3658644.3690232)
+  - [Toss a Fault to BpfChecker: Revealing Implementation Flaws for eBPF runtimes with Differential Fuzzing](https://dl.acm.org/doi/abs/10.1145/3658644.3690237)
+  - [No Peer, no Cry: Network Application Fuzzing via Fault Injection](https://dl.acm.org/doi/abs/10.1145/3658644.3690274)
+  - [Fuzz to the Future: Uncovering Occluded Future Vulnerabilities via Robust Fuzzing](https://dl.acm.org/doi/abs/10.1145/3658644.3690278)
+  - [CountDown: Refcount-guided Fuzzing for Exposing Temporal Memory Errors in Linux Kernel](https://dl.acm.org/doi/abs/10.1145/3658644.3690320)
+  - [Fuzzing JavaScript Engines with a Graph-based IR](https://dl.acm.org/doi/abs/10.1145/3658644.3690336)
+  - [CrossFire: Fuzzing macOS Cross-XPU Memory on Apple Silicon](https://dl.acm.org/doi/abs/10.1145/3658644.3690376)
 - **ISSTA 2024**
   - [An Empirical Examination of Fuzzer Mutator Performance](https://dl.acm.org/doi/10.1145/3650212.3680387)
   - [AsFuzzer: Differential Testing of Assemblers with Error-Driven Grammar Inference](https://dl.acm.org/doi/10.1145/3650212.3680345)
@@ -56,8 +56,11 @@
   - [Enhancing ROS System Fuzzing through Callback Tracing](https://dl.acm.org/doi/10.1145/3650212.3652111)
   - [Sleuth: A Switchable Dual-Mode Fuzzer to Investigate Bug Impacts Following a Single PoC](https://dl.acm.org/doi/10.1145/3650212.3680316)
 - **ESEC/FSE 2024**
-  - [BRF: Fuzzing the eBPF runtime](https://arxiv.org/abs/2305.08782)
-  - [Evaluating Directed Fuzzers: Are We Heading in the Right Direction?](https://softsec.kaist.ac.kr/~sangkilc/papers/kim-fse24.pdf)
+  - [BRF: Fuzzing the eBPF runtime](https://dl.acm.org/doi/abs/10.1145/3643778)
+  - [Evaluating Directed Fuzzers: Are We Heading in the Right Direction?](https://dl.acm.org/doi/abs/10.1145/3643741)
+  - [Evolutionary Generative Fuzzing for Differential Testing of the Kotlin Compiler](https://dl.acm.org/doi/abs/10.1145/3663529.3663864)
+  - [Dodrio: Parallelizing Taint Analysis Based Fuzzing via Redundancy-Free Scheduling](https://dl.acm.org/doi/abs/10.1145/3663529.3663844)
+  - [When Fuzzing Meets LLMs: Challenges and Opportunities](https://dl.acm.org/doi/abs/10.1145/3663529.3663784)
 - **SP 2024**
   - [Everything is Good for Something: Counterexample-Guided Directed Fuzzing via Likely Invariant Inference](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a142/1Ub23ZRRhRu)
   - [LABRADOR: Response Guided Directed Fuzzing for Black-box IoT Devices](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a127/1Ub23HQTJ1C)
@@ -183,16 +186,16 @@
   - [Forming Faster Firmware Fuzzers](https://download.vusec.net/papers/safirefuzz_sec23.pdf)
   - [Intender: Fuzzing Intent-Based Networking with Intent-State Transition Guidance](https://www.usenix.org/system/files/usenixsecurity23-kim-jiwon.pdf)\
   - [MTSan: A Feasible and Practical Memory Sanitizer for Fuzzing COTS Binaries](https://www.usenix.org/system/files/usenixsecurity23-chen-xingman.pdf)
-  - µFUZZ: Redesign of Parallel Fuzzing using Microservice Architecture
-  - HyPFuzz: Formal-Assisted Processor Fuzzing
-  - Automata-Guided Control-Flow-Sensitive Fuzz Driver Generation
-  - Hoedur: Embedded Firmware Fuzzing using Multi-Stream Inputs
-  - ReUSB: Replay-Guided USB Driver Fuzzing
-  - Systematic Assessment of Fuzzers using Mutation Analysis
-  - No Linux, No Problem: Fast and Correct Windows Binary Fuzzing via Target-embedded Snapshotting
-  - DAFL: Directed Grey-box Fuzzing guided by Data Dependency
-  - Actor: Action-Guided Kernel Fuzzing
-  - Fuzz The Power: Dual-role State Guided Black-box Fuzzing for USB Power Delivery
+  - [µFUZZ: Redesign of Parallel Fuzzing using Microservice Architecture](https://www.usenix.org/conference/usenixsecurity23/presentation/chen-yongheng)
+  - [HyPFuzz: Formal-Assisted Processor Fuzzing](https://www.usenix.org/conference/usenixsecurity23/presentation/chen-chen)
+  - [Automata-Guided Control-Flow-Sensitive Fuzz Driver Generation](https://www.usenix.org/conference/usenixsecurity23/presentation/zhang-cen)
+  - [Hoedur: Embedded Firmware Fuzzing using Multi-Stream Inputs](https://www.usenix.org/system/files/usenixsecurity23-scharnowski.pdf)
+  - [ReUSB: Replay-Guided USB Driver Fuzzing](https://www.usenix.org/system/files/usenixsecurity23-jang.pdf)
+  - [Systematic Assessment of Fuzzers using Mutation Analysis](https://www.usenix.org/conference/usenixsecurity23/presentation/gorz)
+  - [No Linux, No Problem: Fast and Correct Windows Binary Fuzzing via Target-embedded Snapshotting](https://www.usenix.org/conference/usenixsecurity23/presentation/stone)
+  - [DAFL: Directed Grey-box Fuzzing guided by Data Dependency](https://www.usenix.org/conference/usenixsecurity23/presentation/kim-tae-eun)
+  - [Actor: Action-Guided Kernel Fuzzing](https://www.usenix.org/conference/usenixsecurity23/presentation/fleischer)
+  - [Fuzz The Power: Dual-role State Guided Black-box Fuzzing for USB Power Delivery](https://www.usenix.org/conference/usenixsecurity23/presentation/kim-kyungtae)
 - **ISSTA 2023**
   - [Large Language Models are Zero-Shot Fuzzers: Fuzzing Deep-Learning Libraries via Large Language Models](#large-language-models-are-zero-shot-fuzzersfuzzing-deep-learning-libraries-via-large-language-models-issta-2023)
   - [GrayC: Greybox Fuzzing of Compilers and Analysers for C](#grayc-greybox-fuzzing-of-compilers-and-analysers-for-c-issta-2023)
@@ -207,6 +210,16 @@
   - [Icicle: A Re-designed Emulator for Grey-Box Firmware Fuzzing](https://2023.issta.org/details/issta-2023-technical-papers/113/Icicle-A-Re-designed-Emulator-for-Grey-Box-Firmware-Fuzzing)
   - [ItyFuzz: Snapshot-Based Fuzzer for Smart Contract](https://2023.issta.org/details/issta-2023-technical-papers/19/ItyFuzz-Snapshot-Based-Fuzzer-for-Smart-Contract)
   - [Rare Path Guided Fuzzing](https://2023.issta.org/details/issta-2023-technical-papers/95/Rare-Path-Guided-Fuzzing)
+- **ESEC/FSE 2023**
+  - [Co-dependence Aware Fuzzing for Dataflow-Based Big Data Analytics](https://dl.acm.org/doi/10.1145/3611643.3616298)
+  - [Enhancing Coverage-Guided Fuzzing via Phantom Program](https://dl.acm.org/doi/10.1145/3611643.3616294)
+  - [Leveraging Hardware Probes and Optimizations for Accelerating Fuzz Testing of Heterogeneous Applications](https://dl.acm.org/doi/10.1145/3611643.3616318)
+  - [Metamong: Detecting Render-Update Bugs in Web Browsers through Fuzzing](https://dl.acm.org/doi/10.1145/3611643.3616336)
+  - [NaNofuzz: A Usable Tool for Automatic Test Generation](https://dl.acm.org/doi/10.1145/3611643.3616327)
+  - [Property-Based Fuzzing for Finding Data Manipulation Errors in Android Apps](https://dl.acm.org/doi/10.1145/3611643.3616286)
+  - [A Generative and Mutational Approach for Synthesizing Bug-Exposing Test Cases to Guide Compiler Fuzzing](https://dl.acm.org/doi/10.1145/3611643.3616332)
+  - [Revisiting Neural Program Smoothing for Fuzzing](https://dl.acm.org/doi/10.1145/3611643.3616308)
+  - [SJFuzz: Seed and Mutator Scheduling for JVM Fuzzing](https://dl.acm.org/doi/10.1145/3611643.3616277)
 - **ICSE 2023**
   - [Evaluating and Improving Hybrid Fuzzing](#evaluating-and-improving-hybrid-fuzzing-icse-2023)
   - [Fuzzing Automatic Differentiation in Deep-Learning Libraries](https://dl.acm.org/doi/10.1109/ICSE48619.2023.00105)

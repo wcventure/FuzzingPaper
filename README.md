@@ -122,6 +122,8 @@
   - [Understanding Ethereum Mempool Security under Asymmetric DoS by Symbolized Stateful Fuzzing](https://www.usenix.org/conference/usenixsecurity24/presentation/wang-yibo)
 - **ASPLOS 2024**
   - [Greybox Fuzzing for Concurrency Testing](https://dl.acm.org/doi/abs/10.1145/3620665.3640389)
+- **PLDI 2024**
+  - [Numerical Fuzz: A Type System for Rounding Error Analysis](https://dl.acm.org/doi/10.1145/3656456)
 - **OOPSLA 2024**
   - [WhiteFox: White-box Compiler Fuzzing Empowered by Large Language Models](https://arxiv.org/abs/2310.15991)
 - **Others 2024**

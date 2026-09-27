@@ -5,6 +5,16 @@
 3. Advertisement: [Our ICTT (Guangzhou) research group](https://xidian-ictt-gz.github.io/) is accepting applications for master’s, doctoral, postdoctoral, and research assistant positions. We welcome hardworking, serious, and innovative young people who are interested in joining our research group.
 
 
+## Search the catalog
+
+Use the optional [keyword filter](tools/README.md) to extract paper links and
+search titles, abstracts, and optionally external HTML pages. It uses Python 3.9+
+without third-party dependencies:
+
+```sh
+python3 tools/filter_papers.py README.md -k browser -k javascript --format csv -o results.csv
+```
+
 ## Contributors
 
 <a href="https://github.com/wcventure/FuzzingPaper/graphs/contributors">

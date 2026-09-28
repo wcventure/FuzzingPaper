@@ -96,3 +96,19 @@ python3 -B -m unittest discover -s tools/tests -v
 Tests use synthetic catalogs and mocked HTTP responses; they require no internet,
 institutional account or publisher access. For a manual integration check, run
 against the current README and inspect the exported matches and skipped entries.
+
+## Additional edge cases and possible improvements
+
+HTML extraction does not implement browser rendering or CSS visibility. Text hidden
+by CSS and navigation/login boilerplate can still produce matches. Results need
+manual review and do not establish that full text is accessible.
+
+CSV quoting does not prevent spreadsheet applications from interpreting cell values
+as formulas. Import catalog-derived titles and abstracts as text when opening CSV
+exports in those applications. JSON retains the same values without spreadsheet
+interpretation.
+
+Potential follow-up work includes more Markdown-format fixtures, persistent and
+resumable caching, bounded retries with backoff and `Retry-After` support, a total-run
+time budget, match snippets, optional DOI/arXiv-based deduplication, and an opt-in
+spreadsheet-safe CSV mode. These are suggestions, not current capabilities.
